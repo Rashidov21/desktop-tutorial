@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.left-section{
+    width: 250px;
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+}
+#close{
+    display: none;
+    transition: 0.5s;
+}
