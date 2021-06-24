@@ -1,0 +1,60 @@
+/*@import url('animations.css');*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*body{
+	background-image: url('https://cdn.vox-cdn.com/thumbor/S4ka2uwWyJ9rHJFDwVa8BQCqMHA=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22406771/Exbfpl2WgAAQkl8_resized.jpeg');
+	background-color: blue;
+	background-blend-mode: screen;
+}
+*/
+
+body{
+	transition: all 0.3s;
+	background-image: url('../img/nike/nike3.jpg');
+	background-repeat: no-repeat;
+	background-position: 300px 10px;
+	background-blend-mode: darken;
+
+}
+.buttons{
+	position: absolute;
+	padding: 20px;
+	top:80%;
+	left:40%;
+}
+.buttons button{
+	padding: 10px;
+	border:none;
+	outline: none;
+	background-color: orange;
+	border-radius: 10px;
+}
+.box{
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	transition: all 0.5s;
+}
+.box-animation{
+	width: 300px;
+	height: 300px;
+	background-color: green;
+	transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.slide{
+	width: 100%;
+	height: 800px;
+	background-repeat: no-repeat;
+	background-position: top;
+	transition: all 0.7s;
+}
+.controls{
+	margin: 20px;
+	padding: 15px;
+}
+.controls button{
+	display: inline-block;
+	padding: 10px;
+	background-color: dodgerblue;
+	border:none;
+	outline: none;
+	border-radius: 5px;
+	color: white;
+}
+button{
+	display: inline-block;
+	padding: 10px;
+	background-color: dodgerblue;
+	border:none;
+	outline: none;
+	border-radius: 5px;
+	color: white;
+}
+.menu{
+	padding: 20px;
+	background-color: #333;
+	list-style: none;
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	display: none;
+}
+li{
+	margin-left: 50px;
+	display: inline-block;
+}
+a{
+	color:white;
+
+}
+p{
+	font-size: 20px;
+	font-family: sans-serif;
+}
+.time{
+	margin: 25px 0;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+.time span{
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #888;
+	color:white;
+}
+
+/*Parallax menu */
+
+#intro{ 
+	background:url(img/air1.jpg) 50% О no-repeat fixed; 
+	color: white; 
+	height: 700рх; 
+	margin: О auto; 
+	padding: О; 
+}
+#second{ 
+	background: url(img/air2.jpg) 50% О no-repeat fixed; 
+	color: Ыасk; 
+	height: 1200рх; 
+	margin: О auto; 
+	overflow: hidden; 
+	padding: О; 
+}

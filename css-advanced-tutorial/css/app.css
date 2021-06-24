@@ -1,0 +1,24 @@
+.components{
+	display: flex;
+	flex-wrap: wrap;
+}
+.component{
+	padding: 15px;
+	margin: 5px;
+	border-radius: 5px;
+	background: #333330;
+	color: #fff;
+}
+.block{
+	width: 200px;
+	height: 200px;
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	border: solid 2px green;
+}
+.block-inner{
+	width: 90px;
+	height: 90px;
+	border: solid 2px black;
+}

@@ -1,0 +1,28 @@
+@import url('colors.css');
+
+@keyframes spin{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes changeColor {
+	from{
+		background: var(--toqQora);
+	}
+	to{
+		background: var(--binafsha);
+	}
+/*	0%{
+		background: #333;
+	}
+	50%{
+		background: #555;
+	}
+	100%{
+		background: #999;
+	}*/
+}
