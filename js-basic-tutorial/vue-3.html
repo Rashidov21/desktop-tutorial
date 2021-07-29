@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vue Js | Slider</title>
+	<link rel="stylesheet" href="css/vue-slider-css.css">
+   <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+<style>
+  .collection-item span{
+    font-size: 25px;
+    padding-right: 10px;
+  }
+  .done{
+    text-decoration: line-through;
+    color: red;
+  }
+</style>
+</head>
+
+<body>
+<!-- <div class="container" id="app">
+  <div class="row">
+    <div class="col s12">
+      <div class="card-panel">
+        <h4>{{num }}</h4>
+        <button class="btn" @click='num++'>++</button>
+        <div class="row">
+          <div class="col s10">            
+            <input 
+              type="text" 
+              v-bind:placeholder="placeString"         
+              v-model="task"
+              v-on:keypress='keyPress'
+            />
+          </div>
+          <div class="col s2">
+            <button class="btn waves-effect pulse" @click='addTask'>
+               <i class="material-icons">add</i>
+            </button>
+            
+          </div>
+        </div>
+        <div class="card-action">
+          <ul class="collection" v-if="tasks.length !== 0">
+            <li class="collection-item" v-for="(task,index) in tasks">
+            <span v-bind:class="{'done' : task.done}">id={{index}} - title={{task.title}}</span>
+             <label>
+                <input type="checkbox" class="filled-in" :checked="this.task.done == true" />
+                <span>done</span>
+              </label>
+            <button class="btn waves-effect pulse" @click='remove(index)'>
+              <i class="material-icons">delete</i>
+            </button>
+            </li>
+            <hr>
+            Tasks count : {{tasks.length}}
+            <br>
+            Double : {{doubleCount}}
+          </ul>
+          <div v-else>
+            No tasks , Please add 
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+
+  </div> -->
+<div class="section" id="animate">
+  <div class="row card-panel">
+    <div class="col s12">
+      <div class="box"></div>
+     
+      <a href="#" class="btn orange darken-2">
+        Animation
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+  <script src="https://unpkg.com/vue@next"></script>
+	<script src="js/vue-js-slider.js"></script>
+</body>
+</html>

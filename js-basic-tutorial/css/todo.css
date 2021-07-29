@@ -1,0 +1,12 @@
+.dark{
+	background-color: teal;
+}
+.light{
+	background-color: #ff2211;
+}
+body{
+	transition: all 0.3s;
+}
+select{
+	padding:10px;
+}

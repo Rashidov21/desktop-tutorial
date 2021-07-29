@@ -1,3 +1,16 @@
+# *args = ()
+# **kwargs = {}
+def main(a,b,c):
+    print(a * b / c)
+main(10,30,20)
+
+# def main(**kwargs):
+#     print(type(kwargs))
+#     for i in kwargs:
+#         print(type(i))
+#         print(i)
+#
+# main(key1=20,key2=30,key3=40)
 # from faker import Faker
 # fake = Faker()
 # peoples = []
@@ -19,17 +32,12 @@
 #     for j in peoples[0]:
 #         i = j.lower()
 #         print(i.split(' ')[0])
-#         # if i.split(' ')[0] == j.split(' ')[0]:        
+#         # if i.split(' ')[0] == j.split(' ')[0]:
 #         #     match.append(j)
 # print(match)
 
 
 
-m = 480
-a = m//60
-b = m%60
-print(a)
-print(b)
 
 
 
@@ -41,8 +49,7 @@ print(b)
 
 
 
-
-# 2. Foydalanuvchi bergan sonlar oralig’idagi barcha sonlarni 
+# 2. Foydalanuvchi bergan sonlar oralig’idagi barcha sonlarni
 # listga yozuvchi kod yozing:
 # masal 5  bilan 10 orasidagi sonlar > nums = [6,7,8,9,10]
 # txt = ['txt', 'pdf', 'docx']
@@ -69,7 +76,7 @@ print(b)
 # def getNums2(big,small,count):
 #     import random
 #     return list(random.simple( list(range(small,big), count)))
-    
+
 
 # a = int(input('Big'))
 # b = int(input('Small'))
@@ -108,14 +115,14 @@ print(b)
 
 # fake = Faker()
 # ls = []
-# for i  in range(10):	
+# for i  in range(10):
 # 	name = fake.name()
 # 	ls.append(name)
 # 	with open('names.txt', 'w') as file:
 # 		file.write(' \n'.join(ls))
-  
-# def bubble_sort(nums):  
-    
+
+# def bubble_sort(nums):
+
 #     swapped = True
 #     while swapped:
 #         swapped = False
@@ -127,6 +134,6 @@ print(b)
 #                 swapped = True
 
 
-# random_list_of_nums = [5, 2, 1, 8, 4]  
-# bubble_sort(random_list_of_nums)  
+# random_list_of_nums = [5, 2, 1, 8, 4]
+# bubble_sort(random_list_of_nums)
 # print(random_list_of_nums)

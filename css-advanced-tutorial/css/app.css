@@ -1,24 +1,119 @@
-.components{
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto';
+}
+.container{
+	margin: 100px 100px;
 	display: flex;
 	flex-wrap: wrap;
 }
-.component{
-	padding: 15px;
-	margin: 5px;
-	border-radius: 5px;
-	background: #333330;
-	color: #fff;
+button{
+	padding: 10px;
+	border: none;
+	outline: none;
+	background: orange;
+	border-radius: 10px;
 }
-.block{
-	width: 200px;
-	height: 200px;
-	padding: 5px;
-	display: flex;
-	flex-wrap: wrap;
-	border: solid 2px green;
+img{
+	margin-left: 100px;
+	animation: rotate 1s alternate infinite;
 }
-.block-inner{
-	width: 90px;
-	height: 90px;
-	border: solid 2px black;
+@keyframes rotate{
+	from{
+		transform: rotate(-10deg);
+		-webkit-transform: rotate(-10deg);
+	}
+	to{
+		transform: rotate(10deg);
+		-webkit-transform: rotate(10deg);
+
+	}
+}
+-webkit-@keyframes rotate{
+	from{
+		-webkit-transform: rotate(-10deg);
+	}
+	to{
+		-webkit-transform: rotate(10deg);
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box{
+/*	width: 100px;
+	height: 100px;
+	background-color: tomato;
+	border-radius: 50%;
+	position: absolute;
+	animation: sun-animation 2s ease infinite;*/
+/*	position: absolute;
+	transition: all 0.5s;
+	animation-name:rotate-bubble;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;*/
+}
+/*@keyframes sun-animation{
+	0%{
+		transform: translateX(-200px) translateY(400px);
+	}
+	50%{		
+		transform: translateX(500px)translateY(0px);
+	}
+	100%{
+		transform: translateX(1300px) translateY(400px);
+
+	}
+}
+*/
+
+
+
+
+
+
+
+
+
+
+@keyframes rotate-bubble{
+	0%{
+		right: 100px;
+		transition: all 0.5s;
+	}
+	25%{
+		right: 100px;
+		bottom: 100px;
+		transition: all 0.5s;
+	}
+	50%{
+		left: 100px;
+		bottom: 100px;
+		transition: all 0.5s;
+	}
+	75%{
+		top: 100px;
+		left: 100px;
+		transition: all 0.5s;
+	}
+	100%{
+		right: 100px;
+		transition: all 0.5s;
+	}
 }

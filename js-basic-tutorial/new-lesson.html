@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML/CSS3/JS | Lessons 4</title>
+	<link rel="stylesheet" href="css/lesson-3.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+<body>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col m12">
+					<div id="slider">
+						<p v-for="color in colors">
+							<div class="{{color}}"></div>
+						</p>
+						<ul>
+						<li>
+							<li>
+								<img src="{{slide}}" alt="">								
+							</li>
+						</li>	
+							
+
+							<a href="#" class="prev">
+								<button class="btn"><<</button>
+							</a>
+							<a href="#" class="next" @click='next'>
+								<button class="btn">>></button>
+							</a>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+
+<script src="https://unpkg.com/vue@next"></script>
+<script src="js/lesson.js"></script>
+</body>
+</html>

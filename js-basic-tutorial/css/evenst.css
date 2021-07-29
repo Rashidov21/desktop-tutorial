@@ -1,0 +1,15 @@
+.block{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+}
+.animation{
+	animation: toRed 2s infinite;
+}
+@keyframes toRed{
+	from{
+		background-color: pink;
+	}to{
+		background-color: red;
+	}
+}

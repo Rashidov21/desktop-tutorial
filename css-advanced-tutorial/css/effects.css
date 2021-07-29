@@ -4,36 +4,7 @@
 	box-sizing: border-box;
 }
 body {
-  background-color: lightgreen;
+  background: rgb(246,0,0);
+	background: linear-gradient(90deg, rgba(246,0,0,1) 0%, rgba(214,240,76,1) 100%, rgba(223,223,238,1) 100%);
 }
 
-/*@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}*/
-
-.container{
-	padding: 0 40px 0 40px;
-	display: flex;
-	flex-wrap: wrap;
-}
-.box{
-	width: 250px;
-	height: 250px;
-	margin:10px;
-	background-color: orange;
-}
-/*@media (max-width: 750px){
-	.box{
-		width: 450px;
-	height: 450px;
-	margin:10px;
-	background-color: red;
-	}
-}*/
-@media (min-width:512px){
-	body{
-		background-color:red;
-	}
-}

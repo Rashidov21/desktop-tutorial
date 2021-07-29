@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto'
+}
+section{
+	padding: 80px;
+	background-color: #989898;
+	color: white;
+
+}
+
+body{
+	transition: all 0.3s;
+}
+.done{
+	width: 100px;
+	height: 100px;
+	background-color:orangered;
+}
+.animate{
+	width: 100px;
+	height: 100px;
+	background-color:orange;
+	animation: rotate-scale-up-ver 2.65s linear both;
+}
+.box{
+	width: 400px;
+	height: 400px;
+	background-color:orange;
+	float: right;
+}
+.left-img{
+	position: fixed;
+	right:-600px;
+	transition: all 0.8s;
+}
+.activeImg{
+	position: fixed;
+	right:150px;
+	transition: all 0.8s;
+}
+@keyframes rotate-scale-up-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+            transform: scale(1) rotateY(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateY(180deg);
+            transform: scale(2) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(360deg);
+            transform: scale(1) rotateY(360deg);
+  }
+}

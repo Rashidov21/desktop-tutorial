@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ToDo - List</title>
+	<link rel="stylesheet" href="css/todo.css">
+
+</head>
+<body>
+	<div class="row padding" id="app">
+		<div class="col m12 l12">
+			<div class="card-panel" id="boxes">
+				<form action="" method="get">
+					<div class="row">
+						<div class="col s4">
+						<form action="" >
+							<div class="input-field col s12">
+							    <select name="changeTheme" onchange="change(this.value)" >
+							      <option value="">Select your theme</option>
+							      <option value="dark">Dark</option>
+							      <option value="light">Light</option>
+							    </select>
+							    <label>Materialize Select</label>
+							    <button onclick="removeTheme()" >Remove Thema</button>
+						  </div>		
+						</form>
+					 	  
+						</div>
+						<div class="col s4">
+							<h5>Balance $<span class="balance"></span></h5>
+							<h5>Total $<span class="total_balance"></span></h5>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="card-panel z-depth-3 padding">
+				
+			</div>
+			<div class="example">
+				<h3>Lorem, ipsum, dolor.</h3>
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="js/todo.js"></script>
+</body>
+</html>
