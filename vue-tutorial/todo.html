@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="css/todo.css">
+    <title>ToDo | Vue.js</title>
+</head>
+<body>
+<div id="app">
+    <div class="container is-max-widescreen">
+        <div class="notes-section m-auto mt-5 p-5">
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <strong>Notes</strong>
+                    <div v-for="note in notes" class="notes">
+                        {{ note }}
+                    </div>
+                </div>
+                <div class="column has-text-centered">
+                    <strong>Timestamp</strong>
+                    <div v-for="timestamp in timestamps" class="notes">
+                        {{ timestamp }}
+                    </div>
+                </div>
+            </div>
+            <div class="columns ">
+                <div class="column is-half m-auto">
+                    <input-component @add-note="addNote" :placeholder="placeholder">></input-component>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script  src="js/vue.js"></script>
+<script  src="js/todo.js"></script>
+</body>
+</html>

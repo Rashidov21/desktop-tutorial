@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.2s;
+}
+nav{
+    width: 100%;
+    min-height: 80px;
+    background-color: darkgoldenrod;
+}
+ul.navbar{
+    list-style: none;
+    float: right;
+    margin-right: 100px;
+}
+li.navbar-item{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+li.navbar-item:hover{
+    opacity: 0.7;
+}
+li.navbar-item a{
+    font-size: 22px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:bold;
+    text-shadow: chartreuse;
+}
+.mobile-btn{
+    font-size: 28px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:bold;
+    text-shadow: chartreuse;
+    margin: 30px 30px;
+    float: right;
+    display: none;
+}
+.mobile-menu{
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    background-color: darkorange;
+    z-index: 2;
+    padding: 25px 25px;
+    transition: all 0.2s;
+
+}
+.close{
+    position: absolute;
+    left:-330px;
+    transition: all 0.5s;
+}
+.open{
+    position: absolute;
+    left:0px;
+    transition: all 0.5s;
+}
+ul.mobile-navbar{
+    list-style: none;
+}
+li.mobile-navbar-item{
+    margin-top: 20px;
+    border-bottom: 0.5px solid red;
+}
+li.mobile-navbar-item a{
+    font-size: 22px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:bold;
+    text-shadow: orangered;
+
+}
+li.mobile-navbar-item-close{
+    position: absolute;
+    top: 20px;
+    right:30px ;
+    padding-bottom: 100px;
+}
+li.mobile-navbar-item-close a{
+
+    font-size: 32px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:bold;
+    text-shadow: chartreuse;
+   }
+@media (max-width: 912px){
+    ul.navbar{
+        display:none;
+    }
+    .mobile-btn{
+        display:block;
+    }
+}
+/*@media (min-width: 912px){*/
+/*    ul{*/
+/*        display:none;*/
+/*    }*/
+/*}*/

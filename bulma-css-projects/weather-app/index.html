@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Weather App | bulma.css</title>
+</head>
+
+<body>
+<div class="container" id="app">
+    <div class="card mt-5">
+        <header class="card-header">
+            <p class="card-header-title">
+                Please write your city name...
+            </p>
+            <button class="card-header-icon" aria-label="more options">
+              <span class="icon">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+        </header>
+        <div class="card-content">
+            <div class="mt-5">
+                <input class="input is-warning" v-model="query" type="text" placeholder="City name">
+                <button class="button is-link mt-5" v-on:click="getData">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="notification is-info" v-if="city" id="info">
+        <button class="delete is-large"
+        onclick="document.getElementById('info').style.display='none'"></button>
+        <h4 class="title is-2">{{city}}</h4>
+        <span class="tag is-link is-light title is-4">{{temp}}	&#8451;</span>
+        <img :src="icon" alt="">
+    </div>
+
+
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -13,19 +13,66 @@
 	<title>Vue.Js | tutorial</title>
 </head>
 <body>
-	<section>
+<div id="waterTracker">
+	<nav>
+		<div class="nav-wrapper">
+			<ul class="navbar">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Other Pages</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-	<div id="app">
-		<img class="left-img" :class="{activeImg:moveImg}" :src="slide" width="500" alt="">
+
+<section>
+	<div class="litres">
+		<p><span>5l</span></p>
 		<br>
-		<a href="#"  class="btn">Go</a>
-		<div class="box" @mouseover="startAnimate"></div>
+		<p><span>4l</span></p>
+		<br>
+		<p><span>3l</span></p>
+		<br>
+		<p><span>2l</span></p>
+		<br>
+		<p><span>1l</span></p>
 	</div>
+	<div class="bottle">
 
-	</section>
+		<svg v-bind:style="{ height: water+ 'px' }" xmlns="http://www.w3.org/2000/svg"
+			 viewBox="0 0 1440 320"><path fill="#0099ff"
+				 fill-opacity="1" d="M0,64L120,58.7C240,53,480,43,720,53.3C960,64,1200,96,1320,112L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
 
-
-	<script src="js/vue.js"></script>
-	<script src="js/app.js"></script>
+		</path></svg>
+	</div>
+	<div class="inputs">
+		<h5>Kilogramm = {{user_kg}} kg</h5>
+		<p>
+			0kg <input type="range" id="kg" v-model="user_kg"> 100kg
+		</p>
+	</div>
+</section>
+<section class="" id="my-comnponents">
+	<div class="center">
+		<h2>{{title}}</h2>
+	</div>
+	<main class="container">
+		<div id="date-picker" class="demo">
+			<date-picker @change="showChange"></date-picker>
+		</div>
+	</main>
+</section>
+</div>
+	<script  src="js/vue.js"></script>
+	<script  src="js/app.js"></script>
 </body>
 </html>

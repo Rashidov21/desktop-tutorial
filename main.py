@@ -1,8 +1,23 @@
+import requests
+import json
+url = "https://www.omdbapi.com/"
+
+# params = {"i":"tt4154796"}
+apikey = 'd957b255'
+query = 'i=tt6334354'
+
+
+response = requests.get(f"{url}?{query}&apikey={apikey}")
+data = json.loads(response.text)
+title = data['Title']
+pk = data['imdbID']
+print(title,pk)
+
 # *args = ()
 # **kwargs = {}
-def main(a,b,c):
-    print(a * b / c)
-main(10,30,20)
+# def main(a,b,c):
+#     print(a * b / c)
+# main(10,30,20)
 
 # def main(**kwargs):
 #     print(type(kwargs))

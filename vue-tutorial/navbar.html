@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Vue.Js | Navbar</title>
+</head>
+<body>
+<header id="navbar">
+    <nav>
+        <ul class="navbar">
+            <li class="navbar-item"><a href="#">Home</a></li>
+            <li class="navbar-item"><a href="#">About</a></li>
+            <li class="navbar-item"><a href="#">Blog</a></li>
+            <li class="navbar-item"><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" v-on:click="open" class="mobile-btn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+    <div class="mobile-menu" v-bind:class="{open:openStatus, close:!openStatus}">
+        <ul class="mobile-navbar">
+            <li class="mobile-navbar-item-close"><a href="#" v-on:click="close"><i class="fas fa-times"></i></a></li>
+            <li class="mobile-navbar-item"><a href="#"><i class="fas fa-home"></i> Home </a></li>
+            <li class="mobile-navbar-item"><a href="#"><i class="fas fa-star"></i> About</a></li>
+            <li class="mobile-navbar-item"><a href="#"><i class="fas fa-book"></i> Blog</a></li>
+            <li class="mobile-navbar-item"><a href="#"><i class="fas fa-phone"></i> Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<script  src="js/vue.js"></script>
+<script  src="js/navbar-animation-vue.js"></script>
+</body>
+</html>

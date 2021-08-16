@@ -1,4 +1,8 @@
-*{
-	padding: 0;
-	margin: 0;
+:root{
+	--kok:#003f5c;
+	--pushti:#ef5675;
+
+}
+.transition{
+	transition: all 0.2s;
 }

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="main.css">
+    <title>UpVote</title>
+</head>
+<body>
+<div id="app">
+    <br><br>
+    <h2 class="title has-text-centered dividing-header">UpVote!
+        <i class="fas fa-smile"></i>
+    </h2>
+    <br><br>
+    <div class="container">
+        <article class="media"
+                 v-bind:class="{'blue-border': sub.votes >= 20,'has-background-warning-light has-text-warning': sub.votes >= 30}"
+                 v-for="sub in sortSubmissions"
+                 v-bind:key="sub.id">
+            <figure class="media-left">
+                <p class="image is-64x64">
+                    <img v-bind:src="sub.submissionImage">
+                </p>
+            </figure>
+            <div class="media-content">
+                <div class="content">
+                    <p>
+                        <strong>{{sub.title}}</strong> <small>@{{sub.title}}</small>
+                        <br>
+                        {{sub.description}}
+                    </p>
+                </div>
+                <nav class="level is-mobile">
+                    <div class="level-left">
+                        <a class="level-item" v-on:click="upVote(sub.id)">
+                            {{sub.votes}}
+                            <i class="fas fa-thumbs-up"></i>
+                        </a>
+                        <a class="level-item">
+                            <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+                        </a>
+                        <a class="level-item">
+                            <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="media-right">
+                <button class="delete"></button>
+            </div>
+        </article>
+    </div>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="script.js"></script>
+<script src="seed.js"></script>
+</body>
+</html>
