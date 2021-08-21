@@ -45,5 +45,68 @@ arr = [1,5,6,9,87,2,3]
 # a = 10 >> int
 # b = 'str' >> str
 
-# int number = 12
-# let number = 10
+arr = [1,5,6,9,87,2,3]
+# while shart:
+    # shart agara true bajaralidgan ishlar
+# i = 1
+# while i < 101:# toxtovsiz ishledi agar shart True bo'lsa
+#     print(i)
+#     i += 1
+# while True: # Toxtovsiz sikl
+#     print('Stop')
+# x = True
+# while x:
+#     user = int(input('sonni kiriting...\n'))
+#     if user == 5:#agar 5 ni kiritsa sikl toxtedi
+#         x = False
+#     print('Stop')
+
+
+# x = True
+# while x:
+#     password = input('parolni kiritng \n >> \a ')
+#     if password != '':
+#         if password == 'gandi123':
+#             print('Parol tori!')
+#             break
+#         else:
+#             print('Parol notori')
+#     else:
+#         print('Iltimos yozing..')
+# for i in range(11):
+#     if i % 2 == 0: # shart true qaytarsa keyingi siklga otiladi, shu sikl bajarilmedi
+#         continue
+#     else:
+#         print(i)
+# for i in range(11):
+#     if i == 6:
+#         break #shart bajarilsa break siklni toxtatadi
+#     else:
+#         print(i)
+# summ = 0
+# while True:
+#     num = input('Son>>')
+#     if num == 'stop':
+#         break
+#     else:
+#         num = int(num)
+#         summ += num
+# print(summ)
+
+# juftson = 0
+# while True:
+#     n = input()
+#     if n == 'stop':
+#         break
+#     else:
+#         n = int(n)
+#         if n % 2 == 0:
+#             juftson += n
+# print(juftson)
+# user = input()
+# if type(user) == str:
+#     print('OK')
+# user = int(input())
+# if type(user) == int:
+#     print('OK')
+
