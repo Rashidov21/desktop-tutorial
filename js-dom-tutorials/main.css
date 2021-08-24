@@ -1,0 +1,15 @@
+.block{
+    width: 200px;
+    height: 200px;
+    background: aqua;
+    border: indianred solid 2px;
+    transition: all 0.3s;
+}
+
+.box{
+    width: 300px;
+    height: 200px;
+    background: mediumvioletred;
+    border: indianred solid 2px;
+    transition: all 0.3s;
+}

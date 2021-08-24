@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <!-- Compiled and minified JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>DOM - Lessons</title>
+</head>
+<body>
+<section class="teal lighten-3">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12">
+                <ul class="collection">
+                    <li class="collection-item">Alvin 1</li>
+                    <li class="collection-item">Alvin 2 </li>
+                    <li class="collection-item">Alvin 3 </li>
+                    <li class="collection-item">Alvin 4</li>
+                </ul>
+                <a href="#" onclick="chg()" class="btn">
+                    Random colors
+                </a>
+<!--                <button class="btn orange" onclick="blockClassName()">block</button>-->
+<!--                <button class="btn orange" onclick="boxClassName()">box</button>-->
+                <div class="box">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br>
+<section>
+    <div class="row">
+        <form action="#" class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="fas fa-user prefix"></i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="fas fa-phone prefix"></i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Telephone</label>
+                </div>
+            </div>
+            <input type="submit" onclick="getValue()" value="Submit" class="btn">
+        </form>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
