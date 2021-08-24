@@ -10,8 +10,10 @@ keyboard.add(nott, bad, yes)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-	bot.reply_to(message, "Howdy, how are you doing?")
+	bot.send_message(message.id,"Aloha",reply_markup=keyboard)
 
-
+@bot.message_handler(func=lambda m: True)
+def echo_all(message):
+	bot.reply_to(message, message.text)
 
 bot.polling()
