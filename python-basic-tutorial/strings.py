@@ -106,3 +106,62 @@
 # print(shifr)
 # print(chr(1050)) # belgi kodi >> K
 # print(ord("a")) # kodi >> 97
+
+
+""""" Tasks """
+# 1 task
+# letters = j,z,f
+# minimum words > 10
+# output: letters in user words >> j=x , z=x,f=x
+
+# 2 task
+# input :2 user words >> olma , ona
+# output: letters = 'oa'
+# w1 = input() # alla
+# w2 = input() # dada
+# res = ""
+# for i in w1:
+#     for k in w2:
+#         if i == k:
+#             res += k
+# print(res)
+
+# 3 task
+
+#input: banana >> len() = 6
+#output : nabana
+# word = input()
+# last_two_letters = word[-2:] # na
+# output_word = ""
+# for i in range(len(word)-2):
+#     output_word += word[i]
+# print(f"{last_two_letters}{output_word}")
+
+# 4 task
+#input: two numbers of user : 5,9
+# output: 5,6,7,8,9
+
+# 5 task
+# Bankomatlar 4 yoki 6 ta raqamli PIN-kodlarni qabul qiladi va PIN-kodlarda to'liq 4 yoki'
+# to'liq 6 ta raqamdan boshqa narsa bo'lishi mumkin emas. Agar funktsiyaga to'g'ri PIN-kod
+# berilgan bo'lsa, true qiymatini qaytaring, aks holda false qiymatini qaytaring.
+
+# task 6
+task = """
+Tohir har kuni muntazam 7 soatdan uxlashni reja qilgan. Siz uning uchun u soat nechida
+uxlashga yotsa roppa rosa 7 soatdan keyin soat nechi bo’lishini hisoblaydigan dastur
+yozishingiz kerak. Agar Tohir soat 22:00 da uhlashga yotsa demak uyg’onganida soat
+05:00 bo’lishini ko’rsatishingiz kerak.
+Kirish : ‘22:00’
+Chiqish : ‘05:00’
+"""
+
+# 6-misol
+# vaqt = input('uyqu vaqti:')
+# b =int(vaqt[0:2])*60+int(vaqt[3:5])+420
+# c = int(b/60)
+# if c>24:
+#     c -= 24
+#     print(c,':',b%60)
+# else:
+#     print(c,':',b%60)
