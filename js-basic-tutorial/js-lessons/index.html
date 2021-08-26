@@ -13,16 +13,19 @@
 	<title>Js | Lesson</title>
 </head>
 <body>
-	<section>
-		<h2>AJAX REQUEST</h2>
-		<input type="text" id="name"><br><br>
-		<input type="text" id="surname">
-		<br><br>
-		<button id="add" class="btn">Create</button>
-		<button id="update" class="btn">Update</button>
-		<button id="delete" class="btn">Delete</button>
+	<section id="modal">
+		<button id="close" onclick="document.getElementById('modal').style='display:none;'" class="btn">X</button>
 	</section>
+<!--	<img src="./img/man.png" id="img" alt="">-->
 
+	<button id="show" onclick="Show()" class="btn">Show modal</button>
+	<section id="section">
+
+
+	</section>
+	<a href="#" onclick="changeClassName()" class="btn">
+		Change Class Name
+	</a>
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
 	<!-- TODO: Add SDKs for Firebase products that you want to use
