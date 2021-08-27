@@ -71,3 +71,15 @@ a.nav-link{
 #menu-close{
     display: none;
 }
+.slider{
+    display: flex;
+    flex-wrap: wrap;
+}
+.slide{
+    display: inline-block;
+    margin: auto;
+    transition: all 0.3s;
+}
+body{
+    transition: all 0.3s;
+}
