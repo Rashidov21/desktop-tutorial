@@ -147,14 +147,14 @@
 # berilgan bo'lsa, true qiymatini qaytaring, aks holda false qiymatini qaytaring.
 
 # task 6
-task = """
-Tohir har kuni muntazam 7 soatdan uxlashni reja qilgan. Siz uning uchun u soat nechida
-uxlashga yotsa roppa rosa 7 soatdan keyin soat nechi bo’lishini hisoblaydigan dastur
-yozishingiz kerak. Agar Tohir soat 22:00 da uhlashga yotsa demak uyg’onganida soat
-05:00 bo’lishini ko’rsatishingiz kerak.
-Kirish : ‘22:00’
-Chiqish : ‘05:00’
-"""
+# task = """
+# Tohir har kuni muntazam 7 soatdan uxlashni reja qilgan. Siz uning uchun u soat nechida
+# uxlashga yotsa roppa rosa 7 soatdan keyin soat nechi bo’lishini hisoblaydigan dastur
+# yozishingiz kerak. Agar Tohir soat 22:00 da uhlashga yotsa demak uyg’onganida soat
+# 05:00 bo’lishini ko’rsatishingiz kerak.
+# Kirish : ‘22:00’
+# Chiqish : ‘05:00’
+# """
 
 # 6-misol
 # vaqt = input('uyqu vaqti:')
