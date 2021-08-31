@@ -71,13 +71,8 @@ arr = [1,2,3,4,5,6,7,8,9,10,11]
 # task 5
 letters = ['1','2','3','4','5', "q","w","e","r","t","y", "@","#","_","&","$"]
 # # user password length = 8
-# # output: '2#6$_q6r'
-# user = int(input('Passowrd Length >>'))
-# password  = []
-# for i in range(user):
-#     password.append(random.choice(letters))
-# res = "".join(password)
-# print(res)
+# # output: str = '2#6$_q6r'
+
 # task 6
 # input: int numbers >> 2,3
 # output: 8 cube

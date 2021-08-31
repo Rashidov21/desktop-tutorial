@@ -53,3 +53,15 @@ function AutoSlider(){
 window.onload = () =>{
     setInterval(AutoSlider,2000) // 1-param function 2-param interval milliseconds
 }
+
+function SlideItems(){
+    let items = document.getElementsByClassName('carousel-item');
+    let index = 0;
+    items[index].className = 'carousel-item active';
+    index++;
+    console.log(index)
+
+}
+window.onload = () =>{
+   setInterval( SlideItems, 2000)
+}

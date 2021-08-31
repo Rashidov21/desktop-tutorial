@@ -1,0 +1,75 @@
+ /* * belgisi hamma css selector laga tasir otqazadi*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Arial Black";
+}
+
+header{
+	width: 100%;
+	height: 60px;
+	background-color: orange;
+}
+ul{
+	list-style: none;
+	padding: 20px;
+}
+li{
+	display: inline-block;
+	margin-left: 50px;
+}
+li > a{
+	text-decoration: none;
+	letter-spacing: 1.5px;
+}
+.mobile{
+	width: 200px;
+	height: 200px;
+	display: none;
+	background-color: darkblue;
+}
+.desktop{
+	width: 400px;
+	height: 400px;
+	display: none; /*block korinmedi*/
+	background-color: lightblue;
+}
+.box{
+	width: 100%;
+	height: 400px;
+	background-color: khaki;
+}
+@media(max-width: 500px){
+	.mobile{
+		display: block;
+	}
+}
+@media(max-width: 1024px){
+	.desktop{
+		display: block;
+	}
+}
+.menu{
+	display: none;
+}
+/*
+Desktop >= 1200
+Laptop >= 1024
+Tablet >=992 ~ 768
+Mobile >= 512 , 350
+*/
+
+
+@media(max-width: 768px){
+	.box{
+		width: 50%;
+		height: 400px;
+		background-color: darkred;
+	}
+	.menu{
+		display: block;
+	}
+	.page{
+		display: none;
+	}
+}

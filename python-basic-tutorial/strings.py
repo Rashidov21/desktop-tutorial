@@ -130,12 +130,7 @@
 
 #input: banana >> len() = 6
 #output : nabana
-# word = input()
-# last_two_letters = word[-2:] # na
-# output_word = ""
-# for i in range(len(word)-2):
-#     output_word += word[i]
-# print(f"{last_two_letters}{output_word}")
+
 
 # 4 task
 #input: two numbers of user : 5,9
