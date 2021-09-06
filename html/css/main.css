@@ -73,3 +73,18 @@ Mobile >= 512 , 350
 		display: none;
 	}
 }
+section{
+	width: 100%;
+	min-height: 300px;
+	background-color: darkorange;
+	padding: 20px;
+	display: flex;
+	/*flex-direction: row; /*row*/*/
+	/*flex-wrap: wrap;*/
+}
+.square{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	margin: 10px 10px;
+}
