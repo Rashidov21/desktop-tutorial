@@ -1,7 +1,7 @@
 import requests
 import json
 url = "https://www.omdbapi.com/"
-# 
+#
 # params = {"i":"tt4154796"}
 apikey = 'd957b255'
 query = 'i=tt6334354'
