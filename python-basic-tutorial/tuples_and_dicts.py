@@ -69,7 +69,7 @@
 
 # task 2
 # input: t = tuple("uzbekistan")
-# output: t = "natsikebzu" 
+# output: t = "natsikebzu"
 # t = tuple("uzbekistan")
 # l = "".join(reversed(list(t)))
 # print(l)

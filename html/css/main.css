@@ -76,15 +76,87 @@ Mobile >= 512 , 350
 section{
 	width: 100%;
 	min-height: 300px;
-	background-color: darkorange;
+	background-color: black;
 	padding: 20px;
 	display: flex;
-	/*flex-direction: row; /*row*/*/
-	/*flex-wrap: wrap;*/
+	/*flex-direction: row; /*row*/
+	flex-wrap: wrap;
+	justify-content:center; /*flex-start, flex-end*/
+	align-items: center; 
+	/*align-content: space-around;*/
 }
 .square{
 	width: 100px;
 	height: 100px;
 	background-color: red;
 	margin: 10px 10px;
+}
+main{
+	width: 500px;
+	height: 500px;
+	background-color: lightblue;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; 
+	align-items: center;
+	align-content: stretch;
+
+}
+.block{
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	opacity: 1; 
+}
+.block:hover{
+	opacity: 0.5; 
+}
+button{
+	padding: 10px;
+	border-radius: 15px;
+	color: orange;
+	background-color: darkblue;
+	margin:50px 50px;
+	border: none;
+	outline: none;
+}
+button:hover{
+	opacity: 0.5; 
+	padding: 15px;
+}
+input:focus{
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+}
+input{
+	border: 0.5px solid red;
+	border-radius: 10px;
+	outline: none;
+}
+a:link{
+	color: red;
+}
+a:visited{
+	color: green;
+}
+h3:first-letter{
+	color: red;
+	font-size: 56px;
+}
+h3:first-line{
+	color: red;
+	font-size: 56px;
+	letter-spacing: 10px;
+	word-spacing: 30px;
+}
+h3{
+	line-height: 75px;
+}
+.box{
+	width: 200px;
+	height: 200px;
+	background-color: khaki;
+	float: left;
 }

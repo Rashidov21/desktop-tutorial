@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="main.css">
+    <title>Food Api JS</title>
+</head>
+<body>
+<div class="container">
+    <div class="meal-wrapper">
+        <div class="meal-search">
+            <h2 class="title">Ovqatni qidiramiz !</h2>
+            <blockquote>Haqiqiy ovqat qo'shimchalarda emas , haqiqiy ovqat bu qo'shimchalarni o'zi <br>
+                <cite>Abdurahmon Rashidov</cite></blockquote>
+            <big><b>Mahsulot nomini yozing, retseptlarni qidirib ko'raman!</b></big><br>
+            <div class = "meal-search-box">
+
+                <input type = "text" class = "search-control" placeholder="Mahsulot nomini kiriting!" id = "search-input">
+                <button type = "submit" class = "search-btn btn" id = "search-btn">
+                    <i class = "fas fa-search"></i>
+                </button>
+            </div>
+            <div class = "meal-result">
+                <h2 class = "title">Sizning qidiruv natijalaringiz:</h2>
+                <div id= "meal">
+                    <!-- meal item -->
+<!--                    <div class = "meal-item">-->
+<!--                      <div class = "meal-img">-->
+<!--                        <img src = "food.jpg" alt = "food">-->
+<!--                      </div>-->
+<!--                      <div class = "meal-name">-->
+<!--                        <h3>Potato Chips</h3>-->
+<!--                        <a href = "#" class = "recipe-btn">Get Recipe</a>-->
+<!--                      </div>-->
+<!--                    </div>-->
+                    <!-- end of meal item -->
+
+
+                </div>
+            </div>
+            <div class = "meal-details">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+                    <i class = "fas fa-times"></i>
+                </button>
+
+                <!-- meal content -->
+                <div class = "meal-details-content">
+                     <h2 class = "recipe-title">Meals Name Here</h2>
+                    <p class = "recipe-category">Category Name</p>
+                    <div class = "recipe-instruct">
+                      <h3>Instructions:</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+                    </div>
+                    <div class = "recipe-meal-img">
+                      <img src = "food.jpg" alt = "">
+                    </div>
+                    <div class = "recipe-link">
+                      <a href = "#" target = "_blank">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class = "meal-result">
+                    <h2 class = "title">Tasodifiy taom retseptlari</h2>
+                    <div id= "meal">
+                        <div class = "meal-item">
+                          <div class = "meal-img">
+                            <img src = "food.jpg" alt = "food">
+                          </div>
+                          <div class = "meal-name">
+                            <h3>Potato Chips</h3>
+                            <a href = "#" class = "recipe-btn">Get Recipe</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
