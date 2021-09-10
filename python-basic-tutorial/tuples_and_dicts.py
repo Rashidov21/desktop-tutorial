@@ -113,14 +113,14 @@
 
 # newuser = user.copy() # user dict ni nusxasi
 # print(newuser)
-import pprint
-pp = pprint.PrettyPrinter()
-brands = {
-    'phones':"Xiaomi",
-    'laptops':"Apple",
-    'gadgets':"Huawei"
-}
-print(pp.pprint(brands))
+# import pprint
+# pp = pprint.PrettyPrinter()
+# brands = {
+#     'phones':"Xiaomi",
+#     'laptops':"Apple",
+#     'gadgets':"Huawei"
+# }
+# print(pp.pprint(brands))
 # brands.update({"smartwatches":"Samsung"}) # dict qabul qilib siz korsatgan dictni yangiledi
 # print(brands) #{'phones': 'Xiaomi', 'laptops': 'Apple', 'gadgets': 'Huawei', 'smartwatches': 'Samsung'}
 # brands['phones'] = 'Nokia' # key boyicha valueni yagilash

@@ -7,7 +7,7 @@ timeit moduli
 
 """
 # Modullarni ozimizni dasturimizga yuklymiz
-import time
+# import time
 # print(time.time()) 1970 1-yanvardan buyon xozirgi vaqtga qadar necha sekund otgani
 # days = ["dushanba","seshanba","chorshanba","payshanba","juma","shanba","yakshanba"]
 # months = ["","yanvar","fevral","mart","aprel","may","iyun","iyul","avgust","sentabr",
@@ -49,3 +49,8 @@ import time
 # for i in range(11):
 #     time.sleep(1) # 1 sekundga scriptni toxtatish
 #     print(i)
+
+x = 10 and 1 # 10
+print(x)
+x = 10 or 0 # 10
+print(x)
