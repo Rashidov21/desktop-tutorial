@@ -108,8 +108,106 @@
 // console.log(x)
 // let z = 1 && 0 && 1 // berilgan qiymatlardan false ni oladi
 // console.log(z)
-let x = 10;
-let y = 2;
-if(x > y){
-    console.log(true)
-}
+// let x = 10;
+// let y = 2;
+// if(x > y){
+//     console.log(true)
+// }
+// let x = 10;
+// let y = 2;
+// if(x > y){
+//     console.log(true)
+// }
+
+// LOOPS
+
+// while loop
+
+// let i = 0;
+// while (i < 10){ // while loop >> toxtovsiz sikl : takrorlanish
+//     console.log(i)
+//     i += 1;
+// }
+// while(true){
+//     console.log("While ")
+// }
+// let i = 10;
+// do{
+//     console.log(i)
+//     i -= 1;
+// }while(i > 0) // while doim true shart bilan ishga tushadi
+
+// for(let i = 0; i < 10; i++){
+//     console.log(i)
+// }
+
+// for(let i = 10; i > 0; i--){
+//     console.log(i)
+// }
+
+// strings >> "abcdef"
+
+let str = "javascript";
+// console.log(str[0]) // 0 dasturlashda 1
+let name = "Abdullah";
+// console.log(name[0],name[1],name[2],name[3]) //a b d u
+// console.log(name.slice(0,4))
+// console.log(name.length) // 8
+// for(let i = 0; i < 8; i++){
+//     console.log(`name: index=${i} element=${name[i]}`)
+// }
+// for(let k = 0; k < 3;k++){
+//     let user = prompt("Write..")
+//     console.log(user)
+// }
+// task 1
+// input: user matn kiritadi
+// output: matndagi belgilar sonini yigindisini toping
+// let user = prompt();
+// let s = 0;
+// for(let i = 0; i < user.length++; i++){
+//     s += i
+//     console.log(s)
+// }
+// console.log(s)
+// task 2
+// input: user text kiritadi
+// output : text da nechta a harfi borligini toping
+// let user = prompt();
+// let count = 0;
+// for(let i = 0; i<user.length; i++){
+//     if(user[i] === 'a'){
+//         count += 1;
+//     }
+// }
+// console.log(count);
+// for(1-parametr=ozgaruvchi va uni qiymati ;
+//     2-parametr shart, shart doim true ;
+//     harakat, action bu kopincha increment ++)
+// {
+//     har bir takrorlanish paytida nima bolishi kerak ?
+//         shu kodla yoziladi
+// }
+
+// for(variable,condition,action){
+//     iteration body
+// }
+// for(let x = 0; x < 10; x++)
+// {
+//     console.log(x)
+// }
+// i , j , k , x i = iteration
+
+// task 3
+// input: user number > 0
+// output: siz 0 dan shu songacha bolgan sonlar ichidan
+// juftlarini console ga chiqaring
+// masalan: 5 >> 0,2,4
+
+// let user = prompt();
+// user = parseInt(user)
+// for(let i = 0; i<user; i++){
+//     if(i % 2 === 0){
+//         console.log(i)
+//     }
+// }
