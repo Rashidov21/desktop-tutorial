@@ -49,8 +49,80 @@ timeit moduli
 # for i in range(11):
 #     time.sleep(1) # 1 sekundga scriptni toxtatish
 #     print(i)
+################################################################
+# datetime
+import datetime
+# 1. timedelta
+# td = datetime.timedelta([days],[seconds],[microseconds],[milliseconds],[minutes],[hours], [week])
+# td = datetime.timedelta(weeks=1) #7 days, 0:00:00
+# td = datetime.timedelta(days=1) #1 days, 0:00:00
+# td = datetime.timedelta(hours=1) # 1:00:00
+# td = datetime.timedelta(weeks=2,days=10,hours=5)
+# td2 = datetime.timedelta(weeks=1,days=5, hours=2)
+# print(td - td2) # Matematik ammallarni barjasi ishledi : +,-,*,/,%,**
 
-x = 10 and 1 # 10
-print(x)
-x = 10 or 0 # 10
-print(x)
+# 2. date
+# t = datetime.date(2021,9,11)
+# # print(t) #2021-09-11
+# today = datetime.date.today()
+# year = today.year
+# month = today.month
+# day = today.day
+# # print(today)#2021-09-11
+# print(today, year, month, day)
+
+# 3. calendar
+# import calendar
+# c = calendar.Calendar(0)
+# c = calendar.TextCalendar(0)
+# print(c.formatyear(2021)) # 2021 text kalendar
+# c = calendar.LocaleTextCalendar(0, "Uzbek_Uzbekistan.1251")
+# print(c.formatyear(2021))
+# c = calendar.HTMLCalendar(0)
+# print(c.formatmonth(2021,9)) # html september calendar
+
+
+# 4. timeit
+# from timeit import Timer
+#
+# code1 = """\
+# i, j = 1, 0
+# while i < 10001:
+#     j += 1
+#     i += 1
+#     """
+# t1 = Timer(stmt=code1)
+# print("while:", t1.timeit(number=1000))
+# code2 = """\
+# j = 0
+# for i in range(1,10001):
+#     j += 1
+# """
+# t2 = Timer(stmt=code2)
+# print("for:", t2.timeit(number=1000))
+# code3 = """\
+# j = sum(range(1,10001))
+# """
+# t3 = Timer(stmt=code3)
+# print("sum:", t3.timeit(number=1000))
+
+# task 1
+# l = list(range(1,10**5))
+# r = []
+# for i in l:
+#     if i % 2 == 0:
+#         r.append(i)
+
+# task 2
+# input: nums = range(0,11)
+# output:
+# [1,2,3,4,5,6,7,8,9]
+# {"a":1...,"h":9}
+# {1,2,3,4,5,6,7,8,9}
+# (1,2,3,4,5,6,7,8,9)
+
+# task 3
+# input:10,30
+# output : oktabr , 30 kun, seshanba
+
+

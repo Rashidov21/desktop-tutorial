@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Oxygen:300,400,700");
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+    position: relative;
+    font-family: "Oxygen", sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.app {
+    margin-top: 100px;
+    position: absolute;
+    width: 480px;
+    height: 700px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 25px -5px rgba(19, 17, 18, 0.35);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.app__header {
+    background: #369ac9;
+    padding: 25px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app__title {
+    text-transform: uppercase;
+    text-align: center;
+    color: #131112;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+    position: absolute;
+    width: 100%;
+    top: -50px;
+    left: 0;
+}
+
+.app__info {
+    background: #FFFDFD;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(19, 17, 18, 0.35);
+    display: flex;
+}
+.app__info > div {
+    flex: 1 250px;
+    text-align: center;
+    padding: 20px;
+    height: 120px;
+}
+.app__info p {
+    margin: 0;
+}
+
+.date {
+    background: linear-gradient(-155deg, #5883d3 0%, #3953a8 100%);
+    height: 100%;
+    color: white;
+    border-radius: 5px 0 0 5px;
+}
+
+.date__num {
+    font-size: 45px;
+}
+
+.date__month {
+    font-size: 20px;
+}
+
+.display__title {
+    text-transform: uppercase;
+    color: #7C7C7C;
+}
+
+.display__total {
+    color: #0ad1b9;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.display__total--exp {
+    color: #dd1839;
+}
+.display__total small {
+    display: block;
+    background: rgba(221, 24, 57, 0.5);
+    font-size: 12px;
+    padding: 5px;
+    color: #FFFDFD;
+}
+
+.app__form {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 25px;
+    position: relative;
+}
+.app__form:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #369ac9;
+    z-index: -1;
+    top: -15px;
+    left: 0;
+}
+.app__form input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    box-shadow: inset 0 2px 5px rgba(19, 17, 18, 0.35);
+    border-radius: 5px;
+    flex: 1 150px;
+    margin-bottom: 10px;
+}
+.app__form input:first-child {
+    margin-right: 10px;
+}
+.app__form input:focus {
+    outline: none;
+}
+.app__form button {
+    flex: 1 150px;
+    background: #0ad1b9;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: #FFFDFD;
+    letter-spacing: 2px;
+    box-shadow: 0 0 5px 0px rgba(19, 17, 18, 0.35);
+    transition: all 0.25s ease;
+}
+.app__form button:not(:last-child) {
+    margin-right: 10px;
+}
+.app__form button:last-child {
+    background: #dd1839;
+}
+.app__form button:hover {
+    box-shadow: 0 5px 10px -2px rgba(19, 17, 18, 0.35);
+}
+.app__form button:focus {
+    outline: none;
+}
+
+.app__items {
+    padding: 10px 0;
+}
+.app__items--inner {
+    overflow-x: scroll;
+    height: 415px;
+}
+
+.item {
+    padding: 25px;
+    border-bottom: 1px solid #7C7C7C;
+    position: relative;
+}
+.item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.item:first-child {
+    border-top: 1px solid #7C7C7C;
+}
+.item:nth-child(even) {
+    background: #FFFDFD;
+}
+.item:before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background: #0ad1b9;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.item--exp:before {
+    background: #dd1839;
+}
+.item:hover .item__action button {
+    opacity: 1;
+}
+.item:hover .item__value,
+.item:hover .item__percentage {
+    transform: translate(-25px);
+}
+
+.item__desc {
+    float: left;
+}
+
+.item__right {
+    float: right;
+    text-align: right;
+    width: 150px;
+}
+
+.item__value {
+    float: right;
+    transition: transform 0.35s ease;
+    color: #0ad1b9;
+}
+.item--exp .item__value {
+    color: #dd1839;
+}
+
+.item__action button {
+    transition: all 0.25s ease;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: 1;
+    opacity: 0;
+    position: absolute;
+    right: 25px;
+}
+.item__action button:hover {
+    color: #dd1839;
+}
+.item__action button:focus {
+    outline: none;
+}
+
+.item__percentage {
+    float: left;
+    margin-left: 20px;
+    transition: transform 0.3s;
+    font-size: 11px;
+    background-color: #FFDAD9;
+    padding: 3px;
+    border-radius: 3px;
+    width: 32px;
+    text-align: center;
+}

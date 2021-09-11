@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/budget.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="app" id="budgetApp">
+    <div class="app__header">
+        <h1 class="app__title">Budget App</h1>
+        <div class="app__info">
+            <div class="date">
+                <p class="date__num">9</p>
+                <p class="date__month">septmber</p>
+            </div>
+            <div class="display">
+                <p class="display__title">Balance</p>
+                <p class="display__total display__total--inc" id="balance">$0</p>
+            </div>
+            <div class="display">
+                <p class="display__title">Expense</p>
+                <p class="display__total display__total--exp">$0<small>0</small></p>
+            </div>
+        </div>
+    </div>
+    <div class="app__form">
+        <input type="number" placeholder="$0.00" id="inputValue"/>
+        <input type="text" placeholder="Description"/>
+        <button onclick="Add()">Add Income</button>
+        <button onclick="Remove()">Add Expense</button>
+    </div>
+    <div class="app__items">
+        <div class="app__items--inner">
+
+        </div>
+    </div>
+</div>
+<br>
+<template id="item">
+    <div class="item">
+        <div class="item__desc">coffe</div>
+        <div class="item__right">
+            <div class="item__value">5</div>
+            <div class="item__action">
+                <button class="item__delete"><i class="fa fa-times-circle"></i></button>
+            </div>
+        </div>
+    </div>
+</template>
+<script src="js/budget.js"></script>
+</body>
+</html>
