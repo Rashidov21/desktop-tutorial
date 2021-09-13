@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Food Order</title>
+</head>
+<body>
+<main>
+    <div class="row" id="order_info" style="display: block"></div>
+    <div class="row" id="main">
+        <h3 class="title">Order form</h3>
+        <form id="myform" class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="input-field col s12">
+                    <select id="foods">
+                        <option value="0" selected>Choose your food</option>
+                        <option value="1">Burger</option>
+                        <option value="2">Lavash</option>
+                        <option value="3">Pizza</option>
+                    </select>
+                    <label>Select your food</label>
+                </div>
+                <div class="input-field col s12" id="burger_list" style="display: none">
+                    <select id="burgers">
+                        <option value="" selected>Choose your Burgers</option>
+                        <option value="bief">Burger Bief </option>
+                        <option value="chicken">Burger Chicken</option>
+                        <option value="cheese">Burger Cheese</option>
+                    </select>
+                    <label>Burger list</label>
+                    <input type="number" id="burger_count" placeholder="Count">
+                </div>
+                <div class="input-field col s12" id="lavash_list" style="display: none">
+                    <select id="lavash">
+                        <option value="">Choose your Lavashes</option>
+                        <option value="1">Lavash 1</option>
+                        <option value="2">Lavash 2</option>
+                        <option value="3">Lavash 3</option>
+                    </select>
+                    <label>Lavash list</label>
+                </div>
+                <div class="input-field col s12" id="pizza_list" style="display: none">
+                    <select>
+                        <option value="">Choose your Pizza</option>
+                        <option value="1">Pizza 1</option>
+                        <option value="2">Pizza 2</option>
+                        <option value="3">Pizza 3</option>
+                    </select>
+                    <label>Pizza list</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    This is an inline input field:
+                    <div class="input-field inline">
+                        <input id="email_inline" type="email" class="validate">
+                        <label for="email_inline">Email</label>
+                        <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+<!--    <div class="row">-->
+<!--        <img src="https://random.imagecdn.app/500/500" alt="">-->
+<!--    </div>-->
+</main>
+<style>
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+
+    }
+    #main{
+        background-color: #f5f7f9;
+        padding: 30px;
+    }
+</style>
+<script src="js/order.js"></script>
+</body>
+</html>
