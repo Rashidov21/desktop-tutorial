@@ -105,3 +105,22 @@ let str = "Hello world";
 //         }
 //     }
 // }
+
+fetch("https://google-translate1.p.rapidapi.com/language/translate/v2", {
+    "method": "POST",
+    "headers": {
+        "content-type": "application/x-www-form-urlencoded",
+        "accept-encoding": "application/gzip",
+        "x-rapidapi-host": "google-translate1.p.rapidapi.com",
+        "x-rapidapi-key": "0202709d4emshbe87778ed9b4962p1f76cdjsn4a200e532763"
+    },
+    "body": {
+        "q": "Hello, world!",
+        "target": "es",
+        "source": "en"
+    }
+})
+    .then(response => response.json())
+    .catch(err => {
+        console.error(err);
+    });

@@ -4,18 +4,23 @@
 *:after {
     box-sizing: border-box;
 }
-
+.dark{
+    background-color: darkslategray;
+}
+.light{
+    background-color: #e5ebee;
+}
 html,
 body {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+    /*background: linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);*/
     position: relative;
     font-family: "Oxygen", sans-serif;
     font-size: 16px;
     margin: 0;
+    transition: all 0.3s;
 }
-
 .app {
     margin-top: 100px;
     position: absolute;
@@ -26,6 +31,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.theme{
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+h1 i{
+    color: orange;
 }
 
 .app__header {
@@ -47,6 +61,7 @@ body {
 }
 
 .app__info {
+    clear: both;
     background: #FFFDFD;
     border-radius: 5px;
     box-shadow: inset 0 2px 5px rgba(19, 17, 18, 0.35);
@@ -162,7 +177,9 @@ body {
     overflow-x: scroll;
     height: 415px;
 }
-
+.red{
+    background-color: indianred;
+}
 .item {
     padding: 25px;
     border-bottom: 1px solid #7C7C7C;
@@ -170,7 +187,7 @@ body {
 }
 .item:after {
     content: "";
-    display: table;
+    display: block;
     clear: both;
 }
 .item:first-child {
