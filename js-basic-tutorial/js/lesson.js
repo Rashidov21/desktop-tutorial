@@ -34,7 +34,7 @@
 //     //     har bir takorlanishda
 // //     qilinishi kerak bolgan ishlar
 // }
-let str = "Hello world";
+// let str = "Hello world";
 // console.log(str[i])
 // console.log(str[0])
 // console.log(str[1])
@@ -106,21 +106,52 @@ let str = "Hello world";
 //     }
 // }
 
-fetch("https://google-translate1.p.rapidapi.com/language/translate/v2", {
-    "method": "POST",
-    "headers": {
-        "content-type": "application/x-www-form-urlencoded",
-        "accept-encoding": "application/gzip",
-        "x-rapidapi-host": "google-translate1.p.rapidapi.com",
-        "x-rapidapi-key": "0202709d4emshbe87778ed9b4962p1f76cdjsn4a200e532763"
-    },
-    "body": {
-        "q": "Hello, world!",
-        "target": "es",
-        "source": "en"
+// let sum = 0;
+// for(let i = 1; i < 10;i++){
+//     sum += 1 / i;
+// }
+// console.log(sum)
+
+// Data Type
+// Data Structure >> tuzilishi , malumotlarizni qanday
+// usulda saqlanishiga aytiladi
+
+// object , array
+// let arr = new Array();
+// let fruits = ["Яблоко", "Апельсин", "Слива", true, 1,undefined, null];
+// console.log(fruits)
+// console.log(typeof fruits[1]) // string
+// console.log(typeof fruits[4]) // number
+// for(let i = 0; i < fruits.length; i++){
+//     console.log(fruits[i])
+// }
+let fruits = ["Яблоко", "Апельсин", "Слива"]
+// fruits.unshift("banana")// boshiga element qoshish
+// fruits.shift() // boshidan 1 ta element ochirish
+// fruits.push("Mango") // oxiriga element qoshish
+// fruits.pop() // oxiridan  1 ta element ochiradi
+
+// проходит по значениям
+// for (let x of fruits) {
+//     console.log( x );
+// }
+
+// let str = "Hello world"
+// for(let letter of str){
+//     console.log(letter.toUpperCase()) // barcha belgilar yuqori registrda
+//     console.log(letter.toLowerCase())// barcha belgilar pastki registrda
+// }
+// console.log(fruits)
+let res = [];
+let phone = [9,9,8,9,3,9,1,1,3,1,2,3];
+let matrix = [0,1, 2, 3,4, 5, 6,7, 8, 9];
+let index = 0;
+for(let i = 0; i < phone.length; i++){
+    for(let item of matrix){
+        if(item === phone[index]){
+            res.push(item)
+            index += 1;
+        }
     }
-})
-    .then(response => response.json())
-    .catch(err => {
-        console.error(err);
-    });
+}
+console.log(res)
