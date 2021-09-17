@@ -14,7 +14,7 @@ function getMoviePosters(query){
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "imdb8.p.rapidapi.com",
-            "x-rapidapi-key": "0202709d4emshbe87778ed9b4962p1f76cdjsn4a200e532763"
+            "x-rapidapi-key": ""
         }
     })
         .then(response => response.json())
