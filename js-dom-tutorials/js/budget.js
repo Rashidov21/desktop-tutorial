@@ -58,6 +58,13 @@ window.onload = function (){
 // console.log(myStorage.getItem("apple"))
 
 // localStorage.setItem("new","new js code");
+// sessionStorage.setItem("name", "Abdullo");
+// let val = sessionStorage.getItem("name");
+// sessionStorage.removeItem("name")
+// console.log(val)
+// sessionStorage.clear()
+
+
 function lightTheme(){
     document.body.className = "light";
     localStorage.setItem("theme", 'light');

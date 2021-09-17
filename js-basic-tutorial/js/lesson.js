@@ -143,15 +143,21 @@ let fruits = ["Яблоко", "Апельсин", "Слива"]
 // }
 // console.log(fruits)
 let res = [];
-let phone = [9,9,8,9,3,9,1,1,3,1,2,3];
-let matrix = [0,1, 2, 3,4, 5, 6,7, 8, 9];
-let index = 0;
-for(let i = 0; i < phone.length; i++){
-    for(let item of matrix){
-        if(item === phone[index]){
-            res.push(item)
-            index += 1;
-        }
+for(let i = 0; i < 20;i++){
+    if(i % 2 !== 0){
+        res.push(i)
     }
 }
 console.log(res)
+// let phone = [9,9,8,9,3,9,1,1,3,1,2,3];
+// let matrix = [0,1, 2, 3,4, 5, 6,7, 8, 9];
+// let index = 0;
+// for(let i = 0; i < phone.length; i++){
+//     for(let item of matrix){
+//         if(item === phone[index]){
+//             res.push(item)
+//             index += 1;
+//         }
+//     }
+// }
+// console.log(res)

@@ -14,42 +14,69 @@
  /*https://www.freepik.com/*/
  /*https://www.flaticon.com/*/
  /*https://undraw.co/illustrations*/
- .box{
-	 width: 400px;
-	 height: 400px;
-	 /*background: rgb(19,36,0);*/
-	 /*background: linear-gradient(90deg, rgba(19,36,0,1) 0%, rgba(9,90,121,1) 0%, rgba(125,255,0,1) 100%);*/
-	 /*border-radius: 45px;*/
-	 /*background: #e0e0e0;*/
-	 /*box-shadow:  25px 25px 50px #989898,*/
-	 /*-25px -25px 50px #ffffff;*/
- }
-body{
-	background: rgb(19,36,0);
-	background: linear-gradient(90deg, rgba(19,36,0,1)
-	0%, rgba(9,90,121,1) 0%,
-	rgba(125,255,0,1) 100%);
+.box > .box-inner > .box-mini{
+	width: 100px;
+	height: 100px;
+	background-color: orange;
 }
-.text{
-	position: absolute;
-	top:1000px;
+main{
+	width: 100%;
+	height: 100vh;
 }
-svg{
-	width: 800px;
-	height: auto;
+.mobile{
+	width: 100%;
+	height: 200px;
+	background-color: orange;
 }
-/*.parent{*/
-/*	display: flex;*/
-/*	flex-wrap: wrap;*/
-/*	background-color: aqua;*/
-/*}*/
-.div1{
+.circle{
 	width: 300px;
 	height: 300px;
+	border-radius: 50%;
+	background-color: orangered;
+	overflow: hidden;
+	position: absolute;
+}
+.mount{
+	width: 300px;
+	height: 200px;
+	transform: rotate(45deg);
+	background-color: black;
+	position: absolute;
+	margin-top:200px;
+
+}
+@media (max-width: 768px) {
+	.mobile{
+		background-color: orangered;
+	}
+}
+ @media (max-width: 412px) {
+	 .mobile{
+		 background-color: indianred;
+	 }
+ }
+.box-mini{
+	width: 200px;
+	height: 200px;
 	background-color: black;
 }
-footer{
-	width: 100%;
-	position: absolute;
-	bottom: -10px;
+p,span,i{
+	font-size: 3.5em;
+	color: orangered;
+}
+.someClass , .someClass2 , .someClass3 {
+
+}
+.box > * {
+	color: yellow;
+}
+
+div.box{}
+div.someClass{}
+
+p.text{
+	color: orange;
+}
+div.text{
+	/*width: 20px, 20pt , 20mm, 20cm;*/
 }
