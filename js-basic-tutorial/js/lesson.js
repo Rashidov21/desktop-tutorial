@@ -142,13 +142,13 @@ let fruits = ["Яблоко", "Апельсин", "Слива"]
 //     console.log(letter.toLowerCase())// barcha belgilar pastki registrda
 // }
 // console.log(fruits)
-let res = [];
-for(let i = 0; i < 20;i++){
-    if(i % 2 !== 0){
-        res.push(i)
-    }
-}
-console.log(res)
+// let res = [];
+// for(let i = 0; i < 20;i++){
+//     if(i % 2 !== 0){
+//         res.push(i)
+//     }
+// }
+// console.log(res)
 // let phone = [9,9,8,9,3,9,1,1,3,1,2,3];
 // let matrix = [0,1, 2, 3,4, 5, 6,7, 8, 9];
 // let index = 0;
@@ -161,3 +161,90 @@ console.log(res)
 //     }
 // }
 // console.log(res)
+
+// let arr = ["I", "go" , "Home"];
+// delete arr[2];
+// console.log(arr)
+// let str = "Python is better";
+// let s = str.slice(0,6) // slice index boyicha elementlarni nusxasini oladi
+// console.log(s)
+// console.log(str)
+//
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+// arr.splice(0,3) // 0 indexdan  3 indexgacha elementlar ochirladi
+// console.log(arr)
+
+// let arr = ["Я", "изучаю", "JavaScript"];
+// arr.splice(2,1);
+// console.log(arr)
+// arr.push("Python")
+// console.log(arr)
+
+// let arr = ["Я", "изучаю", "JavaScript"];
+// // console.log(arr + arr2)
+// let a = arr.concat(["Я", "изучаю", "Python"])
+// console.log(a)
+// let a = 2 + 2;
+// switch (a) {
+//     case 3: //if(a === 3) true
+//         alert( 'Маловато' );
+//         break;
+//     case 4:
+//         alert( 'В точку!' );
+//         break;
+//     case 5:
+//         alert( 'Перебор' );
+//         break;
+//     default:
+//         alert( "Нет таких значений" );
+// }
+
+// function showMessage() {
+//     alert( 'Всем привет!' );
+// }
+// showMessage();
+
+
+// let x = 25; // global ozgaruvchi
+
+// function getNumbers(start, end){
+//     console.log(start, end)
+// }
+// getNumbers(start=10,end=50);
+// let param;
+// console.log(param)
+// let n = prompt()
+// function sayHi(name){
+//     console.log("Hello "+name)
+// }
+//
+// sayHi("abdullo");
+// sayHi(n)
+// sayHi(true)
+// function plus(x,y){
+//     return console.log(x + y)
+// }
+// let num1 = parseInt(prompt("Num 1"))
+// let num2 = parseInt(prompt("Num 2"))
+//
+// let operand = prompt("Qaysi amal ? +,-,*,/")
+// if(operand === "+"){
+//     plus(num1, num2)
+// }
+
+// task 1
+// input: [1,2,3,4,5,6]
+// output: sum numbers of array
+let nums = [1,2,3,4,5,6];
+function sum(arr){
+    let summa = 0;
+    for(num of arr){
+        summa += num
+    }
+    return console.log(summa)
+}
+sum(nums)
+// task 2
+// function getOddnumbers()
+// input : user int 5
+// output : [1,3,5]
