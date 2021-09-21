@@ -104,11 +104,12 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/products
         "upc": ""
     }
 })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-
+    .then(response => {
+        console.log(response);
     })
+    .catch(err => {
+        console.error(err);
+    });
     // .catch(err => {
     //     console.error(err);
     // });
