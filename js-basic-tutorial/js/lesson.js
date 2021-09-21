@@ -235,16 +235,55 @@ let fruits = ["Яблоко", "Апельсин", "Слива"]
 // task 1
 // input: [1,2,3,4,5,6]
 // output: sum numbers of array
-let nums = [1,2,3,4,5,6];
-function sum(arr){
-    let summa = 0;
-    for(num of arr){
-        summa += num
-    }
-    return console.log(summa)
-}
-sum(nums)
+// let nums = [1,2,3,4,5,6];
+// function sum(arr){
+//     let summa = 0;
+//     for(num of arr){
+//         summa += num
+//     }
+//     return console.log(summa)
+// }
+// sum(nums)
 // task 2
 // function getOddnumbers()
 // input : user int 5
 // output : [1,3,5]
+
+// task 3
+// let arr = [1,5,9,3,4,56,72,96,14,26]
+// // num = 2 ** 2
+// // num = 3 * num + 1 index
+// output: 2 array , 1- = arr[nums**2], 2- = arr[num*num]
+// let x = [];
+// let y = [];
+// function twoArrays(arr){
+//   for(let i = 0; i < arr.length; i++){
+//       if(arr[i] % 2 === 0){
+//         x.push(arr[i]**2)
+//       }else{
+//           y.push(arr[i] * arr[i+1])
+//       }
+//   }
+// }
+// twoArrays(arr)
+// console.log("Kvadratlari = ",x)
+// console.log("Kopaytma = ",y)
+
+
+
+// task 4
+let letters = ['1','2','3','4','5', "q","w","e","r",
+                "t","y", "@","#","_","&","$"]
+// input: user int = 8;
+// output: "56@tr8&$"
+
+function getRandomLetters(){
+    let count = parseInt(prompt("Nechta belgi ?"))
+    let result = "";
+    for(let i = 0; i < count; i++){
+        let rLetter = letters[Math.round(Math.random() * letters.length)];
+        result += rLetter;
+    }
+    return console.log(result)
+}
+getRandomLetters()
