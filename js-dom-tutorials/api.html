@@ -5,15 +5,63 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <title>Js APis</title>
 </head>
 <body>
-<center>
-    <button onclick="getAlbums()">Get Albums</button>
-    <br><br>
-    <div id="posts"></div>
-</center>
+<!--<center>-->
+<!--    <button onclick="getAlbums()">Get Albums</button>-->
+<!--    <br><br>-->
+<!--    <div id="posts"></div>-->
+<!--</center>-->
+<div class="container">
+    <button id="btn">Get Icons</button>
+    <form action="#">
+        <input type="checkbox" id="edu">
+        <label for="edu">Education</label>
+        <br>
+        <input type="checkbox" id="sport">
+        <label for="sport">Sport</label>
+        <br>
+        <input type="checkbox" id="nature">
+        <label for="nature">Nature</label>
+    </form>
+    <div class="container-inner" id="icons">
+    </div>
+</div>
 
 <script src="js/api.js"></script>
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        padding: 30px;
+        background-color: #0ad1b9;
+        border-radius: 10px;
+    }
+    .container-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        padding: 30px;
+        background-color: #369ac9;
+        border-radius: 10px;
+    }
+    button{
+        padding: 10px;
+        border-radius: 8px;
+        background-color: orange;
+        border: none;
+        outline: none;
+    }
+    i{
+        padding: 10px;
+        font-size: 35px;
+
+    }
+</style>
 </body>
 </html>
