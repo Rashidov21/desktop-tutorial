@@ -390,12 +390,15 @@ let arr = [1,2,3,4,5];
 // arr.forEach((item) =>{
 //     console.log(item**2)
 // })
-arr.forEach((item,index) => {
-    if(item % 2 === 0){
-        console.log(typeof item)
-        alert(`Juft son =  ${item}`)
-    }else{
-        alert(`Toq son = ${item}`)
-    }
-})
+// arr.forEach((item,) => {
+//     if(item % 2 === 0){
+//         console.log(typeof item)
+//         alert(`Juft son =  ${item}`)
+//     }else{
+//         alert(`Toq son = ${item}`)
+//     }
+// })
 
+// task 1
+// input: arr = [1,2,3,4,5]; , item , index, item = 1, index = 3
+// output: arr = [2,3,4,1,5]
