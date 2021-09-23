@@ -272,18 +272,130 @@ let fruits = ["Яблоко", "Апельсин", "Слива"]
 
 
 // task 4
-let letters = ['1','2','3','4','5', "q","w","e","r",
-                "t","y", "@","#","_","&","$"]
-// input: user int = 8;
-// output: "56@tr8&$"
+// let letters = ['1','2','3','4','5', "q","w","e","r",
+//                 "t","y", "@","#","_","&","$"]
+// // input: user int = 8;
+// // output: "56@tr8&$"
+//
+// function getRandomLetters(){
+//     let count = parseInt(prompt("Nechta belgi ?"))
+//     let result = "";
+//     for(let i = 0; i < count; i++){
+//         let rLetter = letters[Math.round(Math.random() * letters.length)];
+//         result += rLetter;
+//     }
+//     return console.log(result)
+// }
+// getRandomLetters()
 
-function getRandomLetters(){
-    let count = parseInt(prompt("Nechta belgi ?"))
-    let result = "";
-    for(let i = 0; i < count; i++){
-        let rLetter = letters[Math.round(Math.random() * letters.length)];
-        result += rLetter;
+// Funksiyalar >>>
+
+// 1-Declarition:
+
+// function FuncName(x,y,z=10){
+//     // actions
+// }
+// 2-Expression:
+// let f = function Myfunc(){
+//     console.log("MyFunc")
+// }
+// f()
+// function Myfunc(){
+//     console.log("MyFunc")
+// }
+// let test = Myfunc; // () >> funksiyani chaqirish
+// test() // funksiya murojat
+
+
+// 3-Callback
+// function a(){
+//     console.log("func A")
+// }
+// function b(){
+//     console.log("func B")
+// }
+//
+// function c(f1,f2){
+//     if(f1){
+//         f1()
+//     }
+//     if(f2){
+//         f2()
+//     }
+// }
+// c(a,b)
+// let x = confirm() // true or false
+// console.log(x)
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+// }
+// //
+// function showOk() {
+//     alert( "Ok" );
+// }
+// //
+// function showCancel() {
+//     alert( "Cancel" );
+// }
+// //
+// // // использование: функции showOk, showCancel передаются в качестве аргументов ask
+// ask("Вы согласны?", showOk, showCancel);
+
+// 4- Arrow
+
+// let arrowfunc = (x,y) => {
+//     return x * y
+// }
+// console.log(arrowfunc(10,2))
+
+// let test = response => {
+//     if(response){
+//         console.log(response)
+//     }else{
+//         console.log("False response")
+//     }
+// }
+// console.log(test(1))
+//
+// let test2 = () => {
+//     console.log("Test 2 arrow func")
+// }
+// test2()
+// let x = (param1, param2) => param2 ** param1;
+// console.log(x(5,2)) // 32
+// function CallBackFunc(){
+//     let call = () => {
+//         console.log("Call back is working...")
+//     };
+//     return call()
+//
+// }
+// CallBackFunc()
+
+// 5- Anonim
+// let anonim = function (){
+//     console.log("this is anonim func")
+// }
+// anonim()
+
+// function declarition(){
+//
+// }
+// let arr = ["Bilbo", "Gandalf", "Nazgul"];
+// arr.forEach((item, index, array) => {
+//     console.log(`${item} имеет позицию ${index} в ${array}`);
+// });
+let arr = [1,2,3,4,5];
+// arr.forEach((item) =>{
+//     console.log(item**2)
+// })
+arr.forEach((item,index) => {
+    if(item % 2 === 0){
+        console.log(typeof item)
+        alert(`Juft son =  ${item}`)
+    }else{
+        alert(`Toq son = ${item}`)
     }
-    return console.log(result)
-}
-getRandomLetters()
+})
+
