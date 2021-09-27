@@ -97,14 +97,16 @@
 // task 5
 // for orqali user kiritgan sozni iteratsiya qiling
 // agar sozda i,o harfi uchrasa i va o harfini 5 martadan chiqaring
-// let user = prompt();
-// for(let i = 0; i < user.length; i++){
-//     if(user[i] === "i" || user[i] === "o"){
-//         for(let k = 0; k < 5; k++){
-//             console.log(user[i])
-//         }
-//     }
-// }
+
+
+let user = prompt();
+for(let i = 0; i < user.length; i++){
+    if(user[i] === "i" || user[i] === "o"){
+        for(let k = 0; k < 5; k++){
+            console.log(user[i])
+        }
+    }
+}
 
 // let sum = 0;
 // for(let i = 1; i < 10;i++){
@@ -402,3 +404,50 @@ let arr = [1,2,3,4,5];
 // task 1
 // input: arr = [1,2,3,4,5]; , item , index, item = 1, index = 3
 // output: arr = [2,3,4,1,5]
+
+// Objects
+// let obj = new Object();
+// let obj = {};
+
+// let person = {name:"John",surname:"Doe"}
+// // console.log(person.name)
+// // console.log(person["name"])
+// person.name = "Mike" // key ga murojaat orqali value ni ozgartirish
+// console.log(person.name)
+
+// let programmer = {
+//     name:"Guido",
+//     surname:"Van Rossum",
+//     age:64,
+//     sklills:['C++', "C",".NET", "html"],
+//     inwork:true,
+//     location:undefined,
+//     family:{
+//         son:"Mike"
+//     }
+// }
+// console.log(programmer.sklills[0]) // C++
+// console.log(programmer.family.son,programmer.inwork) // Mike, true
+//
+// programmer["work"] = "Dropbox";
+// console.log(programmer.work) // Dropbox
+
+
+// let car = {
+//     model:"BMW",
+//     price:1500,
+//     start:function (){
+//         console.log("Driving...")
+//     },
+//     stop:() =>{
+//         console.log("Stopped...")
+//     }
+// }
+// console.log(car.start())
+// console.log(car.stop())
+
+let btn = document.getElementById("btn");
+console.log(typeof btn)
+btn["onclick"] = function (){
+    console.log("box is clicked ..")
+}

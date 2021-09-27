@@ -1,0 +1,54 @@
+div{
+	/*border: double 0.5px orange;*/
+	/*border-style: double;
+	border-width: 0.5px;
+	border-color: orange;*/
+	/*chetlarini bukish*/
+	/*border-radius: 5px;*/
+	/*bottom: rder-bottom: solid 3px yellow;*/
+	/*border-top: solid 3px yellow;*/
+	/*border-left: solid 3px yellow;*/
+	border:solid 5px orange;
+
+	/*margins >> Marginlar  >> block bilan block orasidagi masofa*/
+	/*margin:20px; blockni hamma tomoniga tasiq qiladi*/
+	/*margin-bottom: 50px;
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;*/
+	/*margin:10px 100px 10px 100px; */
+
+	/*Padding >> block chegarasi va ichidagi content bilan masofa*/
+	/*padding: 20px;*/
+	/*padding-top:50px; */
+	/*padding-bottom:50px; */
+	/*padding-left:50px; 
+	padding-right:50px; */
+
+	/*padding: 20px 50px 20px 50px;*/
+
+	width: 75%;
+	height: 200px;
+}
+.B{
+	  margin-top: -5px;
+	  max-width: 500px;
+	  height: 100px;
+	  background-color: powderblue;
+}
+button{
+	border:none;
+	outline: none;
+	padding: 10px;
+	background-color: lightblue;
+	margin:50px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+input{
+	border: solid 0.5px red;
+
+}
+input:focus{
+	outline: solid 1px yellow;
+}
