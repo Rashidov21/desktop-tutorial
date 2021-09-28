@@ -99,14 +99,14 @@
 // agar sozda i,o harfi uchrasa i va o harfini 5 martadan chiqaring
 
 
-let user = prompt();
-for(let i = 0; i < user.length; i++){
-    if(user[i] === "i" || user[i] === "o"){
-        for(let k = 0; k < 5; k++){
-            console.log(user[i])
-        }
-    }
-}
+// let user = prompt();
+// for(let i = 0; i < user.length; i++){
+//     if(user[i] === "i" || user[i] === "o"){
+//         for(let k = 0; k < 5; k++){
+//             console.log(user[i])
+//         }
+//     }
+// }
 
 // let sum = 0;
 // for(let i = 1; i < 10;i++){
@@ -446,8 +446,66 @@ let arr = [1,2,3,4,5];
 // console.log(car.start())
 // console.log(car.stop())
 
-let btn = document.getElementById("btn");
-console.log(typeof btn)
-btn["onclick"] = function (){
-    console.log("box is clicked ..")
-}
+// let btn = document.getElementById("btn");
+// console.log(typeof btn)
+// btn["onclick"] = function (){
+//     console.log("box is clicked ..")
+// }
+
+// let obj = {
+//     name:"object name",
+//     metod:function (){
+//         console.log("Bu shunchaki metod")
+//     }
+// }
+// obj["newKey"] = "New Value";
+// let name = obj.name;
+//
+// console.log(name)
+// console.log(obj)
+// console.log(obj.metod())
+// let x = 10;
+// function X(){
+//     let y = 10;
+// }
+//
+// let person = {
+//     name:"John",
+//     surname:"Doe",
+//     age:35,
+//     salary:15000,
+//     info:function (){
+//         console.log(this.name + " ismli odam haqida ma'lumotlar")
+//         console.log(`Familya : ${this.surname}`)
+//         console.log(`Yoshi : ${this.age}`)
+//         console.log(`Oyligi : ${this.salary}`)
+//     },
+//     sayHi(){
+//         console.log("HI")
+//     }
+// }
+// person.info()
+// person.sayHi()
+// // let z = this.name;
+// // console.log(typeof z) // bosh qiymat
+
+// function test(){
+//     console.log(this)
+// }
+// test()
+
+// let myWindow = window;
+// console.dir(myWindow)
+// console.dir(document)
+// let myUrl = document.URL
+// console.log(myUrl)
+//
+// let value = document.all
+// console.log(value) // hama html teglar
+// document.bgColor = "red"
+
+let body = document.body
+let head = document.head
+console.dir(head)
+console.log(body)
+
