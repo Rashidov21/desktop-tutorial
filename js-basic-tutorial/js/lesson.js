@@ -504,8 +504,63 @@ let arr = [1,2,3,4,5];
 // console.log(value) // hama html teglar
 // document.bgColor = "red"
 
-let body = document.body
-let head = document.head
-console.dir(head)
-console.log(body)
+// let body = document.body
+// let head = document.head
+// console.dir(head)
+// console.log(body)
 
+// JS DOM
+// window , document
+// console.dir(document)
+
+// let btn = document.getElementById("btn");
+
+// let b = {
+//     className:"myClass"
+// }
+// console.log(b.className)
+// console.log(btn.className)
+// let box = document.getElementsByClassName("box");
+// console.log(box) // array HtmlCollection
+// let div = document.getElementsByTagName("div");
+// console.log(div) // array HtmlCollection
+
+// let div = document.getElementById("div");
+// console.log(div) // 1 object
+
+function changeColor(){
+    let box = document.getElementById("div");
+    box.className = "box red-box"
+}
+
+// let btn = document.getElementById("btn");
+// btn.onclick = changeColor();
+
+// let test = document.getElementById() // id nomi beriladi
+// let test = document.getElementsByClassName() // class nomi beriladi
+// let test = document.getElementsByTagName() // tag nomi beriladi
+// let test = document.getElementsByName() // name atributidagi nom beriladi nomi beriladi
+
+// let test = document.querySelector(".home") // css selector
+// // test = li tegi
+// console.log(test)
+let test = document.querySelectorAll("li")
+// console.log(test)
+// function setRandomColor(tags){
+//     let colors = ["red","orange","blue", "yellow", "green"]
+//     for(let i = 0; i < tags.length; i++){
+//         let rNum = Math.round(Math.random() * colors.length)
+//         tags[i].className = colors[rNum]
+//         // tags[i].className = "box red"
+//     }
+// }
+// let n = 0;
+// function changeIndex(){
+//     let p = document.querySelectorAll("p");
+//     // let nextColor = p[n].className
+//     p[n].className = "red";
+//     n += 1;
+//     if(n >= p.length){
+//         n = 0;
+//     }
+// }

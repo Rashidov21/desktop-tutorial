@@ -82,3 +82,31 @@
 /*!*	}*!*/
 
 /*!*}*!*/
+
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: #FFCE00;
+    transition: all 0.5s;
+}
+.red-box{
+    background-color: red;
+}
+/*#id{}*/
+/*h1{}*/
+
+li{
+    padding: 20px;
+    margin: 10px;
+}
+p{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: #ff9459;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

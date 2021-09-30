@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>JS | Lessons 2</title>
 	<link rel="stylesheet" href="css/lesson-3.css">
-<!--	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
-<!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,8 +14,27 @@
 
 </head>
 <body>
-<div class="box" style="width: 600px;height: 400px; background-color: #112336">
-	<button id="btn">Click me!</button>
+<center>
+	<button onclick="setRandomColor(document.querySelectorAll('li'))">Set Colors</button>
+</center>
+<center class="boxes">
+	<button onclick="changeIndex()">Change</button>
+	<p class="red"></p>
+	<p class="yellow"></p>
+	<p class="blue"></p>
+	<p class="green"></p>
+</center>
+<ul>
+	<li id="home" class="home">Home</li>
+	<li id="about">About </li>
+	<li id="contact">Contact</li>
+</ul>
+<div class="box" id="div">
+	<button
+		class="myClass"
+		id="btn"
+		onclick="changeColor()"
+	>Click me!</button>
 </div>
 
 <!--<script src="https://unpkg.com/vue@next"></script>-->
