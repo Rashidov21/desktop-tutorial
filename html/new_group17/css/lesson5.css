@@ -1,0 +1,99 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.box{
+	width: 400px;
+	height: 100px;
+	background: orange;
+	/*float: right;*/
+	position: absolute;
+	/*right: 0;*/
+	bottom:0;
+}
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+div > p{
+
+}
+div + p{
+
+}
+div ~ p {
+
+}
+footer > *{
+	color: yellow;
+}
+#myId > *{
+
+}
+.myClass > *{
+
+}
+
+center > button{
+	padding: 10px 50px 10px 50px;
+	background: khaki;
+}
+/*hover psevdo klasi*/
+center > button:hover{
+	padding: 10px 80px 10px 80px;
+	background: yellow;
+}
+input{
+	padding: 10px;
+	background: orange;
+}
+input[type="text"]{
+	padding: 10px;
+	background: orange;
+}
+input[type="email"]{
+	padding: 50px;
+	background: red;
+}
+input[type="checkbox"]:checked{
+	width: 30px;
+	height: 30px;
+}
+
+h4:before {
+	content: "Bu .box blocki"
+}
+h4:after {
+	content: "Bu .box blocki"
+}
+::selection{
+	color: yellow;
+	background: blue;
+}
+ul.navbar{
+	background: #232328;
+}
+ul.navbar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+a.active{
+	background: lightgreen;
+}
+li{
+	display: inline-block;
+}
+a:hover{
+	opacity: 0.8;
+	background: lightgreen;
+}
+.contact{
+	float: right;
+}
