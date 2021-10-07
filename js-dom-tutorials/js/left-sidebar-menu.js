@@ -1,67 +1,51 @@
-let sidebar = document.querySelector("#sidebar");
-let menuBtnOpen = document.querySelector("#menu-open");
-let menuBtnClose = document.querySelector("#menu-close");
-menuBtnOpen.onclick = function Show(){
-    sidebar.style.left = "0px";
-    menuBtnOpen.style.display = "none";
-    menuBtnClose.style.display = "block";
+function Open(){
+    let menu = document.getElementById("side-menu");
+    menu.style.left = "0px"
 }
-menuBtnClose.onclick = function Close(){
-    sidebar.style.left = "-250px";
-    menuBtnOpen.style.display = "block";
-    menuBtnClose.style.display = "none";
+function Close(){
+    let menu = document.getElementById("side-menu");
+    menu.style.left = "-255px"
 }
-// let slides = ['img/air1.jpg','img/air2.jpg','img/air3.jpg'];
-// let frame = 0;
-// let slide = document.getElementById("slide");
-// const next = ()=>{
-//     if(frame >= slides.length){
-//         frame = 0;
-//     }
-//     slide.src = slides[frame]
-//     frame += 1
-//     console.log(frame)
-// }
-// const prev = ()=>{
-//     if(frame <= 0){
-//         frame = slides.length;
-//     }
-//     frame -= 1
-//     slide.src = slides[frame]
-//     console.log(frame)
+// правильно
+// button.onclick = sayThanks;
 //
+// // неправильно
+// button.onclick = sayThanks();
+
+
+// let obj = {
+//     name:"name",
+//     age:30,
+//     getInfo(){
+//         console.log(this.name)
+//     }
 // }
+// let i = document.getElementsByTagName("input")
+// console.dir(i)
+
+// element.addEventListener(event, handler[, options]);
+
+let btn = document.getElementById("button");
+let div = document.getElementById("test");
+div.innerHTML = "click me !"
+// div.outerHTML = "click "
+// btn.addEventListener("mousemove",Open, false)
+// btn.removeEventListener("mousemove",Open)
+// btn.addEventListener("click", (event)=>{
+//     // console.dir(event)
+//     console.dir(event.target)
 //
-// function Controls(index){
-//     index = parseInt(index);
-//     slide.src = slides[index]
-// }
-
-
-let slides = ['img/air1.jpg','img/air2.jpg','img/air3.jpg'];
-let frame = 0;
-
-let slide = document.getElementById("slide");
-
-function AutoSlider(){
-    if(frame >= slides.length){
-       frame = 0;
-    }
-    slide.src = slides[frame];
-    frame += 1;
-}
-window.onload = () =>{
-    setInterval(AutoSlider,2000) // 1-param function 2-param interval milliseconds
-}
-
-function SlideItems(){
-    let items = document.getElementsByClassName('carousel-item');
-    let index = 0;
-    items[index].className = 'carousel-item active';
-    index++;
-    console.log(index)
-
-}
-window.onload = () =>{
-   setInterval( SlideItems, 2000)
-}
+// })
+// window.addEventListener("keypress", (e)=>{
+//     // console.log(e.which)
+//     // console.log(e.key)
+//     // console.log(e.type)
+//     // console.log(e.currentTarget)
+//     console.log(e.clientX)
+//     if(e.which === 13){
+//         Open()
+//     }
+//     if(e.which === 32){
+//         Close()
+//     }
+// })

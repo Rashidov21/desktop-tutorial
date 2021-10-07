@@ -1,137 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 *{
-    font-family: 'Lato', sans-serif;
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    transition: all 0.5s;
+    font-family: 'Poppins', sans-serif;
 }
-header{
+html{
+    overflow-y: hidden;
+}
+nav{
     width: 100%;
-    min-height: 60px;
-    background: darkorange;
+    height: 50px;
+    background-color: orange;
 }
-.navbar{
+#nav{
     float: right;
+    z-index: 1;
 }
-li.navbar-item{
-    list-style: none;
+li {
     display: inline-block;
-    margin-top:10px;
-    margin-right:30px;
+    margin-left:20px ;
 }
-a.nav-link{
+#nav > li > a{
+    color: white;
     text-decoration: none;
-    font-weight: 900;
-    font-size: large;
-    color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
-.menu-btn{
-    font-size: 25px;
-    color: black;
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 20px;
-    z-index: 33;
-    float: right;
-    display: none;
+.brand-logo{
+    position: relative;
 }
-@media (max-width: 612px){
-    .menu-btn{
-        display: block;
-    }
-    .navbar{
-        display: none;
-    }
-}
-.sidebar-menu{
-    position: absolute;
-    width: 200px;
+#side-menu{
+    display: block;
+    width: 250px;
     height: 100vh;
-    background: orange;
-    left:-250px;
+    background-color: #0ad1b9;
+    position:absolute;
+    left: -255px;
+    list-style: none;
     transition: all 0.5s;
 }
-.menu{
-    margin:30px;
+#side-menu  li{
+    display: list-item;
+    margin: 5px 15px;
 }
-.menu>ul{
-    list-style: none;
-}
-.menu>ul>li{
-    margin-top: 10px;
-    border-bottom: solid 1px yellow;
-}
-.menu>ul>li>a{
+#side-menu li a{
+    color: white;
     text-decoration: none;
-    font-weight: 900;
-    font-size: large;
-    color: black;
-}
-#menu-close{
-    display: none;
-}
-.slider{
-    display: flex;
-    flex-wrap: wrap;
-}
-.slide{
-    display: inline-block;
-    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
     transition: all 0.3s;
-}
-body{
-    transition: all 0.3s;
-}
-.carousel{
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
 
 }
-.carousel-item{
-    margin-left: 25px;
-    display: flex;
-    flex-wrap: wrap;
+#side-menu li a:hover{
+    letter-spacing: 0.5px;
 }
-.card{
-    min-width:200px ;
-    min-height:200px ;
-    border-radius: 15px;
-    margin: auto;
-    box-shadow: 0px 2px 5px green;
-    overflow: hidden;
-    margin-left: 25px;
-}
-.deactive{
-    display: none;
-}
-.title{
+.close a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
     font-weight: bold;
-    padding: 10px;
-    text-align: center;
+    transition: all 0.3s;
+    float: right;
 }
-.content{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.left{
-    font-size: 35px;
-    position: absolute;
-    left:300px;
-}
-.right{
-    font-size: 35px;
-    position: absolute;
-    right:300px;
-}
-button{
-    border: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
-    color: darkorange;
+.close a i{
+    font-size: 30px;
 }

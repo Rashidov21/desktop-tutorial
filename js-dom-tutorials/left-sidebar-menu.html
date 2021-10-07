@@ -5,127 +5,54 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
     <link rel="stylesheet" href="css/left-sidebar-menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />-->
     <title>Left Sidebar Menu</title>
 </head>
-<body>
+<body onclick="console.log('body is clicked')">
+<center>
+    <br>
+    <br>
+    <a href="/" onclick="">здесь</a>
+    <button onclick="event.stopPropagation();console.log('button')">Click me</button>
+    <br>
+    <br>
+</center>
 <header>
-    <ul class="navbar">
-        <li class="navbar-item">
-            <a href="#" class="nav-link">Home</a>
+    <nav class="orange" >
+        <div class="nav-wrapper" style="padding: 0px 30px 0px 30px;">
+            <ul id="nav">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+                <li>
+                    <a href="#" id="open" onclick="Open()" class="brand-logo">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <ul id="side-menu">
+        <li class="close">
+            <a href="#" onclick="Close()" >
+                <i class="fas fa-times"></i>
+            </a>
         </li>
-        <li class="navbar-item">
-            <a href="#" class="nav-link">About</a>
-        </li>
-        <li class="navbar-item">
-            <a href="#" class="nav-link">Contact</a>
-        </li>
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
     </ul>
-    <a href="#" class="menu-btn" id="menu-open">
-        <i class="fas fa-bars"></i>
-    </a>
-    <a href="#" class="menu-btn" id="menu-close">
-        <i class="fas fa-times"></i>
-    </a>
 </header>
-<div class="sidebar-menu" id="sidebar">
-    <div class="menu">
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-    </div>
-</div>
-<section>
-
-    <div class="slider">
-        <div class="slide">
-            <img src="img/air1.jpg" id="slide" width="500" height="auto" alt="">
-        </div>
-    </div>
-</section>
-<section>
-    <div class="carousel">
-            <div class="carousel-item active">
-                <h4>1</h4>
-                <div class="card">
-                    <div class="title">Nike Air Max 2015</div>
-                    <div class="content">
-                        <img src="img/air1.jpg" width="200" height="auto" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="title">Nike Air Max 2015</div>
-                    <div class="content">
-                        <img src="img/air1.jpg" width="200" height="auto" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="title">Nike Air Max 2015</div>
-                    <div class="content">
-                        <img src="img/air1.jpg" width="200" height="auto" alt="">
-                    </div>
-                </div>
-            </div>
-        <div class="carousel-item deactive">
-            <h4>2</h4>
-            <div class="card">
-                <div class="title">Nike Air Max 2015</div>
-                <div class="content">
-                    <img src="img/air1.jpg" width="200" height="auto" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="title">Nike Air Max 2015</div>
-                <div class="content">
-                    <img src="img/air1.jpg" width="200" height="auto" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="title">Nike Air Max 2015</div>
-                <div class="content">
-                    <img src="img/air1.jpg" width="200" height="auto" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item deactive">
-            <h4>3</h4>
-            <div class="card">
-                <div class="title">Nike Air Max 2015</div>
-                <div class="content">
-                    <img src="img/air1.jpg" width="200" height="auto" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="title">Nike Air Max 2015</div>
-                <div class="content">
-                    <img src="img/air1.jpg" width="200" height="auto" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="title">Nike Air Max 2015</div>
-                <div class="content">
-                    <img src="img/air1.jpg" width="200" height="auto" alt="">
-                </div>
-            </div>
-        </div>
-        <button href="#" class="left">
-            <i class="fas fa-arrow-left"></i>
-        </button>
-        <button href="#" class="right">
-            <i class="fas fa-arrow-right"></i>
-        </button>
-        </div>
-
-</section>
+<div id="test" style="border: solid 2px red; font-size: 50px ;color: #111d4a;"></div>
+<center>
+    <button id="button">Click me!</button>
+</center>
 <script src="js/left-sidebar-menu.js"></script>
 </body>
 </html>
