@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-	<!-- Compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-	<link rel="stylesheet" href="lesson.css">
-	<title>Js | Lesson</title>
+    <link rel="stylesheet" href="lesson.css">
+    <title>Js | Lesson</title>
 </head>
+
 <body>
-	<section >
-		<form action="#" onsubmit="SendMessage()">
-			<div class="row">
-				<div class="col s6">
-					<div class="input-field">
-						<label for="number">Phone</label>
-						<input type="number" id="number">
-					</div>
-					<div class="input-field">
-						<label for="msg">Message</label>
-						<textarea  id="msg" rows="30" cols="10"></textarea>
-					</div>
-				</div>
-			</div>
-			<input type="submit" value="Send message" class="btn">
-		</form>
-
-
-	</section>
-
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
-	<!-- TODO: Add SDKs for Firebase products that you want to use
+    <center>
+        <button id="btn" onclick="changeColor()">Click me</button>
+    </center>
+    <div class="box" id="box"></div>
+    <style>
+        .box {
+            width: 400px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+    </style>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
 
-	<script src="lesson.js"></script>
+    <script src="lesson.js"></script>
 </body>
+
 </html>
