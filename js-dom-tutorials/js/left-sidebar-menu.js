@@ -6,6 +6,8 @@ function Close(){
     let menu = document.getElementById("side-menu");
     menu.style.left = "-255px"
 }
+// img.src = "img/foo.jpg"
+// img.src = img[1]
 // правильно
 // button.onclick = sayThanks;
 //

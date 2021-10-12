@@ -54,6 +54,7 @@
 // function changeColor() {
 //     let box = document.getElementById("box");
 //     box.style.backgroundColor = "red";
+//     box.style.width = `${width}px`;
 // }
 
 // 4 boolean
@@ -62,7 +63,7 @@
 
 // let b = true;
 // let b2 = false;
-// console.log(typeof b)
+// console.log(typeof b) // boolean
 
 // let n = 0;
 // console.log(Boolean(n))
@@ -87,3 +88,55 @@
 
 // let test = confirm("Python or Javascript ") // true yoki false
 // console.log(test)
+
+// lesson 2
+
+let value = 10;
+// value = String(value) // to string
+// console.log(typeof value)
+
+// value = "10"; // string
+// value = Number(value) // to number
+// console.log(typeof value) // number
+
+// ! >>  not  >> emas , (agar true bolsa , <<!>> true emas)
+// console.log(Boolean(!value))
+
+// value = Boolean(value) // true
+// console.log(typeof value)
+
+// let user1 = prompt("1-Sonni kiriting..."); // user dan string qiymatlarni qabil qilish
+// let user2 = prompt("2-Sonni kiriting..."); // user dan string qiymatlarni qabil qilish
+// user1 = Number(user1) // to number
+// user2 = Number(user2) // to number
+// alert(`Yigindi = ${user1 + user2}`)
+
+// let x = Number(prompt("1-son"))
+// let y = Number(prompt("2-son"))
+// alert(`Result = ${x + y}`)
+
+
+// Arifmetika
+// console.log(10 + 10) // qoshish
+// console.log(10 - 5) // ayirish
+// console.log(10 * 5) // kopaytirish
+// console.log(10 / 2) // bo'lish
+// console.log(7 % 3) // bo'lganda qoldiqni olish
+// console.log(10 ** 2) // darajaga kotarish
+
+// let hieght = Number(prompt("Boyizni kirit"))
+// alert(`Siz uchun idel vazn = ${hieght - 100}kg`)
+
+// console.log((15 * 12) * 365)
+// console.log(100 / (3 + 10) * 5)
+
+// task 1 
+// let userValue = Number(prompt("KV tomoni..."))
+// alert(`Kvadratni perimetri = ${4 * userValue}sm`)
+// task 2 
+// let userValue = Number(prompt("KV tomoni..."))
+// alert(`Kvadratni yuzasi  = ${userValue ** 2}sm`)
+
+// task 5
+// let a = parseInt(prompt("kubni Tomoni"))
+// alert(`Hajmi = ${a**3}, Sirti = ${6* a **2}`)
