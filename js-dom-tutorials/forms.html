@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms DOM</title>
+</head>
+<body>
+<center>
+    <div class="box">
+        <form action="" name="myForm">
+            <p>
+                <label for="depo">Первоначальный депозит</label>
+                <input type="number" name="cash" id="depo">
+            </p>
+            <p>
+                <label for="years">Срок вклада?</label>
+                <select name="years" id="years">
+                    <option value="1">1 year</option>
+                    <option value="2">2 years</option>
+                    <option value="3">3 years</option>
+                </select>
+            </p>
+            <p>
+                <label for="percent">Годовая процентная ставка?</label>
+                <input name="stapka" type="number">
+            </p>
+        </form>
+        <hr width="50%">
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <h5>Было: <br> <span id="bylo"></span></h5>
+                    <div class="color-red"></div>
+                </td>
+                <td>
+                    <h5>Станет: <br><span id="stanet"></span></h5>
+                    <div class="color-green"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</center>
+<style>
+    .color-red{
+        width: 50px;
+        height: 100px;
+        background-color: indianred;
+    }
+    .color-green{
+        width: 50px;
+        height: 100px;
+        background-color: dimgrey;
+    }
+</style>
+<script src="js/forms.js"></script>
+</body>
+</html>
