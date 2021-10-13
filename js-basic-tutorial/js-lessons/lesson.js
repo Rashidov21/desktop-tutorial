@@ -140,3 +140,77 @@ let value = 10;
 // task 5
 // let a = parseInt(prompt("kubni Tomoni"))
 // alert(`Hajmi = ${a**3}, Sirti = ${6* a **2}`)
+
+//
+// console.log(10 > 5) // true
+// console.log(10 < 5) // false
+// console.log(10 >= 5) // true
+// console.log(10 <= 5) // false
+
+// console.log(10 == 10) // true
+// console.log(10 === 10) // true
+// console.log(10 != 10) // false
+
+// console.log("A" === "A")
+
+// console.log(!true) // true
+
+// if conditions 
+
+// if (10 > 20) {
+//     console.log("Block if")
+// } else if (10 > 11) {
+//     console.log("Block else if")
+// } else {
+//     console.log("Block else")
+// }
+
+// let age = Number(prompt("Your age ?"));
+// // if(age > 18)alert("Welcome");
+// if (age > 18) {
+//     alert("Welcome")
+// } else {
+//     alert("False")
+// }
+
+// let num = Number(prompt("Your number ?"))
+
+// if (num % 2 === 0) {
+//     console.log(num ** 2)
+// } else {
+//     console.log(num / 2)
+// }
+// let accessAllowed = (age > 18) ? true : false;
+
+// ? >> if(){}
+// : >> else{}
+// let letter = prompt()
+// if(letter === "a")console.log("A")
+// if(letter === "b")console.log("B")
+// if(letter === "c")console.log("C")
+
+// if (letter === "a") {
+//     console.log("A")
+// } else if (letter === "b") {
+//     console.log("B")
+// } else if (letter === "c") {
+//     console.log("C")
+// } else {
+//     console.log("Harf emas")
+// }
+
+// if ("0") {
+//     alert('Привет');
+// }
+
+// let user = prompt()
+// if (user === "ES6") {
+//     console.log("togri")
+// } else {
+//     console.log("notori")
+// }
+
+// task 1 
+// input : login >> string
+// output: login="gandi123" else if login="gandi986"  > alert("Welcome")
+// else   > alert("Error!")

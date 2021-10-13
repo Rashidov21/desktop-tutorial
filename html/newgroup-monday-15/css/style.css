@@ -1,0 +1,30 @@
+body{
+	/*background-color: rgb(5,200,255);*/
+	/*background-color: rgba(5,200,255,1);*/
+}
+h1{
+	color: yellow;
+}
+/* comment */
+#headerText{
+	/* color: green; */
+	color: blue;
+}
+.colorRed{
+	color: red;
+}
+.textUpper{
+	text-transform: uppercase;
+}
+#text1{
+	color: pink;
+}
+.bggreen{
+	background-color: green;
+}
+.bgred{
+	background-color: red;
+}
+.bgblue{
+	background-color: blue;
+}
