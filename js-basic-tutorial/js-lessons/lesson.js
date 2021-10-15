@@ -42,6 +42,13 @@
 
 // console.log("Qalesan " + " 'ÿaxshimisan' !")
 
+// console.log("hello \n world")
+// console.log("hello \t\t\t world")
+// console.log("hello \" word \" world")
+// console.log("hello \' word \' world")
+
+
+
 // let age = 15;
 // let name = "Abdulloh";
 // console.log("Foydalanuvchini ismi :" + name)
@@ -91,7 +98,7 @@
 
 // lesson 2
 
-let value = 10;
+// let value = 10;
 // value = String(value) // to string
 // console.log(typeof value)
 
@@ -153,7 +160,7 @@ let value = 10;
 
 // console.log("A" === "A")
 
-// console.log(!true) // true
+// console.log(!true) // false
 
 // if conditions 
 
@@ -180,7 +187,8 @@ let value = 10;
 // } else {
 //     console.log(num / 2)
 // }
-// let accessAllowed = (age > 18) ? true : false;
+// let accessAllowed = (20 < 18) ? "bor" : "yoq";
+// console.log(accessAllowed)
 
 // ? >> if(){}
 // : >> else{}
