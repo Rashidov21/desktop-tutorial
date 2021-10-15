@@ -1,0 +1,4 @@
+{"coord":
+{"lon":69.2163,"lat":41.2646},
+  "weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],
+  "base":"stations","main":{"temp":294.12,"feels_like":292.87,"temp_min":294.12,"temp_max":294.12,"pressure":1021,"humidity":23},"visibility":10000,"wind":{"speed":3.09,"deg":310},"clouds":{"all":0},"dt":1634213767,"sys":{"type":1,"id":9016,"country":"UZ","sunrise":1634175201,"sunset":1634215477},"timezone":18000,"id":1512569,"name":"Tashkent","cod":200}

@@ -9,58 +9,29 @@
     <title>Js APis</title>
 </head>
 <body>
-<!--<center>-->
-<!--    <button onclick="getAlbums()">Get Albums</button>-->
-<!--    <br><br>-->
-<!--    <div id="posts"></div>-->
-<!--</center>-->
 <div class="container">
-    <button id="btn">Get Icons</button>
-    <form action="#">
-        <input type="checkbox" id="edu">
-        <label for="edu">Education</label>
-        <br>
-        <input type="checkbox" id="sport">
-        <label for="sport">Sport</label>
-        <br>
-        <input type="checkbox" id="nature">
-        <label for="nature">Nature</label>
-    </form>
-    <div class="container-inner" id="icons">
+    <input type="text" onblur="" id="city" placeholder="Write your city name..">
+</div>
+<div class="">
+    <ul id="list">
+
+    </ul>
     </div>
 </div>
-
 <script src="js/api.js"></script>
 <style>
     .container{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 20px;
-        padding: 30px;
-        background-color: #0ad1b9;
-        border-radius: 10px;
+        align-content: center;
+        margin: 100px 100px;
     }
-    .container-inner{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px;
-        padding: 30px;
-        background-color: #369ac9;
-        border-radius: 10px;
-    }
-    button{
-        padding: 10px;
-        border-radius: 8px;
-        background-color: orange;
-        border: none;
+    input{
+        padding: 20px;
+        border:solid 0.3px orange;
         outline: none;
-    }
-    i{
-        padding: 10px;
-        font-size: 35px;
-
+        border-radius: 10px;
     }
 </style>
 </body>

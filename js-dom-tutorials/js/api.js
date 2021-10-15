@@ -1,38 +1,47 @@
-// let posts = document.getElementById("posts");
+// let url = "https://api.openweathermap.org/data/2.5/weather?q=Tashkent&appid=6508c80d1115b29a5bb0e65c0009916d";
+// fetch(url)
+//     .then(response => response.json())
+//     .then(data => {
+//     console.log(data)
+// })
+
 //
-// function getAlbums(){
-//     console.dir(posts)
-//     fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
-//         .then(response => response.json())
-//         .then(data => {
-//             for(let i = 0; i < data.length; i++){
-//                 let img = document.createElement("img");
-//                 img.src = data[i]["url"]
-//                 console.log(data[i]["url"])
-//                 posts.appendChild(img)
-//             }
-//         })
+// function getWeather(){
+//     let cityName = document.getElementById("city");
+//     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=6508c80d1115b29a5bb0e65c0009916d`)
+//     .then(response => response.json())
+//     .then(data => {
+//     console.log(data)
+//     let count = document.getElementById("country");
+//     let city = document.getElementById("c");
+//     let temp = document.getElementById("temp");
+//
+//     count.innerHTML = data.sys.country;
+//     city.innerHTML = data.name;
+//     temp.innerHTML = data.main.temp;
+//
+// })
 // }
 
-let nature = ["leaf", "tree", "pagelines", "temperature-low","temperature-high"];
-let edu = ["school", "university", "book-open","book-reader","laptop-code"];
-let sport = ["swimmer","running","table-tennis","futbol","basketball-ball"];
-
-let btn = document.getElementById("btn");
-let icons = document.getElementById("icons");
-let e = document.getElementById("edu");
-let n = document.getElementById("nature");
-let s = document.getElementById("sport");
-
-btn.addEventListener("click", ()=>{
-    if(e.checked){
-        for(let i = 0; i < 3; i++){
-            let rItem = edu[Math.round(Math.random()*edu.length)]
-            let icon = document.createElement("i");
-            icon.className = `fas fa-${rItem}`;
-            icons.appendChild(icon);
-        }
-    }else{
-        console.log("Checkboxes is not checked")
+// fetch('https://jsonplaceholder.typicode.com/posts')
+//     .then((response) => response.json())
+//     .then((json) => {
+//         console.log(json)
+//         let dataList = document.getElementById("list")
+//         for(let i = 0; i < json.length; i++){
+//             let li = document.createElement("li")
+//             li.innerHTML = json[i].title
+//             dataList.appendChild(li)
+//         }
+//     });
+fetch("https://imdb8.p.rapidapi.com/auto-complete?q=ironman", {
+    "method": "GET",
+    "headers": {
+        "x-rapidapi-host": "imdb8.p.rapidapi.com",
+        "x-rapidapi-key": "0202709d4emshbe87778ed9b4962p1f76cdjsn4a200e532763"
     }
 })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+    })
