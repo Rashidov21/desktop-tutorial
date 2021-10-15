@@ -14,7 +14,7 @@ body{
 	/*background: khaki url("../images/ice4.jpg") no-repeat center top;
 	background-blend-mode: darken;*/
 }
-.blockOuter{
+/*.blockOuter{
 	width: 400px;
 	height: 400px;
 	background: #969696;
@@ -25,7 +25,7 @@ body{
 	width: 200px;
 	height: 200px;
 	background: #232328;
-}
+}*/
 .box{
 	width: 300px;
 	height: 200px;
@@ -41,8 +41,8 @@ h1{
 	/*margin-top: 50px;
 	margin-right: 50px;*/
 	/*margin: 50px;*/ /*4 ta tomoni uchun*/
-	margin: 50px 100px 50px 100px;
-	border:solid 0.5px red;
+	/*margin: 50px 100px 50px 100px;
+	border:solid 0.5px red;*/
 	/*border-style: solid;
 	border-width: 3px;
 	border-color: red;*/
@@ -59,6 +59,6 @@ h1{
 	font-weight: bold;*/
 	/*font: 20px Arial, sans-serif;*/
 }
-p{
+/*p{
 	font-weight:bold;
-}
+}*/

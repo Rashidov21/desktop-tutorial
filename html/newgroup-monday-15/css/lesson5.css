@@ -1,0 +1,46 @@
+body{
+	/*background-color: blue;*/
+	/*background-image:url("../images/test.png");*/
+	background-image:url("https://jbtrainingsolutions.com/wp-content/uploads/2020/01/Valley-Taurus-Mountains-Turkey.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	/*background-blend-mode:lighten;*/
+	/*background-attachment:scroll ;*/ /*fixed - qimirlamaydi*/
+	/*background-position: center;*/
+	/*background-image: url("https://www.thepythoncode.com/static/img/python_logo.svg");*/
+}
+/*h1{
+	background-color: red;
+}*/
+div{
+	width: 400px;
+	height: 400px;
+	background-color: orange;
+/*	border-style: solid;
+	border-width: 5px;
+	border-color: red;*/
+	border: solid 0.3px red;
+
+	/*border-radius: 10%;*/
+	/*border-top-right-radius: 50%;
+	border-bottom-left-radius: 50%;*/
+	position: absolute;
+	/*margin: 100px;
+/*	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-left: 100px;
+	margin-right: 100px;*/
+	/*margin: 100px 50px 100px 50px;*/
+
+/*	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 100px;
+	padding-right: 100px;*/
+	/*padding: 50px 30px 50px 30px;*/
+}
+/*#a{
+	margin-bottom: 10px;
+}
+#b{
+	margin-top: 20px;
+}*/
