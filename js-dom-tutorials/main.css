@@ -1,26 +1,42 @@
 /*body{*/
 /*    background-image:url("img/air1.jpg") ;*/
 /*}*/
+.dark{
+    background-color: #111d4a;
+}
 .box{
     width: 200px;
     height: 200px;
     background:orangered;
     transition: all 0.3s;
+    position: fixed;
+    display: none;
 }
-.radius {
-    border-radius: 50px;
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    transition: all 0.5s;
 }
-.transform{
-    transform: rotate(45deg);
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: #5883d3;
+    border-radius: 50%;
+    display: none;
+
 }
-.rotate{
-    animation: rotate 2s infinite;
+.rect{
+    width: 200px;
+    height: 200px;
+    background-color: #0ad1b9;
+    display: none;
 }
-@keyframes rotate {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+.triangle{
+    width: 200px;
+    height: 200px;
+    background-color: #7C7C7C;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    display: none;
 }

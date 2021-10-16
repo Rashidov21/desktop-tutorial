@@ -1,38 +1,43 @@
-let body = document.body;
-// body.style.backgroundColor = "red";
-// console.log(body.style)
-// body.style.backgroundImage = "url('img/air3.jpg')"
-// let index = 0;
-// function setRandomImage(){
-//     let images = ["img/air1.jpg","img/air2.jpg","img/air3.jpg"];
-//     let n = Math.round(Math.random() * images.length)
-//     body.style.backgroundImage = `url("${images[n]}")`
-//
+// window.onscroll = () =>{
+//     let h = window.scrollY
+//     if(Math.round(h) >= 2000){
+//         document.querySelector(".box").style.display = "block";
+//     }else{
+//         document.querySelector(".box").style.display = "none";
+//     }
 // }
-// window.setInterval(setRandomImage,2000)
-
-// body.style
-// console.log(body.className) // str
-// console.log(body.classList) // array
-
-let box = document.querySelector(".box");
-// console.log(box)
-// console.log(box.attributes[1].nodeValue)
-box.attributes[1].nodeValue = "myBox2"
-// for(let item of box.attributes){
-//     console.log(item)
-// }
-function changeSize(){
-    // box.style.width = "300px";
-    // box.classList = "box rotate"
-    console.log(window.pageYOffset)
-    console.log(window.pageXOffset)
-    // window.scrollBy(0,4000)
-    window.scrollTo(0,4000)
-
+M.AutoInit();
+let v = (10 > 20) ? "v=true" : "v=false"
+console.log(v)
+let s = document.getElementById("select");
+s.onchange = ()=>{
+    let val = s.value;
+    console.log(val)
+    if(val === "triangle"){
+        document.querySelector(".triangle").style.display = "block"
+    }else{
+        document.querySelector(".triangle").style.display = "none"
+    }
+    if(val === "rect"){
+        document.querySelector(".rect").style.display = "block"
+    }else{
+        document.querySelector(".rect").style.display = "none"
+    }
+    if(val === "circle"){
+        document.querySelector(".circle").style.display = "block"
+    }else{
+        document.querySelector(".circle").style.display = "none"
+    }
 }
-window.onload = function(){
-    // body.scrollWidth + 1000
-    console.log(window.pageYOffset)
-    console.log(window.pageXOffset)
+
+// let local = window.localStorage;
+// localStorage.setItem("apple", "iphone 13 pro max") // yozish
+// let getVal  = localStorage.getItem("apple") // olish
+// console.log(getVal)
+// localStorage.removeItem("apple") // ochirish
+//localStorage.clear() // umuman tozalab tashlash
+
+// localStorage.setItem("theme", "dark")
+window.onload = ()=>{
+    document.body.className = localStorage.getItem("theme")
 }
