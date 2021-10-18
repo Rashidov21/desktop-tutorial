@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,700;1,100&display=swap');*/
+body{
+	/*font-family: Verdana;*/
+	/*font-family: 'Work Sans', sans-serif;*/
+	/*font-style: italic;*/
+	font-size: 1.2em;
+	font-weight: bold;
+}
+span{
+	font-family: 'Work Sans', sans-serif;
+	font-weight: bold;
+}
+h1{
+	/*font-family: 'Work Sans', sans-serif;*/
+	text-align: center;
+	text-decoration: none;
+	/*text-transform: capitalize; uppercase , lowercase*/
+	 text-shadow: 8px 8px;
+}
+p{
+	text-indent: 80px;
+	word-spacing: 10px;
+	letter-spacing: 5px;
+	line-height: 10px;
+}
+a{
+	text-decoration: none;
+}
+.a{
+	max-width: 50%;
+	height: 250px;
+	background: orange;
+	text-align: center;
+}
+.b{
+	max-width: 80%;
+	background-color: yellow;
+	height: 250px;
+}
+/*input:focus{
+	outline-style: solid;
+    outline-color: red;
+    outline-width: thin;/* medium, thick*/
+input{
+	outline: none;
+	border:solid 0.3px yellow;
+	border-radius: 10px;
+}
+input:focus{
+	box-shadow: 0.3px 0.2px 0.2px orange;
+}
+button{
+	outline: none;
+}
