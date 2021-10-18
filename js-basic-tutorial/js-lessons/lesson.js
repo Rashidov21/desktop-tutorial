@@ -222,3 +222,110 @@
 // input : login >> string
 // output: login="gandi123" else if login="gandi986"  > alert("Welcome")
 // else   > alert("Error!")
+
+// Mantiqiy opearotorlar
+
+// || >> yoki
+// let a = 0 || 0 || null || undefined || false;
+// console.log(a)
+
+// if (10 > 11 || 10 > 5) {
+//     console.log("Ishlaydi")
+// }
+
+// let age = +prompt("Age..")
+// if (age > 18 || age < 20) {
+//     alert("Welcome")
+// }
+
+// && >> VA 
+// let x = 10 && 0;
+// console.log(x)
+
+// let age = +prompt("yosh")
+
+// if ((age > 18 && age < 25) && (age > 19 && age < 21)) {
+//     alert("welcome")
+// }
+
+// ! >> EMAS 
+// let x = 10;
+// console.log(!x)
+
+// let age = +prompt()
+// if (!age) {
+//     alert("Iltimos yozing...")
+// } else {
+//     alert(age)
+// }
+
+// alert(null || 2 || undefined);
+// alert(alert(1) || 2 || alert(3));
+
+// alert(1 && null && 2);
+// alert(null || 2 && 3 || 4);
+// alert(null or 2 and 3 or 4)
+
+
+// task 1 
+// 14 va  90 ni orasida age qiymat qabul qilihsi mumkin bolgan if shartini yozing
+
+// task 2
+// let login = >> "user", "user12", "user123"
+
+// task 3
+// input:
+//  day = "dushanba" , day = "chorshanba", day = "juma"
+//  hour > 13 , 15 < hour
+// output:
+// alert("dars bor")
+// let day = prompt("Kun")
+// if (day === "dushanba" || day === "chorshanba" || day === "juma") {
+//     let hour = prompt("soat")
+//     if (hour >= 13 && hour <= 15) {
+//         alert("dars bor")
+//     } else {
+//         alert("Kun togri soat notori")
+//     }
+// } else {
+//     alert("Kun notori")
+// }
+
+// let i = 0;
+// i++; // increment : i = i + 1;
+// alert(i)
+
+// let k = 10;
+// k--; // decrement : k = k - 1
+// alert(k)
+
+// task 3
+// let num = Number(prompt())
+// if (num > 0) {
+//     num++;
+//     console.log(num)
+// } else {
+//     num = num + 2;
+//     console.log(num)
+// }
+// let x, y, z;
+// x = Number(prompt());
+// y = Number(prompt());
+// z = Number(prompt());
+// let step = 0;
+// if (x > 0) {
+//     alert("OK")
+// } else {
+//     step++;
+// }
+// if (y > 0) {
+//     alert("OK")
+// } else {
+//     step++;
+// }
+// if (z > 0) {
+//     alert("OK")
+// } else {
+//     step++;
+// }
+// console.log(step)
