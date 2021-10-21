@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    center{
+        font-size: 25px;
+        color: #232328;
+        padding: 20px;
+        border:solid 0.3px black;
+    }
+</style>
+<center>
+    <div id="app">
+        <h1 v-on:click="reverseMessage">{{message}}</h1>
+        <button v-on:click="minus">Decrement</button>
+        <br>
+        Счётчик: {{ counter }}
+        <br>
+        <button v-on:click="plus">Increment</button>
+    </div>
+</center>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -329,3 +329,97 @@
 //     step++;
 // }
 // console.log(step)
+// let a, b, c; // 5 9 12
+// a = +prompt("A")
+// b = +prompt("B")
+// c = +prompt("C")
+// if (b > a && b < c) {
+//     console.log("rost")
+// } else {
+//     console.log("yolgon")
+// }
+// let a,b;
+// a = +prompt("A")
+// b = +prompt("B")
+
+
+// While and For in Loops
+
+// while loop >> infinite
+// let i = 0; // 998200
+// while (i < 10) {
+//     i++ // plus 1
+//     console.log(i)
+// }
+
+
+// let control = true;
+// while (control) {
+//     let food = prompt("Nima ovqat ?");
+//     if (food === "palov") {
+//         control = false;
+//     }
+// }
+
+// while (condition) {
+//     // код
+//     // также называемый "телом цикла"
+// }
+// let count = 0;
+// let control = true;
+// do {
+//     count++;
+//     alert("Takrorlanishlar soni = " + count)
+//     if (count === 15) {
+//         control = false;
+//     }
+// } while (control)
+
+// do{
+//     // actions
+// }while(condition)
+
+// for (начало; условие; шаг) {
+//     // ... тело цикла ...
+//   }
+
+// for (let i = 0; i < 10; i++) {
+//     console.log(i)
+// }
+let str = "Hello world";
+// console.log(str[0])
+// console.log(str[1])
+// console.log(str[2])
+// console.log(str[3])
+// console.log(str[4])
+// console.log(str.length) // 11 type  number
+// console.log(str[0]) // H
+// for (let i = 0; i < str.length; i++) {
+//     console.log(str[i])
+// }
+// for (let i = 0; i < 100; i++) {
+//     console.log(i)
+//     i++;
+// }
+// let i = 0;
+// for (i; i < 10; i++) {
+//     console.log(i)
+// }
+// i , k , j , x
+
+let a = 1;
+let b = 7;
+// task 1 
+// for (let i = 0; i < n; i++) {
+//     console.log(k)
+// }
+// task 2
+
+// if (a < b) {
+//     let counter = 0;
+//     for (a; a <= b; a++) {
+//         console.log(a)
+//         counter++
+//     }
+//     console.log("Sonlar soni " + counter)
+// }
