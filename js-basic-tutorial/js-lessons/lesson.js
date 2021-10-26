@@ -386,7 +386,7 @@
 // for (let i = 0; i < 10; i++) {
 //     console.log(i)
 // }
-let str = "Hello world";
+// let str = "Hello world";
 // console.log(str[0])
 // console.log(str[1])
 // console.log(str[2])
@@ -407,8 +407,8 @@ let str = "Hello world";
 // }
 // i , k , j , x
 
-let a = 1;
-let b = 7;
+// let a = 1;
+// let b = 7;
 // task 1 
 // for (let i = 0; i < n; i++) {
 //     console.log(k)
@@ -422,4 +422,53 @@ let b = 7;
 //         counter++
 //     }
 //     console.log("Sonlar soni " + counter)
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     console.log(i)
+// }
+// for (let i = 0; i < 10; i++) {
+//     if (i % 2) {
+//         if (i === 3) {
+//             continue // siklni tashlab ketish
+//         }
+//         if (i === 7) {
+//             break // sikldan chiqish
+//         }
+//         alert(i);
+//     }
+// }
+// for (let i = 1; i <= 10; i++) {
+//     let num = Number(`${i}` + '0');
+//     if (num === 30 || num === 60) {
+//         continue
+//     }
+//     if (num === 90) {
+//         break
+//     }
+//     console.log(Number(`${i}` + '0'))
+// }
+// while (true) {
+//     let name = prompt("Ism ? ")
+//     if (name[0] === "B" || name[0] === "b") {
+//         break
+//     }
+// }
+// for (let i = 1; i <= 10; i++) {
+//     let n = Number(`1.${i}`)
+
+//     let price = i * 2000
+//     console.log(`1.${i}00 gramm konfetni narxi = 2${price} sum`)
+// }
+// let a = 1;
+// let b = 5;
+// let sum = 0;
+// for (let i = a; i <= b; i++) {
+//     sum += i * i
+
+// }
+// console.log(sum)
+// let n = 7;
+// for (let i = 0; i <= n; i++) {
+//     console.log(i + 1 / i)
 // }

@@ -1,0 +1,36 @@
+body{
+	display: flex;
+	justify-content: center;
+}
+.a{
+	width: 200px;
+	height: 200px;
+	background: orange;
+	position: absolute;
+	margin-left: 30px;
+	z-index: 0;
+}
+.b{
+	width: 200px;
+	height: 200px;
+	background: blue;
+	position: absolute;
+	margin-left: 60px;
+	z-index: 0;
+}
+.c{
+	width: 200px;
+	height: 200px;
+	background: darkgreen;
+	position: absolute;
+	margin-left: 90px;
+	z-index: 0;
+	transform: rotate(45deg);
+}
+.box{
+	width: 200px;
+	height: 150px;
+	background: lightgreen;
+	padding: 10px;
+	overflow:; /*hidden ,scroll, auto, visible*/
+}
