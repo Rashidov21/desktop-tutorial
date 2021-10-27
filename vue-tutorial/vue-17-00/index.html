@@ -9,21 +9,62 @@
 </head>
 <body>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+    *{
+        /*font-family: 'Inconsolata', monospace;*/
+    }
     center{
         font-size: 25px;
         color: #232328;
         padding: 20px;
         border:solid 0.3px black;
     }
+    .orange{
+        width: 200px;height: 200px;background-color: orange;
+    }
+    .red{
+        width: 200px;height: 200px;background-color: red;
+    }
+    .test{
+        background-color: #232328;
+    }
 </style>
 <center>
+<!--    lesson 1-->
+<!--    <div id="app">-->
+<!--        <h1 v-on:click="reverseMessage">{{message}}</h1>-->
+<!--        <button v-on:click="minus">Decrement</button>-->
+<!--        <br>-->
+<!--        Счётчик: {{ counter }}-->
+<!--        <br>-->
+<!--        <button v-on:click="plus">Increment</button>-->
+<!--    </div>-->
+<!--    lesson 2 -->
     <div id="app">
-        <h1 v-on:click="reverseMessage">{{message}}</h1>
-        <button v-on:click="minus">Decrement</button>
+        <input :id="name"
+               type="text"
+                @focus="morePaddings"
+                >
         <br>
-        Счётчик: {{ counter }}
-        <br>
-        <button v-on:click="plus">Increment</button>
+        <h4 @[dynamicClass]="changeClass">{{name}}</h4>
+        <div class="orange" v-if="seen">
+            <li>
+                <search-bar></search-bar>
+            </li>
+            <ul>
+                <li v-for="item, key in items">
+                    {{key}} : {{item.name}}
+                </li>
+            </ul>
+            <h4 v-bind:class="myClass"
+                v-on:mouseover="changeClass"
+            >Test v-bind:</h4>
+            <br>
+            <hr>
+
+            <hr>
+        </div>
+        <div class="red" v-else></div>
     </div>
 </center>
 
