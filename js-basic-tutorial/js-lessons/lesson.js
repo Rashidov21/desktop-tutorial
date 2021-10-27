@@ -472,3 +472,95 @@
 // for (let i = 0; i <= n; i++) {
 //     console.log(i + 1 / i)
 // }
+// let c = 0;
+// while (true) {
+//     console.log("while loop")
+//     c++;
+//     if (c === 56) {
+//         break
+//     }
+// }
+// for (let i = 0; i < 5; i++) {
+//     console.log("ishla")
+// }
+
+// let str = "Abdullo";
+//console.log(str.length) // belgilar soni - number
+//console.log(str.toUpperCase()) // katta harf
+//console.log(str.toLowerCase()) // kichkina harf
+// console.log(str[0]) // A
+
+// function
+
+// function getName() {
+//     let name = prompt("Name ..")
+//     alert(name)
+// }
+// getName()
+
+// function plus(a, b) {
+//     let result = a + b
+//     return result
+// }
+
+// function division(x, y) {
+//     return alert(x / y)
+// }
+// console.log(plus(10, 20))
+// console.log(division(10, 2))
+
+// function getShortUserName(){}
+
+// let user = Number(prompt("Qaysi amalni tanlesiz ? \n 1= * , 2= / 3= + 4= -"))
+// if (user === 1) {
+//     let num1 = Number(prompt("1-son"))
+//     let num2 = Number(prompt("2-son"))
+//     mult(num1, num2)
+// }
+
+// function mult(x, y) {
+//     return alert(x * y)
+// }
+
+// function division(x, y) {
+//     return alert(x / y)
+// }
+
+// function plus(x, y) {
+//     return alert(x + y)
+// }
+
+// function minus(x, y) {
+//     return alert(x - y)
+// }
+// 1-function declaration
+// function func() {}
+
+// 2-function expression
+// const myfunc = function() {}
+
+// 3-arrow function
+// const func1 = (age, salary) => {
+//     if (age > 18) {
+//         alert("done")
+//     }
+//     alert("your salary = " + salary)
+// }
+// func1(19, 25000)
+
+// 4-anonim function
+// function() {}
+// window.onload = function() {
+//     alert("working...")
+// }
+
+// function PowerA234(num) {
+//     alert(num ** 2)
+//     alert(num ** 3)
+//     alert(num ** 4)
+// }
+// let num1 = Number(prompt("son"))
+// PowerA234(num1)
+
+// for orqali 0 dan 100 gacha bo’lgan sonlar orasida 5 ga
+// qoldiqsiz bo’linadigan barchasni ekranga chiqaring
