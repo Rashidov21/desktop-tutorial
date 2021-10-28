@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LOOOK - Fast Food  Page </title>
+</head>
+<body>
+<style>
+    .my-padding{
+        padding-left: 5%;
+        padding-right:5%;
+    }
+</style>
+<nav class="my-padding orange darken-4">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">LOOK</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#" ><i class="fas fa-burger"></i> </a></li>
+            <li><a href="#"><i class="fas fa-pizza-slice"></i>  </a></li>
+            <li><a href="#"><i class="fas fa-wine-bottle"></i> </a></li>
+        </ul>
+    </div>
+</nav>
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="#" class="black-text text-darken-3"><i class="fas fa-burger"></i>- Burger</a></li>
+    <li><a href="#" class="black-text text-darken-3"><i class="fas fa-pizza-slice"></i>- Pizza </a></li>
+    <li><a href="#" class="black-text text-darken-3"><i class="fas fa-wine-bottle"></i>- Drinks</a></li>
+</ul>
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h2 class="white-text">BURGER - Lorem ipsum dolor sit amet.</h2>
+            </div>
+            <div class="col s12 m6 ">
+                <div class="card-panel z-depth-3 hoverable">
+                    <form action="" class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-phone"></i>
+                            <input id="icon_telephone" type="tel" class="validate">
+                            <label for="icon_telephone">Telephone</label>
+                            <br>
+                            <br>
+                            <br>
+                            <button type="submit" class="btn orange">Send Phone Number</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/materialize.js"></script>
+<script>
+    M.AutoInit();
+</script>
+</body>
+</html>

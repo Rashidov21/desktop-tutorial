@@ -5,36 +5,76 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Materialize CSS </title>
 </head>
 <body>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+</ul>
 <div class="container">
-    <h1 class="blue-text darken-1">
-        Hello world
-    </h1>
-    <div class="card-panel grey lighten-5">
-        This is a card panel with a teal lighten-2 class
-    </div>
-<!--.row >> bu qator , .col >> bu ustin, bitta rowni ichida max 12 ta col boladi-->
-    <div class="row">
-        <div class="col s12 m6 l9">
-            <div class="card-panel red darken-3 yellow-text text-accent-4">
-                Block  A
-            </div>
-        </div>
-        <div class="col s6 m12 l7">
-            <div class="card-panel orange darken-3 yellow-text text-accent-4">
-                Block  B
-            </div>
-        </div>
-    </div>
 
+    <h4 class="truncate">This is an extremely long title that will be truncated</h4>
+    <div class="card-panel blue left hoverable z-depth-1 ">
+        <h3>Hello </h3>
+<!--        <img class="responsive-img" src="https://apollo-olx.cdnvideo.ru/v1/files/hrhfpcsl1efh2-UZ/image;s=1000x700" alt="">-->
+    </div>
+    <div class="card-panel red right hoverable ">
+        <div class="progress">
+            <div class="indeterminate"></div>
+        </div>
+        <table class="responsive-table striped highlight centered">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+            </tr>
+            </thead>
 
+            <tbody>
+            <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>$0.87</td>
+            </tr>
+            <tr>
+                <td>Alan</td>
+                <td>Jellybean</td>
+                <td>$3.76</td>
+            </tr>
+            <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>$7.00</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 
 <script src="js/materialize.js"></script>
+<script>
+    M.AutoInit();
+</script>
 </body>
 </html>

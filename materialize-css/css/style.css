@@ -2,3 +2,11 @@
     padding-left: 7%;
     padding-right: 7%;
 }
+.banner{
+    background-image: url("https://wallpaperaccess.com/full/1312729.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    min-height: 500px;
+}

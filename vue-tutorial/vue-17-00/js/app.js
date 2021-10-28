@@ -33,50 +33,48 @@
 
 // lesson 2
 
-const MyApp = {
-    let n = 10;
-    data(){
-        return {
-            name:null,
-            myClass:"test",
-            seen:true,
-            items:[
-                {name:"Ball"},
-                {name:"Bag"},
-                {name:"Water"}
-            ],
-            names:["John", "Mike"],
-        }
-    },
-    methods:{
-        changeClass(){
-            this.myClass = "red"
-        },
-    }
-}
+// const MyApp = {
+//     let n = 10;
+//     data(){
+//         return {
+//             name:null,
+//             myClass:"test",
+//             seen:true,
+//             items:[
+//                 {name:"Ball"},
+//                 {name:"Bag"},
+//                 {name:"Water"}
+//             ],
+//             names:["John", "Mike"],
+//         }
+//     },
+//     methods:{
+//         changeClass(){
+//             this.myClass = "red"
+//         },
+//     }
+// }
 // v-on: >> metodlarga Vue orqali javob berish
 // v-if: >> true/false ga tekshiruv, display : none/block
 // v-else >> agar v-if true qiymat kemas ishlaydi : display:block;
 // v-bind: >> js bilan dom elementni bog'lash
 // v-for: >> js dagi massiv ni forga tashash uchun
 
+// const app = Vue.createApp(MyApp)
+//
+//
+// app.component("list-item",{
+//     props: ['todo'],
+//     template: `<li>{{ todo.text }}</li>`
+// })
+// app.component("search-bar", {
+//     template: `
+//         <form action="#">
+//         <input type="text">
+//         <br>
+//         <input type="submit" value="Search">
+//         </form>`
+// })
+// app.mount("#app")
+// console.log(app.$data.myClass)
 
-
-
-const app = Vue.createApp(MyApp)
-
-
-app.component("list-item",{
-    props: ['todo'],
-    template: `<li>{{ todo.text }}</li>`
-})
-app.component("search-bar", {
-    template: `
-        <form action="#">
-        <input type="text">
-        <br>
-        <input type="submit" value="Search">
-        </form>`
-})
-app.mount("#app")
-console.log(app.$data.myClass)

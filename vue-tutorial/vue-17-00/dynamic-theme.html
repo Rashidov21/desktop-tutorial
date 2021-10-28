@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Dynamic Theme Vue.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body style="transition: all 0.3s;">
+<nav class="orange" id="theme" style="padding: 0 100px 0 100px">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Dynamic Theme</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li v-if="day">
+                <a href="#" v-on:click="night"><i class="fas fa-moon"></i></a>
+            </li>
+            <li v-else>
+                <a href="#" v-on:click="light" ><i class="fas fa-sun"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="js/dynamic-theme.js"></script>
+</body>
+</html>
