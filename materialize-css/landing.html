@@ -12,9 +12,21 @@
 </head>
 <body>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+    body{
+        font-family: 'Josefin Sans', sans-serif;
+    }
     .my-padding{
         padding-left: 5%;
         padding-right:5%;
+    }
+    .bottom-left-block{
+        width: 100%;
+        height: 200px;
+    }
+    .icons > a{
+        font-size: 30px;
+        padding: 5px;
     }
 </style>
 <nav class="my-padding orange darken-4">
@@ -35,6 +47,7 @@
 </ul>
 <div class="banner">
     <div class="container">
+        <br><br>
         <div class="row">
             <div class="col s12 m6">
                 <h2 class="white-text">BURGER - Lorem ipsum dolor sit amet.</h2>
@@ -42,8 +55,9 @@
             <div class="col s12 m6 ">
                 <div class="card-panel z-depth-3 hoverable">
                     <form action="" class="row">
+                        <h5>Send phone number</h5>
                         <div class="input-field col s12">
-                            <i class="fas fa-phone"></i>
+                            
                             <input id="icon_telephone" type="tel" class="validate">
                             <label for="icon_telephone">Telephone</label>
                             <br>
@@ -58,6 +72,61 @@
         </div>
     </div>
 </div>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card-panel">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2020-07-30-at-3-19-24-pm-1596136785.png" alt="" class="responsive-img">
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="row">
+                    <div class="col s6">
+                        <div class="card-panel">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2020-07-30-at-3-19-24-pm-1596136785.png" alt="" class="responsive-img">
+                </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card-panel">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2020-07-30-at-3-19-24-pm-1596136785.png" alt="" class="responsive-img">
+                </div>
+                    </div>
+                </div>
+           
+                    <div class="col s12">
+                        <div class="card-panel bottom-left-block">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2020-07-30-at-3-19-24-pm-1596136785.png" alt="" width="100%" height="150">
+                </div>
+                    </div>
+             
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="page-footer teal darken-4">
+    <div class="container">
+        <div class="center">
+            <div class="icons">
+                <a href="" class="white-text"><i class="fab fa-facebook"></i></a>
+                <a href="" class="white-text"><i class="fab fa-instagram"></i></a>
+                <a href="" class="white-text"><i class="fab fa-telegram"></i></a>
+            </div>
+            <div class="brand">
+                <h4>LOOK</h4>
+            </div>
+            <div class="row links" style="max-width: 600px;">
+                <p class="col s4"><a href="#" class="white-text">LOOOK FAST FOOD</a></p>
+                <p class="col s4"><a href="#" class="white-text">+998931234567</a></p>
+                <p class="col s4"><a href="#" class="white-text">info@look.uz</a></p>
+            </div>
+            <span>Copyright © 2019 LOOOK. All rights reserved.</span>
+
+        </div>
+    </div>
+</footer>
+
 <script src="js/materialize.js"></script>
 <script>
     M.AutoInit();
