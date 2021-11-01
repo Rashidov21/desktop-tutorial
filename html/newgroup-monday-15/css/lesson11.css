@@ -1,0 +1,33 @@
+@font-face{
+	font-family: 'Fruktur', cursive;
+	src: url(../fonts/Fruktur-Regular.ttf);
+}
+body{
+	font-family: 'Fruktur', cursive;
+}
+.box{
+	width: 200px;
+	height: 200px;
+
+	/*margin: 0 auto 0 auto;*/
+	border-radius: 14px;
+	background: #7d9cf7;
+	box-shadow:  26px 26px 52px #5e75b9,
+	             -26px -26px 52px #9cc3ff;
+	/*background-image: linear-gradient(to bottom right,yellow ,red )*/
+/*	background: rgb(181,11,11);
+	background: linear-gradient(90deg, rgba(181,11,11,1) 0%, rgba(219,244,9,1) 73%);*/
+}
+.box:hover{
+	/*transform: translate(50px, 100px);*/
+	/*transform: rotate(60deg);*/
+	/*transform: rotateX(60deg) rotateY(20deg);*/
+	/*transform: scale(2, .5);*/
+	/*transform: scale(2);*/
+	/*transform: scaleX(1.5) scaleY(1.7);*/
+
+	/*transform: skew(25deg);*/
+	/*transform: skewX(25deg);*/
+	transform: skewY(25deg);
+
+}
