@@ -564,3 +564,102 @@
 
 // for orqali 0 dan 100 gacha bo’lgan sonlar orasida 5 ga
 // qoldiqsiz bo’linadigan barchasni ekranga chiqaring
+
+
+// Obejcts 
+
+// let user = { // объект
+//     name: "John", // под ключом "name" хранится значение "John"
+//     age: 30 // под ключом "age" хранится значение 30
+// };
+
+// let obj = {};
+// console.log(typeof obj) // object
+
+// let obj = {
+//     model: "X",
+//     company: "Tesla",
+//     price: 250000,
+//     color: undefined,
+//     instock: false,
+// }
+// obj.company = "Shevrolet";
+//  . 
+
+//    console.log(obj.instock) // false
+//console.log(obj.company) // "Shevrolet"
+// key + value | kalit + qiymat
+
+// add key + value
+// let car = {
+
+// }
+// car.color = "red";
+// console.log(car.color) // "red"
+
+// delete key + value 
+// let obj = {
+//     name: "Lenovo",
+//     cpu: "Intel Core i3",
+//     gpu: "Amd Radeon RX 550"
+// }
+// console.log(obj)
+// delete obj.gpu;
+// console.log(obj)
+// let obj = {
+//     name: "Lenovo",
+//     cpu: "Intel Core i3",
+//     gpu: "Amd Radeon RX 550"
+// }
+// obj.price = 450;
+// if (obj.price > 400) {
+//     alert("Qimmat !")
+// }
+
+// let obj = {
+//     name: "Lenovo",
+//     cpu: "Intel Core i3",
+//     gpu: "Amd Radeon RX 550"
+// }
+// console.log(obj["cpu"]) // Intel Core i3
+// console.log(obj["name"]) // Lenovo
+
+// let str = "abdulloh";
+// console.log(str[2])
+
+// task 1 
+
+// let obj = {
+//     name: "John",
+//     salary: 2500,
+//     skills: {
+//         html: "HTML 5",
+//         css: "CSS3 Materialize css",
+//         js: "Javascript Basic"
+//     }
+// }
+// console.log(obj.skills.css)
+// console.log(obj["skills"]["css"])
+
+// function UserInfo() {
+//     let user = {}
+//     let name = prompt("Name ?");
+//     let age = prompt("Age ?");
+//     user.name = name;
+//     user.age = age;
+//     return user
+// }
+// console.log(UserInfo())
+
+// let x = 10;
+// if (typeof x === "number") {
+//     alert("OK")
+// }
+
+// let user = { name: "John", age: 30, isAdmin: true };
+// console.log("name" in user) // true
+// let n = 0;
+// for (x in user) {
+//     console.log(user[x])
+//     alert(n++)
+// }
