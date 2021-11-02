@@ -1,14 +1,20 @@
-const AnimationApp = {
-	data(){
-		return{
+let a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+
+let b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+
+
+// const AnimationApp = {
+// 	data(){
+// 		return{
 		
-		}
-	},
+// 		}
+// 	},
 
-}
-const animate = Vue.createApp(AnimationApp);
+// }
+// const animate = Vue.createApp(AnimationApp);
 
-animate.mount('#animate');
+// animate.mount('#animate');
 
 // const App = {
 // 	data(){

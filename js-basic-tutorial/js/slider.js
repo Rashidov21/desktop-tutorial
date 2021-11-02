@@ -8,6 +8,7 @@
 // 		'img/nike/nike5.jpg',
 // 		'img/nike/nike6.jpg',
 // 		],
+// SELECT FROM * mytable WHERE id = 5
 
 // 	// the first image (index = 0 and => ++)
 // 	frame:0, 
