@@ -1,0 +1,31 @@
+body{
+
+}
+.box-outer{
+	width: 500px;
+	height: 500px;
+	background-color: pink;
+	perspective: 4000px;
+	perspective-origin: center;
+}
+.box{
+
+	margin: 100px auto;
+	width: 300px;
+	height: 300px;
+	background-color: orange;
+	
+	/*transform-origin: center center;*/
+	transform-style: preserve-3d;
+	/*transform: rotateX(56deg);*/
+	/*transform: rotateY(80deg);*/
+	/*transform: rotateZ(30deg);	*/
+
+}
+.box:hover{
+	/*transform:rotate3d(1,0,1, 100deg) translate(50px ,100px);*/
+	/*transform: scale3d(1.5,1,1.5);*/
+	/*transform: translate3d(100px,50px,100px);*/
+	transform: rotate3d(0,1,1,200deg);
+	transition: all 2s;
+}
