@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+<div id="app">
+    <button v-on:mousemove="showMessage()">Get message</button>
+    <button>Sum</button>
+    <h4>{{hello}}</h4>
+    <h5>{{num}}</h5>
+</div>
+
+
+
+<div id="task4">
+    <button @click="sum()">Sum</button>
+    <h2 v-if="show">Hello world = true</h2>
+    <h2 v-else>Hello world = false</h2>
+
+    <button v-on:click="showElem" v-if="hide">
+    Hide</button>
+    <button v-on:click="hideElem" v-if="show">Show</button>
+   <!--  <h1 v-if="status">Element with true value</h1> -->
+</div>
+
+
+
+
+
+
+<div id="forms">
+    <center>
+        <input
+         type="text"
+         v-model="message"
+         @keyup="checkLength"
+         />
+        <h2>{{message}}</h2>
+        <input
+            type="checkbox"
+            v-model="check"
+        />
+        <h4>Chekbox value = {{check}}</h4>
+        <hr>
+        <input type="checkbox" v-model="lang" value="html">
+        <input type="checkbox" v-model="lang" value="css">
+        <input type="checkbox" v-model="lang" value="js">
+        <p>Содержимое массива: {{ lang }}</p>
+        <hr>
+            <input name="radio" type="radio" v-model="type" value="один">
+            <input name="radio" type="radio" v-model="type" value="два">
+            <input name="radio" type="radio" v-model="type" value="три">
+            <p>Вы выбрали: {{ type }}</p>
+            <hr>
+    <input type="radio" name="lang" value="en" v-model="choiceLang" >
+    <input type="radio" name="lang" value="ru" v-model="choiceLang" >
+    <input type="radio" name="lang" value="uz" v-model="choiceLang">
+    <br>
+    <h1 v-if="choiceLang == 'en'">Your language is English</h1>
+    <h1 v-if="choiceLang == 'ru'">Your language is Russian</h1>
+    <h1 v-if="choiceLang == 'uz'">Your language is Uzbek</h1>
+
+    <hr>
+    <select name="main" id="none" v-model='mySelect'>
+        <option>C.Ronoldo</option>
+        <option>L.Messi</option>
+        <option>M.Salah</option>
+    </select>
+    <h1>{{mySelect}}</h1>
+    </center>
+    
+</div>
+
+
+
+<script src="js/cheat.js"></script>
+</body>
+</html>
