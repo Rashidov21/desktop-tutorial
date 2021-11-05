@@ -1,17 +1,62 @@
 .box{
-	width: 200px;
-	height: 200px;
+	width: 800px;
+	height: 400px;
 	background-color: orange;
+
+/*	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;*/	
 	/*transition-delay:0.5s; */
 	/*transition-duration: 3s;*/
 	/*transition-property: width;*/
 	/*transition-timing-function: linear;*/
 	/*transition: width 2s ease ;*/
-	/*transition: all 2s;*/
+	clip-path: polygon(5% 20% 15% 10%);
+  	transition: clip-path 5s;
 
 }
 .box:hover{
-	/*transform: translate(200px , 0px);*/
-	background-color: yellow;
-	width: 400px;
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
 }
+/*.a{
+	width: 30px;
+	height: 150px;
+	background-color: red;
+	margin-left: 10px;
+	transition: all 0.5s;
+	display: inline-block;
+	margin-bottom:0;
+	position: absolute;	
+}
+.b{
+	width: 30px;
+	height: 100px;
+	background-color: blue;
+	margin-left: 40px;
+	transition: all 0.5s;
+	display: inline-block;
+	margin-bottom:0;
+	position: absolute;
+
+}
+.c{
+	width: 30px;
+	height: 200px;
+	background-color: green;
+	margin-left: 80px;
+	transition: all 0.5s;
+	display: inline-block;
+	margin-top:0;
+	position: absolute;	
+}
+.box:hover .a{
+	height: 250px; 
+}
+.box:hover .b{
+	height: 150px;
+}
+.box:hover .c{
+	height: 250px;
+}*/
