@@ -172,15 +172,87 @@
 // alert(Math.pow(10, 2)) // 100
 
 
-function getRandomArray() {
-    let randomNumber = Math.random() * 25;
-    let arr = []
-    for (let i = 0; i < randomNumber; i++) {
-        arr.push(i)
-    }
-    return arr
-}
-let result = getRandomArray()
-console.log(result)
-
+// function getRandomArray() {
+//     let randomNumber = Math.random() * 25;
+//     let arr = []
+//     for (let i = 0; i < randomNumber; i++) {
+//         arr.push(i)
+//     }
+//     return arr
+// }
+// let result = getRandomArray()
+// console.log(result)
+Array Methods
 let names = ["John", "Mike", "David", "Sara", "Anna", "Alex"]
+delete names[0]; // ochirib yuborish
+console.log(names)
+names[0] = "Phill"
+console.log(names)
+let removed = names.splice(0, 2);
+names.splice(4, 4) // elementlarni indexi orqali qirqish
+
+let c = names.slice(0, 2) // elementlarni nusxasini olish
+console.log(c)
+console.log(names)
+
+let arr1 = [1, 2, 3]
+let arr2 = [4, 5, 6]
+let arr3 = [7, 8, 9]
+console.log(arr1.concat(arr2, arr3)) // massivni boshqa massiv bilan kengaytirish
+
+names.forEach(alert)
+names.forEach((index, item) => {
+    console.log(`names: index=${item} \t item=${index}`)
+})
+names.forEach(function(elem) {
+    console.log(`${elem}` + "baaa")
+})
+
+let arr = [1, 2, 3, 4, 5]
+arr.forEach(function(elem) {
+    alert(elem ** 2)
+})
+
+let arr = [1, 2, 3, 4, 5]
+let str = arr.join("*") // siz korsatgan belgi boyicha massivni str qiladi
+console.log(str)
+alert(arr.reverse()) // massivni teskari qilish
+let fruits = "Apple , Banana, Kiwi";
+let x = fruits.split(",") // siz korsatgan belgi boyicha str ni massiv qiladi
+console.log(x)
+let arr = [1, 2, 3, 4, 5]
+let str = arr.join("*") // siz korsatgan belgi boyicha massivni str qiladi
+console.log(str)
+let text = "An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition"
+
+let words = text.split(" ")
+
+const findWord = (arr) => {
+    let counter = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].toLowerCase() === "apple") {
+            counter++
+        }
+    }
+    return counter
+}
+alert(findWord(words))
+
+
+
+let male = [];
+let female = [];
+for (let i = 0; i < 10; i++) {
+    let surname = prompt("Familyani kiriting..")
+    let n = surname.length;
+    if (surname[n - 1] === "v") {
+        alert("Male")
+        male.push(surname)
+
+    } else {
+        alert("Female")
+        female.push(surname)
+    }
+}
+console.log(male)
+console.log(female)
