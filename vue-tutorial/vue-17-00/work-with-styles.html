@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Styles and Classes</title>
+</head>
+<body>
+<div id="app" >
+    <p>{{reversedMessage}}</p>
+<!--    font-size >> fontSize-->
+<!--    backgroun-color >> backgroundColor-->
+    <div v-bind:style="{background:bg}">
+        <h4 v-bind:style="{color:color, border: '1px solid green',fontSize:'25px'}">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, hic?
+        </h4>
+    </div>
+    <div v-bind:style="styles">
+        Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Aliquam
+        dolores hic nihil nostrum praesentium sint?
+    </div>
+    <div v-bind:style="status ? styles : stylesX">
+        <center>
+            <input
+                    type="checkbox"
+                    v-model="status"
+            /></center>
+        Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Laudantium, tempora.
+    </div>
+    <center>
+        <button @click="change">Change to red</button>
+    </center>
+    <br><br>
+    <div v-bind:style="stylesX">
+        <h4>{{message}}</h4>
+        <h1>{{fullName}}</h1>
+        <h4>{{reversedMessage}}</h4>
+    </div>
+</div>
+<script src="js/styles.js"></script>
+</body>
+</html>
