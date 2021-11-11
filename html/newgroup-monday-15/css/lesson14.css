@@ -1,0 +1,84 @@
+body{
+	/*animation-name: changeBg;
+	animation-duration: 3s;
+	animation-iteration-count: 3;*/
+}
+
+
+
+
+@keyframes changeBg {
+	0%{
+		background-color: orange;
+	}
+	50%{
+		background-color: red;
+	}
+	100%{
+		background-color: yellow;
+	}
+/*	from{
+		background-color: orange;
+	}
+	to{
+		background-color: yellow;
+	}*/
+}
+
+.container{
+	width: 100%;
+	height: 500px;
+	border: solid 1.5px red;
+	display: flex;
+	/*justify-content:center;*/ /*X oqi boylab tekslanish*/
+	/*align-items: center;*/ /*Y oqi boylab tekslanish*/
+	align-content:space-around; /* space-around , stretch*/
+	flex-wrap:; /*wrap , nowrap, wrap-reverse*/
+	flex-direction: ;/*column , row*/
+	flex-flow:row wrap ;/*row , wrap*/
+
+}
+.box{
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+	transition: all 0.5s;
+	margin: 15px;
+	/*float: left;*/
+	/*display: inline-block;*/
+	/*margin: 0px auto 0px auto;	*/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes changePos{
+	0%{
+		transform: translateX(200px);
+		background-color: yellow;
+	}
+	50%{
+		transform: translateX(200px) translateY(100px);
+		background-color: red;;
+	}
+	100%{
+		transform: translateX(400px) translateY(400px);
+		background-color: blue;
+	}
+}
