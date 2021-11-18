@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Vue Quiz App</title>
+</head>
+<body>
+<div class="container" id="app">
+    <div class="box" style="float: right">
+        <h4>Points :0</h4>
+    </div>
+    <div class="box">
+        <h2>{{ questions[questionIndex].question }}</h2>
+        <div class="answers" v-for="answer in questions[questionIndex].answers">
+            <input type="checkbox" name="answer" id="ans1">
+            <label for="ans1">{{ answer }}</label>
+        </div>
+    </div>
+    <br>
+    <button id="next">Next question >></button>
+</div>
+<style>
+    *{
+        font-family: sans-serif;
+    }
+    .container{
+        margin: 0px auto 0px auto;
+        background-color: #1aae1e;
+        padding: 20px;
+    }
+</style>
+<script src="js/quiz.js"></script>
+</body>
+</html>
