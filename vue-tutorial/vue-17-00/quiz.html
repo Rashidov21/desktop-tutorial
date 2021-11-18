@@ -11,17 +11,17 @@
 <body>
 <div class="container" id="app">
     <div class="box" style="float: right">
-        <h4>Points :0</h4>
+        <h4>Points :{{points}}</h4>
     </div>
     <div class="box">
         <h2>{{ questions[questionIndex].question }}</h2>
-        <div class="answers" v-for="answer in questions[questionIndex].answers">
-            <input type="checkbox" name="answer" id="ans1">
+        <div class="answers" v-for="answer,index in questions[questionIndex].answers">
+            <input type="radio" @click="checkAnswer(questions[questionIndex],index)" name="answer"  id="ans1">
             <label for="ans1">{{ answer }}</label>
         </div>
     </div>
     <br>
-    <button id="next">Next question >></button>
+    <button id="next" @click="nextQuestion">Next question >></button>
 </div>
 <style>
     *{
