@@ -74,3 +74,8 @@
 // const pi = 3.14;
 // console.log(`PI ning qiymati=${pi}`) // `` ichida js ozgaruvchilarini berib ketish mumkin
 // alert(`${20+20}`)// 40
+
+
+for (var i = 0; i < 10; i++) {
+    console.log(i++);
+}
