@@ -10,7 +10,17 @@
 
 <body>
     <style>
-        #box {
+        .box {
+            width: 200px;
+            height: 200px;
+            transition: all 0.5s;
+        }
+        
+        .blue {
+            background-color: blue;
+        }
+        
+        #app {
             background-color: orange;
             width: 150px;
             height: 150px;
@@ -19,23 +29,39 @@
         li {
             padding: 20px;
         }
+        
+        .border {
+            border-radius: 50%;
+        }
+        
+        .anime {
+            animation: color 2s alternate infinite;
+        }
+        
+        @keyframes color {
+            from {
+                background-color: orange;
+            }
+            to {
+                background-color: blue;
+            }
+        }
     </style>
-    <div id="box"></div>
-    <div class="box"></div>
-    <button onclick="randomColor()">
-        Change
-    </button>
-    <button onclick="alert('Click')">
-        Click
-    </button>
-    <center>
-        <ul id="list">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-        </ul>
-    </center>
+    <!-- <div id="app"
+    onmouseover="changeClassName()"
+    onmouseout="getOldClassName()">
+</div>
+    <div class="box">C</div>
+    <div class="box">A</div>
+    <div class="box">B</div> -->
+
+    <!-- <div class="box">
+    </div>
+    <button onclick="color()">BgColor</button>
+    <button onclick="border()">Border-radius</button>
+    <button onclick="animation()">Animation</button> -->
+
+
     <script src="script.js"></script>
 </body>
 
