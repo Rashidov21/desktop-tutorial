@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        
+        .box {
+            width: 20px;
+            height: 20px;
+            margin: 0px;
+            display: inline-block;
+            background-color: blue;
+        }
+    </style>
+
+    <script src="lib/anime.js"></script>
+    <script src="lib/anime.min.js"></script>
+    <script>
+        let box = document.querySelectorAll(".box")
+        anime({
+            targets: box,
+            keyframes: [{
+                translateX: function() {
+                    return anime.random(0, 270)
+                },
+                translateY: function() {
+                    return anime.random(0, 370)
+                },
+                borderRadius: function() {
+                    return anime.random(0, 50)
+                },
+                left: function() {
+                    return anime.random(0, 370)
+                },
+                top: function() {
+                    return anime.random(0, 370)
+                },
+            }],
+            width: function() {
+                return anime.random(20, 80)
+            },
+            height: function() {
+                return anime.random(20, 80)
+            },
+            backgroundColor: function() {
+                colors = ["#003f5c", "#444e86", "#dd5182", "#ffa600", "#ff6e54"];
+                return `${colors[Math.round(Math.random()*colors.length)]}`
+            },
+            loop: true,
+            direction: "alternate",
+            duration: 3000,
+            easing: "easeInOutQuad"
+        });
+    </script>
+</body>
+
+</html>

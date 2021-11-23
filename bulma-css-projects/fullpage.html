@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/fullpage.css">
+    <script src="src/fullpage.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    </script>
+    <ul id="menu">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+    </ul>
+    <div id="fullpage">
+        <div class="fp-section active" id="section0">
+            <div class="intro">
+                <h1>Normal scrolling</h1>
+            </div>
+        </div>
+        <div class="fp-section" id="section1">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <h1>URL get updated (#)</h1>
+                </div>
+            </div>
+
+            <div class="slide" id="slide2">
+                <h1>Horizontal sliders!</h1>
+            </div>
+
+        </div>
+        <div class="fp-section" id="section3">
+            <div class="intro">
+                <h1>Just use </h1>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <script>
+        var myFullpage = new fullpage('#fullpage', {
+            menu: '#menu',
+            anchors: ['firstPage', 'secondPage', '3rdPage'],
+            sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+            autoScrolling: true,
+            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+        });
+    </script>
+</body>
+
+</html>
