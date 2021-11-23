@@ -116,3 +116,61 @@
 // task 1
 // let a = +prompt("Kv tomonini kiriting>>")
 // alert(`Kv perimetri = ${4*a}`)
+
+// *******LESSON 3 **********
+
+// console.log(10 > 5) // true 
+// console.log(10 < 5) // false
+// console.log(10 <= 10) // true
+// console.log(10 >= 9) // false
+
+// console.log(10 == 10) // true
+// console.log(10 != 10) // false
+
+// console.log("A" === "a") // false
+// console.log("a" === "a") // true
+// console.log("a" === "а") // false
+
+// if(){} // agar
+// else if(){} // yoki
+// else{} // aks holda
+// let age = +prompt("Yoshingiz ?")
+// console.log(age > 18 ? "True" : "False")
+// if (age > 18) {
+//     alert("Hush kelibsiz !")
+// } else if (age === 18) {
+//     alert("Hush kelibsiz !")
+// } else {
+//     alert("Notogri !")
+// }
+
+// if (0) {
+//     alert("Ishlamedi")
+// }
+
+// let pass = prompt("Parol ?")
+// || birinchi true qiymatni oladi bomasa oxirgi false qiymatni qaytaradi
+// if (pass === "ketmon" || pass === "lopatka") {
+//     alert("|| qiymat qaytardi")
+// } else {
+//     alert("|| qiymat qaytarmadi")
+// }
+// && birinchi false qiymatni oladi bomasa oxirgi true qiymatni qaytaradi
+// let num = +prompt("Son..") // 15 bilan 20 orasida son bilan ishlaydi
+// if (num > 15 && num < 20) {
+//     alert("&& qiymat qaytardi ")
+// } else {
+//     alert("&& qiymat qaytarmadi")
+// }
+// true || false >> ishlaydi
+// false || true >> ishlaydi
+// false && false >> ishlamedi
+// true && false >> ishlaydi
+// true && true >> ishlaydi
+
+let num = +prompt()
+if (num % 2 === 0) {
+    console.log("Juft")
+} else {
+    console.log("Toq")
+}
