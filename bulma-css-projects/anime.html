@@ -11,6 +11,10 @@
 
 <body>
     <div class="container">
+        <img onmouseover="onHover(this)" src="src/slide1.jpg" width="400" height="auto" alt="">
+
+        <!-- <div class="box"></div> -->
+        <!-- <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
@@ -29,22 +33,22 @@
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box"></div> -->
     </div>
 
 
     <style>
         .container {
+            height: 600px;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
         }
         
         .box {
-            width: 20px;
-            height: 20px;
+            width: 200px;
+            height: 200px;
             margin: 0px;
             display: inline-block;
             background-color: blue;
@@ -53,43 +57,7 @@
 
     <script src="lib/anime.js"></script>
     <script src="lib/anime.min.js"></script>
-    <script>
-        let box = document.querySelectorAll(".box")
-        anime({
-            targets: box,
-            keyframes: [{
-                translateX: function() {
-                    return anime.random(0, 270)
-                },
-                translateY: function() {
-                    return anime.random(0, 370)
-                },
-                borderRadius: function() {
-                    return anime.random(0, 50)
-                },
-                left: function() {
-                    return anime.random(0, 370)
-                },
-                top: function() {
-                    return anime.random(0, 370)
-                },
-            }],
-            width: function() {
-                return anime.random(20, 80)
-            },
-            height: function() {
-                return anime.random(20, 80)
-            },
-            backgroundColor: function() {
-                colors = ["#003f5c", "#444e86", "#dd5182", "#ffa600", "#ff6e54"];
-                return `${colors[Math.round(Math.random()*colors.length)]}`
-            },
-            loop: true,
-            direction: "alternate",
-            duration: 3000,
-            easing: "easeInOutQuad"
-        });
-    </script>
+    <script src="lib/main.js"></script>
 </body>
 
 </html>
