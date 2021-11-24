@@ -168,9 +168,9 @@
 // true && false >> ishlaydi
 // true && true >> ishlaydi
 
-let num = +prompt()
-if (num % 2 === 0) {
-    console.log("Juft")
-} else {
-    console.log("Toq")
-}
+// let num = +prompt()
+// if (num % 2 === 0) {
+//     console.log("Juft")
+// } else {
+//     console.log("Toq")
+// }
