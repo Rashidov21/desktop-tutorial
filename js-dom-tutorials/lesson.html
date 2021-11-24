@@ -5,48 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <title>DOM Lesson</title>
 </head>
 
 <body>
-    <style>
-        .box {
-            width: 200px;
-            height: 200px;
-            transition: all 0.5s;
-        }
-        
-        .blue {
-            background-color: blue;
-        }
-        
-        #app {
-            background-color: orange;
-            width: 150px;
-            height: 150px;
-        }
-        
-        li {
-            padding: 20px;
-        }
-        
-        .border {
-            border-radius: 50%;
-        }
-        
-        .anime {
-            animation: color 2s alternate infinite;
-        }
-        
-        @keyframes color {
-            from {
-                background-color: orange;
-            }
-            to {
-                background-color: blue;
-            }
-        }
-    </style>
+    <nav>
+        <div class="nav-wrapper teal darken-4" style="padding: 0px 50px;">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#" onclick="day()">Day</a></li>
+                <li><a href="#" onclick="night()">Night</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+    <div class="center" id="app" onmouseover="setRandomPosition()">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
     <!-- <div id="app"
     onmouseover="changeClassName()"
     onmouseout="getOldClassName()">

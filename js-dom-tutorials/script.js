@@ -98,8 +98,56 @@
 //     div.classList.add("border")
 // }
 
-function animation() {
-    let div = document.querySelector(".box");
-    div.classList.add("anime")
-    div.classList.remove(div.classList[0])
+// function animation() {
+//     let div = document.querySelector(".box");
+//     div.classList.add("anime")
+//     div.classList.remove(div.classList[0])
+// }
+
+// window.onscroll = function() {
+//         let userScrollY = window.scrollY
+//         if (userScrollY > 1000) {
+//             document.body.style.backgroundColor = "#232328"
+//         } else {
+//             document.body.style.backgroundColor = ""
+//         }
+//         console.log(userScrollY)
+//     }
+// window.onclick = function() {
+//     console.log("Click")
+// }
+// window.onload = function() {
+//     console.log("Loaded")
+// }
+window.onload = function() {
+    document.body.style.transition = "all 0.5s"
+}
+
+function day() {
+    document.body.style.backgroundColor = "#fff2df"
+    document.body.style.color = "#000"
+}
+
+function night() {
+    document.body.style.backgroundColor = "#261b0c"
+    document.body.style.color = "#fff"
+}
+
+
+
+function setRandomPosition() {
+    let colors = ["#ffa6000", "#e46155", "#643d5e", "#232328"]
+    let boxes = document.querySelectorAll(".box") // massiv
+    for (let i = 0; i < boxes.length; i++) {
+        boxes[i].style.borderRadius = `${Math.round(Math.random() * 50)}%`;
+        boxes[i].style.backgroundColor = `${colors[Math.round(Math.random() * colors.length)]}`;
+        boxes[i].style.top = `${Math.round(Math.random() * 500)}px`;
+        boxes[i].style.left = `${Math.round(Math.random() * 500)}px`;
+        boxes[i].style.transition = `all 0.5s`;
+        // boxes[i].style.width = `${Math.round(Math.random() * 50)}px`;
+        // boxes[i].style.height = `${Math.round(Math.random() * 50)}px`;
+
+
+    }
+
 }
