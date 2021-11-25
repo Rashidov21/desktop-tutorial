@@ -174,3 +174,83 @@
 // } else {
 //     console.log("Toq")
 // }
+
+// *******LESSON 4 **********
+
+// let control = true;
+// let count = 0;
+// while (control) {
+//     count++
+//     if (count === 10) {
+//         control = false
+//     }
+//     console.log(count, control)
+// }
+// let x = true;
+// while (x) {
+//     let user = prompt("Nmadur yozing")
+//     console.log(user)
+//     if (user === "stop") {
+//         x = false
+//     }
+// }
+// let i = 3;
+// do {
+//     i = i - 1
+//     console.log("i = " + i)
+// } while (i > 0)
+// let x = 5;
+// console.log(++x) // increment qiymatni 1 ga ortirish
+// console.log(--x) //decrement qiymatni 1 ga kamaytirish
+
+// for (let i = 1; i < 11; i++) {
+//     console.log(i)
+// }
+
+// for (let i = 0; i < 50; i++) {
+//     if (i % 5 === 0) {
+//         console.log(i)
+//     }
+// }
+// task 1
+// for (let i = 1; i < 11; i++) {
+//     if (i % 2 === 0) {
+//         console.log(i ** 2)
+//     } else {
+//         console.log(i / 2)
+//     }
+// }
+
+// let i = 0;
+// while (true) {
+//     i++
+//     if (i % 2 === 1) {
+//         continue // aynan shu siklni tashlab otib ketish
+//     }
+//     if (i === 50) {
+//         break // sikl dan chiqish
+//     }
+//     console.log(i)
+// }
+
+// for (let i = 0; i < 3; i++) {
+//     for (let k = 0; k < 3; k++) { 
+//         console.log(k)
+//     }
+//     console.log(i)
+// }
+// let count = 0;
+// let names = ["John", "David", "Sara"]
+// for (let i = 0; i < names.length; i++) {
+//     for (let k = 0; k < names[i].length; k++) {
+//         if (names[i][k] === "a") {
+//             count++
+//         }
+//     }
+// }
+// console.log("Soni", count)
+
+// python 2.7
+// python 3.0
+// print "dsd"
+// print("sds")
