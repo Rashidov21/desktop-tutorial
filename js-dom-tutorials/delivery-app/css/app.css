@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+    color: aliceblue;
+}
+
+body {
+    background-color: #6D0074;
+    overflow-x: hidden;
+}
+
+main {
+    animation: loader 2s 1;
+}
+
+svg {
+    position: absolute;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+#downloadBtn:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 2px 4px #f6ef18, -2px -2px 4px #fff918;
+    transition: all 0.3s ease;
+}
+
+#orangeright {
+    position: absolute;
+    left: -8000px;
+    z-index: -999;
+}
+
+#orangeleft {
+    position: absolute;
+    right: -700px;
+    z-index: -999;
+}
+
+footer {
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader {
+    0% {
+        opacity: 0.1;
+    }
+    80% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#loader {
+    position: absolute;
+    z-index: 99;
+    margin: 15% 40% 0 50%;
+    animation: spin 1s linear infinite;
+}
