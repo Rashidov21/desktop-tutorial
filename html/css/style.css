@@ -1,0 +1,23 @@
+body{
+	background-color:yellow;
+	background-image: url("https://lh3.googleusercontent.com/proxy/TZAF1nMAFOzEftDlj5h7vU-Tx-Uu1fo4K4CUrtzmyqwzeBIL5-SJE4tp_l2NMnUfrNCh9SpJ8kcI34y_2yqQ_3Tzahz0pqU25TvvaUqRAYWDCiSEtlIW16GgIrF_FBdqRWqOd9nm_j4aaiU1lHpu5mvRjEN7m7vROh240U7yd4Ua");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:center; /*right ,left, top, bottom*/
+	background-attachment: fixed;
+	background-blend-mode:darken;
+
+}
+/*div{
+	color:red;
+}
+*/
+.text{
+	font-size: 24px;
+}
+#text{
+	/*color: yellow;*/
+}
+.redText{
+	color: red;
+}
