@@ -250,7 +250,110 @@
 // }
 // console.log("Soni", count)
 
-// python 2.7
-// python 3.0
-// print "dsd"
-// print("sds")
+// let a = 2 + 2;
+
+// switch (a) {
+//     case 3:
+//         alert('Маловато');
+//         break;
+//     case 4:
+//         alert('В точку!');
+//         break;
+//     case 5:
+//         alert('Перебор');
+//         break;
+//     default:
+//         alert("Нет таких значений");
+// }
+// if (a === 3) {
+//     alert('Маловато');
+
+// } else if (a === 4) {
+//     alert('В точку!');
+
+// } else {
+//     alert("Нет таких значений");
+// }
+
+// let user = prompt("Parol ?")
+// switch (user) {
+//     case "gandi":
+//         console.log("Hush kelibsiz !")
+//         break;
+//     case "GANDI":
+//         console.log("Hush kelibsiz !")
+//         break
+//     case "Gandi":
+//         console.log("Hush kelibsiz !")
+//         break;
+//     default:
+//         console.log("Qaytadan urnib koring")
+// }
+
+
+// function plus(a, b) {
+//     console.log(`a =`, a)
+//     console.log(`b =`, b)
+
+//     return a + b
+// }
+// let test = plus(10, 20)
+// console.log(test)
+
+// console.log(plus(5, 5))
+
+// function myfunc(name, surname) {
+//     alert(name)
+//     alert(surname)
+// }
+// myfunc("Ali", "Vali")
+
+// let kazol = ["A", "Ms", "Mz", "Xk", "S", "Xb", "G", "Mv", "Ab", "My"]
+
+// function getKazyolName(list) {
+//     let randomNumber = Math.round(Math.random() * list.length)
+//     console.log(kazol[randomNumber])
+// }
+// for (let i = 0; i < 3; i++) {
+//     getKazyolName(kazol)
+// }
+// console.log(Math.floor(12.99)) // 12
+// console.log(Math.ceil(12.1)) // 13
+// console.log(Math.round(12.4)) // 12
+// console.log(Math.round(12.6)) // 13
+// let arr = [1, 2, 3, 4, 5, 6]
+// let half = arr.length / 2
+// let rNum = Math.ceil(Math.random() * half)
+// console.log(arr.slice(0, rNum))
+// console.log(Math.round(Math.random() * 10))
+
+// console.log(Math.max(1, 2, 3, 4, 5)) // 5
+// console.log(Math.min(1, 2, 3, 4, 5)) // 1
+// console.log(Math.sqrt(9)) // 3
+// console.log(Math.abs(-122)) // 122
+
+let date = new Date();
+console.log(date.getFullYear())
+console.log(date.getMonth())
+console.log(date.getDate())
+    // console.log(date.getTime())
+console.log(date.toLocaleDateString()) // 30.11.2021
+console.log(date.toLocaleTimeString()) // 30.11.2021
+let year = date.getFullYear()
+
+var timerVar = setInterval(countTimer, 1000);
+var totalSeconds = 0;
+
+function countTimer() {
+    ++totalSeconds;
+    var hour = Math.floor(totalSeconds / 3600);
+    var minute = Math.floor((totalSeconds - hour * 3600) / 60);
+    var seconds = totalSeconds - (hour * 3600 + minute * 60);
+    if (hour < 10)
+        hour = "0" + hour;
+    if (minute < 10)
+        minute = "0" + minute;
+    if (seconds < 10)
+        seconds = "0" + seconds;
+    document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
+}
