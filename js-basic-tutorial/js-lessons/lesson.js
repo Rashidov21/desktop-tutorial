@@ -332,28 +332,118 @@
 // console.log(Math.sqrt(9)) // 3
 // console.log(Math.abs(-122)) // 122
 
-let date = new Date();
-console.log(date.getFullYear())
-console.log(date.getMonth())
-console.log(date.getDate())
-    // console.log(date.getTime())
-console.log(date.toLocaleDateString()) // 30.11.2021
-console.log(date.toLocaleTimeString()) // 30.11.2021
-let year = date.getFullYear()
+// let date = new Date();
+// console.log(date.getFullYear())
+// console.log(date.getMonth())
+// console.log(date.getDate())
+//     // console.log(date.getTime())
+// console.log(date.toLocaleDateString()) // 30.11.2021
+// console.log(date.toLocaleTimeString()) // 30.11.2021
+// let year = date.getFullYear()
 
-var timerVar = setInterval(countTimer, 1000);
-var totalSeconds = 0;
+// var timerVar = setInterval(countTimer, 1000);
+// var totalSeconds = 0;
 
-function countTimer() {
-    ++totalSeconds;
-    var hour = Math.floor(totalSeconds / 3600);
-    var minute = Math.floor((totalSeconds - hour * 3600) / 60);
-    var seconds = totalSeconds - (hour * 3600 + minute * 60);
-    if (hour < 10)
-        hour = "0" + hour;
-    if (minute < 10)
-        minute = "0" + minute;
-    if (seconds < 10)
-        seconds = "0" + seconds;
-    document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
-}
+// function countTimer() {
+//     ++totalSeconds;
+//     var hour = Math.floor(totalSeconds / 3600);
+//     var minute = Math.floor((totalSeconds - hour * 3600) / 60);
+//     var seconds = totalSeconds - (hour * 3600 + minute * 60);
+//     if (hour < 10)
+//         hour = "0" + hour;
+//     if (minute < 10)
+//         minute = "0" + minute;
+//     if (seconds < 10)
+//         seconds = "0" + seconds;
+//     document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
+// }
+// declariton
+// function myFun() {
+
+// }
+// expression
+// const myfunc = function() {
+
+//     }
+// arrow
+// const arrowfunc = () => {
+
+// }
+// anonim
+// function() {
+
+// }
+// window.onload = function() {
+//     console.log("page is loaded")
+// }
+
+// function hello() {
+//     alert("Hello")
+// }
+
+// function bye() {
+//     alert("Bye-Bye")
+// }
+
+// function system(user, hi, bye) {
+//     if (user) {
+//         hi()
+//     } else {
+//         bye()
+//     }
+// }
+// system(confirm("Yes or No ?"), hello, bye)
+
+
+
+// const myfunc = function(number) {
+//     console.log(number ** 2)
+// }
+// myfunc(2) // 4
+
+// let mathPow = (num, level) => {
+//     console.log(num ** level)
+// }
+// mathPow(2, 10) // 1024
+
+// let fam = "Rashidov";
+// console.log(fam[fam.length - 1])
+// let men = 0;
+// let women = 0;
+
+// function peoples(surname) {
+//     if (surname[surname.length - 1] === "v") {
+//         men++
+//     } else {
+//         women++
+//     }
+
+// }
+// for (let i = 0; i < 5; i++) {
+//     let surname = prompt("Familyangizni kiriting..")
+//     peoples(surname)
+// }
+// console.log(`Erkaklar = ${men}`)
+// console.log(`Ayollar = ${women}`)
+
+// Data Structure | Malumotlar tuzilishi
+
+// let arr = [1, "str", true, undefined, [1, 2, 3]]
+// console.log(arr[0])
+// console.log(arr[arr.length - 1])
+// let fruits = ["Яблоко", "Апельсин", "Слива"];
+
+// alert(fruits[0]); // Яблоко
+// alert(fruits[1]); // Апельсин
+// alert(fruits[2]); // Слива
+
+// let arr = [1, 2, 3, 4, 5]
+// console.log(arr.length) // 5
+//arr.push(6) // oxiriga element qoshish
+//arr.pop() // oxiridan 1 element ochirish
+// arr.unshift(0) // boshiga 1 element qoshish
+//arr.shift() // boshidn 1 element ochirish
+
+// for (let i = 0; i < arr.length; i++) {
+//     alert(arr[i]);
+// }
