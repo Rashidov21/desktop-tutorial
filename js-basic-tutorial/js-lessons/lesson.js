@@ -447,3 +447,63 @@
 // for (let i = 0; i < arr.length; i++) {
 //     alert(arr[i]);
 // }
+// let arr = [1, 2, 'str', true, 'str2', 5, 9, 8]
+
+// arr.push("for")
+// console.log(arr)
+// arr.pop()
+// console.log(arr)
+// arr.unshift("for")
+// console.log(arr)
+// arr.shift()
+// console.log(arr)
+// delete arr[2]
+
+// let arr = [1, 2, 'str', true, 'str2', 5, 9, 8]
+// arr.splice(2, 3) // splice(index, nechta elem ochirilishi kerak soni)
+// arr.splice(3, 1)
+// let arr2 = arr.slice(3, 4)
+// console.log(arr2)
+// console.log(arr)
+// let nums = [1, 2, 3]
+// let nums2 = [4, 5, 6]
+// let nums3 = [7, 8, 9]
+// nums = nums.concat(nums2, nums3)
+// console.log(nums)
+
+// let arr = [];
+// for (let i = 1; i < 11; i++) {
+//     arr.push(i)
+// }
+// arr.forEach((elem) => {
+//     console.log(elem ** 2)
+// });
+
+// arr.forEach(function(item, index) {
+//     console.log("Element= " + item)
+//     console.log("Indexi= " + index)
+// })
+// console.log(arr.indexOf(7)) // siz korsatgan elemni indexini qaytaradi
+// console.log(arr.lastIndexOf(7)) // siz korsatgan elemni indexini qaytaradi
+// let words = ["olma", "behi", "anor", "uzum"]
+// console.log(words.includes("uzum", 0))
+// let word = "Assalom alaykum"
+// console.log(word.includes("s", 5)) // false
+// let arr = [2, 8, 6, 4, 9]
+// arr.sort()
+// console.log(arr)
+// arr.reverse()
+// console.log(arr)
+// let str = "Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Veniam ,id illum quod officia alias! Debitis suscipit odit provident minus aspernatur vitae animi, temporibus et rem! Fugiat vel recusandae quo iusto?0"
+// let arr = str.split(',')
+// arr.forEach((word) => {
+//     console.log(word)
+// })
+let arr = ["A", "B", "C"]
+console.log(arr.join(""))
+let colors = ["red", "blue", "green", "yellow", "black", "gray"]
+let list = document.querySelectorAll("li");
+list.forEach(function(li) {
+    //     li.style.color = colors[Math.round(Math.random() * colors.length)]
+    li.style.background = `rgb(${Math.round(Math.random() * 250)},${Math.round(Math.random() * 250)},${Math.round(Math.random() * 250)})`
+})
