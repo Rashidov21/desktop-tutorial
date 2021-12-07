@@ -499,11 +499,86 @@
 // arr.forEach((word) => {
 //     console.log(word)
 // })
-let arr = ["A", "B", "C"]
-console.log(arr.join(""))
-let colors = ["red", "blue", "green", "yellow", "black", "gray"]
-let list = document.querySelectorAll("li");
-list.forEach(function(li) {
-    //     li.style.color = colors[Math.round(Math.random() * colors.length)]
-    li.style.background = `rgb(${Math.round(Math.random() * 250)},${Math.round(Math.random() * 250)},${Math.round(Math.random() * 250)})`
-})
+// let arr = ["A", "B", "C"]
+// console.log(arr.join(""))
+// let colors = ["red", "blue", "green", "yellow", "black", "gray"]
+// let list = document.querySelectorAll("li");
+// list.forEach(function(li) {
+//     //     li.style.color = colors[Math.round(Math.random() * colors.length)]
+//     li.style.background = `rgb(${Math.round(Math.random() * 250)},${Math.round(Math.random() * 250)},${Math.round(Math.random() * 250)})`
+// })
+
+// let obj = {
+//         name: "Apple",
+//         color: "green",
+//         count: 20,
+//         weight: "2kg",
+//         isBanana: false,
+//         type: ["uzbekistan", "tashkent", "asia"],
+//         childObj: {
+//             name: "olma",
+//             color: "darkgreen",
+//         }
+//     }
+// console.log(obj.name) // Apple
+// console.log(obj.color) // greem
+// console.log(obj["isBanana"])
+// obj.name = "Golden"
+// console.log(obj["name"])
+// console.log(obj["type"][0])
+// console.log(obj.childObj.name)
+// let laptops = [];
+// for (let i = 0; i < 3; i++) {
+//     let laptop = {
+//         name: prompt("Nomini kirit"),
+//         cpu: prompt("Toshini kirit"),
+//         price: prompt("Narxini kirit")
+//     }
+//     laptops.push(laptop)
+// }
+// console.log(laptops)
+
+// let person = {
+//     firstName: "Abdulloh",
+//     lastName: "Valiev",
+//     age: 23,
+//     height: 167,
+//     getWeight() {
+//         console.log(this.height - 100 + "kg ideal ves")
+//     },
+//     sayHello: function() {
+//         console.log(`Hello my name is ${this.firstName}`)
+//     }
+// }
+// person.sayHello()
+// person.getWeight()
+// let persons = [
+//     { name: "John", age: 15 },
+//     { name: "Mike", age: 10 },
+//     { name: "David", age: 12 },
+//     { name: "Tom", age: 18 },
+// ]
+// for (item of persons) {
+//     console.log(item["name"])
+//     console.log(item["age"])
+// }
+// let person = {
+//     firstName: "Abdulloh",
+//     lastName: "Valiev",
+//     age: 23,
+// }
+// for (key in person) {
+//     console.log(person[key])
+// }
+
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// nums.forEach((item) => {
+//     // console.log(item)
+//     if (item % 2 === 1) {
+//         nums.splice(nums.indexOf(item), 1)
+//     }
+// })
+// console.log(nums)
+// let index = +prompt("Index ?")
+// nums.splice(index, 1)
+// console.log(nums)

@@ -1,0 +1,46 @@
+.box{
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+	position: absolute; /* static, relative, fixed, absolute*/
+	/*top:500px;*/
+	overflow: hidden; /*hidden, auto, scroll*/
+}
+.boxA{
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	background-color: orange;
+	box-shadow: 1px 3px 3px red;
+	
+}
+.boxB{
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	background-color: blue;
+	margin-left: 20px;
+	box-shadow: 1px 3px 3px red;
+	/*margin-left: 90%;*/
+	/*z-index: -1;*/
+}
+.boxC{
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	background-color: cyan;
+	/*margin-left: 90%;
+	margin-top: 500px;*/
+	margin-left: 30px;
+	box-shadow: 1px 3px 3px red;
+}
+.boxD{
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	background-color: darkgreen;
+	/*margin-top: 500px;*/
+	z-index:1; 
+	margin-left: 50px;
+	box-shadow: 1px 3px 3px red;
+}	

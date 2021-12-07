@@ -1,3 +1,86 @@
+# str >> "", '', """"""
+# int >> 99,-99
+# float >> 32.5, -99.6
+# bool >> True , False
+
+# print(10 + 5)# 15
+# print(10 - 5)# 5
+# print(10 * 5)# 50
+# print(10 / 5)# 2
+# print(10 // 3)# 3
+# print(10 % 3) # 1
+# print(10 ** 5) #100 000
+# print(10 > 5) # True
+# print(10 >= 5) # True
+# print(10 < 5) # False
+# print(10 <= 5) # False
+# print(10 != 5) # True
+# print(10 == 5) # False
+#
+# # and >> VA
+# # or >> yoki
+# # is , is not , in , not in
+# print("a" in "alla") # True
+# print( not True) # False
+
+# if
+# elif
+# else
+# if 10 > 20:
+#    print("Hello")
+# elif 10 > 5:
+#     print("hi")
+# else:
+#     print("Bye-Bye")
+# name = input("Your name ?")
+# if name.lower() == "john":
+#     print(f"Hello , {name}")
+# else:
+#     print("Try again")
+
+# s = "Python"
+# for letter in s:
+#     print(letter)
+# arr = [2,6,4,8,96,251,5,2,0]
+# arr.sort()
+# print(arr[-2])
+# s = "javascript"
+# # print(len(s)) # 10
+# for i in range(len(s)):
+#     print(s[i])
+# for i in range(10):
+#     print(i)
+# else:
+#     print("Sikl tugadi")
+# i = 0
+# while True:
+#     i += 1
+#     print(i)
+# for i in range(10):
+#     if i % 2 == 0:
+#         continue
+#     print(i)
+# i = 0
+# while True:
+#     i += 1
+#     print(i)
+#     if i == 100:
+#         break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # if 10 > 5:
 #     print(10)
 # else:
