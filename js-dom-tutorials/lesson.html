@@ -23,51 +23,35 @@
                 <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#" onclick="day()">Day</a></li>
-                <li><a href="#" onclick="night()">Night</a></li>
+                <!-- <li><a href="#" onclick="confirm()">Plus</a></li> -->
+                <li>
+                    <a href="#" onclick="document.body.style.background = 'white';">Day</a></li>
+                <li>
+                    <a href="#" onclick="document.body.style.background = '#232328';">Night</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+    <ul class=" sidenav " id="mobile-demo ">
+        <li><a href="sass.html ">Sass</a></li>
+        <li><a href="badges.html ">Components</a></li>
+        <li><a href="collapsible.html ">Javascript</a></li>
+        <li><a href="mobile.html ">Mobile</a></li>
     </ul>
-    <div class="center" id="app" onmouseover="setRandomPosition()">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+    <button class="btn orange" onclick="getOrangeBlock()">Get Orange Block</button>
+    <button class="btn orange" onclick="window.location.reload()">Clear Orange Block</button>
+    <div id="app">Hello</div>
 
-    </div>
-    <!-- <div id="app"
-    onmouseover="changeClassName()"
-    onmouseout="getOldClassName()">
-</div>
-    <div class="box">C</div>
-    <div class="box">A</div>
-    <div class="box">B</div> -->
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
 
-    <!-- <div class="box">
-    </div>
-    <button onclick="color()">BgColor</button>
-    <button onclick="border()">Border-radius</button>
-    <button onclick="animation()">Animation</button> -->
-
-
-    <script src="script.js"></script>
+    <script src="script.js "></script>
 </body>
 
 </html>
