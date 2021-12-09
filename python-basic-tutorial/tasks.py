@@ -63,14 +63,15 @@ import random
 #     print(summa)
 # print(sum(list(random.sample(range(50),20))))
 
-# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-# b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+# a = [1, 6, 2, 3,8]
+# b = [1, 11, 3, 4]
 # for i in a:
-#     for x in b:
-#         if x == i:
-#             b.remove(x)
-#             a.remove(i)
+#     if i in b:
+#         a.remove(i)
 # else:
+#     for x in b:
+#         if x in a:
+#             b.remove(x)
 #     a.extend(b)
 # print(a)
 
