@@ -6,51 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 
     <title>DOM Lesson</title>
 </head>
 
-<body>
-    <nav>
-        <div class="nav-wrapper teal darken-4" style="padding: 0px 50px;">
-            <a href="#!" class="brand-logo">Logo</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <!-- <li><a href="#" onclick="confirm()">Plus</a></li> -->
+<body class="test">
+    <h1>❄️ New Year is Coming! ❄️</h1>
+
+    <div class="countdown-container">
+        <div class="time">
+            <h1 id="days">00</h1>
+            <small>days</small>
+        </div>
+        <div class="time">
+            <h1 id="hours">00</h1>
+            <small>hours</small>
+        </div>
+        <div class="time">
+            <h1 id="minutes">00</h1>
+            <small>minutes</small>
+        </div>
+        <div class="time">
+            <h1 id="seconds">00</h1>
+            <small>seconds</small>
+        </div>
+    </div>
+
+    <!-- SOCIAL PANEL HTML -->
+    <div class="social-panel-container">
+        <div class="social-panel">
+            <p>Created with <i class="fa fa-heart"></i> by
+                <a target="_blank" href="https://florin-pop.com">Florin Pop</a></p>
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+            <h4>Get in touch on</h4>
+            <ul>
                 <li>
-                    <a href="#" onclick="document.body.style.background = 'white';">Day</a></li>
+                    <a href="https://www.patreon.com/florinpop17" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </li>
                 <li>
-                    <a href="#" onclick="document.body.style.background = '#232328';">Night</a>
+                    <a href="https://twitter.com/florinpop1705" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/florinpop17" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com/florinpop17" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/florinpop17" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </li>
             </ul>
         </div>
-    </nav>
+    </div>
+    <button class="floating-btn">
+        Get in Touch
+    </button>
 
-    <ul class=" sidenav " id="mobile-demo ">
-        <li><a href="sass.html ">Sass</a></li>
-        <li><a href="badges.html ">Components</a></li>
-        <li><a href="collapsible.html ">Javascript</a></li>
-        <li><a href="mobile.html ">Mobile</a></li>
-    </ul>
-    <button class="btn orange" onclick="getOrangeBlock()">Get Orange Block</button>
-    <button class="btn orange" onclick="window.location.reload()">Clear Orange Block</button>
-    <div id="app">Hello</div>
-
-    <style>
-        .box {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-        }
-    </style>
-
+    <div class="floating-text">
+        Part of <a href="https://florin-pop.com/blog/2019/09/100-days-100-projects" target="_blank">#100Days100Projects</a>
+    </div>
     <script src="script.js "></script>
 </body>
 
