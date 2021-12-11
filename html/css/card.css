@@ -1,3 +1,7 @@
+* {
+    transform-style: preserve-3d;
+}
+
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -6,76 +10,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #6B017B;
+    background-color: #0076AB;
     width: 100%;
     height: 100vh;
-}
-
-.card {
-    width: 300px;
-    height: 450px;
-    background-color: #24203B;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 0px 5px 3px red;
-    overflow: hidden;
-}
-
-.card .pro {
-    width: 50px;
-    padding: 5px;
-    border-radius: 10px;
-    background-color: yellow;
-    color: black;
-    text-align: center;
+    perspective: 3000px;
+    transition: all 0.5s;
+    transform-origin: center;
 }
 
 img {
-    border-radius: 50%;
-    border: double 2px blue;
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+    transition: all 0.5s;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-}
-
-.buttons a {
-    font-size: 24px;
-    text-decoration: none;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-a.btn1 {
-    background-color: #C400D6;
-    color: white;
-}
-
-a.btn2 {
-    border: solid 2px #3D1F55;
-    color: #3D1F55;
-}
-
-.footer {
-    /* background-color: #1F1B36; */
-    width: 300px;
-    position: absolute;
-    margin-bottom: 0;
-    height: 100px;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline-block;
-    padding: 5px;
-    border: solid 1px pink;
-    margin-left: 10px;
+img:hover {
+    transform: rotate3d(1, 1, 0, 50deg);
 }
