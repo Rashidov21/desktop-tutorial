@@ -1,0 +1,45 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+}
+/*.blue-circle{*/
+/*    position: absolute;*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*    background-color: #5A56E9;*/
+/*    right: -200px;*/
+/*    top: -100px;*/
+/*    border-radius: 50%;*/
+/*    z-index: -33;*/
+/*}*/
+/*.orange-circle{*/
+/*    position: absolute;*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    background-color: #FFDB60;*/
+/*    left: -90px;*/
+/*    top: -50px;*/
+/*    border-radius: 50%;*/
+/*    z-index: -35;*/
+/*}*/
+.pink-circle{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #5883d3;
+    right: -500px;
+    /*display: none;*/
+    margin-top:-100px ;
+}
+.yellow-circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FFDB60;
+    left: 100px;
+    /*display: none;*/
+    margin-top:-100px ;
+}
