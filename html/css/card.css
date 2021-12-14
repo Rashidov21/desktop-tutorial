@@ -1,27 +1,108 @@
 * {
     transform-style: preserve-3d;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0076AB;
+nav{
     width: 100%;
-    height: 100vh;
-    perspective: 3000px;
-    transition: all 0.5s;
-    transform-origin: center;
+    height: 80px;
+    background-color:#232328;
 }
-
-img {
-    transition: all 0.5s;
+ul{
+    list-style: none;
+    float: right;
+/*    display: flex;
+    justify-content: center;
+    align-items: center;*/
 }
+li{
+    display: inline-block;
+    margin-right:30px;
+    margin-top: 20px;
+}
+li > a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+a:hover{
+  color: blue;  
+}
+.drop{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background: green;
+    z-index: 22;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    /*float: right;*/
+    display:inline-block; 
+    margin: 10px;
 
-img:hover {
-    transform: rotate3d(1, 1, 0, 50deg);
+}
+.box:hover .box-inner{
+   display: block;
+}
+.box-inner{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    /*float: right;*/
+    display: none;  
+    margin: 150px 130px;
+}
+/* unvisited link */
+/*a:link {
+  color: red;
+}*/
+
+/* visited link */
+/*a:visited {
+  color: black;
+}*/
+
+/* mouse over link */
+/*a:hover {
+  color: green;
+}*/
+
+/* selected link */
+/*a:active {
+  color: blue;
+}*/
+div:first-child{
+      color: red;
+}
+input:hover{
+    background-color: orange;
+}
+input:focus{
+    background-color: red;
+}
+p::first-line{
+    color: blue;
+}
+p::first-letter{
+    color: red;
+    font-size: 20px;
+}
+#fChild::after{
+    content: "test text";
+}
+#fChild::before{
+    content: "hello" ;
+}
+p::selection{
+    color: yellow;
+    font-size: 23px;
 }
