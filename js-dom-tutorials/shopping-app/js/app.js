@@ -41,8 +41,6 @@ form.onsubmit = function (){
     error.classList.add("red-text")
     error.innerHTML = "Error , email not validated."
     }
-
-
 }
 
 
