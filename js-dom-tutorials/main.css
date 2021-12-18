@@ -1,9 +1,40 @@
-.cube{
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
     width: 200px;
     height: 200px;
     background-color: #111d4a;
     padding: 10px;
     border: solid 3px red;
-    overflow: scroll;
     color: #e5ebee;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: #111d4a;
+    padding: 10px;
+    border-radius: 50%;
+    border: solid 3px red;
+    color: #e5ebee;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: orange;
+    position: absolute;
+    transition: all 0.5s;
+    left: -210px;
+}
+
+.open {
+    left: 0;
+}
+
+#openclose {
+    float: right;
 }

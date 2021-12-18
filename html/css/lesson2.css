@@ -1,0 +1,18 @@
+.redText{
+	color: red;
+	font-family: Verdana;
+}
+.bgBlue{
+	background-color: lightblue;
+}
+.has-text-blue{
+	color: blue;
+}
+#poppins{
+	font-family: Poppins;
+	color: pink;
+}
+.container{
+	background-color: red;
+	color: yellow;
+}

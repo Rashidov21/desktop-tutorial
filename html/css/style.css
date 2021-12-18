@@ -1,23 +1,58 @@
-body{
-	background-color:yellow;
-	background-image: url("https://lh3.googleusercontent.com/proxy/TZAF1nMAFOzEftDlj5h7vU-Tx-Uu1fo4K4CUrtzmyqwzeBIL5-SJE4tp_l2NMnUfrNCh9SpJ8kcI34y_2yqQ_3Tzahz0pqU25TvvaUqRAYWDCiSEtlIW16GgIrF_FBdqRWqOd9nm_j4aaiU1lHpu5mvRjEN7m7vROh240U7yd4Ua");
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-position:center; /*right ,left, top, bottom*/
-	background-attachment: fixed;
-	background-blend-mode:darken;
+body {}
 
+.circle {
+    width: 800px;
+    height: 800px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    right: -200px;
+    top: -100px;
+    z-index: -33;
 }
-/*div{
-	color:red;
+
+h1,
+h2,
+h3 {
+    font-family: 'Bakbak One', cursive;
 }
-*/
-.text{
-	font-size: 24px;
+
+.container {
+    border: solid 2px red;
+    height: 400px;
+    perspective: 2000px;
+    perspective-origin: center;
 }
-#text{
-	/*color: yellow;*/
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 24px;
+    background-color: tomato;
+    /* transform-origin: 100% 40%; */
+    /* background: linear-gradient(145deg, #d72f2f, #b52828);
+    box-shadow: 8px 8px 29px #891e1e, -8px -8px 29px #ff3a3a; */
 }
-.redText{
-	color: red;
+
+.box:hover {
+    background-color: blue;
+    transition: all 0.5s;
+    transform: rotate(45deg);
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-property: background-color;
+    transition-timing-function: ease;
+    /* transform-style: preserve-3d; */
+    /* transform: translateY(20px);  translateY(20px) translateX(20px) translate(20px,30px) */
+    /* transform: rotate(-30deg); */
+    /* transform: scale(1.5); scale(1.5) */
+    /* transform: scaleX(1.5); */
+    /* transform: scaleY(1.5); */
+    /* transform: translateX(50px) rotate(45deg) scaleX(1.1); */
+    /* transform: skew(40deg);
+    transform: skewX(40deg);
+    transform: skewY(40deg); */
+    /* transform: translate3d(-20px, 30px, -50px); */
+    /* transform: scale3d(1.1, 1.2, 1.5); */
+    /* transform: rotate3d(40deg, 80deg, 20deg); */
 }
