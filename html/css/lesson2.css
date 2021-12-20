@@ -1,18 +1,56 @@
-.redText{
-	color: red;
-	font-family: Verdana;
+body {
+    /* background-color: #85C5A6; */
+    /* background-image: url("https://images6.alphacoders.com/103/thumb-1920-1038319.jpg"); */
+    /* background-image: url("https://media.istockphoto.com/photos/leaf-picture-id500613911?k=20&m=500613911&s=170667a&w=0&h=kQsX3BED5E2Kh7iFkeqx7LU2swTweN0JI5U17UaLCiE="); */
+    /* background-image: url("https://emot4jriyur.exactdn.com/wp-content/uploads/2021/10/57e0350258f56.image_.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* repeat-x, repeat-y*/
+    /* background-attachment: scroll; */
+    /*scroll , fixed*/
+    /* background-size: cover; */
+    /* background-position: top; */
+    /*top, right, bottom, left*/
+    /* background-blend-mode: multiply; */
 }
-.bgBlue{
-	background-color: lightblue;
+
+
+/* 
+.box {
+    background-size: cover;
+    background-image: url("https://images6.alphacoders.com/103/thumb-1920-1038319.jpg");
+    width: 400px;
+    height: 200px;
 }
-.has-text-blue{
-	color: blue;
+
+.movie {
+    width: 300px;
+    height: 500px;
+    background-image: url("images/movie.png");
+    background-repeat: no-repeat;
+} */
+
+.border {
+    width: 400px;
+    height: 400px;
+    background-color: bisque;
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 3px; */
+    border: solid 5px red;
+    border-radius: 50%;
 }
-#poppins{
-	font-family: Poppins;
-	color: pink;
-}
-.container{
-	background-color: red;
-	color: yellow;
+
+.margin {
+    width: 200px;
+    height: 400px;
+    background-color: orange;
+    /* margin-top: 100px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+    margin-left: 150px; */
+    /* margin: 100px 150px 100px 150px; */
+    /* border: solid 5px red; */
+    border-top: solid 5px red;
+    margin: 100px 150px;
+    padding: 100px 150px;
 }
