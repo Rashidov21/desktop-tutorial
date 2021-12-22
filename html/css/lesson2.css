@@ -1,128 +1,42 @@
-body {
-    /* animation-name: toRed;
-    animation-duration: 3s;
-    animation-delay: 0s;
-    animation-iteration-count: 2;
-    animation-timing-function: linear;
-    animation-fill-mode: both; */
-    /* animation: toRed 3s 5 linear; */
-    /* animation-name: toRed;
-    animation-duration: 5s;
-    animation-timing-function: ease; */
-}
-
-@keyframes toRed {
-    from {
-        background-color: blue;
-    }
-    to {
-        background-color: red;
-    }
-}
-
-.box {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: chartreuse;
-    animation-name: toRight;
-    animation-duration: 4s;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-@keyframes toRight {
-    0% {
-        transform: translateX(0px) rotate(0deg);
-    }
-    50% {
-        background-color: blue;
-    }
-    75% {
-        background-color: red;
-    }
-    100% {
-        transform: translateX(800px) rotate(360deg);
-    }
-}
-
-.a {
-    width: 300px;
-    height: auto;
-    position: absolute;
-    animation: leftGear 3s infinite linear;
-}
-
-.b {
-    width: 250px;
-    height: auto;
-    position: absolute;
-    left: 285px;
-    margin-top: 70px;
-    animation: rightGear 3s infinite linear;
-}
-
-@keyframes leftGear {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rightGear {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(-360deg);
-    }
+i.fas {
+    color: red;
 }
 
 .blue {
-    width: 800px;
-    height: 200px;
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.whiteA {
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    border-radius: 50%;
-    margin-left: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.eye {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: rgb(21, 47, 56);
+    /* width: 500px; */
+    /* width: 50%; */
     position: absolute;
-    margin-top: 30px;
-    margin-right: 30px;
-    animation: eyeAnimation 2s infinite alternate ease-in-out;
+    /* static , relative, absolute, fixed */
+    max-width: 500px;
+    height: 200px;
+    top: 0;
+    background-color: orange;
+    display: inline-block;
+    /* block , none, inline , inline-block */
 }
 
-@keyframes eyeAnimation {
-    0% {
-        transform: translateY(0px);
-    }
-    40% {
-        transform: translateY(-30px) translateX(20px);
-    }
-    80% {
-        transform: translateY(0px) translateX(40px);
-    }
-    100% {
-        transform: translate(0);
-    }
+.blueA {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.blueB {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(29, 17, 39);
+    margin-left: 20px;
+}
+
+.blueC {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(103, 175, 36);
+    margin-left: 40px;
+    overflow: hidden;
+    transform: rotate(45deg);
+    /*visible , hidden, scroll, auto*/
 }
