@@ -1,42 +1,72 @@
-i.fas {
-    color: red;
+@import url("colors.css");
+@import url("animations.css");
+body {
+    background-color: var(--myBg);
+    color: var(--fontColor);
 }
 
-.blue {
-    /* width: 500px; */
-    /* width: 50%; */
-    position: absolute;
-    /* static , relative, absolute, fixed */
-    max-width: 500px;
-    height: 200px;
-    top: 0;
-    background-color: orange;
-    display: inline-block;
-    /* block , none, inline , inline-block */
+button {
+    animation: rotate-center 2s infinite;
 }
 
-.blueA {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: blueviolet;
+@media screen and (max-width: 1000px) {
+    body {
+        /* background-color: lightgreen; */
+    }
 }
 
-.blueB {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: rgb(29, 17, 39);
-    margin-left: 20px;
-}
-
-.blueC {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: rgb(103, 175, 36);
-    margin-left: 40px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 45px;
     overflow: hidden;
-    transform: rotate(45deg);
-    /*visible , hidden, scroll, auto*/
+    background-color: #333;
 }
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+input {
+    display: none;
+    float: right;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #111;
+}
+
+@media screen and (max-width: 500px) {
+    li {
+        display: none;
+    }
+    input {
+        display: block;
+        float: right;
+    }
+}
+
+
+/* sm>>small>>mobile - 512px */
+
+
+/* md>>middle>>tablet - 768px  */
+
+
+/* lg >> large >> laptop >> 1024px */
+
+
+/* xl >> extra large >> desktop >> 1200px */
