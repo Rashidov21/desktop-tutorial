@@ -1,38 +1,40 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <title>Js APis</title>
 </head>
-<body>
-<div class="container">
-    <input type="text" onblur="" id="city" placeholder="Write your city name..">
-</div>
-<div class="">
-    <ul id="list">
 
-    </ul>
+<body>
+    <div class="container">
+        <input type="text" onblur="" onkeyup="getCurrency(this.value)" id="pul" placeholder="Rub..">
     </div>
-</div>
-<script src="js/api.js"></script>
-<style>
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        margin: 100px 100px;
-    }
-    input{
-        padding: 20px;
-        border:solid 0.3px orange;
-        outline: none;
-        border-radius: 10px;
-    }
-</style>
+    <div class="">
+        <h1 id="from"></h1>
+        <h1 id="to"></h1>
+    </div>
+    </div>
+    <script src="js/api.js"></script>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin: 100px 100px;
+        }
+        
+        input {
+            padding: 20px;
+            border: solid 0.3px orange;
+            outline: none;
+            border-radius: 10px;
+        }
+    </style>
 </body>
+
 </html>
