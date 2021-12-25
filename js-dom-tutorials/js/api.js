@@ -47,7 +47,7 @@ function getCurrency(value) {
             }
         })
         .then(response => response.json())
-        .then(data => {
+        .then(data => { 
             console.log(data);
             from.innerHTML = `<span>${data.base_currency_name}</span> - <span>${data.amount}</span>`
             to.innerHTML = `<span>${data.rates.UZS.currency_name}</span> - <span>${data.rates.UZS.rate_for_amount}</span>`
