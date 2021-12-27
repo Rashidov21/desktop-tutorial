@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "Gilroy", sans-serif;
+    src: url("../font/Gilroy-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "Bakbak One", sans-serif;
+    src: url("../font/BakbakOne-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* content-box */
+    font-family: "Gilroy", sans-serif;
+    /* font-family: sans-serif; */
+}
+
+h1,
+h2 {
+    font-family: "Bakbak One", sans-serif;
+}
+
+body {
+    /* perspective: 2000px;
+    transform-style: preserve-3d; */
+    /* animation-name: changeColor;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both; */
+}
+
+
+/* body {
+    background-color: rgb(58, 58, 49);
+    background-image: url("../images/movie.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+background-position: center;
+background-blend-mode: lighten;
+
+}
+*/
+
+
+/* div ul li {
+    display: inline-block;
+} */
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+.column {
+    width: 30%;
+    display: inline-block;
+}
+
+@media screen and (max-width:700px) {
+    .column {
+        width: 40%;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .column {
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+
+/* .container {
+    width: 100%;
+    height: 500px;
+    border: solid 2px black;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+} */
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* border: solid 5px black; */
+    /* border: solid 3px yellow;
+    border-radius: 30px;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%; */
+    /* margin: 100px auto; */
+    /* margin: 20px 60px 20px 60px; */
+    /* padding: 5px 15px 5px 15px; */
+    /* position: absolute; */
+    /* display: block; */
+    /* float: left;
+    z-index: 1;
+    overflow: hidden; */
+}
+
+
+/* .box:hover { */
+
+
+/* border-radius: 69px; */
+
+
+/* background: #491d1d; */
+
+
+/* box-shadow: 31px 31px 62px #351515, -31px -31px 62px #5d2525; */
+
+
+/* transform: rotate(10deg) translate(100px, 150px) scale(1.2) skew(10deg); */
+
+
+/* transform: rotate3d(1, 0, 0, 45deg) translate3d(50px, 10px, 0px) scale3d(1.1, 0.5, 1.5); */
+
+
+/* transform-origin: center; */
+
+
+/* transition-delay: 0s; */
+
+
+/* transition-duration: 3s; */
+
+
+/* transition-timing-function: ease-in-out; */
+
+
+/* transition-property: all; */
+
+
+/* } */
+
+@keyframes changeColor {
+    0% {
+        background-color: inherit;
+    }
+    50% {
+        background-color: orange;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+header {
+    /* position: absolute; */
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+}
+
+a:link {
+    color: chartreuse;
+}
+
+a:active {
+    color: black;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+/* .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(red, yellow);
+} */
+
+
+/* @media screen and (max-width:1200px) {
+    .box {
+        background-color: #702626;
+        display: inline-block;
+        margin: 10px auto;
+    }
+} */
+
+.con {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+.col {
+    width: 30%;
+    display: inline-block;
+}
+
+
+/* @media screen and (max-width:768px) {
+    .box {
+        background-color: #581e1e;
+        display: none;
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .box {
+        background-color: #351515;
+        display: inline-block;
+        margin: 100px auto;
+    }
+} */
