@@ -1,12 +1,9 @@
-.my-container{
-    padding-left: 7%;
-    padding-right: 7%;
+.my-color {
+    color: #BD5A64;
 }
-.banner{
-    background-image: url("https://wallpaperaccess.com/full/1312729.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+
+.box {
     width: 100%;
-    min-height: 500px;
+    height: 200px;
+    margin: 10px;
 }

@@ -1,152 +1,102 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Materialize CSS </title>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
-<nav>
-    <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-    </div>
-</nav>
-
-<ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
-</ul>
-<div class="container">
-
-    <h4 class="truncate">This is an extremely long title that will be truncated</h4>
-    <div class="card-panel blue left hoverable z-depth-1 ">
-        <h3>Hello </h3>
-<!--        <img class="responsive-img" src="https://apollo-olx.cdnvideo.ru/v1/files/hrhfpcsl1efh2-UZ/image;s=1000x700" alt="">-->
-    </div>
-    <div class="card-panel red right hoverable ">
-        <div class="progress">
-            <div class="indeterminate"></div>
+    <nav class="orange">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+            </ul>
         </div>
-        <table class="responsive-table striped highlight centered">
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Item Name</th>
-                <th>Item Price</th>
-            </tr>
-            </thead>
-
-            <tbody>
-            <tr>
-                <td>Alvin</td>
-                <td>Eclair</td>
-                <td>$0.87</td>
-            </tr>
-            <tr>
-                <td>Alan</td>
-                <td>Jellybean</td>
-                <td>$3.76</td>
-            </tr>
-            <tr>
-                <td>Jonathan</td>
-                <td>Lollipop</td>
-                <td>$7.00</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-<br><br>
-    <div class="collection">
-        <a href="#!" class="collection-item">Alvin</a>
-        <a href="#!" class="collection-item active">Alvin</a>
-        <a href="#!" class="collection-item">Alvin</a>
-        <a href="#!" class="collection-item">Alvin</a>
-      </div>
-<div class="center">
+    </nav>
+    <!-- 
+    s = small >> 512px
+    m = middle >> 1024px
+    l = large >> 1200px 
+    -->
     <br><br>
-     <div class="row">
-         <div class="col m4">
-    <div class="card orange lighten-3">
-        <div class="card-content">
-            <div class="card-title">
-                <h5>My card</h5>
+    <div class="container orange">
+        <br>
+        <div class="row red">
+            <!-- 12 col -->
+            <div class="col s12 m6 l4">
+                <p class="card-panel blue">Lorem ipsum dolor siobcaecati suscipit fuga voluptatem?</p>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Laudantium, ipsam.</p>
-        </div>
-        <div class="card-action">
-            <a href="#" class="btn">Show more</a>
+            <div class="col s12 m6 l6">
+                <p class="card-panel yellow">Lorem ipsum dolor siobcaecati suscipit fuga voluptatem?</p>
+            </div>
+            <div class="col s12 m12 l2">
+                <p class="card-panel teal">Lorem ipsum dolor siobcaecati suscipit fuga voluptatem?</p>
+            </div>
         </div>
 
+        <br>
     </div>
-         </div>
-              <div class="col m4">
-    <div class="card orange lighten-3">
-        <div class="card-content">
-            <div class="card-title">
-                <h5>My card</h5>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h4>Lorem, ipsum dolor.</h4>
+                <div class="divider"></div>
+                <div class="section">
+                    <h5>title</h5>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem sit illum fugiat placeat qui enim amet facilis doloremque accusamus obcaecati porro molestias quidem quod, optio in earum. Atque, in.</p>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Laudantium, ipsam.</p>
-        </div>
-        <div class="card-action">
-            <a href="#" class="btn">Show more</a>
-        </div>
-
-    </div>
-         </div>
-              <div class="col m4">
-    <div class="card orange lighten-3">
-        <div class="card-content">
-            <div class="card-title">
-                <h5>My card</h5>
+            <div class="col s12 m6">
+                <img src="https://picsum.photos/300/300" alt="">
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Laudantium, ipsam.</p>
         </div>
-        <div class="card-action">
-            <a href="#" class="btn">Show more</a>
-        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="https://picsum.photos/300/300" alt="">
+            </div>
+            <div class="col s12 m6">
+                <h4>Lorem, ipsum dolor. 2</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem sit illum fugiat placeat qui enim amet facilis doloremque accusamus obcaecati porro molestias quidem quod, optio in earum. Atque, in.</p>
+            </div>
 
+        </div>
     </div>
-         </div>
-     </div>
     <br>
     <br>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="box red" style="height: 400px;"></div>
+            </div>
+            <div class="col s12 m6">
+                <div class="row">
+                    <div class="col s12 m12">
+                        <div class="box red"></div>
+                    </div>
 
-      <!-- Element Showed -->
-  <a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
-
-  <!-- Tap Target Structure -->
-  <div class="tap-target" data-target="menu">
-    <div class="tap-target-content">
-      <h5>Title</h5>
-      <p>A bunch of text</p>
+                    <div class="col s6 m6">
+                        <div class="box red"></div>
+                    </div>
+                    <div class="col s6 m6">
+                        <div class="box red"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-  <div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
-    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
-    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
-  </div>
-<script src="js/materialize.js"></script>
-<script>
-    M.AutoInit();
-</script>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
+
 </html>
