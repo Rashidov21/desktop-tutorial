@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" />
+    <title>Anime JS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.18.2/core.min.js" integrity="sha512-g8TodWNzrsxJkADtGuwwvVND2MVKUuisGWZsj2/NtLA/XFDq9biQpeDMcJ8iu71OpabLfDxfEAdTQFdXjmV60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="fullpage.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-full">
+                        <div class="title">
+                            <span id="typewriter"></span>
+                        </div>
+                        <br><br>
+                        <div class="box has-background-info" onclick="XYTranslate()">
+
+                        </div>
+                        <div class="square has-background-danger"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="slide" data-anchor="slide1">
+                <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+            </div>
+            <div class="slide" data-anchor="slide2">
+                <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+            </div>
+            <div class="slide" data-anchor="slide3">
+                <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+            </div>
+            <div class="slide" data-anchor="slide4">
+                <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+            </div>
+        </div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+    </div>
+    <!-- <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Contact</li>
+        <li>Contact</li>
+        <li>Contact</li>
+        <li>Contact</li>
+    </ul> -->
+    <br><br>
+
+
+
+    <script src="anime.min.js"></script>
+    <script src="fullpage.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
