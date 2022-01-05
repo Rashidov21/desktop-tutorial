@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/movie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Movie</title>
+</head>
+
+<body>
+    <nav class="paddings">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Movie</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+
+                    <a href="#modal1" class="waves-effect waves-light  modal-trigger">
+                        <i class="material-icons">search</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="M.toast({html: 'Hello I am Materialize'})" class="btn red waves-effect">Button</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="my-container blue lighten-3">
+        <div class="row">
+            <div class="col s12 m12">
+                <br>
+                <center>
+                    HEADER
+                </center>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="my-container">
+        <div class="row">
+            <div class="col s12 m3 yellow">
+                <br>
+                <center>
+                    HEADER
+                </center>
+                <br>
+            </div>
+            <div class="col s12 m6 red">
+                <br>
+                <center>
+                    HEADER
+                </center>
+                <br>
+            </div>
+            <div class="col s12 m3 blue">
+                <br>
+                <center>
+                    HEADER
+                </center>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="my-container">
+        <div class="container">
+            <div class="row">
+                <div class="col s3 red">HEADER</div>
+                <div class="col s3 blue">HEADER</div>
+                <div class="col s3 green">HEADER</div>
+                <div class="col s3 pink">HEADER</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-container">
+        <div class="row">
+            <div class="col s12 m12">
+                <h4 class="white-text">New Relaeses</h4>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+
+            <div class="col s6 m4 l3">
+                <div class="movie">
+                    <div class="rating">
+                        7.9
+                    </div>
+                    <img class="hoverable" src="https://picsum.photos/200/300" alt="">
+                    <h6 class="white-text">The Galaxy Guardian</h6>
+                    <p class="white-text">Fantasy , Comedy</p>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="movie">
+                    <div class="rating">
+                        7.9
+                    </div>
+                    <img class="hoverable" src="https://picsum.photos/200/300" alt="">
+                    <h6 class="white-text">The Galaxy Guardian</h6>
+                    <p class="white-text">Fantasy , Comedy</p>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="movie">
+                    <div class="rating">
+                        7.9
+                    </div>
+                    <img src="https://picsum.photos/200/300" alt="">
+                    <h6 class="white-text">The Galaxy Guardian</h6>
+                    <p class="white-text">Fantasy , Comedy</p>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="movie">
+                    <div class="rating">
+                        7.9
+                    </div>
+                    <img src="https://picsum.photos/200/300" alt="">
+                    <h6 class="white-text">The Galaxy Guardian</h6>
+                    <p class="white-text">Fantasy , Comedy</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col s12 m3 l3">
+                <div class="movie">
+                    <div class="rating">
+                        7.9
+                    </div>
+                    <img src="https://picsum.photos/200/300" alt="">
+                    <h6 class="white-text">The Galaxy Guardian</h6>
+                    <p class="white-text">Fantasy , Comedy</p>
+                </div>
+            </div>
+            <div class="col s12 m3 l3">
+                <div class="movie">
+                    <div class="rating">
+                        7.9
+                    </div>
+                    <img src="https://picsum.photos/200/300" alt="">
+                    <h6 class="white-text">The Galaxy Guardian</h6>
+                    <p class="white-text">Fantasy , Comedy</p>
+                </div>
+            </div>
+            <div class="col s12 m3 l3">
+                <div class="movie">
+                    <div class="rating">
+                        7.9
+                    </div>
+                    <img src="https://picsum.photos/200/300" alt="">
+                    <h6 class="white-text">The Galaxy Guardian</h6>
+                    <p class="white-text">Fantasy , Comedy</p>
+                </div>
+            </div>
+            <div class="col s12 m3 l3">
+                <div class="movie">
+                    <div class="rating">
+                        7.9
+                    </div>
+                    <img src="https://picsum.photos/200/300" alt="">
+                    <h6 class="white-text">The Galaxy Guardian</h6>
+                    <p class="white-text">Fantasy , Comedy</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Search movie</h4>
+            <p>Write the movie name</p>
+            <br>
+            <input type="text">
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Search</a>
+        </div>
+    </div>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+</body>
+
+</html>

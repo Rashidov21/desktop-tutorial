@@ -1,0 +1,26 @@
+.paddings {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.my-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+body {
+    background-color: #222B31;
+}
+
+div.rating {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 80px;
+    background-color: #FFB10A;
+    width: 35px;
+    height: 25px;
+    border-radius: 18px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
