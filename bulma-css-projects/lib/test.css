@@ -1,0 +1,58 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 200px;
+    max-width: 350px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    box-shadow: 5px 10px 10px rgb(163, 152, 152);
+}
+
+.block img {
+    padding: 10px;
+}
+
+.block h3 {
+    font-size: 35px;
+}
+
+.block p {
+    font-size: 20px;
+}
+
+@media screen and (max-width:1100px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .block h3 {
+        font-size: 25px;
+    }
+    .block p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .block h3 {
+        font-size: 20px;
+    }
+    .block p {
+        font-size: 14px;
+    }
+}
