@@ -1,4 +1,6 @@
 :root {
     --myBg: #0E1623;
     --fontColor: #e2e2b5;
+    --ochkok: #ADB6CB;
+    --myTransition: all 0.3s ease-in-out;
 }

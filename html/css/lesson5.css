@@ -1,23 +1,36 @@
-i{
-    color: orange;
-    font-size: 50px;
-}
-.container{
-    width: 100%;
-    height: 300px;
-    border: solid 5px red;
-
+@import url("animations.css");
+@import url("colors.css");
+.container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content:center;
-    align-items:center;
-    align-content: space-between;
-    /*flex-wrap: wrap;*/ /*nowrap, wrap-reverse*/
-   /* flex-direction:row;*/ /*row,column*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: var(--myTransition);
 }
-.box{
-    width: 100px;
-    height: 100px;
+
+.box {
+    width: 200px;
+    height: 300px;
     background-color: orange;
-    margin:10px;
+    margin-top: 20px;
+    padding: 10px;
+    animation: rotate-center 2s infinite ease-in-out;
+    clip-path: polygon(30% 0%, 68% 0, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
+}
+
+h2 {
+    font-size: 25px;
+    color: var(--ochkok);
+}
+
+@media screen and (max-width:650px) {
+    .container {
+        flex-direction: column;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .box {
+        box-shadow: 5px 5px 5px red;
+    }
 }
