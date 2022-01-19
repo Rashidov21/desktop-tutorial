@@ -17,7 +17,7 @@
 //  O'zgaruvchilar - var , let , const
 
 // yacheyka manzili - <0bc10zf012>  >> num
-// ip adress - 192.168.1.1 >> robocode.uz
+// ip adress - 192.168.1.1 >> robocode.uz , dns 
 // var myNumber = 10; // 10 qiymatini xotiraga yozyapman myNumber sozi ostida
 // alert(myNumber) // xuddi shu qiymatni myNumber soziga murojaat orqali olyapman
 
