@@ -27,3 +27,4 @@ b = 20
 c = 30
 d = 40
 console.log(a + b + c + d)
+alert("AUUU")
