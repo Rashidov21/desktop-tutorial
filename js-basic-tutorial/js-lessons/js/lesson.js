@@ -22,9 +22,9 @@
 
 let a, b, c, d;
 
-a = 10
-b = 20
-c = 30
-d = 40
-console.log(a + b + c + d)
-alert("AUUU")
+// a = 10
+// b = 20
+// c = 30
+// d = 40
+// console.log(a + b + c + d)
+// alert("AUUU")
