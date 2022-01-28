@@ -17,9 +17,17 @@ section {
     margin: 50px;
 }
 
-.red-color {
+.box {
+    background: rgb(82, 28, 28);
+    width: 300px;
+    height: 300px;
+    transition: all 0.5s;
+}
+
+.active {
     background: red;
-    color: yellow;
+    transition: all 0.5s;
+    transform: scale(1.1);
 }
 
 #modal {
