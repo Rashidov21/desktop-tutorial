@@ -1,0 +1,25 @@
+/* SPACING  */
+
+.m-auto {
+    margin: 5px auto;
+}
+
+.mt-5 {
+    margin-top: 50px;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+.box-shadow {
+    box-shadow: 2px 3px 5px red;
+}
+
+.red-block {
+    background-color: rgba(240, 10, 10, 0.678);
+}

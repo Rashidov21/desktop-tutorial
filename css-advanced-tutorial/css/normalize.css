@@ -1,0 +1,27 @@
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {
+    .home .image-content {
+        width: 80%;
+    }
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:512px) {
+    .home .text-content {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    section {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
