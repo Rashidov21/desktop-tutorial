@@ -1,55 +1,67 @@
-// LESSON 1
+// let arr = new Array()
+// let arr = [1, 2, 3, 4, 5]
+// console.log(typeof arr) // object
 
-// Interpreter >> Tekshirivchi
+// console.log(arr[3]) //4
 
-// Compiler >> Tarjimon (if >> 000101)
+// let test_arr = [1, -1, true, "son", { name: "Array" },
+//     [0, 1, 2]
+// ]
 
-// alert("Hello world!")
-// console.log(10)
-// console.dir({ name: "Abdullo" })
-// console.error(10)
+// for (let i = 0; i < test_arr.length; i++) {
+//     console.log(test_arr[i])
+// }
 
-// console.log(100)
+// let arr = []
+// for (let i = 1; i < 11; i++) {
+//     arr.push(i)
+// }
+// console.log(arr)
 
-// alert(10);
-// alert(20);
-// console.log(30);
+// METHODS 
+// let arr = [1, 2, 3, 4];
+// arr.push(5) // oxiriga elem qoshish
+// console.log(arr) // [1, 2, 3, 4, 5]
 
-// 1-comment 
-/*
-      2-comment 
-      lorem10     
-*/
-// "use strict";
-// Так было до 2009 года, когда появился ECMAScript 5 (ES5)
-// var x = 10;
+// arr.pop() // oxiridan elem ochirish
+// console.log(arr) // [1, 2, 3, 4]
 
-// 2015 ECMAScript 6 (ES6)
-// let x = 10;
-// const x = 10;
+// arr.shift(0) // boshiga elem qoshish
+// console.log(arr) // [0,1, 2, 3, 4]
 
-// let x = 10;
-// let y = 10
-// console.log(x + y) // 10
+// arr.unshift(0) // boshidan elem ochirish
+// console.log(arr) // [1, 2, 3, 4]
 
-// let getPCParams = "Core i3 3600 ghz";
-// let usersAgeRange = 10; // Camel Case >> JS
-// let users_age_range = 10; // Kebab Case >> Python
+// let fruits = ["Яблоко", "Апельсин", "Слива"];
+// let arr = [12, 56, 89, 11, "test", true, { name: "Array" }]
+//     // проходит по значениям
+// for (let fruit of fruits) {
+//     alert(fruit);
+// }
+// for (let item of arr) {
+//     console.log(item)
+// }
+// task 1 
+// numbers >> 1,10 , for of >>  squares of numbers
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let squares = []
 
-// let num = 5;
-// console.log(num)
-// num = 6;
-// console.log(num)
+// for (let num of numbers) {
+//     squares.push(num ** 2)
+// }
+// console.log(squares)
 
-// let name, age, salary;
-// name = "John";
-// age = 30;
-// salary = 1500;
-// console.log(name, age, salary)
+// task 2
+// let n = 10;
+// let res = [];
+// for (let i = 0; i < n; i++) {
+//     if (i % 2 === 1) {
+//         res.push(i)
+//     }
+// }
+// console.log(res);
 
-// var x = 10
-// var x = 121
-// let z = 9
-// let z = 8
-
-// const pi = 3.14
+// let fibo = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+// for (let i = fibo.length; i > 0; i--) {
+//     console.log(fibo[i])
+// }
