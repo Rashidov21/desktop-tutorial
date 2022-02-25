@@ -203,3 +203,7 @@
 
 // let a = 5;
 // let b = 10;
+
+for (let i = 0; i < 3; i++) {
+    alert(`number ${i}!`);
+}
