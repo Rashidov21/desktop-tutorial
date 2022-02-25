@@ -121,3 +121,85 @@
 // } else {
 //     console.log("Yolgon")
 // }
+// let num = String(prompt())
+// console.log(num[0], num[1], num[2])
+// let n = Number(num)
+// console.log(typeof n)
+
+
+// LOOPS
+// while >> toxtovsiz sikl | while , do while
+// for >> sanoqli sikl | for , for in , for of , forEach
+
+// console.log(1)
+// console.log(2)
+// console.log(3)
+// let i = 10;
+// while (i > 0) {
+//     i--
+//     console.log(i)
+// }
+
+
+// let c = 0;
+// while (c < 10) {
+//     c++
+//     console.log(c)
+// }
+
+// let i = 0;
+// // let sum = 10;
+// do {
+//     i = i + 2
+//     console.log(i)
+//         // sum = sum / 2
+// } while (i < 10)
+
+// console.log(sum)
+// let sum = 0
+// for (let i = 0; i < 10; i++) {
+//     sum = sum + 2
+// }
+// console.log(sum)
+// let control = true;
+// while (control) {
+//     let pass = prompt("Parol ?")
+//     if (pass == '123') {
+//         console.log("Hush kelibsiz")
+//         control = false
+//     }
+// }
+// for (let i = 1; i < 10; i++) {
+//     i = i + 1
+//     console.log(i)
+// }
+
+// for (начало; условие; шаг) {
+//     // ... тело цикла ...
+//   }
+// let i = 0;
+
+// for (i; i < 3; i++) { // используем существующую переменную
+//     alert(i); // 0, 1, 2
+// }
+// let i = 5;
+// while (i) {
+//     i++
+//     if (i === 99) {
+//         break // siklni majburan toxtatish
+//     }
+//     if (i % 2 === 0) {
+//         continue // siklni tashlab davom etish
+//     }
+
+//     console.log(i)
+// }
+
+// let k = 5;
+// let n = 10;
+// for (let i = 0; i < n; i++) {
+//     console.log(k)
+// }
+
+// let a = 5;
+// let b = 10;
