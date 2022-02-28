@@ -204,6 +204,60 @@
 // let a = 5;
 // let b = 10;
 
-for (let i = 0; i < 3; i++) {
-    alert(`number ${i}!`);
-}
+// for (let i = 0; i < 3; i++) {
+//     alert(`number ${i}!`);
+// }
+// let a = 100;
+// let b = 500;
+// let c = 1000;
+
+// if (a < b && b < c) {
+//     console.log(c - a)
+// }else if(b < a && a < c || c < a && a < b){
+
+// }
+// console.log(Math.max(a, b, c) - Math.min(a, b, c))
+
+
+// for (let i = 1; i <= n; i++) {
+//     s = s + 1 / i
+// }
+// console.log(s)
+
+// MODULE MATH
+// Math.random()
+
+// let n = 1.4;
+// console.log(Math.floor(n)) // pastga  qarab
+// console.log(Math.ceil(n)) // tepaga qarab
+// console.log(Math.round(n)) // orta hoatga qarab
+// console.log(Math.max(2, 8, 16)) // 16
+// console.log(Math.min(2, 8, 16)) // 2
+// console.log(Math.random()) //0 , 1 orasida
+// console.log(Math.round(Math.random() * 5)) //0 , 5 orasida
+
+// console.log(Math.pow(5, 2)) // darajaga olish
+// console.log(Math.trunc(Math.PI)) // 3
+
+// MODULE Date
+
+let date = new Date()
+    // console.log(date.getFullYear()) // 2022
+    // console.log(date.getDate()) // xozirgi kun
+    // console.log(date.getMonth()) // xozirgi kun
+    // console.log(date.getHours()) // xozirgi soat
+    // console.log(date.getMinutes()) // xozirgi minutlar
+    // console.log(date.getSeconds()) // xozirgi minutlar
+
+setInterval(function() {
+    let date = new Date()
+    document.querySelector("#time").innerHTML = `
+        <span>${date.getHours()}</span>:
+        <span>${date.getMinutes()}</span>:
+        <span>${date.getSeconds()}</span>
+        <br><br>
+        <span>${date.getDate()}</span>/
+        <span>${date.getMonth()+ 1}</span>/
+        <span>${date.getFullYear()}</span>
+    `
+}, 999)
