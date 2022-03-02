@@ -340,10 +340,24 @@ let date = new Date()
 
 // task 2 
 // Ishchilarga beriladgan oyliklar 
-let personal = {
-        salary1: 1200,
-        salary2: 680,
-        salary3: 1000,
-        salary4: 1800,
-    }
-    // ushbu ishchilar obyektni for in orqali barcha maydonlarini hisoblang
+// let personal = {
+//         salary1: 1200,
+//         salary2: 680,
+//         salary3: 1000,
+//         salary4: 1800,
+//     }
+// ushbu ishchilar obyektni for in orqali barcha maydonlarini hisoblang
+
+// task 3 
+// 0 dan User kiritgan songa qadar har hil key ostida numbers = {} objectiga 
+// 1 dan 1000 ni orasidagi tasodifiy sonlarni yozing
+// masalan:
+// user = 5
+// numbers = {
+//     num1:56,
+//     num2:966,
+//     num3:10,
+//     num4:572,
+//     num5:129
+// }
+// task 4
