@@ -249,18 +249,18 @@ let date = new Date()
     // console.log(date.getMinutes()) // xozirgi minutlar
     // console.log(date.getSeconds()) // xozirgi minutlar
 
-setInterval(function() {
-    let date = new Date()
-    document.querySelector("#time").innerHTML = `
-        <span>${date.getHours()}</span>:
-        <span>${date.getMinutes()}</span>:
-        <span>${date.getSeconds()}</span>
-        <br><br>
-        <span>${date.getDate()}</span>/
-        <span>${date.getMonth()+ 1}</span>/
-        <span>${date.getFullYear()}</span>
-    `
-}, 999)
+// setInterval(function() {
+//     let date = new Date()
+//     document.querySelector("#time").innerHTML = `
+//         <span>${date.getHours()}</span>:
+//         <span>${date.getMinutes()}</span>:
+//         <span>${date.getSeconds()}</span>
+//         <br><br>
+//         <span>${date.getDate()}</span>/
+//         <span>${date.getMonth()+ 1}</span>/
+//         <span>${date.getFullYear()}</span>
+//     `
+// }, 999)
 
 
 // Objects
@@ -329,3 +329,21 @@ setInterval(function() {
 //     console.log(obj[key])
 // }
 // console.log(typeof obj)
+
+// task 1
+// student objectini hosil qiling 
+// ism , yosh , maktab, sinf
+
+// agar yoshi 11 dan katta bosa 
+// unga isBigBoy = true ni qoshing
+// aks holda isBigBoy = false
+
+// task 2 
+// Ishchilarga beriladgan oyliklar 
+let personal = {
+        salary1: 1200,
+        salary2: 680,
+        salary3: 1000,
+        salary4: 1800,
+    }
+    // ushbu ishchilar obyektni for in orqali barcha maydonlarini hisoblang
