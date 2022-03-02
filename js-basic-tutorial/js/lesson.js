@@ -261,3 +261,71 @@ setInterval(function() {
         <span>${date.getFullYear()}</span>
     `
 }, 999)
+
+
+// Objects
+// let x = 10;
+// let obj = {
+//     bir: 1,
+//     ikki: 2,
+//     uch: 3
+// }
+// console.log(obj.uch) // 3
+
+// Object 
+//  1 - Atribute - Sifat - qanday , qanaqa ?
+//  2 - Method - Hatti harakati - nima qiladi ?
+// key + value 
+// let firstName = "John"
+// let user = {
+//         'firstName lastName': "John Doe", // console.log(user["firstName lastName"])
+//         age: 56,
+//         isAdmin: true,
+//         email: "johndoe@mail.com",
+//         address: {
+//             city: "Andijan",
+//             country: "Uzbekistan",
+//             street: "Buyuk Turon 21"
+//         },
+//         talk: function() {
+//             console.log("say")
+//         }
+//     }
+// console.log(user.firstName + " " + user.lastName)
+// console.log(user["age"])
+// console.log(user["email"])
+
+// let key = "likes birds";
+// let key = prompt("Что вы хотите узнать о пользователе?", "name");
+// то же самое, что и user["likes birds"] = true;
+// user[key] = true;
+// console.log(user["likes birds"])
+
+// let car = new Object()
+// car.name = "Tesla";
+// car.model = "X"
+// console.log(car.name)
+// console.log(car.model)
+
+// let obj = {}
+// obj.name = prompt("Nomi ?")
+// obj.price = prompt("Narxi ?")
+// console.log(obj.name)
+// delete obj.price // ochirish
+// console.log(obj.price)
+// let mycolor = "orange"
+// let mycount = 123
+// let obj = {
+//         color: mycolor,
+//         count: mycount
+//     }
+// console.log(obj.color)
+// console.log(obj.count)
+// console.log("color" in obj) // true
+// console.log("price" in obj) // false
+
+// for (let key in obj) {
+
+//     console.log(obj[key])
+// }
+// console.log(typeof obj)
