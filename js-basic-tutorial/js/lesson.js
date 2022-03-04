@@ -361,3 +361,126 @@ let date = new Date()
 //     num5:129
 // }
 // task 4
+
+
+// FUNCTIONS 
+
+// Declaration 
+// function showMessage() {
+//     console.log('Всем привет!');
+// }
+// let test = showMessage
+
+// for (let i = 0; i < 10; i++) {
+//     test()
+// }
+
+// let myVar = 10; // global;
+
+// if (true) {
+//     console.log(myVar)
+//     if (true) {
+//         console.log(myVar)
+//     }
+// }
+
+// function myFunc() {
+//     let myVar = "test text" // local
+//     console.log(myVar)
+// }
+// console.log(myVar) // Error
+// let from;
+
+// function myFunc(from, to) {
+//     console.log(from)
+//     console.log(to)
+// }
+// from = "Tashkent"
+// myFunc("Tashkent", "Andijan")
+
+// Dastur :
+// qabul qilish 
+// qayta ishlash
+// saqlash
+// natijani qaytarish
+// function plus(x, y) {
+//     let res = x + y
+//     return res
+// }
+
+// let result = plus("John", "Doe")
+// console.log(result)
+
+// function calc(num1, num2, operand = "+") {
+//     if (operand === "+") {
+//         return num1 + num2
+//     } else if (operand === "-") {
+//         return num1 - num2
+//     } else if (operand === "*") {
+//         return num1 * num2
+//     } else if (operand === "/") {
+//         return num1 / num2
+//     } else {
+//         alert("Notogri shart!")
+//     }
+// }
+// let test1 = calc(10, 20, "/")
+// console.log(test1)
+// let test2 = calc(10, 20, "*")
+// console.log(test2)
+// let test3 = calc(10, 20, )
+// console.log(test3)
+
+
+// Expression
+// let sayHi = function() {
+//     alert("Привет");
+// };
+// sayHi()
+
+// Anonim 
+// window.onload = function() {
+//     alert("Привет");
+// };
+// let obj = {
+//     name: "John",
+//     talk: function(name) {
+//         console.log("Im Talking !" + " " + name);
+//     }
+// }
+// obj.talk("Stive ")
+
+// Arrow 
+// let arrowFunc = x => { return x ** 2 }
+// let arrowFunc = (x, y) => { return x ** y }
+// console.log(arrowFunc(5, 2))
+
+// Callback Function
+
+// Func qachonki boshqa bir func ni parametr sifatida qabul qilsa
+// u Callback Function deyiladi
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+// }
+
+// function showOk() {
+//     alert("Вы согласны.");
+// }
+
+// function showCancel() {
+//     alert("Вы отменили выполнение.");
+// }
+
+// // использование: функции showOk, showCancel передаются в качестве аргументов ask
+// ask("Вы согласны?", showOk, showCancel);
+
+
+// Task 1
+// function powerA(num) {
+//     return num ** 3
+// }
+// let a = powerA(3)
+// console.log(a)
+// console.log(powerA(prompt()))
