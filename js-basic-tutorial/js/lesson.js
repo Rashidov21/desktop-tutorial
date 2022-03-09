@@ -230,7 +230,7 @@
 // let n = 1.4;
 // console.log(Math.floor(n)) // pastga  qarab
 // console.log(Math.ceil(n)) // tepaga qarab
-// console.log(Math.round(n)) // orta hoatga qarab
+// console.log(Math.round(n)) // orta holatga qarab
 // console.log(Math.max(2, 8, 16)) // 16
 // console.log(Math.min(2, 8, 16)) // 2
 // console.log(Math.random()) //0 , 1 orasida
@@ -484,3 +484,81 @@ let date = new Date()
 // let a = powerA(3)
 // console.log(a)
 // console.log(powerA(prompt()))
+
+// STRING Methods
+
+// let s = "Javascript2"
+// let a = [1, 2, 3, 4, 5]
+// console.log(s.length)
+// console.log(s[0])
+// console.log(Math.round(s.length / 2))
+// console.log(s[Math.round(s.length / 2)])
+
+// let str = "hello"
+// console.log(str[0])
+// console.log(str[1])
+// console.log(str[2])
+// console.log(str[3])
+// console.log(str[4])
+
+// for (let i = 0; i < str.length; i++) {
+//     console.log(str[i])
+// }
+
+// console.log(str.toLowerCase())
+// console.log(str.toUpperCase())
+
+// console.log(str.indexOf("l")) // belgini indexini qaytaradi
+// let str = "Harry Potter"
+// let test = str.slice(3) // siz korsatgan indexdan boshlab siz korsatgan index ga qadar qirqadi
+// console.log(test)
+
+// let str = "Harry Potter"
+// console.log(str.includes("Ronald")) // false
+// console.log(str.startsWith("Ha")) // true
+// console.log(str.endsWith("er")) // true
+// console.log(str.replace("Potter", "Maguire"))
+// let str = "Harry Potter";
+// // console.log(str.replace("tt", "ll"))
+// let iString = "alla apelsin amma anna";
+// // console.log(iString.replace("a", "i"))
+// let s = ""
+// for (let i = 0; i < iString.length; i++) {
+//     let t = iString[i]
+//     if (iString[i] === "a") {
+//         t = "i"
+//     }
+//     s = s + t
+// }
+// console.log(s)
+
+// let str = "Harry Potter";
+// let t = ""
+// for (let i = 0; i < str.length; i++) {
+//     if (str[i] == "a" || str[i] == "i" || str[i] == "u" || str[i] == "e" || str[i] == "o") {
+//         continue
+//     }
+//     t = t + str[i]
+// }
+// console.log(t)
+// let m = "main"
+// let i = m.indexOf("i")
+// let l = m.slice(0, i)
+// let r = m.slice(i + 1)
+// console.log(l + r)
+
+// let obj = {
+//     price: 1500,
+//     description: "lorem ipsum",
+//     categories: {
+//         mans: true,
+//         womens: false,
+//         kids: true
+//     },
+//     getInfo: function() {
+//         console.log("Price :", obj.price)
+//         console.log("Desc :", this.description)
+//         console.log("Categories :", this.categories.mans)
+//     }
+// }
+// obj.getInfo()
