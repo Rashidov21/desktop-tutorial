@@ -562,3 +562,70 @@ let date = new Date()
 //     }
 // }
 // obj.getInfo()
+
+// ARRAYS
+// 1-massiv  
+// 2-bir biriga boglangan royhat
+// let arr = new Array()
+
+// let arr = [1, true, "string", undefined, null, [0, 1, 2], { name: "object" }];
+// console.log(arr.length) // 7
+
+// let arr = ["john", [1, 2, 3, 4, 5], "mike", "david", { name: "object name" }]
+// arr[1] = "alex"
+// console.log(arr)
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i])
+// }
+// console.log(arr[arr.length - 1].name) //object name
+// console.log(arr[1][3]) // 4
+// let arr = [1, 2, 3, 4, 5];
+// arr.push(6) // oxiriga element qoshish
+// arr.pop() // oxiridan 1 ta element o'chirish
+// arr.shift() // boshidan 1 ta element o'chirish
+// arr.unshift(0) // boshiga element qoshish
+// console.log(arr)
+// for (let number of arr) {
+//     console.log(number + " soni ");
+// }
+// let str = "hello";
+// // console.log(str.slice(0, 3)) // hel
+// let arr = [1, 2, 3, 4, 5];
+
+// // arr.splice(2, 1) // siz korsatgan indexdan siz korsatgancha qirqadi 
+// let slicedArr = arr.slice(0, 2) // siz korsatgan indexdan siz korsatgancha nusxa oladi
+// console.log(slicedArr)
+
+// let a = [1, 2, 3]
+// let b = [4, 5, 6]
+//     // console.log([1, 2, 3] + [4, 5, 6]) ERROR
+// console.log(a.concat(b))
+// let a = ["john", "mike", "david"]
+
+
+// a.forEach(
+//     function(num) {
+//         console.log(num ** 2)
+//     }
+// )
+
+// a.forEach(
+//     function(item, index, arr) {
+//         console.log(`Item = ${item}: Index = ${index} : Array = ${arr}`)
+//     }
+// )
+// let a = ["john", "mike", "david", "alex"]
+// console.log(a.indexOf("mike"))
+// console.log(a.lastIndexOf("john"))
+// console.log(a.includes("mike")) //true
+// console.log(a.includes("MIGUEL")) //false
+
+// a.reverse()
+// console.log(a.reverse())
+let text = "lorem,ipsum dolor,amet sit";
+// for (let letter of text.split("")) {
+//     console.log(letter)
+// }
+// console.log(text.split(","));
+let arrText = text.split(",")
+console.log(arrText.join(","))
