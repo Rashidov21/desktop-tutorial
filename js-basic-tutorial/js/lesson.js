@@ -622,10 +622,20 @@ let date = new Date()
 
 // a.reverse()
 // console.log(a.reverse())
-let text = "lorem,ipsum dolor,amet sit";
+// let text = "lorem,ipsum dolor,amet sit";
 // for (let letter of text.split("")) {
 //     console.log(letter)
 // }
 // console.log(text.split(","));
-let arrText = text.split(",")
-console.log(arrText.join(","))
+// let arrText = text.split(",")
+// console.log(arrText.join(","))
+
+// Task 1
+// let n = 20;
+// let arr = [];
+// for (let i = 0; i < n; i++) {
+//     if (i % 2 === 1) {
+//         arr.push(i)
+//     }
+// }
+// console.log(arr)
