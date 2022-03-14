@@ -633,9 +633,16 @@ let date = new Date()
 // Task 1
 // let n = 20;
 // let arr = [];
-// for (let i = 0; i < n; i++) {
-//     if (i % 2 === 1) {
-//         arr.push(i)
-//     }
-// }
-// console.log(arr)
+let c = 0;
+let nums = []
+let letters = []
+let s = "abc12345".split("")
+for (let i = 0; i < s.length; i++) {
+    if (Number(s[i])) {
+        nums.push(s[i])
+    } else {
+        letters.push(s[i])
+    }
+}
+console.log(nums.join(''))
+console.log(letters.join(''))
