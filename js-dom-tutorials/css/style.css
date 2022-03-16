@@ -1,0 +1,19 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
