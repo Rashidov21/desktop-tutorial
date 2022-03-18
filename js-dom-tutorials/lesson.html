@@ -6,33 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jqwery.min.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <main style="filter: drop-shadow(5px 5px 10px #000);">
-        <ul class="mylist">
-            <li>Child</li>
-            <li>Child</li>
-            <li>Child</li>
-            <li>Child</li>
-            <li>Child</li>
-        </ul>
-        <ol>
-            <li class="item">A</li>
-            <li class="item">B</li>
-            <li class="item">C</li>
+
+        <div class="card">
+            <div class="message">
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+            </div>
+            <button class="continue">
+                Close
+            </button>
+        </div>
+        <input type="text" id="todo">
+        <button id="add">Add</button>
+        <button id="remove">Remove</button>
+
+        <ol id="todoList">
+
         </ol>
         <h3 id="app">
             <a id="link" href="#">
                 Contact Page
             </a>
         </h3>
-        <div class="box"></div>
+        <div class="box">
+            <input id="number" type="number" value="0" style="width: 100%;">
+        </div>
 
         <li>Child</li>
         <li>Child</li>
     </main>
+
     <script src="./js/script.js"></script>
 </body>
 

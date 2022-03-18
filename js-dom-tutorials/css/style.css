@@ -15,5 +15,16 @@ main {
 .box {
     width: 100px;
     height: 100px;
+    /* display: none; */
     background-color: blueviolet;
+}
+
+.animate {
+    transform-origin: center;
+    transition: all 0.3s;
+    transform: translateX(200px), rotate(90deg);
+}
+
+.dark {
+    background-color: #232328;
 }

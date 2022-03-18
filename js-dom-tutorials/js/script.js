@@ -44,34 +44,34 @@
 // let items = document.querySelectorAll(".item")
 // console.log(items)
 
-let list = document.querySelector(".mylist");
-let colors = ["red", "blue", "orange", "pink"]
+// let list = document.querySelector(".mylist");
+// let colors = ["red", "blue", "orange", "pink"]
 
-for (let i = 0; i < list.children.length; i++) {
-    let rNum = Math.round(Math.random() * colors.length)
-    list.children[i].style = `padding:10px; background:${colors[rNum]};`
-}
-let app = document.querySelector("#app")
-    // app.className = "box"
-    // app.classList.add("red")
-    // app.parentElement.style.background = '#232328'
-    // console.dir()
-    // app.onclick = function() {
-    //     console.log("APP is clicked")
-    // }
+// for (let i = 0; i < list.children.length; i++) {
+//     let rNum = Math.round(Math.random() * colors.length)
+//     list.children[i].style = `padding:10px; background:${colors[rNum]};`
+// }
+// let app = document.querySelector("#app")
+// app.className = "box"
+// app.classList.add("red")
+// app.parentElement.style.background = '#232328'
+// console.dir()
+// app.onclick = function() {
+//     console.log("APP is clicked")
+// }
 
 // console.log(location.href)
 // console.log(location.host)
 // console.log(location.port)
 // console.log(location.protocol)
 // console.log(location.pathname)
-let box = document.querySelector(".box");
-box.onclick = () => {
-        location.pathname = "/contact.html"
-            // window.open("https://kun.uz", true)
-    }
-    // let link = document.querySelector("#link")
-    // link.href = "https://t.me/pybloguz"
+// let box = document.querySelector(".box");
+// box.onclick = () => {
+//         location.pathname = "/contact.html"
+//             // window.open("https://kun.uz", true)
+//     }
+// let link = document.querySelector("#link")
+// link.href = "https://t.me/pybloguz"
 
 // let obj = {
 //     href: ""
