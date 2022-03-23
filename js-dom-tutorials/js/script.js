@@ -79,3 +79,21 @@
 // console.log(obj.href)
 // obj.href = "blavla"
 // console.log(obj.href)
+AOS.init({
+    duration: 1500, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+});
+
+const fullPage = new fullpage('#fullpage', {
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+    menu: '#myMenu',
+    //options here
+    navigation: true,
+    lockAnchors: true,
+    autoScrolling: true,
+    sectionsColor: ["orange", "darkorange", "khaki", "aqua"],
+    easing: 'easeInOutCubic',
+    scrollingSpeed: 800,
+    // slidesNavigation: true,
+
+});

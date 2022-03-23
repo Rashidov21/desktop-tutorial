@@ -5,43 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fullpage.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/jqwery.min.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <main style="filter: drop-shadow(5px 5px 10px #000);">
 
-        <div class="card">
-            <div class="message">
-                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-            </div>
-            <button class="continue">
-                Close
-            </button>
+
+    <div id="fullpage">
+        <ul id="myMenu">
+            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+            <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+            <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+            <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+        </ul>
+        <div class="section">
+
+            <center>
+                <h1>Page 1</h1>
+                <br><br>
+
+            </center>
         </div>
-        <input type="text" id="todo">
-        <button id="add">Add</button>
-        <button id="remove">Remove</button>
-
-        <ol id="todoList">
-
-        </ol>
-        <h3 id="app">
-            <a id="link" href="#">
-                Contact Page
-            </a>
-        </h3>
-        <div class="box">
-            <input id="number" type="number" value="0" style="width: 100%;">
+        <div class="section">
+            <center>
+                <h1>Page 2</h1>
+            </center>
+            <div class="slide" data-anchor="slide1"> Slide 1 </div>
+            <div class="slide" data-anchor="slide2"> Slide 2 </div>
+            <div class="slide" data-anchor="slide3"> Slide 3 </div>
+            <div class="slide" data-anchor="slide4"> Slide 4 </div>
         </div>
+        <div class="section">
+            <center>
+                <h1>Page 3</h1>
+            </center>
+        </div>
+        <div class="section">
+            <center>
+                <h1>Page 4</h1>
+            </center>
+        </div>
+    </div>
 
-        <li>Child</li>
-        <li>Child</li>
-    </main>
 
-    <script src="./js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script src="./js/fullpage.min.js"></script>
+    <script src="./js/script.js "></script>
 </body>
 
 </html>
