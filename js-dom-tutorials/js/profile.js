@@ -23,23 +23,24 @@ localStorage.setItem("user", data)
 
 
 $(document).ready(() => {
-    $(".modal").hide();
-    let user = JSON.parse(localStorage.getItem("user"))
-    $("#avatar")[0].src = user.avatar;
-    $("#name")[0].innerHTML = user.name;
-    $("#name2")[0].innerHTML = user.name;
-    $("#address")[0].innerHTML = user.address;
-    $("#job")[0].innerHTML = user.job;
-    $("#stars")[0].innerHTML = user.stars;
-    $("#email")[0].innerHTML = user.email;
-    $("#phone")[0].innerHTML = user.phone;
-    $("#brth")[0].innerHTML = user.brthday;
-    for (let i = 0; i < user.skills.length; i++) {
-        $(".skills").append(`<div class="tag">${user.skills[i]}</div>`)
-    }
+        $(".modal").hide();
+        let user = JSON.parse(localStorage.getItem("user"))
+        $("#avatar")[0].src = user.avatar;
+        $("#name")[0].innerHTML = user.name;
+        $("#name2")[0].innerHTML = user.name;
+        $("#address")[0].innerHTML = user.address;
+        $("#job")[0].innerHTML = user.job;
+        $("#stars")[0].innerHTML = user.stars;
+        $("#email")[0].innerHTML = user.email;
+        $("#phone")[0].innerHTML = user.phone;
+        $("#brth")[0].innerHTML = user.brthday;
+        for (let i = 0; i < user.skills.length; i++) {
+            $(".skills").append(`<div class="tag">${user.skills[i]}</div>`)
+        }
 
 
-})
+    })
+    // slide function
 $("#edit").click(function() {
     $(".modal").slideToggle()
 })
