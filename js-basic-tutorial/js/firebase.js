@@ -24,14 +24,15 @@ function writeUserData(userId, name, email, imageUrl) {
         profile_picture: imageUrl
     });
 }
-// writeUserData(1, "Abdullo", 'john@gmail.com', '../images/noimg.png')
-function getData() {
+// writeUserData(3, "Xalimjon", 'john@gmail.com', '../images/noimg.png')
+
+function getData(id) {
     get(
-        ref(db, 'users/')
+        ref(db, `users/${id}`)
     ).then(
         data => {
             console.log(data.val())
         }
     )
 }
-getData()
+// getData(2) // Nozimjon
