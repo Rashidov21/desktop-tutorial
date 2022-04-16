@@ -1,4 +1,6 @@
 import random
+with open('test.txt', 'r') as file:
+    print(file.read())
 # task 1
 # k = 15
 # n = int(input("N = \n :"))
