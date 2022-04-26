@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     list-style: none;
-    transition: all 0.4s;
+    transition: all 0.5s;
 }
 
 .btn {
@@ -85,9 +85,40 @@ nav {
     margin-left: 30px;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    perspective: 2000px;
+    perspective-origin: bottom;
+}
+
 .box {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    background-color: #044A64;
+    /* 2D transform */
+    /* transform: rotate(45deg); translateY(300px) translateX(300px)  */
+    /* transform: translate(-200px, 150px); */
+    /* transform: rotate(90deg); */
+    /* transform: skewY(15deg); */
+    /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+    /*scale(1.2) scaleY(1.5) scale(1.5)*/
+    /* 3D transform */
+    /* transform: rotateX(45deg); */
+    /* transform: translate3d(30px, 300px, 50px); */
+    /* transform: rotate3d(1, 0, 1, 70deg); */
+    /* transform: scale3d(1, 1.5, 1); */
+}
+
+.box:hover {
+    /* transform: rotateZ(105deg);
+    transform: rotateY(95deg); */
+    /* transform: translate3d(-150px, 150px, 500px); */
+    /* transform: scale3d(1, 1.2, 1.5); */
+    /* transform: skew(20deg); */
+    /* transform: translateY(-200px) rotate(45deg) scale(1.2) skew(-10deg); */
+    transform-origin: center;
+    transform-style: preserve-3d;
 }
 
 .red {
@@ -153,10 +184,6 @@ nav {
 
 .dropdown-inner:hover .content-2 {
     display: block;
-}
-
-.row {
-    text-align: center;
 }
 
 
