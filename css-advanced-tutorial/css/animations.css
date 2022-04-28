@@ -1,6 +1,4 @@
-@import url('colors.css');
-
-@keyframes spin{
+@keyframes toRight{
 	from{
 		transform: rotate(0deg);
 	}
@@ -8,21 +6,53 @@
 		transform: rotate(360deg);
 	}
 }
-
-@keyframes changeColor {
+@keyframes toLeft{
 	from{
-		background: var(--toqQora);
+		transform: rotate(0deg);
+	}
+	to{ 
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes spin {
+	from{
+		transform: rotate(0deg);
 	}
 	to{
-		background: var(--binafsha);
+		transform: rotate(360deg);
 	}
-/*	0%{
-		background: #333;
+	/* from{
+		transform: translateX(0);
+	}
+	to{
+		transform: translateX(200px);
+	} */
+	/* 0%{
+		transform: translateX(0);
+	}
+	25%{
+		transform: translateX(50px) translateY(60px);
+		background-color: aquamarine;	
 	}
 	50%{
-		background: #555;
+		transform:
+			translateX(50px)
+			translateY(60px)
+			rotate(10deg)
+			;
+			background-color: orange;
+			opacity: 0;
+	}
+	75%{
+		transform:
+		translateX(80px)
+		translateY(90px)
+		rotate(50deg)
+		;
+		background-color: rgb(112, 92, 55);
 	}
 	100%{
-		background: #999;
-	}*/
+		transform: translateX(0);
+	} */
 }

@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     list-style: none;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
 }
 
 .btn {
@@ -84,7 +84,23 @@ nav {
     display: inline-block;
     margin-left: 30px;
 }
+.gears{
+    width: 100%;
+    height: 500px;
+}
+.gears img.up{
+    position: absolute;
+    width: 200px;
+    animation: toRight 2s linear infinite;
 
+}
+.gears img.down{
+    position: absolute;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 155px;
+    animation: toLeft 2s linear infinite;
+}
 .row {
     display: flex;
     justify-content: center;
@@ -96,30 +112,29 @@ nav {
     width: 300px;
     height: 300px;
     background-color: #044A64;
-    /* 2D transform */
-    /* transform: rotate(45deg); translateY(300px) translateX(300px)  */
-    /* transform: translate(-200px, 150px); */
-    /* transform: rotate(90deg); */
-    /* transform: skewY(15deg); */
-    /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
-    /*scale(1.2) scaleY(1.5) scale(1.5)*/
-    /* 3D transform */
-    /* transform: rotateX(45deg); */
-    /* transform: translate3d(30px, 300px, 50px); */
-    /* transform: rotate3d(1, 0, 1, 70deg); */
-    /* transform: scale3d(1, 1.5, 1); */
+    animation: spin 3s  linear infinite;
+    /* animation-name:spin;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both; */
+
+    /* transition: all 1.2s cubic-bezier(.25,.51,.7,.45); */
+
+    /* transition-delay: 2s; kutish */
+    /* transition-duration:1s; davom etish vaqti */
+    /* transition-property: all; qaysi xususiyatga tasir qilishi */
+    /* transition-timing-function: cubic-bezier(0.8,0.1,0.1,1); davom etish vaqti va tezligini boshqarish :linear */
 }
 
-.box:hover {
-    /* transform: rotateZ(105deg);
-    transform: rotateY(95deg); */
-    /* transform: translate3d(-150px, 150px, 500px); */
-    /* transform: scale3d(1, 1.2, 1.5); */
-    /* transform: skew(20deg); */
-    /* transform: translateY(-200px) rotate(45deg) scale(1.2) skew(-10deg); */
-    transform-origin: center;
-    transform-style: preserve-3d;
-}
+/* .box:hover {
+
+    transform: translateX(450px);
+    background-color: #63b0cc;
+
+} */
 
 .red {
     background-color: rgba(25, 25, 25, 0.5);
