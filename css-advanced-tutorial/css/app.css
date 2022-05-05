@@ -113,7 +113,9 @@ nav {
     width: 300px;
     height: 300px;
     background-color: #044A64;
-    animation: spin 3s  linear infinite;
+    border: double 5px white;
+    
+    /* animation: spin 3s  linear infinite; */
     /* animation-name:spin;
     animation-duration: 2s;
     animation-delay: 1s;
