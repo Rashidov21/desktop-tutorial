@@ -1,0 +1,18 @@
+@media screen and (max-width:900px){
+    .menu_icon{
+        display: block;
+        margin: 7.5px 15px;
+    }
+    .navbar{
+        display: none;
+    }
+    .contaier{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .section-title{
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #696969;
+    }
+}
