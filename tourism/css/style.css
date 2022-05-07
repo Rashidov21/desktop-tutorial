@@ -37,6 +37,9 @@ a.logo{
     color: #020C0E;
     margin-right: 150px;
 }
+a.menu{
+    display: none;
+}
 li{
     display: inline-block;
     margin-left: 30px;
