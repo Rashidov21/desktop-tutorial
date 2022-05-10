@@ -9,42 +9,25 @@
     list-style: none;
     /* transition: all 0.5s; */
 }
-.media-block{
-    width: 100%;
-    height: auto;
-}
-.media-block img{
-    width: 300px;
-}
-.media-block h3{
-    font-size: 2.5em;
-}
-.mobile{
-    display: none;
-}
-@media screen and (max-width:900px) {
-    .media-block img{
-        width: 250px;
-        float: left;
-    }
-    .media-block h3{
-        font-size: 2em;
-    } 
-}
-@media screen and (max-width:540px) {
-    .media-block img{
-        width: 250px;
-    }
-    .pc{
-        display: none;
-
-    }
-    .mobile{
-        display: block;
-    }
-    .media-block h3{
-        font-size: 1.5em;
-    } 
+#flexbox-container{
+    display: flex;
+    height: 500px;
+    justify-content:center ;/* X oqida blocklarni joylashuvini boshqarish */
+    /*align-items: center; Y oqida blocklarni joylashuvini boshqarish */
+    /* space-between - oraliq masofa  */
+    /* space-around - blocklar atrofidagi masofa  */
+    /* align-content:; */
+    
+    flex-wrap: wrap;
+    /* wrap - keyingi qatordan sigmasa kopayadi
+    nowrap - keyingi qatorga tushmaydi (doimiy holat)
+    wrap-reverse - keyingi qatordan sigmasa kopayadi (teskari) */
+    flex-direction:row;
+    /* row - qator korinishida (doimiy) */
+    /* column - ustuncha korinishida */
+    /* column-reverse - ustun korinishida (teskari) */
+    /* gap:20px;  */
+    /* blocklar orasidagi masofa  */
 }
 /* body{
     background-color: orange;
@@ -62,10 +45,10 @@
   } */
 
 .box {
-    width: 300px;
-    height: 300px;
-    background-color: var(--pushti);
-    border: double 5px white;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    margin: 5px;
     
     /* animation: spin 3s  linear infinite; */
     /* animation-name:spin;
