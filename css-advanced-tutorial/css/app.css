@@ -7,267 +7,183 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     list-style: none;
-    /* transition: all 0.5s; */
+    transition: all 0.3s;
 }
-#flexbox-container{
+html, body{
+    overflow-x: hidden;
+}
+body{
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: rgb(66,33,68);
+    background: linear-gradient(161deg, rgba(66,33,68,1) 0%, rgba(41,22,72,1) 100%);
+}
+section{
+    margin: 20px 0px;
+}
+.container{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    box-shadow: 16px 16px 38px 10px rgba(34, 60, 80, 0.2);
     display: flex;
-    height: 500px;
-    justify-content:center ;/* X oqida blocklarni joylashuvini boshqarish */
-    /*align-items: center; Y oqida blocklarni joylashuvini boshqarish */
-    /* space-between - oraliq masofa  */
-    /* space-around - blocklar atrofidagi masofa  */
-    /* align-content:; */
-    
-    flex-wrap: wrap;
-    /* wrap - keyingi qatordan sigmasa kopayadi
-    nowrap - keyingi qatorga tushmaydi (doimiy holat)
-    wrap-reverse - keyingi qatordan sigmasa kopayadi (teskari) */
-    flex-direction:row;
-    /* row - qator korinishida (doimiy) */
-    /* column - ustuncha korinishida */
-    /* column-reverse - ustun korinishida (teskari) */
-    /* gap:20px;  */
-    /* blocklar orasidagi masofa  */
+    justify-content: space-around;
+    align-items: center;
 }
-/* body{
-    background-color: orange;
-} */
-/* 
-@media screen and (max-width: 760px) {
-    body {
-        background-color: rgb(93, 79, 198);
-    }
+.navbar{
+  display: flex;
+  justify-content: space-around;  
 }
-@media screen and (max-width: 480px) {
-    body {
-      background-color: lightgreen;
-    }
-  } */
-
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: orange;
-    margin: 5px;
-    
-    /* animation: spin 3s  linear infinite; */
-    /* animation-name:spin;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: both; */
-
-    /* transition: all 1.2s cubic-bezier(.25,.51,.7,.45); */
-
-    /* transition-delay: 2s; kutish */
-    /* transition-duration:1s; davom etish vaqti */
-    /* transition-property: all; qaysi xususiyatga tasir qilishi */
-    /* transition-timing-function: cubic-bezier(0.8,0.1,0.1,1); davom etish vaqti va tezligini boshqarish :linear */
+.navbar-divider{
+    margin-right: 150px;
 }
-.btn {
-    padding: 10px 35px;
-    background-color: #044A64;
+.navbar  li {
+    margin: 0px 25px;
+}
+.navbar li a{
+    font-size: 1.2em;
+    font-weight: bold;
     color: white;
 }
-
-.btn:hover {
-    background-color: #065a79;
+.line{
+    width: 0%;
+    height: 1px;
+    background-color: white; 
 }
-
-.container {
-    padding-left: 3%;
-    padding-right: 3%;
-}
-
-.banner {
+.navbar li:hover .line{
     width: 100%;
-    height: 1200px;
-    background: rgb(137, 166, 196);
-    background: linear-gradient(180deg, rgba(137, 166, 196, 1) 0%, rgba(230, 213, 196, 1) 100%);
-    /* background-image: url(../img/1.jpg), url(../img/Logo.png); */
-    /* background-size: cover;
-    background-position: top left, bottom right;
-    background-repeat: no-repeat, no-repeat;
-    opacity: 0.9;
-    background-color: rgb(201, 68, 45);
-    background-blend-mode: darken; */
+    height: 1px;
+    background-color: white;
 }
-
-ul.nav {
+.navbar li a:hover{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: rgb(188, 135, 135);
+}
+/* MOBILE MENU  */
+.mobile-menu{
+    position: absolute;
     width: 300px;
+    height: 100vh;
+    left:-350px;
+    background: rgb(54, 27, 56);
+    
 }
-
-ul.nav li {
-    padding: 10px 20px;
+.mobile-menu ol li{
+    margin: 30px 30px;
+    border-bottom: solid 0.1px white;
 }
-
-ul.nav li.active {
-    background-color: lightcoral;
-}
-
-ul.nav li.active:hover {
-    background-color: lightcoral;
-}
-
-ul.nav li a {
+.mobile-menu ol li a{
+    font-size: 1.2em;
+    font-weight: bold;
     color: white;
 }
-
-ul.nav li:hover {
-    background-color: black;
+.mobile-menu ol li a:hover{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: rgb(188, 135, 135);
 }
-
-nav {
-    width: 100%;
-    height: 85px;
-    background-color: aqua;
-}
-
-.navbar-content {
-    padding-top: 20px;
-}
-
-
-.logo {
-    float: left;
-}
-
-.menu {
+.close{
     float: right;
+    margin-right: 20px ;
 }
-
-.menu>li {
-    display: inline-block;
-    margin-left: 30px;
+.close a i{
+    font-size: 2em;
+    color: white;
 }
-.gears{
-    width: 100%;
-    height: 500px;
+.open{
+    display: none;
 }
-.gears img.up{
+.open a i {
+    font-size: 2em;
+    color: white;
+}
+.active{
     position: absolute;
-    width: 200px;
-    animation: toRight 2s linear infinite;
-
+    left:0;
 }
-/* text  */
-.gears img.down{
-    position: absolute;
-    width: 200px;
-    margin-top: 100px;
-    margin-left: 155px;
-    animation: toLeft 2s linear infinite;
-}
-.row {
+/* BANNER AREA  */
+.banner{
     display: flex;
     justify-content: center;
-    perspective: 2000px;
-    perspective-origin: bottom;
+    align-items: flex-start;
 }
-
-
-
-/* .box:hover {
-
-    transform: translateX(450px);
-    background-color: #63b0cc;
-
-} */
-
-.red {
-    background-color: rgba(25, 25, 25, 0.5);
+.banner .text h1{
+    margin-top: 100px;
+    font-size: 3em;
+    line-height: 70px;
+    color: white;
 }
-
-
-/* .red:hover {
-    background-color: rgb(78, 25, 25);
-    float: right;
-} */
-
-
-/* .blue::after {
-    content: "Blue box after";
+.banner .text p{
+    font-size: 1em;
+    opacity: 0.9;
+    color: white;
 }
-
-.blue::before {
-    content: "Blue box before";
-} */
-
-.box::nth-child(0) {
-    margin-left: 100px;
+.button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #885ACE;
+    color: white;
+    font-size: 1.2em;
 }
-
-.green {
-    background-color: rgba(126, 209, 58, 0.5);
-    opacity: 0.1;
-}
-
-.boxes {
-    /* background-image: linear-gradient(to top, red, yellow, blue, pink); */
-    /* background-image: radial-gradient(rgb(226, 62, 62), rgb(211, 211, 65), rgb(91, 91, 155)); */
-}
-
-.orange {
-    background-color: inherit;
-}
-
-.drop {
-    display: inline-block;
+/* TOPS  */
+.tops{
+    /* From https://css.glass */
     width: 100%;
-}
+    height: auto;
+    background: rgba(152, 106, 226, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.6px);
+    -webkit-backdrop-filter: blur(10.6px);
+    border: 1px solid rgba(152, 106, 226, 0.26);
+    padding: 50px 50px;
 
-.content,
-.content-2 {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: rgb(78, 78, 68);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #361E5F;
+    max-width: 450px;
+    min-height: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding: 10px 15px;
-    margin: 5px 100px;
+    margin: 50px 20px;
 }
-
-.drop:hover .content {
+.card img{
     display: block;
-}
-
-.dropdown-inner {
-    display: inline-block;
-    width: 100%;
-}
-
-.dropdown-inner:hover .content-2 {
-    display: block;
-}
-
-
-/* .row center {
-    font-size: 10em;
-}
-
-.row:hover center {
-    font-size: 2em;
-} */
-
-.card {
-    display: inline-block;
-    margin: 10px 50px;
-    box-shadow: 10px 10px 50px rgb(46, 35, 16);
-    overflow: hidden;
-}
-
-.product-info {
-    /* display: none; */
-    z-index: 1;
-    padding: 5px 15px;
+    width: 350px;
     position: relative;
-    background-color: #107ca3;
-    width: 100%;
-    transform: translateY(110px);
+    margin-top: -100px;
 }
-
-.card:hover .product-info {
-    /* display: block; */
-    transform: translateY(-50px);
+.card .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card .info .title{
+    font-size: 1.2em;
+    color: white;
+    margin-right: 50px;
+}
+.card .info .title span{
+    font-size: 15px;
+    color: rgb(180, 167, 167);
+}
+.card .price{
+    margin-left: -250px;
+    color: rgb(202, 244, 17);
 }
