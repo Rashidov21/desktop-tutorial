@@ -1,55 +1,61 @@
-// window 
-// document
-// location
+// let ul = document.querySelector("#menu")
+// console.log(ul.childNodes) // >> Array : HTMLCollection
+// console.log(ul.children)// Array >> bola teglari
+// console.log(ul.parentElement) // object >> ota teg
 
-
-// BOM - Browser Object Model 
-// DOM - Document Object Model
-
-// document = html >> object >> sifat + method
-// let obj = {
-//     name: "John",
-//     age:12,
-//     friends:["mike", "david"]
+// for(let k of ul.children){
+//     k.children[0].style.color = "white"
 // }
-// getElement >> 1-object , 2-HTMLAllCollection (1-object. 2-Array)
-// getElement >> object
-// getElements >> HTMLAllCollection >> Array
-// console.dir(obj)
-// let box = document.getElementById("box") // ID boyicha topish
-// let box = document.getElementsByClassName("box")// CLASS boyicha topish
-// let box = document.getElementsByTagName("div")// TAG boyicha topish
-// let box = document.querySelector("#box") // object
-// let li = document.querySelectorAll("li") // NodeList >> ARRAY
-// li.forEach((item)=>{
-//     console.log(item.textContent)
-// })
+function modalClose(){
+    document.querySelector(".close").parentElement.style.display= 'none'
+}
 
-// let blocks = document.querySelectorAll(".block");// NodeList >> ARRAY
-// function setRandomColor(elements){
-//     let colors = ["red", "yellow", "blue", "pink", "orange", "tomato"]
-//     elements.forEach(element => {
-//         let randomNum = Math.round(Math.random()* elements.length)
-//         element.style.backgroundColor = `${colors[randomNum]}`
-//     });
-// }
-// setRandomColor(blocks)
-// let con = document.querySelector('.container')
-// console.dir(con) // object
-// console.log(con.childNodes); //Array Elements + content
-// console.log(con.children);// child Elements
-// console.log(con.parentElement); // main
+// let li = document.querySelector(".active");
+// li.nextElementSibling.children[0].style.color = 'red'// li element :about
 
-// let ul = document.querySelector(".texts"); // ul
-// console.log(ul.children) // array >> li
-// ul.children.forEach(element => {
-//     element.style.fontSize = `${Math.round(Math.random() * 25)}px`
-// });
-// for(let i = 0; i < ul.children.length; i++){
-//     ul.children[i].style.fontSize = `${Math.round(Math.random() * 25)}px`
+// console.log(li.nextSibling) // text about
+
+// let blocks = document.querySelector(".blocks")
+// blocks.style.border = "1px solid red"
+
+// let colors = ["red", "blue","green","yellow"]
+
+// for(let element of blocks.children){
+//     let rNum = Math.round(Math.random() * (colors.length -1))
+//     element.style = "width: 100px;height: 100px;"
+//     element.style.backgroundColor = `${colors[rNum]}`
 // }
 
-function openCloseMenu(){
-    let sidebar = document.querySelector(".mobile");
-    sidebar.classList.toggle("active")
+
+// createElement 
+// let ul = document.querySelector("#menu")
+// let li = document.createElement("li")
+// // li.textContent = "Profile"
+
+// li.innerHTML = `<a href="#">Profile</a>`
+// // li.children[0].style.color = "red"
+// ul.appendChild(li) // bola teg sifatida qoshish
+
+
+// ul.firstElementChild.children[0].style.color = "red" // Home qizil
+// ul.lastElementChild.children[0].style.color = "red" // Profile qizil
+
+function equalizer(){
+    let blocks = document.querySelector(".blocks")
+    for(let element of blocks.children){
+        let x = Math.round(Math.random()* 255)
+        let y = Math.round(Math.random()* 255)
+        let z = Math.round(Math.random()* 255)
+
+        let h = Math.round(Math.random()* 250)
+        element.style.height = `${h}px`
+        if(h > 70){
+            element.style.backgroundColor = `rgb(${x},${y},${z})`
+        }else if(h > 100){
+            element.style.backgroundColor = `red` 
+        }
+    }
+}
+window.onload = function(){
+    setInterval(equalizer, 100)
 }

@@ -16,9 +16,11 @@ main {
 nav{
     background-color: orange;
     height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav> ul{
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,64 +32,41 @@ nav ul li a{
     font-size: 1.2em;
     font-weight: bold;
 }
-.mobile{
-    width: 300px;
-    height: 100vh;
-    position: absolute;
-    left:-350px;
-    background-color: orangered;
+li.active a{
+    color: red;
 }
-.active{
-    position: absolute;
-    left:0px; 
-}
-.mobile ul li{
-    margin: 20px 20px;
 
+.modal{
+    width: 300px;
+    height: auto;
+    background-color: orange;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black;
+    padding: 10px 20px;
 }
 .close{
+    font-size: 2.5em;
+    font-weight: bold;
     float: right;
 }
-.close a i{
-    font-size: 2.5em;
-    font-weight: bold;
-}
-.open a i{
-    display: none;
-    font-size: 2.5em;
-    font-weight: bold;
-}
-.mobile ul li a{
-    font-size: 1.2em;
-    font-weight: bold;
-}
-@media screen and (max-width:912px) {
-    nav> ul{
-        display: none;
-    }
-    .open{
-        float: right;
-        margin-right: 50px;
-    }
-    .open a i{
-        display: block;
-        font-size: 2.5em;
-        font-weight: bold;
-    }
-}
-.box {
-    width: 200px;
-    height: 200px;
-
-    background-color: blueviolet;
-}
-.block{
-    width: 150px;
-    height: 150px;
-}
-
-
 .divider {
     width: 100%;
     height: 600px;
+}
+.blocks{
+    border: solid 2px pink;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:1px;
+    padding: 50px;
+    background-color: orange;
+    transform: rotate(-180deg);
+    height: 300px;
+}
+.block{
+    width: 15px;
+    height: 100px;
+    background-color: black;
+    
 }
