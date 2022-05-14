@@ -77,3 +77,13 @@
 // let num1 = +prompt("birinchi son")
 // let num2 = +prompt("ikkinchi son")
 // console.log(num1 + num2);
+
+// + qoshish
+// - ayirish
+// / bolish 
+// * kopaytirish
+// ** daraja
+
+// task 1
+// let a = +prompt("Tomonini kirit")
+// console.log("Perimetr = " ,4*a)
