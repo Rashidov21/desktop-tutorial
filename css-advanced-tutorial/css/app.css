@@ -12,178 +12,48 @@
 html, body{
     overflow-x: hidden;
 }
-body{
-    height: 100vh;
-    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background: rgb(66,33,68);
-    background: linear-gradient(161deg, rgba(66,33,68,1) 0%, rgba(41,22,72,1) 100%);
-}
+
 section{
     margin: 20px 0px;
 }
-.container{
-    padding-left: 5%;
-    padding-right: 5%;
+
+img{
+    max-width: 100%;
 }
 
-nav{
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    box-shadow: 16px 16px 38px 10px rgba(34, 60, 80, 0.2);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.service-box {
+    padding: 36px 25px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: relative;
+    transition: all 0.5s;
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    margin: 10px;
 }
-.navbar{
-  display: flex;
-  justify-content: space-around;  
-}
-.navbar-divider{
-    margin-right: 150px;
-}
-.navbar  li {
-    margin: 0px 25px;
-}
-.navbar li a{
-    font-size: 1.2em;
-    font-weight: bold;
-    color: white;
-}
-.line{
-    width: 0%;
-    height: 1px;
-    background-color: white; 
-}
-.navbar li:hover .line{
-    width: 100%;
-    height: 1px;
-    background-color: white;
-}
-.navbar li a:hover{
-    font-size: 1.2em;
-    font-weight: 700;
-    color: rgb(188, 135, 135);
-}
-/* MOBILE MENU  */
-.mobile-menu{
-    position: absolute;
-    width: 300px;
-    height: 100vh;
-    left:-350px;
-    background: rgb(54, 27, 56);
-    
-}
-.mobile-menu ol li{
-    margin: 30px 30px;
-    border-bottom: solid 0.1px white;
-}
-.mobile-menu ol li a{
-    font-size: 1.2em;
-    font-weight: bold;
-    color: white;
-}
-.mobile-menu ol li a:hover{
-    font-size: 1.2em;
-    font-weight: 700;
-    color: rgb(188, 135, 135);
-}
-.close{
+.service-box .image{
     float: right;
-    margin-right: 20px ;
 }
-.close a i{
-    font-size: 2em;
-    color: white;
+.service-box .image .desktop{
+    display: block;
+    border-radius: 0.25rem;
 }
-.open{
+.service-box .image .mobile{
     display: none;
 }
-.open a i {
-    font-size: 2em;
-    color: white;
+.service-box .content h4{
+    font-size: 18px;
+    color: #404b67;
+    margin: 15px 5px;
 }
-.active{
-    position: absolute;
-    left:0;
+.service-box .content p{
+    font-size: 17px;
+    line-height: 26px;
 }
-/* BANNER AREA  */
-.banner{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-.banner .text h1{
-    margin-top: 100px;
-    font-size: 3em;
-    line-height: 70px;
-    color: white;
-}
-.banner .text p{
-    font-size: 1em;
-    opacity: 0.9;
-    color: white;
-}
-.button{
-    padding: 10px 30px;
-    border-radius: 5px;
-    background-color: #885ACE;
-    color: white;
-    font-size: 1.2em;
-}
-/* TOPS  */
-.tops{
-    /* From https://css.glass */
-    width: 100%;
-    height: auto;
-    background: rgba(152, 106, 226, 0.11);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10.6px);
-    -webkit-backdrop-filter: blur(10.6px);
-    border: 1px solid rgba(152, 106, 226, 0.26);
-    padding: 50px 50px;
-
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.card{
-    background-color: #361E5F;
-    max-width: 450px;
-    min-height: 300px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px 15px;
-    margin: 50px 20px;
-}
-.card img{
-    display: block;
-    width: 350px;
-    position: relative;
-    margin-top: -100px;
-}
-.card .info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.card .info .title{
-    font-size: 1.2em;
-    color: white;
-    margin-right: 50px;
-}
-.card .info .title span{
+.service-box .content .btn{
+    padding: 10px 20px;
     font-size: 15px;
-    color: rgb(180, 167, 167);
-}
-.card .price{
-    margin-left: -250px;
-    color: rgb(202, 244, 17);
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    background: #FFC033;
+    border-radius: 0.25rem;
 }
