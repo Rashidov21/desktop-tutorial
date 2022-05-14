@@ -1,61 +1,84 @@
-// let ul = document.querySelector("#menu")
-// console.log(ul.childNodes) // >> Array : HTMLCollection
-// console.log(ul.children)// Array >> bola teglari
-// console.log(ul.parentElement) // object >> ota teg
-
-// for(let k of ul.children){
-//     k.children[0].style.color = "white"
-// }
-function modalClose(){
-    document.querySelector(".close").parentElement.style.display= 'none'
-}
-
-// let li = document.querySelector(".active");
-// li.nextElementSibling.children[0].style.color = 'red'// li element :about
-
-// console.log(li.nextSibling) // text about
-
-// let blocks = document.querySelector(".blocks")
-// blocks.style.border = "1px solid red"
-
-// let colors = ["red", "blue","green","yellow"]
-
-// for(let element of blocks.children){
-//     let rNum = Math.round(Math.random() * (colors.length -1))
-//     element.style = "width: 100px;height: 100px;"
-//     element.style.backgroundColor = `${colors[rNum]}`
-// }
-
+// let menu = document.querySelector("#menu") // ul
 
 // createElement 
-// let ul = document.querySelector("#menu")
 // let li = document.createElement("li")
-// // li.textContent = "Profile"
+// li.innerHTML = `<b>Hello world</b>`
+// console.log(li.innerHTML) // <b>Hello world</b>
+// console.log(li.innerText) // Hello world
+// console.log(li.textContent) // Hello world
 
-// li.innerHTML = `<a href="#">Profile</a>`
-// // li.children[0].style.color = "red"
-// ul.appendChild(li) // bola teg sifatida qoshish
+// appendChild
+// li.innerHTML = `<a href="#">Portfolio</a>` 
+// menu.appendChild(li)
+// innerHTML >> <p> shu yer </p> 
+// outerHTML >> <p></p> 
 
+//nextElementSibling aka uka teglarda keyingi tegni olish
+//nextSibling aka uka teglarda keyingi tegni contentini olish
+// console.log(menu.children[0].textContent) // Home
+// console.log(menu.children[0].nextElementSibling) // li : About
+// console.log(menu.children[0].nextElementSibling.textContent) //  About
 
-// ul.firstElementChild.children[0].style.color = "red" // Home qizil
-// ul.lastElementChild.children[0].style.color = "red" // Profile qizil
+// MODAL CLOSE 
+// function closeModal(){
+//     document.querySelector(".close").parentElement.style.display = 'none'
+// }
 
-function equalizer(){
-    let blocks = document.querySelector(".blocks")
-    for(let element of blocks.children){
-        let x = Math.round(Math.random()* 255)
-        let y = Math.round(Math.random()* 255)
-        let z = Math.round(Math.random()* 255)
+// let names = ["Mike", "John", "David","Isaaq", "Miguel"];
 
-        let h = Math.round(Math.random()* 250)
-        element.style.height = `${h}px`
-        if(h > 70){
-            element.style.backgroundColor = `rgb(${x},${y},${z})`
-        }else if(h > 100){
-            element.style.backgroundColor = `red` 
-        }
-    }
-}
-window.onload = function(){
-    setInterval(equalizer, 100)
-}
+// let list = document.createElement("ul");
+// for(let name of names){
+//     let li = document.createElement("li")
+//     li.innerHTML = `<b>${name}</b>`
+//     list.appendChild(li)
+    
+// }
+// let container = document.querySelector(".container")
+// container.appendChild(list) 
+
+// let languages = ['JS', 'TypeScript', 'Elm', 'Dart','Scala'];
+
+// let langEl = document.querySelector('#language')
+
+// let fragment = new DocumentFragment();
+// languages.forEach((language) => {
+//     let li = document.createElement('li');
+//     li.innerHTML = language;
+//     fragment.appendChild(li);
+// })
+
+// langEl.appendChild(fragment);
+// let menu = document.querySelector("#menu") // ul
+// let li = document.createElement("li")
+// li.textContent = "Service"
+// menu.insertBefore(li,menu.lastElementChild)
+// let s = "Python".split("").reverse().join("")
+// console.log(s)
+
+/* <div class="box">
+<p>Start</p>
+<br>
+<p>Middle</p>
+<br>
+<p>End</p>
+</div> */
+
+// let box =document.querySelector(".box")
+// let title = document.createElement("h2")
+// title.innerText = "insertAdjecentElement"
+// box.insertAdjacentElement("beforebegin",title) // tegdan oldin
+// box.insertAdjacentElement("afterBegin",title) // ichini oldiga
+// box.insertAdjacentElement("beforeEnd",title) // ichini oxiriga
+// box.insertAdjacentElement("afterEnd",title) // tegdan keyin
+
+//<input type="text" id="letter" onkeyup="lettersShow()">
+//<ol id="letters"></ol>
+
+// let list = document.querySelector("#letters")
+// function lettersShow(){
+//     let inputVal = document.querySelector("#letter").value
+//     let lastLetter = inputVal.split("")[inputVal.length - 1]
+//     let li = document.createElement("li")
+//     li.innerText = lastLetter
+//     list.appendChild(li)
+// }
