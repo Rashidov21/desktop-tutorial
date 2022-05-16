@@ -1,84 +1,29 @@
 // let menu = document.querySelector("#menu") // ul
-
-// createElement 
+// insertBefore()
 // let li = document.createElement("li")
-// li.innerHTML = `<b>Hello world</b>`
-// console.log(li.innerHTML) // <b>Hello world</b>
-// console.log(li.innerText) // Hello world
-// console.log(li.textContent) // Hello world
+// li.innerHTML = `<a href="#">Projects</a>` 
 
-// appendChild
-// li.innerHTML = `<a href="#">Portfolio</a>` 
-// menu.appendChild(li)
-// innerHTML >> <p> shu yer </p> 
-// outerHTML >> <p></p> 
+// menu.replaceChild(li, menu.children[2]) // element almashtirish 
+// menu.removeChild(menu.children[3]) // element ochirish
 
-//nextElementSibling aka uka teglarda keyingi tegni olish
-//nextSibling aka uka teglarda keyingi tegni contentini olish
-// console.log(menu.children[0].textContent) // Home
-// console.log(menu.children[0].nextElementSibling) // li : About
-// console.log(menu.children[0].nextElementSibling.textContent) //  About
+// let menuClone = menu.cloneNode(true) // deep = true , hammaa elementlari bilan clone qilinadi
+// let menuClone2 = menu.cloneNode(false)//deep = false , faqat elementni ozi clone qilinadi
+// console.log(menuClone); // ul>li>a
+// console.log(menuClone2); // tegni ozi : ul
+// let nav = document.querySelector("nav")
 
-// MODAL CLOSE 
-// function closeModal(){
-//     document.querySelector(".close").parentElement.style.display = 'none'
-// }
+// nav.appendChild(menuClone)
 
-// let names = ["Mike", "John", "David","Isaaq", "Miguel"];
+// menu.insertBefore(li,menu.children[2] )  // element joylash
 
-// let list = document.createElement("ul");
-// for(let name of names){
-//     let li = document.createElement("li")
-//     li.innerHTML = `<b>${name}</b>`
-//     list.appendChild(li)
-    
-// }
-// let container = document.querySelector(".container")
-// container.appendChild(list) 
+// insertAdjecentHTML 
+// let box = document.querySelector('.box');
+// box.insertAdjacentHTML("afterbegin", `<h2>Javascript</h2>`)
 
-// let languages = ['JS', 'TypeScript', 'Elm', 'Dart','Scala'];
-
-// let langEl = document.querySelector('#language')
-
-// let fragment = new DocumentFragment();
-// languages.forEach((language) => {
-//     let li = document.createElement('li');
-//     li.innerHTML = language;
-//     fragment.appendChild(li);
-// })
-
-// langEl.appendChild(fragment);
-// let menu = document.querySelector("#menu") // ul
-// let li = document.createElement("li")
-// li.textContent = "Service"
-// menu.insertBefore(li,menu.lastElementChild)
-// let s = "Python".split("").reverse().join("")
-// console.log(s)
-
-/* <div class="box">
-<p>Start</p>
-<br>
-<p>Middle</p>
-<br>
-<p>End</p>
-</div> */
-
-// let box =document.querySelector(".box")
-// let title = document.createElement("h2")
-// title.innerText = "insertAdjecentElement"
-// box.insertAdjacentElement("beforebegin",title) // tegdan oldin
-// box.insertAdjacentElement("afterBegin",title) // ichini oldiga
-// box.insertAdjacentElement("beforeEnd",title) // ichini oxiriga
-// box.insertAdjacentElement("afterEnd",title) // tegdan keyin
-
-//<input type="text" id="letter" onkeyup="lettersShow()">
-//<ol id="letters"></ol>
-
-// let list = document.querySelector("#letters")
-// function lettersShow(){
-//     let inputVal = document.querySelector("#letter").value
-//     let lastLetter = inputVal.split("")[inputVal.length - 1]
-//     let li = document.createElement("li")
-//     li.innerText = lastLetter
+// let list = document.querySelector("#language")
+// function showLetters(){
+//     let value = document.querySelector("#letter").value
+//     let li = document.createElement("li");
+//     li.innerHTML = value[value.length - 1]
 //     list.appendChild(li)
 // }
