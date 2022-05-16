@@ -27,3 +27,15 @@
 //     li.innerHTML = value[value.length - 1]
 //     list.appendChild(li)
 // }
+
+
+/* <button onclick="insertElement('beforebegin')">Before</button>
+<button onclick="insertElement('afterend')">After</button> */
+// function insertElement(position){
+//     let box = document.querySelector('.box');
+//     if(position == "beforebegin"){
+//         box.insertAdjacentHTML(position, `<h2>Before text</h2>`)
+//     }else if(position == "afterend"){
+//         box.insertAdjacentHTML(position, `<h2>After text</h2>`)
+//     }
+// }
