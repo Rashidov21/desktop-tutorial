@@ -39,3 +39,12 @@
 //         box.insertAdjacentHTML(position, `<h2>After text</h2>`)
 //     }
 // }
+
+// Dastur 
+// 1- ma'lumot qabul qiladi 
+// 2- qayta ishlaydi 
+// 3- saqlaydi
+// 4- natijani qaytaradi 
+#fff
+#000
+rgb(15,90,100)
