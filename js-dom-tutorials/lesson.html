@@ -18,6 +18,7 @@
         <nav>
 
             <ul id="menu">
+
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -30,6 +31,7 @@
                 <li>
                     <a href="#">Other pages</a>
                 </li>
+
             </ul>
          
         </nav>
@@ -37,7 +39,7 @@
     </header>
     <main>
         <div class="container">
-         
+         <button >After</button>
             <div class="box">
                 <p>Start</p>
                 <br>
@@ -45,10 +47,20 @@
                 <br>
                 <p>End</p>
             </div>
-            <button onclick="insertElement('beforebegin')">Before</button>
-            <button onclick="insertElement('afterend')">After</button>
+          
+<form action="">
+    
+    <input type="text" pattern="[A-Za-z]"  id="color">
+    <input type="number"  id="pos">
 
-            <input type="text" onkeyup="showLetters()" id="letter">
+    <button type="submit" onclick="main()">Ok</button>
+</form>
+            <ol id="colorList">
+                <li>Red</li>
+                <li>Blue</li>
+                <li>Yellow</li>
+                <li>Pink</li>
+            </ol>
             <ul id="language"></ul>
             <!-- <div class="modal">
                 <a href="#" class="close" onclick="closeModal()">

@@ -1,50 +1,61 @@
-// let menu = document.querySelector("#menu") // ul
-// insertBefore()
-// let li = document.createElement("li")
-// li.innerHTML = `<a href="#">Projects</a>` 
+let box = document.querySelector(".box")
+let p = document.createElement("p")
+p.innerText = "lorem"
+// box.insertAdjacentElement("beforebegin", p) // teg boshlanishidan oldin
+// box.insertAdjacentElement("afterbegin", p) // teg boshlanishidan keyin
+// box.insertAdjacentElement("beforeend", p) // teg tugashidan oldin
+// box.insertAdjacentElement("afterend", p) // teg tugashidan keyin
 
-// menu.replaceChild(li, menu.children[2]) // element almashtirish 
-// menu.removeChild(menu.children[3]) // element ochirish
+let menu = document.querySelector("#menu");
+// console.log(menu.children)//li
+// menu.insertBefore(p,menu.children[2]) // siz korsatgan elem ni siz korsatgan elemdan oldin qoshadi
+// menu.replaceChild(p, menu.children[2])// elem almashtirish
+// menu.removeChild(menu.children[2]) // elem ochirish
 
-// let menuClone = menu.cloneNode(true) // deep = true , hammaa elementlari bilan clone qilinadi
-// let menuClone2 = menu.cloneNode(false)//deep = false , faqat elementni ozi clone qilinadi
-// console.log(menuClone); // ul>li>a
-// console.log(menuClone2); // tegni ozi : ul
-// let nav = document.querySelector("nav")
+// let menuClone = menu.cloneNode(true); // DEEP = TRUE ichidagi hamma narsa klonlashadi
+// let menuClone2 = menu.cloneNode(false); // DEEP = FALSE faqat tegni ozi klonlashadi
+// console.log(menuClone)
+// console.log(menuClone2)
 
-// nav.appendChild(menuClone)
-
-// menu.insertBefore(li,menu.children[2] )  // element joylash
-
-// insertAdjecentHTML 
-// let box = document.querySelector('.box');
-// box.insertAdjacentHTML("afterbegin", `<h2>Javascript</h2>`)
-
-// let list = document.querySelector("#language")
-// function showLetters(){
-//     let value = document.querySelector("#letter").value
-//     let li = document.createElement("li");
-//     li.innerHTML = value[value.length - 1]
-//     list.appendChild(li)
-// }
-
-
-/* <button onclick="insertElement('beforebegin')">Before</button>
-<button onclick="insertElement('afterend')">After</button> */
-// function insertElement(position){
-//     let box = document.querySelector('.box');
-//     if(position == "beforebegin"){
-//         box.insertAdjacentHTML(position, `<h2>Before text</h2>`)
-//     }else if(position == "afterend"){
-//         box.insertAdjacentHTML(position, `<h2>After text</h2>`)
+// document.querySelector("nav").appendChild(menuClone)
+/* <button onclick="main('afterend')">After</button> */
+// function main(position){
+//     let box = document.querySelector(".box")
+//     let p = document.createElement("p")
+//     p.innerText = "lorem";
+//     if(position == "afterend"){
+//         box.insertAdjacentElement(position, p)
 //     }
 // }
+/* 
+<input type="text"  id="color">
+<input type="number"  id="pos">
 
-// Dastur 
-// 1- ma'lumot qabul qiladi 
-// 2- qayta ishlaydi 
-// 3- saqlaydi
-// 4- natijani qaytaradi 
-#fff
-#000
-rgb(15,90,100)
+<button onclick="main()">Ok</button>
+<ol id="colorList">
+    <li>Red</li>
+    <li>Blue</li>
+    <li>Yellow</li>
+    <li>Pink</li> 
+</ol>*/
+function main(){
+    let color = document.querySelector("#color").value
+    let position = document.querySelector("#pos").value    
+    let li = document.createElement("li")
+    let colorList = document.querySelector("#colorList")
+    li.innerText = color
+
+    if(position > colorList.children.length){
+        alert("NOT")
+        return console.error("position out of list index")
+    }
+    for(let item of colorList.children){
+          
+        if(item.textContent.toLowerCase() == color.toLowerCase()){
+            alert("NOT")
+            return false
+        }else{
+            colorList.insertBefore(li, colorList.children[position - 1])
+        }
+    }    
+}
