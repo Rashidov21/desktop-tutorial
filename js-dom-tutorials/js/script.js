@@ -71,3 +71,15 @@ function modeV2(state){
         
     }
 }
+
+function changeCubePosition(position){
+    console.log("work");
+    let row = document.getElementById("con");
+   if(position == 1){
+        row.classList = "row pos-1"
+   }else if(position == 2){
+        row.classList = "row pos-2"
+   }else if(position == 3){
+    row.classList = "row pos-3"
+}
+}
