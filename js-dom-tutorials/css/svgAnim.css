@@ -1,0 +1,7 @@
+.minute{
+    fill: transparent;
+    stroke: #cfcf22;
+    stroke-width: 7;
+    stroke-dasharray: 0.2, 4.8;
+    stroke-dashoffset: 0.1;
+}
