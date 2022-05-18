@@ -1,61 +1,73 @@
-let box = document.querySelector(".box")
-let p = document.createElement("p")
-p.innerText = "lorem"
-// box.insertAdjacentElement("beforebegin", p) // teg boshlanishidan oldin
-// box.insertAdjacentElement("afterbegin", p) // teg boshlanishidan keyin
-// box.insertAdjacentElement("beforeend", p) // teg tugashidan oldin
-// box.insertAdjacentElement("afterend", p) // teg tugashidan keyin
+// let btn = document.querySelector("button");
+// btn.setAttribute("name","myBtn") // attr biriktirish
+// console.log(btn.hasAttribute("name")) // attr bor yokli bilish true/false
+// console.log(btn.getAttribute("name")) // attr value olish
+// btn.removeAttribute("name") // attr ni ochirish
 
-let menu = document.querySelector("#menu");
-// console.log(menu.children)//li
-// menu.insertBefore(p,menu.children[2]) // siz korsatgan elem ni siz korsatgan elemdan oldin qoshadi
-// menu.replaceChild(p, menu.children[2])// elem almashtirish
-// menu.removeChild(menu.children[2]) // elem ochirish
 
-// let menuClone = menu.cloneNode(true); // DEEP = TRUE ichidagi hamma narsa klonlashadi
-// let menuClone2 = menu.cloneNode(false); // DEEP = FALSE faqat tegni ozi klonlashadi
-// console.log(menuClone)
-// console.log(menuClone2)
+// let form = document.querySelector("form")
+// // for(let attr of form.attributes){
+// //     console.log(attr.value)
+// // }
+// if(form.hasAttribute("id")){
+//     console.log("bor")
+// }else{
+//     form.setAttribute("id","myForm")
+// }
 
-// document.querySelector("nav").appendChild(menuClone)
-/* <button onclick="main('afterend')">After</button> */
-// function main(position){
-//     let box = document.querySelector(".box")
-//     let p = document.createElement("p")
-//     p.innerText = "lorem";
-//     if(position == "afterend"){
-//         box.insertAdjacentElement(position, p)
+// Element.style
+// document.body.style.background = 'khaki';
+// let box = document.querySelector(".box")
+// box.className = 'block' // 1 ta class nomi qoshish
+// box.classList = 'box block red' // bir nechta class nomi qoshish
+
+// box.classList.add() // yangi class qoshadi
+// box.classList.remove() // ochiradi
+// box.classList.contains() // tekshiradi true/false
+// box.classList.toggle() // bosa ochiradi bomasa qoshadi
+// for(let name of box.classList){
+//     console.log(name)
+// }
+// let size = box.classList[1]; // is-size-5
+// let lastElem = size.split("")
+// lastElem[lastElem.length - 1] = 4
+// console.log(lastElem.join(""));// is-size-4
+// console.log(size[size.length - 1]);
+
+
+// Dark Theme
+// document.getElementById('light').style.display= 'none'
+// function mode(state ){
+//     let light = document.getElementById('light')
+//     let dark = document.getElementById('dark')
+//     if(state == "dark"){
+//         document.body.style = `
+//         background-color:#232328;
+//         color:white;
+//         `
+//         dark.style.display= 'none'
+//         light.style.display= 'block'
+//     }else if(state == 'light'){
+//         document.body.style = `
+//         background-color:khaki;
+//         color:black;
+//         `
+//         light.style.display= 'none'
+//         dark.style.display= 'block'
 //     }
 // }
-/* 
-<input type="text"  id="color">
-<input type="number"  id="pos">
-
-<button onclick="main()">Ok</button>
-<ol id="colorList">
-    <li>Red</li>
-    <li>Blue</li>
-    <li>Yellow</li>
-    <li>Pink</li> 
-</ol>*/
-function main(){
-    let color = document.querySelector("#color").value
-    let position = document.querySelector("#pos").value    
-    let li = document.createElement("li")
-    let colorList = document.querySelector("#colorList")
-    li.innerText = color
-
-    if(position > colorList.children.length){
-        alert("NOT")
-        return console.error("position out of list index")
+document.getElementById('light').style.display= 'none'
+function modeV2(state){
+    let light = document.getElementById('light')
+    let dark = document.getElementById('dark')
+    if(state == "light"){
+        document.body.className = "light"
+        light.style.display= 'none'
+        dark.style.display= 'block'
+    }else if(state == "dark"){
+        document.body.className = "dark"
+        dark.style.display= 'none'
+        light.style.display= 'block'
+        
     }
-    for(let item of colorList.children){
-          
-        if(item.textContent.toLowerCase() == color.toLowerCase()){
-            alert("NOT")
-            return false
-        }else{
-            colorList.insertBefore(li, colorList.children[position - 1])
-        }
-    }    
 }

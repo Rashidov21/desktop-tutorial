@@ -13,7 +13,7 @@
     <title>JS DOM tutorials</title>
 </head>
 
-<body>
+<body class="light">
     <header>
         <nav>
 
@@ -31,6 +31,14 @@
                 <li>
                     <a href="#">Other pages</a>
                 </li>
+                <li>
+                    <a href="#" id="light" onclick="modeV2('light')">
+                        <i class='bx bxs-sun'></i>
+                    </a>
+                    <a href="#" id="dark" onclick="modeV2('dark')">
+                        <i class='bx bxs-moon'></i>
+                    </a>
+                </li>
 
             </ul>
          
@@ -39,28 +47,17 @@
     </header>
     <main>
         <div class="container">
-         <button >After</button>
-            <div class="box">
-                <p>Start</p>
-                <br>
-                <p>Middle</p>
-                <br>
-                <p>End</p>
-            </div>
-          
-<form action="">
-    
-    <input type="text" pattern="[A-Za-z]"  id="color">
-    <input type="number"  id="pos">
+         <button>Attributes</button>
 
-    <button type="submit" onclick="main()">Ok</button>
-</form>
-            <ol id="colorList">
-                <li>Red</li>
-                <li>Blue</li>
-                <li>Yellow</li>
-                <li>Pink</li>
-            </ol>
+            <div class="box is-size-5">
+       
+            </div>
+            <form action="/search/" method="post" class="form"
+            enctype="multipart/form-data"
+            name="form-inputs">
+
+            </form>
+
             <ul id="language"></ul>
             <!-- <div class="modal">
                 <a href="#" class="close" onclick="closeModal()">
