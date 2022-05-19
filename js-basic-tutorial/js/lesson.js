@@ -98,6 +98,7 @@ SVGFEDropShadowElementf
 // Number() *
 // Infinity()*
 // BigInt()*
+// NaN *
 // String()
 // Boolean(),
 // undefined, null, Object()
@@ -105,6 +106,31 @@ SVGFEDropShadowElementf
 // let x = 10; // Number >> son , Butun son 
 // let y = 10.2 // Number >> son 
 // let z = -5 // Number
+// Math 
+// let num = 5;
+// console.log(Math.PI) // 3.14
+// console.log(Math.pow(2,2)) //4 pow bu darajaga kotarish
+// console.log(Math.ceil(2.3)) //3 ceil yaxlitlash tepaga qarab
+// console.log(Math.floor(2.7)) //2 floor yaxlitlash pastga qarab
+// console.log(Math.round(2.7)) // 3
+// round agara qoldigi 5 dan katta bolsa tepaga qarab 
+// aks holda pastga qarab yaxlitlash 
+// let randomNumber = Math.random() // 0 bilan 1 ni orasida tasodifiy bitta son
+// console.log(Math.round(randomNumber)) // 1 yoki 0
+// console.log( Math.round(Math.random() * 5 + 10)); //10 bilan 15 ni orasida
+
+console.log(2 + 2) //4
+console.log(10 - 2) // 8
+console.log(10 / 2) // 5
+console.log(10 * 2) // 20
+console.log(10 ** 2) // 100
+console.log(7 % 2) // 1
+
+console.log(2 + 2 * 5) // 12
+console.log((2 + 2) * 5) // 20
+console.log(2 * "apple") //NaN Not a Number >> Son emas
+console.log("olma" / 2) //NaN Not a Number >> Son emas
+console.log("olma" + 2) //olma2
 
 // console.log(x) // 10
 // console.log(typeof x) // number typeof bu ozgaruvchini turini korsatadi
@@ -113,7 +139,21 @@ SVGFEDropShadowElementf
 
 
 // String 
-let str1 = "Javascript"
-let str2 = 'Javascript vs Python'
-let str3 = `Javascript vs C++`
-console.log(str1 + " " + str2 + " " + str3);
+// let str1 = "Javascript"
+// let str2 = 'Javascript vs Python'
+// let str3 = `Javascript vs ${str1}` // ES6 ${} >> ozgaruvchini qiymatini string ga joylash
+// console.log(str1 + " " + str2 + " " + str3);
+
+// let str = "-324234"
+// console.log(typeof str) // string
+
+// let s = "Javascript \n is  \tweb programming langauge"
+// // \n - yangi qatorga otish
+// // \t - tab 
+// console.log(s)
+// let user = `John :\n\t*is_superuser=true\n\t*is_admin=true`
+// console.log(user);
+
+// John :
+// 	  *is_superuser=true
+// 	  *is_admin=true
