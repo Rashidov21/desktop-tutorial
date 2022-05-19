@@ -87,3 +87,32 @@
 // task 1
 // let a = +prompt("Tomonini kirit")
 // console.log("Perimetr = " ,4*a)
+
+/*
+fdfd
+fdfdfd
+SVGFEDropShadowElementf
+*/
+
+// DATA TYPES >> Ma'lumot turlari
+// Number() *
+// Infinity()*
+// BigInt()*
+// String()
+// Boolean(),
+// undefined, null, Object()
+
+// let x = 10; // Number >> son , Butun son 
+// let y = 10.2 // Number >> son 
+// let z = -5 // Number
+
+// console.log(x) // 10
+// console.log(typeof x) // number typeof bu ozgaruvchini turini korsatadi
+// console.log(1 / 0) // Infinity
+// BigInt >> Big Integer >> Katta butun sonlar = -2 ** 53 darajasi dan to 2 53 darajasigacha
+
+
+// String 
+let str1 = "Javascript"
+let str2 = 'Javascript vs Python'
+let str3 = `Javascript vs C++`
