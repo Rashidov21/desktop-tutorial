@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    list-style: none;
+    /* list-style: none; */
     transition: all 0.3s ease-in-out;
 }
 
@@ -65,7 +65,7 @@ li.active a{
     height: 300px;
 }
 .block{
-    width: 15px;
+    width: 150px;
     height: 100px;
     background-color: black;
     
@@ -110,4 +110,16 @@ li.active a{
     height: 100px;
     margin: 10px 25px;
     background: rgb(100, 211, 114);
+}
+.border{
+    border-radius: 50%;
+    animation: spin 2s infinite ease-in-out;
+}
+@keyframes spin {
+    from{
+        transform: translateX(200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
 }
