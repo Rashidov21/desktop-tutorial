@@ -116,3 +116,4 @@ SVGFEDropShadowElementf
 let str1 = "Javascript"
 let str2 = 'Javascript vs Python'
 let str3 = `Javascript vs C++`
+console.log(str1 + " " + str2 + " " + str3);
