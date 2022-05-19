@@ -107,7 +107,15 @@ SVGFEDropShadowElementf
 // let y = 10.2 // Number >> son 
 // let z = -5 // Number
 // Math 
-// let num = 5;
+// let age = prompt("your age ?\n")
+// let a = "15"
+// console.log(182 - a) // NaN
+// console.log(182 - Number(a)) // 167
+// let b = 12.5 // number
+// console.log(typeof String(b)) // string
+// let num = 5.3;
+// console.log(typeof num.toFixed()); //5 = string
+// console.log(typeof num.toString()); // '5' = string
 // console.log(Math.PI) // 3.14
 // console.log(Math.pow(2,2)) //4 pow bu darajaga kotarish
 // console.log(Math.ceil(2.3)) //3 ceil yaxlitlash tepaga qarab
@@ -119,18 +127,18 @@ SVGFEDropShadowElementf
 // console.log(Math.round(randomNumber)) // 1 yoki 0
 // console.log( Math.round(Math.random() * 5 + 10)); //10 bilan 15 ni orasida
 
-console.log(2 + 2) //4
-console.log(10 - 2) // 8
-console.log(10 / 2) // 5
-console.log(10 * 2) // 20
-console.log(10 ** 2) // 100
-console.log(7 % 2) // 1
+// console.log(2 + 2) //4
+// console.log(10 - 2) // 8
+// console.log(10 / 2) // 5
+// console.log(10 * 2) // 20
+// console.log(10 ** 2) // 100
+// console.log(7 % 2) // 1
 
-console.log(2 + 2 * 5) // 12
-console.log((2 + 2) * 5) // 20
-console.log(2 * "apple") //NaN Not a Number >> Son emas
-console.log("olma" / 2) //NaN Not a Number >> Son emas
-console.log("olma" + 2) //olma2
+// console.log(2 + 2 * 5) // 12
+// console.log((2 + 2) * 5) // 20
+// console.log(2 * "apple") //NaN Not a Number >> Son emas
+// console.log("olma" / 2) //NaN Not a Number >> Son emas
+// console.log("olma" + 2) //olma2
 
 // console.log(x) // 10
 // console.log(typeof x) // number typeof bu ozgaruvchini turini korsatadi
@@ -139,7 +147,22 @@ console.log("olma" + 2) //olma2
 
 
 // String 
-// let str1 = "Javascript"
+// let str1 = "Javascript"// >>>>> JavaScripT
+// console.log(str1.length); // 10 belgilar soni
+// console.log("Java" + "S" + "crip" + "T")
+// console.log(str1[0] + str1[1] + str1[2] + str1[3] + str1[4].toUpperCase())
+// console.log(str1.toLowerCase()); // kichik harflar
+// console.log(str1.toUpperCase()); // katta harflar
+// console.log(str1[0]);//J
+// console.log(str1[1]);//a
+// console.log(str1[2]);//v
+// console.log(str1[3]);//a
+// console.log(str1[4]);//s
+// console.log(str1[5]);//c
+// console.log(str1[6]);//r
+// console.log(str1[7]);//i
+// console.log(str1[8]);//p
+// console.log(str1[9]);//t
 // let str2 = 'Javascript vs Python'
 // let str3 = `Javascript vs ${str1}` // ES6 ${} >> ozgaruvchini qiymatini string ga joylash
 // console.log(str1 + " " + str2 + " " + str3);
