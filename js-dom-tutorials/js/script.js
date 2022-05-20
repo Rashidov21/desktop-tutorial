@@ -96,14 +96,36 @@
 // keydown = tugma bosilgan vaqt 
 // keyup = tugma bosib qoyvorilgan  vaqt 
 // keypress = tugma bosib qoyvorilgan  vaqt 
-window.addEventListener("keypress", (e)=>{
+// window.addEventListener("keypress", (e)=>{
     
-    // e.ctrlKey
-    // e.altKey
-    if(e.key == "Enter" && e.shiftKey == true){
-        console.log("Enter")
+//     // e.ctrlKey
+//     // e.altKey
+//     if(e.key == "Enter" && e.shiftKey == true){
+//         console.log("Enter")
+//     }
+//     console.log(e) // tugmani ozi 
+//     // console.log(e.keyCode) // tugmani tartib kodi  
+//     // console.log(e.which) // tugmani tartib kodi  
+// })
+
+// window.onscroll = function(e){
+//     // window.pageXOffset = oynani X oqidagi masofasi
+//     // window.pageYOffset = oynani Y oqidagi masofasi
+//      console.log(window.pageYOffset);
+// }
+for(let i = 0; i< 10; i++){
+    let div = document.createElement("div")
+    div.style.width = `${Math.round(Math.random() * 10 + 30)}px`
+    div.style.height = `${Math.round(Math.random() * 10 + 30)}px`
+    div.style.margin = "25px"
+    div.style.borderRadius = `${Math.round(Math.random() * 10 + 50)}%`
+    div.style.background = "orange"
+    document.querySelector("#bbb").appendChild(div)
+}
+window.addEventListener('scroll', function(e){
+    let section = this.document.querySelector("#bbb")
+    for(let item of section.children){
+        item.style.left = `${Math.round(Math.random() * 100 + 300)}px`
+        item.style.right = `${Math.round(Math.random() * 100 + 300)}px`
     }
-    console.log(e) // tugmani ozi 
-    // console.log(e.keyCode) // tugmani tartib kodi  
-    // console.log(e.which) // tugmani tartib kodi  
 })

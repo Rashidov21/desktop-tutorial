@@ -53,6 +53,12 @@ li.active a{
     width: 100%;
     height: 600px;
 }
+#bbb{
+    position:fixed;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+}
 .blocks{
     border: solid 2px pink;
     display: flex;
