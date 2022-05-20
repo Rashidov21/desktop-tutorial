@@ -54,10 +54,10 @@
 // btn.removeEventListener('click', showAlert);
 
 
-// window.addEventListener("DOMContentLoaded", function(e){
-//     // DOMContentLoaded >> sahifada HTML va DOM ni tayyorlagan event
-//     console.log("DOM loaded");
-// })
+window.addEventListener("DOMContentLoaded", fnction(e){
+    // DOMContentLoaded >> sahifada HTML va DOM ni tayyorlagan event
+    console.log("DOM loaded");
+})
 // window.addEventListener("load", function(){
 //     // load  >> sahifa butunlay yuklangan vaqt , rasm, css, html hamasi bilan 
 //     console.log("Page loaded")
