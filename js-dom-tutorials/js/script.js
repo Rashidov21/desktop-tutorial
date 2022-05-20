@@ -113,19 +113,19 @@
 //     // window.pageYOffset = oynani Y oqidagi masofasi
 //      console.log(window.pageYOffset);
 // }
-for(let i = 0; i< 10; i++){
-    let div = document.createElement("div")
-    div.style.width = `${Math.round(Math.random() * 10 + 30)}px`
-    div.style.height = `${Math.round(Math.random() * 10 + 30)}px`
-    div.style.margin = "25px"
-    div.style.borderRadius = `${Math.round(Math.random() * 10 + 50)}%`
-    div.style.background = "orange"
-    document.querySelector("#bbb").appendChild(div)
-}
-window.addEventListener('scroll', function(e){
-    let section = this.document.querySelector("#bbb")
-    for(let item of section.children){
-        item.style.left = `${Math.round(Math.random() * 100 + 300)}px`
-        item.style.right = `${Math.round(Math.random() * 100 + 300)}px`
-    }
-})
+// for(let i = 0; i< 10; i++){
+//     let div = document.createElement("div")
+//     div.style.width = `${Math.round(Math.random() * 10 + 30)}px`
+//     div.style.height = `${Math.round(Math.random() * 10 + 30)}px`
+//     div.style.margin = "25px"
+//     div.style.borderRadius = `${Math.round(Math.random() * 10 + 50)}%`
+//     div.style.background = "orange"
+//     document.querySelector("#bbb").appendChild(div)
+// }
+// window.addEventListener('scroll', function(e){
+//     let section = this.document.querySelector("#bbb")
+//     for(let item of section.children){
+//         item.style.left = `${Math.round(Math.random() * 100 + 300)}px`
+//         item.style.right = `${Math.round(Math.random() * 100 + 300)}px`
+//     }
+// })
