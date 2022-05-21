@@ -1,59 +1,70 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap'); */
-@import 'colors.css';
-* {
+*{
     padding: 0;
     margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     list-style: none;
-    transition: all 0.3s;
-}
-html, body{
-    overflow-x: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 section{
-    margin: 20px 0px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.container{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.col{
+    border: solid 1px red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+@media screen and (max-width:1024px){
+    .col{
+        border: solid 1px red;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width:992px) {
+    .row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .col{
+        border: solid 1px red;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
 }
 
-img{
-    max-width: 100%;
-}
-
-.service-box {
-    padding: 36px 25px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    position: relative;
-    transition: all 0.5s;
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    margin: 10px;
-}
-.service-box .image{
-    float: right;
-}
-.service-box .image .desktop{
-    display: block;
-    border-radius: 0.25rem;
-}
-.service-box .image .mobile{
-    display: none;
-}
-.service-box .content h4{
-    font-size: 18px;
-    color: #404b67;
-    margin: 15px 5px;
-}
-.service-box .content p{
-    font-size: 17px;
-    line-height: 26px;
-}
-.service-box .content .btn{
-    padding: 10px 20px;
-    font-size: 15px;
-    letter-spacing: 0.5px;
-    transition: all 0.5s;
-    background: #FFC033;
-    border-radius: 0.25rem;
+@media screen and (max-width:512px) {
+    section{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
