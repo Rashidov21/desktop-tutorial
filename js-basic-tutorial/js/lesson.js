@@ -180,3 +180,10 @@ SVGFEDropShadowElementf
 // John :
 // 	  *is_superuser=true
 // 	  *is_admin=true
+
+// Task 1 
+// Choyhonada 10 kishi uchun 1kg guruch , 0.75 kg go’sht,0.25kg dumba, 1kg sabzi dan iborat palov tayyorlanadi . Choyhona uchun necha kishi kelishiga qarab masalliqlarni va ular uchun harjatni hisoblaydigan dastur tuzing.
+// 1 kg guruch = 25.000
+// 0.75kg gosht = 50.000
+// 0.25 dumba = 20.000
+// 1kg sabzi = 5000 
