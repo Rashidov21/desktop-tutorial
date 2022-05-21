@@ -187,3 +187,11 @@ SVGFEDropShadowElementf
 // 0.75kg gosht = 50.000
 // 0.25 dumba = 20.000
 // 1kg sabzi = 5000 
+
+// Task 2 
+// Orol dengizining hajmi 1960-yili 68.900 km2 bo’lgan va 2014-yilga kelib uni hajmi 8305 km2 ga kamaydi . Siz Orol dengizi shu vaqt oralig’ida taxminan yiliga nechi km2 dan kamayganini hisoblovchi dastur tuzing.
+
+// Task 3 
+// Inson har bir kilogramm og’irligi uchun 35ml suv istemol qilishi kerak,
+// Abdulloh X kg vaznga ega u bir kunda necha litr suv istemol qilishi kerak ?
+
