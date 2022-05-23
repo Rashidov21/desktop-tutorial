@@ -134,3 +134,24 @@ button {
     padding: 15px 35px ;
     background-color: orange;
 }
+input{
+    padding: 15px 35px ;
+    background-color: orange;
+    border: 0.3px solid red;
+    outline: none;
+    margin-top: 10px;
+}
+input[type='submit']{
+    padding: 15px 35px ;
+    background-color: rgb(109, 86, 43); 
+}
+.float-block{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+.cubes{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px
+}

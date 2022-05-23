@@ -46,6 +46,60 @@
 
     </header>
     <main>
+        <div class="container">
+            <div class="cubes"></div>
+            <center>
+                <form action="#" method="post" id="budget">   
+                    <input type="number" placeholder="count">
+                    <input type="color" placeholder="color">
+                    <br>
+                    <button type="submit" >Create</button>
+                </form>
+                
+            </center>
+            <div class="float-block"></div>
+            <center>
+                <form action="#" method="post" id="changeHeight">
+                    <h1>Change height</h1>
+                    <input type="range" min="0" value="0" max="100" id="height">
+                    <br>
+                    <input type="color" id="bg">
+                    <button type="submit">Subscribe</button>
+                </form>
+                
+            </center>
+            <center>
+                <form action="#" method="post" id="signup">
+                    <h1>Sign Up</h1>
+                    <div class="field">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your fullname" />
+                        <small></small>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email address" />
+                        <small id="error"></small>
+                    </div>
+                    <button type="submit">Subscribe</button>
+                </form>
+                
+            </center>
+            <br><br>
+            <center>
+                <form action="#" method="get" id="login" enctype="multipart/form-data">
+                    <p><input type="text" maxlength='15' placeholder="username" autocomplete="on"
+                        pattern="[a-z]{4,8}"></p>
+                    <p>
+                        <input type="email" placeholder="email" name="email" autocomplete="on"
+                        >
+                    </p>
+                    <p><input type="password" placeholder="password" autocomplete="on"></p>
+                    <input type="submit" value="Login">
+                    <button type="reset" onclick="resetMyForm()">Reset Form</button>
+                </form>
+            </center>
+        </div>
         
         <div class="container">
             <select name="" id="position" onchange="changeCubePosition(this.value)">
