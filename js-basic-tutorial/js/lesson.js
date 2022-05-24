@@ -195,3 +195,91 @@ SVGFEDropShadowElementf
 // Inson har bir kilogramm og’irligi uchun 35ml suv istemol qilishi kerak,
 // Abdulloh X kg vaznga ega u bir kunda necha litr suv istemol qilishi kerak ?
 
+// STRING METHODS 
+
+// let str = "Python"
+// console.log(str.toLocaleLowerCase());
+// console.log(str.toLocaleUpperCase());
+// console.log(str.length); // 6 type = number
+// console.log(str.length * 2); //12
+
+// console.log(str.indexOf("h") ); // 3
+
+// console.log("Python is OOP language".indexOf("OOP")); // 10
+// let str = "Python is better"
+// console.log(str.includes("hon")); // true / rost
+// console.log(str.includes("ava")); // false / yolgon
+// console.log(str.startsWith("Py")); // true
+// console.log(str.endsWith("er")); // true
+// console.log(str.startsWith("Ja")); // false
+// console.log(str.endsWith("ov")); // false
+
+// >  : katta
+// < : kichik
+// >= : katta yoki teng
+// <= : kichik yoki teng
+// == : teng
+// != : teng emas
+// === : qatiy teng
+// !== : qatiy teng emas 
+//  ! : emas (inkor)
+
+// Boolean() >> true/false
+// let x = true;
+// console.log(typeof x); // boolean / true
+// console.log(10 > 5); // katta == true
+// console.log(7 < 9); // true
+// console.log(5 >= 5); //true 
+// console.log(5 <= 5); //true 
+// console.log("a" == "A");// false
+// console.log("a" != "A"); // true
+// console.log("1" == 1);//true
+// console.log("1" === 1);//false 
+// console.log(!true); // not true == false
+// console.log(!false); // not false == true 
+// console.log("A".charCodeAt()); // 65
+// console.log("a".charCodeAt()); // 97
+
+// AND , OR , NOT 
+// AND = va 
+// OR = yoki
+// NOT = emas 
+
+// && - AND >> VA 
+// || - OR >> YOKI 
+// ! - NOT >> EMAS 
+// let age = +prompt("Age ? \n:")
+// console.log(age > 18);
+// console.log(age < 65);
+// console.log(age > 18 && age < 65); //agar age 18 dan katta VA  65 dan kichik  bolsa true 
+// console.log(age > 18 || age < 65);//agar age 18 dan katta YOKI  65 dan kichik  bolsa true
+// console.log(Boolean("text")); // true
+// console.log(Boolean("")); // false
+// console.log(Boolean(0)); // false
+// console.log(Boolean(-56)); // true
+
+// console.log(Boolean(age)); // 
+
+// let age = +prompt("Yosh")
+// if(age > 18){
+//     console.log("Hush kelibsiz !");
+// }else{
+//     console.log("Kirish mumkin emas ! ");
+// }
+
+// if(shart){amal}
+
+// if(shart){amal}else if(shart){amal}else{amal}
+
+// if >> agar shart = true amal bajarilsin
+// else if yoki shart = true amal bajarilsin
+// else aks holda amal bajarilsin
+
+let age = +prompt("Yosh") // 18
+if(age > 18){
+    console.log("Hush kelibsiz !");
+}else if(age == 18){
+    console.log("Hush kelibsiz !");    
+}else{
+    console.log("Kirish mumkin emas ! ");
+}
