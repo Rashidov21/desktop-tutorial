@@ -275,11 +275,11 @@ SVGFEDropShadowElementf
 // else if yoki shart = true amal bajarilsin
 // else aks holda amal bajarilsin
 
-let age = +prompt("Yosh") // 18
-if(age > 18){
-    console.log("Hush kelibsiz !");
-}else if(age == 18){
-    console.log("Hush kelibsiz !");    
-}else{
-    console.log("Kirish mumkin emas ! ");
-}
+// let age = +prompt("Yosh") // 18
+// if(age > 18){
+//     console.log("Hush kelibsiz !");
+// }else if(age == 18){
+//     console.log("Hush kelibsiz !");    
+// }else{
+//     console.log("Kirish mumkin emas ! ");
+// }
