@@ -1,61 +1,37 @@
-// let form1 = document.querySelector("form") // agar page  1 ta dan kop form bosa faqat 1-olinadi
-// let form2 = document.forms[0] //array sahifadagi birinchi form tegi
-// console.log(form2); 
+// let form = document.forms // sahifadagi hamma form teglarini array qilib olish
+// console.log(form); // HTMLCollection >> Array
 
-// Form lar 2 ta method ga ega boladi 
-// 1- submit toldirilgan formani tasdiqlab Backend ga yuborish 
-// 2- reset  toldirilgan formani maydonlarini boshatish sbros
+// console.log(form[0]); // 1-forma
+// console.log(form[1]); // 2-forma
 
-// let form = document.forms[0];
-// console.dir(form)
-// console.log(form.elements);
-// for(let e = 0; e < form.length; e++){
-//     form[e].style.color= '#fff'
-// }
+// form[0].addEventListener("change", function(event){
+//     let box = document.querySelector(".form-box");
+//     let color = document.getElementById('color').value
+//     let range = document.getElementById('range').value
+//     box.style.backgroundColor = `${color}`
+//     box.style.width = `${range}%`
+// })
+/* <div class="form-box"></div>
+<center>  
+        <p><input type="color" id="color"></p>
+        <p><input type="number" id="range" value="0"></p>
+        <button onclick="showBlocks()">Get Blocks</button>
+</center> */
+// function showBlocks(){
+//     let box = document.querySelector('.form-box')
 
-// function resetMyForm(){
-//     return form.reset() // formani maydonlarini tozalash
-// }
-
-// pattern="[a-z]" faqat kichik lotin harflari
-// pattern="[a-z]{1,15}" faqat kichik lotin harflari kamida  1 ta max 15 ta belgi
-// pattern="[0-9]" faqat sonlar
-// pattern="[A-Za-z]" har qanaqangi regusterdagi harflar
-
-// maxlength='15'
-
-
-// form.addEventListener("submit", function(event){
-//     event.preventDefault()
-//     // console.log(form.elements["email"]) // name="email" lik maydon
-//     let email = form.elements["email"].value
-//     if(email.includes("@")){
-//        return form.submit()        
-//     }else{
-//         document.querySelector("#error").innerHTML = "Email example = main@gmail.com"
+//     if(box.children){
+//       box.innerHTML = ""
 //     }
-// })
-document.forms[0].addEventListener("submit",function(event){
-    event.preventDefault()
-    let count = document.forms[0][0].value;
-    let color = document.forms[0][1].value;
-    let cubes = document.querySelector('.cubes')
-    for(let i = 0; i < count; i++){
-       let div = document.createElement("div")
-       div.style.width = "100px" 
-       div.style.height = "100px"
-       div.style.margin = "10px 20px"
-       div.style.backgroundColor = `${color}`
-       cubes.appendChild(div) 
-    }
-    
-})
-// let form = document.forms[0];
-// form.addEventListener("change", function(event){
-//     let height = document.querySelector("#height").value
-//     let block = document.querySelector(".float-block")
-//     let bg = document.querySelector("#bg").value
-//     document.body.style.background = `${bg}`
-//     block.style.width = `${height}%`
-// })
 
+//     let color = document.getElementById('color').value
+//     let num = document.getElementById('range').value
+
+//     for(let i = 0; i < num; i++){
+//         let div = document.createElement("div")
+//         div.style.width = "100px"
+//         div.style.height = "100px"
+//         div.style.backgroundColor = `${color}`
+//         box.appendChild(div)
+//     }
+// }

@@ -145,10 +145,11 @@ input[type='submit']{
     padding: 15px 35px ;
     background-color: rgb(109, 86, 43); 
 }
-.float-block{
-    width: 100px;
-    height: 100px;
-    background-color: orange;
+.form-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
 }
 .cubes{
     display: flex;

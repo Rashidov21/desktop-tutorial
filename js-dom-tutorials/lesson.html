@@ -45,161 +45,23 @@
         </nav>
 
     </header>
-    <main>
-        <div class="container">
-            <div class="cubes"></div>
-            <center>
-                <form action="#" method="post" id="budget">   
-                    <input type="number" placeholder="count">
-                    <input type="color" placeholder="color">
-                    <br>
-                    <button type="submit" >Create</button>
-                </form>
-                
-            </center>
-            <div class="float-block"></div>
-            <center>
-                <form action="#" method="post" id="changeHeight">
-                    <h1>Change height</h1>
-                    <input type="range" min="0" value="0" max="100" id="height">
-                    <br>
-                    <input type="color" id="bg">
-                    <button type="submit">Subscribe</button>
-                </form>
-                
-            </center>
-            <center>
-                <form action="#" method="post" id="signup">
-                    <h1>Sign Up</h1>
-                    <div class="field">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your fullname" />
-                        <small></small>
-                    </div>
-                    <div class="field">
-                        <label for="email">Email:</label>
-                        <input type="text" id="email" name="email" placeholder="Enter your email address" />
-                        <small id="error"></small>
-                    </div>
-                    <button type="submit">Subscribe</button>
-                </form>
-                
-            </center>
-            <br><br>
-            <center>
-                <form action="#" method="get" id="login" enctype="multipart/form-data">
-                    <p><input type="text" maxlength='15' placeholder="username" autocomplete="on"
-                        pattern="[a-z]{4,8}"></p>
-                    <p>
-                        <input type="email" placeholder="email" name="email" autocomplete="on"
-                        >
-                    </p>
-                    <p><input type="password" placeholder="password" autocomplete="on"></p>
-                    <input type="submit" value="Login">
-                    <button type="reset" onclick="resetMyForm()">Reset Form</button>
-                </form>
-            </center>
-        </div>
-        
-        <div class="container">
-            <select name="" id="position" onchange="changeCubePosition(this.value)">
-                <option value="1">Postion 1</option>
-                <option value="2">Postion 2</option>
-                <option value="3">Postion 3</option>
-            </select>
-            <div class="row" id="con">
-                <div class="cube">1</div>
-                <div class="cube">2</div>
-                <div class="cube">3</div>
-                <div class="cube">4</div>
-                <div class="cube">5</div>
-                <div class="cube">6</div>
-            </div>
-        </div>
-    </main>      
-    <main class="">
-        <div class="container">
-            <a href="https://www.javascripttutorial.net/" id="link">JS Tutorial</a>
-         <button id="btn">Event</button>
-            <br><br>
-            <div class="box is-size-5 red dark " id="box" onclick="alert('OK')">
-       
-            </div>
-            <form action="/search/" method="post" class="form"
-            enctype="multipart/form-data"
-            name="form-inputs">
-
+   <main>
+       <div class="container">
+           <div class="form-box"></div>
+           <center>  
+                   <p><input type="color" id="color"></p>
+                   <p><input type="number" id="range" value="0"></p>
+                   <button onclick="showBlocks()">Get Blocks</button>
+           </center>
+           <!-- <center>
+               
+            <form action="#" method="get">
+                <p><input type="color"></p>
+                <p><input type="range" max="100" min="0" value="0"></p>
             </form>
-<div class="divider"></div>
-            <ul id="language"></ul>
-            <form action="" method="get" id="form">
-                <input type="text">
-                <button type="submit">Send</button>
-            </form>
-          
-            <!-- <div class="modal">
-                <a href="#" class="close" onclick="closeModal()">
-                    X
-                </a>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore commodi laboriosam ipsam harum officia placeat?
-            </div> -->
-        </div>
-        <!-- <div class="container" onmousemove="equalizer()">
-            <div class="blocks">
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                
-            </div>
-            <div class="divider"></div>
-            <div class="modal">
-                <a href="#" class="close" onclick="modalClose()">
-                    <i class="bx bx-x"></i>
-                </a>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At laborum officiis iste.
-            </div>
-        </div> -->
-    </main>
+        </center> -->
+       </div>
+   </main>
 
 
  

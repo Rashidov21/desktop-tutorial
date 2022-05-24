@@ -1,3 +1,6 @@
-r , w = [r for r in range(1,int(input("Red cars count:"))+1)],[w for w in range(1,int(input("White cars count:"))+1)]
-print(r,w)
+import pyqrcode
+from pyqrcode import QRCode
+dest = 'https://pyblog.uz'
+myQR = QRCode(dest)
+myQR.png('qrcode1.png', scale=8)
 
