@@ -58,3 +58,4 @@ document.forms[0].addEventListener("submit",function(event){
 //     document.body.style.background = `${bg}`
 //     block.style.width = `${height}%`
 // })
+
