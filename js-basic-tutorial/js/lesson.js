@@ -4,6 +4,7 @@
 // 3- natijani saqlaydi
 // 4- natijani qaytaradi
 
+
 // var , let , const 
 // O'zgaruvchi bu kompyuer xotirasidagi katakchalarni biror bir nom sotiga biriktirish
 // var x = 10; // ES5  >> EcmaScript 2009
@@ -283,3 +284,106 @@ SVGFEDropShadowElementf
 // }else{
 //     console.log("Kirish mumkin emas ! ");
 // }
+// if (5 > 7) {
+//     console.log("Ishlamaydi")
+// }
+// if (10 > 20) {
+//     console.log("Ok")
+// } else {
+//     console.log("ERROR")
+// }
+
+// let ok = 10 > 5 ? "OK" : "No"
+// console.log(ok)
+
+// let weight = +prompt()
+// let result = weight > 0 ? weight * 0.03 : alert("togri son kirit")
+// console.log(Math.round(result) + "litr")
+
+// WHILE / FOR LOOPS ??
+// while -cheksiz takrorlanish
+// for - sanoqli , boshqariladigan takrorlanish
+// let n = 7;
+
+// while (true) {
+//     let user = +prompt("Sonni kiriting :")
+//     if (user == n) {
+//         break // takrorlanishdan chiqish , tormoz
+//     } else {
+//         console.log("Notogri")
+//     }
+// }
+// let n = 7;
+// let i = 0;
+// while (n > i) {
+//     i++ // i = i + 1
+//     console.log(i)
+// }
+// 1 - takrorlanish i = 0: 7 > 0 >> true
+// 2 - takrorlanish i = 1: 7 > 1 >> true
+// 3 - takrorlanish i = 2: 7 > 2 >> true
+// 4 - takrorlanish i = 3: 7 > 3 >> true
+// 5 - takrorlanish i = 4: 7 > 4 >> true
+// 6 - takrorlanish i = 5: 7 > 5 >> true
+// 6 - takrorlanish i = 6: 7 > 6 >> true
+// 6 - takrorlanish i = 7: 7 > 7 >> false
+// let n = 7;
+// let i = 0
+// do {
+//     i++
+//     console.log(i)
+// } while (n > i)
+
+// let x = 0;
+// // x = x + 1
+// console.log(++x)
+// console.log(--x)
+
+// i , k , j , x 
+
+// for (let i = 0; i < 10; i++) {
+//     console.log(i + 2)
+// }
+
+
+// task 1
+// let k = 10;
+// let n = 5;
+// for (let i = 0; i < n; i++) {
+//     console.log(k)
+// }
+
+// task 5
+
+// var cost = 25000;
+
+// for (let i = 0; i < 11; i++) {
+//     if (i == 0) {
+//         continue;
+//     } else {
+//         var kg = i / 10
+//         console.log(`${kg}kg konfet ${cost * kg}`)
+//     }
+// }
+
+// task 6
+
+// let cost = 10000
+
+// for (let i = 1; i < 2; i = i + 0.2) {
+//     // console.log(i)
+//     // console.log(kg)
+//     console.log(i, 'kg', i * cost)
+// }
+
+// task 10
+
+let n = 100
+
+var s = 0
+
+for (n; n > 0; n--) {
+    s += (1 / n)
+}
+
+console.log(s)
