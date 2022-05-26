@@ -1,8 +1,8 @@
 // Dastur 
-    // 1-ma'lumotlarni qabul qiladi 2,2 
-    // 2- ularni qayta ishlaydi : 2+2
-    // 3- natijani saqlaydi
-    // 4- natijani qaytaradi
+// 1-ma'lumotlarni qabul qiladi 2,2 
+// 2- ularni qayta ishlaydi : 2+2
+// 3- natijani saqlaydi
+// 4- natijani qaytaradi
 
 // var , let , const 
 // O'zgaruvchi bu kompyuer xotirasidagi katakchalarni biror bir nom sotiga biriktirish
