@@ -25,31 +25,3 @@ main {
     padding-right: 10%;
     padding-top: 100px;
 }
-
-em {
-    width: 100px;
-    display: none;
-    padding: 10px;
-    background-color: #865b5b;
-}
-
-.blue-bg {
-    background-color: #1e43bd;
-}
-
-.panel-a {
-    width: 100%;
-    padding: 50px;
-    border-radius: 20px;
-    background-color: #dfdfdf;
-}
-
-.panel {
-    border: 1px solid;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.panel p {
-    display: none;
-}

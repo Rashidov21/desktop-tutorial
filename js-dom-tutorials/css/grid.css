@@ -1,0 +1,36 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul.box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* if repeat(4, 1fr) == 1fr 1fr 1fr 1fr */
+    /* if 1fr = 3/1 */
+    /* or repeat(1fr, 10) */
+    /* or 100px 100px  */
+    /* or 50% 50% */
+    grid-template-rows: 100px 100px;
+}
+
+.item {
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(200, 218, 40);
+    border: solid 1px red;
+}
+
+@media screen and (max-width:992px) {
+    ul.box {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-auto-rows: minmax(50px, 200px);
+        /* row minimal 50 px and maximal 200px  */
+        grid-gap: 10px;
+        /*  or grid-column-gap: 10px; */
+        /* or grid-row-gap: 10px; */
+    }
+}
