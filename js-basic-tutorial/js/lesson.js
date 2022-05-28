@@ -345,45 +345,58 @@ SVGFEDropShadowElementf
 //     console.log(i + 2)
 // }
 
+// task 1 
+// input: abcd
+// output: AbCd
+// let s = prompt() // alla 
+//     // a = 0
+//     // l = 1
+//     // l = 2
+//     // a = 3
+//     // console.log(s[3]) // a
+// let result = ""
+// for (let i = 0; i < s.length; i++) {
+//     if (i % 2 === 0) {
+//         result += s[i].toLocaleUpperCase()
+//     } else {
+//         result += s[i].toLocaleLowerCase()
+//     }
+// }
+// console.log(result)
 
-// task 1
-// let k = 10;
-// let n = 5;
-// for (let i = 0; i < n; i++) {
-//     console.log(k)
+// task 2
+// let s = "25648792135456633695422363666"
+// input: s
+// output: count of 6
+
+// task 3
+// input: random number (1, 6) x 4
+// output:
+// player1 = 6
+// player2 = 9
+// log player2 win
+
+// let player1 = 0;
+// let player2 = 0;
+// for (let i = 0; i < 4; i++) {
+//     player1 += Math.ceil(Math.random() * 6)
+//     player2 += Math.ceil(Math.random() * 6)
+// }
+// if (player1 > player2) {
+//     console.log("player1 win")
+// } else if (player1 === player2) {
+//     console.log("draw")
+// } else {
+//     console.log("player2 win")
+// }
+// task 4 
+// let s = "285864879888"
+//     // input: s
+//     // output: "256479"
+// for (let i = 0; i < s.length; i++) {
+//     console.log(s[i])
 // }
 
 // task 5
-
-// var cost = 25000;
-
-// for (let i = 0; i < 11; i++) {
-//     if (i == 0) {
-//         continue;
-//     } else {
-//         var kg = i / 10
-//         console.log(`${kg}kg konfet ${cost * kg}`)
-//     }
-// }
-
-// task 6
-
-// let cost = 10000
-
-// for (let i = 1; i < 2; i = i + 0.2) {
-//     // console.log(i)
-//     // console.log(kg)
-//     console.log(i, 'kg', i * cost)
-// }
-
-// task 10
-
-let n = 100
-
-var s = 0
-
-for (n; n > 0; n--) {
-    s += (1 / n)
-}
-
-console.log(s)
+// input: "2348$%&644*%#**&(*)$%756%^$^537628%#$&23947&$34$%830"
+// output: "23486447565376282394734830"
