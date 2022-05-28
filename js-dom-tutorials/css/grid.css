@@ -47,3 +47,29 @@ section {
     border: solid 1px lightcoral;
     padding: 10px 15px;
 }
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "area area" "inner inner2";
+    grid-template-columns: 200px, 1fr;
+}
+
+.item {
+    background-color: bisque;
+    padding: 10px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.area {
+    grid-area: area;
+}
+
+.inner {
+    grid-area: inner;
+}
+
+.inner2 {
+    grid-area: inner2;
+}
