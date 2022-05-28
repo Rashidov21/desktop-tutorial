@@ -5,7 +5,7 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     /* list-style: none; */
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .container {
@@ -17,7 +17,13 @@
 .row {
     width: 100%;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+}
+
+.divider {
+    height: 200px;
+    width: 100%;
+    border: solid 2px lightblue;
 }
 
 main {
@@ -29,10 +35,55 @@ main {
 .box {
     width: 300px;
     height: 300px;
-    background-color: orange;
 }
 
-.modal {
-    padding: 10px 35px;
-    background-color: orange;
+.orange {
+    background-color: rgb(240, 159, 9);
+}
+
+.red {
+    background-color: rgb(117, 80, 9);
+}
+
+.blue {
+    background-color: rgb(67, 35, 182);
+}
+
+.green {
+    background-color: rgb(62, 121, 23);
+}
+
+
+/* .shake {
+    animation: shake 0.8s alternate ease-in-out 1;
+} */
+
+
+/* @keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+} */
+
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
 }

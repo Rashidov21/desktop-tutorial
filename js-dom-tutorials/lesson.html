@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.2/css/boxicons.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- <link rel="stylesheet" href="./css/fullpage.min.css"> -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <!-- <script src="./js/jqwery.min.js"></script> -->
     <title>JS DOM tutorials</title>
 </head>
@@ -16,16 +17,31 @@
 <body>
 
     <main>
-        <div class="modal">
-            <a href="#" class="close">Close</a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero at, porro a dolore perspiciatis totam commodi inventore quidem, nulla error tempore provident. Ab nobis ea similique eos, aspernatur veritatis!</p>
-        </div>
         <div class="container">
-            <div class="box">
-                <input type="text" id="text">
-                <p id="text_value"></p>
+            <div class="grid">
+                <div class="item">1</div>
             </div>
-        </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col" data-aos="flip-left">
+                        <div class="box orange"></div>
+                    </div>
+                    <div class="divider" data-aos="flip-left"></div>
+                    <div class="col">
+                        <div class="box red"></div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="col">
+                        <div class="box blue"></div>
+                    </div>
+                    <div class="divider" data-aos="flip-left"></div>
+                    <div class="col">
+                        <div class="box green" data-aos="fade-right"></div>
+                    </div>
+                </div>
+
+            </div>
     </main>
 
 
@@ -33,8 +49,9 @@
 
 
 
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script> -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <!-- <script src="./js/fullpage.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/script.js "></script>
 </body>
 
