@@ -400,3 +400,103 @@ SVGFEDropShadowElementf
 // task 5
 // input: "2348$%&644*%#**&(*)$%756%^$^537628%#$&23947&$34$%830"
 // output: "23486447565376282394734830"
+
+
+// let userNum = +prompt() // "1" == 1 >> true | 1 === 1 true 
+// if (userNum == 1) {
+//     console.log("Assalomu alaykum !")
+// } else if (userNum == 2) {
+//     console.log("Qalaysiz ?")
+// } else if (userNum == 3) {
+//     console.log("Bugun havo yaxshi!")
+// } else {
+//     console.log("bunday son yo'q ")
+// }
+// ANALOG >> bir hili
+// switch (userNum) {
+//     case 1:
+//         console.log("Assalomu alaykum !")
+//         break
+//     case 2:
+//         console.log("Qalaysiz!")
+//         break
+//     case 3:
+//         console.log("Bugun havo yaxshi!")
+//         break
+//     case 4:
+//         console.log("Juda issiq emasmi ?")
+//         break
+//     default:
+//         console.log("bunday son yo'q")
+// }
+
+// let name = prompt()
+// switch (name) {
+//     case "abdullo":
+//         alert(name)
+//         break
+//     case "hasanboy":
+//         alert("Error")
+//         break
+//     case "husanboy":
+//         alert(404)
+//         break
+//     default:
+//         alert("Write something...")
+// }
+
+// let a = 2 + "1"; // "21"
+
+// switch (a) {
+//     case 3:
+//         alert('Маловато');
+//     case 4:
+//         alert('В точку!');
+//     case 5:
+//         alert('Перебор');
+//     default:
+//         alert("Нет таких значений");
+// }
+
+// let a = "1";
+// // console.log(+a) // 1
+// let b = 0;
+
+// switch (+a) {
+//     case b + 1:
+//         alert("Выполнится, т.к. значением +a будет 1, что в точности равно b+1");
+//         break;
+
+//     default:
+//         alert("Это не выполнится");
+// }
+
+// let arg = prompt("Введите число?"); // 1 
+// switch (arg) {
+//     case '0':
+//     case '1':
+//         alert('Один или ноль');
+//         break;
+
+//     case '2':
+//         alert('Два');
+//         break;
+
+//     case 3:
+//         alert('Никогда не выполнится!');
+//         break;
+//     default:
+//         alert('Неизвестное значение');
+// }
+
+// task 1
+// input : phone Number 
+// >> +1545646456 >> bunday company yoq
+// +99893654684 >> ucell
+// +99891654684 >> beeline
+// output: ucell, mobiuz, beeline
+
+// task 2
+// input : user number = 2
+// if Number toq bolsa unikvadrati qaytarilsin juft bolsa uni kubi
+// output: 4,8
