@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    font-family: 'Poppins', sans-serif !important;
+    overflow-x: hidden;
+}
+
+.poster {
+    width: 200px;
+    background-color: chartreuse;
+    height: 100px;
+    border: solid 1px red;
+}
+
+.bg-orange {
+    background-color: orange;
+}
