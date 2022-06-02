@@ -1,502 +1,71 @@
-// Dastur 
-// 1-ma'lumotlarni qabul qiladi 2,2 
-// 2- ularni qayta ishlaydi : 2+2
-// 3- natijani saqlaydi
-// 4- natijani qaytaradi
+// function - alohida nom bilan ajratilgan kod bo'lagi , uni kodni istalgan joyida
+// istalgan marta ishga tushirish mumkin 
 
 
-// var , let , const 
-// O'zgaruvchi bu kompyuer xotirasidagi katakchalarni biror bir nom sotiga biriktirish
-// var x = 10; // ES5  >> EcmaScript 2009
-// let y = 15; // ES6 >> EcmaScript 2015
-
-
-// const z = 3.14 // ES6 >> EcmaScript 2015
-// const - bu konstanta uni qiymati ozgarmaydi 
-
-// var a = "apple";
-// var a = "samsung";
-// console.log(a + " company"); // samsung company
-
-// let phone = "Galaxy Z Fold"
-// phone = "Galaxy A52"
-// console.log(phone)
-
-// let x,y,z;
-// x = 10
-// y = 20
-// z = 30
-// console.log(x + y + z) // console.log(10 + 20 + 30) >> 60
-// let name = "John"
-// let age = 15
-// let language = "Javascript"
-// console.log(name + " " + age + " " + language)
-
-// Nomlash qoidalri
-// 1-ingliz tilida 
-// 2- mantiqan to'g'ri 
-// 3-kichik harflar bilan 
-// 4-uzundan uzun emas 
-// 5-qisqa lo'nda 
-
-// let userprofilephotourl; // xato
-// let userProfilePhotoUrl; // shunisi ma'qul Camel Case
-// let user_profile_photo_url; // bu ham yaxshi
-
-// let user1 = "john" // togri , yaxshi
-// let u2ser = "mike" // togri lekin  yaxshi emas 
-// let 2user = "david" // xato
-// let User = "sara" // togri lekin yaxshi emas
-
-// const pi = 3.14
-// pi = 2.14
-// console.log(pi) //xato
-
-// let COLOR = "#fff" // constanta 
-// COLOR = "#000"
-// console.log(COLOR) //#000
-
-// Shu nomlar bilan ozgaruvchi ochib bolmaydi  
-// var , let , const , if , else , catch , try, function, break , while 
-// for, class , return , script , continue
-
-// Nom topish uchun oson usul
-// Bu nima qiymat saqlaydi savoliga javob topish ! 
-// let userAge = 36
-
-// console.log(2 + 2);
-// alert(2 + 2) // brauzerda alert oynasini ochadi
-// prompt() // input oynasini
-// confirm() // tasdiqlash oynasini ochadi
-
-// if(confirm("ok or cancel")){
-//     alert("OK")
-// }else{
-//     alert("CANCEL")
+// function showMessage() { // bu function declaration
+//     console.log('Всем привет!');
 // }
-
-// let num1 = +prompt("birinchi son")
-// let num2 = +prompt("ikkinchi son")
-// console.log(num1 + num2);
-
-// + qoshish
-// - ayirish
-// / bolish 
-// * kopaytirish
-// ** daraja
-
-// task 1
-// let a = +prompt("Tomonini kirit")
-// console.log("Perimetr = " ,4*a)
-
-/*
-fdfd
-fdfdfd
-SVGFEDropShadowElementf
-*/
-
-// DATA TYPES >> Ma'lumot turlari
-// Number() *
-// Infinity()*
-// BigInt()*
-// NaN *
-// String()
-// Boolean(),
-// undefined, null, Object()
-
-// let x = 10; // Number >> son , Butun son 
-// let y = 10.2 // Number >> son 
-// let z = -5 // Number
-// Math 
-// let age = prompt("your age ?\n")
-// let a = "15"
-// console.log(182 - a) // NaN
-// console.log(182 - Number(a)) // 167
-// let b = 12.5 // number
-// console.log(typeof String(b)) // string
-// let num = 5.3;
-// console.log(typeof num.toFixed()); //5 = string
-// console.log(typeof num.toString()); // '5' = string
-// console.log(Math.PI) // 3.14
-// console.log(Math.pow(2,2)) //4 pow bu darajaga kotarish
-// console.log(Math.ceil(2.3)) //3 ceil yaxlitlash tepaga qarab
-// console.log(Math.floor(2.7)) //2 floor yaxlitlash pastga qarab
-// console.log(Math.round(2.7)) // 3
-// round agara qoldigi 5 dan katta bolsa tepaga qarab 
-// aks holda pastga qarab yaxlitlash 
-// let randomNumber = Math.random() // 0 bilan 1 ni orasida tasodifiy bitta son
-// console.log(Math.round(randomNumber)) // 1 yoki 0
-// console.log( Math.round(Math.random() * 5 + 10)); //10 bilan 15 ni orasida
-
-// console.log(2 + 2) //4
-// console.log(10 - 2) // 8
-// console.log(10 / 2) // 5
-// console.log(10 * 2) // 20
-// console.log(10 ** 2) // 100
-// console.log(7 % 2) // 1
-
-// console.log(2 + 2 * 5) // 12
-// console.log((2 + 2) * 5) // 20
-// console.log(2 * "apple") //NaN Not a Number >> Son emas
-// console.log("olma" / 2) //NaN Not a Number >> Son emas
-// console.log("olma" + 2) //olma2
-
-// console.log(x) // 10
-// console.log(typeof x) // number typeof bu ozgaruvchini turini korsatadi
-// console.log(1 / 0) // Infinity
-// BigInt >> Big Integer >> Katta butun sonlar = -2 ** 53 darajasi dan to 2 53 darajasigacha
-
-
-// String 
-// let str1 = "Javascript"// >>>>> JavaScripT
-// console.log(str1.length); // 10 belgilar soni
-// console.log("Java" + "S" + "crip" + "T")
-// console.log(str1[0] + str1[1] + str1[2] + str1[3] + str1[4].toUpperCase())
-// console.log(str1.toLowerCase()); // kichik harflar
-// console.log(str1.toUpperCase()); // katta harflar
-// console.log(str1[0]);//J
-// console.log(str1[1]);//a
-// console.log(str1[2]);//v
-// console.log(str1[3]);//a
-// console.log(str1[4]);//s
-// console.log(str1[5]);//c
-// console.log(str1[6]);//r
-// console.log(str1[7]);//i
-// console.log(str1[8]);//p
-// console.log(str1[9]);//t
-// let str2 = 'Javascript vs Python'
-// let str3 = `Javascript vs ${str1}` // ES6 ${} >> ozgaruvchini qiymatini string ga joylash
-// console.log(str1 + " " + str2 + " " + str3);
-
-// let str = "-324234"
-// console.log(typeof str) // string
-
-// let s = "Javascript \n is  \tweb programming langauge"
-// // \n - yangi qatorga otish
-// // \t - tab 
-// console.log(s)
-// let user = `John :\n\t*is_superuser=true\n\t*is_admin=true`
-// console.log(user);
-
-// John :
-// 	  *is_superuser=true
-// 	  *is_admin=true
-
-// Task 1 
-// Choyhonada 10 kishi uchun 1kg guruch , 0.75 kg go’sht,0.25kg dumba, 1kg sabzi dan iborat palov tayyorlanadi . Choyhona uchun necha kishi kelishiga qarab masalliqlarni va ular uchun harjatni hisoblaydigan dastur tuzing.
-// 1 kg guruch = 25.000
-// 0.75kg gosht = 50.000
-// 0.25 dumba = 20.000
-// 1kg sabzi = 5000 
-
-// Task 2 
-// Orol dengizining hajmi 1960-yili 68.900 km2 bo’lgan va 2014-yilga kelib uni hajmi 8305 km2 ga kamaydi . Siz Orol dengizi shu vaqt oralig’ida taxminan yiliga nechi km2 dan kamayganini hisoblovchi dastur tuzing.
-
-// Task 3 
-// Inson har bir kilogramm og’irligi uchun 35ml suv istemol qilishi kerak,
-// Abdulloh X kg vaznga ega u bir kunda necha litr suv istemol qilishi kerak ?
-
-// STRING METHODS 
-
-// let str = "Python"
-// console.log(str.toLocaleLowerCase());
-// console.log(str.toLocaleUpperCase());
-// console.log(str.length); // 6 type = number
-// console.log(str.length * 2); //12
-
-// console.log(str.indexOf("h") ); // 3
-
-// console.log("Python is OOP language".indexOf("OOP")); // 10
-// let str = "Python is better"
-// console.log(str.includes("hon")); // true / rost
-// console.log(str.includes("ava")); // false / yolgon
-// console.log(str.startsWith("Py")); // true
-// console.log(str.endsWith("er")); // true
-// console.log(str.startsWith("Ja")); // false
-// console.log(str.endsWith("ov")); // false
-
-// >  : katta
-// < : kichik
-// >= : katta yoki teng
-// <= : kichik yoki teng
-// == : teng
-// != : teng emas
-// === : qatiy teng
-// !== : qatiy teng emas 
-//  ! : emas (inkor)
-
-// Boolean() >> true/false
-// let x = true;
-// console.log(typeof x); // boolean / true
-// console.log(10 > 5); // katta == true
-// console.log(7 < 9); // true
-// console.log(5 >= 5); //true 
-// console.log(5 <= 5); //true 
-// console.log("a" == "A");// false
-// console.log("a" != "A"); // true
-// console.log("1" == 1);//true
-// console.log("1" === 1);//false 
-// console.log(!true); // not true == false
-// console.log(!false); // not false == true 
-// console.log("A".charCodeAt()); // 65
-// console.log("a".charCodeAt()); // 97
-
-// AND , OR , NOT 
-// AND = va 
-// OR = yoki
-// NOT = emas 
-
-// && - AND >> VA 
-// || - OR >> YOKI 
-// ! - NOT >> EMAS 
-// let age = +prompt("Age ? \n:")
-// console.log(age > 18);
-// console.log(age < 65);
-// console.log(age > 18 && age < 65); //agar age 18 dan katta VA  65 dan kichik  bolsa true 
-// console.log(age > 18 || age < 65);//agar age 18 dan katta YOKI  65 dan kichik  bolsa true
-// console.log(Boolean("text")); // true
-// console.log(Boolean("")); // false
-// console.log(Boolean(0)); // false
-// console.log(Boolean(-56)); // true
-
-// console.log(Boolean(age)); // 
-
-// let age = +prompt("Yosh")
-// if(age > 18){
-//     console.log("Hush kelibsiz !");
-// }else{
-//     console.log("Kirish mumkin emas ! ");
-// }
-
-// if(shart){amal}
-
-// if(shart){amal}else if(shart){amal}else{amal}
-
-// if >> agar shart = true amal bajarilsin
-// else if yoki shart = true amal bajarilsin
-// else aks holda amal bajarilsin
-
-// let age = +prompt("Yosh") // 18
-// if(age > 18){
-//     console.log("Hush kelibsiz !");
-// }else if(age == 18){
-//     console.log("Hush kelibsiz !");    
-// }else{
-//     console.log("Kirish mumkin emas ! ");
-// }
-// if (5 > 7) {
-//     console.log("Ishlamaydi")
-// }
-// if (10 > 20) {
-//     console.log("Ok")
-// } else {
-//     console.log("ERROR")
-// }
-
-// let ok = 10 > 5 ? "OK" : "No"
-// console.log(ok)
-
-// let weight = +prompt()
-// let result = weight > 0 ? weight * 0.03 : alert("togri son kirit")
-// console.log(Math.round(result) + "litr")
-
-// WHILE / FOR LOOPS ??
-// while -cheksiz takrorlanish
-// for - sanoqli , boshqariladigan takrorlanish
-// let n = 7;
-
-// while (true) {
-//     let user = +prompt("Sonni kiriting :")
-//     if (user == n) {
-//         break // takrorlanishdan chiqish , tormoz
-//     } else {
-//         console.log("Notogri")
-//     }
-// }
-// let n = 7;
-// let i = 0;
-// while (n > i) {
-//     i++ // i = i + 1
-//     console.log(i)
-// }
-// 1 - takrorlanish i = 0: 7 > 0 >> true
-// 2 - takrorlanish i = 1: 7 > 1 >> true
-// 3 - takrorlanish i = 2: 7 > 2 >> true
-// 4 - takrorlanish i = 3: 7 > 3 >> true
-// 5 - takrorlanish i = 4: 7 > 4 >> true
-// 6 - takrorlanish i = 5: 7 > 5 >> true
-// 6 - takrorlanish i = 6: 7 > 6 >> true
-// 6 - takrorlanish i = 7: 7 > 7 >> false
-// let n = 7;
-// let i = 0
-// do {
-//     i++
-//     console.log(i)
-// } while (n > i)
-
-// let x = 0;
-// // x = x + 1
-// console.log(++x)
-// console.log(--x)
-
-// i , k , j , x 
 
 // for (let i = 0; i < 10; i++) {
-//     console.log(i + 2)
+//     showMessage() // 10 marta showMessage ishga tushadi
 // }
 
-// task 1 
-// input: abcd
-// output: AbCd
-// let s = prompt() // alla 
-//     // a = 0
-//     // l = 1
-//     // l = 2
-//     // a = 3
-//     // console.log(s[3]) // a
-// let result = ""
-// for (let i = 0; i < s.length; i++) {
-//     if (i % 2 === 0) {
-//         result += s[i].toLocaleUpperCase()
-//     } else {
-//         result += s[i].toLocaleLowerCase()
-//     }
-// }
-// console.log(result)
+//  ***1- declaration >> elon qilingan function***
+//  2 - function expression >> ifoda function
+// 3 - arrow function >> strelka function
+// 4 - callback function >> callback , biror bir functionni natija qilib qaytaradgan function
 
-// task 2
-// let s = "25648792135456633695422363666"
-// input: s
-// output: count of 6
+// function funksiyaNomi(params) {
+//     // function body 
 
-// task 3
-// input: random number (1, 6) x 4
-// output:
-// player1 = 6
-// player2 = 9
-// log player2 win
+//     // return qayatarilishi kerak bolgan natija
 
-// let player1 = 0;
-// let player2 = 0;
-// for (let i = 0; i < 4; i++) {
-//     player1 += Math.ceil(Math.random() * 6)
-//     player2 += Math.ceil(Math.random() * 6)
 // }
-// if (player1 > player2) {
-//     console.log("player1 win")
-// } else if (player1 === player2) {
-//     console.log("draw")
-// } else {
-//     console.log("player2 win")
-// }
-// task 4 
-// let s = "285864879888"
-//     // input: s
-//     // output: "256479"
-// for (let i = 0; i < s.length; i++) {
-//     console.log(s[i])
+// function plus(number1, number2) {
+//     // console.log(typeof number1)
+//     // console.log(typeof number2)
+//     console.log(number1 + number2)
 // }
 
-// task 5
-// input: "2348$%&644*%#**&(*)$%756%^$^537628%#$&23947&$34$%830"
-// output: "23486447565376282394734830"
+// plus(2 * 2, 5) // plus functionni chaqirish
 
+// let x, y, z;
 
-// let userNum = +prompt() // "1" == 1 >> true | 1 === 1 true 
-// if (userNum == 1) {
-//     console.log("Assalomu alaykum !")
-// } else if (userNum == 2) {
-//     console.log("Qalaysiz ?")
-// } else if (userNum == 3) {
-//     console.log("Bugun havo yaxshi!")
-// } else {
-//     console.log("bunday son yo'q ")
+// x = 10;
+// y = 20;
+// z = 30
+// console.log(x + y + z)
+// function plus(x, y) {
+//     return x + y // natijani qaytarish
 // }
-// ANALOG >> bir hili
-// switch (userNum) {
-//     case 1:
-//         console.log("Assalomu alaykum !")
-//         break
-//     case 2:
-//         console.log("Qalaysiz!")
-//         break
-//     case 3:
-//         console.log("Bugun havo yaxshi!")
-//         break
-//     case 4:
-//         console.log("Juda issiq emasmi ?")
-//         break
-//     default:
-//         console.log("bunday son yo'q")
-// }
-
-// let name = prompt()
-// switch (name) {
-//     case "abdullo":
-//         alert(name)
-//         break
-//     case "hasanboy":
-//         alert("Error")
-//         break
-//     case "husanboy":
-//         alert(404)
-//         break
-//     default:
-//         alert("Write something...")
-// }
-
-// let a = 2 + "1"; // "21"
-
-// switch (a) {
-//     case 3:
-//         alert('Маловато');
-//     case 4:
-//         alert('В точку!');
-//     case 5:
-//         alert('Перебор');
-//     default:
-//         alert("Нет таких значений");
-// }
-
-// let a = "1";
-// // console.log(+a) // 1
-// let b = 0;
-
-// switch (+a) {
-//     case b + 1:
-//         alert("Выполнится, т.к. значением +a будет 1, что в точности равно b+1");
-//         break;
-
-//     default:
-//         alert("Это не выполнится");
-// }
-
-// let arg = prompt("Введите число?"); // 1 
-// switch (arg) {
-//     case '0':
-//     case '1':
-//         alert('Один или ноль');
-//         break;
-
-//     case '2':
-//         alert('Два');
-//         break;
-
-//     case 3:
-//         alert('Никогда не выполнится!');
-//         break;
-//     default:
-//         alert('Неизвестное значение');
-// }
+// console.log(plus(5, 5))
+// let z = plus(5, 5)
+// console.log(z) // 10
 
 // task 1
-// input : phone Number 
-// >> +1545646456 >> bunday company yoq
-// +99893654684 >> ucell
-// +99891654684 >> beeline
-// output: ucell, mobiuz, beeline
+// ayirish , bo'lish , kopaytirish amallari uchun function yozing
+
+// function division(a, b) {
+//     if (a < b) {
+//         return "A soni kichik"
+//     } else {
+//         return a / b
+//     }
+// }
+// console.log(division(5, 7)) //"A soni kichik"
+// console.log(division(10, 2)) // 5
+
+// function searchLetter(text) {
+//     let count = 0;
+//     for (let i = 0; i < text.length; i++) {
+//         if (text[i].toLowerCase() == "a") {
+//             count++
+//         }
+//     }
+//     return `A harfi matnda ${count} marta ishtirok etgan`
+// }
+// console.log(searchLetter("Assalomu alaykum"))
 
 // task 2
-// input : user number = 2
-// if Number toq bolsa unikvadrati qaytarilsin juft bolsa uni kubi
-// output: 4,8
+// input : 5 , text
+// output: text * 5
