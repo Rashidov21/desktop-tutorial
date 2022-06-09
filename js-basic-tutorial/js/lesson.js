@@ -1,198 +1,122 @@
-// function - alohida nom bilan ajratilgan kod bo'lagi , uni kodni istalgan joyida
-// istalgan marta ishga tushirish mumkin 
+// Object
+// let username = "pablo10"
+// let userage = 23
+// let password = "qwerty"
 
-
-// function showMessage() { // bu function declaration
-//     console.log('Всем привет!');
-// }
-
-// for (let i = 0; i < 10; i++) {
-//     showMessage() // 10 marta showMessage ishga tushadi
-// }
-
-//  ***1- declaration >> elon qilingan function***
-// 2 - arrow function >> strelka function
-//  3 - function expression >> ifoda function
-// 4 - callback function >> callback , biror bir functionni natija qilib qaytaradgan function
-
-// function funksiyaNomi(params) {
-//     // function body 
-
-//     // return qayatarilishi kerak bolgan natija
-
-// }
-// function plus(number1, number2) {
-//     // console.log(typeof number1)
-//     // console.log(typeof number2)
-//     console.log(number1 + number2)
-// }
-
-// plus(2 * 2, 5) // plus functionni chaqirish
-
-// let x, y, z;
-
-// x = 10;
-// y = 20;
-// z = 30
-// console.log(x + y + z)
-// function plus(x, y) {
-//     return x + y // natijani qaytarish
-// }
-// console.log(plus(5, 5))
-// let z = plus(5, 5)
-// console.log(z) // 10
-
-// task 1
-// ayirish , bo'lish , kopaytirish amallari uchun function yozing
-
-// function division(a, b) {
-//     if (a < b) {
-//         return "A soni kichik"
-//     } else {
-//         return a / b
+// let user = {
+//     username: "pablo10",
+//     userage: 23,
+//     password: "qwerty",
+//     changePassword: function(newPassword) {
+//         this.password = newPassword
+//             // this.username == user.username
 //     }
 // }
-// console.log(division(5, 7)) //"A soni kichik"
-// console.log(division(10, 2)) // 5
+// console.log(user.username) // pablo10
+// user.changePassword("12345")
+// console.log(user) // Object
 
-// function searchLetter(text) {
-//     let count = 0;
-//     for (let i = 0; i < text.length; i++) {
-//         if (text[i].toLowerCase() == "a") {
-//             count++
+// let obj = {
+//     name: "object name",
+//     age: 12
+// }
+
+// let car = {
+//         model: "Shevrolet",
+//         price: 14000,
+//         name: "Gentra",
+//         color: "delfin",
+//         drive: function(x) {
+//             console.log(`${this.model + " " + this.name} is drive`)
+
 //         }
 //     }
-//     return `A harfi matnda ${count} marta ishtirok etgan`
+// car.drive(10)
+// car["color"] = 'white' // color maydonini qiymatini o'zgartirish
+// car.count = 23 // object ga yangi maydon qoshish
+// car["count"] = 23 // object ga yangi maydon qoshish 2 - usul
+// console.log(car)
+// console.log("Hello")
+// console.debug()
+// console.error("Hello")
+// car.drive()
+// console.log(car.name)
+// console.log(car.model)
+
+// function makeUser(name, age) {
+//     return {
+//         name: name,
+//         age: age
+//             // ...другие свойства
+//     };
 // }
-// console.log(searchLetter("Assalomu alaykum"))
-
-// task 2
-// input : 5 , text
-// output: text * 5
-
-// let arrowFunc = (x, y, z) => { return (x + y) * z }
-// console.log(arrowFunc(2, 2, 5)) // 20
-
-// let func = x => { return x ** 2 }
-// console.log(func(2)) // 4
-// Function Expression 
-// let func = function() {
-//     console.log("Hello")
-// }
-// func()
-// let plus = function(x, y) {
-//     console.log(x + y)
-// }
-// plus(10, 20)
-// Anonim Function  
-// function() {
-//     console.log("Hello")
-// }
-// window.addEventListener("click", function() {
-//     console.log("Hello")
-// })
-
-// CallBack function
-
-// function sayHi() {
-//     console.log("Hi !")
-// }
-
-// function sayBye() {
-//     console.log("Bye Bye !")
-// }
-
-// function meet(ask, func1, func2) {
-//     if (ask) {
-//         return func1()
-//     } else {
-//         return func2()
-//     }
-// }
-// meet(confirm("Hello ? "), sayHi, sayBye) // callback func
-
-// let age = prompt("Сколько Вам лет?", 18);
-
-// let welcome = (age < 18) ?
-//     () => alert('Привет!') :
-//     () => alert("Здравствуйте!");
-
-// welcome();
-// Ternar operatorlar 
-// let value = 1 > 0 ? 10 : 0 // ? = if , : - else 
-// console.log(value)
-// let age = +prompt("Age of player ?")
-// let playerName = age > 22 ? "Player on" : "Player off"
-// console.log(playerName)
-// false = 0
-// true = 1
-
-// Javascript function
-// 1 - declaration 
-// function funcName(x) {
-//     return x * 2
-// }
-// 2- arrow function
-// let func = x => { return x * 2 }
-// 3 - function expression
-// let func2 = function(x) {
-//         return x * 2
-//     }
-// 4 - callback function
-
-// function call(value, f1, f2) {
-//     if (value) return f1()
-//     else return f2()
-// }
-// call(true, () => { alert("F1 is work") }, function() { alert("F2 is work") })
-
 // task 1
-// input : user dan 5 ta ism qabul qilinsin
-// output : nechtasi "ab" harflari bilan boshlanishini qaytarilsin
-// function checkNames() {
-//     let count = 0
-//     for (let i = 0; i < 5; i++) {
-//         let name = prompt("Name >>> ?")
-//         if (name.toLocaleLowerCase().startsWith("ab")) {
-//             count++
-//         }
-//     }
-//     return count
-// }
-// task 2
-// input: sinfdagi oquvchilar soni va vinetkaga yigiladigan summa(har bir oquvchi uchun)
-// output: umumiy summa
+// input: function yozing, robot obyektini xosil qilsin
+// output: robot, name, model, battery, year, programg, color, talk, walk
 
-// task 3 
-// input: oquvchilar soni va yoshlari minimum 3 kishi 
-// output : oquvchilarni umumiy yosh darajasi
-
-// function summAge(ages) {
-//     let a = 0;
-//     for (let i = 0; i < ages; i++) {
-//         let age = +prompt("Age ?")
-//         a += age
+// function makeDroid(name, age, talk) {
+//     return {
+//         name: name,
+//         age: age,
+//         talk: talk
 //     }
-//     return `Ortacha yosh = ${a / ages}`
 // }
-// console.log(summAge(3))
+// let robotName = "r2d2"
+// let age = 1
 
-// function getSummAge(studentCount) {
-//     let summa = 0;
-//     for (let i = 1; i <= studentCount; i++) {
-//         let age = +prompt(`Age of student ${i}`)
-//         summa += age
-//             // i = 0
-//             // i = i + 1 // 1
-//             // i = i * 5 // 
-//     }
-//     return summa
+// function robotTalk() {
+//     console.log("Im talking!")
 // }
-// let students = +prompt("Students count ? ")
-// console.log(getSummAge(students) / students)
-// let num = 2;
-// for (let i = 0; i < 3; i++) {
-//     // console.log(num *= 2)
-//     // console.log(num += 2)
-//     // console.log(num -= 2)
+// // makeDroid(robotName, age, robotTalk).talk() //"Im talking!"
+// // makeDroid("Ctripo", 20, () => { alert("404") }).talk() //"Im talking!"
+// console.log(makeDroid("r3", 2, function() { console.log("Talking!") }).name)
+// console.log(makeDroid("r3", 2, function() { console.log("Talking!") }).age)
+// makeDroid("r3", 2, function() { console.log("Talking!") }).talk()
+// Task 2
+
+// 1. Bo'sh user nomli foydalanuvchi ob'ekti yarating.
+// 2. Jon qiymatiga ega bo'lgan name xususiyatini qo'shing.
+// 3. Smit qiymatiga ega bo'lgan surname xususiyatini qo'shing.
+// 4. name xususiyatining qiymatini Petga o'zgartiring.
+// 5. Ob'ektdan name xususiyatini olib tashlang.
+// let obj = {
+//     name: "john"
 // }
+
+// delete obj.name
+// console.log(obj)
+let obj = {
+    name: "john",
+    age: 23,
+    country: "USA",
+    address: "Texas , LA",
+    skills: {
+        programming: "Javascript",
+        sport: {
+            case1: "Ping Pong",
+            case2: "PS5",
+            case3: "Tennis"
+        }
+    }
+}
+
+// console.log(obj.skills.sport.case3) // Tennis
+
+// for in  obyektlarni iteratsiya (takrorlash) uchun kerak
+for (let key in obj) {
+    // console.log(key) // hamma key lari
+    console.log(obj[key])
+    if (typeof obj[key] == "object") {
+        for (let i in obj[key]) {
+            if (typeof obj[key] == "object") {
+                for (let k in obj[key][i]) {
+                    console.log(obj[key][i][k])
+                }
+            }
+            console.log(obj[key][i])
+        }
+    }
+}
+
+// console.log("age" in obj) // true
+// console.log("money" in obj) // false
