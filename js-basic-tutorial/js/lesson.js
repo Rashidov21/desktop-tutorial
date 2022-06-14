@@ -1,171 +1,92 @@
-// O'zgaruvchilar
-// var , let , const
+// Array
+// let fruits = ["Яблоко", "Апельсин", "Слива"];
+// let name = "ali"
+// console.log(name)
+// let arr = ["str", true, 1, undefined]
+// let arr_2 = new Array();
+// console.log(arr)
+// console.log(arr_2)
 
-// ES5 = 2009, var  
-// *
-// ES6 = 2015, let , const
-// let num = 10
-// num = 1
-// console.log(num)
-// const x = 5
-// x = 10 // Error
-// let a, b, c;
+// let arr = [1, 2, 3, 4, 5]
+// arr[0] = "bir" // elementni index orqali ozgartirish
+// console.log(arr)
+// for (let element of arr) {
+//     console.log(element)
+// }
+// console.log(arr.length) // 5 number
 
-// c = 30
-// b = 10
-// a = 1
-// console.log(c + b + a) //41
-
-// let personAgeDiffirent = 13 // Camel Case
-// let USER = "pablo";
-// console.log(USER)
-
-
-// Types
-// Number, String, Boolean, NaN, null, undefined, Object, BigInt
-// Number
-// let x = 1
-// let y = -1
-// let z = 1.2
-// console.log(typeof z) // number
-// String
-// let a = "str"
-// let b = 'str'
-// let c = `str${a}` // ES6 ${} // strstr
-// console.log(c)
-// console.log(typeof c) // String
-
-// let str = "Python"
-// console.log(str.toLowerCase())
-// console.log(str.toUpperCase())
-// console.log(str.length) // 6
-// console.log(str.startsWith("P")) // true
-// console.log(str.endsWith("n")) // true 
-// console.log(str.includes("o")) // true
-// console.log(str[2]) //t
-
-// Boolean
-// let x = true // 1
-// let y = false // 0
-// NaN
-// console.log("apple" - 10) // NaN
-// console.log("apple" / 10) // NaN
-// console.log("apple" * 10) // NaN
-// console.log("apple" + 10) // apple10
-// let a;
-// console.log(a) // undefined
-// console.log(null) // js da yoq qiymatlarni hammasi null 0
-
-// let obj = {
-//     name: 'john',
-//     age: 10
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i])
 // }
 
-// let a = () => {
-//     return 0
-// }
-// console.log(typeof a) // function object
+// console.log(arr[0])
+// console.log(arr[1])
+// console.log(arr[2])
+// console.log(arr[3])
+// console.log(arr[4])
 
-// OPERATORLAR
-// console.log(10 > 5) // true
-// console.log(10 < 5) // false
-// console.log(10 <= 5) //false 
-// console.log(10 >= 5) // true
-// console.log(10 != 5) // true
-// console.log(10 == 5) // false 
-// console.log(10 === 5) // false
-// console.log("1" == 1) //true
-// console.log("1" === 1) //false
-// console.log(7 > 5 && 3 < 6) //true
-// console.log(7 > 5 || 7 < 6 && 8 < 9 || 4 > 6) //true
-// console.log(!true) //false
-// console.log(!false) //true
-// console.log(!10 > 5) //false
-
-// IF ELSE IF ELSE
-// if (0 > 5 || 7 > 9) {
-//     console.log("if")
-// } else if (1 > 5) {
-//     console.log("else if 1")
-// } else if (7 > 5) {
-//     console.log("else if 2")
-// } else {
-//     console.log("else")
-// }
-// let age = +prompt() // 18
-// if (age > 18) console.log(age)
-// else console.log("Siz hali yoshsiz!")
-// console.log(age > 18 ? age : "Siz hali yoshsiz !")
-// ? = if , : = else
-// SWITCH CASE 
-// let num = +prompt()
-// switch (num) {
-//     case 2:
-//         console.log("num = 2")
-//         break
-//     case 3:
-//         console.log("num = 3")
-//         break
-//     case 4:
-//         console.log("num = 4")
-//         break
-//     default:
-//         console.log("Please write number 2,3 or 4 ")
-// }
-// LOOPS
-// while , for
-// js : while , do while, for , for in , for of , forEach
+// let arr = [1, 2, 3, [-1, -2, -3], { name: "Array", len: 6 }]
 
 
-// while (true) {
-//     let pass = prompt("write your password ")
-//     if (pass == "1234") {
-//         break // sikldan chiqish
+// arr[0] >> bu birinchi element
+// console.log(arr[arr.length - 1]) >> bu oxirgi element
+// arr[0] = 0
+// arr.push("array") // array oxirigiga element qoshish
+// arr.pop() // arr oxiridan elem ochirish
+// arr.shift() // arr boshidan elem ochirish
+// arr.unshift("arr") //arr boshiga element qoshish
+
+// console.log(arr)
+
+// let matrix = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ];
+
+// alert(matrix[1][1]);
+
+// let fruits = ["Яблоки", "Груша", "Апельсин"];
+
+// // добавляем новое значение в "копию"
+// let shoppingCart = fruits;
+// shoppingCart.push("Банан");
+
+// // что в fruits?
+// alert(fruits.length); // ? = 3
+// alert(shoppingCart.length); // ? = 4
+
+// task 1
+// input: arr = [1, 8, 3, 7, 2, 6, 1]
+// output: barcha juft sonlarni kvadrati console ga chiqsin
+// task 2
+// output: tasodifiy sonlardan iborat length 10 ga teng array
+// task 3
+// input: arr = [2, 4, 8, 6, 3] ~ [9,3,1,8,6] ~ [3,4,6,7,5]
+// output: shu massivdan eng kichik qiymatni chiqarib tashlash orqali 
+// eng katta yigindini hisoblovchi dastur tuzing
+
+// let arr = [2, 4, 8, 6, 3]
+// let quti = 0
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr.length; j++) {
+//         if (arr[i] > arr[j]) {
+//             quti = quti + arr[i];
+//             break;
+//         }
 //     }
 // }
-// let i = 0
-// do {
-//     i++
-//     console.log(i)
-// } while (i < 10)
+// console.log(quti);
 
-// for (let i = 0; i < 10; i++) {
-//     console.log(i)
-// }
-// let obj = {
-//     color: "red",
-//     price: 120,
-//     model: "Apple",
-//     type: "watch"
-// }
-// for (let key in obj) {
-//     console.log(obj[key])
-// }
-// Declaration, Arrow, Expression,CallBack | anonim
-// function main(x) {
-//     return x * x
-// }
-// let func = x => { return x * x }
+// task 4 
+// random sonlardan (0, 999) iborat massiv minimum 20 ta sondan iborat
+// agar son (0 , 99) orasida bosa uni kvadrati chiqadi 
+// agar son(99, 399) orasida bosa kubi chiqadi
+// qolgan sonlarni o'zi console ga chiqdi 
 
-// let f = function(x) {
-//     return x * x
-// }
-// function call(f1, f2) {
-//     if (true) {
-//         return f1()
-//     } else {
-//         return f2()
-//     }
-// }
 
-// Object
-let user = {
-    name: "john",
-    age: 12,
-    getInfo() {
-        console.log(this.name + " " + this.age)
-    }
-}
-console.log(user.name)
-console.log(user["age"])
-user.getInfo()
+// task 5
+// input: function,
+//     function 3 ta arg qabul qiladi
+// 1 - nechta son bolishi, 2 nechtaasi toq, nechtasi - (minusda bolishi)
+// output: main(5, 2, 1) >> [2, 1, 3, 4 - 6]
