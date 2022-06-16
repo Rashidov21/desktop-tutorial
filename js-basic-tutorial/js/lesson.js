@@ -90,3 +90,29 @@
 //     function 3 ta arg qabul qiladi
 // 1 - nechta son bolishi, 2 nechtaasi toq, nechtasi - (minusda bolishi)
 // output: main(5, 2, 1) >> [2, 1, 3, 4 - 6]
+
+// task 6
+// input: user >> "bed"
+// output: >> 020403
+// let elem = prompt()
+// let alpha = "abcdefghjklmnopqrstuvwxyz"
+// let result = ""
+// for(let item of elem.split("")){ // abc >> ["a","b","c"]
+//     for(let letter of alpha.split("")){
+//         if(item == letter){
+//             let index = alpha.indexOf(item) // a index == 0
+//             if(index <= 9){
+//                 index = `0${index+1}`
+//             }
+//             result += index
+//         }else{
+//             console.log("No letters found")
+//         }
+//     }
+// }
+// console.log(result)
+
+// border-radius >> borderRadius
+// transform-translateY >> transformTranslateY
+// s = "abc"
+// console.dir(document.body)
