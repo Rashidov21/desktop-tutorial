@@ -116,3 +116,91 @@
 // transform-translateY >> transformTranslateY
 // s = "abc"
 // console.dir(document.body)
+
+// let arr = ["I", "go", "home"];
+// console.log(arr[0])
+// console.log(arr[arr.length - 1])
+
+// delete arr[0] // elem ni index orqali ochirish
+// console.log(arr)
+// let arr = ["python", "cpp", "javascript", "ruby", ".net"]
+// arr.splice(index[, deleteCount, elem1, elemN])
+// let res = arr.splice(1,3) //['cpp', 'javascript', 'ruby']
+// splice(start , deleteCount) 
+// start = boshlanish index 
+// deleteCount = nechta elem ochirish kerak ? 
+// arr.splice(3,2, "php", "pascal")
+// console.log(arr) //['python', 'cpp', 'javascript', 'php', 'pascal']
+
+// let nums = [1,2,3,4,5,6,7,8]
+// console.log(nums.splice(3,4)) //4, 5, 6, 7]
+
+// let arr = ["python", "cpp", "javascript", "ruby", ".net"]
+// console.log(arr.slice(2, 5))
+// slice(start, end)
+// start = qaysi indexdan boshlab olishi 
+// end = qaysi idexgacha elem olishi 
+// let a = [1,2,3]
+// let b = [4,5,6]
+// console.log(a + b) //1,2,34,5,6
+// console.log(a.concat(b)) //[1, 2, 3, 4, 5, 6]
+
+// function plusTen(num){
+//     return num + 10
+// }
+// let arr = [1,2,3,4,5,6,7,8,9]
+// let result = []
+// arr.forEach(function(elem){
+//     result.push(plusTen(elem))
+// })
+// console.log(result)
+// [11, 12, 13, 14, 15, 16, 17, 18, 19]
+// forEach = bu massivni for ga solib har bir takrorlanishda 
+// har bir elementi uchun siz korsatgan function ni qollaydi
+// let str = "assalomu alaykum"
+// let count = 0
+// str.split("").forEach(function(elem){
+//     if(elem == 'a'){
+//         count++
+//     }
+// })
+// console.log(count) //4
+
+// let arr = ["abdullo", "oybek", "muhammadqodir", "sarvar"]
+// let res = arr.map(item => item.length)
+// // map siz korsatgan function ni har bir array elem uchun qollaydi va yangi array 
+// // xosil qiladi  
+// console.log(res) // yangi array = [7, 5, 13, 6]
+// res.sort((a, b) => a - b) // sonlarni osishi boyicha saralash
+// res.sort((a, b) => b - a) //// sonlarni kamayishi boyicha saralash
+// console.log(res) //[13, 5, 6, 7]
+// // arr.reverse(); massivni teskari qilish
+// console.log(res.reverse())//[7, 6, 5, 13]
+// task 1 
+// let arr = [0,1,2,3,4,5,6,7,8,9]
+// 1-forEach orqali faqat juft sonlarni kvadratlaridan iborat
+// massiv hosil qiling
+// 2- map orqali faqat toq sonlarni kvadratlaridan iborat
+// massiv hosil qiling
+// let r = arr.map(elem => elem ** 2)
+// console.log(r)
+
+// task 2
+// let arr = [[1,5,6],[5,8,1], [9,7,9],[1,2,8]]
+// let newArray = []
+// // arr.sort() dan foydalanib >>> let newArray = [25,14,12,11] ni xosil qiling
+// arr.forEach(function(elem){
+//     let summa = 0
+//     for(let num of elem){
+//         summa += num
+//     }
+//     newArray.push(summa)
+// })
+// newArray.sort((a,b) => b - a)
+// console.log(newArray) //25, 14, 12, 11]
+
+// task 3
+let arr = [1,6,58,65,6,6,1,8,6,4,56,96,9,74,52,3,6,64,56,6]
+// map orqali 50 dan kichik sonlardan iborat massiv hosil qiling 
+let r = [undefined , 1, 3].map(n => n > 2 ? n : null)
+console.log(r)
