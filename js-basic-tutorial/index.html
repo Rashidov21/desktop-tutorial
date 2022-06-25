@@ -10,9 +10,63 @@
 
 <body>
 
-    <h1 id="time"></h1>
+   <div class="container">
+    <h1 id="MyClockDisplay" class="clock" onload="showTime()">
+
+    </h1>
+    <br>
+    
+
+    <input type="number" id="time"
+    placeholder="minutes ..." max="59">
+    <button onclick="timer()">Set</button>
+    <br>
+    <h1 id="timer">00:00</h1>
+
+
+   </div>
 
     <script src="js/lesson.js"></script>
+    <style>
+        input{
+            padding: 10px;
+            color: #404143;
+        }
+        button{
+            padding: 5px 20px;
+            outline: none;
+            border: 0.3px solid;
+            color: #404143;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            color: #fff;
+            font-family: "Incosolanta" ,monospace;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+        }
+    
+        body{
+            background-color:#404143 ;
+        }
+        h1{
+            font-size: 6em;
+        }
+        @media screen and (max-width:768px) {
+            h1{
+                font-size: 4em;
+            }
+        }
+    </style>
 </body>
 
 </html>
