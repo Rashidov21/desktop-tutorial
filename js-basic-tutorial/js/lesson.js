@@ -31,7 +31,7 @@ function showTime() {
 }
 
 showTime();
-
+// time to 
 function timer() {
     var minute = document.getElementById("time").value;
     var sec = 59;
