@@ -1,32 +1,49 @@
-let form = document.forms[0] // form teglari
+// console.log(document) // html hujjat obyekti 
+// console.log(window) // brauzer oyna obyekti
 
-// form.addEventListener("change", function(event) {
-//     let list = document.querySelector("#person_info")
-//     let name = form.elements[0].value
-//     let weight = form.elements[1].value
-//     let height = form.elements[2].value
-//     let age = form.elements[3].value
-//     list.children[0].innerHTML = name
-//     list.children[1].innerHTML = weight
-//     list.children[2].innerHTML = height
-//     list.children[3].innerHTML = age
+// let html = document
+// console.log(html.body) // BODY
+// html.body.className = "red"
+// html.body.background = "red"
+// console.log(html.body.tagName) // BODY
 
-// })
+// Elementni qidirish va olish 
 
+// let a = document.getElementsByTagName("a") // Elementni tag nomi olish
+// console.log(a) // HTMLCollection nechta shu tag dan bolsa topib array qilib qaytaradi
+// let cherry = document.getElementById("cherry") // ID boyicha olish 
+// let orange = document.getElementsByClassName("orange") //CLASS boyicha olish (array)
 
-// form.autofocus = true
-// console.log(form.elements) // formani barcha maydonlari = array
-// console.log(form.attributes) // formani barcha attributlari = object
-// console.dir(form) // formani barcha attr + method lari
-
-// form.onchange = (event) => { // qachonki input value ozgargan vaqt
-//     console.log(event)
+// for (let item of document.getElementsByTagName("li")) {
+//     console.log(item.innerText) // Elementni ichidagi matn 
 // }
-// form.elements[0].onfocus = (event) => { // qachonki inputga focus bogan vaqt
-//     console.log("Focused")
+// let p = document.getElementById("text")
+// p.innerText = "o'zimni shaxsiy matnim"
+// console.log(p)
+
+// querySelector - p, #text, .text 
+// let ul = document.querySelector("ul") // css selectori boyicha elementni topish
+// let li = document.querySelectorAll("li") // css selectori boyicha elementlarni topish
+
+// console.log(ul)
+// for (let item of li) {
+//     console.log(item)
 // }
-// form.elements[0].onblur = (event) => { // qachonki inputga focus yoqolgan vaqt
-//     console.log("Blured")
-// }
-// form.reset() // form maydonlarini tozalash
-// form.submit() //toldirilgan maydondagi narsalarni server ga yuborish
+
+// let orange = document.querySelector(".orange")
+// console.log(orange)
+
+// name boyicha olish 
+// let elements = document.getElementsByName("language")
+// console.log(elements.length) // 3
+// console.log(elements[0])
+// console.log(elements[2])
+
+// let list = document.querySelector(".list") // ul tegi
+
+// console.log(list.parentElement) // ota elementni qaytaradi (div.container)
+// console.log(list.children) // array [li, li ....]
+function closeModal() {
+    let btn = document.querySelector('.close')
+    btn.parentElement.style.display = 'none'
+}

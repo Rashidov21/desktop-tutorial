@@ -37,20 +37,33 @@ main {
     height: 300px;
 }
 
-.orange {
-    background-color: rgb(240, 159, 9);
+.modal {
+    width: 75%;
+    min-height: 150px;
+    background-color: #FFD500;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 5px rgb(101, 90, 90));
+    padding: 10px 15px;
 }
 
-.red {
-    background-color: rgb(117, 80, 9);
+.modal:hover {
+    filter: drop-shadow(0 0 5px rgb(161, 146, 146));
+    transition: all 0.3s;
 }
 
-.blue {
-    background-color: rgb(67, 35, 182);
+.close {
+    float: right;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.5em;
 }
 
-.green {
-    background-color: rgb(62, 121, 23);
+.close:hover {
+    transform: rotate(180deg);
+    transition: all 0.3s;
 }
 
 

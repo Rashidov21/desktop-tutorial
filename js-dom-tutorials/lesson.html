@@ -18,55 +18,43 @@
 
     <main>
         <div class="container">
-            <div class="divider">
-                <ul id="person_info">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+
+            <div class="modal">
+                <button class="close" onclick="closeModal()">
+                    <i class="bx bx-x"></i>
+                </button>
             </div>
 
-            <form action="#" method="get" enctype="multipart/form-data" class="form">
 
-                <p><input type="number" placeholder="Number - 1" required></p>
-                <p><input type="number" placeholder="Number - 2" required></p>
-
-                <!-- <select name="country" id="">
-                    <option value="usa">USA</option>
-                    <option value="africa">Africa</option>
-                    <option value="china">China</option>
-                    <option value="europe">Europe</option>
-                </select> -->
-                <button type="submit">Multiple</button>
-            </form>
-
-
-            <div class="divider"></div>
-            <div class="grid">
-                <div class="item">1</div>
-            </div>
-
+            <ul class="list">
+                <li>
+                    <a href="#">Banana</a>
+                </li>
+                <li>
+                    <a href="#">Kiwi</a>
+                </li>
+                <li>
+                    <a href="#">Melon</a>
+                </li>
+                <li id="cherry">
+                    <a href="#">Cherry</a>
+                </li>
+                <li class="orange">
+                    <a href="#">Orange</a>
+                </li>
+            </ul>
+            <br>
+            <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quia, iure quasi totam, voluptates quod explicabo iste hic rerum omnis cum eius iusto eveniet. Repellat pariatur quos odio excepturi dicta.</p>
             <div class="container">
-                <div class="row">
-                    <div class="col" data-aos="flip-left">
-                        <div class="box orange"></div>
-                    </div>
-                    <div class="divider" data-aos="flip-left"></div>
-                    <div class="col">
-                        <div class="box red"></div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="col">
-                        <div class="box blue"></div>
-                    </div>
-                    <div class="divider" data-aos="flip-left"></div>
-                    <div class="col">
-                        <div class="box green" data-aos="fade-right"></div>
-                    </div>
-                </div>
-
+                <p>
+                    <form action="">
+                        <input type="radio" name="language" value="JavaScript">
+                        <input type="radio" name="language" value="TypeScript">
+                        <input type="radio" name="language" value="Dart">
+                    </form>
+                </p>
             </div>
+        </div>
     </main>
 
 
