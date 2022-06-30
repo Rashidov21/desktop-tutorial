@@ -1,6 +1,8 @@
 // console.log(document) // html hujjat obyekti 
 // console.log(window) // brauzer oyna obyekti
 
+
+
 // let html = document
 // console.log(html.body) // BODY
 // html.body.className = "red"
@@ -43,7 +45,21 @@
 
 // console.log(list.parentElement) // ota elementni qaytaradi (div.container)
 // console.log(list.children) // array [li, li ....]
-function closeModal() {
-    let btn = document.querySelector('.close')
-    btn.parentElement.style.display = 'none'
-}
+// function closeModal() {
+//     let btn = document.querySelector('.close')
+//     btn.parentElement.style.display = 'none'
+// }
+////////////////////////////////////////////////////////////////////////////////////////
+// PARENT Element vs children
+// let list = document.querySelector(".list") // ul
+// console.dir(list)
+// console.log(list.childElementCount) // tegni ichidagi elementlarni soni
+// console.log(list.childNodes) // tegni bola elementlarni massiv qaytaradi
+// console.log(list.children) // tegni bola teg elementlarni massiv qaytaradi
+
+
+
+
+
+
+

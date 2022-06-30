@@ -32,10 +32,13 @@ main {
     padding-top: 100px;
 }
 
-.box {
-    width: 300px;
-    height: 300px;
-}
+
+
+
+
+
+
+
 
 .modal {
     width: 75%;
@@ -89,6 +92,8 @@ main {
         transform: rotate(0deg);
     }
 } */
+
+
 
 .item {
     width: 200px;
