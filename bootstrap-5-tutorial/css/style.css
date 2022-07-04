@@ -1,16 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif !important;
     overflow-x: hidden;
 }
 
-.poster {
-    width: 200px;
-    background-color: chartreuse;
-    height: 100px;
-    border: solid 1px red;
+.container {
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.bg-orange {
-    background-color: orange;
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: chartreuse;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5em;
+    margin: 15px 5px;
+}
+
+
+
+
+
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    height: 700px;
+    /* qatorni boyi  */
+    grid-template-rows: auto auto;
+    /* X-o'qi biylab tekislash */
+    justify-content: space-around;
+    /* Y-o'qi biylab tekislash */
+    align-content: center;
+    /* grid-template-columns: 300px, 300px, 300px; */
+}
+
+.item1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+}
+
+@media screen and (max-width:992px) {
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        /* grid-template-columns: 300px, 300px, 300px; */
+    }
+}
+
+@media screen and (max-width:768px) {
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        /* grid-template-columns: 300px, 300px, 300px; */
+    }
 }
