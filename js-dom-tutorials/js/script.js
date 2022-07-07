@@ -87,20 +87,20 @@
 // title.style.color = "#555"
 // document.body.appendChild(title)
 
-let singers = [
-    {
-        name: "Michael Jackson",
-        songs: ["Billi Jean", "I love you"]
-    },
-    {
-        name: "One Direction",
-        songs: ["Kiss you", "Drag me down"]
-    },
-    {
-        name: "Sherali Jo'rayev",
-        songs: ["Gulbadan", "O'zbegim"]
-    },
-]
+// let singers = [
+//     {
+//         name: "Michael Jackson",
+//         songs: ["Billi Jean", "I love you"]
+//     },
+//     {
+//         name: "One Direction",
+//         songs: ["Kiss you", "Drag me down"]
+//     },
+//     {
+//         name: "Sherali Jo'rayev",
+//         songs: ["Gulbadan", "O'zbegim"]
+//     },
+// ]
 
 const MY_ACCESS = "2PSLxRT6iUd99QDS13bmIMFfKlM5rxA41h96Zcl8tUs"
 let imagesBlock = document.querySelector(".images")

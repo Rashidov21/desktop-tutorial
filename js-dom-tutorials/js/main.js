@@ -1,54 +1,24 @@
-// $(".box"); // class orqqali 
-// $("#main"); // id orqqali
-// $("ul"); // teg orqqali
-// $("ul li"); // ul ni ichidagi barcha li teglari
-// document.ready -  DOM butunlay yuklanib bolgan keyin
-// $(document).ready(function() {
-//     $(".btn-slide").click(function() {
-//         $("#panel").slideToggle("slow");
-//         $(this).toggleClass("active");
-//     });
-// });
-$(document).ready(function() {
-    // $("#button").click(function() {
-    //     $(".panel").show() // display:block;
-    // })
 
-    $("#button").click(function() {
-        // $(this).addClass("test") // class qoshis
-        // $(this).addClass("test2") // class qoshis
-        // $(this).removeClass("test2") // class ochirish
 
-        // $(this).parent(".container").click(function() {
-        //     console.log("container mouse");
-        // })
-        // $(".box").animate({ opacity: "0.1", left: "+=400" }, 1200)
-        //     .animate({ opacity: "0.4", top: "+=160", height: "20", width: "20" }, "slow")
-        //     .animate({ opacity: "1", left: "0", height: "100", width: "100" }, "slow")
-        //     .animate({ top: "0" }, "fast")
-        //     .slideUp()
-        //     .slideDown("slow")
-        return true;
-    });
+function openClose() {
+    let sidebarMenu = document.querySelector(".sidebar-menu")
+    sidebarMenu.classList.toggle("show")
+}
 
-    $("#tool").click(function() {
-        // $('em').animate({ opacity: "show", top: "-75" }, "slow");
-        // $("#content").append("<h4>Hello</h4>")
-        $(this).width("100px")
-        $(this).height("100px")
-        $(".container").toggleClass("blue-bg")
-    })
 
-    // $("form").submit(function(event) {
-    //     event.preventDefault();
-    //     let budget = parseInt($("#budget").text());
-    //     let value = $("#num").val();
-    //     $("#budget").text(budget - value)
-    // })
+function openAccardion() {
+    let obj = document.querySelector(".accardion")
+    obj.classList.toggle("down")
+}
 
-    $(".panel").click(function() {
-        $(".panel").find("p").slideUp("fast")
-        $(this).find("p").slideToggle("fast")
-    })
-
-})
+window.onload = function () {
+    let equal = document.querySelector(".eq")
+    let col = document.querySelectorAll('.col')
+    setInterval(() => {
+        for (let item of col) {
+            item.style.backgroundColor = '#232328'
+            item.style.height = `${Math.round(Math.random() * 450)}px`
+            item.style.backgroundColor = `rgb(${Math.round(Math.random() * 10)},${Math.round(Math.random() * 255)},${Math.round(Math.random() * 100)})`
+        }
+    }, 100)
+}
