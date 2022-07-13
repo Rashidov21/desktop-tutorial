@@ -1,33 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('./color.css');
-
 * {
-    /* bu property lar hamma teglar uchun amal qiladi */
-    /* Arial */
-    font-family: 'Abril Fatface', cursive;
+    box-sizing: border-box;
 }
 
-/* html {} */
-
+/* orange  */
+/* #191919 */
+/* rgb(12,12,56) */
 body {
-    background-color: aqua;
+    /* background-color: khaki;
+    color: green;
+    background-image: url(../img/nike/nike1.jpg);
+    background-repeat: no-repeat; */
+    /* repeat-x, repeat-y */
+
+    /* background-position: center; */
+    /* background: rgb(94, 114, 161) url(../img/img.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken; */
+    /* left , top, right, bottom + center */
+    /* top - yuqori
+    right - o'ng 
+    bottom: - past 
+    left - chap  */
+    /* background-attachment: fixed; */
+    /* auto , scroll */
 }
 
-/* KEYIN QOLGAN TEGLAR  */
-h1,
-h2,
-h3,
-h4 {
-    font-family: "Poppins", sans-serif;
+.box {
+    width: 350px;
+    height: 500px;
+    background-color: #a82334;
+    background-image: url(../img/test.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
 }
 
-a {
-    text-decoration: none;
+.main {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    /* border-style: dotted;
+    border-width: 2px;
+    border-color: #1eff00; */
+    border: solid 10px red;
+    border-radius: 5%;
+
 }
 
-/* p {}
-
-div {} */
-
-/* UMUMIY TEGLAR UCHUN STILLAR TUGADI  */
-/* .container {} */
+/* 
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+background (shorthand property) 
+*/
