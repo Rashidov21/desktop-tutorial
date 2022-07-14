@@ -58,3 +58,6 @@ console.dir(equal)
 // Berilgan massivdan sonlarni bir xillarini olib tashlab faqat sanoqdagi ketma-ket sonlarni qoldiring
 // Masalan arr = [1,5,6,1,8,5,9]  Output/Javob arr = [1,5,6,8,9]
 // Sizga berilgan Massiv bu >> arr = [2,6,6,4,7,8,2,9,7,1,9]
+
+// Kun, oy va yil - uchta argumentni qabul qiladigan funktsiya yozing. Agar bizning taqvimimizda bunday sana bo'lsa, True, aks holda False qaytarsin
+
