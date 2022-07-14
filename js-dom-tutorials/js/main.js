@@ -50,3 +50,11 @@ console.dir(equal)
 // equal.classList.remove("myClass") klass ochirish
 // equal.classList.contains("myClass") klass bor yoki yoqligini tekshirish
 // equal.classList.toggle("myClass") klass bor bolsa uni ochiradi bolmasa qoshib qoyadi
+
+
+// Massiv berilgan arr = [1, 2, 3, 4, 5] ushbu massivda oxirgi raqamni pozitsiyasini  foydalanuvchi ko’rsatgan marta chapga suruvchi funksiya yozing.
+//     Masalan; foydalanuvchi 3 ni kiritsa arr = [1, 5, 2, 3, 4] ga o’tadi, ya’ni 5  3 ta index chapga o’tdi
+
+// Berilgan massivdan sonlarni bir xillarini olib tashlab faqat sanoqdagi ketma-ket sonlarni qoldiring
+// Masalan arr = [1,5,6,1,8,5,9]  Output/Javob arr = [1,5,6,8,9]
+// Sizga berilgan Massiv bu >> arr = [2,6,6,4,7,8,2,9,7,1,9]
