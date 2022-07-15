@@ -1,5 +1,17 @@
 * {
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+    /* font-family: "Josefin Sans", sans-serif; */
+}
+
+@font-face {
+    font-family: monospace;
+    src: url('../fonts/Inconsolata_ExtraExpanded-Black.ttf');
+}
+
+h1 {
+    font-weight: 900;
 }
 
 /* orange  */
@@ -25,6 +37,32 @@ body {
     /* auto , scroll */
 }
 
+section {
+    margin: 50px 0px;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0px 5%;
+}
+
+.text span {
+    text-decoration: underline;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+
+.square {
+    max-width: 500px;
+    height: 200px;
+    background-color: #a82334;
+}
+
+input {
+    border: solid 10px blue;
+    outline: solid 5px yellow;
+}
+
 .box {
     width: 350px;
     height: 500px;
@@ -35,13 +73,38 @@ body {
     background-repeat: no-repeat;
     background-blend-mode: darken;
 
+    box-shadow: 10px 10px 20px #ccc;
+
+}
+
+p.text {
+    /* white-space: wrap; */
+    text-align: right;
+    line-height: 110%;
+    vertical-align: middle;
+    border: solid 3px red;
+    text-indent: 30px;
+    text-shadow: 2px 3px 5px red;
+    /* padding: 20px 50px; Y = 20px , X = 50px */
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px; */
+    padding: 20px 50px 20px 50px;
+    /* padding-left: 20px; */
 }
 
 .main {
     width: 200px;
     height: 200px;
-    padding: 10px;
-    margin: 10px;
+    /* margin-top: 200px; */
+    /* margin-right: -500px; */
+    /* margin-bottom: 100px; */
+    /* margin-left: 200px; */
+    /* margin: 100px 100px 500px 500px; */
+    margin: 200px 500px;
+    /* padding: 10px;
+    margin: 10px; */
     /* border-style: dotted;
     border-width: 2px;
     border-color: #1eff00; */
