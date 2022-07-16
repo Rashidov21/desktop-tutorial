@@ -102,32 +102,33 @@
 //     },
 // ]
 
-const MY_ACCESS = "2PSLxRT6iUd99QDS13bmIMFfKlM5rxA41h96Zcl8tUs"
-let imagesBlock = document.querySelector(".images")
-imagesBlock.style.display = "flex"
-fetch(`https://api.unsplash.com/photos/?client_id=${MY_ACCESS}`)
-    .then(res => res.json())
-    .then(data => {
+// const MY_ACCESS = "2PSLxRT6iUd99QDS13bmIMFfKlM5rxA41h96Zcl8tUs"
+// let imagesBlock = document.querySelector(".images")
+// imagesBlock.style.display = "flex"
+// fetch(`https://api.unsplash.com/photos/?client_id=${MY_ACCESS}`)
+//     .then(res => res.json())
+//     .then(data => {
 
-        for (item of data) {
-            let link = document.createElement("a")
-            let href = item.links.download
-            link.href = href
-            link.setAttribute("download", "")
-            link.innerText = "download"
-            link.style.cssText = `
-                color:white;
-                padding:10px 30px;
-                margin:10px;
-                border-radius:10px;
-                background-color:#554;
+//         for (item of data) {
+//             let link = document.createElement("a")
+//             let href = item.links.download
+//             link.href = href
+//             link.setAttribute("download", "")
+//             link.innerText = "download"
+//             link.style.cssText = `
+//                 color:white;
+//                 padding:10px 30px;
+//                 margin:10px;
+//                 border-radius:10px;
+//                 background-color:#554;
 
-            `
+//             `
 
-            imagesBlock.appendChild(link)
-        }
-    })
+//             imagesBlock.appendChild(link)
+//         }
+//     })
 
-fetch("https://api.unsplash.com/photos/random?client_id=2PSLxRT6iUd99QDS13bmIMFfKlM5rxA41h96Zcl8tUs")
-    .then(res => res.json())
-    .then(data => console.log(data))
+// fetch("https://api.unsplash.com/photos/random?client_id=2PSLxRT6iUd99QDS13bmIMFfKlM5rxA41h96Zcl8tUs")
+//     .then(res => res.json())
+//     .then(data => console.log(data))
+
