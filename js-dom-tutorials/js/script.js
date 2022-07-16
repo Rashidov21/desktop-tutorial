@@ -132,3 +132,50 @@
 //     .then(res => res.json())
 //     .then(data => console.log(data))
 
+let langs = document.querySelector(".change_pr_lang");
+// addEventListener(event nomi , event vaqti ishlaydigan funksiya)
+langs.addEventListener("change", (event) => {
+    // console.log(event.target) // qaysi html element ustida shu hodisa bo'lganini qaytaradi
+    // console.log(event.target.value) // element qiymati
+    document.querySelector("#pr_lang").innerHTML = event.target.value
+});
+
+// addEventListener - DOM da event - hodisalarni kuzatuvchi va ular vaqtida
+// ko'rsatilgan funksiyalarni chaqiruvchi alohida funksiya
+
+// Event lar turlari :
+//     1-window
+//     2-MouseEvent
+//     3-KeyboardEvent
+window.addEventListener("DOMContentLoaded", function (e) {
+    console.log(e)
+})
+window.addEventListener("load", function (e) {
+    console.log(e)
+})
+
+// MouseEvent :
+// mousedown
+// mouseup
+// click
+// mousedown
+// mouseup
+// click
+// dblclick
+
+let modal = document.querySelector(".modal")
+let count = 0
+// modal.addEventListener("mousemove", (e) => {
+//     count++
+//     console.log(count)
+// })
+let bx = document.querySelector(".bx")
+modal.addEventListener("mouseover", (e) => {
+    bx.style.position = "absolute"
+    bx.style.width = `${Math.round(Math.random() * 700)}px`
+    bx.style.height = `${Math.round(Math.random() * 700)}px`
+})
+modal.addEventListener("mouseleave", (e) => {
+    count++
+    console.log(count)
+})

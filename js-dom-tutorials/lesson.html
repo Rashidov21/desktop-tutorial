@@ -80,9 +80,23 @@
                 <li>News</li>
                 <li>About Us</li>
             </ul>
+            <button onclick="alert('alert window')">alert onclick</button>
+            <button onclick="window.location.href = '/grid-layout.html'">Grid page</button>
             <br>
-            <div class="table">
-
+            <div class="container">
+                <p>
+                <h3>Lang = <span id="pr_lang"></span></h3>
+                <form action="#" class="change_pr_lang">
+                    <input type="radio" name="language" id="js" value="JavaScript">
+                    <label for="js">JavaScript</label>
+                    <br>
+                    <input type="radio" name="language" id="ts" value="TypeScript">
+                    <label for="ts">TypeScript</label>
+                    <br>
+                    <input type="radio" name="language" id="dart" value="Dart">
+                    <label for="dart">Dart</label>
+                </form>
+                </p>
             </div>
 
 
@@ -94,15 +108,7 @@
             <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quia, iure quasi totam,
                 voluptates quod explicabo iste hic rerum omnis cum eius iusto eveniet. Repellat pariatur quos odio
                 excepturi dicta.</p>
-            <div class="container">
-                <p>
-                <form action="">
-                    <input type="radio" name="language" value="JavaScript">
-                    <input type="radio" name="language" value="TypeScript">
-                    <input type="radio" name="language" value="Dart">
-                </form>
-                </p>
-            </div>
+
         </div>
     </main>
     <main>
