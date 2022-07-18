@@ -2,12 +2,40 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
     /* font-family: "Josefin Sans", sans-serif; */
 }
 
 @font-face {
     font-family: monospace;
     src: url('../fonts/Inconsolata_ExtraExpanded-Black.ttf');
+}
+
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/icons.woff2) format('woff2');
+}
+
+
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -46,78 +74,79 @@ section {
     padding: 0px 5%;
 }
 
-.text span {
-    text-decoration: underline;
-    letter-spacing: 5px;
-    word-spacing: 10px;
+ul {
+    display: flex;
+    justify-content: center;
 }
 
-.square {
-    max-width: 500px;
-    height: 200px;
-    background-color: #a82334;
+header {
+    padding: 15px 30px;
+    padding: 20px 50px;
+    background-color: rgb(173, 173, 103);
+    position: sticky;
+    top: 0;
 }
 
-input {
-    border: solid 10px blue;
-    outline: solid 5px yellow;
+footer {
+    position: relative;
+    top: 500px;
+    /* static - top, left, right kabi  surishlar ishlamaydi (o'zgarmas) */
+    padding: 20px 50px;
+    background-color: rgb(173, 173, 103);
 }
 
-.box {
-    width: 350px;
-    height: 500px;
-    background-color: #a82334;
-    background-image: url(../img/test.jpg);
-    background-size: cover;
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-
-    box-shadow: 10px 10px 20px #ccc;
-
-}
-
-p.text {
-    /* white-space: wrap; */
-    text-align: right;
-    line-height: 110%;
-    vertical-align: middle;
-    border: solid 3px red;
-    text-indent: 30px;
-    text-shadow: 2px 3px 5px red;
-    /* padding: 20px 50px; Y = 20px , X = 50px */
-    /* padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px; */
-    padding: 20px 50px 20px 50px;
-    /* padding-left: 20px; */
-}
-
-.main {
+[name=block] {
     width: 200px;
     height: 200px;
-    /* margin-top: 200px; */
-    /* margin-right: -500px; */
-    /* margin-bottom: 100px; */
-    /* margin-left: 200px; */
-    /* margin: 100px 100px 500px 500px; */
-    margin: 200px 500px;
-    /* padding: 10px;
-    margin: 10px; */
-    /* border-style: dotted;
-    border-width: 2px;
-    border-color: #1eff00; */
-    border: solid 10px red;
-    border-radius: 5%;
-
+    background-color: orange;
+    margin: 20px 15px;
 }
 
-/* 
-background-color
-background-image
-background-repeat
-background-attachment
-background-position
-background (shorthand property) 
-*/
+[name=block]:nth-child(1) {
+    background-color: red;
+}
+
+[name=block]:nth-child(2) {
+    background-color: orange;
+}
+
+[name=block]:nth-child(3) {
+    background-color: lightblue;
+}
+
+[name=block]:nth-child(4) {
+    background-color: greenyellow;
+}
+
+[name=block]:nth-child(5) {
+    background-color: gray;
+}
+
+.relative {
+    position: relative;
+    top: 200px;
+    left: 150px;
+}
+
+.static {
+    position: static;
+    top: 100px;
+    left: 350px;
+}
+
+.absolute {
+    position: absolute;
+    top: 160px;
+    left: 500px;
+}
+
+.fixed {
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
