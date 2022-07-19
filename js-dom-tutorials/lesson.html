@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.2/css/boxicons.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.2/css/boxicons.min.css"> -->
 
     <!-- <link rel="stylesheet" href="./css/fullpage.min.css"> -->
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <script src="./js/jqwery.min.js"></script> -->
     <title>JS DOM tutorials</title>
 </head>
@@ -18,96 +18,13 @@
 
     <main>
         <div class="container">
-            <br>
-            <div class="images">
-
-            </div>
-            <br>
-            <br>
-            <div class="modal">
-                <button class="close" onclick="closeModal()">
-                    <i class="bx bx-x"></i>
-                </button>
-            </div>
-
-
-            <ul class="list">
-                <li>
-                    <a href="#">Banana</a>
-                </li>
-                <li>
-                    <a href="#">Kiwi</a>
-                </li>
-                <li>
-                    <a href="#">Melon</a>
-                </li>
-                <li id="cherry">
-                    <a href="#">Cherry</a>
-                </li>
-                <li class="orange">
-                    <a href="#">Orange</a>
-                </li>
-            </ul>
-
-
-
-
-            <ol>
-                <li>
-                    Michael Jackson
-                    <ul>
-                        <li>Billi Jean</li>
-                        <li>I love you</li>
-                    </ul>
-                </li>
-
-                <li>
-                    One direction
-                    <ul>
-                        <li>Stroy of my life</li>
-                        <li>Kiss me</li>
-                    </ul>
-                </li>
-            </ol>
-
-            <br>
-            <ul id="menu">
-                <li>Home</li>
-                <li>Products</li>
-                <li class="current">Customer Support</li>
-                <li>Careers</li>
-                <li>Investors</li>
-                <li>News</li>
-                <li>About Us</li>
-            </ul>
-            <button onclick="alert('alert window')">alert onclick</button>
-            <button onclick="window.location.href = '/grid-layout.html'">Grid page</button>
-            <br>
-            <div class="container">
-                <p>
-                <h3>Lang = <span id="pr_lang"></span></h3>
-                <form action="#" class="change_pr_lang">
-                    <input type="radio" name="language" id="js" value="JavaScript">
-                    <label for="js">JavaScript</label>
-                    <br>
-                    <input type="radio" name="language" id="ts" value="TypeScript">
-                    <label for="ts">TypeScript</label>
-                    <br>
-                    <input type="radio" name="language" id="dart" value="Dart">
-                    <label for="dart">Dart</label>
-                </form>
-                </p>
-            </div>
-
-
-
-
-
-
-
-            <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quia, iure quasi totam,
-                voluptates quod explicabo iste hic rerum omnis cum eius iusto eveniet. Repellat pariatur quos odio
-                excepturi dicta.</p>
+            <div data-aos="fade-up" data-aos-duration="2500" class="box"></div>
+            <div data-aos="fade-right" data-aos-easing="linear" class="box"></div>
+            <div data-aos="fade-left" data-aos-duration="2000" class=" box"></div>
+            <div data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2500" class="box"></div>
+            <div data-aos="flip-left" class="box"></div>
+            <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2500" class="box"></div>
+            <div data-aos="zoom-in-down" class="box"></div>
 
         </div>
     </main>
@@ -120,10 +37,13 @@
 
 
 
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script src="./js/fullpage.min.js"></script> -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/script.js "></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -8,6 +8,11 @@
     /* transition: all 0.3s ease-in-out; */
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1400px;
     padding-left: 5%;
@@ -21,9 +26,16 @@
 }
 
 .divider {
-    height: 200px;
+    height: 500px;
     width: 100%;
     border: solid 2px lightblue;
+}
+
+.box {
+    width: 50%;
+    height: 600px;
+    margin: 20px 0px;
+
 }
 
 main {
@@ -32,7 +44,20 @@ main {
     padding-top: 100px;
 }
 
+.animate-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #FFD500;
+    position: fixed;
+    left: -500px;
+}
 
+.show {
+    position: fixed;
+    left: 200px;
+
+}
 
 
 

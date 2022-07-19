@@ -132,13 +132,13 @@
 //     .then(res => res.json())
 //     .then(data => console.log(data))
 
-let langs = document.querySelector(".change_pr_lang");
-// addEventListener(event nomi , event vaqti ishlaydigan funksiya)
-langs.addEventListener("change", (event) => {
-    // console.log(event.target) // qaysi html element ustida shu hodisa bo'lganini qaytaradi
-    // console.log(event.target.value) // element qiymati
-    document.querySelector("#pr_lang").innerHTML = event.target.value
-});
+// let langs = document.querySelector(".change_pr_lang");
+// // addEventListener(event nomi , event vaqti ishlaydigan funksiya)
+// langs.addEventListener("change", (event) => {
+//     // console.log(event.target) // qaysi html element ustida shu hodisa bo'lganini qaytaradi
+//     // console.log(event.target.value) // element qiymati
+//     document.querySelector("#pr_lang").innerHTML = event.target.value
+// });
 
 // addEventListener - DOM da event - hodisalarni kuzatuvchi va ular vaqtida
 // ko'rsatilgan funksiyalarni chaqiruvchi alohida funksiya
@@ -147,12 +147,12 @@ langs.addEventListener("change", (event) => {
 //     1-window
 //     2-MouseEvent
 //     3-KeyboardEvent
-window.addEventListener("DOMContentLoaded", function (e) {
-    console.log(e)
-})
-window.addEventListener("load", function (e) {
-    console.log(e)
-})
+// window.addEventListener("DOMContentLoaded", function (e) {
+//     console.log(e)
+// })
+// window.addEventListener("load", function (e) {
+//     console.log(e)
+// })
 
 // MouseEvent :
 // mousedown
@@ -163,19 +163,39 @@ window.addEventListener("load", function (e) {
 // click
 // dblclick
 
-let modal = document.querySelector(".modal")
-let count = 0
-// modal.addEventListener("mousemove", (e) => {
+// let modal = document.querySelector(".modal")
+// let count = 0
+// // modal.addEventListener("mousemove", (e) => {
+// //     count++
+// //     console.log(count)
+// // })
+// let bx = document.querySelector(".bx")
+// modal.addEventListener("mouseover", (e) => {
+//     bx.style.position = "absolute"
+//     bx.style.width = `${Math.round(Math.random() * 700)}px`
+//     bx.style.height = `${Math.round(Math.random() * 700)}px`
+// })
+// modal.addEventListener("mouseleave", (e) => {
 //     count++
 //     console.log(count)
 // })
-let bx = document.querySelector(".bx")
-modal.addEventListener("mouseover", (e) => {
-    bx.style.position = "absolute"
-    bx.style.width = `${Math.round(Math.random() * 700)}px`
-    bx.style.height = `${Math.round(Math.random() * 700)}px`
-})
-modal.addEventListener("mouseleave", (e) => {
-    count++
-    console.log(count)
+
+
+// window.addEventListener("scroll", (event) => {
+//     // console.log(window.scrollY) // oynanni scroll vaqtidagi balandligini qaytaradi
+//     // console.log(window.scrollX) // oynanni scroll (x o'qida) vaqtidagi balandligini qaytaradi
+//     if (window.scrollY > 1000 && window.scrollY < 1300) {
+//         document.querySelector(".animate-box").classList.add("show")
+//         console.log(window.scrollY)
+//     } else {
+//         document.querySelector(".animate-box").classList.remove("show")
+//         console.log(window.scrollY)
+//     }
+// })
+
+window.addEventListener("load", (event) => {
+    let boxes = document.querySelectorAll(".box")
+    for (let elem of boxes) {
+        elem.style.backgroundColor = `rgb(${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)})`
+    }
 })
