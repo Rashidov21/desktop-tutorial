@@ -193,9 +193,9 @@
 //     }
 // })
 
-window.addEventListener("load", (event) => {
-    let boxes = document.querySelectorAll(".box")
-    for (let elem of boxes) {
-        elem.style.backgroundColor = `rgb(${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)})`
-    }
-})
+// window.addEventListener("load", (event) => {
+//     let boxes = document.querySelectorAll(".box")
+//     for (let elem of boxes) {
+//         elem.style.backgroundColor = `rgb(${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)})`
+//     }
+// })
