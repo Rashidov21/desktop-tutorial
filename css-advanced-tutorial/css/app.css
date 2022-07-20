@@ -100,6 +100,7 @@ footer {
     height: 200px;
     background-color: orange;
     margin: 20px 15px;
+    display: inline-block;
 }
 
 [name=block]:nth-child(1) {
@@ -122,31 +123,71 @@ footer {
     background-color: gray;
 }
 
+.text {
+    border: solid 1px red;
+    display: inline-block;
+    padding: 10px;
+    z-index: 0;
+}
+
+.image {
+    border: solid 1px red;
+    display: inline-block;
+}
+
 .relative {
-    position: relative;
-    top: 200px;
-    left: 150px;
+    overflow: hidden;
 }
 
-.static {
-    position: static;
-    top: 100px;
-    left: 350px;
-}
-
-.absolute {
+.square {
+    width: 400px;
+    height: 400px;
+    background-color: cadetblue;
     position: absolute;
-    top: 160px;
-    left: 500px;
+    overflow: hidden;
 }
 
-.fixed {
-    position: fixed;
-    right: 100px;
-    bottom: 100px;
+.block_a {
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    position: absolute;
+    left: -162px;
+    top: 40px;
+    transform: rotate(45deg);
 }
 
-.sticky {
-    position: sticky;
-    top: 0;
+.block_b {
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    position: absolute;
+    right: -162px;
+    top: 40px;
+
+    transform: rotate(45deg);
+}
+
+.container .box {
+    width: 100px;
+    height: 200px;
+    background-color: orangered;
+    margin: 5px;
+}
+
+.br {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.fl {
+    float: left;
+    /* clear: right; */
+}
+
+.fr {
+    float: right;
 }
