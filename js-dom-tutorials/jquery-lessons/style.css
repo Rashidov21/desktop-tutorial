@@ -1,0 +1,14 @@
+.box {
+    margin: 20px;
+    padding: 100px 20px;
+    display: none;
+    background-color: orange;
+}
+
+[class^=item-] {
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    margin: 20px;
+
+}
