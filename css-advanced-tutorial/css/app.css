@@ -4,6 +4,7 @@
     font-family: 'Inconsolata', monospace;
     margin: 0;
     padding: 0;
+    list-style: none;
     /* font-family: "Josefin Sans", sans-serif; */
 }
 
@@ -20,7 +21,10 @@
     src: url(../fonts/icons.woff2) format('woff2');
 }
 
-
+/* ::marker {
+    color: rgb(192, 30, 30);
+    font-size: 50px;
+} */
 
 .material-icons {
     font-family: 'Material Icons';
@@ -38,32 +42,8 @@
     -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-    font-weight: 900;
-}
 
-/* orange  */
-/* #191919 */
-/* rgb(12,12,56) */
-body {
-    /* background-color: khaki;
-    color: green;
-    background-image: url(../img/nike/nike1.jpg);
-    background-repeat: no-repeat; */
-    /* repeat-x, repeat-y */
 
-    /* background-position: center; */
-    /* background: rgb(94, 114, 161) url(../img/img.jpg) no-repeat center;
-    background-size: cover;
-    background-blend-mode: darken; */
-    /* left , top, right, bottom + center */
-    /* top - yuqori
-    right - o'ng 
-    bottom: - past 
-    left - chap  */
-    /* background-attachment: fixed; */
-    /* auto , scroll */
-}
 
 section {
     margin: 50px 0px;
@@ -74,120 +54,64 @@ section {
     padding: 0px 5%;
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-}
 
-header {
-    padding: 15px 30px;
-    padding: 20px 50px;
-    background-color: rgb(173, 173, 103);
-    position: sticky;
-    top: 0;
-}
 
-footer {
-    position: relative;
-    top: 500px;
-    /* static - top, left, right kabi  surishlar ishlamaydi (o'zgarmas) */
-    padding: 20px 50px;
-    background-color: rgb(173, 173, 103);
-}
 
-[name=block] {
-    width: 200px;
-    height: 200px;
+.box {
+    width: 300px;
+    height: 300px;
     background-color: orange;
-    margin: 20px 15px;
-    display: inline-block;
 }
 
-[name=block]:nth-child(1) {
+/* :hover - sichqoncha borgan vaqt */
+.box:hover {
     background-color: red;
 }
 
-[name=block]:nth-child(2) {
-    background-color: orange;
+input[type='text'] {
+    padding: 10px 30px;
+    background-color: aqua;
 }
 
-[name=block]:nth-child(3) {
-    background-color: lightblue;
-}
-
-[name=block]:nth-child(4) {
-    background-color: greenyellow;
-}
-
-[name=block]:nth-child(5) {
+input[type='text']:focus {
     background-color: gray;
 }
 
-.text {
-    border: solid 1px red;
-    display: inline-block;
-    padding: 10px;
-    z-index: 0;
+/* p::before {
+    content: 'lorem oldindan';
 }
 
-.image {
-    border: solid 1px red;
-    display: inline-block;
-}
+p::after {
+    content: url("../img/test.jpg");
+} */
 
-.relative {
-    overflow: hidden;
-}
-
-.square {
-    width: 400px;
-    height: 400px;
-    background-color: cadetblue;
-    position: absolute;
-    overflow: hidden;
-}
-
-.block_a {
-    width: 300px;
-    height: 300px;
+p::selection {
+    color: blue;
     background-color: orange;
-    position: absolute;
-    left: -162px;
-    top: 40px;
-    transform: rotate(45deg);
 }
 
-.block_b {
-    width: 300px;
-    height: 300px;
-    background-color: orange;
-    position: absolute;
-    right: -162px;
-    top: 40px;
-
-    transform: rotate(45deg);
-}
-
-.container .box {
+.child {
     width: 100px;
-    height: 200px;
-    background-color: orangered;
-    margin: 5px;
+    height: 100px;
+    background-color: cyan;
+    margin: 10px 5px;
 }
 
-.br {
-    width: 200px;
-    height: 200px;
-    background-color: orange;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+.child:first-child {
+    background-color: red;
 }
 
-.fl {
-    float: left;
-    /* clear: right; */
+.child:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    opacity: 0.3;
+    background-color: rgb(41, 5, 5);
 }
 
-.fr {
-    float: right;
+.child:nth-child(3) {
+    background-color: rgb(25, 71, 172);
+}
+
+.child:last-child {
+    background-color: yellow;
 }
