@@ -31,102 +31,34 @@ body {
     border: solid 2px lightblue;
 }
 
-.box {
-    width: 50%;
-    height: 600px;
-    margin: 20px 0px;
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.box {
+    width: 50px;
+    height: 50px;
+    margin: 20px 0px;
+    background-color: black;
+
+}
+
+[class^="item-"] {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin-top: 10px;
+}
+
+.div {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
 }
 
 main {
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 100px;
-}
-
-.animate-box {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    background-color: #FFD500;
-    position: fixed;
-    left: -500px;
-}
-
-.show {
-    position: fixed;
-    left: 200px;
-
-}
-
-
-
-
-
-
-
-.modal {
-    width: 75%;
-    min-height: 150px;
-    background-color: #FFD500;
-    border-radius: 10px;
-    filter: drop-shadow(0 0 5px rgb(101, 90, 90));
-    padding: 10px 15px;
-}
-
-.modal:hover {
-    filter: drop-shadow(0 0 5px rgb(161, 146, 146));
-    transition: all 0.3s;
-}
-
-.close {
-    float: right;
-    border: none;
-    outline: none;
-    padding: 5px;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 1.5em;
-}
-
-.close:hover {
-    transform: rotate(180deg);
-    transition: all 0.3s;
-}
-
-
-/* .shake {
-    animation: shake 0.8s alternate ease-in-out 1;
-} */
-
-
-/* @keyframes shake {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(30deg);
-    }
-    50% {
-        transform: rotate(0deg);
-    }
-    75% {
-        transform: rotate(-30deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-} */
-
-
-
-.item {
-    width: 200px;
-    height: 200px;
-    margin: 50px auto;
-    padding-top: 75px;
-    background: #ccc;
-    text-align: center;
-    color: #FFF;
-    font-size: 3em;
 }

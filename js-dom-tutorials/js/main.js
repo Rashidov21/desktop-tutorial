@@ -1,63 +1,92 @@
+// anime js code
 
+const timelineBlocks = anime.timeline({
+    duration:1000,
+    easing:'easeOutCubic',
+    loop:true,
+    direction:"alternate"
+});
+timelineBlocks.add({
+    targets: '.container .item-1',
+    translateX: 250,
+    borderRadius:function(){return anime.random(0, 50)}
+  })
+  .add({
+    targets: '.container .item-2',
+    translateX: 350,
+    borderRadius:function(){return anime.random(0, 50)}
+  })
+  .add({
+    targets: '.container .item-3',
+    translateX: 450,
+    borderRadius:function(){return anime.random(0, 50)}
+  }); 
 
-function openClose() {
-    let sidebarMenu = document.querySelector(".sidebar-menu")
-    sidebarMenu.classList.toggle("show")
-}
+  
+// const a = anime(
+//     {
+//         targets:'.div',
+//         keyframes: [
+//             {scale:1.3, borderRadius:['50%', '100%'], boxShadow:'0 0 10px 10px #001bae'},
 
+//             // {translateY: -40, background:"#333"},
+//             // {translateX: 250,background:"#6f6"},
+//             // {translateY: 40,background:"#555"},
+//             // {translateX: 0,background:"#5a5"},
+//             // {translateY: 0,background:"#1a3"}
+//           ],
+//           duration: 1000,
+//           easing: 'easeOutElastic(1, .8)',
+//           direction:'alternate',
+//           loop: true
+//     }
+// );
 
-function openAccardion() {
-    let obj = document.querySelector(".accardion")
-    obj.classList.toggle("down")
+// translateX: 250,
+// translateY: 50
+// left: '240px',
+// backgroundColor: '#FFF',
+// borderRadius: ['0%', '50%'],
+// easing: 'easeInOutQuad',
+// translateX: 100
+// width: {
+//     value: '*=2.5',
+//     duration: 2000
+// },
+// translateX: {
+//     value: 300,
+//     duration: 2000,
+//     easing: 'easeInOutQuad'
+// },
 
-}
+// loop: true,
+// direction: "alternate",
 
-function equ() {
-    let equal = document.querySelector(".eq")
-    let col = document.querySelectorAll('.col')
-    setInterval(() => {
-        for (let item of col) {
-            item.style.backgroundColor = '#232328'
-            item.style.height = `${Math.round(Math.random() * 450)}px`
-            item.style.backgroundColor = `rgb(${Math.round(Math.random() * 10)},${Math.round(Math.random() * 255)},${Math.round(Math.random() * 100)})`
-        }
-    }, 100)
-}
-function play_single_sound() {
-    document.getElementById('audiotag1').play();
-}
-function pause_single_sound() {
-    document.getElementById('audiotag1').pause();
-}
-window.addEventListener("keypress", (event) => {
+// let elements = document.querySelectorAll(".box")
+// const anime1 = anime({
+//     targets: elements,
+    // animations 
+    // translateX: [-900, 550],
+    // duration: 2000,
+    // rotate: function () { return anime.random(-360, 360); },
+    // borderRadius: function () { return ['50%', anime.random(5, 50) + '%']; },
+    // duration: function () { return anime.random(1800, 2800); },
+    // delay: function () { return anime.random(0, 200); },
+    // keyframes: [
+    //     {
+    //         background: "#ccc",
+    //         duration: 400
+    //     },
+    //     {
+    //         background: "#ddd",
+    //         duration: 400
+    //     },
+    //     {
+    //         background: "#333",
+    //         duration: 400
+    //     }
+    // ],
+    // direction: 'alternate',
+    // loop: true
 
-    if (event.key == "e") {
-        equ()
-    }
-    else if (event.key == "m") {
-        play_single_sound()
-    }
-    else if (event.key == "p") {
-        pause_single_sound()
-    }
-})
-
-let equal = document.querySelector(".eq")
-console.dir(equal)
-// equal.className = "klass nomi1 klass nomi2"
-// equal.classList = ["klass nomi 1", "klass nomi 2"]
-// equal.classList.add("myClass") klass qoshish
-// equal.classList.remove("myClass") klass ochirish
-// equal.classList.contains("myClass") klass bor yoki yoqligini tekshirish
-// equal.classList.toggle("myClass") klass bor bolsa uni ochiradi bolmasa qoshib qoyadi
-
-
-// Massiv berilgan arr = [1, 2, 3, 4, 5] ushbu massivda oxirgi raqamni pozitsiyasini  foydalanuvchi ko’rsatgan marta chapga suruvchi funksiya yozing.
-//     Masalan; foydalanuvchi 3 ni kiritsa arr = [1, 5, 2, 3, 4] ga o’tadi, ya’ni 5  3 ta index chapga o’tdi
-
-// Berilgan massivdan sonlarni bir xillarini olib tashlab faqat sanoqdagi ketma-ket sonlarni qoldiring
-// Masalan arr = [1,5,6,1,8,5,9]  Output/Javob arr = [1,5,6,8,9]
-// Sizga berilgan Massiv bu >> arr = [2,6,6,4,7,8,2,9,7,1,9]
-
-// Kun, oy va yil - uchta argumentni qabul qiladigan funktsiya yozing. Agar bizning taqvimimizda bunday sana bo'lsa, True, aks holda False qaytarsin
-
+// });
