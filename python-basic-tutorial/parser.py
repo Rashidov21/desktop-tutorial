@@ -14,33 +14,22 @@ bot = Bot(TOKEN)
 
 page = requests.get("https://socratify.net/quotes/best")
 soup = BeautifulSoup(page.text, "html.parser")
+
+
 def get_quotes():
 
-    data_quotes = soup.findAll("a", class_="b-list-quote2__item-text js-quote-text")
+    data_quotes = soup.findAll(
+        "a", class_="b-list-quote2__item-text js-quote-text")
     quotes = []
     for i in data_quotes:
         quotes.append(i.text)
     bot.sendMessage(group_id, random.choice(quotes))
 
 
-schedule.every(10).seconds.do(get_quotes)
+schedule.every().day.at("10:30").do(get_quotes)
 while True:
     schedule.run_pending()
     time.sleep(1)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Obhavo + Valyuta
