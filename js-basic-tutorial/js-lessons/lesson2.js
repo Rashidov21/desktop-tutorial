@@ -107,17 +107,100 @@
 // task  3
 // let byte = +prompt("bytes :")
 // console.log(`kb = ${byte / 1024}`)
-
+// matn >> m = 0,a = 1 , t = 2, n = 3
 // task 6 , 7
-let num = prompt("Son :")
-// "65" = 1 - elementi [0], 2-elementi [1]
-if (num.length >= 2) {
-    // console.log(num[0]) // '6'
-    // console.log(num[1])// '5'
-    // 7
-    console.log(Number(num[0]) + Number(num[1])) // 11
-    // 8
-    let reversedNum = num[1] + num[0]
-    console.log(reversedNum)
+// let num = prompt("Son :") // 65
+// // "65" = 1 - elementi [0], 2-elementi [1]
+// if (num.length >= 2) {
+//     // console.log(num[0]) // '6'
+//     // console.log(num[1])// '5'
+//     // 7
+//     console.log(Number(num[0]) + Number(num[1])) // 11
+//     // 8
+//     let reversedNum = num[1] + num[0]
+//     console.log(reversedNum)
+// }
+// task 13
+// let n = prompt() // 745 >> 457
+// console.log(n[1] + n[2] + n[0]) // 457
 
-}
+// task 19 
+// let n = +prompt("Sekundlar :")
+// console.log(n / 60)
+
+
+
+// if task 1 
+// let n = +prompt()
+// if (n > 0) {
+//     n = n + 1
+//     console.log(n)
+// } else {
+//     console.log(n)
+// }
+
+// let x = -1
+// let y = 2
+// let z = 0
+// let counter = 0
+// if (x >= 0) {
+//     counter = counter + 1
+// }
+// if (y >= 0) {
+//     counter = counter + 1
+// }
+// if (z >= 0) {
+//     counter = counter + 1
+// }
+// console.log(counter)
+// let n = 23
+// if (n >= 50) {
+//     console.log(n ** 2)
+// } else {
+//     console.log(n ** 3)
+// }
+
+// let n = 23
+// if (n > 10) {
+//     console.log(Number(`-${n}`))
+// } else {
+//     console.log(n)
+// }
+// let a = 56
+// let b = 102
+// let c = 99
+// if (a < b && b < c) {
+//     console.log("O'sish tartibida ")
+// } else {
+//     console.log("Xatolik")
+// }
+// let n = +prompt()
+// let t = n
+// let o = t * 2
+// let b = o / 3
+
+// if (b <= 3) {
+//     console.log("Botir hafa")
+// } else {
+//     console.log("Botir OK")
+// }
+// let n = +prompt()
+// if (n % 2 == 0) {
+//     alert("Juft")
+// } else {
+//     alert("toq")
+// }
+
+
+// let m = +prompt()
+// let ft = +prompt()
+// let ft_m = ft * 0.3048
+// console.log(ft_m)
+// if (m > ft_m) {
+//     alert("metr katta")
+// } else {
+//     alert("fut katta")
+// }
+// let c = +prompt()
+// let f = c * 1.8000 + 32
+// console.log(f)
