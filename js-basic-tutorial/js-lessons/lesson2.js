@@ -95,3 +95,29 @@
 
 // task 2
 // ikki xil tortburchak bor birinchisiga ikkinchisi sig'adimi yo'qmi toping
+
+// task 1 
+// let l = +prompt("Santimetr :")
+// console.log(`metr = ${l / 100}`)
+
+// task  2
+// let kg = +prompt("kg :")
+// console.log(`t = ${kg / 1000}`)
+
+// task  3
+// let byte = +prompt("bytes :")
+// console.log(`kb = ${byte / 1024}`)
+
+// task 6 , 7
+let num = prompt("Son :")
+// "65" = 1 - elementi [0], 2-elementi [1]
+if (num.length >= 2) {
+    // console.log(num[0]) // '6'
+    // console.log(num[1])// '5'
+    // 7
+    console.log(Number(num[0]) + Number(num[1])) // 11
+    // 8
+    let reversedNum = num[1] + num[0]
+    console.log(reversedNum)
+
+}
