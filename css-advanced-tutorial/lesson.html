@@ -22,12 +22,14 @@
             <div class="transform">
                 A
             </div>
-            <div class="box"></div>
+            <script>
+                const canvas = document.getElementById('mycanvas')
+                const img = canvas.toDataURL('image/png')
+                document.write('<img src="' + img + '"/>');
+            </script>
+
         </div>
-        <!-- <p class="text-overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sunt, recusandae neque
-            vitae possimus voluptatem
-            voluptatibus voluptates id. Est optio libero repudiandae deleniti magnam dolorum asperiores minus distinctio
-            eos eveniet!</p> -->
+
         </section>
 
     </main>
@@ -43,11 +45,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nam!</p>
         </div> -->
     </footer>
-    <script>
-        for (let i = 0; i < 5; i++) {
-            console.log(i++)
-        }
-    </script>
+
 </body>
 
 </html>
