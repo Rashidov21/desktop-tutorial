@@ -204,3 +204,50 @@
 // let c = +prompt()
 // let f = c * 1.8000 + 32
 // console.log(f)
+
+// task 
+// input : User son kiritadi agar son 1 ga teng bolsa "Windows" so'zi chiqadi 
+// agar 2 bolsa "linux" agar 3 bolsa  "MacOs" lekin boshqa  son kiritgan bo'lsa 
+// "bunday tizim yo'q" chiqadi 
+// output : 1 , "windows" 
+
+// task 
+// input : sinfdagi o'quvchilar soni va ularning yoshlari kiritiladi 
+// output: sinfdagi o'quvchilarning o'rtacha yosh darajasini chiqaring 
+
+// task 
+// input: qoldiqli son qabul qilinadi va qoldigini butuniga qo'shiladi
+// output: 3.2 >> 3 + 2 = 5
+
+// let n = prompt() // 3.2
+// console.log(Number(n[0]) + 1) // 4
+// console.log(n[1]) // .
+// console.log(n[2])// 2
+
+// task 
+// input : foydalanuvchidan yosh sorang  agar  yoshi 10 bilan 18 ni orasida bolsa "ruxsat yo'q"
+// chiqadi agar 18 bilan 25 ni orasida bolsa "ruxsat bor" chiqadi agar 25 bilan 50 ni orasida 
+// bolsa "Boshqa safar" chiqadi 50 dan katta bolsa "Yoshingiz katta" chiqsin
+
+// task 
+// input: ikki xonalik son qabul qiling va o'ng tomondagi son kattami yoki chap tomondagi aniqlang
+// output: 32 >> o'ng tomondagi katta 68 >> chap tomondagi katta
+// let n = String(32)
+// console.log(n[0]) // 3
+// console.log(n[1]) // 2
+// console.log(Number(n[0]) > Number(n[1])) // true
+// let n = +prompt()
+// if (n > 10 && n <= 99) {
+//     n = String(n)
+//     let r = Number(n[0])
+//     let l = Number(n[1])
+//     if (r < l) {
+//         console.log("Chap katta")
+//     } else {
+//         console.log("O'ng katta")
+//     }
+// }
+
+// task 
+// input: ikki xonalik son berilgan siz son palindrom ekanini topuvchi dastur tuzing
+// output: 22 >> palindrom 23 >> palindrom emas 
