@@ -1,26 +1,26 @@
 // anime js code
 
-const timelineBlocks = anime.timeline({
-    duration:1000,
-    easing:'easeOutCubic',
-    loop:true,
-    direction:"alternate"
-});
-timelineBlocks.add({
-    targets: '.container .item-1',
-    translateX: 250,
-    borderRadius:function(){return anime.random(0, 50)}
-  })
-  .add({
-    targets: '.container .item-2',
-    translateX: 350,
-    borderRadius:function(){return anime.random(0, 50)}
-  })
-  .add({
-    targets: '.container .item-3',
-    translateX: 450,
-    borderRadius:function(){return anime.random(0, 50)}
-  }); 
+// const timelineBlocks = anime.timeline({
+//     duration:1000,
+//     easing:'easeOutCubic',
+//     loop:true,
+//     direction:"alternate"
+// });
+// timelineBlocks.add({
+//     targets: '.container .item-1',
+//     translateX: 250,
+//     borderRadius:function(){return anime.random(0, 50)}
+//   })
+//   .add({
+//     targets: '.container .item-2',
+//     translateX: 350,
+//     borderRadius:function(){return anime.random(0, 50)}
+//   })
+//   .add({
+//     targets: '.container .item-3',
+//     translateX: 450,
+//     borderRadius:function(){return anime.random(0, 50)}
+//   }); 
 
   
 // const a = anime(
