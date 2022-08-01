@@ -33,20 +33,6 @@ section {
     /* writing-mode: vertical-rl; */
 }
 
-
-/* .gradient {
-    width: 100%;
-    height: 500px;
-    border-radius: 16px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    /* background: linear-gradient(to right, rgb(176, 49, 49), rgb(45, 22, 159)); */
-/* background-color: #FF3CAC;
-    box-shadow: 10px 20px 10px #ec7abb; */
-/* background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); 
-
-}
-
-*/
 main .container {
     perspective: 2000px;
     perspective-origin: center;
@@ -56,37 +42,55 @@ main .container {
     margin: 100px 50px;
     width: 300px;
     height: 300px;
-    background-image: url('../img/antony.jpg');
+    background-color: orange;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: khaki; */
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    /* transition-delay: 3000ms;
-    transition-duration: 2000ms;
-    transition-property: transform; */
+
+    /* animations */
+    /* nomi  */
+    /* animation-name: changeBgColor2; */
+    /* davom etish vaqti  */
+    /* animation-duration: 2s; */
+    /* takrorlanish soni  */
+    /* animation-iteration-count: infinite; */
+    /* davom etish tezligi  */
+    /* animation-timing-function: linear; */
+    /* animatsiyani ijro yo'li  */
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: backwards; */
+    /* shorthand  */
+    animation: changeBgColor2 2s linear infinite alternate;
 }
 
-.transform:hover {
-    transform: rotateY(-45deg) translateY(100px) scaleX(3);
-    /* transform: rotate3d(0, 1, 0, -45deg) translate3d(0px, 100px, 0px) scale3d(3, 1, 1); */
-    /* transform-origin: 100px 0px; */
-    transform-style: preserve-3d;
-}
+/* @keyframes changeBgColor {
+    from {
+        background-color: orange;
+    }
 
-.box {
-    width: 300px;
-    height: 300px;
-    background-color: orange;
-    /* transition-delay: 0ms; */
-    /* transition-duration: 0.3s;
-    transition-property: all;
-    transition-timing-function: ease-in-out; */
-    /* transition: width 3s ease; */
-    clip-path: polygon(49% 44%, 0% 100%, 100% 100%);
-    transition: all 0.5s ease-in-out;
-}
+    to {
+        background-color: black;
+    }
+} */
 
-.box:hover {
-    background-color: red;
-    width: 600px;
+@keyframes changeBgColor2 {
+    0% {
+        background-color: orange;
+        transform: none;
+    }
+
+    25% {
+        background-color: rgb(143, 103, 28);
+        transform: translateX(100px);
+    }
+
+    50% {
+        background-color: rgb(90, 64, 17);
+        transform: translateX(200px);
+    }
+
+    100% {
+        background-color: rgb(16, 12, 3);
+        transform: translateX(300px);
+    }
 }
