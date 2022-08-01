@@ -219,19 +219,22 @@
 // input: qoldiqli son qabul qilinadi va qoldigini butuniga qo'shiladi
 // output: 3.2 >> 3 + 2 = 5
 
-// let n = prompt() // 3.2
-// console.log(Number(n[0]) + 1) // 4
-// console.log(n[1]) // .
-// console.log(n[2])// 2
-
 // task 
-// input : foydalanuvchidan yosh sorang  agar  yoshi 10 bilan 18 ni orasida bolsa "ruxsat yo'q"
-// chiqadi agar 18 bilan 25 ni orasida bolsa "ruxsat bor" chiqadi agar 25 bilan 50 ni orasida 
-// bolsa "Boshqa safar" chiqadi 50 dan katta bolsa "Yoshingiz katta" chiqsin
+// input : foydalanuvchidan yosh sorang  agar  yoshi 10 bilan 18 ni orasida bolsa "ruxsat yo'q"chiqadi agar 18 bilan 25 ni orasida bolsa "ruxsat bor" chiqadi agar 25 bilan 50 ni orasida bolsa "Boshqa safar" chiqadi 50 dan katta bolsa "Yoshingiz katta" chiqsin
 
 // task 
 // input: ikki xonalik son qabul qiling va o'ng tomondagi son kattami yoki chap tomondagi aniqlang
 // output: 32 >> o'ng tomondagi katta 68 >> chap tomondagi katta
+
+
+
+
+
+
+
+
+
+
 // let n = String(32)
 // console.log(n[0]) // 3
 // console.log(n[1]) // 2
