@@ -39,16 +39,16 @@
 
 // // || - YOKI 
 // // birinichi uchragan true qiymatni oladi 
-// let state2 = 0 || 1 || "" || null
-// console.log(state2)
+let state = "" || 0 || false || null || undefined
+console.log(state)
 
-// // ! - EMAS 
-// console.log(!true) // false 
+// // ! - EMAS
+// console.log(!true) // false
 // console.log(!false) // true
 
-// if - agar 
+// if - agar
 // else if - agar yoki
-// else - aks holda  
+// else - aks holda
 // if(shart){harakat}
 // else if (shart){harakat}
 // else{harakat}
@@ -87,7 +87,7 @@
 // }
 // else {
 //     alert("Now working !")
-// }   
+// }
 
 
 // task 1
@@ -96,7 +96,7 @@
 // task 2
 // ikki xil tortburchak bor birinchisiga ikkinchisi sig'adimi yo'qmi toping
 
-// task 1 
+// task 1
 // let l = +prompt("Santimetr :")
 // console.log(`metr = ${l / 100}`)
 
@@ -124,13 +124,13 @@
 // let n = prompt() // 745 >> 457
 // console.log(n[1] + n[2] + n[0]) // 457
 
-// task 19 
+// task 19
 // let n = +prompt("Sekundlar :")
 // console.log(n / 60)
 
 
 
-// if task 1 
+// if task 1
 // let n = +prompt()
 // if (n > 0) {
 //     n = n + 1
@@ -205,24 +205,24 @@
 // let f = c * 1.8000 + 32
 // console.log(f)
 
-// task 
-// input : User son kiritadi agar son 1 ga teng bolsa "Windows" so'zi chiqadi 
-// agar 2 bolsa "linux" agar 3 bolsa  "MacOs" lekin boshqa  son kiritgan bo'lsa 
-// "bunday tizim yo'q" chiqadi 
-// output : 1 , "windows" 
+// task
+// input : User son kiritadi agar son 1 ga teng bolsa "Windows" so'zi chiqadi
+// agar 2 bolsa "linux" agar 3 bolsa  "MacOs" lekin boshqa  son kiritgan bo'lsa
+// "bunday tizim yo'q" chiqadi
+// output : 1 , "windows"
 
-// task 
-// input : sinfdagi o'quvchilar soni va ularning yoshlari kiritiladi 
-// output: sinfdagi o'quvchilarning o'rtacha yosh darajasini chiqaring 
+// task
+// input : sinfdagi o'quvchilar soni va ularning yoshlari kiritiladi
+// output: sinfdagi o'quvchilarning o'rtacha yosh darajasini chiqaring
 
-// task 
+// task
 // input: qoldiqli son qabul qilinadi va qoldigini butuniga qo'shiladi
 // output: 3.2 >> 3 + 2 = 5
 
-// task 
+// task
 // input : foydalanuvchidan yosh sorang  agar  yoshi 10 bilan 18 ni orasida bolsa "ruxsat yo'q"chiqadi agar 18 bilan 25 ni orasida bolsa "ruxsat bor" chiqadi agar 25 bilan 50 ni orasida bolsa "Boshqa safar" chiqadi 50 dan katta bolsa "Yoshingiz katta" chiqsin
 
-// task 
+// task
 // input: ikki xonalik son qabul qiling va o'ng tomondagi son kattami yoki chap tomondagi aniqlang
 // output: 32 >> o'ng tomondagi katta 68 >> chap tomondagi katta
 
@@ -251,6 +251,6 @@
 //     }
 // }
 
-// task 
+// task
 // input: ikki xonalik son berilgan siz son palindrom ekanini topuvchi dastur tuzing
 // output: 22 >> palindrom 23 >> palindrom emas 
