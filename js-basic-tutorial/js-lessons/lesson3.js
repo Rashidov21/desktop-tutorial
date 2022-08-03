@@ -103,4 +103,39 @@
 //     console.log(i++)
 // }
 
+// task 1 
+// 1 dan 99 gacha sanaydigan for hosil qiling , faqat 5,25,55,75 sonlarini chiqaring
+// for (let i = 0; i < 99; i++) {
+//     if (i == 5 || i == 25 || i == 75) {
+//         console.log(i)
+//     }
+// }
+// task 2
+// 5 qavatli uyda 20 ta kvartira bor . foydalanuvchi kvartira raqamini kiritsa siz uni qaysi etajda ekanini chiqarishingiz kerak , kvartira raqamlari birinchi etajdan boshlanadi 
 
+// task 3
+// 9 qavatli uyda  3 ta podyezd  bor har bir etajda 6 tadan kvartira bor .foydalanuvchi kvartira raqamini kiritsa siz uni qaysi qavatda ekanini va qaysi podyezdda ekanini chiqarishingiz kerak  
+
+// task 4
+// bankga omonat qoymoqchi bolgan odam bank taklifini eshitib chalgib qoldi  bank taklifi : agar siz bizga  1000 som omonat qoysangiz biz uni har oyda 2.5% ga oshirmaiz va 3 yil davomida har 12-oyda 3% ga oshiramiz. 3 yildan to 5 yilgacha 3.5% ga oshirib 5 yildan ko'proq muddatga omonat qo'ysangiz 4% dan oshiriladi omonatni summasini va qo'ymoqchi bo'lgan oylar sonini kiritilsa hisoblab beruvchi dastur tuzing
+
+// task 5
+// n soni  berilgan  (30 > n > 0) agar n toq son bolsa undan keyin bitta probel agar juft bo'lsa undan keyin uchta probel bilan 0 dan n gacha bo'lgan sonlarni barchasini bitta qatorda chiqaring :0   1 2   3 4   5 6   ;
+// s = ""
+// s += `${n} `
+// s += `${n}   `
+// let n = +prompt()
+// let result = ""
+// if (30 > n && n > 0) {
+//     for (let i = 0; n >= i; i++) {
+//         if (i % 2 == 0) {
+//             result += `${i}   `
+//         } else {
+//             result += `${i} `
+//         }
+//     }
+// } 
+// console.log(result) // 0   1 2   3 4   5 6 
+// task 6
+// uch xonali son berilgan siz aniqlashingiz kerak: 
+// son teskari o'qilganda nechchi bo'ladi va 2-sonini o'rniga  nuqta qoyilganda nechi bo'ladi : 556 >> 655 , 5.6
