@@ -139,3 +139,7 @@
 // task 6
 // uch xonali son berilgan siz aniqlashingiz kerak: 
 // son teskari o'qilganda nechchi bo'ladi va 2-sonini o'rniga  nuqta qoyilganda nechi bo'ladi : 556 >> 655 , 5.6
+
+
+// task 4
+// bankga omonat qoymoqchi bolgan odam bank taklifini eshitib chalgib qoldi  bank taklifi : agar siz bizga  1000 som omonat qoysangiz biz uni har oyda 2.5% ga oshirmaiz va 3 yil davomida har 12-oyda 3% ga oshiramiz. 3 yildan to 5 yilgacha 3.5% ga oshirib 5 yildan ko'proq muddatga omonat qo'ysangiz 4% dan oshiriladi omonatni summasini va qo'ymoqchi bo'lgan oylar sonini kiritilsa hisoblab beruvchi dastur tuzing
