@@ -19,78 +19,51 @@ section {
     margin: 50px 0px;
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
     max-width: 1400px;
     padding: 0px 5%;
 }
 
-.text-overflow {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 300px;
-    border: solid 1px red;
-    text-overflow: ellipsis;
-    /* writing-mode: vertical-rl; */
+.flex {
+    border: solid 1px black;
+    width: 100%;
+    height: 600px;
+    /* Flexible content  */
+    display: flex;
+    /* blocklar sigmasa pasdan joy oladi  */
+    flex-wrap: wrap;
+    /* blocklarni joylashish yonalishi */
+    flex-direction: row;
+    /* x -o'qida blocklarni markazga olish  */
+    justify-content: flex-end;
+    /* y -o'qida blocklarni markazga olish  */
+    align-items: flex-end;
 }
 
-main .container {
-    perspective: 2000px;
-    perspective-origin: center;
-}
-
-.transform {
-    margin: 100px 50px;
-    width: 300px;
-    height: 300px;
+.flex .box {
+    width: 100px;
+    height: 100px;
     background-color: orange;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-
-    /* animations */
-    /* nomi  */
-    /* animation-name: changeBgColor2; */
-    /* davom etish vaqti  */
-    /* animation-duration: 2s; */
-    /* takrorlanish soni  */
-    /* animation-iteration-count: infinite; */
-    /* davom etish tezligi  */
-    /* animation-timing-function: linear; */
-    /* animatsiyani ijro yo'li  */
-    /* animation-direction: alternate; */
-    /* animation-fill-mode: backwards; */
-    /* shorthand  */
-    animation: changeBgColor2 2s linear infinite alternate;
+    margin: 15px;
 }
 
-/* @keyframes changeBgColor {
-    from {
-        background-color: orange;
-    }
+.post {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
-    to {
-        background-color: black;
-    }
-} */
+.post-body {
+    max-width: 60%;
+}
 
-@keyframes changeBgColor2 {
-    0% {
-        background-color: orange;
-        transform: none;
-    }
-
-    25% {
-        background-color: rgb(143, 103, 28);
-        transform: translateX(100px);
-    }
-
-    50% {
-        background-color: rgb(90, 64, 17);
-        transform: translateX(200px);
-    }
-
-    100% {
-        background-color: rgb(16, 12, 3);
-        transform: translateX(300px);
-    }
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
