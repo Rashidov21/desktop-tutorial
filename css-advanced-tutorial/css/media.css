@@ -1,0 +1,50 @@
+/* 1920px Full HD desktop
+1650px Mac 
+1360px Noutbuk (Laptop)
+912px Planshet (Tablet)
+768px Planshet (ipad mini)
+540px Telefon (phone)
+380px Telefon (phone)
+280px Telefon (galaxy Z-fold) */
+
+/* 480px gacha  */
+/* @media screen and (max-width: 480px) {
+    body {
+        background-color: rgb(26, 33, 26);
+    }
+} */
+
+/* 480 dan boshlab */
+/* @media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+} */
+
+@media screen and (max-width:1460px) {
+    .posts {
+        max-height: 900px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* .box {
+        background-color: rgb(136, 243, 13);
+    } */
+}
+
+@media screen and (max-width:768px) {
+    .posts {
+        max-height: 2000px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .post .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

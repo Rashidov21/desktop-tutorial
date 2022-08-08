@@ -24,46 +24,44 @@ img {
 }
 
 .container {
-    max-width: 1400px;
     padding: 0px 5%;
-}
-
-.flex {
-    border: solid 1px black;
-    width: 100%;
-    height: 600px;
-    /* Flexible content  */
-    display: flex;
-    /* blocklar sigmasa pasdan joy oladi  */
-    flex-wrap: wrap;
-    /* blocklarni joylashish yonalishi */
-    flex-direction: row;
-    /* x -o'qida blocklarni markazga olish  */
-    justify-content: flex-end;
-    /* y -o'qida blocklarni markazga olish  */
-    align-items: flex-end;
-}
-
-.flex .box {
-    width: 100px;
-    height: 100px;
-    background-color: orange;
-    margin: 15px;
-}
-
-.post {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.post-body {
-    max-width: 60%;
 }
 
 .images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.images img {
+    margin: 10px;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.post {
+    max-width: 300px;
+    padding: 0px 10px;
+    background-color: azure;
+    box-shadow: 5px 3px 10px #333;
+    /* display: inline-block; */
+    margin: 10px 15px;
+}
+
+.post .btn {
+    width: 50%;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+
 }
