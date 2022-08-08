@@ -35,16 +35,22 @@
     } */
 }
 
-@media screen and (max-width:768px) {
-    .posts {
-        max-height: 2000px;
-        flex-direction: column;
+@media screen and (max-width:912px) {
+    .column {
+        width: 49%;
+        background-color: #333;
+        height: 100px;
+        display: inline-block;
+        padding: 5px 5px;
     }
 }
 
-@media screen and (max-width:370px) {
-    .post .btn {
+@media screen and (max-width:540px) {
+    .column {
         width: 100%;
-        text-align: center;
+        background-color: #333;
+        height: 100px;
+        display: inline-block;
+        padding: 5px 5px;
     }
 }
