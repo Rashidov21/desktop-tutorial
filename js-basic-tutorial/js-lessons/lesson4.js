@@ -72,3 +72,32 @@
 // task 2
 // let text = `Asslomu alaykum Vaalaykum assalom`
 // text da nechta a harfi bor ekanini toping 
+
+// task 3 
+// 10 bilan 100 ni orasida bitta tasodify son hosil qiling 
+// agar son 50 dan katta bo'lsa uni kubini agar kichik bo'lsa uni kvadratini chiqaring
+// let n = Math.round(Math.random() * 100)
+
+// task 4 
+// let text = "lorem ipsum dolor amet sit"
+// text dan tasodify bitta harfni oling agar harf unli bo'lsa uni 2 marta console ga 
+// chiqaring agar undosh bolsa shunchaki o'zini console ga chiqaring
+
+// let n = Math.round(Math.random() * text.length)
+// console.log(text[n])
+// if (text[n] == 'a' || text[n] == 'i' || text[n] == 'e' || text[n] == 'u') {
+//     console.log(text[n] + text[n])
+// } else {
+//     console.log(text[n])
+// }
+// task 5
+// foydalanuvchi son kiritadi agar son qoldiqli bolsa va  10 dan katta bolsa  uni tepaga 
+// qarab yaxlitlansin agar son qoldiqli va  10 dan kichik bolsa pastga qarab yaxlitlansin 
+// input : 12.3 >> ceil >> 13 ; 9.8 >> floor >> 9
+// console.log(Math.floor(12.3)) // 12
+// console.log(Math.ceil(12.3)) // 13
+
+// task 6
+// let n = 4
+// console.log(((n > 2) + (10 > 2) + 2) - (n % 3) * 2 - (!true + 2)) // n ? 
+// // console.log(7 % 4)
