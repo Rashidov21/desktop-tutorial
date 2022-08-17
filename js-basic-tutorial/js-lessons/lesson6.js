@@ -1,6 +1,8 @@
 // Function - kod bo'lagi , uni kodni istalgan joyida istalgam marta ishga 
 // tushirish mumkin
 
+
+
 // Javascript da function lar 4 xil 
 // 1- declaration 
 // 2- expression 
@@ -26,3 +28,14 @@
 // for (let i = 0; i <= arr.length; i++) {
 //     console.log(getKv(i))
 // }
+
+let numbers = [1, 2, 3, 4, 5]
+
+function getKv(arr) {
+    let summa = 0
+    for (let i = 0; i < arr.length; i++) {
+        summa += arr[i]
+    }
+    return summa
+}
+console.log(getKv(numbers))
