@@ -1,0 +1,39 @@
+/* @import url();  */
+* {
+    /* hamma teg uchun stil  */
+}
+
+body {
+    background-color: khaki;
+}
+
+/* header {} */
+
+main {
+    background-color: bisque;
+}
+
+div.myclass p {
+    background-color: red;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 1.5em;
+}
+
+header,
+footer {
+    width: 80%;
+    height: 20px;
+    background-color: blueviolet;
+}
+
+/* .box {}
+
+.text {}
+
+#text {}
+
+footer {} */
