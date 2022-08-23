@@ -1,24 +1,50 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.box {
-    width: 300px;
+/* .box { */
+/* max-width: 600px;
     height: 300px;
     background-color: beige;
     border: solid 1px red;
-    margin: 50px;
-    /* margin: 20px 50px; */
-    /* margin: 20px 30px 100px 20px; */
-    /* margin-top: 20px;
+    margin: 50px; */
+/* margin: 20px 50px; */
+/* margin: 20px 30px 100px 20px; */
+/* margin-top: 20px;
     margin-bottom: 20px;
 
     margin-left: 20px;
     margin-right: 20px; */
-    padding: 20px;
-    /* padding: 20px 30px; */
-    /* padding-top: 30px;
+/* padding: 20px; */
+/* padding: 20px 30px; */
+/* padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px; */
+
+.box:nth-child(1) {
+    /* max-width: 800px;
+    min-width: 200px; */
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    padding: 10px;
+    margin: 10px 30px;
+    /* border-radius: 50%; */
+    /* border-top-left-radius: 20px; */
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 10px solid black;
+    outline-style: solid;
+    outline-width: 10px;
+    outline-color: red;
+}
+
+.box:nth-child(2) {
+    width: 400px;
+    min-height: 300px;
+    background-color: orange;
+    padding: 10px;
+    margin: 10px 30px;
 }
