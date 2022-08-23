@@ -1,3 +1,6 @@
+from modules.app import test
+print(test)
+
 # def funksiya nomi(argument,argument):
 #     funsiya tanasi
 # print(plus(2, 2)) # NameError
@@ -68,3 +71,11 @@
 # task 4
 # user kiritgan sonni qabul qilib 0 dan shu son qadar takrorlanish hosil qiladigan va shu sonlar orasidagi barcha toq sonlarni chiqaradigan
 # funksiya yozing agar son kiritmasa son 50 ga teng
+
+
+# def main(x):
+#     """function docstring"""
+#     pass
+
+
+# print(main.__doc__)
