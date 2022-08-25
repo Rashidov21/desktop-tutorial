@@ -85,3 +85,5 @@
 
 # else:
 #     print("Takrorlanish tugadi ..")
+import random
+print(max([2, 8, 6, 4])+(random.randint(5, 7) + 1) * 2)

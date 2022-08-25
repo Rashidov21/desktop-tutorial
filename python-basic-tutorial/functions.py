@@ -79,3 +79,7 @@ print(test)
 
 
 # print(main.__doc__)
+
+# task 1
+# . Foydalanuvchi yiliga 10% miqdorida X sum miqdorida omonat qo'yadi (har yili uning depozit hajmi 10% ga oshadi. Ushbu pul depozit miqdoriga qo'shiladi va har yili 10% ga ortib boraveradi)
+# bank nomli funksiya yozing foydalanuvchi qancha miqdorda summa va necha yilga omonat qoyishini kiritadi dastur necha yil kiritilgan bolsa omonat miqdori qanchaga oshganligini hisoblashi kerak.
