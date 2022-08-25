@@ -53,3 +53,90 @@ arr = [1, 2, 3, 4, 5]
 # Userdan 3 ta son qabul qiling ularni to'g'ri joylashtirish orqali
 # sonlardan  eng katta qiymatni xosil qiling
 # 1,7,3 >> 731
+
+# 150 ~ 200 >> 20
+# a = []
+# for i in range(20):
+#     a.append(random.randint(150, 200))
+# print(a)
+# print(len(a))
+# arr = [1, 2, 3, 4, 5]
+# arr = [5, 4, 6, 8, 14, 56, 68, 61, 52, 66]
+
+# a = list(range(10))
+# # a = random.sample(range(150, 200), 20)
+# print(a[-1])
+# # a[start index:stop index]
+# print(a[1:5])
+# print("python"[2:])  # thon
+# print("python"[:2])  # py
+# print("tomato"[:-1]) #
+# s = "tomato"
+# a = s[:]
+# print(a)  # nuxsa olish
+# print(list("python"))  # ['p', 'y', 't', 'h', 'o', 'n']
+# a, b = "A", "B"
+# x, y, z = [1, 2, 3]
+# print(x, y, z)  # 1 2 3
+
+# l, *r = [1, 2, 3, [1, 2, 3, 6], 5, 6]
+# print(l, r)  # 1 [2, 3, 4, 5, 6]
+
+# print(r[::-1][2][3])  # 6
+
+# print(list(range(5, 15))[2:8][3]) # 10
+# arr = [1, 2, 3]
+# arr2 = [4, 5, 6]
+# print(arr + arr2)  # [1, 2, 3, 4, 5, 6]
+# arr.extend(arr2)  # massivni kengaytirish
+# print(arr)  # [1, 2, 3, 4, 5, 6]
+
+# l = list(range(3)) * 2
+# print("s" in "salom") # true
+# print(0 in l)  # True
+# print(0 not in l)  # False
+# print(l)
+
+# l = list(range(5, 10))
+# for i, elem in enumerate(l):
+#     print(f"index = {i}")
+#     print(f"element = {elem}")
+
+# arr = list(range(1, 11))
+# done_arr = []
+# for x in arr:
+#     done_arr.append(x ** 2)
+# print(done_arr)  # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# print([x**2 for x in list(range(1, 11))])
+# [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# a = []
+# for i in range(1, 11):
+#     if i % 2 == 1:
+#         a.append(i)
+# print(a)  # [1, 3, 5, 7, 9]
+
+# print([i for i in range(1, 11) if i % 2 == 1])  # [1, 3, 5, 7, 9]
+
+# i = int(input())
+# status = "salom" if i > 5 else "xayr"
+# print(status)
+
+# task 1
+# 10 bilan 35 orasida tasodifiy 5 ta sodan iborat massiv hosil qiling
+
+# task 2
+# task 1 ni list generator orqali qiling
+
+# task 3
+# massivda turli tipdagi ma'lumotlar bor agar ular soni massiv ichidan
+# bittadan ko'p bo'lsa ularni alohida massivlarga yozing
+# s = [True, 1, 0, False]
+# i = [1,0]
+# b = [False, True]
+
+# n = ""
+# for i in range(10):
+#     n += str(i)
+
+# print(n)
