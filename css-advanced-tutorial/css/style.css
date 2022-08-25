@@ -1,50 +1,73 @@
-* {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
 
-/* .box { */
-/* max-width: 600px;
-    height: 300px;
-    background-color: beige;
-    border: solid 1px red;
-    margin: 50px; */
-/* margin: 20px 50px; */
-/* margin: 20px 30px 100px 20px; */
-/* margin-top: 20px;
-    margin-bottom: 20px;
-
-    margin-left: 20px;
-    margin-right: 20px; */
-/* padding: 20px; */
-/* padding: 20px 30px; */
-/* padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px; */
-
-.box:nth-child(1) {
-    /* max-width: 800px;
-    min-width: 200px; */
+.box {
     width: 300px;
     height: 300px;
-    background-color: orange;
-    padding: 10px;
-    margin: 10px 30px;
-    /* border-radius: 50%; */
-    /* border-top-left-radius: 20px; */
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border: 10px solid black;
-    outline-style: solid;
-    outline-width: 10px;
-    outline-color: red;
+    margin: 10px;
+    background-color: #232323;
+    display: inline-block;
+    /* visibility: hidden; */
+    /* display: ; */
 }
 
-.box:nth-child(2) {
-    width: 400px;
-    min-height: 300px;
-    background-color: orange;
-    padding: 10px;
-    margin: 10px 30px;
+/* i {
+    color: orange;
+    font-size: 2em;
+    line-height: 150%;
+    letter-spacing: 20px;
+} */
+
+@font-face {
+    font-family: "Work Sans", sans-serif;
+    src: url(../fonts/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Impact", sans-serif;
+    src: url(../fonts/impact.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Alumni Sans Collegiate One', sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+h1 {
+    /* font-family: "Impact", sans-serif; */
+
+}
+
+section {
+    margin: 50px 0px;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 5%;
+}
+
+
+
+p {
+
+    /* text-decoration: none; */
+    /* text-transform: lowercase; */
+    text-align: center;
+    text-indent: 50px;
+    /* text-shadow: y da qochish x da qochish xiraligi rangi; */
+    /* text-shadow: 5px 5px 5px rgb(23, 23, 28); */
+    /* letter-spacing: 5px; */
+    /* word-spacing: 10px; */
+    /* line-height: 20px; */
+    /* font-size: 50px; */
+    /* 1em = 16px | 1.3em */
+    font-weight: normal;
+    /* font-family: "Work Sans", sans-serif; */
 }
