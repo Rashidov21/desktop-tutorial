@@ -1,3 +1,4 @@
+import math
 import random
 # ARRAY
 # l = list()  # bu faqat v1 ta argyument qabul qiladi
@@ -140,3 +141,17 @@ arr = [1, 2, 3, 4, 5]
 #     n += str(i)
 
 # print(n)
+# a-1
+# SyntaxError()
+# a-3
+# True
+# a-5
+# print(round(7.5) + float(11) * 2 + (int("5") + 1)) #36.0
+# a-8
+# print(max([2, 8, 6, 4])+(random.randint(5, 7) + 1) * 2)
+# a-13
+# print(1+True * 2 - False)
+# a-14
+# 10.0
+# a-15
+# [4]
