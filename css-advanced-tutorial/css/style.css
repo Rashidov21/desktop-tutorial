@@ -1,73 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
-
-.box {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    background-color: #232323;
-    display: inline-block;
-    /* visibility: hidden; */
-    /* display: ; */
-}
-
-/* i {
-    color: orange;
-    font-size: 2em;
-    line-height: 150%;
-    letter-spacing: 20px;
-} */
-
-@font-face {
-    font-family: "Work Sans", sans-serif;
-    src: url(../fonts/WorkSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Impact", sans-serif;
-    src: url(../fonts/impact.ttf);
-}
-
-@font-face {
-    font-family: 'Open Sans', sans-serif;
-    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
-}
-
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    /* font-family: 'Alumni Sans Collegiate One', sans-serif; */
-    /* font-family: Arial, Helvetica, sans-serif; */
-}
-
-h1 {
-    /* font-family: "Impact", sans-serif; */
-
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
 
 section {
-    margin: 50px 0px;
+    margin: 20px 0px;
 }
+
+
 
 .container {
-    max-width: 1400px;
-    padding: 0 5%;
+    padding: 0px 5%;
 }
 
+/* relative - bu tabiiy holat  */
+/* absolute = kodda qayerda korsatilgan bolsa shu yerda mustahkam  */
+/* fixed - ekran boyicha qatiiy joylashuv */
+/* sticky - scroll vaqti harkatga keladi  */
+/* static - top, left , right kabi qochishar ishlamaydi  */
+/* position: static; */
+/* bottom: 100px; */
 
+.box_1 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(165, 240, 15);
+    position: absolute;
+    /* z-index: 1; */
+}
 
-p {
+.box_2 {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    position: absolute;
+}
 
-    /* text-decoration: none; */
-    /* text-transform: lowercase; */
-    text-align: center;
-    text-indent: 50px;
-    /* text-shadow: y da qochish x da qochish xiraligi rangi; */
-    /* text-shadow: 5px 5px 5px rgb(23, 23, 28); */
-    /* letter-spacing: 5px; */
-    /* word-spacing: 10px; */
-    /* line-height: 20px; */
-    /* font-size: 50px; */
-    /* 1em = 16px | 1.3em */
-    font-weight: normal;
-    /* font-family: "Work Sans", sans-serif; */
+.box_3 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(53, 9, 109);
+    position: absolute;
+}
+
+.overflow {
+    width: 500px;
+    height: 800px;
+    background: rgb(18, 13, 107);
+    background: linear-gradient(38deg, rgba(18, 13, 107, 1) 0%, rgba(208, 149, 149, 1) 100%);
+    /* visible, auto , scroll, hidden  */
+    overflow: hidden;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 200px;
+    left: 100px;
 }
