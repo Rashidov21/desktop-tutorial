@@ -141,17 +141,52 @@ arr = [1, 2, 3, 4, 5]
 #     n += str(i)
 
 # print(n)
-# a-1
-# SyntaxError()
-# a-3
-# True
-# a-5
-# print(round(7.5) + float(11) * 2 + (int("5") + 1)) #36.0
-# a-8
-# print(max([2, 8, 6, 4])+(random.randint(5, 7) + 1) * 2)
-# a-13
-# print(1+True * 2 - False)
-# a-14
-# 10.0
-# a-15
-# [4]
+
+# l = [x for x in range(5)]
+# print(l)  # [0, 1, 2, 3, 4]
+# l = [x for x in range(5) if x > 2]
+# print(l)  # [3, 4]
+# arr = [
+#     [1, 2, 3],
+#     [6, 5, 4],
+#     [7, 8, 9]
+# ]
+# doned_arr_with_gen = [k for x in arr for k in x if k % 2 == 0]
+# print(doned_arr_with_gen)  # [2, 6, 4, 8]
+
+# doned_arr = []
+
+# for inner_arr in arr:
+#     for num in inner_arr:
+#         if num % 2 == 0:
+#             doned_arr.append(num)
+
+# print(doned_arr)  # [2, 6, 4, 8]
+
+# task 4
+# a = [1, 2, 4, 65, 8, 8, 6, 2, 6, 2, 2, 3]
+# b = [4, 5, 65, 7, 98, 5, 12, 2, 65, 89, 47]
+# ushbu massivlarda ishtirok etgan sonlardan iborat massiv hosil qiling
+# hosil bo'lgan massivda faqat sondan bitta bo'lishi kerak , ya'ni massiv elementlari
+# unikal
+# c = []
+# for i in a:
+#     if i not in c:
+#         if i not in b:
+#             c.append(i)
+# for x in b:
+#     if x not in c:
+#         if x not in a:
+#             c.append(x)
+# print(c)
+# task 5
+# while orqali userdan kamida 5 ta sana qabul qiling
+# agar sana haqiqatda to'g'ri sana bo'lsa uni massivga yozing aks holda davom eting
+# d = "12.36.2012" >> False
+# d = "12.30.2012" >> True
+# task 6
+#    * # *
+#    * # *
+#    # * #
+#    # * #
+
