@@ -196,3 +196,6 @@ arr = [1, 2, 3, 4, 5]
 #  Agar Tohir soat 22:00 da uhlashga yotsa demak uyg’onganida soat 07:00 bo’lishini ko’rsatishingiz kerak.
 # Kirish : ‘22:00’
 # Chiqish : ‘07:00’
+
+# task 8
+# 10 ta 2 xonalikdan katta butun son berilgan ulardan faqat 0 bilan tugaganlarini summasini hisoblang
