@@ -16,45 +16,77 @@ section {
     padding: 0px 5%;
 }
 
-/* relative - bu tabiiy holat  */
-/* absolute = kodda qayerda korsatilgan bolsa shu yerda mustahkam  */
-/* fixed - ekran boyicha qatiiy joylashuv */
-/* sticky - scroll vaqti harkatga keladi  */
-/* static - top, left , right kabi qochishar ishlamaydi  */
-/* position: static; */
-/* bottom: 100px; */
-
-.box_1 {
-    width: 300px;
-    height: 300px;
-    background-color: rgb(165, 240, 15);
+.circle {
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background-color: #d32b2b;
     position: absolute;
-    /* z-index: 1; */
+    left: 30%;
+    top: 5%;
+    overflow: hidden;
 }
 
-.box_2 {
-    width: 300px;
-    height: 300px;
-    background-color: red;
+.sun {
     position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    top: 42%;
+    left: 20%;
 }
 
-.box_3 {
-    width: 300px;
-    height: 300px;
-    background-color: rgb(53, 9, 109);
+.mount-1 {
+    width: 400px;
+    height: 800px;
     position: absolute;
+    background-color: #121212;
+    top: 45%;
+    left: -25%;
+    transform: rotate(45deg);
 }
 
-.overflow {
+.mount-2 {
+    width: 600px;
+    height: 1000px;
+    position: absolute;
+    background-color: #121212;
+    top: 35%;
+    left: -5%;
+    transform: rotate(45deg);
+}
+
+.mount-3 {
     width: 500px;
     height: 800px;
-    background: rgb(18, 13, 107);
-    background: linear-gradient(38deg, rgba(18, 13, 107, 1) 0%, rgba(208, 149, 149, 1) 100%);
-    /* visible, auto , scroll, hidden  */
-    overflow: hidden;
-    transform: rotate(45deg);
     position: absolute;
-    top: 200px;
-    left: 100px;
+    background-color: #121212;
+    top: 45%;
+    left: 39%;
+    transform: rotate(45deg);
+}
+
+img:nth-child(1) {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    top: 10%;
+    left: 20%;
+}
+
+img:nth-child(2) {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 15%;
+    left: 40%;
+}
+
+img:nth-child(3) {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    top: 5%;
+    left: 60%;
 }
