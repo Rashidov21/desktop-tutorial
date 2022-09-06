@@ -190,3 +190,9 @@ arr = [1, 2, 3, 4, 5]
 #    # * #
 #    # * #
 
+# task 7
+#  Odil har kuni muntazam 9 soatdan uxlashni reja qilgan. Siz uning uchun u soat nechida uxlashga
+#  yotsa roppa rosa 9 soatdan keyin soat nechi bo’lishini hisoblaydigan dastur yozishingiz kerak.
+#  Agar Tohir soat 22:00 da uhlashga yotsa demak uyg’onganida soat 07:00 bo’lishini ko’rsatishingiz kerak.
+# Kirish : ‘22:00’
+# Chiqish : ‘07:00’
