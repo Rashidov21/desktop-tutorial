@@ -16,13 +16,61 @@
 </head>
 
 <body>
+    <div class="container">
 
-    <h1>Hello world</h1>
-    <div class="d-block d-sm-none d-md-block d-lg-block p-3 mb-2 bg-primary text-white">.bg-primary</div>
-    <div class="d-none d-md-block d-lg-none p-5 m-5 bg-success text-white bg-opacity-10">test div</div>
-    <div class="d-inline border border-5 border-primary p-5 bg-danger">
-        border primary 5px
+        <div class="boxes d-flex flex-column flex-sm-row justify-content-md-around justify-content-lg-between">
+            <div class="box p-2 w-25 m-1 bg-dark text-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, saepe?
+            </div>
+            <div class="box p-2 w-25 m-1 bg-dark text-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, saepe?
+            </div>
+            <div class="box p-2 w-25 m-1 bg-dark text-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, saepe?
+            </div>
+        </div>
+
+
+        <br><br>
+        <br><br>
+        <div class="boxes p-2 d-flex flex-column flex-md-row justify-content-center border border-2 border-dark">
+            <div class="box p-3 m-2 bg-danger order-2 order-sm-2">
+                <span class="text-white">
+                    <img src="./img/bell.png" class="w-25 pr-1" alt="">
+                    <h4 class="py-2">Lorem ipsum dolor</h2>
+                        sit amet consectetur adipisicing elit. Reiciendis,
+                        explicabo.
+                </span>
+            </div>
+            <div class="box p-3 m-2 bg-success order-3 order-sm-1">
+                <img src="./img/bell.png" class="w-25 pr-1" alt="">
+                <span class="text-white">
+                    <h4 class="py-2">Lorem ipsum dolor</h2>
+                        sit amet consectetur adipisicing elit. Reiciendis,
+                        explicabo.
+                </span>
+            </div>
+            <div class="box p-3 m-2 bg-primary order-1 order-sm-3">
+                <img src="./img/bell.png" class="w-25 pr-1" alt="">
+                <span class="text-white">
+                    <h4 class="py-2">Lorem ipsum dolor</h2>
+                        sit amet consectetur adipisicing elit. Reiciendis,
+                        explicabo.
+                </span>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+            class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+            <path
+                d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
+        </svg>
+        <div class="text float-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, tempora.</div>
+        <div class="text float-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, tempora.
+        </div>
+        <div class="text float-start float-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+            tempora.</div>
     </div>
+
     <!-- <script src="./js/bootstrap.bundle.min.js "></script> -->
 </body>
 
