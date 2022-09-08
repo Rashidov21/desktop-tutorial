@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-family: "Poppins", sans-serif;
 }
 
@@ -16,77 +16,83 @@ section {
     padding: 0px 5%;
 }
 
-.circle {
-    width: 800px;
-    height: 800px;
-    border-radius: 50%;
-    background-color: #d32b2b;
-    position: absolute;
-    left: 30%;
-    top: 5%;
-    overflow: hidden;
+.left,
+.right {
+    width: 100px;
+    height: 50px;
+    background-color: #232323;
+    color: whitesmoke;
 }
 
-.sun {
-    position: absolute;
+.right {
+    float: right;
+}
+
+.right:hover {
+    float: left;
+    background-color: coral;
+}
+
+li:first-child {
+    background-color: red;
+}
+
+li:nth-child(4) {
+    background-color: blue;
+}
+
+li:last-child {
+    background-color: yellow;
+}
+
+.child:nth-child(1) {
     width: 100px;
     height: 100px;
-    background-color: yellow;
-    border-radius: 50%;
-    top: 42%;
-    left: 20%;
+    background-color: #232323;
 }
 
-.mount-1 {
-    width: 400px;
-    height: 800px;
-    position: absolute;
-    background-color: #121212;
-    top: 45%;
-    left: -25%;
-    transform: rotate(45deg);
-}
-
-.mount-2 {
-    width: 600px;
-    height: 1000px;
-    position: absolute;
-    background-color: #121212;
-    top: 35%;
-    left: -5%;
-    transform: rotate(45deg);
-}
-
-.mount-3 {
-    width: 500px;
-    height: 800px;
-    position: absolute;
-    background-color: #121212;
-    top: 45%;
-    left: 39%;
-    transform: rotate(45deg);
-}
-
-img:nth-child(1) {
-    position: absolute;
-    width: 80px;
-    height: auto;
-    top: 10%;
-    left: 20%;
-}
-
-img:nth-child(2) {
-    position: absolute;
+.child:nth-child(3) {
     width: 100px;
-    height: auto;
-    top: 15%;
-    left: 40%;
+    height: 200px;
+    background-color: #ad6161;
 }
 
-img:nth-child(3) {
-    position: absolute;
-    width: 120px;
+.img {
+    clear: right;
+    /* float: left; */
+    width: 200px;
+}
+
+.container .left span {
+    font-family: 'Times New Roman', serif;
+}
+
+main>div>p>u {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Times New Roman', serif;
+}
+
+.numbers {
+    width: 600px;
     height: auto;
-    top: 5%;
-    left: 60%;
+}
+
+.nums {
+    width: 150px;
+    height: 100px;
+    background-color: green;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.nums:nth-child(2),
+.nums:nth-child(5) {
+    background-color: red;
 }
