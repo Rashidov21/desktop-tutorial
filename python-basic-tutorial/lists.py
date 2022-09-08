@@ -122,3 +122,74 @@ arr = [1, 2, 3, 4, 5]
 # i = int(input())
 # status = "salom" if i > 5 else "xayr"
 # print(status)
+
+# s = "salomov salom,salom palomov"  # >> salomov, salom palomov
+
+# # for fullname in s.split(","):
+# all_items = [x for k in s.split(",") for x in k.split(" ")]
+
+# print(list(set(all_items)))  # ['salom', 'salomov', 'palomov']
+
+
+# arr = list(range(1, 11))
+# arr.append(10)
+# arr.pop(0)
+# print(len(arr))
+# print(arr.index(7))  # 6
+# print(arr.copy())  # nusxa olish
+# print(arr.count(1))  # 1
+# arr.reverse()  # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+# arr.remove(7)
+# for i, k in enumerate(arr):
+#     print(i, k)
+# def upteen(x):
+#     return x + 10
+
+
+# arr = list(range(1, 11))
+# print(list(map(upteen, arr)))  # [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+# print(map(upteen, arr)) # <map object at 0x000001DE168128E0>
+# print(arr)
+
+
+# def plus_all(num1, num2, num3):
+#     return num1 + num2 + num3
+
+
+# a = [1, 2, 3]
+# b = [4, 5, 6]
+# c = [7, 8, 9]
+# print(list(map(plus_all, a, b, c)))  # [12, 15, 18]
+
+# names = ["john", "mike", 'sara']
+# salary = [120, 150, 110]
+# print(zip(names, salary))  # <zip object at 0x000001A5F6E716C0>
+# # [('john', 120), ('mike', 150), ('sara', 110)]
+# print(list(zip(names, salary)))
+
+# for name, salary in zip(names, salary):
+#     print(f"name : {name} - salary - {salary}")
+
+# a = 'abc'
+# b = [1, 2, 3]
+# print(list(zip(a, b)))  # [('a', 1), ('b', 2), ('c', 3)]
+
+# arr = [0, None, 1, "python"]
+# print(filter(None, arr))  # <filter object at 0x000001D1F78528E0>
+# print(list(filter(None, arr)))  # [1, 'python']
+
+
+# def get_upteen(x):
+#     return x >= 10
+
+
+# nums = [4, 5, 7, 9, 2, 2, 65, 4, 8, 6, 9, 5, 53, 3, 54, 65, 6]
+# print(list(filter(get_upteen, nums)))  # [65, 53, 54, 65]
+
+
+# def func_b(text):
+#     if "b" in text.lower():
+#         return text
+
+
+# print(list(filter(func_b, input().split(" "))))
