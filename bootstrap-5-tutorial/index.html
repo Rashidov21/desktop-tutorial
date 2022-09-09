@@ -17,60 +17,40 @@
 
 <body>
     <div class="container">
-
-        <div class="boxes d-flex flex-column flex-sm-row justify-content-md-around justify-content-lg-between">
-            <div class="box p-2 w-25 m-1 bg-dark text-primary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, saepe?
-            </div>
-            <div class="box p-2 w-25 m-1 bg-dark text-primary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, saepe?
-            </div>
-            <div class="box p-2 w-25 m-1 bg-dark text-primary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, saepe?
-            </div>
+        <div class="position-relative bg-light shadow shadow-sm">
+            <div class="position-absolute top-50 start-50 p-2 m-1 bg-success">block</div>
+            <div class="position-absolute p-2 m-1 top-0 start-100 bg-primary">block</div>
+            <div class="position-absolute p-2 m-1 end-50 bg-danger">block</div>
+            <div class="position-absolute p-2 m-1 bg-warning">block</div>
         </div>
-
-
-        <br><br>
-        <br><br>
-        <div class="boxes p-2 d-flex flex-column flex-md-row justify-content-center border border-2 border-dark">
-            <div class="box p-3 m-2 bg-danger order-2 order-sm-2">
-                <span class="text-white">
-                    <img src="./img/bell.png" class="w-25 pr-1" alt="">
-                    <h4 class="py-2">Lorem ipsum dolor</h2>
-                        sit amet consectetur adipisicing elit. Reiciendis,
-                        explicabo.
-                </span>
-            </div>
-            <div class="box p-3 m-2 bg-success order-3 order-sm-1">
-                <img src="./img/bell.png" class="w-25 pr-1" alt="">
-                <span class="text-white">
-                    <h4 class="py-2">Lorem ipsum dolor</h2>
-                        sit amet consectetur adipisicing elit. Reiciendis,
-                        explicabo.
-                </span>
-            </div>
-            <div class="box p-3 m-2 bg-primary order-1 order-sm-3">
-                <img src="./img/bell.png" class="w-25 pr-1" alt="">
-                <span class="text-white">
-                    <h4 class="py-2">Lorem ipsum dolor</h2>
-                        sit amet consectetur adipisicing elit. Reiciendis,
-                        explicabo.
-                </span>
-            </div>
+        <br>
+        <br>
+        <br>
+        <div class="box p-3 m-3 bg-body shadow rounded-3 text-center text-md-end text-lg-start">
+            element with shadow
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-            class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
-            <path
-                d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
-        </svg>
-        <div class="text float-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, tempora.</div>
-        <div class="text float-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, tempora.
+        <div class="box p-3 m-3 bg-light shadow shadow-sm ">
+            element with shadow-sm
         </div>
-        <div class="text float-start float-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-            tempora.</div>
+        <div class="box p-3 m-3 bg-light shadow shadow-lg ">
+            element with shadow-lg
+        </div>
     </div>
+    <div class="container">
 
+        <div class="profile-card bg-light border border-1 rounded rounded-2 p-3 w-25">
+            <div class="text-center">
+                <img src="./img/bell.png" class="mb-1" width="100" height="auto">
+                <br>
+                <span class="h4 fw-bold mb-1">John Doe</span>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, iusto.</p>
+                <a href="#" class="btn btn-outline-success">
+                    Show profile
+                </a>
+            </div>
+        </div>
+
+    </div>
     <!-- <script src="./js/bootstrap.bundle.min.js "></script> -->
 </body>
 
