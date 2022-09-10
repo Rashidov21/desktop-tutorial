@@ -74,3 +74,8 @@
 
 # task 8
 # 10 ta 2 xonalikdan katta butun son berilgan ulardan faqat 0 bilan tugaganlarini summasini hisoblang
+start = 1
+stop = 11
+step = 2
+for i in range(start, stop, step):
+    print(i, end=' - ')
