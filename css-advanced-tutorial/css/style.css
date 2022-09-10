@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* text-decoration: none; */
+    text-decoration: none;
+    list-style: none;
     font-family: "Poppins", sans-serif;
 }
 
@@ -16,83 +17,67 @@ section {
     padding: 0px 5%;
 }
 
-.left,
-.right {
-    width: 100px;
-    height: 50px;
-    background-color: #232323;
-    color: whitesmoke;
+
+/* 
+.text::selection {
+    background-color: rgb(214, 129, 18);
+    color: rgb(22, 41, 22);
 }
 
-.right {
-    float: right;
+form p input[type='checkbox']:checked {
+    transform: rotate(45deg);
 }
 
-.right:hover {
-    float: left;
-    background-color: coral;
-}
-
-li:first-child {
-    background-color: red;
-}
-
-li:nth-child(4) {
-    background-color: blue;
-}
-
-li:last-child {
+p::first-line {
     background-color: yellow;
 }
 
-.child:nth-child(1) {
-    width: 100px;
-    height: 100px;
-    background-color: #232323;
+p::first-letter {
+    background-color: rgb(80, 80, 6);
 }
 
-.child:nth-child(3) {
-    width: 100px;
-    height: 200px;
-    background-color: #ad6161;
+p::before {
+    content: url(../img/img.jpg);
+
 }
 
-.img {
-    clear: right;
-    /* float: left; */
-    width: 200px;
+p::after {
+    content: url(../img/cloud.png);
+
+} */
+
+header {
+    width: 100%;
 }
 
-.container .left span {
-    font-family: 'Times New Roman', serif;
+header nav {
+    width: 90%;
+    margin: 0 5%;
+    height: 80px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: rgb(142, 146, 241);
 }
 
-main>div>p>u {
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Times New Roman', serif;
-}
-
-.numbers {
-    width: 600px;
-    height: auto;
-}
-
-.nums {
-    width: 150px;
-    height: 100px;
-    background-color: green;
-    margin: 10px;
-    display: inline-block;
-    text-align: center;
+nav .brand {
     font-size: 1.5em;
+    color: white;
+    float: left;
+    padding: 10px 30px;
 }
 
-.nums:nth-child(2),
-.nums:nth-child(5) {
-    background-color: red;
+.navbar {
+    float: right;
+    margin: 10px 100px;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+.navbar li a {
+    font-size: 1.1em;
+    color: white;
 }
