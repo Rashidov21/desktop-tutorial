@@ -74,3 +74,10 @@
 
 # task 8
 # 10 ta 2 xonalikdan katta butun son berilgan ulardan faqat 0 bilan tugaganlarini summasini hisoblang
+
+# task 9
+# m - massivida turli qiymatlarda elementlar mavjud siz map orqali
+# agar element butun yoki float son bo'lsa uni alohida massivga yozishingiz
+# kerak
+# input_arr = ["1.0", 3.6, 1, "sjdh", True, None, [1, 2]]
+# output_arr = [1.0, 3.6, 1, 1, 2]

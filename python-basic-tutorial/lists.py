@@ -193,3 +193,58 @@ arr = [1, 2, 3, 4, 5]
 
 
 # print(list(filter(func_b, input().split(" "))))
+# arr = ["salom", "xayr", "salom"]
+# arr2 = [2, 3, 4]
+# arr.extend(arr2)
+# print(arr)
+
+# arr.insert(0, "0")
+# print(arr)
+
+# arr.pop(0)
+# arr.remove(1)
+# del arr[1]
+# print(arr)
+# print(arr.count("salom"))  # 2
+# print(arr.index('salom'))  # 0
+# arr.clear()
+# print(arr)  # []
+
+# print(any([0, 1, 0]))  # True
+# print(all([0, 1, 0]))  # False
+# arr = [2, 4, 5, 6, 7, 3, 1, 5, 9, 11]
+# arr.reverse()
+# print(arr.index(2))
+# random.shuffle(arr)
+# print(arr.index(2))
+# print(random.choice(arr))
+# arr.sort(reverse=True)
+
+# arr.sort(reverse=True)
+# print(sorted(arr))  # [1, 2, 3, 4, 5, 5, 6, 7, 9, 11]
+# print(sorted("AdKkBab"))  # ['A', 'B', 'K', 'a', 'b', 'd', 'k']
+# # ['A', 'a', 'B', 'b', 'd', 'K', 'k']
+# print(sorted("AdKkBab", key=str.lower))
+# print(arr)  # [1, 2, 3, 4, 5, 5, 6, 7, 9]
+# arr = [2, 4, 5, 6, 7, 3, 1, 5, 9, 11]
+# for i in sorted(arr):
+#     print(i)
+# a = ["a", "b", "c"]
+# print("".join(a))  # abc
+
+strings = ["kim", "bo", 'kyong', 'a', 'b', 'i']
+numbers = [1, 23, 4, 56, 89, 4, 0, 3]
+
+
+def check_letters(i):
+    return len(i) >= 2
+
+
+def check_nums(x):
+    return x > 10
+
+
+s = filter(check_letters, strings)
+n = filter(check_nums, numbers)
+final_array = list(zip(s, n))
+print(final_array)  # [('kim', 23), ('bo', 56), ('kyong', 89)]
