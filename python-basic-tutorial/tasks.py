@@ -81,3 +81,14 @@
 # kerak
 # input_arr = ["1.0", 3.6, 1, "sjdh", True, None, [1, 2]]
 # output_arr = [1.0, 3.6, 1, 1, 2]
+# task 10
+# User kiritgan qator ichidan raqamlarni ajratib oladigan function yozing
+
+# task 11
+# User kiritgan qatorda nechi marta “A” harfi ishtirok etganini hisoblang , agar “A” harfi qator boshidan boshlab 3 martadan kop ishtirok etsa u xolda barcha qolgan “A” harflarini “E” harfiga o’zgartiring
+
+# task 12
+# 100 marta takrorlanadigan kodda nechi marta foydalanuvchi kiritgan son duch kelganini toping; (kod 100 marta takrorlanadi user son kiritgan boladi  0 <  userNum < 100 ; random shaklida olingan takrorklanishdagi son user ni soniga togri kelsa shart bajarilgan demak; nechi marta userni soni togri kelganini chiqaring)
+
+# task 13
+# Aviakompaniya yolovchilar chipta pularini hisblay olmay qolishdi ularga yordam berin. Bir kunda 3 ta reys amalga oshirishadi har bir reysda minimum 60 ta maximum 120 ta yolovchi tashiladi, chipta narxi 120 min so’m , aksariyat chiptalar bir hil narxda yani ekonom class uchundir. Faqat umumiy yolovchilarni 3% gina biznes klassda uchishadi va ular uchun chipta narxi 380 ming som. Siz bir kunda Aviakompaniya qancha chipta sotganini va ulardan nechtasi ekanom class va nechtasi biznes class ekanini hisoblang summalarni chiqaring.
