@@ -12,45 +12,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>bootstrap 5</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="position-relative bg-light shadow shadow-sm">
-            <div class="position-absolute top-50 start-50 p-2 m-1 bg-success">block</div>
-            <div class="position-absolute p-2 m-1 top-0 start-100 bg-primary">block</div>
-            <div class="position-absolute p-2 m-1 end-50 bg-danger">block</div>
-            <div class="position-absolute p-2 m-1 bg-warning">block</div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="box p-3 m-3 bg-body shadow rounded-3 text-center text-md-end text-lg-start">
-            element with shadow
-        </div>
-        <div class="box p-3 m-3 bg-light shadow shadow-sm ">
-            element with shadow-sm
-        </div>
-        <div class="box p-3 m-3 bg-light shadow shadow-lg ">
-            element with shadow-lg
-        </div>
-    </div>
-    <div class="container">
-
-        <div class="profile-card bg-light border border-1 rounded rounded-2 p-3 w-25">
-            <div class="text-center">
-                <img src="./img/bell.png" class="mb-1" width="100" height="auto">
-                <br>
-                <span class="h4 fw-bold mb-1">John Doe</span>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, iusto.</p>
-                <a href="#" class="btn btn-outline-success">
-                    Show profile
-                </a>
+    <header class="w-100 bg-dark py-2">
+        <nav class="d-flex justify-content-between px-5">
+            <a href="#" class="logo pt-2 h2 text-decoration-none text-light fw-bold">
+                Brand
+            </a>
+            <ul class="links mt-2 d-none d-sm-block">
+                <li class="d-inline-block mx-2">
+                    <a href="#" class="text-decoration-none fw-bold fs-5 text-light">Home</a>
+                </li>
+                <li class="d-inline-block mx-2">
+                    <a href="#" class="text-decoration-none fw-bold fs-5 text-light">About</a>
+                </li>
+                <li class="d-inline-block mx-2">
+                    <a href="#" class="text-decoration-none fw-bold fs-5 text-light">Contact</a>
+                </li>
+            </ul>
+            <a href="#" class="menu d-block d-sm-none fs-4 text-light pt-2">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card p-2 bg-primary">
+                    <p class="text-white">
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card p-2 bg-primary">
+                    <p class="text-white">
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
             </div>
         </div>
-
     </div>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="./img/bell.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="./img/bell.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="./img/bell.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="./img/bell.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- <script src="./js/bootstrap.bundle.min.js "></script> -->
 </body>
 
