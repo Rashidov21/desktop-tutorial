@@ -98,7 +98,7 @@
 # print(tuple(t))
 
 # task 14
-a = [1, 2, 4, 9, 3, 12, 4, 5, 74, 5, 21, 0, 3, 21, 5, 6, 21, 15, 5, 32, 3]
-b = [2, 4, 5, 6, 4, 2, 3, 12, 10, 3, 21, 5, 3, 1, 1, 52, 3, 5, 4, 85, 69]
+# a = [1, 2, 4, 9, 3, 12, 4, 5, 74, 5, 21, 0, 3, 21, 5, 6, 21, 15, 5, 32, 3]
+# b = [2, 4, 5, 6, 4, 2, 3, 12, 10, 3, 21, 5, 3, 1, 1, 52, 3, 5, 4, 85, 69]
 # Shu ikkala massivdan user kiritgan sondan kichiklarini olib alohida massiv qiluvchi
 # funksiya yozing
