@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-family: "Poppins", sans-serif;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
 }
 
 section {
@@ -40,10 +40,64 @@ section {
     transform-origin: center;
     transform-style: preserve-3d;
     transform: rotate3d(1, 0, 1, 190deg);
+    background-color: #efef0a;
     /* transform: translate(-50px, 60px) rotate(10deg) scaleX(1.2) skew(10deg); */
     /* transform: rotate3d(x, y, z, 180deg); */
     /* transform: rotate3d(1, 0, 1, 80deg) translate3d(100px, 50px, 100px) scale3d(1, 1.2, 1.5); */
     /* transform: rotateX(80deg) rotateY(0) rotateZ(80deg); */
+    /* transition-property: transform;
+    transition-delay: 1s;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out; */
+    /* transition: all 3s ease-in-out; */
 
 
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    margin-top: 100px;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.toRight {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    animation: toRight 6s ease-in-out infinite;
+}
+
+@keyframes toRight {
+    0% {
+        transform: translateX(0px);
+    }
+
+    30% {
+        transform: translateX(300px);
+        background-color: yellow;
+    }
+
+    70% {
+        transform: translateX(500px);
+        background-color: blue;
+    }
+
+    100% {
+        transform: translateX(800px);
+    }
 }
