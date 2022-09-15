@@ -96,3 +96,9 @@
 
 # t = (x for x in range(10) if x % 2 == 0)
 # print(tuple(t))
+
+# task 14
+import random
+a = [1, 2, 4, 9, 3, 12, 4, 5, 74, 5, 21, 0, 3, 21, 5, 6, 21, 15, 5, 32, 3]
+b = random.shuffle(a)
+print(b)
