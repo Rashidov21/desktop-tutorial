@@ -93,3 +93,5 @@ my_dict = {
 # 11-fromkeys()
 
 # print({}.fromkeys(["a", "b"], True))  # {'a': True, 'b': True}
+
+

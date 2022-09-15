@@ -92,3 +92,7 @@
 
 # task 13
 # Aviakompaniya yolovchilar chipta pularini hisblay olmay qolishdi ularga yordam berin. Bir kunda 3 ta reys amalga oshirishadi har bir reysda minimum 60 ta maximum 120 ta yolovchi tashiladi, chipta narxi 120 min so’m , aksariyat chiptalar bir hil narxda yani ekonom class uchundir. Faqat umumiy yolovchilarni 3% gina biznes klassda uchishadi va ular uchun chipta narxi 380 ming som. Siz bir kunda Aviakompaniya qancha chipta sotganini va ulardan nechtasi ekanom class va nechtasi biznes class ekanini hisoblang summalarni chiqaring.
+# string methods
+
+# t = (x for x in range(10) if x % 2 == 0)
+# print(tuple(t))
