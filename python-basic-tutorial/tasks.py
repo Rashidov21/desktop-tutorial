@@ -103,3 +103,4 @@
 # Shu ikkala massivdan user kiritgan sondan kichiklarini olib alohida massiv qiluvchi
 # funksiya yozing
 # task 15
+# task 16
