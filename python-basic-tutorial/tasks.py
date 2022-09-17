@@ -102,3 +102,4 @@
 # b = [2, 4, 5, 6, 4, 2, 3, 12, 10, 3, 21, 5, 3, 1, 1, 52, 3, 5, 4, 85, 69]
 # Shu ikkala massivdan user kiritgan sondan kichiklarini olib alohida massiv qiluvchi
 # funksiya yozing
+# task 15
