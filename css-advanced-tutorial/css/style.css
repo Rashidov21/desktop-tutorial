@@ -8,10 +8,83 @@
     /* transition: all 0.5s; */
 }
 
+body {
+    background-color: #BBDDE6;
+}
+
 section {
     margin: 20px 0px;
 }
 
 .container {
     padding: 0px 5%;
+}
+
+.card-outer {
+    max-width: 500px;
+
+}
+
+.card-sidebar {
+    /* position: absolute; */
+    margin-left: 350px;
+    background-color: gray;
+    max-width: 150px;
+    height: 373px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+
+.card-sidebar .block {
+    width: 100%;
+    padding: 20px 10px;
+    border: solid 2px green;
+}
+
+.card {
+    max-width: 350px;
+    background-color: #FEFEFE;
+    padding: 0px 5px;
+    position: absolute;
+    margin-left: 0;
+}
+
+.card .profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.card .social-links .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 300px;
+}
+
+.card .social-links .links li a {
+    font-size: 1.3em;
+}
+
+.mountain-card {
+    max-width: 400px;
+    background-color: white;
+    float: left;
+    margin: 30px 15px;
+}
+
+.mountain-card .text {
+    padding: 15px 10px;
+}
+
+.mountain-card img {
+    width: 100%;
+}
+
+.mountain-card a {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 5px;
 }
