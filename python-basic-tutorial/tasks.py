@@ -102,8 +102,28 @@
 # b = [2, 4, 5, 6, 4, 2, 3, 12, 10, 3, 21, 5, 3, 1, 1, 52, 3, 5, 4, 85, 69]
 # Shu ikkala massivdan user kiritgan sondan kichiklarini olib alohida massiv qiluvchi
 # funksiya yozing
+
 # task 15
+# John = 20
+# Miguel = 12
+# Mike = 30
+# Sara = 20
+# David = 5
+# Xuddi shu korinishda matnlarni personal.txt fayliga yozuvchi funksiya yozing va get_salary  nomli funksiyada ushbu fayldan alohida alohida qatorlarni olib umumiy summa
+# nechiga teng ekanini hisoblang
+# s = ['John = 20', 'Mike = 12']
+# n = 0
+# for i in s:
+#     n += int(i.split(" ")[2])
+# print(n)
+
 # task 16
+# numbers.txt fayliga 0 bilan 999 orasida tasodify 100 ta sonni yangi qatordan yozing
+# ular ichida nechida 500 dan kichik son bor ekanini aniqlang
+
 # task17
+# post.html faylini hosil qiling unga oddiy html fayldan kodlar yozing ushbu fayl ichida
+# necha maratoba h1 dan h6 gacha bo'lgan teglar ishtirok etgan aniqlang
+
 # task18
 # task19
