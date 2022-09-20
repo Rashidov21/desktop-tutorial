@@ -74,21 +74,21 @@ locale.setlocale(locale.LC_ALL, "UZ_uz")
 # print(now - b_day)  # 9819 days, 3:49:37.614627
 
 # calendar
-c = calendar.LocaleTextCalendar(0, "UZ_uz")
-print(c.formatyear(2022))
+# c = calendar.LocaleTextCalendar(0, "UZ_uz")
+# print(c.formatyear(2022))
 
-html_calendar = calendar.LocaleHTMLCalendar(0, "UZ_uz")
-# print(html_calendar.formatyear(2022))
+# html_calendar = calendar.LocaleHTMLCalendar(0, "UZ_uz")
+# # print(html_calendar.formatyear(2022))
 
-with open("calendar.html", "a", encoding="utf-8") as file:
-    html = f"""
-        <html>
-            <head>
-                <title>Calendar 2022</title>
-            </head>
-            <body>
-                {str(html_calendar.formatyear(2022))}
-            </body>
-        </html>
-    """
-    file.write(html)
+# with open("calendar.html", "a", encoding="utf-8") as file:
+#     html = f"""
+#         <html>
+#             <head>
+#                 <title>Calendar 2022</title>
+#             </head>
+#             <body>
+#                 {str(html_calendar.formatyear(2022))}
+#             </body>
+#         </html>
+#     """
+#     file.write(html)
