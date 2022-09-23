@@ -1,4 +1,148 @@
-.text{}
-.font{}
-.background{}
-.
+* {
+    box-sizing: border-box;
+}
+
+.text {
+    text-align: center;
+    text-decoration: none;
+    text-transform: lowercase;
+    text-indent: 80px;
+    text-overflow: ellipsis;
+    line-height: 30px;
+    letter-spacing: 10px;
+    word-spacing: 5px;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+.font {
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.background {
+    background-color: #a32f23;
+    /* background-image: url(image url); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-blend-mode: darken;
+}
+
+.border {
+    border-style: dotted;
+    border-color: #a32f23;
+    border-width: 5px;
+    border-radius: 10px;
+    /* border: solid 5px red; */
+}
+
+.spacing {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 100px;
+    /* height: 200px; */
+    /* min-width: 200px;
+    max-width: 500px; */
+}
+
+.position {
+    position: relative;
+    top: 0;
+}
+
+.z-index-overflow {
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* .pseudo-classes:hover{} 
+.pseudo-classes:link{} 
+.pseudo-classes:active{} 
+.pseudo-classes:visited{} 
+.input:focus{}
+.input:checked{}
+
+.pseudo-elements::after{}
+.pseudo-elements::before{}
+.pseudo-elements::marker{}
+.pseudo-elements::selection{}
+::first-letter
+::first-line */
+
+.gradient {
+    background: linear-gradient(to left, red, yellow);
+    /* background: radial-gradient(); */
+}
+
+.shadow {
+    text-shadow: 10px 10px 30px red;
+    box-shadow: 10px 10px 30px red;
+}
+
+.transform2d {
+    transform: rotate(10deg) translate(200px, 100px) scale(1.2), skew(30deg);
+}
+
+.transform3d {
+    /* to parent elem */
+    /* perspective: 2000px; */
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotate3d(1, 0, 1, 100deg) translateX(100px) translateZ(30px) scaleX(1.2) scaleZ(1.5);
+}
+
+.transition {
+    transition-property: width;
+    transition-delay: 5s;
+    transition-duration: 10s;
+    transition-timing-function: linear;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.animation {
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+    animation-delay: 10ms;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    /* animation: spin 10s infinite alternate ease-in-out; */
+
+}
+
+/* @keyframes spin {
+    from{
+
+    }
+    to{
+
+    }
+} */
+@keyframes spin {
+    0% {}
+
+    50% {}
+
+    100% {}
+}
+
+/* body {
+    background-color: aqua;
+} */
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media screen and (min-width:600px) {
+    body {
+        background-color: rgb(123, 224, 51);
+    }
+}
