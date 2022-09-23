@@ -146,3 +146,16 @@
         background-color: rgb(123, 224, 51);
     }
 } */
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: space-around;
+    gap: 10px;
+}
+
+.flex-item {
+    order: 1;
+}
