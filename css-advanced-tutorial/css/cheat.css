@@ -135,7 +135,7 @@
     background-color: aqua;
 } */
 
-@media screen and (max-width:600px) {
+/* @media screen and (max-width:600px) {
     body {
         background-color: red;
     }
@@ -145,4 +145,4 @@
     body {
         background-color: rgb(123, 224, 51);
     }
-}
+} */
