@@ -1,4 +1,4 @@
-function openCloseMenu(){
-    let mobileBlock = document.querySelector(".mobile-menu")
-    mobileBlock.classList.toggle("active")
+function openCloseMenu() {
+    document.querySelector(".sidebar-menu")
+    .classList.toggle("active")
 }

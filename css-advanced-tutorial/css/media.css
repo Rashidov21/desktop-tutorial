@@ -1,0 +1,13 @@
+@media screen and (max-width:800px) {
+    header nav ul {
+        display: none;
+    }
+
+    .sidebar-menu {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+}

@@ -8,6 +8,11 @@
     transition: all 0.5s;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 section {
     margin: 30px 0px;
 }
@@ -16,71 +21,56 @@ section {
     padding: 0px 3%;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: repeat(200px, 100px);
-    /* grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 100px); */
-    gap: 10px;
-}
-
-.col {
-    background-color: orange;
-    text-align: center;
-}
-
-/* .item-4 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-} */
-.grid-2 {
-    display: grid;
-    grid-template-columns: repeat(1fr, 4);
-    grid-template-rows: repeat(auto, 3);
-    gap: 5px;
-    grid-template-areas:
-        "header header header header"
-        "sidebar main main main"
-        "footer footer footer footer";
-}
-
-[class^="item-"] {
+nav {
+    width: 100%;
     background-color: orange;
     padding: 20px;
+    height: 80px;
 }
 
-.item-a {
-    grid-area: header;
+nav ul li {
+    display: inline-block;
+    margin: 0px 30px;
 }
 
-.item-b {
-    grid-area: main;
+.logo {
+    float: left;
+    margin-right: 100px;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
-.item-c {
-    grid-area: sidebar;
+nav ul li a {
+    font-size: 1.2em;
 }
 
-.item-d {
-    grid-area: footer;
+.menu {
+    display: none;
+    font-size: 1.5em;
+    float: right;
+    margin-right: 50px;
 }
 
-@media screen and (max-width:540px) {
-    .grid-2 {
-        display: grid;
-        grid-template-columns: repeat(1fr, 4);
-        grid-template-rows: repeat(auto, 3);
-        gap: 5px;
-        grid-template-areas:
-            "header header header header"
-            "main main main main"
-            "footer footer footer footer";
-    }
+.menu a {
+    color: black;
+}
 
-    .item-c {
-        display: none;
-    }
+.sidebar-menu {
+    width: 250px;
+    height: 100vh;
+    padding: 10px 20px;
+    background-color: orange;
+    position: absolute;
+    right: -300px;
+    display: none;
+}
+
+.sidebar-menu ul li {
+    font-size: 1.2em;
+    margin: 20px 10px;
+}
+
+.active {
+    right: 0;
 }
