@@ -21,58 +21,72 @@ section {
     padding: 0px 3%;
 }
 
-nav {
+.flex-container {
+    border: solid 1px red;
     width: 100%;
+    height: 600px;
+    display: flex;
+    /* agar flex-box uchun joy yetmasa pasdan ko'payishi uchun */
+    /* flex-wrap: wrap; */
+    /* flex-box larning joylashish yo'nalishi */
+    flex-direction: row;
+    /*x*/
+    justify-content: flex-start;
+    /*y*/
+    align-items: flex-start;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
     background-color: orange;
-    padding: 20px;
-    height: 80px;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0px 30px;
-}
-
-.logo {
-    float: left;
-    margin-right: 100px;
+    margin: 10px;
+    text-align: center;
     font-size: 1.5em;
-    font-weight: bold;
-    letter-spacing: 3px;
+    padding: 60px 0px;
 }
 
-nav ul li a {
+li:nth-child(odd) {
     font-size: 1.2em;
+    background-color: red;
 }
 
-.menu {
-    display: none;
-    font-size: 1.5em;
-    float: right;
-    margin-right: 50px;
+/* flex-shrink - (1,0) flex-boxni torayish yoki toraymasligini boshqarish */
+/* flex-grow - (0>=) - blockni qancha joyga cho'zilishini boshqarish */
+/* order - (0>=) - blockni flex container ichida joylashish tartibi o'zgartirish uchun */
+/* .box:nth-child(1) {
+    order: 3;
+    flex-grow: 1;
+    flex-shrink: 1;
+} */
+
+/* .box:nth-child(2) {
+    order: 2;
+    flex-grow: 1;
 }
 
-.menu a {
-    color: black;
+.box:nth-child(3) {
+    order: 1;
+    flex-grow: 2;
+} */
+
+.posts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.sidebar-menu {
-    width: 250px;
-    height: 100vh;
-    padding: 10px 20px;
+.post .post_bg {
+    position: relative;
+    width: 100%;
+    height: 200px;
     background-color: orange;
-    position: absolute;
-    right: -300px;
-    display: none;
 }
 
-.sidebar-menu ul li {
-    font-size: 1.2em;
-    margin: 20px 10px;
+.post {
+    max-width: 450px;
+    background-color: rgba(23, 23, 23, 0.5);
+    padding: 10px 15px;
+    margin: 15px;
 }
-
-.active {
-    right: 0;
-}
-
-/* not changes */
