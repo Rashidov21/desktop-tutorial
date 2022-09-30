@@ -75,6 +75,11 @@ import pprint
 # todos table siga yozing
 
 
-url = "https://jsonplaceholder.typicode.com/users"
-page = requests.get(url)
-print(page.status_code)
+# url = "https://jsonplaceholder.typicode.com/users"
+# page = requests.get(url)
+# # print(page.status_code)
+# data = json.loads(page.content)
+# # pprint.pprint(data[0]) # bitta user obyekti dict ko'rinishida
+# # print(len(data))  # 10
+# for user in data[0].items():
+#     print(user)
