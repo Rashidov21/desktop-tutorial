@@ -5,7 +5,7 @@ import requests
 import random
 import telepot
 from bs4 import BeautifulSoup as bs
-from .config import TOKEN, me
+from config import TOKEN, me
 
 bot = telepot.Bot(TOKEN)
 
@@ -22,14 +22,5 @@ soup = bs(page.content, "html.parser")
 
 top_posts = soup.find("span", id="result_list")
 
-for a in top_posts.findAll("a"):
-    print(a.text)
-    print(url+a["href"])
-
-    # panels = soup.findAll("article", class_='panel')
-
-    # for panel in panels:
-    #     if panel.find("span", id="result_list"):
-    #         print("yes")
-    #     else:
-    #         print("No")
+post = random.choice(top_posts.findAll("a"))
+bot.sendMessage(me, f"{post.text}\n{url+post['href']}")
