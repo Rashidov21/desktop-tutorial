@@ -110,10 +110,10 @@
 # print(type(t))  # tuple
 # SQL
 
-import sqlite3
+# import sqlite3
 
-con = sqlite3.connect('./test.db')
-cur = con.cursor()
+# con = sqlite3.connect('./test.db')
+# cur = con.cursor()
 
 # create_db = """
 #     CREATE TABLE students(
@@ -125,22 +125,22 @@ cur = con.cursor()
 # cur.execute(create_db)  # 1- buyruq table ochish
 # print("success")
 
-insert_data = """
-    INSERT INTO students
-    VALUES(1,"John Doe",20,"Backend","Python, Javascript");
-"""
-cur.execute(insert_data)  # 2- buyruq table ga malumot yozish
-con.commit()
-print("success")
+# insert_data = """
+#     INSERT INTO students
+#     VALUES(1,"John Doe",20,"Backend","Python, Javascript");
+# """
+# cur.execute(insert_data)  # 2- buyruq table ga malumot yozish
+# con.commit()
+# print("success")
 
-select_data = """
-    SELECT * FROM students WHERE student_id=1;
-"""
-data = cur.execute(select_data)
-print("success", data.fetchall())
+# select_data = """
+#     SELECT * FROM students WHERE student_id=1;
+# """
+# data = cur.execute(select_data)
+# print("success", data.fetchall())
 
-delete_data = """
-    DELETE FROM students WHERE student_id=1;
-"""
-cur.execute(delete_data)
-print("success")
+# delete_data = """
+#     DELETE FROM students WHERE student_id=1;
+# """
+# cur.execute(delete_data)
+# print("success")
