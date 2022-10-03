@@ -126,4 +126,9 @@
 # necha maratoba h1 dan h6 gacha bo'lgan teglar ishtirok etgan aniqlang
 
 # task18
+# foydalanuvchidan telefon raqamlarini so'rang va raqamni kiritgan vaqtda
+# DB da xuddi shu raqamga o'xshash raqam bo'lsa uni chiqarib beradigan
+# dastur tuzing
+# Ya'ni agar men 931234567 ni kiritsam 67 bilan tugagan yoki
+# bitta kompaniyaga tegishli raqamlarni chiqarsin
 # task19
