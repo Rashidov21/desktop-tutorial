@@ -81,3 +81,66 @@
 # print(str(12) + 12)
 # print("12" + 12)
 # print("12" * 5)
+
+
+# Data Structure
+# int , str, bool
+# list , tuple, dict , set , frozenset
+# l = [1, "s", True]
+# print(l[0])  # 1
+# l.append(0)
+# l.pop()
+# l.clear()
+# l.copy()
+# l.count(1)
+# l.extend([0, 2, 4])
+# l.index(0)
+# l.insert(1, "a")
+# l.remove("a")
+# l.reverse()
+# l.sort()
+
+# t = (1, 2, 3)
+# print(t[2])
+# for i in t:
+#     print(i)
+# l = list(t)
+# print(type(l))  # list
+# t = tuple(l)
+# print(type(t))  # tuple
+# SQL
+
+import sqlite3
+
+con = sqlite3.connect('./test.db')
+cur = con.cursor()
+
+# create_db = """
+#     CREATE TABLE students(
+#         student_id INTEGER PRIMARY KEY,
+#         name TEXT,
+#         age INTEGER,
+#         course TEXT,
+#         pls TEXT);"""
+# cur.execute(create_db)  # 1- buyruq table ochish
+# print("success")
+
+insert_data = """
+    INSERT INTO students
+    VALUES(1,"John Doe",20,"Backend","Python, Javascript");
+"""
+cur.execute(insert_data)  # 2- buyruq table ga malumot yozish
+con.commit()
+print("success")
+
+select_data = """
+    SELECT * FROM students WHERE student_id=1;
+"""
+data = cur.execute(select_data)
+print("success", data.fetchall())
+
+delete_data = """
+    DELETE FROM students WHERE student_id=1;
+"""
+cur.execute(delete_data)
+print("success")
