@@ -13,6 +13,10 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    max-width: 100%;
+}
+
 section {
     margin: 30px 0px;
 }
@@ -21,72 +25,44 @@ section {
     padding: 0px 3%;
 }
 
-.flex-container {
-    border: solid 1px red;
-    width: 100%;
-    height: 600px;
-    display: flex;
-    /* agar flex-box uchun joy yetmasa pasdan ko'payishi uchun */
-    /* flex-wrap: wrap; */
-    /* flex-box larning joylashish yo'nalishi */
-    flex-direction: row;
-    /*x*/
-    justify-content: flex-start;
-    /*y*/
-    align-items: flex-start;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    /* grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(2, 150px); */
+    gap: 5px;
 }
 
 .box {
-    width: 200px;
-    height: 200px;
     background-color: orange;
-    margin: 10px;
     text-align: center;
-    font-size: 1.5em;
-    padding: 60px 0px;
-}
-
-li:nth-child(odd) {
-    font-size: 1.2em;
-    background-color: red;
-}
-
-/* flex-shrink - (1,0) flex-boxni torayish yoki toraymasligini boshqarish */
-/* flex-grow - (0>=) - blockni qancha joyga cho'zilishini boshqarish */
-/* order - (0>=) - blockni flex container ichida joylashish tartibi o'zgartirish uchun */
-/* .box:nth-child(1) {
-    order: 3;
-    flex-grow: 1;
-    flex-shrink: 1;
-} */
-
-/* .box:nth-child(2) {
-    order: 2;
-    flex-grow: 1;
+    padding: 10px;
+    font-size: 2em;
 }
 
 .box:nth-child(3) {
-    order: 1;
-    flex-grow: 2;
-} */
-
-.posts {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5; */
 }
 
-.post .post_bg {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    background-color: orange;
+.box:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
 }
 
-.post {
-    max-width: 450px;
-    background-color: rgba(23, 23, 23, 0.5);
-    padding: 10px 15px;
-    margin: 15px;
+@media screen and (max-width:1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+    }
+}
+
+@media screen and (max-width:540px) {
+    .grid-container {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(8, auto);
+    }
 }
