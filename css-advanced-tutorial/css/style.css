@@ -66,3 +66,15 @@ section {
         grid-template-rows: repeat(8, auto);
     }
 }
+
+.main {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: repeat(3, auto);
+    gap: 5px;
+}
+
+.main .box:nth-child(1),
+.main .box:nth-child(4) {
+    grid-column: 1 / 3;
+}
