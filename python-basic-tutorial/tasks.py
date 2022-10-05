@@ -134,11 +134,10 @@
 
 
 # task19
-keys = ["number", 'name', 'age', ]
-nums = (1, 2, 3)
-names = ("john", "mike", "sara")
-ages = (23, 41, 63)
-
+# keys = ["number", 'name', 'age', ]
+# nums = (1, 2, 3)
+# names = ("john", "mike", "sara")
+# ages = (23, 41, 63)
 
 # ushbu ma'lumotlardan foydalanib har bir user uchun alohida dict hosil qiling
 # va dict larni users massivida saqlang
