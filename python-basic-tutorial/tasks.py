@@ -132,4 +132,5 @@
 # Ya'ni agar men 931234567 ni kiritsam 67 bilan tugagan yoki
 # bitta kompaniyaga tegishli raqamlarni chiqarsin
 
+
 # task19
