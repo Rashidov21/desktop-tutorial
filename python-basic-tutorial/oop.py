@@ -48,28 +48,28 @@
 # print(type(person1))
 
 
-class Calculator:
-    version = "1.0"
-    result = 0
+# class Calculator:
+#     version = "1.0"
+#     result = 0
 
-    def plus(self, number1, number2):
-        self.result = number1 + number2
-        return self.result
+#     def plus(self, number1, number2):
+#         self.result = number1 + number2
+#         return self.result
 
-    def minus(self, number1, number2):
-        self.result = number1 - number2
-        return self.result
+#     def minus(self, number1, number2):
+#         self.result = number1 - number2
+#         return self.result
 
-    def div(self, number1, number2):
-        self.result = number1 / number2
-        return self.result
+#     def div(self, number1, number2):
+#         self.result = number1 / number2
+#         return self.result
 
-    def mult(self, number1, number2):
-        self.result = number1 * number2
-        return self.result
+#     def mult(self, number1, number2):
+#         self.result = number1 * number2
+#         return self.result
 
-calc = Calculator()
-print(calc.plus(1, 1))
-print(calc.plus(2, 1))
-print(calc.plus(4, 2))
-print(calc.plus(2, 2))
+# calc = Calculator()
+# print(calc.plus(1, 1))
+# print(calc.plus(2, 1))
+# print(calc.plus(4, 2))
+# print(calc.plus(2, 2))
