@@ -134,3 +134,11 @@
 
 
 # task19
+l = ["number", 'name', 'age', 'info']
+t = (1, 2, 3)
+n = ("john", "mike", "sara")
+a = (23, 41, 63)
+text = ["lorem", "ipsum", "dolor"]
+
+# ushbu ma'lumotlardan foydalanib har bir user uchun alohida dict hosil qiling
+# va dict larni users massivida saqlang
