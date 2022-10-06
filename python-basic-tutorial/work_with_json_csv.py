@@ -25,3 +25,10 @@ import json
 #         print(i)
 from drawdata import draw_scatter
 draw_scatter()
+
+
+def main():
+    print(0)
+
+
+print(main)
