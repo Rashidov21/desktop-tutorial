@@ -96,10 +96,24 @@ class Car:
 
 
 # __init__ mmethodi ishga tushib qiymatlarni yangi class namunasiga biriktiradi
-damas = Car("Shevrolet", "oq", 110)
-# damas - bu yangi konkretniy bitta obyekt
-damas.drive()
-print(damas.count_of_wheels)  # 4
+# damas = Car("Shevrolet", "oq", 110)
+# # damas - bu yangi konkretniy bitta obyekt
+# damas.drive()
+# print(damas.count_of_wheels)  # 4
 
-firecar = Car("Volvo", "sariq", 100)
-firecar.drive()
+# firecar = Car("Volvo", "sariq", 100)
+# firecar.drive()
+
+class FireCar(Car):
+
+    def __init__(self, model, color, speed, sirena):
+        super().__init__(self.model, self.color, self.speed)
+        self.sirena = sirena
+
+    def water(self):
+        print(f"O't oçhiruvchi {self.model} rusumli mashina")
+        print(f"{self.speed} kub metr suv bakiga ega ..")
+
+
+firecar = FireCar("Mercedes", "Qizil", 120, True)
+firecar.water()
