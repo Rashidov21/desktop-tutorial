@@ -107,7 +107,7 @@ class Car:
 class FireCar(Car):
 
     def __init__(self, model, color, speed, sirena):
-        super().__init__(self.model, self.color, self.speed)
+        super().__init__(model, color, speed)
         self.sirena = sirena
 
     def water(self):
@@ -117,3 +117,4 @@ class FireCar(Car):
 
 firecar = FireCar("Mercedes", "Qizil", 120, True)
 firecar.water()
+print(firecar.water)
