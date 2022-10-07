@@ -82,17 +82,17 @@
 # class - bir turga oid obyektlar tavsifi
 # class namnunasi - aniq biror bir obyekt
 
-class Car:
-    count_of_wheels = 4
+# class Car:
+#     count_of_wheels = 4
 
-    def __init__(self, model, color, speed):
-        self.model = model
-        self.color = color
-        self.speed = speed
+#     def __init__(self, model, color, speed):
+#         self.model = model
+#         self.color = color
+#         self.speed = speed
 
-    def drive(self):
-        print(
-            f"{self.model} rusumli mashina\n{self.speed} km tezlikda harakatlanishni boshladi.")
+#     def drive(self):
+#         print(
+#             f"{self.model} rusumli mashina\n{self.speed} km tezlikda harakatlanishni boshladi.")
 
 
 # __init__ mmethodi ishga tushib qiymatlarni yangi class namunasiga biriktiradi
@@ -104,17 +104,17 @@ class Car:
 # firecar = Car("Volvo", "sariq", 100)
 # firecar.drive()
 
-class FireCar(Car):
+# class FireCar(Car):
 
-    def __init__(self, model, color, speed, sirena):
-        super().__init__(model, color, speed)
-        self.sirena = sirena
+#     def __init__(self, model, color, speed, sirena):
+#         super().__init__(model, color, speed)
+#         self.sirena = sirena
 
-    def water(self):
-        print(f"O't oçhiruvchi {self.model} rusumli mashina")
-        print(f"{self.speed} kub metr suv bakiga ega ..")
+#     def water(self):
+#         print(f"O't oçhiruvchi {self.model} rusumli mashina")
+#         print(f"{self.speed} kub metr suv bakiga ega ..")
 
 
-firecar = FireCar("Mercedes", "Qizil", 120, True)
-firecar.water()
-print(firecar)
+# firecar = FireCar("Mercedes", "Qizil", 120, True)
+# firecar.water()
+# print(firecar)
