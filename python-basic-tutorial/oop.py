@@ -73,3 +73,33 @@
 # print(calc.plus(2, 1))
 # print(calc.plus(4, 2))
 # print(calc.plus(2, 2))
+
+
+# Inkapsulyatsiya
+# Polimorfizm
+# Meros olish
+
+# class - bir turga oid obyektlar tavsifi
+# class namnunasi - aniq biror bir obyekt
+
+class Car:
+    count_of_wheels = 4
+
+    def __init__(self, model, color, speed):
+        self.model = model
+        self.color = color
+        self.speed = speed
+
+    def drive(self):
+        print(
+            f"{self.model} rusumli mashina\n{self.speed} km tezlikda harakatlanishni boshladi.")
+
+
+# __init__ mmethodi ishga tushib qiymatlarni yangi class namunasiga biriktiradi
+damas = Car("Shevrolet", "oq", 110)
+# damas - bu yangi konkretniy bitta obyekt
+damas.drive()
+print(damas.count_of_wheels)  # 4
+
+firecar = Car("Volvo", "sariq", 100)
+firecar.drive()
