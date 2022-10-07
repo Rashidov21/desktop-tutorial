@@ -23,12 +23,3 @@ import json
 #     for i in r:
 #         print(type(i))
 #         print(i)
-from drawdata import draw_scatter
-draw_scatter()
-
-
-def main():
-    print(0)
-
-
-print(main)
