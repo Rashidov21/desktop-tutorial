@@ -117,4 +117,4 @@ class FireCar(Car):
 
 firecar = FireCar("Mercedes", "Qizil", 120, True)
 firecar.water()
-print(firecar.water)
+print(firecar)
