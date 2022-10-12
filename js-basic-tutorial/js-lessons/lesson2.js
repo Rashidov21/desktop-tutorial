@@ -74,16 +74,16 @@
 // console.log(typeof y) // string
 // console.log(typeof Number(y)) // number
 // let x = 10
-// console.log(typeof String(x)) // string 
+// console.log(typeof String(x)) // string
 
-let b1 = 1 // number
-let b2 = 0 // number
-let b3 = "text"
-let b4 = undefined
-console.log(Boolean(b1)) // true
-console.log(Boolean(b2)) // false 
-console.log(Boolean(b3)) // true 
-console.log(Boolean(b4)) // false
+// let b1 = 1 // number
+// let b2 = 0 // number
+// let b3 = "text"
+// let b4 = undefined
+// console.log(Boolean(b1)) // true
+// console.log(Boolean(b2)) // false
+// console.log(Boolean(b3)) // true
+// console.log(Boolean(b4)) // false
 
 // let a = "12" // string
 // let b = 11
