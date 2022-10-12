@@ -5,15 +5,15 @@
 // 3-kerak bo'lsa saqlaydi
 // 4-natijani qayatardi
 
-// const , let , var 
-let myVariable = "Javascript"
-var x = 10
-const pi = 3.14
+// const , let , var
+// let myVariable = "Javascript"
+// var x = 10
+// const pi = 3.14
 
-console.log(myVariable)
-console.log(x, pi)
+// console.log(myVariable)
+// console.log(x, pi)
 
-let userprofilephotourl = "./img/ph.png"
-let uppu = "./img/ph.png"
-let userProfilePhotoUrl = "./img/ph.png"
-let user_profile_photo_url = "./img/ph.png"
+// let userprofilephotourl = "./img/ph.png"
+// let uppu = "./img/ph.png"
+// let userProfilePhotoUrl = "./img/ph.png"
+// let user_profile_photo_url = "./img/ph.png"
