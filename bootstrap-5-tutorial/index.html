@@ -8,85 +8,109 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <title>Document</title>
 </head>
+<!-- 
+p-* >> ps , pe , pt, pb : px , py 
+m-*  ms , me, mt , mb, mx , my
+gap-* 
+w-*  : mw , mh 
+h-* 
+shadow-sm
+shadow
+shadow-lg
+
+
+
+
+-->
 
 <body>
     <section>
         <div class="container">
-            <div class="row mt-5">
-                <div class="col-sm-12 col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h2 class="card-title">
-                                Some card title
-                            </h2>
-
-                        </div>
-                        <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut odio suscipit, illum
-                                provident rerum tenetur.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-danger">See more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h2 class="card-title">
-                                Some card title
-                            </h2>
-
-                        </div>
-                        <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut odio suscipit, illum
-                                provident rerum tenetur.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-danger">See more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h2 class="card-title">
-                                Some card title
-                            </h2>
-
-                        </div>
-                        <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut odio suscipit, illum
-                                provident rerum tenetur.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-danger">See more</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="card w-50 m-5 p-2 shadow-sm">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ut. Voluptates placeat minus quam
+                    libero iusto debitis, porro, obcaecati, voluptatibus commodi eveniet pariatur dolorum adipisci
+                    doloribus nihil quia vitae repellendus.</p>
             </div>
+            <div class="card w-25 h-auto m-5 p-2 shadow">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ut. Voluptates placeat minus quam
+                    libero iusto debitis, porro, obcaecati, voluptatibus commodi eveniet pariatur dolorum adipisci
+                    doloribus nihil quia vitae repellendus.</p>
+            </div>
+            <div class="card m-5 w-75 p-2 shadow-lg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ut. Voluptates placeat minus quam
+                    libero iusto debitis, porro, obcaecati, voluptatibus commodi eveniet pariatur dolorum adipisci
+                    doloribus nihil quia vitae repellendus.</p>
+            </div>
+            <div class="my-5"></div>
+
+
+            <!-- <div class="position-static">...</div>
+            <div class="position-relative">...</div> -->
+            <!-- <div class="position-absolute w-25 bg-dark text-light p-5 top-0 start-0">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, tenetur.
+            </div>
+            <div class="position-absolute w-25 bg-success text-light p-5 top-0 end-0">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, tenetur.
+            </div>
+            <div class="position-absolute w-25 bg-danger text-light p-5 bottom-0 start-0">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, tenetur.
+            </div>
+            <div class="position-absolute w-25 bg-primary text-light p-5 bottom-0 end-0">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, tenetur.
+            </div> -->
+            <!-- <div class="position-fixed">...</div>
+            <div class="position-sticky">...</div> -->
+
+
+
+
+            <div class="my-5"></div>
+
+            <!-- <div class="overflow-auto">...</div>
+            <div class="overflow-hidden">...</div>
+            <div class="overflow-visible">...</div>
+            <div class="overflow-scroll">...</div> -->
+
+            <!-- <div class="my-5"></div> -->
+
+            <!-- <div class="opacity-100">...</div>
+            <div class="opacity-75">...</div>
+            <div class="opacity-50">...</div>
+            <div class="opacity-25">...</div> -->
+
+            <div class="my-5"></div>
+
+            <!-- <div class="float-start">Float start on all viewport sizes</div><br>
+            <div class="float-end">Float end on all viewport sizes</div><br>
+            <div class="float-none">Don't float on all viewport sizes</div> -->
+
+            <div class="my-5"></div>
+
+            <!-- <div class="d-grid gap-3">
+                <div class="p-2 bg-dark text-light border">Grid item 1</div>
+                <div class="p-2 bg-dark text-light border">Grid item 2</div>
+                <div class="p-2 bg-dark text-light border">Grid item 3</div>
+            </div> -->
+
+
         </div>
     </section>
     <section>
         <div class="container">
-            <div class="row mt-3">
-                <div class="col-sm-12 col-md-6">
-                    <form action="#" class="card mt-5 p-3 shadow shadow-lg form">
-                        <p>
-                            <input type="text" placeholder="Name" class="form-control">
-                        </p>
-                        <p>
-                            <input type="number" placeholder="Age" class="form-control">
-                        </p>
-                        <p>
-                            <input type="email" placeholder="Email" class="form-control">
-                        </p>
-                        <button type="submit" class="btn btn-success btn-block">Send</button>
-                    </form>
+            <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                <div class="flex-item p-5 bg-dark text-light">
+                    1
+                </div>
+                <div class="flex-item p-5 bg-dark text-light">
+                    2
+                </div>
+                <div class="flex-item p-5 bg-dark text-light">
+                    3
                 </div>
             </div>
         </div>
     </section>
+
     <script src="./js/bootstrap.js"></script>
 </body>
 
