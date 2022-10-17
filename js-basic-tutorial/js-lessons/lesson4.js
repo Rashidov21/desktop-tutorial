@@ -27,9 +27,9 @@
 //     console.log("Access denied")
 // }
 // task 1 
-let a = +prompt()
-if (a > 0) {
-    console.log(true)
-} else {
-    console.log(false)
-}
+// let a = +prompt()
+// if (a > 0) {
+//     console.log(true)
+// } else {
+//     console.log(false)
+// }
