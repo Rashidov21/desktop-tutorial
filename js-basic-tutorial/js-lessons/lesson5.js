@@ -66,9 +66,9 @@
 //     let n = +prompt()
 //     console.log(n)
 // } 
-let k = 5
-let n = 4
+// let k = 5
+// let n = 4
 
-for (let i = n; i > 0; i--) {
-    console.log(k)
-}
+// for (let i = n; i > 0; i--) {
+//     console.log(k)
+// }
