@@ -4,3 +4,24 @@ body {
     font-family: 'Poppins', sans-serif !important;
     overflow-x: hidden;
 }
+
+.leftblue {
+    width: 100%;
+
+    background-color: lightblue;
+}
+
+.blue {
+    width: 100%;
+    min-height: 200px;
+    background-color: lightblue;
+}
+
+.banner {
+    background-image: url(https://img.freepik.com/premium-vector/line-background-abstract-background-beautiful-background-bg-pattern-background-design-slide-bg_634868-9.jpg?w=2000);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
+}
