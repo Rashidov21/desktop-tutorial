@@ -5,23 +5,46 @@ body {
     overflow-x: hidden;
 }
 
-.leftblue {
-    width: 100%;
-
-    background-color: lightblue;
+.tour {
+    max-width: 370px;
+    max-height: 500px;
+    padding: 20px 10px;
+    position: absolute;
 }
 
-.blue {
-    width: 100%;
-    min-height: 200px;
-    background-color: lightblue;
+.tour img {
+    position: absolute;
 }
 
-.banner {
-    background-image: url(https://img.freepik.com/premium-vector/line-background-abstract-background-beautiful-background-bg-pattern-background-design-slide-bg_634868-9.jpg?w=2000);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    min-height: 400px;
+.tour-text {
+    position: absolute;
+    width: 300px;
+    top: 200px;
+    left: 20px;
+}
+
+.tour-text p {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.tour-text h4 {
+    color: #FFC700;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.icons {
+    width: 300px;
+}
+
+.icon__block {
+    background-color: #fff;
+    max-width: 340px;
+}
+
+a.tour__btn {
+    background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+    border-radius: 40px;
+    color: #fff;
 }
