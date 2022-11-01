@@ -48,3 +48,7 @@ a.tour__btn {
     border-radius: 40px;
     color: #fff;
 }
+
+#card {
+    max-width: 390px;
+}

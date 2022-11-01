@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b610cd8-5142-44b7-b1c9-64d6d31ad0ce" name="Changes" comment="" />
+    <list default="true" id="4b610cd8-5142-44b7-b1c9-64d6d31ad0ce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../bootstrap-5-tutorial/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bootstrap-5-tutorial/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
