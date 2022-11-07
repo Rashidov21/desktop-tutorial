@@ -50,21 +50,23 @@ console.log(backticks.startsWith("aaaa")) // false
 // function yozing , unga qator va belgi beriladi , function qator ichida belgi necha marta ishtirok
 // etganini qaytarsin
 
-function searchLettersCount(text, letter) {
-    let count = 0;
-    for (let i = 0; i < text.length; i++) {
-        if (text[i] == letter) {
-            count = count + 1
-        }
-    }
-    return count
-}
+// function searchLettersCount(text, letter) {
+//     let count = 0;
+//     for (let i = 0; i < text.length; i++) {
+//         if (text[i] == letter) {
+//             count = count + 1
+//         }
+//     }
+//     return count
+// }
 
-console.log(searchLettersCount("lorem ipsuM lorem", "m"))
+// console.log(searchLettersCount("lorem ipsuM lorem", "m"))
 
 // lorem ipsuml , l  >> 2
 
+// task 2
+// function yozing gap va so'z qabul qilsin , agar soz gap ichida ishtirok etgan bolsa
+// u holda sozni indexini qaytariladi aks holda gapdagi belgilar soni qaytariladi
 
-// let str = 'Widget with id';
-
-// alert( str.indexOf('Widget') ); // 0, потому что подстрока 'Widget' найдена в начале
+// "lorem ipsum dolor" , "lorem" >> 0
+// "lorem ipsum dolor" , "text" >> 17
