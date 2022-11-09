@@ -43,12 +43,12 @@
 // }
 // console.log(b)
 // task 2
-// let n = +prompt()
-// let arr = []
+let n = +prompt()
+let arr = []
 
-// for (let i = 0; i <= n; i++) {
-//     if (i % 2 !== 0) {
-//         arr.push(i)
-//     }
-// }
-// console.log(arr)
+for (let i = 0; i <= n; i++) {
+    if (i % 2 !== 0) {
+        arr.push(i)
+    }
+}
+console.log(arr)
