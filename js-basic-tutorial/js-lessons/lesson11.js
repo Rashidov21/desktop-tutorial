@@ -35,3 +35,26 @@
 // task 1
 // Userdan meva nomlarini qabul qiling, (kamida 3 ta ) ular orasida "A" yoki "B"
 // harflari ishtirok etgan mevalarni filter qilib alohida chiqaring
+
+// let fruits = ["anor", "gilos", "olma", "behi"]
+// // variant 1
+// a_or_b_letter_fruits = fruits.filter(function (fruit) {
+//     fruit = fruit.toLowerCase()
+//     if (fruit.includes("a") || fruit.includes("b")) {
+//         return fruit
+//     }
+// })
+// console.log(a_or_b_letter_fruits)
+// // variant 2
+// console.log(
+//     fruits.filter(fruit => fruit.toLowerCase().includes("a"))
+//         .concat(fruits.filter(fruit => fruit.toLowerCase().includes("b")))
+// )
+
+
+// let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+// console.log(lengths); // 5,7,6
+
+// let arr = [1, 2, 3, 4, 5].map(num => num ** 2)
+// // console.log(typeof arr)
+// console.log(arr)
