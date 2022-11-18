@@ -59,5 +59,53 @@
 // // console.log(typeof arr)
 // console.log(arr)
 
-let arr = [1, 4, 6, 9, 7, 8, 3, 0, 2, 5].sort()
-// let sorted_arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+// let arr = [1, 4, 6, 9, 7, 8, 3, 0, 2, 5].sort((a, b) => a - b)
+// console.log(arr)
+
+// let arr2 = [1, 4, 6, 9, 7, 8, 3, 0, 2, 5].sort((a, b) => b - a)
+// console.log(arr2)
+// let arr = [1, 4, 6, 9, 7, 8, 3, 0, 2, 5]
+
+// function filterRange(arr, start, stop) {
+//     let result = []
+//     for (let num of arr) {
+//         if (num >= start && num <= stop) {
+//             result.push(num)
+//         }
+//     }
+//     return result
+// }
+// with filter 
+// function filterRange(arr, a, b) {
+//     return arr.filter(item => (a <= item && item <= b));
+// }
+
+// console.log(filterRange(arr, 2, 6))
+
+// task 2
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
+
+// let arr = [vasya, petya, masha].sort((a, b) => a.age - b.age);
+// console.log(arr)
+
+
+// task 3
+function unique(arr) {
+    /* ваш код */
+    arr.forEach(element => {
+        for (let i = 0; i < arr.length; i++) {
+            if (element == arr[i]) {
+                arr.splice(arr.indexOf(arr[i]), 1)
+            }
+        }
+    });
+    return arr
+}
+
+let strings = ["кришна", "харе", "кришна", "харе",
+    "харе", "харе", "кришна", "кришна", ":-O"
+];
+
+console.log(unique(strings)); // кришна, харе, :-O
