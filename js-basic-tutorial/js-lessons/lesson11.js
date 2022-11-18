@@ -92,20 +92,20 @@
 
 
 // task 3
-function unique(arr) {
-    /* ваш код */
-    arr.forEach(element => {
-        for (let i = 0; i < arr.length; i++) {
-            if (element == arr[i]) {
-                arr.splice(arr.indexOf(arr[i]), 1)
-            }
-        }
-    });
-    return arr
-}
+// function unique(arr) {
+//     /* ваш код */
+//     arr.forEach(element => {
+//         for (let i = 0; i < arr.length; i++) {
+//             if (element == arr[i]) {
+//                 arr.splice(arr.indexOf(arr[i]), 1)
+//             }
+//         }
+//     });
+//     return arr
+// }
 
-let strings = ["кришна", "харе", "кришна", "харе",
-    "харе", "харе", "кришна", "кришна", ":-O"
-];
+// let strings = ["кришна", "харе", "кришна", "харе",
+//     "харе", "харе", "кришна", "кришна", ":-O"
+// ];
 
-console.log(unique(strings)); // кришна, харе, :-O
+// console.log(unique(strings)); // кришна, харе, :-O
