@@ -104,22 +104,23 @@ let text = document.querySelector(".text")
 // elem.setAttribute(name, value) – artibut nomi va uni qiymatini biriktirish.
 // elem.removeAttribute(name) – atributni o'chirish.
 
-// function changeElem() {
-//     let box = document.querySelector(".box")
-//     let square = document.querySelector(".square")
-//     if (box.hasAttribute("name")) {
-//         box.removeAttribute("name")
-//     } else {
-//         box.setAttribute("name", "circle")
-//     }
-//     let red = Math.round(Math.random() * 255)
-//     let green = Math.round(Math.random() * 255)
-//     let blue = Math.round(Math.random() * 255)
+function changeElem() {
+    let box = document.querySelector(".box")
+    let square = document.querySelector(".square")
+    if (box.hasAttribute("name")) {
+        box.removeAttribute("name")
+    } else {
+        box.setAttribute("name", "circle")
+    }
+    let red = Math.round(Math.random() * 255)
+    let green = Math.round(Math.random() * 255)
+    let blue = Math.round(Math.random() * 255)
 
-//     let randomColor = `background-color:rgb(${red},${green},${blue});`
-//     square.setAttribute("style", randomColor)
+    let randomColor = `background-color:rgb(${red},${green},${blue});`
+    square.setAttribute("style", randomColor)
 
-// }
+}
+// setInterval(changeElem, 2000)
 
 // console.log(Math.floor(12.8)) // 12
 // console.log(Math.ceil(12.1)) // 13
