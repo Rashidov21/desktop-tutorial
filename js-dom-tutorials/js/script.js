@@ -76,7 +76,7 @@
 
 // lesson 2
 // tagName , innerHTML , outerHTML, textContent
-let text = document.querySelector(".text")
+// let text = document.querySelector(".text")
 
 // console.log(text.tagName) // teg nomi
 // console.log(text.textContent) // matnli kontentni
@@ -104,22 +104,22 @@ let text = document.querySelector(".text")
 // elem.setAttribute(name, value) – artibut nomi va uni qiymatini biriktirish.
 // elem.removeAttribute(name) – atributni o'chirish.
 
-function changeElem() {
-    let box = document.querySelector(".box")
-    let square = document.querySelector(".square")
-    if (box.hasAttribute("name")) {
-        box.removeAttribute("name")
-    } else {
-        box.setAttribute("name", "circle")
-    }
-    let red = Math.round(Math.random() * 255)
-    let green = Math.round(Math.random() * 255)
-    let blue = Math.round(Math.random() * 255)
+// function changeElem() {
+//     let box = document.querySelector(".box")
+//     let square = document.querySelector(".square")
+//     if (box.hasAttribute("name")) {
+//         box.removeAttribute("name")
+//     } else {
+//         box.setAttribute("name", "circle")
+//     }
+//     let red = Math.round(Math.random() * 255)
+//     let green = Math.round(Math.random() * 255)
+//     let blue = Math.round(Math.random() * 255)
 
-    let randomColor = `background-color:rgb(${red},${green},${blue});`
-    square.setAttribute("style", randomColor)
+//     let randomColor = `background-color:rgb(${red},${green},${blue});`
+//     square.setAttribute("style", randomColor)
 
-}
+// }
 // setInterval(changeElem, 2000)
 
 // console.log(Math.floor(12.8)) // 12
@@ -129,3 +129,58 @@ function changeElem() {
 // console.log(Math.round(Math.random() * 10))
 
 // console.log(Math.round(Math.random() * 25) + 25)
+
+// lesson 3
+// createElement
+// let ul = document.querySelector(".list")
+// let li = document.createElement("li")
+// li.className = 'item'
+// li.textContent = "apple"
+// li.style.cssText = "color:green; padding:10px; list-style:none;"
+// ul.prepend(li) // element boshiga qoshiladi
+// ul.append(li) // element oxiriga qoshiladi
+// ul.before(li) // ul elementidan avval qoshish
+// ul.after(li) // ul elementidan keyin qoshish
+// li.remove() //  elementni o'chirish
+// let orange = document.querySelector('.orange')
+// orange.replaceWith(li) // korsatilgan element o'rniga qoshish
+// console.log(li)
+// let names = ["john", "mike", "sara"]
+// for (let name of names) {
+//     let li = document.createElement("li")
+//     li.textContent = name
+//     ul.append(li)
+// }
+// task 1
+// let numbersBlock = document.querySelector(".numbers")
+// let iterationCount = Math.round(Math.random() * 7) + 1
+// for (let i = 0; i < iterationCount; i++) {
+//     let randomNumbers = Math.round(Math.random() * 50) + 1
+//     let block = document.createElement('div')
+//     block.className = "block"
+//     block.textContent = randomNumbers
+//     block.setAttribute("onclick", "showNumber(this)")
+//     numbersBlock.append(block)
+// }
+// function showNumber(element) {
+//     let numberBlock = document.querySelector(".number")
+//     numberBlock.textContent = element.textContent
+// }
+// let main = document.querySelector(".main")
+
+// // main.className = 'block'
+// main.classList = "main block box"
+// main.classList.
+
+function theme(elem) {
+    document.body.classList.toggle("dark")
+
+    if (elem.children[0].classList.contains("bxs-sun")) {
+        elem.children[0].classList.remove("bxs-sun")
+        elem.children[0].classList.add("bxs-moon")
+    } else {
+        elem.children[0].classList.remove("bxs-moon")
+        elem.children[0].classList.add("bxs-sun")
+
+    }
+}

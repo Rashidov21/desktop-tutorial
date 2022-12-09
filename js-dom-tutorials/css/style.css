@@ -4,8 +4,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    /* list-style: none; */
-    /* transition: all 0.3s ease-in-out; */
+    list-style: none;
+    transition: all 0.3s ease-in-out;
 }
 
 html,
@@ -19,69 +19,61 @@ body {
     padding-right: 5%;
 }
 
-.row {
-    width: 100%;
+.numbers {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
-.divider {
-    height: 500px;
+.number {
+    margin-top: 100px;
+    font-size: 3em;
+    color: aliceblue;
+    padding: 10px;
+    background-color: rgb(102, 117, 162);
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(102, 117, 162);
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.main {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(35, 188, 35);
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 5px;
+    cursor: pointer;
+}
+
+nav {
     width: 100%;
-    border: solid 2px lightblue;
-}
-
-.boxes {
+    height: 80px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.box {
-    width: 150px;
-    height: 150px;
-    background-color: black;
-
-}
-
-.square {
-    width: 150px;
-    height: 150px;
-}
-
-[name^="circle"] {
-    border-radius: 50%;
-}
-
-[class^="item-"] {
-    width: 100px;
-    height: 100px;
-    background-color: blueviolet;
-    margin-top: 10px;
-}
-
-.div {
-    width: 100px;
-    height: 100px;
-    background-color: #ddd;
-}
-
-main {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 100px;
-}
-
-.lists {
+nav ul {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
-#list-1 li {
-    background-color: #ddd;
+nav ul li {
+    margin: 0px 30px;
 }
 
-#list-1 li:hover {
-    background-color: rgb(212, 183, 183);
+.dark {
+    color: aliceblue;
+    background-color: #232323;
 }
