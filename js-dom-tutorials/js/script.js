@@ -204,11 +204,31 @@ let mystyle = `
 // console.log(p.style)
 // let colors = ["red", 'green', "yellow"]
 // setInterval(() => { p.style.backgroundColor = colors[Math.round(Math.random() * colors.length)] }, 1000)
-function minScroll() {
-    window.scrollTo(0, 0)
-}
-function maxScroll() {
-    let s = window.scrollY
-    console.log(s)
-    window.scrollTo(0, window.scrollY += 500)
-}
+// function minScroll() {
+//     window.scrollTo(0, 0)
+// }
+// function maxScroll() {
+//     let s = window.scrollY
+//     console.log(s)
+//     window.scrollTo(0, window.scrollY += 500)
+// }
+
+// console.log(Event)
+// click ,contextmenu ,  keypress , keyup, keydown
+// element.addEventListener(event, handler, [options]);
+// let elem = document.querySelector('.main')
+// elem.addEventListener("contextmenu", () => { console.log("Mouse event.") })
+
+document.body.addEventListener("click", function () {
+    console.log("Mouse event.")
+})
+window.addEventListener('keydown', function (e) {
+    console.log(this.event) // joriy hodisa obyekti
+    console.log(this.event.key) // joriy hodisa obyekti
+    console.log(e.target) // hodisa ro'y bergan element
+})
+window.addEventListener("keyup", function () {
+    if (this.event.key === 'q' && this.event.ctrlKey) {
+        window.open("https://google.com")
+    }
+})
