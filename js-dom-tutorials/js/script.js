@@ -172,15 +172,43 @@
 // main.classList = "main block box"
 // main.classList.
 
-function theme(elem) {
-    document.body.classList.toggle("dark")
+// function theme(elem) {
+//     document.body.classList.toggle("dark")
 
-    if (elem.children[0].classList.contains("bxs-sun")) {
-        elem.children[0].classList.remove("bxs-sun")
-        elem.children[0].classList.add("bxs-moon")
-    } else {
-        elem.children[0].classList.remove("bxs-moon")
-        elem.children[0].classList.add("bxs-sun")
+//     if (elem.children[0].classList.contains("bxs-sun")) {
+//         elem.children[0].classList.remove("bxs-sun")
+//         elem.children[0].classList.add("bxs-moon")
+//     } else {
+//         elem.children[0].classList.remove("bxs-moon")
+//         elem.children[0].classList.add("bxs-sun")
 
-    }
+//     }
+// }
+
+// lesson 4
+// cssText
+let mystyle = `
+    background-color: rgb(35, 188, 35);
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 5px;
+    cursor: pointer;
+`
+// let p = document.querySelector("p")
+// p.style.cssText = mystyle
+
+// p.style.display = "none"
+// p.style.position = "fixed"
+// p.style.overflow = "scroll"
+// console.log(p.style)
+// let colors = ["red", 'green', "yellow"]
+// setInterval(() => { p.style.backgroundColor = colors[Math.round(Math.random() * colors.length)] }, 1000)
+function minScroll() {
+    window.scrollTo(0, 0)
+}
+function maxScroll() {
+    let s = window.scrollY
+    console.log(s)
+    window.scrollTo(0, window.scrollY += 500)
 }

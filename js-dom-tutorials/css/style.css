@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
     list-style: none;
     transition: all 0.3s ease-in-out;
+    scroll-behavior: smooth;
 }
 
 html,
@@ -42,6 +43,24 @@ body {
     font-size: 1.3em;
     padding: 5px;
     cursor: pointer;
+}
+
+main {
+    height: 3000px;
+}
+
+button {
+    position: fixed;
+}
+
+button:nth-child(2) {
+    top: 100px;
+}
+
+.up {
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
 }
 
 .main {
