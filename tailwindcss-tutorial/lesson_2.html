@@ -12,65 +12,116 @@
 </head>
 
 <body>
-    <!-- 
-    obyekt
-    1. sifat - atribute
-    2. harakat - method -->
-    <center>
 
-        <h1>
-            <font color="blue">G</font>
-            <font color="yellow">O</font>
-            <font color="orange">O</font>
-            <font color="red">G</font>
-            <font color="green">L</font>
-            <font color="tomato">E</font>
-        </h1>
-        <h4>
-            <a href="http://google.com" target="_blank" title="Google home page.">Home Page</a>
-        </h4>
+    <style>
+        .container {
+            padding: 0px 3%;
+        }
+
+    </style>
+    <div class="container">
+        <p>p</p>
+        <div>div</div>
+        <table>table</table>
+
+        <span>span</span>
+        <i>i</i>
+        <u>u</u>
+        <a href="">link</a>
+        <!-- <div>
+            <img src="./src/poster.jpg" width="50%" height="auto" alt="">
+        </div> -->
         <br>
-        <button title="Accept button!">OK</button>
+        <table border="1" bgcolor="khaki" width="30%" height="100">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
         <br>
-        <img src="./src/poster.jpg" width="400" alt="poster">
-        <img src="https://www.zastavki.com/pictures/originals/2018Movies_Master_Yoda_with_a_laser_sword_127234_.jpg"
-            alt="Master Joda" width="800" height="auto">
-    </center>
-    <p name="paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, repellat.
-    </p>
+        <!-- ul>li*3>a>span{$} -->
+        <!-- table>tr>td*4>{link} -->
+        <!-- div.main>div.inner -->
+        <!-- div.box>.span#name>{John Doe} -->
+        <!-- <ul>
+            <li>List item</li>
+        </ul>
+        <ol>
+            <li>List item</li>
+        </ol> -->
+        <form action="" method="GET">
+            <div>
+                <label for="full_name">Username</label>
+                <input type="text" name="fullname" id="full_name" class="username" maxlength="15" required>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+        <form action="">
+            <select name="fruits" id="lesson">
+                <option value="banana">Banana</option>
+                <option value="kiwi">Kiwi</option>
+                <option value="ornage">Orange</option>
+                <option value="cherry">Cherry</option>
+            </select>
+            <div class="radio-buttons">
+                <div>
+                    <input type="radio" name="animals" id="animal">
+                    <label for="animal">Lion</label>
+                </div>
+                <div>
+                    <input type="radio" name="animals" id="animal">
+                    <label for="animal">Monkey</label>
+                </div>
+                <div>
+                    <input type="radio" name="animals" id="animal">
+                    <label for="animal">Bear</label>
+                </div>
+            </div>
+        </form>
+        <!-- <form action="">
+            <input type="text"> oddiy matn
+            <input type="number"> sonlar
+            <input type="email"> email
+            <input type="password"> parol
+            <input type="radio"> belgilash mumkin bolgan tugmalar
+            <input type="checkbox"> tasdiqlash tugmasi
+            <input type="color"> rang tanlash
+            <input type="file"> fayl yuklash
+            <input type="range"> sonlar oralig'i (diapazon)
+            <input type="submit"> tasdiqlab serverga jonatish
+            <input type="reset"> formani tozalash
+        </form> -->
+        <!-- method="" | GET , POST  -->
+        <!-- <form action="" method="POST">
+            <div>
+                <input type="text" placeholder="Name">
+            </div>
+            <div>
+                <input type="number" placeholder="Age">
+            </div>
+            <div>
+                <input type="email" placeholder="Email">
+            </div>
+            <div>
+                <textarea rows="5" cols="30"> </textarea>
+            </div>
+            <br>
+            <div>
+                <input type="submit">
+                <button type="submit">Send</button>
+            </div>
+        </form> -->
+    </div>
 
 
-    <table border="1">
-        <tr>
-            <th>username</th>
-            <th>name</th>
-            <th>age</th>
-        </tr>
-        <tr>
-            <td>@pablo</td>
-            <td><button>Pablo</button></td>
-            <td><button>Escobar</button></td>
-        </tr>
-        <tr>
-            <td>@gandi</td>
-            <td>Mahatma Gandi</td>
-            <td>75</td>
-        </tr>
-    </table>
-    <br><br>
-
-    <ul type="circle">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-    <br>
-    <ol start="5">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ol>
 </body>
 
 </html>
