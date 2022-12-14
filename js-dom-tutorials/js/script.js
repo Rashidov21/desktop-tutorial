@@ -219,16 +219,46 @@ let mystyle = `
 // let elem = document.querySelector('.main')
 // elem.addEventListener("contextmenu", () => { console.log("Mouse event.") })
 
-document.body.addEventListener("click", function () {
-    console.log("Mouse event.")
-})
-window.addEventListener('keydown', function (e) {
-    console.log(this.event) // joriy hodisa obyekti
-    console.log(this.event.key) // joriy hodisa obyekti
-    console.log(e.target) // hodisa ro'y bergan element
-})
-window.addEventListener("keyup", function () {
-    if (this.event.key === 'q' && this.event.ctrlKey) {
-        window.open("https://google.com")
-    }
+// document.body.addEventListener("click", function () {
+//     console.log("Mouse event.")
+// })
+// window.addEventListener('keydown', function (e) {
+//     console.log(this.event) // joriy hodisa obyekti
+//     console.log(this.event.key) // joriy hodisa obyekti
+//     console.log(e.target) // hodisa ro'y bergan element
+// })
+// window.addEventListener("keyup", function () {
+//     if (this.event.key === 'q' && this.event.ctrlKey) {
+//         window.open("https://google.com")
+//     }
+// })
+
+// lesson 5
+// console.log(document.forms) // array
+// let form = document.forms[0]
+
+// console.log(form.elements) // elementlari , maydonlari massiv korinishida
+// console.log(form.length) // elementlar soni
+// console.log(form.action) // action atributi qiymati
+// console.log(form.method) // method atributi qiymati
+
+// for (el of form.elements) {
+//     el.classList.add("form-control")
+// }
+// console.log(form.name)
+// console.log(form.email)
+// form.onsubmit = function (e) {
+//     for (let item of e.target.elements) {
+//         let p = document.createElement("p")
+//         p.innerHTML = item.value
+//         document.querySelector('.data').append(p)
+//     }
+// }
+
+let form = document.forms[0]
+form.addEventListener("change", function (e) {
+    let block = document.querySelector('.data')
+    block.style.backgroundColor = form.elements[0].value
+    // console.log(form.elements[1].value)
+    block.style.height = `${form.elements[1].value}px`
 })

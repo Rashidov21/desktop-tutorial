@@ -16,8 +16,8 @@ body {
 
 .container {
     max-width: 1400px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .numbers {
@@ -51,7 +51,17 @@ body {
     padding: 10px 30px;
 }
 
+.data {
+    width: 200px;
+    height: 200px;
+    border: #232323 solid 1px;
+}
 
+.form-control {
+    padding: 10px 15px;
+    outline: none;
+
+}
 
 .up {
     position: fixed;
