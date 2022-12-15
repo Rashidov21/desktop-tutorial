@@ -1,0 +1,55 @@
+* {
+    font-family: sans-serif;
+    color: white;
+}
+
+/* Cascading Style Sheet  */
+body {
+    background-color: #232228;
+}
+
+/* tag selector  */
+p {
+    background-color: #17d56c5c;
+}
+
+/* class selector  */
+.text {
+    background-color: #d517d55c;
+}
+
+.box {
+    padding: 5px;
+}
+
+.title {
+    font-size: 1.3em;
+}
+
+/* id selector  */
+#text {
+    background-color: #2beb24;
+}
+
+p[name='paragraph'] {
+    background-color: brown;
+}
+
+input[type='text'] {
+    background-color: yellow;
+}
+
+div.center {
+    text-align: center;
+}
+
+ul>li {
+    margin: 15px;
+}
+
+ul li a {
+    background-color: #2309a4;
+    color: #2beb24;
+    padding: 5px;
+    text-decoration: none;
+}
