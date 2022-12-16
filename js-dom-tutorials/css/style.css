@@ -92,3 +92,24 @@ nav ul li {
     color: aliceblue;
     background-color: #232323;
 }
+
+.movie-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.movie {
+    padding: 10px;
+}
+
+.movie h3 {
+    white-space: pre-wrap;
+}
+
+.movie img {
+    width: 200px;
+    height: auto;
+}

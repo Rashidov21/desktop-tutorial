@@ -255,10 +255,108 @@ let mystyle = `
 //     }
 // }
 
-let form = document.forms[0]
-form.addEventListener("change", function (e) {
-    let block = document.querySelector('.data')
-    block.style.backgroundColor = form.elements[0].value
-    // console.log(form.elements[1].value)
-    block.style.height = `${form.elements[1].value}px`
+// let form = document.forms[0]
+// form.addEventListener("change", function (e) {
+//     let block = document.querySelector('.data')
+//     block.style.backgroundColor = form.elements[0].value
+//     // console.log(form.elements[1].value)
+//     block.style.height = `${form.elements[1].value}px`
+// })
+
+// lesson 6
+// let url = "https://jsonplaceholder.typicode.com/users/"
+// let data = fetch(url)
+// console.log(data.then())
+
+// fetch(url)
+//     .then(res => res.json())
+//     .then(data => {
+//         console.log(data)
+//     }).catch()
+// fetch(url)
+//     .then(result => console.log(result)) // Response obyekti mavjud va http status : 200
+//     .catch(error => console.log(error)) // Response obyekti mavjud va http status : 404 yoki boshqa xatolik
+//     .finally(final => console.log("The end !"))// Har qanday xolatda ishlayveradi
+// window.XMLHttpRequest() >> AJAX > Asynchronous Javascript and XML
+
+// const options = {
+//     method: 'GET',
+//     headers: {
+//         'X-RapidAPI-Key': '0202709d4emshbe87778ed9b4962p1f76cdjsn4a200e532763',
+//         'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
+//     }
+// };
+
+// function searchMovie() {
+//     let query = document.querySelector("input").value
+//     if (query) {
+//         let url = `https://imdb8.p.rapidapi.com/auto-complete?q=${query}`
+//         fetch(url, options)
+//             .then(response => response.json())
+//             .then(response => {
+//                 let movieList = document.querySelector(".movie-list");
+//                 // console.log(response.d)
+//                 for (let movie of response.d) {
+//                     let div = document.createElement('div')
+//                     div.className = "movie"
+//                     let title = document.createElement('h3')
+//                     title.textContent = movie.l
+//                     div.append(title)
+//                     let img = document.createElement('img')
+//                     img.src = movie.i.imageUrl
+//                     div.append(img)
+//                     movieList.append(div)
+//                 }
+//             })
+//             .catch(err => console.error(err));
+//     } else {
+//         alert("Please write something.")
+//     }
+
+// }
+
+// window.addEventListener("keypress", function (e) {
+//     if (e.key == 'Enter') {
+//         searchMovie()
+//     }
+// })
+
+
+
+
+function translate() {
+    let query = document.querySelector("input").value
+    const encodedParams = new URLSearchParams();
+    encodedParams.append("q", `${query}`);
+    encodedParams.append("target", "ru");
+    encodedParams.append("source", "en");
+
+    const options = {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded',
+            'Accept-Encoding': 'application/gzip',
+            'X-RapidAPI-Key': '0202709d4emshbe87778ed9b4962p1f76cdjsn4a200e532763',
+            'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+        },
+        body: encodedParams
+    };
+
+
+    fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
+        .then(response => response.json())
+        .then(response => {
+            let movieList = document.querySelector(".movie-list")
+            movieList.textContent = response.data.translations[0].translatedText
+
+
+        })
+        .catch(err => console.error(err));
+}
+
+window.addEventListener("keypress", function (e) {
+    if (e.key == 'Enter') {
+        console.log('aaa')
+        translate()
+    }
 })
