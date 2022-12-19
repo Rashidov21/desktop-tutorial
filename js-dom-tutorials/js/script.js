@@ -324,39 +324,114 @@ let mystyle = `
 
 
 
-function translate() {
-    let query = document.querySelector("input").value
-    const encodedParams = new URLSearchParams();
-    encodedParams.append("q", `${query}`);
-    encodedParams.append("target", "ru");
-    encodedParams.append("source", "en");
+// function translate() {
+//     let query = document.querySelector("input").value
+//     const encodedParams = new URLSearchParams();
+//     encodedParams.append("q", `${query}`);
+//     encodedParams.append("target", "ru");
+//     encodedParams.append("source", "en");
 
-    const options = {
-        method: 'POST',
-        headers: {
-            'content-type': 'application/x-www-form-urlencoded',
-            'Accept-Encoding': 'application/gzip',
-            'X-RapidAPI-Key': '0202709d4emshbe87778ed9b4962p1f76cdjsn4a200e532763',
-            'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
-        },
-        body: encodedParams
-    };
-
-
-    fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
-        .then(response => response.json())
-        .then(response => {
-            let movieList = document.querySelector(".movie-list")
-            movieList.textContent = response.data.translations[0].translatedText
+//     const options = {
+//         method: 'POST',
+//         headers: {
+//             'content-type': 'application/x-www-form-urlencoded',
+//             'Accept-Encoding': 'application/gzip',
+//             'X-RapidAPI-Key': '0202709d4emshbe87778ed9b4962p1f76cdjsn4a200e532763',
+//             'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+//         },
+//         body: encodedParams
+//     };
 
 
-        })
-        .catch(err => console.error(err));
-}
+//     fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
+//         .then(response => response.json())
+//         .then(response => {
+//             let movieList = document.querySelector(".movie-list")
+//             movieList.textContent = response.data.translations[0].translatedText
 
-window.addEventListener("keypress", function (e) {
-    if (e.key == 'Enter') {
-        console.log('aaa')
-        translate()
+
+//         })
+//         .catch(err => console.error(err));
+// }
+
+// window.addEventListener("keypress", function (e) {
+//     if (e.key == 'Enter') {
+//         console.log('aaa')
+//         translate()
+//     }
+// })
+
+// lesson 6
+
+// localStorage , sessionStorage 
+let storage = localStorage // yoki sessionStorage
+// storage.getItem() // kalit bo'yicha elementni olish 
+// storage.setItem() // kalit va qiymat orqali element yozish 
+// storage.removeItem() // kalit orqali elementi o'chirish 
+// storage.clear() // xotirani butunlay tozalash
+
+// function addProduct(productList, name, imageUrl, price) {
+//     productList.push(
+//         {
+//             name: name,
+//             image: imageUrl,
+//             price: price
+//         }
+//     );
+//     return productList;
+// }
+
+// fetch("./js/db.json")
+//     .then(res => res.json())
+//     .then(data => {
+//         // console.log(data)
+//         // addProduct(data.products, "Kalach", './src/image.png', 5.3)
+//         // for (let item of data.products) {
+//         //     let tr = document.createElement("tr")
+//         //     let td0 = document.createElement("td")
+//         //     let td1 = document.createElement("td")
+//         //     let td2 = document.createElement("td")
+//         //     let td3 = document.createElement("td")
+//         //     let td4 = document.createElement("td")
+//         //     let td5 = document.createElement("td")
+//         //     td0.innerText = data.products.indexOf(item)
+//         //     tr.append(td0)
+//         //     td1.innerText = item.name
+//         //     tr.append(td1)
+//         //     let img = document.createElement("img")
+//         //     img.src = item.image
+//         //     img.width = "100"
+//         //     td2.append(img)
+//         //     tr.append(td2)
+//         //     td3.innerText = item.qty
+//         //     tr.append(td3)
+//         //     td4.innerText = item.price
+//         //     tr.append(td4)
+//         //     td5.innerText = item.price * item.qty
+//         //     tr.append(td5)
+
+//         //     document.querySelector("tbody").append(tr)
+//         // }
+//         localStorage.setItem("products", data.products)
+//     })
+// JSON.stringify(js object) >>> js obyektlarni  json qberadi
+// JSON.parse(json) >>> jsonni js obyekt qberadi
+
+let pr = JSON.stringify(
+    {
+        qty: 2,
+        price: 105
     }
-})
+)
+// localStorage.setItem("product", pr)
+// console.log(localStorage.getItem("product"))
+// console.log(
+//     JSON.parse(localStorage.getItem("product"))
+// )
+
+let pro = JSON.parse(localStorage.getItem("product"))
+let qty = document.querySelector('.qty')
+let price = document.querySelector('.price')
+
+qty.innerHTML = pro.qty
+price.innerHTML = pro.price * pro.qty
