@@ -417,21 +417,33 @@ let storage = localStorage // yoki sessionStorage
 // JSON.stringify(js object) >>> js obyektlarni  json qberadi
 // JSON.parse(json) >>> jsonni js obyekt qberadi
 
-let pr = JSON.stringify(
-    {
-        qty: 2,
-        price: 105
-    }
-)
+// let pr = JSON.stringify(
+//     {
+//         qty: 2,
+//         price: 105
+//     }
+// )
 // localStorage.setItem("product", pr)
 // console.log(localStorage.getItem("product"))
 // console.log(
 //     JSON.parse(localStorage.getItem("product"))
 // )
 
-let pro = JSON.parse(localStorage.getItem("product"))
-let qty = document.querySelector('.qty')
-let price = document.querySelector('.price')
+// let pro = JSON.parse(localStorage.getItem("product"))
+// let qty = document.querySelector('.qty')
+// let price = document.querySelector('.price')
 
-qty.innerHTML = pro.qty
-price.innerHTML = pro.price * pro.qty
+// qty.innerHTML = pro.qty
+// price.innerHTML = pro.price * pro.qty
+
+// task 1 
+// Butun sonlardan iborat massiv qabul qiladigan va butun son qabul qiladigan function
+// yozing, butun son miqdori qadar massiv elementlarini takrorlab ans nomli alohida massiv
+// ko'rinishiga keltiring
+
+// Input: nums = [1,2,1] , 3
+// Output: [1,2,1,1,2,1,1,2,1]
+
+// task 2 * 
+// Massivdagi elementlar tipini aniqlovchi  va qaysi tipdagi elementlar ozchilikni tashkil qilsa
+// o'sha elementlarni o'chirib yuboradigan function yozing
