@@ -447,3 +447,14 @@ let storage = localStorage // yoki sessionStorage
 // task 2 * 
 // Massivdagi elementlar tipini aniqlovchi  va qaysi tipdagi elementlar ozchilikni tashkil qilsa
 // o'sha elementlarni o'chirib yuboradigan function yozing
+
+// task  3 
+// '2006-10-25 14:30:59'
+// '2006-10-25T14:30:59'
+// '2006-10-25 14:30' >> yil oy kun soat minut 
+// '2006-10-25T14:30'
+// '2006-10-25T14:30Z'
+// '2006-10-25T14:30+02:00'
+// '2006-10-25' >> yil , oy , kun
+
+// task 4 
