@@ -15,63 +15,129 @@ img {
     max-width: 100%;
 }
 
-/* static - doimiy xususiyat */
-/* relative - top, left, right, bottom lar ishlaydi */
-/* absolute - kodda qayerda berilgan bolsa osha yerga joylashadi*/
-/* fixed - ekran boylab joylashadi */
-/* sticky - scroll vaqti bir tomonga yopishib qolishi */
+.circle {
+    width: 800px;
+    height: 800px;
+    background:
+        linear-gradient(rgb(57, 13, 13),
+            rgb(49, 49, 41), rgb(8, 35, 8));
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+}
 
-
-
-div[class^="z"] {
-    width: 100px;
-    height: 100px;
-    border: solid 1px gray;
+.circle img {
     position: absolute;
 }
 
-.first {
-    background-color: red;
-    z-index: 2;
+img.cl1 {
+    width: 40px;
+    top: 100px;
+    left: 360px;
 }
 
-.second {
-    background-color: rgb(72, 255, 72);
+img.cl2 {
+    width: 60px;
+    top: 160px;
+    right: 150px;
 }
 
-.last {
-    background-color: green;
+img.cl3 {
+    width: 100px;
+    top: 150px;
+    left: 200px;
 }
 
-.box {
-    width: 300px;
-    height: 300px;
-    background-color: orange;
-    margin: 20px;
-    /* display: inline-block; */
-    position: relative;
-    top: 300px;
-    left: 250px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.inner-box {
-    width: 400px;
+.sun {
+    width: 100px;
     height: 100px;
     background-color: yellow;
-    transform: rotate(45deg);
-    /* position: sticky;
-    top: 0;
-    z-index: -1; */
+    border-radius: 50%;
+    position: absolute;
+    top: 400px;
+    left: 240px;
 }
 
-.with-maxwidth {
-    max-width: 800px;
-    border: solid 2px gray;
+.mount1 {
+    width: 400px;
+    height: 600px;
+    background-color: rgb(85, 43, 43);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 400px;
+    left: -100px;
+    box-shadow: 10px 15px 25px rgb(131, 68, 68);
+}
+
+.mount2 {
+    width: 600px;
+    height: 800px;
+    background-color: rgb(85, 43, 43);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 400px;
+    left: 250px;
+    box-shadow: 10px 15px 25px;
+}
+
+.mount3 {
+    width: 500px;
+    height: 900px;
+    background-color: rgb(85, 43, 43);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 400px;
+    box-shadow: 10px 15px 25px;
+
+}
+
+/* .with-maxwidth {
+    max-width: 600px;
+    min-width: 300px;
 }
 
 .without-maxwidth {
-    width: 800px;
-    border: solid 2px gray;
+    width: 600px;
+} */
+
+.cloud {
+    position: absolute;
+}
+
+.vector-1 {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: lightblue;
+    position: absolute;
+    top: -82px;
+    left: -40px;
+}
+
+.vector-2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: lightblue;
+    position: absolute;
+    top: -52px;
+    left: 223px;
+}
+
+.vector-3 {
+    width: 400px;
+    height: 150px;
+    border-radius: 30%;
+    background-color: lightblue;
+    position: absolute;
+}
+
+.vector-x {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: lightblue;
+    position: absolute;
+    top: -150px;
+    left: 120px;
 }
