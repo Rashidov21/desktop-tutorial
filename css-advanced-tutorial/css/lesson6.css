@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0px 5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.row {
+    max-width: 100%;
+    margin: 30px 0;
+
+}
+
+.row .column {
+    width: 30%;
+    margin: auto;
+    /* display: inline-block; */
+    /* float: left; */
+    /* clear: right; */
+}
+
+.box {
+    max-width: 300px;
+    height: 300px;
+    background-color: orange;
+}
+
+.box:hover {
+    background-color: orangered;
+}
+
+/* a:hover {
+    color: cadetblue;
+}
+
+a:visited {
+    color: rgb(11, 243, 11);
+}
+
+a:active {
+    color: rgb(18, 17, 15);
+} */
+
+input:checked {
+    transform: rotate(10deg);
+    background-color: #000;
+
+}
+
+input:focus {
+    padding: 10px;
+    outline: solid 3px red;
+}
+
+p:first-child {
+    font-size: 30px;
+}
+
+p:first-of-type {
+    color: yellow;
+}
+
+
+input:disabled {
+    background-color: #000;
+}
+
+input:enabled {
+    background-color: rgb(54, 120, 39);
+}
+
+input::placeholder {
+    color: greenyellow;
+    font-size: 20px;
+}
+
+p.letter::first-letter {
+    font-size: 50px;
+}
+
+p::before {
+    content: "Before text";
+    color: #000;
+}
+
+p::after {
+    content: "After text";
+    color: #000;
+}
+
+section.cta {
+    width: 100%;
+    height: 420px;
+
+    background-color: #2A3342;
+}
+
+section.cta .up {
+    width: 100%;
+    height: 210px;
+}
+
+section.cta .card {
+    width: 1140px;
+    height: 290px;
+    background-color: aliceblue;
+    position: absolute;
+    left: 350px;
+    margin-top: 70px;
+    border-radius: 6px;
+    padding: 60px 100px;
+}
+
+section.cta .down {
+    width: 100%;
+    height: 210px;
+    background-color: #22C55E;
+}
+
+
+section.cta .card .card-text {
+    float: left;
+}
+
+.card-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2A3342;
+}
+
+.card-subtitle {
+    color: #8896AB;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: solid 1px #8896AB;
+    border-radius: 6px;
+    margin: auto 20px;
+}
+
+.card-action {
+    margin: 40px 0 0 100px;
+}
+
+.btn-green {
+    background-color: #22C55E;
+    border: none;
+    color: white;
+}
