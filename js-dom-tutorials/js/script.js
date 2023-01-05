@@ -457,4 +457,7 @@ let storage = localStorage // yoki sessionStorage
 // '2006-10-25T14:30+02:00'
 // '2006-10-25' >> yil , oy , kun
 
-// task 4 
+// task 1 
+// Function yozing function matn qabul qiladi va matn telefon raqami bo'lishi shart 
+// raqam ko'rsatilgan +998 93 333 33 33 ko'rinishida bo'lsa massivga yozing aks holda 
+// "Raqamni to'gri kiriting" matnini chiqaring 

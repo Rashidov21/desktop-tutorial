@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    /*nowrap wrap wrap-reverse*/
+    flex-wrap: wrap;
+    /*colum row column-reverse row-reverse*/
+    flex-direction: row;
+    /*flex-start, flex-end, space-around, space-between*/
+    /* justify-content: space-around; */
+    /*flex-start, flex-end, space-around, space-between*/
+    align-items: center;
+    /* align-content: stretch; */
+    gap: 20px;
+    /* gap: 10px 20px; */
+    /* row-gap column gap */
+    /* row-gap: 10px;
+    column-gap: 20px; */
+    border: solid 5px rgba(82, 87, 82, 0.2);
+    padding: 10px;
+    height: 500px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border: solid 1px black;
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+}
+
+.our-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 50px;
+}
+
+.team-person {
+    max-width: 360px;
+
+}
+
+ion-icon[name="person-outline"] {
+    color: blue;
+}
+
+.team-person h3 {
+    margin-top: 15px;
+    font-size: 1.8em;
+}
+
+.team-person span {
+    font-weight: 500;
+    margin-top: 5px;
+    color: orange;
+}
