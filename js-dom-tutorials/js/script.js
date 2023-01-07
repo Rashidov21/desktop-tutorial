@@ -461,3 +461,7 @@ let storage = localStorage // yoki sessionStorage
 // Function yozing function matn qabul qiladi va matn telefon raqami bo'lishi shart 
 // raqam ko'rsatilgan +998 93 333 33 33 ko'rinishida bo'lsa massivga yozing aks holda 
 // "Raqamni to'gri kiriting" matnini chiqaring 
+
+fetch("http://127.0.0.1:8000/api/snippets/")
+    .then(res => console.log(res))
+    .then(data => console.log(data))

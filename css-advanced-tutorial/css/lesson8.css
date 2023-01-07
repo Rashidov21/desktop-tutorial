@@ -8,6 +8,10 @@
     transition: all 0.3s ease-in-out;
 }
 
+body {
+    background-color: #ffffff;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -20,58 +24,72 @@ img {
 
 .flex-container {
     display: flex;
-    /*nowrap wrap wrap-reverse*/
-    flex-wrap: wrap;
-    /*colum row column-reverse row-reverse*/
-    flex-direction: row;
-    /*flex-start, flex-end, space-around, space-between*/
-    /* justify-content: space-around; */
-    /*flex-start, flex-end, space-around, space-between*/
+    justify-content: space-around;
     align-items: center;
-    /* align-content: stretch; */
-    gap: 20px;
-    /* gap: 10px 20px; */
-    /* row-gap column gap */
-    /* row-gap: 10px;
-    column-gap: 20px; */
-    border: solid 5px rgba(82, 87, 82, 0.2);
-    padding: 10px;
-    height: 500px;
+    flex-flow: row wrap;
+    min-height: 600px;
+    border: solid 1px #333F51;
+
+}
+
+.box:nth-child(2) {
+    /* flex item uchun en qiymati  */
+    /* flex-grow: 1; */
+    /* flex-shrink: 0.5; */
+    flex-basis: 1;
+    align-self: flex-start;
 }
 
 .box {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: orange;
-    border: solid 1px black;
-    text-align: center;
-    font-size: 1.3em;
-    color: white;
-}
-
-.our-team {
+    border-radius: 6px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px 50px;
+    align-items: center;
+    font-size: 1.5em;
+    color: #ffffff;
 }
 
-.team-person {
-    max-width: 360px;
-
+.users {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
-ion-icon[name="person-outline"] {
-    color: blue;
+.team {
+    width: 1000px;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../src/user.png);
 }
 
-.team-person h3 {
-    margin-top: 15px;
-    font-size: 1.8em;
+.right-users {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
 }
 
-.team-person span {
-    font-weight: 500;
-    margin-top: 5px;
-    color: orange;
+.left-user {
+    flex-grow: 0.6;
+    min-height: 610px;
 }
+
+/* flex  */
+/* justify-content - x oqida flex item larni joylashuvini boshqarish */
+/* align-items  - y oqida flex item larni joylashuvini boshqarish */
+/* flex-direction - flex elementlar yo'nalishini belgilash  */
+/* flex-wrap - flex item lar flex container ga sigmasa ularni yangi qatordan joylashtirish*/
+/* flex-flow  - direction va wrap qiymatlarini qoshib yozish imkoniyati*/
+/* flex-grow - flex elemetn enini boshqarish uchun */
+/* flex-shrink - flex element choziluvchanligini boshqarish*/
+/* flex-basis - flex element choziluvchanligini boshqarish*/
+/* flex:0.6 1 content; */
+/* align-self  flex element uchun indevidual joylashuv korsatish imkoni*/
+/* gap  flex elementlar orasidagi masofani korsatish*/
+/* row-gap -  qator orasi */
+/* column-gap - ustunlar orasini belgilaydi */
