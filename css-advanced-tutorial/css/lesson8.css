@@ -9,13 +9,57 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #d9cdcd;
 }
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0px 5%;
+}
+
+header {
+    background-color: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.cards .card {
+    max-width: 400px;
+    padding: 15px 30px;
+
+}
+
+.cards .card .card-title {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.with-color .card:nth-child(1) {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.with-color .card:nth-child(2) {
+    background-color: rgb(171, 172, 147);
+    color: white;
+
+}
+
+.with-color .card:nth-child(3) {
+    background-color: rgb(205, 209, 72);
+    color: white;
 }
 
 img {
