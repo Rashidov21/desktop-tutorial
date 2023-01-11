@@ -462,6 +462,6 @@ let storage = localStorage // yoki sessionStorage
 // raqam ko'rsatilgan +998 93 333 33 33 ko'rinishida bo'lsa massivga yozing aks holda 
 // "Raqamni to'gri kiriting" matnini chiqaring 
 
-fetch("http://127.0.0.1:8000/api/snippets/")
-    .then(res => console.log(res))
+fetch("http://127.0.0.1:8000/post/1")
+    .then(res => res)
     .then(data => console.log(data))
