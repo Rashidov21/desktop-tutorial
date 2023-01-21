@@ -14,126 +14,85 @@
     <!-- <link rel="stylesheet" href="./css/lesson5.css"> -->
     <!-- <link rel="stylesheet" href="./css/lesson6.css"> -->
     <!-- <link rel="stylesheet" href="./css/lesson7.css"> -->
-    <link rel="stylesheet" href="./css/lesson8.css">
+    <!-- <link rel="stylesheet" href="./css/lesson8.css"> -->
+    <link rel="stylesheet" href="./css/grid.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="#" class="link">
-                    <img width="100" src="./src/logo.png" alt="">
-                </a>
-            </div>
-        </nav>
+
     </header>
     <main>
+        <br><br>
+        <div class="site">
+            <div class="navbar"></div>
+            <div class="sidebar"></div>
+            <div class="main-content"></div>
+        </div>
+        <br><br>
         <div class="container">
-            <div class="cards with-color">
-                <div class="card">
-                    <div class="card-title">
-                        Bulma
-                    </div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi laborum, eligendi quidem minus
-                        autem, quam laboriosam porro id quod minima, eius facilis temporibus unde non tempore accusamus.
-                        Eos, error eius.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        flexbox
-                    </div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi laborum, eligendi quidem minus
-                        autem, quam laboriosam porro id quod minima, eius facilis temporibus unde non tempore accusamus.
-                        Eos, error eius.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        classes
-                    </div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi laborum, eligendi quidem minus
-                        autem, quam laboriosam porro id quod minima, eius facilis temporibus unde non tempore accusamus.
-                        Eos, error eius.
-                    </div>
-                </div>
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">10</div>
             </div>
         </div>
+        <br><br>
         <div class="container">
-            <div class="cards">
-                <div class="card">
-                    <div class="card-title">
-                        <ion-icon name="add-circle-outline"></ion-icon> Bulma
-                    </div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi laborum, eligendi quidem minus
-                        autem, quam laboriosam porro id quod minima, eius facilis temporibus unde non tempore accusamus.
-                        Eos, error eius.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        <ion-icon name="add-circle-outline"></ion-icon> Bulma
-                    </div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi laborum, eligendi quidem minus
-                        autem, quam laboriosam porro id quod minima, eius facilis temporibus unde non tempore accusamus.
-                        Eos, error eius.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        <ion-icon name="add-circle-outline"></ion-icon> Bulma
-                    </div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi laborum, eligendi quidem minus
-                        autem, quam laboriosam porro id quod minima, eius facilis temporibus unde non tempore accusamus.
-                        Eos, error eius.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        <ion-icon name="add-circle-outline"></ion-icon> Bulma
-                    </div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi laborum, eligendi quidem minus
-                        autem, quam laboriosam porro id quod minima, eius facilis temporibus unde non tempore accusamus.
-                        Eos, error eius.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        <ion-icon name="add-circle-outline"></ion-icon> Bulma
-                    </div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi laborum, eligendi quidem minus
-                        autem, quam laboriosam porro id quod minima, eius facilis temporibus unde non tempore accusamus.
-                        Eos, error eius.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        <ion-icon name="add-circle-outline"></ion-icon> Bulma
-                    </div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi laborum, eligendi quidem minus
-                        autem, quam laboriosam porro id quod minima, eius facilis temporibus unde non tempore accusamus.
-                        Eos, error eius.
-                    </div>
-                </div>
+            <div class="gallery">
+                <a class="gallery-item" onclick="window.open(`${this.children[0].src}`, '_blank', 'height=500,width=500')">
+                    <img src="./src/404.jpg" alt="">
+                </a>
+                <a class="gallery-item" onclick="window.open(`${this.children[0].src}`, '_blank', 'height=500,width=500')">
+                    <img src="./src/gallery.jpg" alt="">
+                </a>
+                <a class="gallery-item" onclick="window.open(`${this.children[0].src}`, '_blank', 'height=500,width=500')">
+                    <img src="./src/404.jpg" alt="">
+                </a>    <a class="gallery-item">
+                    <img src="./src/gallery.jpg" alt="">
+                </a>
+                <a class="gallery-item" onclick="window.open(`${this.children[0].src}`, '_blank', 'height=500,width=500')">
+                    <img src="./src/gallery.jpg" alt="">
+                </a>
+                <a class="gallery-item" onclick="window.open(`${this.children[0].src}`, '_blank', 'height=500,width=500')">
+                    <img src="./src/gallery.jpg" alt="">
+                </a>
+                <a class="gallery-item" onclick="window.open(`${this.children[0].src}`, '_blank', 'height=500,width=500')">
+                    <img src="./src/gallery.jpg" alt="">
+                </a>
+                <a class="gallery-item" onclick="window.open(`${this.children[0].src}`, '_blank', 'height=500,width=500')">
+                    <img src="./src/gallery.jpg" alt="">
+                </a>
+                <a class="gallery-item" onclick="window.open(`${this.children[0].src}`, '_blank', 'height=500,width=500')">
+                    <img src="./src/gallery.jpg" alt="">
+                </a>
+                
             </div>
         </div>
+        <br><br>
+
     </main>
     <br>
 
     <footer></footer>
 
+
+
+
+
+
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 
