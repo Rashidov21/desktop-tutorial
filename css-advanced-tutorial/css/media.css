@@ -1,0 +1,94 @@
+/* Media queries */
+/* @media  - bu qurilma ekranini hajmini kuzatish orqali html elementga turli stillarni biriktirish imkonini beruvchi css xususiyat */
+/* 
+@media screen and (max-width:1000px){
+    
+}
+
+@media screen and (min-width:1000px){
+    
+} */
+/* 290 - xs , extra small 
+390 - sm , small 
+1024 - md , middle 
+1440 - lg , large 
+1920 - xl , extra large  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+img{
+    max-width: 100%;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 5%;
+}
+
+h1 span{
+    font-size: 6em;
+
+}
+h1 span:nth-child(2){
+    font-size: 6em;
+    display: none;
+}
+
+
+/* breakpoint  */
+/* 1200px or 1400px - extra large - desktop  */
+/* 992px - large - laptop  */
+/* 768px - middle - tablet  */
+/* 576px - small - mobile  */
+
+body {
+    background-color: #63b5c5;
+}
+
+
+@media screen and (max-width:768px){
+    h1 span{
+        font-size: 4em;
+    }
+
+}
+@media all , screen and (max-width:576px){
+    h1 span{
+        font-size: 2em;
+    }
+}
+/* @media screen and (max-width:768px) {
+    h1 span{
+        font-size: 4em;
+    }
+    body {
+        background-color: #9ec563;
+    }
+    h1 span:nth-child(1){
+        display: none;
+    }
+    h1 span:nth-child(2){
+        display: block;
+    }
+    
+    
+}
+@media screen and (max-width:576px) {
+    .display-1{
+        font-size: 2em;
+    }
+    body {
+        background-color: #c78e47;
+    }
+} */
+
+
