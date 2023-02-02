@@ -7,7 +7,9 @@
     list-style: none;
     transition: all 500ms ease-in-out;
 }
-
+html{
+    overflow-x: hidden;
+}
 
 
 img{
@@ -35,22 +37,79 @@ img{
     height: 300px;
     width: 300px;
     background-color: orange;
-    animation-name: toRight;
+    /* animation-name: toRight;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function:ease-in-out;
-    animation-direction: alternate;
+    animation-direction: alternate; */
+}
+.cubes{
+    left: 50%;
+    right: 50%;
+    transform:  translate(50% , 50%);
+}
+
+.cube{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(169, 189, 189);
+    position: relative;
+    transform: rotate(45deg);
+}
+.cube:nth-child(1){
+    animation: toUp 1s infinite alternate;
+    transform: rotate(45deg);
+}
+.cube:nth-child(2){
+    animation: toRight 1s infinite alternate;
+    margin-top: -20px;
+    margin-left: 80px;
+}
+.cube:nth-child(3){
+    margin-top: -20px;
+    animation: toDown 1s infinite alternate;
+}
+.cube:nth-child(4){
+    margin-top: -180px;
+    margin-left: -80px;
+    animation: toLeft 1s infinite alternate;
+}
+
+
+@keyframes toLeft {
+    from{
+        transform:  rotate(45deg) ;
+        
+    }
+    to{
+        transform: translateX(-300px)  rotate(45deg) ;
+    }
+}
+
+@keyframes toUp {
+    from{
+        transform: rotate(45deg);
+    }
+    to{
+        transform: translateY(-300px) rotate(45deg);
+   
+    }
 }
 
 @keyframes toRight {
-    /* from{} */
-    /* to{} */
-
-    0%{
-        transform: translate(0,0);
+    from{
+        transform: rotate(45deg);
     }
+    to{
+        transform: translateX(300px) rotate(45deg);
+    }
+}
 
-    100%{
-        transform: translateX(300px);
+@keyframes toDown {
+    from{
+        transform: rotate(45deg);
+    }
+    to{
+        transform: translateY(300px)  rotate(45deg);
     }
 }
