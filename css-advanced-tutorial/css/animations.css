@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    transition: all 500ms ease-in-out;
+}
+
+
+
+img{
+    max-width: 100%;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 5%;    
+    perspective: 2000px;
+    perspective-origin: bottom;
+
+}
+/* @keyframes - animatsiya xosil qilish  */
+/* animation-name - animatsiya nomi  */
+/* animation-duration - davomiyligi */
+/* animation-delay - kutish vaqti */
+/* animation-iteration-count - animatsiyani takrorlanish soni  */
+/* animation-direction - animatsiyani harakatlanish yo'nalishi */
+/* animation-timing-function - animatsiyani vaqtlarda belgilanish tezligi */
+/* animation-fill-mode - animatsiyani 1 va  oxirgi kadrlarini boshqarish */
+/* animation - qisqa yozish */
+
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: orange;
+    animation-name: toRight;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes toRight {
+    /* from{} */
+    /* to{} */
+
+    0%{
+        transform: translate(0,0);
+    }
+
+    100%{
+        transform: translateX(300px);
+    }
+}
