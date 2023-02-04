@@ -1,0 +1,11 @@
+
+
+:root{
+    --bg-color: #FAFAFA;
+    --text-color:#1D242B;    --text-muted-color:#BABABA;
+    --my-font: "Poppins", sans-serif;
+
+    --title-text-size:47px;
+    --product-text-size:28px;
+    --simple-text-size:18px;
+}
