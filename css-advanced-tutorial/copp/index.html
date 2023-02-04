@@ -15,7 +15,8 @@
     
 <header>
 <div class="container">
-    <nav>        
+    <nav>
+
         <ul class="navbar">
             <li>
                 <div class="logo">
@@ -46,7 +47,7 @@
         
         <ul class="mobile-navbar">
             <li>
-                <a href="">
+                <a href="#" onclick="showMobileMenu()">
                     <img src="./src/menu.svg" alt="">
                 </a>
             </li>
@@ -63,6 +64,23 @@
                 </a>
             </li>
         </ul>
+
+        <div class="mobile-menu">
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div><a href="">Корзина</a></div>
+                    <div><a href="">Профиль</a></div>
+                    <div><a href="">Настройки</a></div>
+                </div>
+                <div class="menu-item">
+                    <div><img src="./src/cart.svg" alt=""></div>
+                    <div><img src="./src/profile.svg" alt=""></div>
+                    <div><img src="./src/cog.svg" alt=""></div>
+                </div>
+
+            </div>
+
+        </div>
         
     </nav>
 </div>
@@ -71,5 +89,7 @@
 
 <main></main>
 <footer></footer>
+
+<script src="./js/script.js"></script>
 </body>
 </html>
