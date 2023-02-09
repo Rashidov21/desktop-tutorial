@@ -1,45 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShaggyMullet&accessoriesType=Wayfarers&hairColor=Red&facialHairType=BeardMajestic&facialHairColor=Brown&clotheType=CollarSweater&clotheColor=PastelYellow&eyeType=Close&eyebrowType=DefaultNatural&mouthType=Concerned&skinColor=Yellow
-    " type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Tailwind CSS</title>
+  <!-- <link href="./css/tailwind.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<body class="px-5">
+  <!-- <div class="container-md mx-auto px-5">
+    <div class="box bg-gray-600 md:bg-blue-600 lg:bg-yellow-200 p-5 text-white rounded-lg shadow-lg inline-block">
+        Lorem ipsum dolor sit,doloribus!
+    </div>
+    <div class="box bg-gray-600 md:bg-blue-600 lg:bg-yellow-200 p-5 text-white rounded-lg shadow-lg inline-block">
+        Lorem ipsum dolor sit,doloribus!
+    </div>
+    <div class="box bg-gray-600 md:bg-blue-600 lg:bg-yellow-200 p-5 text-white rounded-lg shadow-lg inline-block">
+        Lorem ipsum dolor sit,doloribus!
+    </div>
+  </div> -->
 
-<body>
-    <div class="container mx-auto px-5 py-5">
-        <div class="box bg-orange-400 hover:bg-orange-600">
-            <div class="title p-5 text-center text-gray-700 text-6xl md:text-9xl">
-                Hello tailwind
+<main class="px-5">
+    <div class="container mx-auto px-5 ">
+        <!-- <div class="posts border-l-0 border-r-0 border-4 border-blue-400  py-3 px-5 flex justify-center align-center flex-wrap gap-5">
+            <div class="card w-64 bg-red-400 p-2 mx-2 my-4 rounded-lg">
+                Lorem ipsum dolor sit amet.
             </div>
-            <div class="bg-orange-300 py-8 px-4 dark:bg-slate-900 rounded-lg">
-                <!-- <img class="" src="../css-advanced-tutorial/img/4.jpg" alt=""> -->
-                <div class="text-center md:text-left text-blue-400 font-semibold">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptatum?
-                </div>
+            <div class="card w-64 bg-red-400 p-2 mx-2 my-4 rounded-lg">
+                Lorem ipsum dolor sit amet.
             </div>
-            <div class="bg-orange-300 py-8 px-4 rounded-lg">
-                <!-- <img class="" src="../css-advanced-tutorial/img/4.jpg" alt=""> -->
-                <div class="text-center md:text-left text-blue-400 font-semibold">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptatum?
-                </div>
+            <div class="card w-64 bg-red-400 p-2 mx-2 my-4 rounded-lg">
+                Lorem ipsum dolor sit amet.
+            </div>
+            <div class="card w-64 bg-red-400 p-2 mx-2 my-4 rounded-lg">
+                Lorem ipsum dolor sit amet.
+            </div>
+            <div class="card w-64 bg-red-400 p-2 mx-2 my-4 rounded-lg">
+                Lorem ipsum dolor sit amet.
+            </div>
+            <div class="card w-64 bg-red-400 p-2 mx-2 my-4 rounded-lg">
+                Lorem ipsum dolor sit amet.
+            </div>
+        </div> -->
+        <h1 class="text-3xl">Flex Example </h1>
+        <div class="numbers p-5 bg-gray-100 flex flex-row-reverse flex-wrap">
+            <div class="p-5 bg-red-500 rounded m-1 w-16 text-center text-3xl text-white">1</div>
+            <div class="p-5 bg-red-500 rounded m-1 w-16 text-center text-3xl text-white">2</div>
+            <div class="p-5 bg-red-500 rounded m-1 w-16 text-center text-3xl text-white">3</div>
+            <div class="p-5 bg-red-500 rounded m-1 w-16 text-center text-3xl text-white">4</div>
+            <div class="p-5 bg-red-500 rounded m-1 w-16 text-center text-3xl text-white">5</div>
+        </div>
+        <div class="my-5"></div>
+        <h1 class="text-3xl">Grid Example </h1>
+        <div class="p-5 bg-gray-300 grid grid-cols-2 grid-rows-5">
+            <div class="p-5 bg-red-500 rounded m-1 w-16 text-center text-3xl text-white">1</div>
+            <div class="p-5 bg-red-500 rounded m-1 w-16 text-center text-3xl text-white">2</div>
+            <div class="p-5 bg-red-500 rounded m-1 w-16 text-center text-3xl text-white">3</div>
+            <div class="p-5 bg-red-500 rounded m-1 w-16 text-center text-3xl text-white">4</div>
+            <div class="p-5 bg-red-500 rounded m-1 w-16 text-center text-3xl text-white">5</div>
+        </div>
+        <div class="my-5"></div>
+        <h1 class="text-3xl ">Float Example </h1>
+        <div>  
+          
+            <img src="./src/poster.jpg" class="w-64 float-left" alt="">
+           
+            <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aut tempora amet sapiente, magni placeat neque. Dolore velit sit nobis hic ullam vel iure voluptatibus repellendus, reiciendis temporibus ab enim.
             </div>
         </div>
-    </div>
-
-    <div class="container bg-gradient-to-t from-gray-300 to-red-400 mx-auto rounded-lg">
-        <div class="text-black-600 uppercase text-center">
-            TailWind CSS
+        <div class="my-5"></div>
+        <div class="my-5"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 class="text-3xl">Overflow Example </h1>
+        <div class="" style="width:300px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sint pariatur est, sed quia aliquam totam nesciunt voluptates quibusdam provident eum, rerum illo magni commodi, eos sapiente recusandae necessitatibus? Numquam?
+            Sint accusantium non, assumenda, tenetur voluptas ab libero aliquid delectus voluptatum quaerat ipsam eligendi quam, dolorem molestiae aspernatur perferendis vel et alias expedita. Aperiam atque iste obcaecati fugiat tenetur deserunt.
+        </div>
+        <div class="my-5"></div>
+        <div class="my-5"></div>
+        <h1 class="text-3xl">Position Example </h1>
+        <div class="cube w-96 h-96 bg-gray-700">
+            <div class="box w-16 h-16 bg-yellow-400 fixed bottom-2/4 left-2/4"></div>
+        </div>
+        <div class="my-5"></div>
+        <div class="my-5"></div>
+        <h1 class="text-3xl">Margin padding Example </h1>
+        <div class="cube w-96 h-96 bg-gray-700">
+            <div class="box w-16 h-16 bg-yellow-400  mt-10"></div>
+            <div class="box w-16 h-16 bg-yellow-400 py-3  mx-auto -my-16 "></div>
         </div>
     </div>
-    <script src="./script.js"></script>
+</main>
+
 </body>
-
 </html>
