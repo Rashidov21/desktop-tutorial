@@ -1,0 +1,113 @@
+:root{
+    --title-text-size:65px;
+    --text-color:#070C37;
+    --subtitle-text-size:26px;
+    --button-bg-color:#5968F4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+section{
+    margin: 30px 0px;
+}
+.container{
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+nav{
+    width: 100%;
+    height: 90px;
+}
+ul.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+li.logo a{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--text-color);
+}
+li.links ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 30px;
+}
+li.links ul li a {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+li.button{
+    margin-top: 10px;
+}
+.btn{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 20px;
+    color: white;
+    background-color: var(--button-bg-color);
+    border-radius: 20px;
+}
+.banner-content{
+    display: flex;
+    gap: 30px;
+}
+
+.banner-title{
+    font-size: var(--title-text-size);
+    color: var(--text-color);
+}
+.banner-subtitle{
+    font-size: var(--subtitle-text-size);
+    color: var(--text-color);
+}
+.form{
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+}
+.form select{
+    margin: 10px 20px;
+    padding: 20px 60px;
+    outline: none;
+    border: none;
+    background-color: #F3EFEF;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    -webkit-appearance: none;
+    background-image: url(../src/select-item.png) ; 
+    /* Standard syntax; must be last */
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+input[type=submit]{
+    outline: none;
+    border: none;
+}
+.banner{
+    width: 100%;
+    height: 1024px;
+    background-image: url(../src/travel-bg.png);
+    background-position: center;
+    background-size: contain;
+}
+.image img{
+    max-width: 360px;
+    border-radius: 30px;
+}

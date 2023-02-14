@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css" integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Register</title>
+</head>
+<body>
+    <header class="px-16">
+        <nav class="my-2 flex justify-between  items-center">
+            <div class="logo">
+                <img src="./src/logo.png" class="w-56" alt="">
+            </div>
+            <div class="datetime">
+                <span class="text-2xl current"></span>
+            </div>
+        </nav>
+    </header>
+ <main>
+    <section class="banner">
+        <div class="container px-16 md:px-32 mx-auto">
+            <div class="banner-content mt-20 flex justify-center items-center">
+                <div class="slider">
+                    <section class="splide" aria-label="Splide Basic HTML Example">
+                        <div class="splide__track">
+                              <ul class="splide__list max-w-screen-sm">
+                                  <li class="splide__slide">
+                                    <div class="slide max-w-screen-sm">
+                                        <img src="./src/slider1.png" class="w-64" alt="">
+                                        <p class="text-xl text-blue-900 font-semibold my-3">Dasturlashdagi bilimlaringizni Topshiriqlar Menejeri orqali topshiriqlarni bajarish bilan mustahkamlang.</p>
+                                    </div>
+                                  </li>
+                                  <li class="splide__slide">
+                                    <div class="slide max-w-screen-sm">
+                                        <img src="./src/slider2.png" class="w-64" alt="">
+                                        <p class="text-xl text-blue-900 font-semibold my-3">Kreativ fikrlash , mantiqiy fikrlash  va to’qnash keladigan muammolarga yechim topishdagi ko’nikmalaringizni oshiring.</p>
+                                    </div>
+                                  </li>
+                                  <li class="splide__slide">
+                                    <div class="slide max-w-screen-sm">
+                                        <img src="./src/slider3.png" class="w-64" alt="">
+                                        <p class="text-xl text-blue-900 font-semibold my-3">Bizning topshiriqlar fikrlash doirangizni kengaytiradi va siz oldin ko’rmagan narsalaringizni ham ko’ra boshlaysiz.</p>
+                                    </div>
+                                  </li>
+                              </ul>
+                        </div>
+                      </section>
+
+             
+                </div>
+                <div class="register-form rounded-xl shadow-xl py-2 px-5">
+                    <div class="text-center text-2xl font-bold">
+                        Ro'yhatdan o'tish formasi
+                    </div>
+                    <form action="#" method="post">
+                        <p class="my-2 p-3">
+                            <input type="text" class="w-full border-2 rounded-2xl p-2 outline-white" placeholder="Ism">
+                        </p>
+                        <p class="my-2 p-3">
+                            <input type="date" class="w-full border-2 rounded-2xl p-2 outline-white" placeholder="Tug'ilgan sana">
+                        </p>
+                        <p class="my-2 p-3">
+                            <input type="text" class="w-full border-2 rounded-2xl p-2 outline-white" placeholder="Yo'nalish">
+                        </p>
+                        <p class="my-2 p-3">
+                            <input type="text" class="w-full border-2 rounded-2xl p-2 outline-white" placeholder="Telefon">
+                        </p>
+                        <p class="my-2 p-3">
+                            <input type="password" class="w-full border-2 rounded-2xl p-2 outline-white" placeholder="Parol *">
+                        </p>
+                        <p class="my-2 p-3">
+                            <input type="password" class="w-full border-2 rounded-2xl p-2 outline-white" placeholder="Parol takroran *">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+ </main>
+ <footer>
+    
+ </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js" integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script>
+    let datetime = new Date().toLocaleString()
+    document.querySelector(".current").innerHTML = datetime
+
+    // Slider Init 
+    new Splide( '.splide', {
+        type   : 'loop',
+        perPage: 1,
+        arrows:false
+      } ).mount();
+ </script>
+</body>
+</html>
