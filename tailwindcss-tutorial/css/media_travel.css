@@ -1,0 +1,70 @@
+@media screen and (max-width:1400px){
+    :root{
+        --title-text-size:55px;
+        --subtitle-text-size:22px;
+    }
+    .column-1 , .column-2{
+        max-width: 400px;
+    }
+
+}
+@media screen and (max-width:992px){
+    :root{
+        --btn-size:10px 15px;
+        --btn-text-size:16px;
+    }
+    .links{
+        display: none;
+    }
+    .banner-content{
+        display: flex;
+        gap: 15px;
+        flex-direction: column-reverse;
+    }
+    .banner-images{
+        display: flex;
+        justify-content: space-around;
+    }
+    .column-1 , .column-2{
+        max-width: 300px;
+    }
+
+}
+@media screen and (max-width:768px){
+    :root{
+        --title-text-size:45px;
+        --subtitle-text-size:18px;
+    }
+    .banner-images{
+        display: none;
+    }
+    .form select{
+        padding: 15px 45px;
+    }
+    video{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .circle img{
+        cursor: pointer;
+      }
+      .column-1 , .column-2{
+        max-width: 100%;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:512px){
+    :root{
+        --title-text-size:35px;
+        --subtitle-text-size:16px;
+    }
+    .banner-images{
+        display: none;
+    }
+    .form select{
+        padding: 10px 35px;
+    }
+}
+
+

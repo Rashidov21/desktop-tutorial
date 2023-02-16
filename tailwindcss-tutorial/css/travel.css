@@ -3,6 +3,8 @@
     --text-color:#070C37;
     --subtitle-text-size:26px;
     --button-bg-color:#5968F4;
+    --btn-size:15px 20px;
+    --btn-text-size:20px;
 }
 
 *{
@@ -17,18 +19,43 @@
 body{
     overflow-x: hidden;
 }
+img{
+    max-width: 100%;
+}
 section{
-    margin: 30px 0px;
+    margin: 50px 0px;
 }
 .container{
     max-width: 1350px;
     margin: 0 auto;
-    padding: 0 3%;
+    padding: 0 5%;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 7px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6c6cec;
+  }
+
 
 nav{
     width: 100%;
     height: 90px;
+    background-color: transparent;
 }
 ul.navbar{
     display: flex;
@@ -55,9 +82,9 @@ li.button{
     margin-top: 10px;
 }
 .btn{
-    font-size: 20px;
+    font-size: var(--btn-text-size);
     font-weight: 600;
-    padding: 15px 20px;
+    padding: var(--btn-size);
     color: white;
     background-color: var(--button-bg-color);
     border-radius: 20px;
@@ -102,12 +129,57 @@ input[type=submit]{
 }
 .banner{
     width: 100%;
-    height: 1024px;
     background-image: url(../src/travel-bg.png);
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 .image img{
     max-width: 360px;
     border-radius: 30px;
+}
+.video{
+    position: relative;
+    width: 100%;
+}
+div.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #817def;
+    display: grid;
+    place-content: center;
+    animation: grow 1s infinite;    
+  }
+.circle img{
+    cursor: pointer;
+  }
+
+  
+  @keyframes grow {
+    from {
+      box-shadow: 0px 0px 1em #8f3bd4;
+    }
+    to {
+      box-shadow: 0px 0px 3em #485cde;
+    }
+  }
+  
+video{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.column-2{
+    margin-top: 80px;
 }
