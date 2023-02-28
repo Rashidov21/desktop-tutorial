@@ -5,7 +5,7 @@
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     list-style: none;
-    transition: all 500ms ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 html{
     overflow-x: hidden;
@@ -19,97 +19,26 @@ img{
     max-width: 1440px;
     margin: 0 auto;
     padding: 0px 5%;    
-    perspective: 2000px;
-    perspective-origin: bottom;
 
 }
-/* @keyframes - animatsiya xosil qilish  */
-/* animation-name - animatsiya nomi  */
-/* animation-duration - davomiyligi */
-/* animation-delay - kutish vaqti */
-/* animation-iteration-count - animatsiyani takrorlanish soni  */
-/* animation-direction - animatsiyani harakatlanish yo'nalishi */
-/* animation-timing-function - animatsiyani vaqtlarda belgilanish tezligi */
-/* animation-fill-mode - animatsiyani 1 va  oxirgi kadrlarini boshqarish */
-/* animation - qisqa yozish */
-
-.box{
-    height: 300px;
-    width: 300px;
-    background-color: orange;
-    /* animation-name: toRight;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function:ease-in-out;
-    animation-direction: alternate; */
+.flex{
+    display: flex;
 }
-.cubes{
-    left: 50%;
-    right: 50%;
-    transform:  translate(50% , 50%);
+.items-center{
+    justify-content: center;
 }
 
-.cube{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(169, 189, 189);
-    position: relative;
-    transform: rotate(45deg);
+.pagination {
+    display: flex;
+    gap: 10px;
 }
-.cube:nth-child(1){
-    animation: toUp 1s infinite alternate;
-    transform: rotate(45deg);
+.pagination-item a{
+    padding: 7px 10px;
+    font-size: 1.2em;
+    background-color: rgb(222, 232, 239);
 }
-.cube:nth-child(2){
-    animation: toRight 1s infinite alternate;
-    margin-top: -20px;
-    margin-left: 80px;
-}
-.cube:nth-child(3){
-    margin-top: -20px;
-    animation: toDown 1s infinite alternate;
-}
-.cube:nth-child(4){
-    margin-top: -180px;
-    margin-left: -80px;
-    animation: toLeft 1s infinite alternate;
-}
-
-
-@keyframes toLeft {
-    from{
-        transform:  rotate(45deg) ;
-        
-    }
-    to{
-        transform: translateX(-300px)  rotate(45deg) ;
-    }
-}
-
-@keyframes toUp {
-    from{
-        transform: rotate(45deg);
-    }
-    to{
-        transform: translateY(-300px) rotate(45deg);
-   
-    }
-}
-
-@keyframes toRight {
-    from{
-        transform: rotate(45deg);
-    }
-    to{
-        transform: translateX(300px) rotate(45deg);
-    }
-}
-
-@keyframes toDown {
-    from{
-        transform: rotate(45deg);
-    }
-    to{
-        transform: translateY(300px)  rotate(45deg);
-    }
+.pagination-item a:hover{
+    padding: 7px 10px;
+    font-size: 1.2em;
+    background-color: rgb(157, 199, 236);
 }
