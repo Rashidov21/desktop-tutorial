@@ -90,7 +90,7 @@ rgba(12,12,12,0.5) */
 } */
 
 /* text, font  */
-div {
+/* div {
     text-align: center;
     text-decoration: underline;
     text-transform: lowercase;
@@ -102,7 +102,7 @@ div {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     font-style: italic;
-}
+} */
 /* z-index , overflow , float  */
 body{
     overflow-x: hidden;
