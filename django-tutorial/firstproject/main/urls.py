@@ -5,5 +5,6 @@ app_name = 'main'
 
 urlpatterns = [
     # domen nomidan song hech narsa yozilmasa views modulidagi homePageView kontroller method (funksiya) ishga tushadi aynan shu  funksiya userga response obyektini qaytarishi shart 
-    path("", views.homePageView, name='home')
+    path("", views.homePageView, name='home'),
+    path("about/", views.aboutPageView, name='about')
 ]
