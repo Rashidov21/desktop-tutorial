@@ -1,0 +1,39 @@
+*{
+    text-decoration: none;
+}
+
+body{
+    /* background-color: yellow; */
+    /* background-color: rgb(255, 255, 0); */
+    /* background-color: rgba(42, 72, 238, 0.236); */
+    /* background-color: #ffff00; */
+    
+    
+    /* fon hajmi  */
+    background-size: cover;
+    
+    /* fon joylashuvi : top , right , bottom , left  */
+    background-position:top center;
+    
+    /* fon takrorlanishi : repeat-x , repeat-y */
+    background-repeat: no-repeat;
+    
+    /* fon harakatlanishi: fixed , scroll */
+    background-attachment: fixed;
+    
+    /* background-image: url(../src/home.jpg); */
+    /* background-color: orange; */
+    /* background-blend-mode:darken; */
+    /* mix-blend-mode: ; */
+    /* blend-mode - fonga rang filtri */
+}
+.box-with-border{
+    /* border-style: solid;
+    border-width: 5px;
+    border-color: tomato; */
+    width: 800px;
+    height: 300px;
+    padding: 30px;
+    margin: 100px;
+    border: solid 60px rgb(61, 22, 15);
+}
