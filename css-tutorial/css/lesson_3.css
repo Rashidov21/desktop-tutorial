@@ -1,0 +1,63 @@
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    list-style-image: url(../src/star.png);
+
+    font-family: sans-serif;
+
+}
+
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin:0 auto;
+}
+.box-with-border{
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    /* margin - blockni boshqa blocklar bilan orasidagi masofa */
+    /* 4 tomoniga  */
+    /* margin: 100px; */
+    /* y ,x o'qlarida  */
+    /* margin: 100px 10px; */
+    /* alohida tomoniga margin  */
+    /* margin-top: 60px;
+    margin-right: 50px;
+    margin-bottom: 60px;
+    margin-left: 50px; */
+    /* margin-bottom: 100px; */
+
+    /* Padding - block borderi bilan content orasidagi masofa  */
+    /* padding: 100px; */
+    /* padding: 0 50px; */
+    /* padding-top: 50px;
+    padding-left: 50px; */
+    padding: 50px;
+
+}
+
+p{
+    text-align:center ;
+    text-decoration: none;
+    text-transform: lowercase;
+    text-indent: 100px;
+    /* text-overflow: ellipsis "[...]"; */
+    
+}
+h1{
+    text-shadow: -5px 5px 10px rgb(73, 18, 214);
+}
