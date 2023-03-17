@@ -15,49 +15,25 @@
 
 
 .container{
-    max-width: 1440px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 10%;
 }
-.box{
-    width: 300px;
-    height: 300px;
-    background-color: red;
-    margin:0 auto;
-}
-.box-with-border{
-    width: 300px;
-    height: 300px;
-    background-color: orange;
-    /* margin - blockni boshqa blocklar bilan orasidagi masofa */
-    /* 4 tomoniga  */
-    /* margin: 100px; */
-    /* y ,x o'qlarida  */
-    /* margin: 100px 10px; */
-    /* alohida tomoniga margin  */
-    /* margin-top: 60px;
-    margin-right: 50px;
-    margin-bottom: 60px;
-    margin-left: 50px; */
-    /* margin-bottom: 100px; */
 
-    /* Padding - block borderi bilan content orasidagi masofa  */
-    /* padding: 100px; */
-    /* padding: 0 50px; */
-    /* padding-top: 50px;
-    padding-left: 50px; */
-    padding: 50px;
-
+.card{
+    display: inline-block;
+    max-width: 300px;
+    background-color: cornflowerblue;
+    padding: 40px 30px;
+    border-radius: 30px;
 }
-
-p{
-    text-align:center ;
-    text-decoration: none;
-    text-transform: lowercase;
-    text-indent: 100px;
-    /* text-overflow: ellipsis "[...]"; */
-    
+.card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
-h1{
-    text-shadow: -5px 5px 10px rgb(73, 18, 214);
+.card .btn{
+    padding: 15px 40px;
+    background-color: blueviolet;
+    border-radius: 20px;
 }
