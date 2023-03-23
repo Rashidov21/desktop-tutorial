@@ -21,11 +21,12 @@
 }
 
 .card{
-    display: inline-block;
-    max-width: 300px;
-    background-color: cornflowerblue;
-    padding: 40px 30px;
-    border-radius: 30px;
+    max-width: 400px;
+    padding: 30px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+
+    text-align: center;
 }
 .card img{
     width: 100px;
@@ -33,7 +34,9 @@
     border-radius: 50%;
 }
 .card .btn{
-    padding: 15px 40px;
+    padding: 15px 30px;
     background-color: blueviolet;
-    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
 }
