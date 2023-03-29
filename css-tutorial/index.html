@@ -7,49 +7,68 @@
     <meta name="keywords" content="sql sqlite db html" />
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <!-- <link rel="stylesheet" href="./css/lesson_2.css" /> -->
-    <link rel="stylesheet" href="./css/lesson_3.css" />
+    <!-- <link rel="stylesheet" href="./css/lesson_4.css" /> -->
+    <link rel="stylesheet" href="./css/lesson_5.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>CSS tutorial</title>
   </head>
   <body>
     <!-- parent element = header - ota element -->
     <!-- child element = ul - bola element -->
-    <header class="container">
-      <ul>
-        <li>
-          <a href="https://naqshsoft.uz">
-            <img src="./src/logo.png" alt="" />
-          </a>
-        </li>
-
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Our projects</a></li>
-        <li><a href="#">Partners</a></li>
-        <li><a href="#">Contact</a></li>
-
-      </ul>
+    <header>
+      <nav class="container">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+              <img src="./src/home.svg" alt="" />
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-home"></i>
+              <i class="fa-solid fa-heart"></i>
+              <img src="./src/phone.svg" alt="" />
+              Phone
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./src/map.svg" alt="" />
+              Address
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <div class="container">
-
-      </div>  
       <section>
         <div class="container">
-            <div class="card">
-            <img src="./src/home.jpg" alt="">
-            <br>
-            <br>
-            <br>
-            <h3>Jackie Chan</h3>
-            <p>Movie actor</p>
-            <br><br>
-            <a href="#" class="btn">Connect</a>
+          <div class="blocks">
+            <div class="">static</div>
+            <div class="relative">relative</div>
+            <div class="absolute">absolute</div>
+            <div class="fixed">fixed</div>
+            <div class="sticky">sticky</div>
           </div>
         </div>
+      </section>
+      <section>
+        <div class="container"></div>
       </section>
     </main>
 
     <footer></footer>
+    <script>
+      console.log("Hello world");
+    </script>
   </body>
 </html>

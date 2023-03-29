@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+section{
+    margin: 50px 0;
+}
+.container{
+    padding: 0 5%;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    max-width: 350px;
+    /* min-width: 600px;
+    
+    min-height: 300px; */
+    position: relative;
+    display: inline-block;
+    /* display: none; */
+    /* visibility: hidden; */
+
+
+}
+.blocks > div{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    margin: 30px;
+    padding: 10px;
+    font-size: 1.3em;
+    color: white;
+}
+/* static -doimiy xususiyat */
+/* relative - turgan joyidan qochish */
+/* absolute - parent elementga nisbatan joylashuv */
+/* fixed - ekrangan nisbatan joylashuv */
+/* sticky - ekranga nisbatan yopishib joylashuv */
+
+.static{
+    position: static;
+
+}
+.relative{
+    position: relative;
+    top: 1000px;
+    left: 300px;
+}
+.absolute{
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+.fixed{
+    position: fixed;
+}
+.sticky{
+    position: sticky;
+}

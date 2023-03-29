@@ -1,0 +1,47 @@
+
+.container p{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-weight: 700;
+}
+header nav{
+    height: 80px;
+    background-color: bisque;
+}
+header nav ul li {
+    display: inline-block;
+    margin: 30px;
+}
+header nav ul li img{
+    width: 24px;
+}
+header nav ul li a{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+i{
+    font-size: 50px;
+    color: #2fda79;
+}
+
+
+a.btn:link{
+    padding: 15px 20px;
+    background-color: rgb(157, 88, 222);
+    font-size: 18px;
+    font-weight: 600;
+    color:rgb(228, 228, 99);
+    border-radius: 15px;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    background-color: rgb(25, 11, 38);  
+    color:rgb(221, 221, 199);
+}
+a:active{
+    background-color: red;
+}
