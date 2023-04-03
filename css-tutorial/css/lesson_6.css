@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+section{
+    margin: 50px 0;
+}
+.container{
+    padding: 0 5%;
+ 
+}
+.positions{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    border: solid 1px black;
+
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    position: sticky;
+    top: 0;
+    /* relative > top , left, bottom, right  */
+    /* position: relative;
+    left: 50%; */
+    /* position: absolute;
+    top: 150px;
+    left: 150px; */
+    /* position: fixed; */
+}
+
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    background-color: beige;
+    padding: 50px 80px;
+    top: 0;
+}
+.sidebar ul li {
+    margin: 30px 0;
+    list-style: none;
+}
+.sidebar ul li a{
+    font-size: 1.2em;
+    font-weight: 600;
+
+}
+
+/* Animatsiya - Illustratsiya */
+
+.illustration{
+    width: 800px;
+    height: 800px;
+    background: rgb(1,68,165);
+    background: linear-gradient(347deg, rgba(1,68,165,1) 0%, rgba(244,70,56,1) 100%, rgba(255,255,255,1) 100%);
+border-radius: 50%;
+position: relative;
+overflow: hidden;
+}
+.illustration .sun{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 28%;
+    top: 49%;
+    background-color: yellow;
+}
+.illustration .mount-1{
+    width: 500px;
+    height: 900px;
+    background-color: rgb(39, 39, 39);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 55%;
+    left: -180px;
+}
+.illustration .mount-2{
+    width: 500px;
+    height: 1200px;
+    background-color: rgb(39, 39, 39);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 150px;
+}
+.illustration .mount-3{
+    width: 600px;
+    height: 700px;
+    background-color: rgb(39, 39, 39);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 80px;
+}
+.illustration img:nth-child(1){
+    width: 100px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.illustration img:nth-child(2){
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+.illustration img:nth-child(3){
+    width: 90px;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+}
