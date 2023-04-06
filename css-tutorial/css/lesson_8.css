@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+section{
+    margin: 50px 0;
+}
+.container{
+    padding: 0 7%;
+ 
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: gray;
+}
+header nav ul.navbar li{
+    display: inline-block;
+    margin:0 50px ;
+   
+}
+header nav ul.navbar li a{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.dropdown-menu{
+    width: 150px;
+    padding: 5px 15px;
+    position: absolute;
+    background-color: rgb(131, 173, 210);
+    display: none;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+}
+.box:hover{
+    opacity: 0.8;
+}
+
+.box::after{
+    content: "After element";
+    color: blue;
+}
+.box::before{
+    content: "Before element";
+    color: blue;
+}
+.box::first-letter{
+    font-size: 3em;
+    color: red;
+}
+.box::first-line{
+    font-size: 1.2em;
+    color: orange;
+}
+::marker{
+    content: "*";
+    font-size: 1.2em;
+    color: orange;
+}
+::selection{
+    color: orangered;
+    background-color: blue;
+}
+
+.form{
+    padding: 25px 50px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px rgb(64, 64, 95);
+    max-width: 350px;
+}
+.form p{
+    margin: 10px 0;
+}
+.form .input{
+    padding: 10px 7px;
+    outline: none;
+    border: solid 1px #325553;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.form .submit{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #325553;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+input[type='text']{
+    /* type='text' inputlarni hammasiga */
+}
+/* div[class^="box"] */
+

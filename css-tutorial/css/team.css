@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins" ,sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+section{
+    margin: 50px 0;
+}
+.container{
+    padding: 0 7%;
+    margin: 0 auto;
+}
+.team .team-info{
+    max-width: 600px;
+    float: left;
+}
+.team .team-info h1{
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 150px;
+}
+.team .team-info p{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    padding: 10px 0;
+}
+.btn{
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: #3F3535;
+    color: white;
+}
+/* TEAM  */
+
+.team-members{
+    float: left;
+    max-width: 900px;
+}
+.team-members .member{
+    float: left;
+    margin: 20px;
+}
+.team-members .member h3{
+    font-size: 30px;
+    color: #A4A4A4;
+}
+
+/* .card  */
+
