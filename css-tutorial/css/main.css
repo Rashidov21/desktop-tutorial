@@ -1,0 +1,32 @@
+body{
+    /* background-color: rgb(255,50,250); */
+    /* background-color: rgba(255,50,250,0.2); */
+    background-image: url(../src/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+    background-color: orange;
+    background-blend-mode:lighten;
+
+    background-attachment: fixed;
+}
+form{
+    max-width: 250px;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    text-align: center;
+}
+.input{
+    padding:10px;
+    border: solid 1px gray;
+    outline: none;
+    border-radius: 10px;
+}
+#submit{
+    padding: 10px 20px;
+    border: solid 1px red;
+    outline: none;
+    border-radius: 10px;
+}
