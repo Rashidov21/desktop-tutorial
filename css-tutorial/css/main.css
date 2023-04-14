@@ -1,10 +1,7 @@
-/* @font-face {
-    font-family: "Gotham Pro";
-    src: local('Gotham Pro'), url(../fonts/GothamPro-Medium.ttf);
-} */
 *{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+  
 }
 
 section{
@@ -14,70 +11,35 @@ section{
     padding: 0 5%;
 
 }
-.boxes{
-    position: relative;
-    height: 200px;
-    width: 200px;
-    margin: 100px;
-    padding: 10px;
-    border: 1px solid black;
-
-    perspective: 2000px;
+p.article_with_css{
+    /* text-align: center; */
+    text-decoration: none;
+    text-transform: none;
+    /* text-shadow: 5px 5px 6px red; */
+    /* text-indent: 80px; */
+    text-overflow: ellipsis;
+    /* letter-spacing:10px ; */
+    /* word-spacing: 20px; */
 }
-.box{
-    padding: 50px;
-    background: #236366;
+ h1{
+    letter-spacing: -10px;
+    word-spacing: 0px;
+    font-size: 175px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height:130px;
+    font-family:sans-serif;
 }
-
-
-/* Transition  */
-/* transition-property
-transition-duration
-transition-timing-function
-transition-delay */
-
-.box:hover{
-    transform: rotateY(60deg) translateX(300px);
-    transform-origin: bottom center;
-    transform-style: preserve-3d;
-    background-color: blue;
-    border-radius: 30px;
-
-    /* Transition  */
-    /* transition-property: all;
-    transition-duration: 1.5s ;
-    transition-timing-function: ease; */
-    transition: all 2s ease-in-out;
-
-
+h1::first-letter{
+    font-size: 275px;
+    color: orangered;
 }
-.packman{
-    width: 400px;
-    height: 400px;
-    background-color: yellow;
-    border-radius: 50%;
-    position: relative;
+h1::first-line{
+    color: orange;
 }
-.packman .eye{
-    width: 30px;
-    height: 30px;
-    background-color: black;
-    position: absolute;
-    border-radius: 50%;
-    right: 120px ;
-    top: 110px;
-}
-.packman .mouth{
-    width: 300px;
-    height:200px;
-    background-color: white;
-    transform: rotate(45deg);
-    position: absolute;
-    right: -160px;
-    top: 160px;
-}
-.packman:hover .mouth{
-    height: 0;
-    width: 0;
-    transition: all 0.2s ease-in-out;
+/* h1 .orange{
+    color: orangered;
+} */
+p.article_without_css{
+    /* no css  */
 }
