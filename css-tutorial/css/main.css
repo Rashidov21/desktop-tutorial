@@ -1,37 +1,62 @@
 *{
-    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
-  
+    font-family: sans-serif;
 }
-
+body{
+    overflow-x: hidden;
+}
 section{
-    margin: 50px auto;
+    margin: 50px 0;
 }
 .container{
-    padding: 0 5%;
-    height: 3000px;
+    padding: 0 7%;
+    margin: 0 auto;
+ 
+}
+.box{
+    width:300px;
+    height:300px;
+    background:orange;
+    /* overflow: hidden; */
+    position: relative;
+    /* overflow-y:  ; */
+    /* overflow-x:  ; */
+}
+div[class^='inner']{
+    background-color: #232325;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
 }
 
-.box{
-    width: 300px;
-    height: 300px;
-    background-color: orange;
-    /* inline - a , span,i ,u,b  */
-    /* inline-block - div , p , h1  */
-    display: inline-block;
-    margin: 10px;
-    /* positions  */
-    /* position: absolute; kod boylab  */
-    /* position: relative; moslashuvchan joylashuv  */
-    /* position: fixed; ekran boylab*/
-    /* position: static; doimiy xususiyat */
-    /* position: sticky;
-    top: 0; */
-    /* position: relative;
-    top: 300px;
-    left: 300px; */
-    /* block boylab qochish - margin  */
-    /* ekran boylab qochish - top,left,bottom,right  */
 
-
+.post{
+    max-width: 350px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #232325;
+    /* display: inline-block; */
+    float: left;
+}
+.post .title{
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-weight: 500;
+}
+.badge{
+    max-width: 800px;
+} 
+.badge .boy-image{
+    /* clear: right; */
+    float: left;
+}
+.text{
+    max-width: 400px;
+    float: left;
 }
