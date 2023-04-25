@@ -13,50 +13,20 @@ section{
 }
 .container{
     padding: 0 7%;
-    margin: 0 auto;
- 
-}
-.box{
-    width:300px;
-    height:300px;
-    background:orange;
-    /* overflow: hidden; */
-    position: relative;
-    /* overflow-y:  ; */
-    /* overflow-x:  ; */
-}
-div[class^='inner']{
-    background-color: #232325;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
+    margin: 0 auto; 
 }
 
-
-.post{
-    max-width: 350px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #232325;
-    /* display: inline-block; */
-    float: left;
+.pagination-item{
+    display: inline-block;
+    margin: 5px 10px;
 }
-.post .title{
-    font-size: 1.5em;
-    margin: 10px 0;
-    font-weight: 500;
+.pagination-link{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+    background-color: cadetblue;
+    padding: 10px;
 }
-.badge{
-    max-width: 800px;
-} 
-.badge .boy-image{
-    /* clear: right; */
-    float: left;
-}
-.text{
-    max-width: 400px;
-    float: left;
+.pagination-link:hover{
+    background-color: rgb(52, 91, 93);
 }
