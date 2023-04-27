@@ -142,24 +142,27 @@ section.stats{
 .works{
     width: 100%;
     height: 960px;
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: 0; */
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(4, auto);
     column-gap: 0;
-    row-gap: 0;
-    justify-content: space-between;
+    row-gap: 0; */
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 0; */
+
+    /* justify-content: space-between; */
 
 }
 .work{
-    width: 450px;
-    height: 450px;
+    width:480px;
+    height: 480px;
     background-image: url(../src/work-1.png);
     position: relative;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     overflow: hidden;
+    float: left;
+    margin: 0;
 }
 .work:hover{
     background-color: rgba(52, 84, 122, 0.8);
@@ -176,6 +179,7 @@ section.stats{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
    
 }
 .work:hover .on-hover{
