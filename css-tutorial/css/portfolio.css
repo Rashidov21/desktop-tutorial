@@ -12,6 +12,9 @@
 body{
     overflow-x: hidden;
 }
+img{
+    max-width: 100%;
+}
 section{
     margin: 50px 0;
 }
@@ -46,6 +49,7 @@ nav ul li a.active{
 }
 
 /* BANNER  */
+
 .banner{
     padding: 30px 0;
     display: flex;
@@ -73,4 +77,108 @@ nav ul li a.active{
     padding: 20px 50px;
     background-color: var(--text-muted);
     color: white;
+}
+.about-me-text{
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+section.about-me , section.skills{
+    padding: 100px 0;
+}
+section.stats{
+    width: 100%;
+    height: 250px;
+    background-color: #34547A;
+}
+.projects{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.project span{
+    color: white;
+
+}
+.my-skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.my-skills .image img{
+    max-width: 450px;
+}
+.skill-item{
+    margin-top: 30px;
+}
+.skill-item h3{
+    color: var(--text-muted);
+    font-weight: 400;
+}
+.skill-item .range{
+    width: 440px;
+    height: 4px;
+    background-color: #C4C4C4;
+}
+.skill-item .range .range-value{
+    width: 340px;
+    height: 4px;
+    background-color: #34547A;
+    position: absolute;
+}
+.video-section{
+    width: 100%;
+    height: 600px;
+    background-image: url(../src/video-bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.works{
+    width: 100%;
+    height: 960px;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 0; */
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    column-gap: 0;
+    row-gap: 0;
+    justify-content: space-between;
+
+}
+.work{
+    width: 450px;
+    height: 450px;
+    background-image: url(../src/work-1.png);
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+.work:hover{
+    background-color: rgba(52, 84, 122, 0.8);
+    background-blend-mode: color;
+}
+
+.work .on-hover{
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.work:hover .on-hover{
+    opacity: 1;
+
 }
