@@ -14,86 +14,53 @@ body{
     background-color: var(--bg-dark-blue);
 }
 section{
-    margin: 50px 0;
+    margin: 150px 0;
 }
 .container{
     padding: 0 7%;
     margin: 0 auto; 
 }
 
-.btn:not(.btn:nth-of-type(2)){
-    padding: 20px 50px;
-    background-color: orange;
-    color: white;
-    font-size: var(--title-text-size);
-    font-weight: 600;
-}
-.btn:hover{
-    background-color: orangered;
-}
-/* .btn:nth-child(1), .btn:nth-child(3){
-    background-color: #727272;
-} */
-/* .btn:nth-child(even){
-    background-color: #333;
-} */
-/* .btn:nth-child(odd){
-    background-color: #333;
-} */
-/* .btn:nth-of-type(3){
-    background-color: #333;
-} */
-/* .btn:nth-last-of-type(3){
-    background-color: #333;
-} */
-.chess-board{
-    max-width:480px ;
-}
-.chess-board .row .column{
-    width: 50px;
-    height: 50px;
-    border: solid 1px gray;
-    display: inline-block;
-}
-/* .row .column:not(.column:nth-of-type(8)){
-    background-color: black;
-} */
-.column:nth-child(2n+0){
-    background-color: black;
-
+.banner{
+    perspective: 2000px;
+    perspective-origin: center;
 }
 .box{
     width: 300px;
     height: 300px;
-    background-color: lightcoral;
-    border: solid 2px red;
+    position: relative;
+    background-color: orange;
+    transform: 
+        /* rotate(40deg) */
+        /* translate(x,y) */
+        /* translate(200px,300px) */
+        /* scale(1.5) */
+        /* scaleX(1.5)
+        scaleY(2) */
+        /* skew(20deg) */
+        /* skewY(20deg) */
+        /* rotateX(20deg)
+        rotateY(50deg)
+        rotateZ(60deg) */
+        rotateZ(50deg)
+        /* rotateX(50deg) */
+        rotateX(50deg)
+        /* translate3d(200px , 300px , 1000px) */
+        /* translateX(300px)
+        translateY(300px)
+        translateZ(-300px) */
+    ;
+    /* transform-style:preserve-3d; */
+    /* transform-origin: top left; */
     
 }
-.box::after{
-    content: "after";
-    width: 300px;
-    height: 300px;
-    background-color: lightsalmon;
-    border: solid 2px red;
-    position: relative;
-    display: block;
-    background-position: center;
-    background-size: cover;
-
-    
+.box p{
+    font-size: 1.5em;
+    color: white;
+    font-weight: 600;
 }
-.box::before{
-    content: "before";
-    width: 300px;
-    height: 300px;
-    background-color: lightsalmon;
-    border: solid 2px red;
-    position: relative;
-    display: block;
-    
-    background-position: center;
-    background-size: cover;
-
-    left: 300px;
-    
+.box p:nth-child(2){
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
