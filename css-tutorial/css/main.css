@@ -1,17 +1,20 @@
-/* :root{
-    --bg-dark-blue:#261239;
-    --title-text-size:32px;
-} */
+
+:root{
+    --title-text-size:30px;
+    --subtitle-text-size:20px;
+    --body-bg-color:#8a8aeb;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
+    transition: all 0.3s ease-in-out;
 }
 body{
     overflow-x: hidden;
-    background-color: var(--bg-dark-blue);
+    background-color: var(--body-bg-color);
 }
 section{
     margin: 150px 0;
@@ -21,46 +24,51 @@ section{
     margin: 0 auto; 
 }
 
-.banner{
-    perspective: 2000px;
-    perspective-origin: center;
-}
 .box{
     width: 300px;
     height: 300px;
-    position: relative;
     background-color: orange;
-    transform: 
-        /* rotate(40deg) */
-        /* translate(x,y) */
-        /* translate(200px,300px) */
-        /* scale(1.5) */
-        /* scaleX(1.5)
-        scaleY(2) */
-        /* skew(20deg) */
-        /* skewY(20deg) */
-        /* rotateX(20deg)
-        rotateY(50deg)
-        rotateZ(60deg) */
-        rotateZ(50deg)
-        /* rotateX(50deg) */
-        rotateX(50deg)
-        /* translate3d(200px , 300px , 1000px) */
-        /* translateX(300px)
-        translateY(300px)
-        translateZ(-300px) */
-    ;
-    /* transform-style:preserve-3d; */
-    /* transform-origin: top left; */
-    
+    /* qaysi property uchun amal qilishi  */
+    /* transition-property: all; */
+    /* kutish vaqti  */
+    /* transition-delay:0s; */
+    /* davomiyligi  */
+    /* transition-duration: 2s; */
+    /* vaqtlarda tezlik harakatlari  */
+    /* transition-timing-function:ease-in-out; */
+    /* transition: all 2s ease-in-out; */
 }
-.box p{
-    font-size: 1.5em;
-    color: white;
-    font-weight: 600;
+/* .box:hover{
+    transform: rotate(10deg);
+    width: 600px;
+    background-color: whitesmoke;
+} */
+.box{
+    animation-name: spin;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
 }
-.box p:nth-child(2){
-    position: absolute;
-    bottom: 0;
-    right: 0;
+@keyframes spin {
+    0%{
+        background-color: white;
+        transform: rotate(0deg);
+    }
+    50%{
+        background-color: blue;
+        transform: rotate(180deg);
+    }
+    100%{
+        background-color: rgb(91, 247, 0);
+        transform: rotate(360deg);
+    }
 }
+/* from{
+    transform: rotate(0deg);
+}
+to{
+    transform: rotate(360deg);
+} */

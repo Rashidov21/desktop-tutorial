@@ -1,0 +1,34 @@
+/* variant 1  */
+/* agar max-width : 0px dan to 375px gacha */
+
+/* laptop - lg : large screen */
+@media screen and (max-width:1300px){
+    :root{
+        --body-bg-color:#3be154;
+    }
+}
+/* tablet - md : middle screen */
+@media screen and (max-width:768px){
+    :root{
+        --body-bg-color:#445dba;
+    }
+}
+/* mobile - sm : small screen */
+@media screen and (max-width:375px){
+    :root{
+        --body-bg-color:#450a0a;
+    }
+}
+
+/* desktop - xl : extra large screen */
+/* @media screen and (min-width:1300px){
+    
+} */
+
+
+
+/* variant 2  */
+/* agar min-width : 992px dan to N px gacha */
+/* @media screen and (min-width:992px){
+    
+} */
