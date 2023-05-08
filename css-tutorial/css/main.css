@@ -12,10 +12,6 @@
     font-family: sans-serif;
     transition: all 0.3s ease-in-out;
 }
-body{
-    overflow-x: hidden;
-    background-color: var(--body-bg-color);
-}
 section{
     margin: 150px 0;
 }
@@ -23,52 +19,50 @@ section{
     padding: 0 7%;
     margin: 0 auto; 
 }
+body{
+    overflow-x: hidden;
+    background-color: var(--body-bg-color);
+}
+/* screen - hamma qurilma ekranlari (mobile,tablet,laptop) */
+/* 0px dan 280px gacha */
 
-.box{
-    width: 300px;
-    height: 300px;
-    background-color: orange;
-    /* qaysi property uchun amal qilishi  */
-    /* transition-property: all; */
-    /* kutish vaqti  */
-    /* transition-delay:0s; */
-    /* davomiyligi  */
-    /* transition-duration: 2s; */
-    /* vaqtlarda tezlik harakatlari  */
-    /* transition-timing-function:ease-in-out; */
-    /* transition: all 2s ease-in-out; */
+/* BreakPoint */
+/* mobile - sm = 0px dan 512px gacha */
+/* tablet - md = 513px dan 992px gacha */
+/* laptop - lg = 992px dan 1200px gacha */
+/* desktop - xl = 1200+ katta */
+/* @media screen and (max-width:512px) {
+    body{
+        background-color: rgb(80, 223, 67);
+    }
 }
-/* .box:hover{
-    transform: rotate(10deg);
-    width: 600px;
-    background-color: whitesmoke;
+@media screen and (max-width:280px) {
+    body{
+        background-color: red;
+    }
 } */
-.box{
-    animation-name: spin;
-    animation-delay: 0s;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-fill-mode: both;
+img{
+    width: 350px;
 }
-@keyframes spin {
-    0%{
-        background-color: white;
-        transform: rotate(0deg);
-    }
-    50%{
-        background-color: blue;
-        transform: rotate(180deg);
-    }
-    100%{
-        background-color: rgb(91, 247, 0);
-        transform: rotate(360deg);
+.row {
+    margin: 0 auto;
+}
+.column{
+    width: 24%;
+    height: 150px;
+    display: inline-block;
+    font-size: 1.3em;
+    color: wheat;
+    padding: 20px 0;
+    text-align: center;
+}
+@media screen and (max-width:1024px) {
+    .column{
+        width: 49%;
     }
 }
-/* from{
-    transform: rotate(0deg);
+@media screen and (max-width:512px) {
+    .column{
+        width: 100%;
+    }
 }
-to{
-    transform: rotate(360deg);
-} */
