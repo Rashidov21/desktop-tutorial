@@ -1,16 +1,17 @@
 
 :root{
-    --title-text-size:30px;
-    --subtitle-text-size:20px;
-    --body-bg-color:#8a8aeb;
+    --title-text-size:4.2em;
+    --subtitle-text-size:1.2em;
+    --body-bg-color:#edf5e3;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     transition: all 0.3s ease-in-out;
+    
 }
 section{
     margin: 150px 0;
@@ -23,46 +24,29 @@ body{
     overflow-x: hidden;
     background-color: var(--body-bg-color);
 }
-/* screen - hamma qurilma ekranlari (mobile,tablet,laptop) */
-/* 0px dan 280px gacha */
 
-/* BreakPoint */
-/* mobile - sm = 0px dan 512px gacha */
-/* tablet - md = 513px dan 992px gacha */
-/* laptop - lg = 992px dan 1200px gacha */
-/* desktop - xl = 1200+ katta */
-/* @media screen and (max-width:512px) {
-    body{
-        background-color: rgb(80, 223, 67);
-    }
+.width{
+    width: 700px;
+    border: solid 1px red;
 }
-@media screen and (max-width:280px) {
-    body{
-        background-color: red;
-    }
-} */
-img{
-    width: 350px;
+.max-width{
+    max-width: 700px;
+    border: solid 1px red;
 }
-.row {
-    margin: 0 auto;
+
+.row{
+    /* row with 12 columns  */
+    width: 100%;
 }
-.column{
-    width: 24%;
-    height: 150px;
-    display: inline-block;
-    font-size: 1.3em;
-    color: wheat;
-    padding: 20px 0;
-    text-align: center;
+.col-3x1{
+    width: 33.33333%;
+    float: left;
+
+    border: solid 1px red;
 }
-@media screen and (max-width:1024px) {
-    .column{
-        width: 49%;
-    }
-}
-@media screen and (max-width:512px) {
-    .column{
+
+@media screen and (max-width:768px){
+    .col-3x1{
         width: 100%;
     }
 }
