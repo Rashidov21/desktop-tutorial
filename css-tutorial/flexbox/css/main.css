@@ -23,3 +23,62 @@ section{
     padding: 0 7%;
     margin: 0 auto; 
 }
+.flexbox{
+    border: solid 1px #ccc;
+    height: 400px;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    /* x flex-start , flex-end ,center , space-around , space-between , space-evenly */ 
+    justify-content: space-between;
+    /* y  */
+    align-items: flex-end;
+}
+.flexbox>div:nth-child(1){
+    align-self: flex-start;
+    /* flex-grow: 3; */
+    /* flex-shrink: 2; */
+}
+
+.flexbox>div{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 50px;
+    color: #333;
+    background-color: orange;
+}
+
+.programming-languages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0px;
+    justify-content: space-around;
+}
+.programming-languages .lang{
+    /* width: 32.333%; */
+    width: 350px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: #333;
+    color: #ccc;
+    box-shadow: 2px 2px 4px #ccc;
+    text-align: center;
+}
+.programming-languages .lang i{
+    font-size: 3em;
+}
+.programming-languages .lang span{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+@media screen  and (max-width:912px){
+    .programming-languages .lang{
+        width: 49%;
+    }
+}
+@media screen  and (max-width:512px){
+    .programming-languages .lang{
+        width: 99%;
+    }
+}
