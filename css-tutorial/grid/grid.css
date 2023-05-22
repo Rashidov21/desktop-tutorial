@@ -17,65 +17,21 @@ section{
 body{
     overflow-x: hidden;
 }
-
-.wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
+/* 5 qator , 5 ustuni bor grid oching */
+/* md ekaranda 3 ta ustunga otadi  */
+/* sm ekaranda 1 ta ustunga otadi  */
+.grid-container{
     display: grid;
-    /* grid-template-columns: 100px 100px 100px 100px; */
-    /* grid-template-columns: 25% 25% 25% 25%; */
-    /* grid-template-columns: repeat(5,25%); */
-    grid-template-columns: repeat(4,1fr);
-
-    grid-template-rows:repeat(2,150px) ;
-
-    /* column-gap:20px ;
-    row-gap: 50px; */
-    gap:50px 20px ;
+    grid-template-columns:repeat(3,auto);
+    grid-template-rows:repeat(3,auto);
+    gap:10px 20px ;
+    /* row-gap: 10px;
+    column-gap: 20px; */
 }
-.col:nth-child(1){
-    /* grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start:1 ;
-    grid-column-end:3 ; */
-    grid-row:1/3 ;
-    grid-column: 1/3;
-}
-.col{
-    padding: 10px 20px;
-    border: solid 1px #ddd;
-}
-
-/* GRID AREA  */
-.grid-site-layout{
-    display: grid;
-    grid-template-areas:
-    "HEADER HEADER HEADER"
-    "SIDEBAR MAIN MAIN"
-    "SIDEBAR MAIN MAIN" 
-    "FOOTER FOOTER FOOTER" 
-    ;
-    gap: 20px;
+.grid-item{
+    padding: 20px 30px;
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
     background-color: #ccc;
-}
-
-.grid-site-layout > div{
-    padding: 20px;
-}
-.header{
-   grid-area: HEADER; 
-   background-color: #ccc;
-}
-.main{
-    grid-area: MAIN;
-    background-color: #ddd;
-    min-height: 85vh;
-}
-.sidebar{
-    grid-area: SIDEBAR;
-    background-color: orange;
-}
-.footer{
-    grid-area: FOOTER;
-    background-color: blueviolet;
 }
