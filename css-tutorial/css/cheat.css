@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* main{} */
+section{
+    margin: 50px 0;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 7%;
+}
+
+h1,h2,h3{}
+
+footer{}
+
+ul li a{}
+.row *{
+    background-color: red;
+}
+.row + p{
+    color: red;
+}
+input[data-name]{
+    padding: 10px;
+    background-color: #ccc;
+}
+section[name]{
+    border: solid 2px #555;
+}
+div[class*='col']{
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet;
+}
+img[src$='.png']{
+    width: 300px;
+    height: 300px;
+}
+
+body{
+    background-color: #555;
+    /* background-image: url(); */
+    /* background-repeat: ; */
+    /* background-position: ; */
+    /* background-attachment: ; */
+    /* background-size: ; */
+    /* background-blend-mode: ; */
+}
+.font{
+    /* serif , sans-serif, cursive, monospace, fantasy  */
+    font-family: sans-serif;
+    font-weight: 600;
+    /* 1em=16px */
+    font-size: 16px;
+    font-style: italic;
+}
+.text{
+    text-align: center;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #555;
+    text-indent: 60px;
+    
+    word-break: break-all;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    line-height: 20px;
+}
+
+.border{
+    border-style: dotted;
+    border-width: 30px;
+    border-color: #111;
+    /* shorthand  */
+    /* border: solid 20px black; */
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+    outline-style: dashed;
+    outline-width: 30px;
+    outline-color: #555;
+    /* shorthand  */
+    /* outline: solid 20px #555; */
+}
+.margin-padding{
+    margin: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
+}
+
+.display{
+    /* display: block; */
+    /* display: inline; */
+    /* display: inline-block; */
+    /* display: none; */
+    /* visibility: hidden; */
+}
+.width{
+    /* 500px  */
+    width: 500px;
+    /* 0-500px */
+    /* max-width: 500px; */
+    /* 200-npx */
+    /* min-width: 200px; */
+}
+.position{
+    /* position: static; */
+    /* position: relative; */
+    /* position: absolute; */
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+}
+.z-o-f{
+    z-index: -2;
+    /* overflow: hidden; */
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
+    /* float: left;
+    clear: right; */
+}
+.transition{
+    transition-property: width;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+
+    /* shorthand  */
+    transition: all 0.2s ease-in-out;
+}
+.animation{
+    animation-name: spin;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes spin {
+    /* from{}
+    to{} */
+    0%{
+        background-color: red;
+    }
+    30%{
+        background-color: orange;
+    }
+    100%{
+        background-color: yellowgreen;
+    }
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.flexbox:nth-child(1){
+    align-self: flex-start;
+    order: 3;
+    flex-shrink: 3;
+    flex-grow: 1;
+}
