@@ -1,0 +1,87 @@
+*{
+    /* block borderi bilan content orasidagi masofa  */
+    padding: 0;
+    /* block bilan block orasidagi masofa  */
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    /* x o'qida body elementiga sigmagan narsalar hidden */
+    overflow-x: hidden;
+    background-color: #dfe1e1;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+nav a.logo{
+    font-size: 48px;
+    font-weight: 900;
+    color: #34547A;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    /* display - aks ettirish, inline - birqatorda  */
+    display: inline-block;
+    margin: 30px 20px 0px 20px ;
+}
+nav ul li a{
+    font-weight: 600;
+    color: #34547A;
+}
+
+/* BANNER AREA  */
+.banner-content{
+    max-width: 500px;
+    display: inline-block;
+}
+.banner-image{
+    margin-top: 100px;
+}
+.banner-text{
+    margin-left: 100px;
+}
+.banner-content h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.banner-content p{
+    color: #727272;
+}
+a.btn{
+    padding: 10px 30px;
+    background-color: #34547A;
+    color: white;
+}
+
+/* ABOUT AREA  */
+section.about-me{
+    background-color: #fff;
+    margin-top:100px;
+    padding: 100px 0;
+}
+.about-content{
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto;    
+}
+
+/* WORKS AREA  */
+section.works{
+    background-color: #34547A;
+    padding: 100px 0;
+}
+.works-content .work{
+    float: left;
+    margin: 0 20px;
+    max-width: 140px;
+}
+.works-content .work span{
+    display: inline-block;
+    color: white;
+}
