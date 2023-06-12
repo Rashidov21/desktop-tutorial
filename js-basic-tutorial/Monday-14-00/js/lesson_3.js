@@ -47,3 +47,8 @@
 
 // console.log(1 === "1") // false
 
+
+// task 1
+let a = +prompt("A ?")
+
+console.log("perimetr = ", 4*a)
