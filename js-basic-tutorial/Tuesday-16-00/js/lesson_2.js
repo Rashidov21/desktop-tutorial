@@ -86,7 +86,3 @@
 // console.log(Boolean(0)) // false
 
 
-// task 1
-
-let a = +prompt("A ?")
-console.log("Perimetr = ",4*a) 
