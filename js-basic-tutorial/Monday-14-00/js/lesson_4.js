@@ -73,6 +73,13 @@
 // a = +prompt("A")
 // b = +prompt("B")
 // c = +prompt("C")
+// if(a == b -1 && b == a+1 && c == b + 1 ){
+
+// }
+// if(a==b && b == c && a == c){
+
+// }
+
 
 // if(a>0||b>0||c>0){
 //     let count = 0;
