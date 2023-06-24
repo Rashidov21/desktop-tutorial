@@ -44,8 +44,8 @@
 // }
 // console.log(count)
 // task 4
-let price = 5000
-let n = price / 10
-for(let i =1; i<=10;i++){
-    console.log(`${i*100}gram = ${i * n}som`)
-}
+// let price = 5000
+// let n = price / 10
+// for(let i =1; i<=10;i++){
+//     console.log(`${i*100}gram = ${i * n}som`)
+// }
