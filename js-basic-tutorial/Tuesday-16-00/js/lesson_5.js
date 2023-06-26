@@ -41,13 +41,13 @@
 
 
 
-let n=+prompt('n...')
+// let n=+prompt('n...')
 
-let s=0
-let i=1
+// let s=0
+// let i=1
 
-while (s<n){
-    s=s+i
-    i++
-}
-console.log(s)
+// while (s<n){
+//     s=s+i
+//     i++
+// }
+// console.log(s)
