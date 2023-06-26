@@ -42,10 +42,12 @@
 
 
 let n=+prompt('n...')
-let a=+prompt('a...')
+
 let s=0
-while (n>=a){
-    n=n-a
-    s++
+let i=1
+
+while (s<n){
+    s=s+i
+    i++
 }
 console.log(s)
