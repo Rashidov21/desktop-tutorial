@@ -1,8 +1,8 @@
 // function expression 
 
-let p = function(x,y){
-    return x + y 
-}
+// let p = function(x,y){
+//     return x + y 
+// }
 
 // console.log(p(2,2)) // 4
 
