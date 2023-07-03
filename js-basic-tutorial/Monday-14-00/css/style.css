@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+section{
+    margin: 100px 0;
+}
+.container{
+    padding: 0 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+ul.list{
+    border-radius: 10px;
+}
+li.list-item{
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 5px;
+    margin: 5px;
+    background-color: rgb(127, 158, 185);
+}
+li.list-item span{
+    font-size: 20px;
+    font-weight: 600;
+}
+a.btn{
+    padding: 5px 15px;
+    border-radius: 2px;
+    background-color: coral;
+    color: white;
+}
+.times{
+    float: right;
+}
+.bar{
+    width: 300px;
+    height: 100vh;
+    padding: 30px 10px;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: -350px;
+    transition: all 0.5s;
+}
+.active{
+    left: 0; 
+}

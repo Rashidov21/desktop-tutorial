@@ -43,3 +43,23 @@
 //     alert("Try again")
 // }
 // console.log(result)
+
+
+function changeBgColor(elem){
+    // console.log(elem) // a
+    // console.log(elem.parentElement) // li
+    if(elem.textContent == "-"){
+        elem.parentElement.style.backgroundColor = 'rgb(127,158,185)'
+        elem.textContent = "+"
+
+    }else{
+        elem.parentElement.style.backgroundColor = 'red'
+        elem.textContent = "-"
+    }
+   
+} 
+
+function sidebarShowHide(){
+    let sidebar = document.querySelector(".bar");
+    sidebar.classList.toggle("active")
+}

@@ -52,3 +52,5 @@ let wordLen = (text) => {return text.split(' ').length}
 
 console.log(textLen("Javascript"))
 console.log(wordLen("Javascript is better pl!"))
+
+
