@@ -61,3 +61,14 @@
 
 // main(23,7,1566) // True
 // main(23,13,1566) // False 
+
+function checkDate(day,month,year){
+    if(day >= 1 && day <= 31 && month >= 1 && month <= 12 && year >= 1950 && year <= 2099){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+console.log(checkDate(10,12,2003)) // true 
+console.log(checkDate(10,12,3003)) // false 
