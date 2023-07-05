@@ -62,13 +62,45 @@
 // main(23,7,1566) // True
 // main(23,13,1566) // False 
 
-function checkDate(day,month,year){
-    if(day >= 1 && day <= 31 && month >= 1 && month <= 12 && year >= 1950 && year <= 2099){
-        return true;
-    }else{
-        return false;
-    }
-}
+// function checkDate(day,month,year){
+//     if(day >= 1 && day <= 31 && month >= 1 && month <= 12 && year >= 1950 && year <= 2099){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
 
-console.log(checkDate(10,12,2003)) // true 
-console.log(checkDate(10,12,3003)) // false 
+// console.log(checkDate(10,12,2003)) // true 
+// console.log(checkDate(10,12,3003)) // false 
+
+
+// Version control systems - Versiyalarni boshqarish tizimi
+    // Git , Github , Gitlab , Bitbucket
+
+    // open source - ochiq kodli 
+
+// Github 
+// Github desktop
+// Typing skills 1.0 
+// new code 1.1
+
+
+// Algoritm - maqsadga erishish yolida qilinadigan ishlar ketma ketligi
+// Kodlash - axborotni bir korinishdan ikkinchi olib otish 
+// Kod - Bu matn , dastur >> algoritmlardan tashkil topadi 
+//  1 - sonni ol
+//  2 - sonni ol 
+//  3 - bir biriga qosh 
+//  4 - natijani qaytar 
+
+// Algoritm :
+    // Chiziqli - 0,1,2,3,4....
+    // Tarmoqlanuvchi 
+    // Takrorlanuvchi
+
+
+// 1 malumotlarniqabul qilish 
+// 2 ularni qayta ishlash 
+// 3 saqlash 
+// 4 natijani qaytarish
+
