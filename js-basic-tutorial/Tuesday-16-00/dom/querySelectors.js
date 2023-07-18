@@ -32,18 +32,28 @@
 
 // let cont = document.querySelectorAll(".container")
 // console.log(cont)
-let liElems = document.querySelectorAll(".list-item")
+// let liElems = document.querySelectorAll(".list-item")
 // console.log(liElems.length) // 6
 
-function setRandomLiBgColor(){
-    let n = Math.round(Math.random() * liElems.length-1)
-    let red = Math.round(Math.random() * 255);
-    let green = Math.round(Math.random() * 255);
-    let blue = Math.round(Math.random() * 255);
-    liElems[n].style.backgroundColor = `rgb(${red},${green},${blue})`
-}
+// function setRandomLiBgColor(){
+//     for(let elem of liElems){
+//         elem.style.backgroundColor = "transparent"
+//     }
+//     let n = Math.round(Math.random() * liElems.length-1)
+//     let red = Math.round(Math.random() * 255);
+//     let green = Math.round(Math.random() * 255);
+//     let blue = Math.round(Math.random() * 255);
+//     liElems[n].style.backgroundColor = `rgb(${red},${green},${blue})`
+// }
 
 
 // for(let elem of liElems){
 //     console.log(elem)
 // }
+
+
+// let li = document.querySelector(".list-item")
+// console.log(li)
+// let btn = document.querySelector("button")
+// console.log(btn.matches("button[class]")) // true
+// console.log(btn.matches("button[id]")) // false
