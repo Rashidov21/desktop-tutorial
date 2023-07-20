@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+} 
+body{
+   /* background-color:orange;  */
+   /* background-color:rgb(255, 255, 255);  */
+   /* background-color: #902DC6;  */
+   background-image: url(../src/background.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+div{
+    color: blue;
+}
+.text{
+    color: orange;
+    font-size: 24px;
+}
+.subtitle{
+    color: tomato;
+    font-size: 20px;
+    text-decoration: underline;
+}
+#content > *{
+    color: yellow;
+}
+
+.text , .subtile{
+    padding: 10px;
+}
+
+.parent .child-one .child-two {
+    color: red;
+}
+
+/* Barcha input teglari type text bolganlari uchun  */
+input[type='text']{
+    color: blue;
+}
+/* Barcha div elementlarini class lari ichida child qo'shimchasi borlariga  */
+div[class^="child"]{
+    background-color: orange;
+}
