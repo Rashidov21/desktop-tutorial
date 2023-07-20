@@ -14,7 +14,16 @@ li{
     display: inline-flex;
 }
 
-/* a[href^=".html"]{
-
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
-input[type='radio'] */
+.movie{
+    max-width: 300px;
+}
+.movie .movie-image{
+    max-width: 100%;
+    height: auto;
+}
