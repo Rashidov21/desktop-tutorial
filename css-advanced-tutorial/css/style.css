@@ -4,45 +4,74 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 } 
-body{
-   /* background-color:orange;  */
-   /* background-color:rgb(255, 255, 255);  */
-   /* background-color: #902DC6;  */
-   background-image: url(../src/background.jpeg);
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
+section{
+    margin: 100px 0;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.card-row{
+    width: 100%;
+}
+.card{
+    width: 32%;
+    display: inline-block;
+    margin:0 auto;
+    /* padding: 20px 30px; */
+    border: solid 0.5px gray;
+    /* border-radius: 16px; */
+    background-color: #ccc;
+}
+/* border */
+#card3{
+    /* border-style: solid;
+    border-style: dotted;
+    border-style: dashed;
+    border-style: double;
+    border-style: groove;
+    border-style: ridge;
+    border-style: inset;
+    border-style: outset;
+    /* border-style: hidden;
+    border-style: none; */
+    /* border-width: 40px 20px 10px 50px;
+    border-width: 40px 20px 50px;
+    border-width: 40px 10px;
+    border-width: 5px;
+    border-color: red yellow blue black;
+    border-color: red yellow blue;
+    border-color: red  blue;
+    border-color: red ;
+    border-right-style: dotted;
+    border-left-style: double;
+    border-top-style: dashed; */ 
+    border: 25px solid blue;
+    border-top: 25px solid red;
+    border-radius: 25%;
+    margin: 10px 0;
+}
+/* margin */
+.card{
+    margin: 10px 40px 30px 60px;
+    margin: 10px 40px 60px;
+    margin: 10px 60px;
+    margin: 10px;
+    margin-right: 5px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 60px;
 }
 
-div{
-    color: blue;
-}
-.text{
-    color: orange;
-    font-size: 24px;
-}
-.subtitle{
-    color: tomato;
-    font-size: 20px;
-    text-decoration: underline;
-}
-#content > *{
-    color: yellow;
-}
-
-.text , .subtile{
-    padding: 10px;
-}
-
-.parent .child-one .child-two {
-    color: red;
-}
-
-/* Barcha input teglari type text bolganlari uchun  */
-input[type='text']{
-    color: blue;
-}
-/* Barcha div elementlarini class lari ichida child qo'shimchasi borlariga  */
-div[class^="child"]{
-    background-color: orange;
+/* padding */
+#card4{
+    /* padding: 11px 30px 5px 46px;
+    padding: 11px 30px 46px;
+    padding: 11px  46px;
+    padding: 46px; */
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-bottom: 55px;
+    padding-left: 155px;
 }
