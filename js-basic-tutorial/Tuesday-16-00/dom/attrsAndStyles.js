@@ -46,11 +46,11 @@
 // console.log(elem.classList.remove("red")) // red klasi ochirildi
 
 // Dark and  Light mode 
-function setTheme(elem){
-    if(elem.textContent == "Night"){
-        elem.textContent = "Day"
-    }else{
-        elem.textContent = "Night"
-    }
-    document.body.classList.toggle("dark")
-}
+// function setTheme(elem){
+//     if(elem.textContent == "Night"){
+//         elem.textContent = "Day"
+//     }else{
+//         elem.textContent = "Night"
+//     }
+//     document.body.classList.toggle("dark")
+// }
