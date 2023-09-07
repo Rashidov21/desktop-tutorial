@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {# Load the tag library #}
+    {% load bootstrap5 %}
+
+    {# Load CSS and JavaScript #}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-dark">
+     <div class="container py-2">
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="{% url 'main:home' %}" class="nav-link fw-bold fs-5">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'main:about' %}" class="nav-link fw-bold fs-5">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link fw-bold fs-5">Contact {{test_text}}</a>
+                </li>
+            </ul>
+        </nav>
+     </div>
+    </header>
+
+    {% block content %}
+
+    
+    {% endblock %}
+</body>
+</html>
