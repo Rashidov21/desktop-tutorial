@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+{% load static%}
+
+{% block content%}
+
+
+
+<div class="row">
+    
+
+    {% for data in object_list %}
+
+    <div class="col-lg-3 mt-5">
+        <div class="box-element product product-card p-2">
+            <div class="image">
+                <img  width="200" src="{{ data.image.url }}" alt="">
+            </div>
+    
+            <h6 class="mt-4"><strong>{{ data.name }}</strong></h6>
+            {% with ''|center:data.stars as range %}
+                {% for _ in range %}
+                    <i class='fas fa-star'></i>
+                {% endfor %}
+            {% endwith %}
+
+   
+            <hr>
+            <a href='{% url 'shop:add_to_cart' data.id %}' class="btn btn-outline-secondary add-btn update-card">Add to card</a>
+            <a href="" class="btn btn-outline-success">View</a>
+            <h4 style="display:inline-block; float: right;">{{ data.price }}</h4>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+
+{% endblock content%}

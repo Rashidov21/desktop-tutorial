@@ -1,0 +1,107 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<style>
+    .box-element{
+        border: 1px solid rgb(186, 179, 179);
+       
+        padding: 2% 2%;
+        border-radius: 10px;
+    }
+    .img{
+        width: 100px;
+        height: 100px;
+        margin-right: 50px;
+    }
+    img{
+        width: 100%;
+    }
+    i[class*='fa-angle']{
+        cursor: pointer;
+    }
+</style>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="box-element">
+            <a class="btn btn-outline-dark " href="/"><i class="fa-solid fa-arrow-left mx-2"></i>Continue shopping</a>
+
+            <br>
+            <br>
+            <div class="d-flex flex-row justify-content-between align-items-center">
+                <div><h5>Items: <strong>{{ cart.total_quantity }}</strong></h5></div>
+                <div><h5>Total <strong>${{ cart.total_price }}</strong></h5></div>
+                <div><a style="float: right;margin:5px;" class="btn btn-success"  href="">Checkout</a></div>
+            </div>
+        </div>
+     
+        <!-- <i class="fa-solid fa-arrow-up-from-arc"></i> -->
+        <div class="box-element mt-2">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th scope="col"><strong>Items</strong></th>
+                        <th scope="col"><strong>Price</strong></th>
+                        <th scope="col"><strong>Quantity</strong></th>
+                        <th scope="col"><strong>Total</strong></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                       {% for item in cart.products.all %}
+                       <tr>
+                        <th class="img" scope="row">
+                          <div class="img"><img src="{{ item.product.image.url }}" alt=""></div>
+                        </th>
+                        <td>{{ item.product.name }}</td>
+                        <td>{{ item.product.get_discount_price}}</td>
+                        <td>
+                            <p class="quantity">
+                           
+                                <i class="fa-solid fa-angle-left" onclick="changeQtyValue(this.parentElement.children[1],'minus',{{item.id}},{{item.quantity}})"></i> 
+                                <span class='item-quantity'> {{ item.quantity }} </span>
+                                <i class="fa-solid fa-angle-right" onclick="changeQtyValue(this.parentElement.children[1],'plus',{{item.id}},{{item.quantity}})"></i>
+                            </p>
+                        </td>
+                        <td>${{ item.get_total }}</td>
+                      </tr>
+                       {% endfor %}
+                  </tbody>
+            </table>
+            <hr>
+        </div>
+    </div>
+</div>
+{% csrf_token %}
+<script>
+    let qty = document.querySelector('.item-quantity').textContent.trim();
+    let csrftoken = document.getElementsByName('csrfmiddlewaretoken')[0].value
+  
+    function changeQtyValue(el,action,product_id, product_qty){
+        if(action == 'plus'){
+            let qty = Number(el.textContent.trim())
+            el.textContent = qty + 1
+            let url = "/cart/update/"
+            fetch(url+`?item_id=${product_id}&&qty=${1}&&action=plus`)
+              .then( (response) => {
+                 //do something awesome that makes the world a better place
+                 console.log(response)
+              });
+        }
+        if(action == 'minus'){            
+            let qty = Number(el.textContent.trim())
+            if(qty > 1){
+                el.textContent = qty - 1
+            }else{
+                el.style.backgroundColor = "red"
+            }
+            let url = "/cart/update/"
+            fetch(url+`?item_id=${product_id}&&qty=${1}&&action=minus`)
+            .then( (response) => {
+               //do something awesome that makes the world a better place
+               console.log(response)
+            });
+        }
+    }
+</script>
+
+{% endblock content %}
