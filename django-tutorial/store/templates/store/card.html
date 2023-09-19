@@ -30,7 +30,11 @@
             <div class="d-flex flex-row justify-content-between align-items-center">
                 <div><h5>Items: <strong>{{ cart.total_quantity }}</strong></h5></div>
                 <div><h5>Total <strong>${{ cart.total_price }}</strong></h5></div>
-                <div><a style="float: right;margin:5px;" class="btn btn-success"  href="">Checkout</a></div>
+                <div>
+                    <a style="float: right;margin:5px;" class="btn btn-success"  href="">Checkout</a>
+                    <a style="float: right;margin:5px;" class="btn btn-outline-success"  
+                    href="{% url 'shop:clear_cart' %}">Clear cart</a>
+                </div>
             </div>
         </div>
      
@@ -44,6 +48,7 @@
                         <th scope="col"><strong>Price</strong></th>
                         <th scope="col"><strong>Quantity</strong></th>
                         <th scope="col"><strong>Total</strong></th>
+                        <th scope="col"><strong>Action</strong></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -63,6 +68,9 @@
                             </p>
                         </td>
                         <td>${{ item.get_total }}</td>
+                        <td>
+                            <a href="{% url 'shop:delete_item' item.id item.quantity %}" class="btn btn-danger">Delete</a>
+                        </td>
                       </tr>
                        {% endfor %}
                   </tbody>

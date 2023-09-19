@@ -12,8 +12,8 @@
 <body>
 
   <!-- Header element -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-secondary-subtle">
+    <header class='container'>
+        <nav class="navbar navbar-expand-lg shadow">
             <div class="container-fluid">
               <a class="navbar-brand" href="/">ECOM</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,34 +24,21 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page"  href="">Store</a>
                   </li>
+                  {% for category in categories %}
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">{{category.name|title}}</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
+                  {% endfor %}
+
                 </ul>
-                <div class="form-inline my-2 my-lg-0">
-                    <a href="#" class="btn btn-warning">Login</a>
-                    
+                <div class="form-inline my-2 my-lg-0">                    
                     <div class="card-flex">
                         <div>
+                          <span id="card-total">{{cart.total_quantity}}</span>
                             <a href="{% url 'shop:cart' %}">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </a>
                         </div>
-                        <p id="card-total">0</p>
                     </div>
                 </div>
               </div>

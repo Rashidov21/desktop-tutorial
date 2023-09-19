@@ -149,9 +149,7 @@ class Cart(models.Model):
         obj = self.products.get(id=item_id)   
         self.total_price = self.total_price - (obj.product.get_discount_price()*(int(qty)))
         self.total_quantity= self.total_quantity - (int(qty))
-        obj.quantity = obj.quantity - int(qty)
-        obj.price = obj.product.get_discount_price() * int(qty)
-        obj.save()
+        obj.delete()
         self.save()
     
     

@@ -62,3 +62,13 @@ def cart_item_update(request):
         cart.delete_item(obj_id,qty)
         
     return redirect('/cart/')
+
+def delete_item(request,item_id,qty):
+    cart = cart_init(request)
+    cart.delete_item(item_id,qty)
+    return redirect('/cart/')
+
+def clear_cart(request):
+    cart = cart_init(request)
+    cart.clear_cart()
+    return redirect('/cart/')
