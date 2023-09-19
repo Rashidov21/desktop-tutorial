@@ -1,0 +1,53 @@
+@mixin notification-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%)) {
+  color: color-yiq($background);
+  background-color: $background;
+
+  svg {
+    stroke-color: color-yiq($background);
+  }
+}
+
+.notifications {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: $notifications-zindex;
+  // box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
+}
+.notifications-position-top {
+  top: 0;
+}
+.notifications-position-bottom {
+  bottom: 0;
+}
+
+.notification {
+  background: #fff;
+  font-size: .875rem;
+  padding: .875rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+
+  .close {
+    opacity: 1;
+
+    @include hover-focus-active {
+      outline: none;
+      box-shadow: none;
+      cursor: pointer;
+    }
+  }
+  .close svg {
+    height: $spacer * 1.25;
+  }
+}
+
+.notifications-position-bottom .notification {
+  border-bottom: 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+@each $color, $value in $theme-colors {
+  .notification-#{$color} {
+    @include notification-variant($value, $value);
+  }
+}

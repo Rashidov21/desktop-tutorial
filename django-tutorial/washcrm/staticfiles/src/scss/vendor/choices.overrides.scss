@@ -1,0 +1,47 @@
+.#{$choices-selector}__inner {
+  padding: $input-btn-padding-y .5rem;
+  min-height: calc(2.5rem + 2px);
+}
+.#{$choices-selector}__list--single {
+  padding: 0;
+  color: $input-color;
+}
+.#{$choices-selector}[data-type*="select-multiple"] .#{$choices-selector}__inner,
+.#{$choices-selector}[data-type*="text"] .#{$choices-selector}__inner {
+  padding-bottom: .1rem;
+}
+.#{$choices-selector}__input {
+  background: $choices-bg-color;
+}
+.choices[data-type*="select-multiple"] .choices__button, .choices[data-type*="text"] .choices__button {
+  background-image: none;
+  &:after {
+    z-index: 1;
+    content: ' ';
+    display: block;
+    top: 1px;
+    left: 50%;
+    bottom: 1px;
+    width: 2px;
+    background: #fff;
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  &:before {
+    z-index: 1;
+    content: ' ';
+    display: block;
+    top: 1px;
+    left: 50%;
+    bottom: 1px;
+    width: 2px;
+    background: #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+}
+
+.#{$choices-selector}__list--multiple .#{$choices-selector}__item {
+  padding: 2px 8px;
+  margin-bottom: 2.75px;
+}

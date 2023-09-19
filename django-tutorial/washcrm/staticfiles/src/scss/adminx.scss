@@ -1,0 +1,80 @@
+/*!
+ * AdminX v0.0.0 (https://github.com/MOVACT/AdminX)
+ * Copyright 2017-2018 MOVACT
+ * Licensed under MIT (https://github.com/movact/AdminX/blob/master/LICENSE)
+ */
+
+$body-bg: #f6f9fa !default;
+$enable-gradients: true !default;
+$headings-font-weight: 300 !default;
+
+$sidebar-zindex: 1040 !default;
+$sidebar-width: 260px !default;
+$sidebar-collapsed-width: 4rem !default;
+
+$aside-width: 260px !default;
+$aside-zindex: 1020 !default;
+
+$navbar-avatar-size: 1.875rem !default;
+$navbar-avatar-border-radius: 1rem !default;
+$navbar-height: 3.5rem !default;
+
+$breadcrumb-bg: transparent !default;
+$breadcrumb-padding-y: 0 !default;
+$breadcrumb-padding-x: 0 !default;
+$breadcrumb-divider: "›" !default;
+$breadcrumb-margin-bottom: .5rem !default;
+
+$card-border-radius: 0 !default;
+$card-cap-bg: transparent !default;
+
+$table-hover-bg: #f4f9fe !default;
+$table-accent-bg: #f9f9f9 !default;
+$table-selected-bg: #FFFBCC !default;
+
+$input-btn-padding-y: 0.5rem !default;
+$input-btn-focus-width: 0.1rem !default;
+
+$notifications-zindex: 2000 !default;
+
+$icon-font-path: "../fonts/iconic/";
+
+@import "bootstrap";
+@import "~open-iconic/font/css/open-iconic-bootstrap.scss";
+
+@import "misc/utilities";
+
+// Choices
+$choices-border-radius: $input-border-radius !default;
+$choices-bg-color: $input-bg !default;
+$choices-font-size-lg: $font-size-base !default;
+$choices-font-size-sm: 11px;
+$choices-text-color: $input-color !default;
+$choices-selector: 'choices' !default;
+$choices-primary-color: theme-color("primary") !default;
+@import "~choices.js/assets/styles/scss/choices.scss";
+@import "vendor/choices.overrides";
+
+// Flatpickr
+@import "vendor/flatpickr";
+
+// UI Elements
+@import "ui/base";
+@import "ui/sidebar";
+@import "ui/aside";
+@import "ui/nav";
+@import "ui/navbar";
+@import "ui/breadcrumb";
+@import "ui/card";
+@import "ui/dropdown";
+@import "ui/form";
+@import "ui/table";
+@import "ui/pagination";
+@import "ui/button";
+@import "ui/notification";
+@import "ui/progress";
+@import "ui/list-group";
+
+// Page specific CSS
+@import "pages/login";
+@import "pages/error";

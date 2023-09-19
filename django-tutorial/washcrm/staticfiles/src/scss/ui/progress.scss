@@ -1,0 +1,20 @@
+@keyframes progress-bar-progressing-animation {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+
+@keyframes progress-bar-shaking-animation {
+  0% { transform: translateX(0%); }
+  50% { transform: translateX(100%); }
+  100% { transform: translateX(0%); }
+}
+
+.progress-bar-progressing {
+  width: 100%;
+  animation: progress-bar-progressing-animation 2s linear infinite;
+}
+
+.progress-bar-shaking {
+  width: 50%;
+  animation: progress-bar-shaking-animation 1.5s linear infinite;
+}

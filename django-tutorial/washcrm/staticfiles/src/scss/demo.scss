@@ -1,0 +1,46 @@
+.demo-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: -.5rem;
+}
+
+.demo-icon {
+  width: calc(100% / 3);
+  margin-top: .5rem;
+
+  &:hover {
+    .demo-icon-display {
+      border: 1px solid rgba(0,0,0,0.2);
+    }
+  }
+}
+
+.demo-icon-display {
+  min-height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.demo-icon-name {
+  font-size: .875rem;
+}
+
+@media (min-width: 769px) {
+  .demo-icon {
+    width: calc(100% / 4);
+  }
+}
+
+@media (min-width: 960px) {
+  .demo-icon {
+    width: calc(100% / 6);
+  }
+}
+
+@media (min-width: 1200px) {
+  .demo-icon {
+    width: calc(100% / 9);
+  }
+}

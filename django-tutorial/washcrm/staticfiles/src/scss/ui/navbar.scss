@@ -1,0 +1,119 @@
+.adminx-container {
+  .navbar {
+    font-size: $font-size-sm;
+    background-color: #fff;
+    height: $navbar-height;
+    padding: 0;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+  }
+
+  .navbar-brand {
+    padding-left: 1.2rem;
+  }
+}
+
+// User Profile
+.avatar-with-name {
+  > img {
+    border-radius: $navbar-avatar-border-radius;
+    width: $navbar-avatar-size;
+    height: $navbar-avatar-size;
+  }
+
+  > span {
+    padding-left: .25rem;
+    padding-top: .2rem;
+    display: none;
+  }
+
+  &:after {
+    display: none;
+  }
+}
+
+// Logo
+.navbar-brand-image {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+// Notifications
+.navbar-expand .navbar-nav .nav-link.nav-link-notifications {
+  padding: 0;
+}
+.nav-link.nav-link-notifications {
+  display: inline-block;
+  position: relative;
+  width: $navbar-avatar-size;
+  height: $navbar-avatar-size;
+  background: #fff;
+  border-radius: $navbar-avatar-border-radius;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+
+  .feather {
+    height: 1.1rem;
+  }
+}
+.nav-link-notification-number {
+  font-weight: bold;
+  background-color: theme-color("danger");
+  color: #fff;
+  position: absolute;
+  right: -.25rem;
+  top: -.1rem;
+  font-size: .6rem;
+  line-height: 1;
+  padding: .2rem;
+  border-radius: 1rem;
+}
+
+.dropdown-menu-notifications {
+  width: 100vh;
+  max-width: 25rem;
+
+  .list-group {
+    overflow-y: auto;
+    max-height: 20rem;
+  }
+
+  .list-group-item {
+    font-size: .875rem;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &.unread {
+      background-color: #FFFBCC;
+    }
+  }
+}
+.notifications-header {
+  padding: $spacer * 0.25 $spacer * 1.25 $spacer * 0.75 $spacer * 1.25;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.notifications-footer {
+  padding: $spacer * 0.75 $spacer * 1.25 $spacer * 0.25 $spacer * 1.25;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.notifications-header-title {
+  font-size: .75rem;
+  font-weight: 700;
+
+  @extend .text-uppercase;
+}
+
+@include media-breakpoint-up(md) {
+  .avatar-with-name {
+    span,
+    &:after {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.card-header-title,
+.card-info-title {
+  font-size: .75rem;
+  font-weight: 700;
+
+  @extend .text-uppercase;
+}
+
+.card-header-actions {
+  padding-top: .25rem;
+  display: flex;
+}
+
+.card-header-action {
+  display: block;
+  margin-left: .25rem;
+  .feather {
+    width: 1rem;
+  }
+
+  @include hover-focus-active {
+    text-decoration: none;
+  }
+}
+
+.card-title-sub {
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.card-icon {
+  background-color: rgba($white, 0.15);
+  width: 6rem;
+  padding: $spacer * 0.5;
+}
+
+.card-footer {
+  padding: $spacer $spacer * 1.25;
+}
+
+.card > .table {
+  th, td {
+    padding-left: $spacer * 1.25;
+  }
+}
+
+.card-seperator {
+  text-align: center;
+  position: relative;
+
+  > span {
+    background: #fff;
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+    position: relative;
+    z-index: 10;
+    font-size: .75rem;
+    background: theme-color("primary");
+    color: #fff;
+    font-weight: bold;
+  }
+
+  &:before {
+    content: ' ';
+    display: block;
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    margin-top: 1px;
+    background-color: $card-border-color;
+  }
+}

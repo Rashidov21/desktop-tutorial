@@ -1,0 +1,111 @@
+.btn-facebook {
+  @include button-variant(#3b5998, #3b5998);
+}
+.btn-twitter {
+  @include button-variant(#1da1f2, #1da1f2);
+}
+
+.btn-pill {
+  border-radius: 3rem;
+  padding: $input-btn-padding-y $input-btn-padding-x * 2;
+
+  &.btn-sm {
+    padding: $input-btn-padding-y-sm $input-btn-padding-x-sm * 2;
+  }
+
+  &.btn-lg {
+    padding: $input-btn-padding-y-lg $input-btn-padding-x-lg * 2;
+  }
+}
+
+.btn-icon {
+  .feather {
+    transform: translateY(.2rem);
+  }
+
+  &.btn-sm {
+    .feather {
+      transform: translateY(.15rem);
+    }
+  }
+}
+
+.btn {
+  .feather {
+    height: $font-size-base * 1.25;
+  }
+
+  &.btn-lg {
+    .feather {
+      height: $font-size-lg * 1.15;
+    }
+  }
+
+  &.btn-sm {
+    .feather {
+      height: $font-size-sm * 1.25;
+    }
+  }
+}
+
+
+.btn-labeled,
+.btn-labeled-right {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-label {
+  position: absolute;
+  width: 3rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-labeled {
+  padding-left: 3.5rem;
+  &.btn-lg {
+    padding-left: 4rem;
+
+    .btn-label {
+      width: 3.5rem;
+    }
+  }
+
+  &.btn-sm {
+    padding-left: 3rem;
+
+    .btn-label {
+      width: 2.5rem;
+    }
+  }
+}
+
+.btn-labeled-right {
+  padding-right: 3.8rem;
+  &.btn-lg {
+    padding-right: 4.4rem;
+
+    .btn-label {
+      width: 3.5rem;
+    }
+  }
+
+  &.btn-sm {
+    padding-right: 3.2rem;
+
+    .btn-label {
+      width: 2.5rem;
+    }
+  }
+
+  .btn-label {
+    right: 0;
+    left: initial;
+  }
+}

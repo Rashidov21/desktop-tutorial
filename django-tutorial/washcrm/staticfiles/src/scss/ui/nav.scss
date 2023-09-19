@@ -1,0 +1,70 @@
+.nav-collapse-icon {
+  width: 1.125rem;
+  transform: rotate(90deg);
+  @include transition;
+}
+
+.collapsed .nav-collapse-icon {
+  transform: rotate(0deg);
+}
+
+.nav-seperator {
+  position: relative;
+  width: 2rem;
+  display: none;
+
+  &:after {
+    content: ' ';
+    display: block;
+    top: .75rem;
+    bottom: .75rem;
+    left: 50%;
+    width: 1px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Tabs
+.nav-tabs,
+.nav-pills {
+  .nav-link {
+    font-size: .75rem;
+    font-weight: bold;
+  }
+}
+.card-header-tabs.nav-tabs,
+.card-header-pills.nav-pills {
+  .nav-link {
+    @extend .text-uppercase;
+
+    &.active {
+      background-color: transparent;
+      color: #000;
+    }
+  }
+}
+.card-header-pills.nav-pills {
+  .nav-link {
+    padding: .25rem 1rem;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .navbar-expand .navbar-nav .dropdown-menu.dropdown-menu-notifications {
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 100;
+    top: 3.75rem;
+    max-width: initial;
+    border-radius: 0;
+    width: 100vw;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .nav-seperator {
+    display: block;
+  }
+}

@@ -1,0 +1,28 @@
+.adminx-container {
+  width: 100%;
+  height: 100vh;
+  padding-top: $navbar-height;
+  @include transition;
+}
+.adminx-content {
+  @include transition;
+  position: relative;
+  height: 100%;
+}
+.adminx-main-content {
+  padding: 30px 15px;
+  @include transition;
+}
+.adminx-content-nopadding {
+  padding: 0;
+}
+
+@include media-breakpoint-up(md) {
+  .adminx-content {
+    padding-left: $sidebar-collapsed-width;
+  }
+
+  .adminx-content.adminx-content-aside {
+    padding-left: calc(#{$sidebar-collapsed-width} + #{$aside-width});
+  }
+}

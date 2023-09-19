@@ -1,0 +1,55 @@
+.form-quicksearch {
+  .form-control {
+    background: transparent;
+    border: 0 none;
+    font-size: $font-size-sm;
+    padding-left: $spacer * 0.5;
+
+    @include hover-focus-active {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .input-group-icon {
+    padding-top: .35rem;
+    .feather {
+      width: 1rem;
+      margin-top: .4rem;
+      stroke: theme-color("primary");
+    }
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+}
+
+.form-control {
+  font-size: $font-size-sm;
+}
+.form-control-lg {
+  font-size: $font-size-base;
+  padding: $spacer * 0.75 $spacer * 1.25;
+}
+
+// Fix for custom checkbox
+.custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
+  background-size: .625rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// Label
+.form-label {
+  font-size: .75rem;
+  font-weight: bold;
+  color: $gray-700;
+
+  @extend .text-uppercase;
+
+  &.is-valid {
+    color: theme-color("success");
+  }
+  &.is-invalid {
+    color: theme-color("danger");
+  }
+}

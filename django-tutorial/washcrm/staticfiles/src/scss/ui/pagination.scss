@@ -1,0 +1,17 @@
+.dataTables_paginate .pagination,
+.pagination-clean {
+  border-radius: 0;
+
+  .page-link {
+    border-radius: 0;
+    border: 0;
+    color: $gray-500;
+    @include transition;
+  }
+
+  .page-item.active .page-link {
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+  }
+}
