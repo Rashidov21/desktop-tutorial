@@ -114,7 +114,7 @@
                     <div class="card">
                       <div class="card-header d-flex justify-content-between">
                         <span>Buyurtmalar</span>
-                        <a href="#" class="btn btn-primary" title="Ishchi qo'shish">
+                        <a href="{% url 'main:order_add'%}" class="btn btn-primary" title="Ishchi qo'shish">
                           <span class="oi oi-plus"></span>
                         </a>
                       </div>
@@ -136,7 +136,7 @@
                               </tr>
                             </thead>
                             <tbody>
-                              {% for service in services %}
+                              {% for order in orders %}
                               <tr>
                                 <th scope="row">
                                   <label class="custom-control custom-checkbox m-0 p-0">
@@ -144,10 +144,10 @@
                                     <span class="custom-control-indicator"></span>
                                   </label>
                                 </th>
-                                <td>{{service.name}}</td>
-                                <td>{{service.price}}</td>
+                                <td>{{order.name}}</td>
+                                <td>{{order.price}}</td>
                                 <td>
-                                  {% if service.active %}
+                                  {% if order.active %}
                                   <span class="badge badge-pill badge-primary">
                                     Faol
                                   </span>
@@ -158,8 +158,12 @@
                                   {% endif %}
                                 </td>
                                 <td>
-                                  <button class="btn btn-sm btn-primary">Edit</button>
-                                  <button class="btn btn-sm btn-danger">Delete</button>
+                                 <a href="{% url 'main:update_order' order.id %}">
+                                  <button data-toggle="modal" data-target="#modal_aside_left" class="btn btn-sm btn-primary">Edit</button>
+                                 </a>
+                                  <a href="{% url 'main:delete_order' order.id %}">
+                                    <button data-toggle="modal" data-target="#modal_aside_left" class="btn btn-sm btn-danger">Delete</button>
+                                  </a>
                                 </td>
                               </tr>
                               {% empty %}
@@ -175,7 +179,7 @@
                     <div class="card">
                       <div class="card-header d-flex justify-content-between">
                         <span>Ishchilar</span>
-                        <a href="#" class="btn btn-primary" title="Ishchi qo'shish">
+                        <a href="{% url 'main:worker_add'%}" class="btn btn-primary" title="Ishchi qo'shish">
                           <span class="oi oi-plus"></span>
                         </a>
                       </div>
@@ -211,8 +215,12 @@
                                   {{worker.balance}}
                                 </td>
                                 <td>
-                                  <button class="btn btn-sm btn-primary">Edit</button>
-                                  <button class="btn btn-sm btn-danger">Delete</button>
+                                <a href="{% url 'main:update_worker' worker.id %}">
+                                  <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal_aside_left" >Edit</button>
+                                </a>
+                                 <a href="{% url 'main:delete_worker' worker.id %}">
+                                  <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#modal_aside_left">Delete</button>
+                                 </a>
                                 </td>
                               </tr>
                               {% empty %}
@@ -274,8 +282,8 @@
                               {% endif %}
                             </td>
                             <td>
-                              <button class="btn btn-sm btn-primary">Edit</button>
-                              <button class="btn btn-sm btn-danger">Delete</button>
+                              <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal_aside_left">Edit</button>
+                              <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#modal_aside_left">Delete</button>
                             </td>
                           </tr>
                           {% empty %}
