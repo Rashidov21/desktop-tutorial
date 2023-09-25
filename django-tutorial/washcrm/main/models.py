@@ -73,11 +73,14 @@ class Order(models.Model):
         discount_price = (self.price / 100) * self.discount
         return self.price - discount_price 
     
+    def get_main_price(self):
+        return sum([serv.price for serv in self.service_type.all()])
     
 
     class Meta:
         verbose_name =_("Order")
         verbose_name_plural =_("Orders")
+        # ordering = ['payed']
 
     def __str__(self):
         return self.name

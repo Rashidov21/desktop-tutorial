@@ -131,13 +131,14 @@
                                 </th>
                                 <th scope="col">Xizmat nomi</th>
                                 <th scope="col">Narxi</th>
+                                <th scope="col">Foyda</th>
                                 <th scope="col">Holati</th>
       
                               </tr>
                             </thead>
                             <tbody>
                               {% for order in orders %}
-                              <tr>
+                              <tr class="{% if not order.payed %} border border-warning {% endif %}">
                                 <th scope="row">
                                   <label class="custom-control custom-checkbox m-0 p-0">
                                     <input type="checkbox" class="custom-control-input table-select-row">
@@ -145,6 +146,7 @@
                                   </label>
                                 </th>
                                 <td>{{order.car}}</td>
+                                <td>{{order.get_main_price}}</td>
                                 <td>{{order.price}}</td>
                                 <td>
                                   {% if order.active %}
@@ -154,6 +156,15 @@
                                   {% else %}
                                   <span class="badge badge-pill badge-danger">
                                     Faol emas 
+                                  </span>                          
+                                  {% endif %}
+                                  {% if order.payed %}
+                                  <span class="badge badge-pill badge-primary">
+                                    To'langan
+                                  </span>
+                                  {% else %}
+                                  <span class="badge badge-pill badge-danger">
+                                    To'lanmagan
                                   </span>                          
                                   {% endif %}
                                 </td>

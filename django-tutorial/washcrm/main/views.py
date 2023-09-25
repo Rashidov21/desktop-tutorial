@@ -18,7 +18,7 @@ class DashboardView(View):
         data = {
             'services':Service.objects.all(),
             'workers':Worker.objects.all(),
-            'orders':Order.objects.all(),
+            'orders':Order.objects.all().order_by('payed'),
         }
         return render(request,self.template_name,context=data)
 

@@ -2,10 +2,16 @@
 {% load static %}
 {% block content %}
 
-<h1>Are You sure? Really want to Delete</h1>
-<form action="" method="POST">
-    {% csrf_token %}
-    <input type="submit" value='confirm'>
-</form>
+<main>
+    <section>
+        <div class="container">
+            <h1>Are You sure? Really want to Delete</h1>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input type="submit" value='confirm'>
+            </form>
 
+        </div>
+    </section>
+</main>
 {% endblock content %}

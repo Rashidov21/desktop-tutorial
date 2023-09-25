@@ -37,9 +37,24 @@ class OrderAddForm(forms.ModelForm):
         }
     
     def save(self, commit=True):
+        # print(self.cleaned_data)
         services_price = sum([serv.price for serv in self.cleaned_data.get("service_type")])
+        worker = self.cleaned_data.get("worker")
+        print(len(worker))
+        for w in worker:
+            # agar ishchi 2 tadan kop bolsa 50% ni ular soniga bolib yozamiz
+            if len(worker) > 1:                
+                w.balance += (services_price / 2) / len(worker)
+                w.save()
+            # agar bitta bosa summani 50% ni yozamiz
+            else:
+                w.balance += services_price / 2
+                w.save()
+            
+        # worker.save()
         # self.instance.price = services_price
-        self.instance.price = services_price - ((services_price / 100) * self.instance.discount)
+        # print(self.save(data=1))
+        self.instance.price = (services_price / 2) - ((services_price / 100) * self.instance.discount)
         return super(OrderAddForm, self).save(commit)
     
     # def save(self):
