@@ -60,13 +60,18 @@ class Order(models.Model):
     car = models.CharField(max_length=150,blank=True)
     worker = models.ManyToManyField(Worker, related_name='workers')
     sart_time  = models.DateTimeField(auto_now_add=True)
-    end_time = models.DateTimeField(blank=True)
+    end_date = models.DateField(blank=True,null=True)
+    end_time = models.TimeField(blank=True,null=True)
     customer_name = models.CharField(max_length=150,blank=True)
     customer_phone =models.CharField(max_length=20,blank=True)
     discount = models.PositiveSmallIntegerField(default=0)
     payed = models.BooleanField(default=False)
     active = models.BooleanField(default=False)
     
+    def get_discount_price(self):
+        price = self.price
+        discount_price = (self.price / 100) * self.discount
+        return self.price - discount_price 
     
     
 

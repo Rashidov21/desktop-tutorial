@@ -27,11 +27,11 @@
                   <div class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-between mb-3">
                       <h5 class="card-title mb-0">
-                        Outstanding Invoices
+                        Barcha kirimlar
                       </h5>
 
                       <div class="card-title-sub">
-                        $753.82
+                        {{balance}}
                       </div>
                     </div>
 
@@ -69,9 +69,9 @@
                       <i data-feather="shopping-cart"></i>
                     </div>
                     <div class="card-body">
-                      <div class="card-info-title">Sales</div>
+                      <div class="card-info-title">Buyurtmalar</div>
                       <h3 class="card-title mb-0">
-                        768
+                        {{orders.count}}
                       </h3>
                     </div>
                   </div>
@@ -85,9 +85,9 @@
                       <i data-feather="users"></i>
                     </div>
                     <div class="card-body">
-                      <div class="card-info-title">Sign Ups (this week)</div>
+                      <div class="card-info-title">Ishchilar</div>
                       <h3 class="card-title mb-0">
-                        1,258
+                        {{workers.count}}
                       </h3>
                     </div>
                   </div>
@@ -144,7 +144,7 @@
                                     <span class="custom-control-indicator"></span>
                                   </label>
                                 </th>
-                                <td>{{order.name}}</td>
+                                <td>{{order.car}}</td>
                                 <td>{{order.price}}</td>
                                 <td>
                                   {% if order.active %}
