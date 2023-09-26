@@ -3,7 +3,6 @@ from django.urls import reverse
 from django.utils.translation import gettext as _
 
 
-
 class Service(models.Model):
     name = models.CharField(_("name"), max_length=50)
     price = models.PositiveIntegerField(default=0, blank=True)
@@ -27,6 +26,8 @@ class Worker(models.Model):
     balance = models.IntegerField(default=0)
     balance_status = models.CharField(max_length=20,blank=True)
     work_count =models.PositiveIntegerField(default=0, blank=True)
+    debt = models.PositiveIntegerField(default=0, blank=True, null=True)
+
 
     
 
@@ -39,6 +40,7 @@ class Worker(models.Model):
 
     def get_absolute_url(self):
         return reverse("Worker_detail", kwargs={"pk": self.pk})
+        
 
 
 
@@ -108,6 +110,7 @@ class Output(models.Model):
     name = models.CharField(max_length=50,blank=True)
     comment = models.TextField(blank=True)
     amount = models.PositiveSmallIntegerField(default=0,blank=True)
+    workers_debt = models.ForeignKey(Worker, on_delete=models.CASCADE, related_name='worker_debt')
     
     class Meta:
         verbose_name = _("Output")

@@ -114,6 +114,18 @@
                     <div class="card">
                       <div class="card-header d-flex justify-content-between">
                         <span>Buyurtmalar</span>
+                        <a href="{% url 'main:order_filter' 'today' %}" class="btn btn-outline-primary">
+                          Bugun
+                          <i class="fas fa-clock"></i>
+                        </a>
+                        <a href="{% url 'main:order_filter' 'month' %}" class="btn btn-outline-primary">
+                          Bu oy
+                          <i class="fas fa-calendar-week"></i>
+                        </a>
+                        <a href="{% url 'main:order_filter' 'year' %}" class="btn btn-outline-primary">
+                          Bu yil
+                          <i class="fas fa-calendar"></i>
+                        </a>
                         <a href="{% url 'main:order_add'%}" class="btn btn-primary" title="Ishchi qo'shish">
                           <span class="oi oi-plus"></span>
                         </a>
@@ -244,7 +256,60 @@
                     </div>
                   </div>
                   <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                   Cash
+                    <div class="card">
+                      <div class="card-header d-flex justify-content-between">
+                        <span>Hisob-kitob</span>
+                        <a href="{% url 'main:output'%}" class="btn btn-primary" title="Ishchi qo'shish">
+                          <span class="oi oi-plus"></span>
+                        </a>
+                      </div>
+                      <div class="card mb-grid">
+                        <div class="table-responsive-md">
+                          <table class="table table-actions table-striped table-hover mb-0">
+                            <thead>
+                              <tr>
+                                <th scope="col">
+                                  <label class="custom-control custom-checkbox m-0 p-0">
+                                    <input type="checkbox" class="custom-control-input table-select-all">
+                                    <span class="custom-control-indicator"></span>
+                                  </label>
+                                </th>
+                                <th scope="col">Ism Familya</th>
+                                <th scope="col">Telefon</th>
+                                <th scope="col">Debt</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {% for output in outputs %}
+                              <tr>
+                                <th scope="row">
+                                  <label class="custom-control custom-checkbox m-0 p-0">
+                                    <input type="checkbox" class="custom-control-input table-select-row">
+                                    <span class="custom-control-indicator"></span>
+                                  </label>
+                                </th>
+                                <td>{{output.name}}</td>
+                                <td>{{output.comment}}</td>
+                                <td>
+                                  {{output.amount}}
+                                </td>
+                                <td>
+                                <a href="{% url 'main:update_output' output.id %}">
+                                  <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal_aside_left" >Edit</button>
+                                </a>
+                                 <a href="{% url 'main:delete_output' output.id %}">
+                                  <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#modal_aside_left">Delete</button>
+                                 </a>
+                                </td>
+                              </tr>
+                              {% empty %}
+                              <p>Qarzlar topilmadi</p>
+                              {% endfor %}
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

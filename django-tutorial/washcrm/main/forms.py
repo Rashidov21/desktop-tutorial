@@ -1,6 +1,6 @@
 from django import forms 
 
-from .models import Service, Order
+from .models import Service, Order, Worker, Output
 
 
 class ServiceAddForm(forms.ModelForm):
@@ -43,15 +43,23 @@ class OrderAddForm(forms.ModelForm):
         print(len(worker))
         for w in worker:
             # agar ishchi 2 tadan kop bolsa 50% ni ular soniga bolib yozamiz
-            if len(worker) > 1:                
-                w.balance += (services_price / 2) / len(worker)
+            if len(worker) > 1:
+                balance = 0
+                debt = w.debt             
+                balance += (services_price / 2) - w.debt
+                w.debt -= ((services_price / 2) - balance) - debt
+                w.balance += balance
                 w.save()
             # agar bitta bosa summani 50% ni yozamiz
             else:
-                w.balance += services_price / 2
+                balance = 0
+                debt = w.debt            
+                balance += (services_price / 2) - w.debt
+                w.debt = ((services_price / 2) - balance) - debt
+                w.balance += balance
                 w.save()
             
-        # worker.save()
+        # worker.save()-
         # self.instance.price = services_price
         # print(self.save(data=1))
         self.instance.price = (services_price / 2) - ((services_price / 100) * self.instance.discount)
@@ -71,13 +79,37 @@ class OrderAddForm(forms.ModelForm):
 class WorkerAddForm(forms.ModelForm):
     
     class Meta:
-        model = Service
+        model = Worker
         fields = "__all__"
+        exclude = [
+            'balance_status',
+        ]
         widgets = {
             'name':forms.TextInput(attrs={"class":"form-control"}),
-            'phone':forms.NumberInput(attrs={"class":"form-control"}),
+            'phone':forms.TextInput(attrs={"class":"form-control"}),
             'address':forms.TextInput(attrs={"class":"form-control"}),
             'balance':forms.TextInput(attrs={"class":"form-control"}),
-            'balance_status':forms.Select(attrs={"class":"form-control"}),
             'work_count':forms.TextInput(attrs={"class":"form-control"}),
+            'debt':forms.TextInput(attrs={"class":"form-control"}),
         }
+
+
+class OutputAddForm(forms.ModelForm):
+    
+    class Meta:
+        model = Output
+        fields ='__all__'
+        widgets = {
+            'name':forms.TextInput(attrs={"class":"form-control"}),
+            'comment':forms.TextInput(attrs={"class":"form-control"}),
+            'amount':forms.NumberInput(attrs={"class":"form-control"}),
+        }
+    def save(self, commit=True):
+        debt = self.cleaned_data['amount']
+        instance_worker = self.cleaned_data['workers_debt']
+        print(instance_worker)
+        # print(self.cleaned_data)
+        # print(type(instance_worker))
+        instance_worker.debt += debt
+        instance_worker.save()
+        return super(OutputAddForm, self).save(commit)
