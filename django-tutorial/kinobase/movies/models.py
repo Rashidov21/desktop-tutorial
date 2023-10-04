@@ -1,7 +1,5 @@
 import datetime
-import locale 
 
-locale.setlocale(locale.LC_ALL, "RU_ru")
 from django.db import models
 from django.utils.translation import gettext as _
 
