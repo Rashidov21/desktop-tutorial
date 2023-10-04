@@ -45,7 +45,7 @@ QUALITIES = (
 class Movie(models.Model):
     current_year = datetime.datetime.now().year
     category = models.ForeignKey(Category, on_delete=models.PROTECT, null=True)
-    genre = models.ManyToManyField(Genre, null=True)
+    genre = models.ManyToManyField(Genre)
     title = models.CharField(_("Name"), max_length=100)
     slug = models.SlugField(_("*"), max_length=100, unique=True)
     poster = ResizedImageField(size=[360,530],upload_to='movie_posters/')
@@ -70,8 +70,8 @@ class Movie(models.Model):
 
 
 class Roles(models.Model):
-    author = models.ManyToManyField(Author, null=True)
-    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, null=True)
+    author = models.ManyToManyField(Author)
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     
     actor = models.BooleanField(default=False)
     director = models.BooleanField(default=False)
