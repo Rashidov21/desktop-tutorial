@@ -81,7 +81,7 @@ class Roles(models.Model):
     painter = models.BooleanField(default=False)
     
     def __str__(self):
-       return f"{self.author.name} - {self.movie.title}"
+       return f"{self.author} - {self.movie.title}"
  
  
 

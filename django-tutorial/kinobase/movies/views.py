@@ -15,4 +15,13 @@ class HomeView(ListView):
 class MovieDetailView(DetailView):
     model = Movie
     template_name = 'detail.html'
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        m = Movie.objects.last()
+        for u in m.roles_set.all():
+            print(u.author.all())
+            print(u.movie)
+        return context
+    
     # extra_context = {'movie':Movie.objects.first()}
