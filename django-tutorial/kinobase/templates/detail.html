@@ -1,0 +1,316 @@
+{% extends "wrapper.html" %} {% load static %} {% block content %}
+
+<div id="main" class="container">
+
+
+<div id="movie">
+    <div itemscope itemtype="https://schema.org/Movie">
+
+    
+    <meta itemprop="name" content="Оппенгеймер">
+    <meta itemprop="url" content="https://kinobase.org/film/217418-oppengeymer">
+    <meta itemprop="dateCreated" content="2023-10-03T19:59:00+03:00">
+    <meta itemprop="copyrightYear" content="2023">
+
+            <h1>{{movie.title}}</h1>
+
+                    <h4 class="alternative_title" itemprop="alternativeHeadline">{{movie.slug}}</h4>
+            
+
+    <div class="row">
+        <div class="col-md-9">
+
+            <div class="data clearfix">
+                <div class="poster-data">
+                    <div class="poster">
+                        <img src="{{movie.poster.url}}" itemprop="image" class="img-responsive">
+                        
+                                                    <button class="favorite" data-movie-id="217418" title="Добавить в избранное"></button>
+                                                
+                                            </div>
+
+                    <div id="rating-block">
+                                                    <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                                <meta itemprop="ratingValue" content="6.8">
+                                <meta itemprop="worstRating" content="0">
+                                <meta itemprop="bestRating"  content="10">
+                                <meta itemprop="ratingCount" content="1547">
+                            </span>
+                                                <input type="hidden" id="rating" value="6.8">
+                        <div id="rating-votes">
+                            Оценка: 6.8 (1 547 голосов)
+                        </div>
+                        <div id="rating-success">
+                            <span id="rating-text">Ваша оценка: 0</span> 
+                            <span id="remove-rating" class="glyphicon glyphicon-remove"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <ul class="list-unstyled details">
+                    <li><b>Год:</b> <a href="/films/2023">2023</a></li>
+
+                                        <li>
+                                            <b>Страна:</b> 
+                                            {% for c in movie.country %}
+                                            <a href="/films/gbr" rel="nofollow">{{c.name}}</a>,
+                                            {% endfor %}
+                                            
+                                        </li>
+                                        
+                                        <li>
+                                            <b>Жанр:</b> 
+                                            {% for g in movie.genre.all %}
+                                            <a href="/films/biography" rel="nofollow">
+                                                <span itemprop="genre">{{g.name}}<span>
+                                            </a>,
+                                            {% endfor %}
+                                        </li>
+                    
+                    
+                                            <li><b>Режиссер:</b> <span itemprop="director" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/461" rel="nofollow"><span itemprop="name">Кристофер Нолан</span></a></span></li>
+                    
+                                            <li><b>Сценарий:</b> <a href="/name/461" rel="nofollow">Кристофер Нолан</a>, <a href="/name/488043" rel="nofollow">Кай Бёрд</a>, <a href="/name/488044" rel="nofollow">Мартин Шервин</a></li>
+                    
+                                            <li><b>Продюсер:</b> <span itemprop="producer" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/461" rel="nofollow"><span itemprop="name">Кристофер Нолан</span></a></span>, <span itemprop="producer" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/4340" rel="nofollow"><span itemprop="name">Чарльз Ровен</span></a></span>, <span itemprop="producer" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/472" rel="nofollow"><span itemprop="name">Эмма Томас</span></a></span></li>
+                    
+                                            <li><b>Оператор:</b> <a href="/name/469" rel="nofollow">Хойте Ван Хойтема</a></li>
+                    
+                                            <li><b>Композитор:</b> <span itemprop="musicBy" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/416425" rel="nofollow"><span itemprop="name">Людвиг Горанссон</span></a></span></li>
+                    
+                                            <li><b>Художник:</b> <a href="/name/4169" rel="nofollow">Рут Де Йонг</a>, <a href="/name/296457" rel="nofollow">Саманта Инглендер</a>, <a href="/name/339542" rel="nofollow">Энтони Д. Парилло</a></li>
+                    
+                                            <li><b>Актеры:</b> <span itemprop="actor" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/488037" rel="nofollow"><span itemprop="name">Киллиан Мерфи</span></a></span>, <span itemprop="actor" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/589" rel="nofollow"><span itemprop="name">Эмили Блант</span></a></span>, <span itemprop="actor" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/1274" rel="nofollow"><span itemprop="name">Мэтт Дэймон</span></a></span>, <span itemprop="actor" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/2255" rel="nofollow"><span itemprop="name">Роберт Дауни мл.</span></a></span>, <span itemprop="actor" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/40969" rel="nofollow"><span itemprop="name">Флоренс Пью</span></a></span>, <span itemprop="actor" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/9077" rel="nofollow"><span itemprop="name">Джош Хартнетт</span></a></span>, <span itemprop="actor" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/459" rel="nofollow"><span itemprop="name">Кейси Аффлек</span></a></span>, <span itemprop="actor" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/1371" rel="nofollow"><span itemprop="name">Рами Малек</span></a></span>, <span itemprop="actor" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/2585" rel="nofollow"><span itemprop="name">Кеннет Брана</span></a></span>, <span itemprop="actor" itemscope itemtype="https://schema.org/Person"><a itemprop="url" href="/name/401836" rel="nofollow"><span itemprop="name">Бенни Сэфди</span></a></span></li>
+                    
+
+                                        <li><b>Качество:</b> TS</li>
+                    <li><b>Перевод:</b> Дублированный</li>
+                    <li><b>Продолжительность:</b> <span itemprop="duration">02:55:26</span></li>
+                    
+                                        <li><b>Рейтинг Кинопоиска:</b> <a href="https://www.kinopoisk.ru/film/4664634/" target="_blank">8.5</a> (15 651)</li>
+                    
+                                        <li><b>Рейтинг IMDb:</b> 8.7 (200 694)</li>
+                                    </ul>
+
+                <div class="body" itemprop="description">История жизни американского физика Роберта Оппенгеймера, который стоял во главе первых разработок ядерного оружия.</div>
+
+                            </div>
+
+
+            <div id="watch_block">
+
+                                <ul class="nav nav-tabs" id="tab-options">
+                    <li><a href="#online" data-toggle="tab">Смотреть онлайн</a></li>
+                    <li><a href="#trailer" data-toggle="tab">Трейлер</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane" id="online">
+                        <div id="videoplayer_content">
+                            <div id="videoplayer"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="trailer"></div>
+                </div>
+                
+                <div class="row" id="player-options">
+                    <div class="col-md-12">
+                        <div class="pull-left">
+                            
+                                                            <button class="btn-icon btn-fav" title="Добавить в избранное">В избранное</button>
+                            
+                        </div>
+
+                        <div class="pull-right">
+                                                            
+                                <div class="dropdown dropdown-filter" id="dropdown-player">
+                                    <button class="btn-own dropdown-toggle change-player" data-toggle="dropdown" title="Выбрать плеер">
+                                        <span id="change-player-text">Выбрать плеер</span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" id="set_new_player">Новый плеер</a></li>
+                                        <li><a href="#" id="set_old_player">Старый плеер</a></li>
+                                    </ul>
+                                </div>
+                                
+                                                    </div>
+                    </div>
+                </div>
+
+                                    <div style="margin-top: 20px;" class="text-muted">
+                        Присутствует встроеная реклама. <br>
+                        Данную рекламу встраивают релиз-группы, а не наш сайт. Мы не несем никакой ответственности за ее содержание. <br>
+                        Вы можете посмотреть сейчас с рекламой, либо дождаться лицензии и смотреть уже без рекламы.
+                    </div>
+                
+            </div>
+
+
+            <div id="comments">
+                <div class="comments-title" id="comments-count">16 комментариев</div>
+
+                
+                <form action="/comments/add" id="comment_form" method="post">
+                    
+                    <div class="form-group">
+                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                    </div>
+
+                    <button class="btn btn-default btn-post" id="add_comment">Добавить</button>
+                </form>
+                
+                              
+                <div id="comments-entries">
+                    <div class="media new_comment" data-comment-id="" style="display:none;">
+                        <div class="media-left">
+                           <img class="media-object img-circle" src="" loading="lazy" style="width: 40px; height: 40px;">
+                        </div>
+                        <div class="media-body">
+                            <div class="media-heading"><b></b> <span></span></div>
+                            <p class="text"></p>
+                            <ul class="list-inline small">
+                                <li class="showfull"><a href="javascript:void(0);" class="text-muted" title="Показать весь комментарий">Показать весь комментарий</a></li>
+                                <li class="remove"><a href="javascript:void(0);" class="text-muted" title="Удалить">Удалить</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                            </div>
+            
+        </div>
+
+        <div class="col-md-3">
+
+            
+            <div class="sidebar-afk"></div>
+
+
+        </div>
+    </div>
+
+    
+    </div>
+</div>
+
+
+
+
+
+    
+<script src="https://st.kinobase.org/static/player/409/hls.js"></script>
+<script src="https://st.kinobase.org/static/player/409/playerjs.js?v=1687299220399"></script>
+
+
+<script src="https://st.kinobase.org/static/js/movie.js?v=1687299220399"></script>
+
+
+
+    <div class="footer">
+        <p>По всем вопросам пишите на электронную почту <a href="" class="mail"></a></p>
+    </div>
+
+</div>
+
+
+<div class="modal" id="account_modal" tabindex="-1" role="dialog" aria-labelledby="true" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Закрыть</span></button>
+                <h4 class="modal-title">Вход</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div id="modal_login_content" style="display:none;">
+                            <div class="alert alert-danger" style="display:none;"></div>
+                            <form action="/login" id="modal_login_form" method="post" role="form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="modal_login_email" value="" placeholder="Электронная почта">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" id="modal_login_password" placeholder="Пароль">
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Войти</button>
+                                </div>
+                            </form>
+
+                            <div style="margin-top:30px;">
+                                <p><a href="/recover" class="recover">Забыли пароль?</a></p>
+                                <p><a href="/registration" class="register">Зарегистрироваться</a></p>
+                            </div>
+                        </div>
+
+                        <div id="modal_recover_content" style="display:none;">
+                            <div class="alert alert-success" style="display:none;"></div>
+                            <div class="alert alert-danger" style="display:none;"></div>
+                            <form action="/recover" id="modal_recover_form" method="post" role="form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="modal_recover_email" value="" placeholder="Электронная почта">
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Отправить</button>
+                                </div>
+                            </form>
+
+                            <div style="margin-top:30px;">
+                                <p><a href="/login" class="login">Войти</a></p>
+                            </div>
+                        </div>
+
+                        <div id="modal_register_content" style="display:none;">
+                            <div class="alert alert-success" style="display:none;"></div>
+                            <div class="alert alert-danger" style="display:none;"></div>
+                            <form action="/registration" id="modal_register_form" method="post" role="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" id="modal_register_name" value="" placeholder="Имя пользователя">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="modal_register_email" value="" placeholder="Электронная почта">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" id="modal_register_password" placeholder="Пароль">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password_confirmation" id="modal_register_password_confirmation" placeholder="Подтвердите пароль">
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="6Ld5MCUTAAAAALXvmUFVUdqxSgy9a8Kf3zeVvGEJ"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Зарегистрироваться</button>
+                                </div>
+                            </form>
+
+                            <div style="margin-top:30px;">
+                                <p><a href="/login" class="login">Войти</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="registration-social-login">
+                            <a class="btn-own btn-vk" href="javascript:void(0);" onclick="ulogin.vkontakte('https://kinobase.org/ulogin');"><span class="icon-vkontakte"></span>  Войти через Вконтакте</a>
+                            <a class="btn-own btn-ok" href="javascript:void(0);" onclick="ulogin.odnoklassniki('https://kinobase.org/ulogin');"><span class="icon-odnoklassniki"></span>  Войти через Одноклассники</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
