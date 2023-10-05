@@ -12,12 +12,12 @@
 <meta name="application-name" content="Кинобейс">
 <meta name="theme-color" content="#4067b7">
 <meta name="msapplication-navbutton-color" content="#4067b7">
-<title>Кинобейс</title>
+<title>Кинобейс - clone</title>
 <meta name="keywords" content="Кинобейс, kinobase, смотреть фильмы онлайн, фильмы онлайн в хорошем качестве, кино смотреть онлайн, смотреть сериалы онлайн, сериалы онлайн в хорошем качестве, смотреть фильмы бесплатно, онлайн-кинотеатр">
 <meta name="description" content="Смотрите бесплатно на сайте кинобейс - фильмы, сериалы и телепередачи в хорошем качестве">
 <link rel="dns-prefetch" href="https://st.kinobase.org/">
-<link rel="icon" href="../st.kinobase.org/favicon2778.png?v=1687299220399" type="image/png">
-<link rel="icon" href="https://st.kinobase.org/favicon.ico?v=1687299220399" type="image/x-icon">
+<link rel="icon" href="{% static 'images/logo2.png' %}" type="image/png">
+<link rel="icon" href="{% static 'images/logo2.png' %}" type="image/x-icon">
 
 <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">
 <link rel="stylesheet" href="{% static 'css/kinobase.css' %}" type="text/css">
@@ -41,17 +41,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="../st.kinobase.org/static/images/logo2.png" width="15"></a>
+            <a class="navbar-brand" href="/">
+                <img src="{% static 'images/logo2.png' %}" width="15">
+            </a>
         </div>
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="films.html">Фильмы</a></li>
-                <li><a href="serials.html">Сериалы</a></li>
-                <li><a href="tv.html">Телепередачи</a></li>
-                <li><a href="animation.html">Мультфильмы</a></li>
-                <li><a href="soon.html">Скоро на сайте</a></li>
-                <li><a href="collections.html">Подборки</a></li>
+                {% for category in categories %}
+                <li><a href="#">{{category.name}}</a></li>
+                {% endfor %}
             </ul>
 
             <div class="navbar-left">
@@ -70,7 +69,17 @@
                                 </ul>
 
         </div>
-    
+
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
+                {{ message }}
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
     </div>
 </div>
 {% block content %}
@@ -78,9 +87,12 @@
 {% endblock content %}
 
 <script type="text/javascript">
+
+
     $(document).ready(function(){
         var email = ('support' + '@' + 'kinobase.org');
         $('.footer a.mail').attr("href", "mailto:"+email).text(email);
+        $('.messages').show()
     });
     </script>
     

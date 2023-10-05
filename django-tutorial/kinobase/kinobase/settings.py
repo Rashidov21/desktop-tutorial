@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g_o2m&fs$4ma!8-#4k800a@5d#n6dxely&2bm!h-2x2!nzwh!r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['a128-213-230-78-101.ngrok-free.app','localhost']
 
 
 # Application definition
@@ -64,6 +64,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'movies.context_pro.get_context'
             ],
         },
     },

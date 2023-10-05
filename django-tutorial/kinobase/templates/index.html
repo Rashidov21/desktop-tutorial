@@ -4,7 +4,7 @@
   <a href="filmsa692.html?sort=viewed_week" class="h3">Популярные фильмы</a>
 
   <div class="row items">
-	{% for movie in object_list %}
+    {% for movie in object_list %}
     <div class="col-xs-2 item">
       <a href="{% url 'movies:detail' movie.slug %}">
         <img
@@ -37,12 +37,10 @@
         <div class="desc">{{movie.year}}, {{movie.quality}}</div>
       </div>
     </div>
-	{% endfor %}
+    {% endfor %}
   </div>
 
   <a href="films.html" class="h3">Новые фильмы</a>
-
-
 
   <div class="footer">
     <p>
@@ -73,40 +71,22 @@
           <div class="col-sm-7">
             <div id="modal_login_content" style="display: none">
               <div class="alert alert-danger" style="display: none"></div>
-              <form
-                action="https://kinobase.org/login"
-                id="modal_login_form"
-                method="post"
-                role="form"
-              >
+              <form action="{% url 'movies:login' %}" method="post">
+                {% csrf_token %}
                 <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    name="email"
-                    id="modal_login_email"
-                    value=""
-                    placeholder="Электронная почта"
-                  />
+                  <input type="text" name="username" class="form-control" placeholder="Email">
                 </div>
-
                 <div class="form-group">
-                  <input
-                    type="password"
-                    class="form-control"
-                    name="password"
-                    id="modal_login_password"
-                    placeholder="Пароль"
-                  />
+                  <input type="password" name="password" class="form-control" placeholder="Password">
                 </div>
-
                 <div class="form-group">
                   <button type="submit" class="btn btn-default">Войти</button>
                 </div>
               </form>
 
+
               <div style="margin-top: 30px">
-                <p><a href="recover.html" class="recover">Забыли пароль?</a></p>
+                <p><a href="{% url 'movies:password_reset' %}" >Забыли пароль?</a></p>
                 <p>
                   <a href="registration.html" class="register"
                     >Зарегистрироваться</a
@@ -150,71 +130,22 @@
             <div id="modal_register_content" style="display: none">
               <div class="alert alert-success" style="display: none"></div>
               <div class="alert alert-danger" style="display: none"></div>
-              <form
-                action="https://kinobase.org/registration"
-                id="modal_register_form"
-                method="post"
-                role="form"
-              >
+              <form action="{% url 'movies:register' %}" method="post">
+                {% csrf_token %}
                 <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="name"
-                    id="modal_register_name"
-                    value=""
-                    placeholder="Имя пользователя"
-                  />
+                  <input type="text" name="username" class="form-control" placeholder="Username">
                 </div>
-
                 <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    name="email"
-                    id="modal_register_email"
-                    value=""
-                    placeholder="Электронная почта"
-                  />
+                  <input type="password" name="password1" class="form-control" placeholder="Password ">
                 </div>
-
                 <div class="form-group">
-                  <input
-                    type="password"
-                    class="form-control"
-                    name="password"
-                    id="modal_register_password"
-                    placeholder="Пароль"
-                  />
+                  <input type="password" name="password2" class="form-control" placeholder="Retype password">
                 </div>
-
                 <div class="form-group">
-                  <input
-                    type="password"
-                    class="form-control"
-                    name="password_confirmation"
-                    id="modal_register_password_confirmation"
-                    placeholder="Подтвердите пароль"
-                  />
-                </div>
-
-                <div class="form-group">
-                  <div
-                    class="g-recaptcha"
-                    data-sitekey="6Ld5MCUTAAAAALXvmUFVUdqxSgy9a8Kf3zeVvGEJ"
-                  ></div>
-                </div>
-
-                <div class="form-group">
-                  <button type="submit" class="btn btn-default">
-                    Зарегистрироваться
-                  </button>
+                  <button type="submit" class="btn btn-default">Войти</button>
                 </div>
               </form>
 
-              <div style="margin-top: 30px">
-                <p><a href="login.html" class="login">Войти</a></p>
-              </div>
             </div>
           </div>
 

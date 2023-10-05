@@ -1,5 +1,26 @@
 {% extends "wrapper.html" %} {% load static %} {% block content %}
 
+
+<script type="text/javascript">
+  var IMAGES_URL = "https://st.kinobase.org";
+  var STATIC_URL = "https://st.kinobase.org";
+  var STATIC_VERSION = "1687299220399";
+  var CURRENT_USER_ID = 70848;
+  </script>
+<script type="text/javascript">
+  var MOVIE_ID = 221685;
+  var MOVIE_URL = "pila-10";
+  var MOVIE_TYPE = "films";
+  var MOVIE_TRAILER = "https://www.youtube.com/embed/lZEjql_6M9U";
+  var MOVIE_IS_COMING = 0;
+  var COMMENTS_PAGES = 1;
+  var PLAYER_CUID = "774811d30c1b8ba8a5a5b621e7c6d107";
+  var IDENTIFIER = "2fN60lW5anRN4EYTAaAs";
+  </script>
+
+  <script src='{% static 'js/player/409/hls.js' %}'></script>
+  <script src='{% static 'js/player/409/playerjs.js' %}'></script>
+  <script src="{% static 'js/movie.js' %}"></script>
 <div id="main" class="container">
   <div id="movie">
     <div itemscope itemtype="https://schema.org/Movie">
@@ -71,7 +92,7 @@
 
               <li>
                 <b>Режиссер:</b>
-                {% for role in movie.roles_set.all %} {{c.name}}
+                {% for role in movie.roles_set.all %}
                 <span
                   itemprop="director"
                   itemscope
@@ -88,168 +109,63 @@
 
               <li>
                 <b>Сценарий:</b>
-                <a href="/name/461" rel="nofollow">Кристофер Нолан</a>,
-                <a href="/name/488043" rel="nofollow">Кай Бёрд</a>,
-                <a href="/name/488044" rel="nofollow">Мартин Шервин</a>
+                {% for role in movie.roles_set.all %}
+                {% if role.screenwriter %}
+                {% for author in role.author.all %}
+                <a href="/name/461" rel="nofollow">{{author.name}}</a>,
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
               </li>
 
               <li>
                 <b>Продюсер:</b>
+                {% for role in movie.roles_set.all %}
                 <span
-                  itemprop="producer"
+                  itemprop="director"
                   itemscope
                   itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/461" rel="nofollow"
-                    ><span itemprop="name">Кристофер Нолан</span></a
-                  ></span
-                >,
-                <span
-                  itemprop="producer"
-                  itemscope
-                  itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/4340" rel="nofollow"
-                    ><span itemprop="name">Чарльз Ровен</span></a
-                  ></span
-                >,
-                <span
-                  itemprop="producer"
-                  itemscope
-                  itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/472" rel="nofollow"
-                    ><span itemprop="name">Эмма Томас</span></a
-                  ></span
                 >
+                  {% if role.producer %} {% for author in role.author.all %}
+                  <a itemprop="url" href="/name/461" rel="nofollow">
+                    <span itemprop="name">{{author.name}}</span>
+                  </a>
+                  {% endfor %} {% endif %}
+                </span>
+                {% endfor %}
               </li>
 
-              <li>
-                <b>Оператор:</b>
-                <a href="/name/469" rel="nofollow">Хойте Ван Хойтема</a>
-              </li>
 
-              <li>
-                <b>Композитор:</b>
-                <span
-                  itemprop="musicBy"
-                  itemscope
-                  itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/416425" rel="nofollow"
-                    ><span itemprop="name">Людвиг Горанссон</span></a
-                  ></span
-                >
-              </li>
 
-              <li>
-                <b>Художник:</b>
-                <a href="/name/4169" rel="nofollow">Рут Де Йонг</a>,
-                <a href="/name/296457" rel="nofollow">Саманта Инглендер</a>,
-                <a href="/name/339542" rel="nofollow">Энтони Д. Парилло</a>
-              </li>
+
 
               <li>
                 <b>Актеры:</b>
+                {% for role in movie.roles_set.all %}
                 <span
-                  itemprop="actor"
+                  itemprop="director"
                   itemscope
                   itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/488037" rel="nofollow"
-                    ><span itemprop="name">Киллиан Мерфи</span></a
-                  ></span
-                >,
-                <span
-                  itemprop="actor"
-                  itemscope
-                  itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/589" rel="nofollow"
-                    ><span itemprop="name">Эмили Блант</span></a
-                  ></span
-                >,
-                <span
-                  itemprop="actor"
-                  itemscope
-                  itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/1274" rel="nofollow"
-                    ><span itemprop="name">Мэтт Дэймон</span></a
-                  ></span
-                >,
-                <span
-                  itemprop="actor"
-                  itemscope
-                  itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/2255" rel="nofollow"
-                    ><span itemprop="name">Роберт Дауни мл.</span></a
-                  ></span
-                >,
-                <span
-                  itemprop="actor"
-                  itemscope
-                  itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/40969" rel="nofollow"
-                    ><span itemprop="name">Флоренс Пью</span></a
-                  ></span
-                >,
-                <span
-                  itemprop="actor"
-                  itemscope
-                  itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/9077" rel="nofollow"
-                    ><span itemprop="name">Джош Хартнетт</span></a
-                  ></span
-                >,
-                <span
-                  itemprop="actor"
-                  itemscope
-                  itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/459" rel="nofollow"
-                    ><span itemprop="name">Кейси Аффлек</span></a
-                  ></span
-                >,
-                <span
-                  itemprop="actor"
-                  itemscope
-                  itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/1371" rel="nofollow"
-                    ><span itemprop="name">Рами Малек</span></a
-                  ></span
-                >,
-                <span
-                  itemprop="actor"
-                  itemscope
-                  itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/2585" rel="nofollow"
-                    ><span itemprop="name">Кеннет Брана</span></a
-                  ></span
-                >,
-                <span
-                  itemprop="actor"
-                  itemscope
-                  itemtype="https://schema.org/Person"
-                  ><a itemprop="url" href="/name/401836" rel="nofollow"
-                    ><span itemprop="name">Бенни Сэфди</span></a
-                  ></span
                 >
+                  {% if role.actor %} {% for author in role.author.all %}
+                  <a itemprop="url" href="/name/461" rel="nofollow">
+                    <span itemprop="name">{{author.name}}</span>
+                  </a>
+                  {% endfor %} {% endif %}
+                </span>
+                {% endfor %}
               </li>
 
-              <li><b>Качество:</b> TS</li>
-              <li><b>Перевод:</b> Дублированный</li>
-              <li>
+              <li><b>Качество:</b> {{movie.quality}}</li>
+              <li><b>Перевод:</b> {% if movie.dubbed %} Дублированный {% else %}  Любительский многоголосый {% endif %} </li>
+              <li> 
                 <b>Продолжительность:</b>
-                <span itemprop="duration">02:55:26</span>
+                <span itemprop="duration">{{movie.duration}}</span>
               </li>
-
-              <li>
-                <b>Рейтинг Кинопоиска:</b>
-                <a href="https://www.kinopoisk.ru/film/4664634/" target="_blank"
-                  >8.5</a
-                >
-                (15 651)
-              </li>
-
-              <li><b>Рейтинг IMDb:</b> 8.7 (200 694)</li>
             </ul>
 
             <div class="body" itemprop="description">
-              История жизни американского физика Роберта Оппенгеймера, который
-              стоял во главе первых разработок ядерного оружия.
+            {{movie.description}}
             </div>
           </div>
 
