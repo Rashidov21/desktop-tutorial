@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-g_o2m&fs$4ma!8-#4k800a@5d#n6dxely&2bm!h-2x2!nzwh!r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['a128-213-230-78-101.ngrok-free.app','localhost']
-
+ALLOWED_HOSTS = ['54c9-84-54-120-9.ngrok-free.app','localhost']
+CSRF_TRUSTED_ORIGINS = ['https://54c9-84-54-120-9.ngrok-free.app']
 
 # Application definition
 
@@ -38,8 +38,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'movies',
-    'django_countries'
+    'django_countries',
+    'crispy_forms',
+    "crispy_bootstrap4",
 ]
+
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -105,6 +113,24 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
+
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+EMAIL_HOST_USER = 'your email'
+EMAIL_HOST_PASSWORD = 'your yandex password'
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+SERVER_EMAIL = EMAIL_HOST_USER
+EMAIL_ADMIN = EMAIL_HOST_USER
+
+
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_URL = '/logout/'
+
 
 LANGUAGE_CODE = 'en-us'
 

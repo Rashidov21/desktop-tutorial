@@ -12,7 +12,9 @@
 <meta name="application-name" content="Кинобейс">
 <meta name="theme-color" content="#4067b7">
 <meta name="msapplication-navbutton-color" content="#4067b7">
-<title>Кинобейс - clone</title>
+{% block title %}
+
+{% endblock title %}
 <meta name="keywords" content="Кинобейс, kinobase, смотреть фильмы онлайн, фильмы онлайн в хорошем качестве, кино смотреть онлайн, смотреть сериалы онлайн, сериалы онлайн в хорошем качестве, смотреть фильмы бесплатно, онлайн-кинотеатр">
 <meta name="description" content="Смотрите бесплатно на сайте кинобейс - фильмы, сериалы и телепередачи в хорошем качестве">
 <link rel="dns-prefetch" href="https://st.kinobase.org/">
@@ -64,9 +66,10 @@
 
 
             <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="login.html" class="login">Вход</a></li>
-                    <li><a href="registration.html" class="register">Регистрация</a></li>
-                                </ul>
+                    <li><a href="login.html" class="login">{{request.user.username}}</a></li>
+                    <li><a href="/login">Вход</a></li>
+                    <li><a href="/register">Регистрация</a></li>
+            </ul>
 
         </div>
 

@@ -8,37 +8,31 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 
 from .models import Movie
+
+from .forms import SignUpForm
 # Create your views here.
 
-def user_login(request):
-    username = request.POST["username"]
-    password = request.POST["password"]
-    user = authenticate(request, username=username, password=password)
-    if user is not None:
-        login(request, user)
-        # Redirect to a success page.
-        messages.add_message(request,messages.SUCCESS,"Welcome !")
-        return redirect("/")
-    else:
-        # Return an 'invalid login' error message.
-        messages.add_message(request,messages.WARNING,"User not found !")
-        return redirect("/")
+
+    
 def register(request):
-    username = request.POST["username"]
-    password1 = request.POST["password1"]
-    password2 = request.POST["password2"]
-    
-    if password1 == password2:
-        u = User.objects.create(username=username, password=password1)
-        print(u)
-        user = authenticate(request,username=u.username,password=u.password)
-        login(request,user)
-        print("done")
-        return redirect("/")
-    else:
-        messages.add_message(request,messages.WARNING,"Form not valid!")
-        return redirect("/")
-    
+    if request.method == 'GET':
+        form = SignUpForm()
+        return render(request, 'auth/register.html', {'form':form})
+    if request.method == 'POST':
+        form = SignUpForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
+            messages.add_message(request,messages.SUCCESS,"Welcome!")
+            return redirect("/")
+        else:
+            messages.add_message(request,messages.WARNING,"Form not valid!")
+            return redirect("/")
+            
+            
 def password_reset(request):
     pass
 
