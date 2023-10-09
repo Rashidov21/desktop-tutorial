@@ -13,13 +13,19 @@ from django.contrib.auth.views import (
 app_name = 'movies'
 
 urlpatterns = [
+    # movie 
     path('', views.HomeView.as_view(), name='movie_list'),
     path('detail/<slug:slug>', views.MovieDetailView.as_view(), name='detail'),
+    
+    path('category/<slug>/', views.CategoryListView.as_view(), name='category_list'),
+    path('filter/<str:sort>', views.MovieFilterView.as_view(), name='movie_filter'),
     
     
     # account 
     path('login/',LoginView.as_view(
         template_name='auth/login.html'), name='login' ),
+    
+    path('profile/<str:username>', views.ProfileView.as_view(), name='profile'),
     
     path('logout/',LogoutView.as_view(
         template_name='auth/logout.html'), name='logout' ),

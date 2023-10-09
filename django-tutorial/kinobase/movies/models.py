@@ -44,6 +44,7 @@ QUALITIES = (
 
 class Movie(models.Model):
     current_year = datetime.datetime.now().year
+    
     category = models.ForeignKey(Category, on_delete=models.PROTECT, null=True)
     genre = models.ManyToManyField(Genre)
     title = models.CharField(_("Name"), max_length=100)
@@ -56,6 +57,8 @@ class Movie(models.Model):
     duration = models.DurationField(blank=True)
     rating = models.PositiveSmallIntegerField(default=0)
     description = models.TextField(blank=True)
+    views = models.PositiveSmallIntegerField(_("Movie views"), default=0)
+    published_time = models.DateTimeField(blank=True)
     
     # director = models.ManyToManyField(Author)
     # producer = models.ManyToManyField(Author)
@@ -92,4 +95,15 @@ class Comment(models.Model):
     comment = models.CharField(max_length=200)
     
     def __str__(self):
-       return self.user.firt_name
+       return self.user.first_name
+   
+   
+   
+
+class Profile(models.Model):
+    user = models.OneToOneField(User,on_delete=models.CASCADE, related_name='profile')
+    image = ResizedImageField(size=[100,100],upload_to='users/', blank=True)
+    favorites = models.ManyToManyField(Movie, related_name='favorites',blank=True)
+    
+    def __str__(self):
+       return f"{self.user.first_name}" if self.user.first_name else "Name is not defined."

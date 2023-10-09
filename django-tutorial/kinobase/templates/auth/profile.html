@@ -1,0 +1,261 @@
+{% extends "wrapper.html" %} {% load static %} {% block content %}
+{% block title %}
+<title>Кинобейс - {{request.user.username}}</title>
+{% endblock title %}
+<div id="main" class="container">
+
+
+<h3>Профиль</h3>
+
+<div class="row">
+    <div class="col-md-9">
+
+        
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2" style="width:130px;">
+
+                    <p>
+                        <img id="avatar" src="https://st.kinobase.org/storage/100x100/avatars/2023/10/9339adab253ac92db70c.jpg" class="img-responsive img-circle">
+                    </p>
+        
+        <center>
+            <div id="upload_avatar" class="btn-upload btn btn-success js-fileapi-wrapper">
+                <div class="js-browse">
+                    <span class="btn-txt">Выбрать</span>
+                    <input type="file" name="avatar_file" accept="image/*">
+                </div>
+                <div class="js-upload" style="display: none;">
+                    <div class="progress progress-success">
+                        <div class="js-progress bar"></div>
+                    </div>
+                    <span class="btn-txt">Загрузка</span>
+                </div>
+            </div>
+        </center>
+
+    </div>
+    <div class="col-md-7">
+        <ul class="nav nav-tabs" id="tab-options">
+            <li><a href="#info" data-toggle="tab">Основная</a></li>
+            <li><a href="#pass" data-toggle="tab">Пароль</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+            <div class="tab-pane active" id="info">
+                <form action="/profile" class="form" name="profile_form" method="post">
+                    <div class="form-group">
+                        <label for="name">Имя пользователя</label>
+                        <input type="text" class="form-control" id="name" name="name" value="rashidov" placeholder="Имя пользователя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Электронная почта</label>
+                        <input type="email" class="form-control" id="email" name="email" value="rashidovabdurakhmon@gmail.com" placeholder="Электронная почта">
+                    </div>
+                    <button type="submit" class="btn btn-default">Изменить</button>
+                </form>
+            </div>
+
+            <div class="tab-pane" id="pass">
+                <form action="/change_password" class="form" name="profile_form" method="post">
+                    <div class="form-group">
+                        <label for="password">Новый пароль</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Новый пароль">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password_confirmation">Повторите пароль</label>
+                        <input type="password" class="form-control" name="password_confirmation" id="password_confirmation" placeholder="Повторите пароль">
+                    </div>
+                    <button type="submit" class="btn btn-default">Изменить</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+var FileAPI = {
+    html5: true,
+    debug: false,
+    media: false,
+    staticPath: 'https://st.kinobase.org/static/FileAPI/'
+};
+</script>
+
+<script src="https://st.kinobase.org/static/FileAPI/FileAPI.html5.min.js"></script>
+<script src="https://st.kinobase.org/static/FileAPI/FileAPI.exif.js"></script>
+<script src="https://st.kinobase.org/static/FileAPI/jquery.fileapi.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#tab-options a:first').tab('show');
+    $('#tab-options a').click(function(e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+
+    $('#upload_avatar').fileapi({
+        url: '/upload_avatar',
+        multiple: false,
+        paramName: 'avatar_file',
+        dataType: 'json',
+        maxSize: 10 * FileAPI.MB,
+        accept: 'image/*',
+        autoUpload: true,
+        imageSize: { minWidth: 100, minHeight: 100, maxWidth: 5000, maxHeight: 5000 },
+        onSelect: function (evt, data) {
+            if (data.other.length) {
+                var errors = data.other[0].errors;
+                if (errors) {
+                    if (errors.minWidth || errors.minHeight) {
+                        alert("Высота и ширина картинки должна быть как минимум 100x100");
+                    }
+                    if (errors.maxWidth || errors.maxHeight) {
+                        alert("Высота и ширина картинки не должна превышать 5000x5000");
+                    }
+                }
+            }
+        },
+        onFileComplete: function (evt, uiEvt) {
+            var data = uiEvt.result;
+            if (data.error !== undefined) {
+                alert(data.error);
+            }
+            else {
+                var min = 10;
+                var max = 20;
+                var random = Math.floor(Math.random() * (max - min + 1)) + min;
+                var avatar = "/storage/100x100/avatars/"+data.avatar+"?rnd="+random;
+                $('#avatar').attr("src",avatar);
+            }
+        },
+        filterFn: function (file, info) {
+            if (/^image/.test(file.type)) {
+                return  info.width >= 100 && info.height >= 100;
+            }
+            return  false;
+        },
+        elements: {
+            active: { show: '.js-upload', hide: '.js-browse' },
+            progress: '.js-progress'
+        }
+    });
+});
+</script>
+
+
+
+    <div class="footer">
+        <p>По всем вопросам пишите на электронную почту <a href="" class="mail"></a></p>
+    </div>
+
+</div>
+
+
+<div class="modal" id="account_modal" tabindex="-1" role="dialog" aria-labelledby="true" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Закрыть</span></button>
+                <h4 class="modal-title">Вход</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div id="modal_login_content" style="display:none;">
+                            <div class="alert alert-danger" style="display:none;"></div>
+                            <form action="/login" id="modal_login_form" method="post" role="form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="modal_login_email" value="" placeholder="Электронная почта">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" id="modal_login_password" placeholder="Пароль">
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Войти</button>
+                                </div>
+                            </form>
+
+                            <div style="margin-top:30px;">
+                                <p><a href="/recover" class="recover">Забыли пароль?</a></p>
+                                <p><a href="/registration" class="register">Зарегистрироваться</a></p>
+                            </div>
+                        </div>
+
+                        <div id="modal_recover_content" style="display:none;">
+                            <div class="alert alert-success" style="display:none;"></div>
+                            <div class="alert alert-danger" style="display:none;"></div>
+                            <form action="/recover" id="modal_recover_form" method="post" role="form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="modal_recover_email" value="" placeholder="Электронная почта">
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Отправить</button>
+                                </div>
+                            </form>
+
+                            <div style="margin-top:30px;">
+                                <p><a href="/login" class="login">Войти</a></p>
+                            </div>
+                        </div>
+
+                        <div id="modal_register_content" style="display:none;">
+                            <div class="alert alert-success" style="display:none;"></div>
+                            <div class="alert alert-danger" style="display:none;"></div>
+                            <form action="/registration" id="modal_register_form" method="post" role="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" id="modal_register_name" value="" placeholder="Имя пользователя">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="modal_register_email" value="" placeholder="Электронная почта">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" id="modal_register_password" placeholder="Пароль">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password_confirmation" id="modal_register_password_confirmation" placeholder="Подтвердите пароль">
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="6Ld5MCUTAAAAALXvmUFVUdqxSgy9a8Kf3zeVvGEJ"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Зарегистрироваться</button>
+                                </div>
+                            </form>
+
+                            <div style="margin-top:30px;">
+                                <p><a href="/login" class="login">Войти</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="registration-social-login">
+                            <a class="btn-own btn-vk" href="javascript:void(0);" onclick="ulogin.vkontakte('https://kinobase.org/ulogin');"><span class="icon-vkontakte"></span>  Войти через Вконтакте</a>
+                            <a class="btn-own btn-ok" href="javascript:void(0);" onclick="ulogin.odnoklassniki('https://kinobase.org/ulogin');"><span class="icon-odnoklassniki"></span>  Войти через Одноклассники</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+

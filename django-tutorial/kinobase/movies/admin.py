@@ -5,7 +5,8 @@ from .models import (
     Author,
     Movie,
     Roles,
-    Comment
+    Comment,
+    Profile
 )
 # Register your models here.
 
@@ -40,3 +41,4 @@ class MovieAdmin(admin.ModelAdmin):
     inlines = [MovieRoleStackedInline]
     
 admin.site.register(Comment)
+admin.site.register(Profile)

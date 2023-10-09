@@ -51,7 +51,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 {% for category in categories %}
-                <li><a href="#">{{category.name}}</a></li>
+                <li><a href="{% url 'movies:category_list' category.slug %}">{{category.name}}</a></li>
                 {% endfor %}
             </ul>
 
@@ -66,7 +66,11 @@
 
 
             <ul class="nav navbar-nav navbar-right">
-                    <li><a href="login.html" class="login">{{request.user.username}}</a></li>
+                    <li>
+                        <a href="{% url 'movies:profile' request.user.username %}">
+                            {{request.user.username}}
+                        </a>
+                    </li>
                     <li><a href="/login">Вход</a></li>
                     <li><a href="/register">Регистрация</a></li>
             </ul>
