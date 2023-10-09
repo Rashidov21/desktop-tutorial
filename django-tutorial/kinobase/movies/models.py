@@ -59,6 +59,7 @@ class Movie(models.Model):
     description = models.TextField(blank=True)
     views = models.PositiveSmallIntegerField(_("Movie views"), default=0)
     published_time = models.DateTimeField(blank=True)
+    related_movies = models.ManyToManyField('self', blank=True)
     
     # director = models.ManyToManyField(Author)
     # producer = models.ManyToManyField(Author)
