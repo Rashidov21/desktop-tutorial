@@ -1,4 +1,7 @@
 import datetime
+from typing import Any
+from django.db.models.query import QuerySet
+from django.db.models import Q
 
 from django.shortcuts import render, redirect
 from django.views.generic import ListView, DetailView
@@ -9,9 +12,11 @@ from django.contrib.auth import authenticate,login
 from django.contrib import messages
 from django.contrib.auth.models import User
 
-from .models import Movie, Category,Profile
+from django_countries import countries
 
-from .forms import SignUpForm
+from .models import Movie,Genre, Category,Profile
+
+from .forms import SignUpForm, SelectCountryForm
 # Create your views here.
 
 
@@ -78,6 +83,27 @@ class CategoryListView(ListView):
         context["category_name"] = Category.objects.get(slug=self.kwargs.get("slug")).name
         return context
     
+class GenreListView(ListView):
+    model = Movie
+    template_name = 'list.html'
+    
+    def get_queryset(self):
+        ids = []
+        for i in self.request.GET.getlist('genre'):
+            g = Genre.objects.get(slug=i)
+            ids.append(g.id)
+        qs = Movie.objects.filter(genre__in=ids)
+
+        return qs
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # context["category_name"] = Category.objects.get(slug=self.kwargs.get("slug")).name
+   
+        return context
+    
+
+    
     
 
 class MovieFilterView(ListView):
@@ -105,6 +131,9 @@ class MovieFilterView(ListView):
             return qs
         if self.kwargs.get("sort") == 'everytime':            
             qs = Movie.objects.filter(rating__gte=5)
+            return qs
+        if self.kwargs.get("sort") == 'rating':            
+            qs = Movie.objects.filter(rating__gte=1)
             return qs
         
         

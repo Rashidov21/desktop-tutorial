@@ -18,6 +18,8 @@ urlpatterns = [
     path('detail/<slug:slug>', views.MovieDetailView.as_view(), name='detail'),
     
     path('category/<slug>/', views.CategoryListView.as_view(), name='category_list'),
+    path('genre/', views.GenreListView.as_view(), name='genre_list'),
+
     path('filter/<str:sort>', views.MovieFilterView.as_view(), name='movie_filter'),
     
     
