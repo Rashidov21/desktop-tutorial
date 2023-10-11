@@ -107,4 +107,4 @@ class Profile(models.Model):
     favorites = models.ManyToManyField(Movie, related_name='favorites',blank=True)
     
     def __str__(self):
-       return f"{self.user.first_name}" if self.user.first_name else "Name is not defined."
+       return f"{self.user.first_name}" if self.user.first_name else f"{self.user.username}"

@@ -22,6 +22,11 @@ urlpatterns = [
 
     path('filter/<str:sort>', views.MovieFilterView.as_view(), name='movie_filter'),
     
+    path("favorite/add/<user_id>/<movie_id>", views.add_to_favorite_movies, name='add_favorite'),
+    
+    path('favorites/<id>', views.UserFavoriteMovies.as_view(), name='favorites'),
+    path('history/', views.UserMovieHistory.as_view(), name='history'),
+    
     
     # account 
     path('login/',LoginView.as_view(
@@ -29,8 +34,7 @@ urlpatterns = [
     
     path('profile/<str:username>', views.ProfileView.as_view(), name='profile'),
     
-    path('logout/',LogoutView.as_view(
-        template_name='auth/logout.html'), name='logout' ),
+    path('logout/',views._logout, name='logout' ),
     
     path('register/',views.register, name='register' ),
     

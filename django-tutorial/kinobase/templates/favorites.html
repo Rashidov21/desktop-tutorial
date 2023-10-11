@@ -1,9 +1,15 @@
 {% extends "wrapper.html" %} {% load static %} {% block content %}
 {% block title %}
-<title>Кинобейс - clone</title>
+<title>Кинобейс - Избранное</title>
 {% endblock title %}
 <div id="main" class="container">
-  <a href="filmsa692.html?sort=viewed_week" class="h3">Популярные фильмы</a>
+  <a href="filmsa692.html?sort=viewed_week" class="h3">
+    {% if page_title %}
+    {{page_title}}
+    {% else %}
+    Избранное
+    {% endif %}
+  </a>
 
   <div class="row items">
     {% for movie in object_list %}
@@ -20,11 +26,11 @@
         />
       </a>
 
-      <a
-        href="{% url 'movies:add_favorite' request.user.id movie.id %}"
+      <button
         class="favorite"
+        data-movie-id="{{movie.id}}"
         title="Добавить в избранное"
-      ></a>
+      ></button>
 
       <div class="info">
         <div class="title">
@@ -42,7 +48,7 @@
     {% endfor %}
   </div>
 
-  <a href="films.html" class="h3">Новые фильмы</a>
+
 
   <div class="footer">
     <p>

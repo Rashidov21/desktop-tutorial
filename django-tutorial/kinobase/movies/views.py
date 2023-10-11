@@ -4,10 +4,11 @@ from django.db.models.query import QuerySet
 from django.db.models import Q
 
 from django.shortcuts import render, redirect
+from django.http import HttpResponseRedirect
 from django.views.generic import ListView, DetailView
 from django.views.generic.base import View
 
-from django.contrib.auth import authenticate,login
+from django.contrib.auth import authenticate,login,logout
 
 from django.contrib import messages
 from django.contrib.auth.models import User
@@ -18,10 +19,12 @@ from .models import Movie,Genre, Category,Profile
 
 from .forms import SignUpForm, SelectCountryForm
 # Create your views here.
-
+from .utils import get_user_movie_history_list
 
     
+    
 def register(request):
+   
     if request.method == 'GET':
         form = SignUpForm()
         return render(request, 'auth/register.html', {'form':form})
@@ -41,6 +44,9 @@ def register(request):
             messages.add_message(request,messages.WARNING,"Form not valid!")
             return redirect("/")
             
+def _logout(request):
+    logout(request)
+    return redirect('/login/')
 
 class ProfileView(View):
     template_name = 'auth/profile.html'
@@ -53,6 +59,16 @@ class ProfileView(View):
 class HomeView(ListView):
     model = Movie
     template_name = 'index.html'
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # print(type(self.request.session)) 
+        # print(dir(self.request.session)) 
+        # print(self.request.session.get_expiry_age())
+        # print(self.request.session.get_expiry_date())
+        # print(self.request.session.get_session_cookie_age())
+        return context
+    
     # extra_context = {'movie':Movie.objects.first()}
     
     
@@ -60,12 +76,19 @@ class MovieDetailView(DetailView):
     model = Movie
     template_name = 'detail.html'
     
+    
     def get_context_data(self, **kwargs):
+        obj = self.get_object()
+        get_user_movie_history_list(self.request) # if user session movie history 
+        
+        if obj.id not in self.request.session['viewed_movies']:
+            self.request.session['viewed_movies'].append(obj.id)
+            obj.views += 1
+            obj.save()
+        else:
+            pass
+        
         context = super().get_context_data(**kwargs)
-        m = Movie.objects.last()
-        for u in m.roles_set.all():
-            print(u.author.all())
-            print(u.movie)
         return context
     
     # extra_context = {'movie':Movie.objects.first()}
@@ -104,11 +127,10 @@ class GenreListView(ListView):
     
 
     
-    
-
 class MovieFilterView(ListView):
     model = Movie
     template_name = 'list.html'
+    
     
     def get_queryset(self):
         if self.kwargs.get("sort") == 'latest':
@@ -143,4 +165,40 @@ class MovieFilterView(ListView):
         context[""] =  None
         return context
     
+
+
+def add_to_favorite_movies(request,user_id,movie_id):
+    data = {}
+    user = User.objects.get(id=user_id)
+    movie = Movie.objects.get(id=movie_id)
+    if movie not in user.profile.favorites.all():
+        user.profile.favorites.add(movie)
+        print("OK")
+        messages.add_message(request,messages.SUCCESS, "Контент добавлен в избранное")
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+    else:
+        messages.add_message(request,messages.ERROR, "Error !")
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
+
+class UserFavoriteMovies(ListView):
+    model = Movie
+    template_name = 'favorites.html'
+    
+    
+    def get_queryset(self):
+        user = User.objects.get(id=self.kwargs.get('id'))
+        qs = Movie.objects.filter(id__in=user.profile.favorites.all())
+        return qs
+    
+    
+class UserMovieHistory(ListView):
+    model = Movie
+    template_name = 'favorites.html'
+    extra_context = {'page_title':"Просмотры"}
+    
+
+    def get_queryset(self):
+        qs = Movie.objects.filter(id__in=self.request.session["viewed_movies"])
+        return qs
     

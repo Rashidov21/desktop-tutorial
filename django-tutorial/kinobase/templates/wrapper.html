@@ -66,26 +66,56 @@
 
 
             <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="{% url 'movies:profile' request.user.username %}">
-                            {{request.user.username}}
-                        </a>
-                    </li>
-                    <li><a href="/login">Вход</a></li>
-                    <li><a href="/register">Регистрация</a></li>
+                {% if request.user.is_authenticated %}
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle top-avatar" id="top_profile_menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="
+                        {% if request.user.profile.image %} 
+                        {{request.user.profile.image.url}} 
+                        {% else %} 
+                        {% static 'images/user.png' %}
+                        {% endif %}" width="32"> 
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="top_profile_menu">
+                        <li><a href="{% url 'movies:profile' request.user.username %}">Профиль</a></li>
+                        <li><a href="{% url 'movies:favorites' request.user.id %}">Избранное</a></li>
+                        <li><a href="{% url 'movies:history' %}">История</a></li>
+                        <li><a href="/logout" class="logout">Выйти</a></li>
+                    </ul>
+                </li>
+                {% else %}
+                <li><a href="/login">Вход</a></li>
+                <li><a href="/register">Регистрация</a></li>
+                {% endif %}
             </ul>
 
         </div>
-
+        <style>
+            .notification{
+                padding: 10px 15px;
+                background-color: #473232a9;
+                color: white;
+                position: absolute; 
+                display: block; 
+                z-index: 9999;
+                top: 60px;
+                right: 5%;
+            }
+            .notification span{
+                background-color: #2b0f0fa9;
+                padding: 5px;
+                cursor: pointer;
+                margin-left: 10px;
+            }
+        </style>
         {% if messages %}
-        <ul class="messages">
             {% for message in messages %}
-            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
-                {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
-                {{ message }}
-            </li>
+                <div class="notification">
+                    {{ message }}
+                    <span onclick="this.parentElement.style.display = 'none'">&times;</span>
+                </div>
             {% endfor %}
-        </ul>
         {% endif %}
     </div>
 </div>
