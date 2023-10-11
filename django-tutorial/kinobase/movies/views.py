@@ -152,7 +152,7 @@ class MovieFilterView(ListView):
             qs = Movie.objects.filter(published_time__gte=time_24_hours_ago)
             return qs
         if self.kwargs.get("sort") == 'everytime':            
-            qs = Movie.objects.filter(rating__gte=5)
+            qs = Movie.objects.order_by('-views')
             return qs
         if self.kwargs.get("sort") == 'rating':            
             qs = Movie.objects.filter(rating__gte=1)
