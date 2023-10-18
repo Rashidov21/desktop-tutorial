@@ -59,4 +59,10 @@ urlpatterns = [
         template_name='auth/password_reset_complete.html',
         
          ),name='password_reset_complete'),
+      
+      
+      
+      
+      
+      path('add/new/user', views.AddNewUser.as_view(), name='add_new_user')
 ]

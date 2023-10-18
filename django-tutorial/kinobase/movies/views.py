@@ -4,15 +4,18 @@ from django.db.models.query import QuerySet
 from django.db.models import Q
 
 from django.shortcuts import render, redirect
+from django.urls import reverse, reverse_lazy
 from django.http import HttpResponseRedirect
 from django.views.generic import ListView, DetailView
 from django.views.generic.base import View
 
+from django.views.generic.edit import FormView
 from django.contrib.auth import authenticate,login,logout
 
 from django.contrib import messages
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User,Group
 
+from django.contrib.auth.forms import UserCreationForm
 from django_countries import countries
 
 from .models import Movie,Genre, Category,Profile
@@ -21,7 +24,20 @@ from .forms import SignUpForm, SelectCountryForm
 # Create your views here.
 from .utils import get_user_movie_history_list
 
-    
+
+from django.contrib.auth.mixins import PermissionRequiredMixin
+
+
+
+class AddNewUser(FormView):
+    form_class = UserCreationForm
+    template_name = 'auth/add_user_form.html'
+    success_url = reverse_lazy('/')
+    extra_context = {
+        'menu': None,
+        'title': 'Добавление статьи',
+    }
+     
     
 def register(request):
    
@@ -32,6 +48,8 @@ def register(request):
         form = SignUpForm(request.POST)
         if form.is_valid():
             u = form.save()
+            group = Group.objects.get(name='simple_user')
+            u.groups.add(group)
             Profile.objects.create(user=u)
             
             username = form.cleaned_data.get('username')

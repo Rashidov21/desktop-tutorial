@@ -27,7 +27,8 @@ DEBUG = True
 
 NGROK_HOST = '79b6-213-230-112-99.ngrok-free.app'
 
-ALLOWED_HOSTS = [NGROK_HOST,'localhost']
+# ALLOWED_HOSTS = [NGROK_HOST,'localhost']
+ALLOWED_HOSTS = []
 CSRF_TRUSTED_ORIGINS = ['https://'+NGROK_HOST]
 
 # Application definition
