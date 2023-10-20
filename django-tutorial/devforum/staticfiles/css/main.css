@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600&display=swap');
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+.p-auto{
+    padding: 10px 15px;
+}
+.my-auto{
+    margin: 5px auto;
+}

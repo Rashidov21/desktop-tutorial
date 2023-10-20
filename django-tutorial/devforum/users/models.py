@@ -1,14 +1,13 @@
-import random
+
 from django.db import models
 from django.conf import settings
 from django.utils.translation import gettext_lazy as _
 from django.core.signing import TimestampSigner
-from django.utils import timezone
 from django_resized import ResizedImageField
 from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
-from forum.models import Category
+
 
 
 class RegionChoices(models.TextChoices):
@@ -90,31 +89,25 @@ class User(AbstractUser):
         choices=SpecChoices.choices,
         blank=True
     )
-    role = models.CharField(
-        _("user role"),
-        max_length=256,
-        default=_("Foydalanuvchi"),
-        blank=True
-    )
 
+    true_solutions = models.PositiveIntegerField(_("true solutions"), default=0)
+    question_count = models.PositiveIntegerField(_("question"), default=0)
+    answers_count = models.PositiveIntegerField(_("answers"), default=0)
+    
     facebook = models.CharField(_("facebook"), max_length=256, blank=True)
     instagram = models.CharField(_("instagram"), max_length=256, blank=True)
     telegram = models.CharField(_("telegram"), max_length=256, blank=True)
     linkedin = models.CharField(_("linkedin"), max_length=256, blank=True)
     github = models.CharField(_("github"), max_length=256, blank=True)
-    behence = models.CharField(_("behence"), max_length=256, blank=True)
-    dribble = models.CharField(_("dribble"), max_length=256, blank=True)
 
-    following_users = models.ManyToManyField(
-        settings.AUTH_USER_MODEL,
-        related_name="users",
-        blank=True,
-    )
-    following_categories = models.ManyToManyField(
-        Category,
-        related_name="users",
-        blank=True,
-    )
+
+    followers = models.ManyToManyField('self', symmetrical=False, blank=True)
+
+    def count_followers(self):
+        return self.followers.count()
+    
+    def count_following(self):
+        return User.objects.filter(followers=self).count()
 
     created_at = models.DateTimeField(
         _("date created"),
@@ -151,12 +144,7 @@ class User(AbstractUser):
             self.instagram,
             self.telegram,
             self.linkedin,
-            self.github,
-            self.behence,
-            self.dribble])
-    @property
-    def get_ordered_saved_posts(self):
-        return self.saved_posts.all().order_by('-id')
+            self.github,])
     
 
     
