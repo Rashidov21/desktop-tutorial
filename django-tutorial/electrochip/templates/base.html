@@ -38,7 +38,7 @@
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="{% url 'main:home' %}">
             <img src="images/logo.png" alt="">
             <span>
               Electrochip
@@ -54,19 +54,19 @@
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{% url 'main:home' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
+                  <a class="nav-link" href="{% url 'main:about' %}"> About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Service </a>
+                  <a class="nav-link" href="{% url 'main:service' %}"> Service </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="blog.html"> Blog </a>
+                  <a class="nav-link" href="{% url 'main:blog' %}"> Blog </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact </a>
+                  <a class="nav-link" href="{% url 'main:contact' %}">Contact </a>
                 </li>
               </ul>
             </div>
