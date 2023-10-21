@@ -2,8 +2,12 @@
 
 // 1-Number - son , butun son, musbat , manfiy son 
 // 2-NaN - Not a number , son emas qiymati 
+// console.log("trs" * 3) // Nan
 // 3-Boolean - true yoki false mantiqiy qiymati
 // 4-String - qator , belgilar matn qiymati 
+let s = "assalom"
+console.log(s[0]) // a
+console.log(s[s.length - 1]) // m
 // 5-Array - Massiv , malumotlar tuzilmasi 
 // 6-Object - Obyekt , malumotlar tuzilmasi 
 // 7-null - mavjud emas qiymat
@@ -38,27 +42,31 @@
 // console.log(typeof -2)
 // console.log(typeof 1)
 // console.log(typeof 1n) // bigint
-// let integer = 10;
-// console.log(integer * 10) // 100
-// console.log(integer - 2) // 8
-// console.log(integer + 2) // 12
+
+
+let integer = 10;
+console.log(integer * 10) // 100
+console.log(integer - 2) // 8
+console.log(integer + 2) // 12
 // // '10' + '2' = '102'
-// console.log(integer + '2') // 102 - string
-// console.log(integer / "a") // NaN
-// console.log(integer / 2) // 5
-// let one = "1";
-// let two = "2";
-// console.log(one + two) // 12 - concat , qaatorlarni bir biriga ulash
-// console.log(Number(one) + Number(two)) // 3
+console.log(integer + '2') // 102 - string
+console.log(integer / "a") // NaN
+console.log(integer / 2) // 5
+let one = "1";
+let two = "2";
+console.log(one + two) // 12 - concat , qaatorlarni bir biriga ulash
+console.log(Number(one) + Number(two)) // 3
 
-// console.log(Number("text")) // NaN
+console.log(Number("text")) // NaN
 // Boolean
-// console.log(typeof true) //boolean
-// console.log(typeof false)//boolean
+console.log(typeof true) //boolean
+console.log(typeof false)//boolean
 
-// console.log(Boolean('java')) // true
-// console.log(Boolean(1)) // true
-// console.log(Boolean(0)) // false
+console.log(Boolean('java')) // true
+console.log(Boolean('')) // false
+console.log(Boolean(1)) // true
+console.log(Boolean(-33)) // true
+console.log(Boolean(0)) // false
 
 
 
@@ -76,7 +84,7 @@
 console.log(String(1) + String(2)) // 12
 let s1 = 'lorem ipsum'
 let s2 = "lorem ipsum"
-let s3 = `lorem ipsum`
+let s3 = `lorem ipsum` // ES6
 // console.log(typeof s1) //string
 // console.log(typeof s2) // string
 // console.log(typeof s3) // string
@@ -86,4 +94,4 @@ let age = 12
 let str = `Abdulloh ${weight}kg , uni yoshi ${age}da`
 console.log(str)
 
-console.log(`ES${3+3}`)
+console.log(`ES${3+3}`) // ES6

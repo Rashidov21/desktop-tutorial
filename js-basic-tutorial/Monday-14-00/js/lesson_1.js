@@ -14,9 +14,9 @@
 
 const pi = 3.14
 
-let d = 25
+let d = 25; // uchburchak tomoni 
 
-console.log(d*pi)
+// console.log(d*pi)
 
 
 var x = 10;
@@ -28,11 +28,11 @@ let y = 15;
 
 const z = 20;
 // z = 10 TypeError
-console.log(x+y+z)
+// console.log(x+y+z) // 40
 
 
-let home = "A.Oripov 21"
-console.log(home)
+// let home = "A.Oripov 21"
+// console.log(home)
 
 // 1-Mantiqan to'g'ri nom bo'lishi 
 // 2-Ingliz tilida bo'lishi
