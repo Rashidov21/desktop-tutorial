@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'devforum.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'forum_db',
+        'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'root',
         'HOST': '127.0.1.1',
@@ -116,7 +116,14 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'ru-ru'
+AUTH_USER_MODEL = 'users.User'
+
+LOGIN_URL = '/users/login/'
+LOGOUT_URL = '/users/logout/'
+LOGIN_REDIRECT_URL = '/'
+
+
+LANGUAGE_CODE = 'en-en'
 
 TIME_ZONE = 'Asia/Tashkent'
 

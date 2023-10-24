@@ -4,8 +4,8 @@
 // alert(a)
 
 // let yesno = confirm("Yes or No")
-// console.log(typeof yesno)
-// console.log(yesno)
+// console.log(typeof yesno) //boolean
+// console.log(yesno) // true/false
 
 // Arifmetika 
 
@@ -15,7 +15,7 @@
 // console.log(2-1) // 1
 // console.log(7 % 3) // 1
 
-// console.log(2 + 2 - 4 / (2 * 2)) // 3
+// console.log((10 + 4 - 2) / (4 * 2)) // 12.625
 
 // console.log(2**2) // kvadrati
 // console.log(2**3) // kubi
@@ -29,15 +29,15 @@
 // // count = count +1
 // // decrement
 // console.log(--count)
-// // count = count - 1
+// count = count - 1
 
 // Tenglash operatorlari 
 
-// console.log(1 > 0) // true
-// console.log(1 < 0) // false
-// console.log(1 >= 1); // true
-// console.log(1 <= 1); // true
-// console.log(0 <= 1); // true
+console.log(1 > 0) // true
+console.log(1 < 0) // false
+console.log(1 >= 1); // true
+console.log(1 <= 1); // true                            
+console.log(0 <= 1); // true
 
 // let name = '';
 // console.log(1 == 1); // true

@@ -4,12 +4,19 @@
 // || - yoki 
 // ! - emas 
 
-// console.log(!true) // false
+// console.log(14!true) // false
 
 // && - mantiqiy VA , birinchi false ni oladi 
 // console.log(1 && "t" && false && true) // false
 // console.log(1 > 0 && 10 < 20) // true
 // console.log(1 > 0 && 10 > 20) // false
+// let x = 15;
+// console.log(x > (5 * 3) + 2 / 2 && true == (x * 2) / 3 > 7 || 1 > 0) // 
+// let x = 10.5
+// console.log(x > (3.5 * 2) + 2 / 2.5 || true == (x * 2.5) / 2 > 9 && 1 > x == 7.5) // true
+
+// console.log(true = 56) // error
+// console.log(true == 56) // false
 // || - mantiqiy YOKI , birinchi true ni oladi 
 // console.log(0 || 1) // 1
 // console.log(1 > 0 || 0 > 1) // true
@@ -52,6 +59,14 @@
 // }else{
 //     alert('Vazn maqul')
 // }
+
+// task 1 
+// foydalanuvchidan son qabul qiling va son agar toq bolsa "Toq son" agar juft bolsa "Juft son" deb console ga chiqaring
+
+
+
+
+
 
 // let num = +prompt("Num ?")
 // if(num > 0){
