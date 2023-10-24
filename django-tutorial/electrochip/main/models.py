@@ -1,5 +1,5 @@
 from django.db import models
-
+from django_resized import ResizedImageField
 # Create your models here.
 # Model - SQL jadvallarni Python class ko'rinishi 
 
@@ -10,7 +10,12 @@ from django.db import models
 
 class Post(models.Model):
     title = models.CharField(verbose_name='Post title',max_length=256,blank=False)
-    image = models.ImageField(verbose_name='Post image',upload_to='post_images/%Y/%m', blank=True)
+    image = ResizedImageField(
+        size=[570,400], 
+        quality=60, 
+        upload_to='resized_posts/', 
+        force_format='PNG'
+        )
     body = models.TextField()
     
     def __str__(self):

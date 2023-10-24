@@ -1,10 +1,20 @@
 from django.shortcuts import render
-
+from .models import Post
 # Create your views here.
 
 
 def home(request):
-    return render(request, 'index.html')
+    """SELECT * FROM posts"""
+    posts = Post.objects.all() # QuerySet - omborga sorov
+    # print(posts)
+    # print(dir(posts))
+    # for post in posts:
+    #     print(post.id)
+    data = {
+        'object_list':posts,
+        'page_title':"Electrochip site Django."
+    } 
+    return render(request, 'index.html', context=data)
 
 
 def about(request):

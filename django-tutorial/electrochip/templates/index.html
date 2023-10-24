@@ -13,6 +13,7 @@
                 Service <br>
                 Providers
               </h1>
+              
               <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem
               </p>
@@ -201,36 +202,24 @@
         <img src="{% static 'images/plug.png' %}" alt="">
       </div>
       <div class="row">
+        {% for post in object_list %}
         <div class="col-md-6">
           <div class="box">
             <div class="img-box">
-              <img src="{% static 'images/blog1.jpg' %}" alt="">
+              <img src="{{post.image.url}}" alt="">
             </div>
             <div class="detail-box">
               <h5>
-                Blog Title Goes Here
+                {{post.title}}
               </h5>
               <p>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
+                {{post.body|truncatewords:'15'}}
+                {% comment %} {{post.body|truncatechars:'15'}} {% endcomment %}
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <img src="{% static 'images/blog2.jpg ' %}" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Blog Title Goes Here
-              </h5>
-              <p>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
-              </p>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </section>
