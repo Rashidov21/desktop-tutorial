@@ -6,7 +6,7 @@ from django.core.signing import TimestampSigner
 from django_resized import ResizedImageField
 from django.contrib.auth.models import AbstractUser
 # Create your models here.
-
+from forum.models import Tag
 
 
 
@@ -44,29 +44,9 @@ class SpecChoices(models.TextChoices):
     other = "Boshqa soha", _("Boshqa soha")
 
 
-class User(AbstractUser):
 
-    first_name = models.CharField(_("first name"), max_length=256 ,blank=True)
-    last_name = models.CharField(_("last name"), max_length=256,blank=True)
-    email = models.EmailField(
-        _("email"),
-        unique=True,
-        error_messages={
-            "error": _("Bunday email mavjud."),
-        },
-        null=True,
-        blank=True
-    )
-    username = models.CharField(
-        _("username"),
-        max_length=256,
-        unique=True,
-        help_text=_(
-            "Majburiy. 30 yoki undan kam belgi. Faqat harflar, raqamlar va @/./+/-/_.",
-        ),
-        db_index=True,
-        null=True,
-    )
+
+class User(AbstractUser):
     bio = models.TextField(_("bio"), blank=True)
     avatar = ResizedImageField(
         size=[500, 500],
@@ -89,7 +69,7 @@ class User(AbstractUser):
         choices=SpecChoices.choices,
         blank=True
     )
-
+    technology = models.ManyToManyField(Tag, related_name='user_technologies', blank=True)
     true_solutions = models.PositiveIntegerField(_("true solutions"), default=0)
     question_count = models.PositiveIntegerField(_("question"), default=0)
     answers_count = models.PositiveIntegerField(_("answers"), default=0)
@@ -131,11 +111,6 @@ class User(AbstractUser):
             return "To'ldirilmagan"
         
         
-    def get_author_name(self):
-        if self.first_name and self.last_name:
-            return str(self.first_name + " " + self.last_name)
-        else:
-            return self.username
     
     
     def check_any_social_link(self):
@@ -149,7 +124,7 @@ class User(AbstractUser):
 
     
     def __str__(self):
-        return f"{self.email}"
+        return f"{self.username}"
 
     class Meta:
         db_table = "user"

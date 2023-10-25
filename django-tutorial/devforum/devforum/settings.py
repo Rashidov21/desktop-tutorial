@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users',
-    'forum'
+    'forum',
+    'django_quill',
 ]
 
 MIDDLEWARE = [

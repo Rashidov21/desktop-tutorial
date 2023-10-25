@@ -11,20 +11,28 @@
                 {% csrf_token %}
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Username</label>
-                  <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  {{form.username}}
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" name="password1" class="form-control" id="exampleInputPassword1">
+                  {{form.password1}}
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Retype password</label>
-                  <input type="password" name="password2"  class="form-control" id="exampleInputPassword1">
+                  {{form.password2}}
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
         </div>
     </div>
 </main>
+<script>
+  let elems = document.forms[1].elements
+  for(let el of elems){
+    if(el.hasAttribute("id")){
+      el.classList.add("form-control")
+    }
+  }
+</script>
 {% endblock %}

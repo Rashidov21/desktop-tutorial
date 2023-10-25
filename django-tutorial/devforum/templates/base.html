@@ -26,14 +26,14 @@
   <title>Home Page</title>
   {% endblock title %}
 
-
+ 
 </head>
 
 <body class="bg-light">
   <div class="container">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">devforum</a>
+        <a class="navbar-brand" href="/">devforum</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -41,11 +41,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             {% if request.user.is_authenticated %}
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">
+              <a class="nav-link text-primary" href="{% url 'users:profile' request.user.username %}">
                 <i class="fas fa-user"></i>
                 {{request.user.username }}
               </a>
@@ -73,10 +73,10 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Dropdown
+                Forum
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="{% url 'forum:add_problem' %}">Add Problem</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li>
                   <hr class="dropdown-divider">

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{{form.media}}
+
+<main>
+    <div class="container" >
+        <div class="d-flex justify-content-center align-items-center">
+            <form class="card px-3 py-4 my-5" action="" method="POST">
+                <h3>Add problem</h3>
+                {% csrf_token %}
+                {{form}}
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+</main>
+<script>
+    document.querySelector(".ql-editor").style.height = '200px'
+    let elems = document.forms[1].elements
+    for(let el of elems){
+      if(el.hasAttribute("id")){
+        el.classList.add("form-control")
+      }
+    }
+  </script>
+{% endblock %}

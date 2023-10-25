@@ -5,7 +5,16 @@
 <main class="bg-light">
     <section class="header">
         <div class="container">
-
+            <div class="row">
+                {% for object in object_list %}
+                <div class="col-sm-12 col-md-6">
+                    <div class="card p-2">
+                        <h3>{{object.title}}</h3>
+                        <p>{{object.body.html|safe}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </section>
 </main>
