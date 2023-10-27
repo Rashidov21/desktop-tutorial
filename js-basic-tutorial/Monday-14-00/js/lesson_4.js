@@ -68,7 +68,14 @@
 
 
 
-// let num = +prompt("Num ?")
+let num = +prompt("Num ?")
+
+if(num % 2 == 0){
+    console.log(++num)
+}else{
+    console.log(num)
+}
+
 // if(num > 0){
 //     if(num % 2 == 0){
 //         console.log("Musbat Juft")
@@ -83,46 +90,4 @@
 //     }
 // }
 
-// task 15
-// let a ,b ,c;
-// a = +prompt("A")
-// b = +prompt("B")
-// c = +prompt("C")
-// if(a == b -1 && b == a+1 && c == b + 1 ){
 
-// }
-// if(a==b && b == c && a == c){
-
-// }
-
-
-// if(a>0||b>0||c>0){
-//     let count = 0;
-//     let aState = a > 0; 
-//     let bState = b > 0; 
-//     let cState = c > 0;
-//      if(aState){
-//         count = count + 1
-//         }
-//     if(bState){
-//          count = count + 1
-//      }
-//     if(cState){
-//         count = count + 1
-//      }
-//     if(count == 2){
-//          alert(true)        
-//      }else{
-//         alert(false)
-//      }
-//      console.log(count)
-// }else{
-//     alert(false)
-// }
-// task 16 
-// let num = +prompt("2 xonali son")
-// if(num > 9 && num <= 99 && num % 2 == 0){
-//     alert(true)
-// }else{
-//     alert(false)
-// }
