@@ -97,5 +97,5 @@ class Solve(models.Model):
         verbose_name_plural = _("solutions")
 
     
-    def __str__(self):
-        return f"{self.text}"
+    # def __str__(self):
+    #     return f"{self.user.username}"

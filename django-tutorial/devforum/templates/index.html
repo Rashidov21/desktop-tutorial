@@ -8,10 +8,47 @@
             <div class="row">
                 {% for object in object_list %}
                 <div class="col-sm-12 col-md-6">
-                    <div class="card p-2">
-                        <h3>{{object.title}}</h3>
-                        <p>{{object.body.html|safe}}</p>
-                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                          <div class="card-body">
+                            <div class="media d-flex">
+                              <div class="media-body text-right">
+                                <h4>
+                                  <a href="{% url 'forum:detail' object.id %}">{{object.title}}</a>
+                                </h4>
+                                <span>{{object.body.html|safe|truncatewords:"15"}}</span>
+                              </div>
+                            </div>
+                            <div class="data">
+                              <span class="badge rounded-pill text-bg-success">
+                                <i class="fas fa-user"></i>
+                                {{object.author}}
+                              </span>
+                              <span class="badge rounded-pill text-bg-primary">
+                                <i class="fas fa-eye"></i>
+                                {{object.views}}
+                              </span>
+                              <span class="badge rounded-pill text-bg-primary">
+                                <i class="fas fa-thumbs-up"></i>
+                                {{object.like}}
+                              </span>
+                              <span class="badge rounded-pill text-bg-primary">
+                                <i class="fas fa-thumbs-down"></i>
+                                {{object.dislike}}
+                              </span>
+                              <div>
+                                {% for tag in object.tags.all %}
+                                <span class="badge rounded-pill text-bg-warning">
+                                  <i class="{{tag.icon}}"></i>
+                                  {{tag}}
+                                </span>
+                                {% endfor %}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                 </div>
                 {% endfor %}
             </div>

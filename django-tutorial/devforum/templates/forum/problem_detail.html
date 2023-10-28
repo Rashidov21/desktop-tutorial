@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{{form.media}}
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <h3>
+                    {% if object.author == request.user %}
+                    <span>This is your</span> 
+                    Problem
+                    {% else %}
+                    Problem
+                    {% endif %}
+                </h3>
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h3>{{object.title}}</h3>
+                        <div class="actions">
+                            <a href="{% url 'forum:add_reaction' 'problem' object.id 'like' %}" class="text-decoration-none">
+                                <i class="fas fa-thumbs-up"></i>
+                                <span>{{object.like}}</span>
+                            </a>
+                            <a href="{% url 'forum:add_reaction' 'problem' object.id 'dislike' %}" class="text-decoration-none">
+                                <i class="fas fa-thumbs-down"></i>
+                                {{object.dislike}}
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            {{object.body.html|safe}}
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="data">
+                            <span class="badge rounded-pill text-bg-success">
+                              <i class="fas fa-user"></i>
+                              {{object.author}}
+                            </span>
+                            <span class="badge rounded-pill text-bg-primary">
+                              <i class="fas fa-eye"></i>
+                              {{object.views}}
+                            </span>
+                            <span class="badge rounded-pill text-bg-primary">
+                              <i class="fas fa-thumbs-up"></i>
+                              {{object.like}}
+                            </span>
+                            <span class="badge rounded-pill text-bg-primary">
+                              <i class="fas fa-thumbs-down"></i>
+                              {{object.dislike}}
+                            </span>
+                            <div>
+                              {% for tag in object.tags.all %}
+                              <span class="badge rounded-pill text-bg-warning">
+                                <i class="{{tag.icon}}"></i>
+                                {{tag}}
+                              </span>
+                              {% endfor %}
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <br>
+                <h3>Solutions</h3>
+                {% for object in object.solutions.all %}
+                <div class="card p-3 my-2 {% if object.true_solution %}text-bg-success{% endif %}">
+                    <div class="card-header">
+                        <span class="badge rounded-pill text-bg-success">
+                            <i class="fas fa-user"></i>
+                            {{object.user.username}}
+                          </span>
+                          <div class="actions">
+                            {{object.text.html|safe}}
+                            </div>
+                        <div>
+                            <a href="{% url 'forum:add_reaction' 'solve' object.id 'like' %}" class="text-decoration-none">
+                                <i class="fas fa-thumbs-up"></i>
+                                <span>{{object.up}}</span>
+                            </a>
+                            <a href="{% url 'forum:add_reaction' 'solve' object.id 'dislike' %}" class="text-decoration-none">
+                                <i class="fas fa-thumbs-down"></i>
+                                {{object.down}}
+                            </a>
+                            <a href="{% url 'forum:user_right_solution' user_id=object.user.id  solution_id=object.id  %}" class="text-decoration-none">
+                                <i class="fas fa-check"></i>
+                                This is solution helped me ! 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <br>
+                <h3>Add your solution</h3>
+                <div class="solve-form">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        {{form}}
+                        <br>
+                        <input type="submit" value="Add solution" class="btn btn-outline-primary">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+
+        </div>
+    </div>
+</main>
+<script>
+    document.querySelector(".ql-editor").style.height = '200px'
+    let elems = document.forms[1].elements
+    for(let el of elems){
+      if(el.hasAttribute("id")){
+        el.classList.add("form-control")
+      }
+    }
+  </script>
+{% endblock %}
