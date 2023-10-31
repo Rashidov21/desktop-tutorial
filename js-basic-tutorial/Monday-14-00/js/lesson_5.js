@@ -32,25 +32,48 @@ for(let user = 0; user < users.length; user++){
     console.log(users[user])
 }
 // task 1
-let k = 5;
-let n = 3;
+// let k = 5;
+// let n = 3;
 
-if(n>0){
-    for(let i = 0; i < n; i++){
-        console.log(k)
-    }
-}else{
-    console.log("n 0 dan kichik.")
-}
+// if(n>0){
+//     for(let i = 0; i < n; i++){
+//         console.log(k)
+//     }
+// }else{
+//     console.log("n 0 dan kichik.")
+// }
 
 // task 2
-let a = +prompt('a')
-let b = +prompt('b')
-if(a<b){
-    let count = 0
-    for(b;a<=b;b--){
-        console.log(b)
-        count++
-    }
-    console.log(count)
-}
+// let a = +prompt('a')
+// let b = +prompt('b')
+// if(a<b){
+//     let count = 0
+//     for(b;a<=b;b--){
+//         console.log(b)
+//         count++
+//     }
+//     console.log(count)
+// }
+// task 7 
+// let a = 2;
+// let b = 7;
+// let count = 0;
+
+// for(a;a<=b;a++){
+//     count = count + a
+// }
+// console.log(count)
+// task 10
+// let n = 12;
+// let summa = 0;`
+// for(let i = 1; i <= n; i++){
+//     summa = summa + (1 / i)
+// } 
+// console.log(summa)
+// task 12
+// let n = 7;
+// let summa = 1;
+// for(let i = summa; i <= n; i++){
+//     summa = summa * parseFloat(`1.${i}`)
+// } 
+// console.log(Math.round(summa)) //10

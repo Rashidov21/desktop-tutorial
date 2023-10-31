@@ -1,5 +1,6 @@
-from django.shortcuts import render
-from .models import Post
+from django.shortcuts import render, HttpResponseRedirect
+from django.contrib import messages
+from .models import Post,Contact
 # Create your views here.
 
 
@@ -31,3 +32,37 @@ def blog(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+
+def set_contact_data(request):
+    name = request.POST.get("name")
+    email = request.POST.get("email")
+    phone = request.POST.get("phone")
+    message = request.POST.get("message")
+    if all([name,email,phone,message]):
+        Contact.objects.create(
+            name=name,
+            email=email,
+            phone=phone,
+            message=message
+        )
+        messages.add_message(request,messages.SUCCESS,"Succesfully !")
+        #qaysi manzildan sorov kelib tushsa shu manzilga qaytariladiz
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+    else:
+        messages.add_message(request,messages.SUCCESS,"Error !")
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+        
+
+
+    # print(request.POST.get("name"))
+    # print(request.POST.get("email"))
+    # print(request.POST.get("phone"))
+    # print(request.POST.get("message"))
+    # print(dir(request))
+    # print(request.get_host())
+    # print(request.get_port())
+    # print(request.path)
+    # print(request.method)
+    # print(request.POST)
+    # print(request.GET)
