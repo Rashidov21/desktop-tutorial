@@ -1,5 +1,53 @@
 // function - nomlangan kod bo'lagi , uni dasturni istalgan joyida istalgan marta ishga tushirish mumkin
 
+// Javascript functions :
+    // function declaration - e'lon qilingan funksiyalar
+    // arrow function - strelka funksiyalari
+    // anonim function - nomsiz funksiyalar
+    // callback function - qayta javob berish funksiyalari 
+
+// function declaration 
+// for(){}
+// if(){}
+
+// function twoNumberPlus(x,y){
+//     return x + y
+// }
+
+// let result = twoNumberPlus(2,2)
+// console.log(result) // 4
+
+let action = "*";
+let a = 2;
+let b = 4;
+
+function plus(x,y){return x + y}
+function minus(x,y){return x - y}
+function division(x,y){return x / y}
+function multiple(x,y){return x * y}
+
+if(action == "+"){
+    console.log(plus(a,b))
+}else if(action == "-"){
+    console.log(minus(a,b))
+}else if(action == "/"){
+    console.log(division(a,b))
+}else{
+    console.log(multiple(a,b))
+}
+// 0 dan 10 gacha bolgan sonlar uchun 2 ni qoshib barchasini yigindisini hisoblash
+let summa = 0;
+for(let i = 0; i < 10; i++){
+    summa = summa + plus(2,i)
+}
+console.log(summa) //65
+
+// task 1
+// foydalanuvchidan matn qabul qilng va matnda ishtirok etgan barcha sonlar yigindisini 
+// qaytaruvchi funksiya tuzing
+// input: "Salom bugun havo 10 gradus, noyabr 4 kuni."
+// output: 14
+
 // function declaration 
 // let myName = showFullName("Abdurahmon", "Rashidov")
 // console.log(myName)
