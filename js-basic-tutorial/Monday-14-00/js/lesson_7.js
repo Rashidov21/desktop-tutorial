@@ -17,36 +17,51 @@
 // let result = twoNumberPlus(2,2)
 // console.log(result) // 4
 
-let action = "*";
-let a = 2;
-let b = 4;
+// let action = "*";
+// let a = 2;
+// let b = 4;
 
-function plus(x,y){return x + y}
-function minus(x,y){return x - y}
-function division(x,y){return x / y}
-function multiple(x,y){return x * y}
+// function plus(x,y){return x + y}
+// function minus(x,y){return x - y}
+// function division(x,y){return x / y}
+// function multiple(x,y){return x * y}
 
-if(action == "+"){
-    console.log(plus(a,b))
-}else if(action == "-"){
-    console.log(minus(a,b))
-}else if(action == "/"){
-    console.log(division(a,b))
-}else{
-    console.log(multiple(a,b))
-}
-// 0 dan 10 gacha bolgan sonlar uchun 2 ni qoshib barchasini yigindisini hisoblash
-let summa = 0;
-for(let i = 0; i < 10; i++){
-    summa = summa + plus(2,i)
-}
-console.log(summa) //65
+// if(action == "+"){
+//     console.log(plus(a,b))
+// }else if(action == "-"){
+//     console.log(minus(a,b))
+// }else if(action == "/"){
+//     console.log(division(a,b))
+// }else{
+//     console.log(multiple(a,b))
+// }
+// // 0 dan 10 gacha bolgan sonlar uchun 2 ni qoshib barchasini yigindisini hisoblash
+// let summa = 0;
+// for(let i = 0; i < 10; i++){
+//     summa = summa + plus(2,i)
+// }
+// console.log(summa) //65
 
 // task 1
 // foydalanuvchidan matn qabul qilng va matnda ishtirok etgan barcha sonlar yigindisini 
 // qaytaruvchi funksiya tuzing
 // input: "Salom bugun havo 10 gradus, noyabr 4 kuni."
 // output: 14
+
+let t = "Salom bugun havo 10 gradus, noyabr 4 kuni. 2 3 5"
+function getSumOfNumbersInText(text){
+    let summa = 0
+    // console.log(text.split(" "))
+    for(let i = 0; i < text.split(" ").length; i++){
+        if(parseInt(text.split(" ")[i])){
+            summa = summa + parseInt(text.split(" ")[i])
+        }
+    }
+    // function body
+    return summa 
+}
+console.log(getSumOfNumbersInText(t))
+
 
 // function declaration 
 // let myName = showFullName("Abdurahmon", "Rashidov")
