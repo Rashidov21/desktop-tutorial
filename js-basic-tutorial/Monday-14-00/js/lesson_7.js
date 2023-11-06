@@ -47,21 +47,23 @@
 // qaytaruvchi funksiya tuzing
 // input: "Salom bugun havo 10 gradus, noyabr 4 kuni."
 // output: 14
+// getSumOfNumbersInText() // 
+// let t = "Salom bugun havo 10 gradus, noyabr 4 kuni. 2 3 5"
+// function getSumOfNumbersInText(text){
+//     let summa = 0
+//     // console.log(text.split(" "))
+//     for(let i = 0; i < text.split(" ").length; i++){
+//         if(parseInt(text.split(" ")[i])){
+//             summa = summa + parseInt(text.split(" ")[i])
+//         }
+//     }
+//     // function body
+//     return summa 
+// }
+// console.log(getSumOfNumbersInText(t))
 
-let t = "Salom bugun havo 10 gradus, noyabr 4 kuni. 2 3 5"
-function getSumOfNumbersInText(text){
-    let summa = 0
-    // console.log(text.split(" "))
-    for(let i = 0; i < text.split(" ").length; i++){
-        if(parseInt(text.split(" ")[i])){
-            summa = summa + parseInt(text.split(" ")[i])
-        }
-    }
-    // function body
-    return summa 
-}
-console.log(getSumOfNumbersInText(t))
-
+// console.log(n) // undefined
+// let n = 0;
 
 // function declaration 
 // let myName = showFullName("Abdurahmon", "Rashidov")
@@ -76,9 +78,9 @@ console.log(getSumOfNumbersInText(t))
 
 // // hoisting - qiymatlarni mavjud zonasi
 
-// console.log(x) // Cannot access 'x' before initialization
-// let x = 10;
-// console.log(x) // 10
+console.log(x) // ReferenceError: Cannot access 'x' before initialization
+let x = 10;
+console.log(x) // 10
 
 // function plus(a,b){
 //     // return a + b;
