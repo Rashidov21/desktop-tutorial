@@ -12,6 +12,19 @@
                 <center>
                     <h1>{{page_title}}</h1>
                 </center>
+                <br><br>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {{form}}
+                    <br>
+                    <input type="submit" value="Send">
+                </form>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {{reg_form.as_p}}
+                    <br>
+                    <input type="submit" value="Send">
+                </form>
             </div>
         </section>
     </main>
