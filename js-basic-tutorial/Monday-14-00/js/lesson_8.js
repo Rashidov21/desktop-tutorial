@@ -47,21 +47,55 @@
 // console.log("text".endsWith("t")) // true
 // console.log("text".endsWith("o")) // false
 
-function checkLastLetterInWord(text){
-    res = []
-    for(let item of text.split(" ")){
-        // console.log(item)
-        if(item.endsWith("a") || item.endsWith("e")||item.endsWith("u")||item.endsWith("i")||item.endsWith("o'")||item.endsWith("o")){
-            item = item.toUpperCase()
-        }
-        res.push(item)
-    }
-    return res
-}
+// function checkLastLetterInWord(text){
+//     res = []
+//     for(let item of text.split(" ")){
+//         // console.log(item)
+//         if(item.endsWith("a") || item.endsWith("e")||item.endsWith("u")||item.endsWith("i")||item.endsWith("o'")||item.endsWith("o")){
+//             item = item.toUpperCase()
+//         }
+//         res.push(item)
+//     }
+//     return res
+// }
 
-console.log(checkLastLetterInWord("Salom qale ishlar ?").join(" ")) // Salom QALE ishlar ?
+// console.log(checkLastLetterInWord("Salom qale ishlar ?").join(" ")) // Salom QALE ishlar ?
 
 // task 2
 // foydalanuvchidan matn qabul qiling va matnda berilgan har bir so'zlardagi belgilar sonidan iborat massiv hosil qiling
 // input :"Ishlar yaxshimi ?"
 // output: [6,14]
+
+// let userInput = "Vazifa qila olmadim !";
+
+// function getCountOfLetters(text){
+//     let result = [];
+//     // console.log(text.split(" "))
+//     for(let word of text.split(" ")){
+//         if(word.length > 1){
+//             result.push(word.length)
+//         }
+//     }
+//     return result
+// }
+
+// console.log(getCountOfLetters(userInput)) //[ 6, 4, 7 ]
+
+// task 3
+// foydalanuvchidan ikita son qabul qiling va shu sonlar orasidagi barcha 5 ga qoldiqsiz bo'linadiganlarini console ga chiqaring 
+// input : 2 , 15
+// output: 5 , 10 , 15
+// let a = 2;
+// let b = 30;
+
+// for(a; a <= b; a++){
+//     if(a % 5 == 0){
+//         console.log(a)
+//     }
+// }
+
+// task 4
+// foydalanuvchidan matn qabul qiling va undagi barcha maxsus belgilarni o'chirib tashlab console ga chiqaring
+// maxsus belgilar: !@#$%^&*()_?/\,'<>{}[]"
+// input: "Javasc_ript juda# zo'r til!"
+// output: "Javascript juda zor til"
