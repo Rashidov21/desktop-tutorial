@@ -12,6 +12,9 @@ def home_page(request):
     print(request.POST.get("age"))
     form = UserForm()
     reg_form = RegisterForm()
+    # print(form)
+    # print(type(form))
+    # print(dir(form))
     data = {
         'page_title':'Hello Python !',
         'form':form,

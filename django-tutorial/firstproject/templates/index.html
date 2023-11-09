@@ -13,18 +13,40 @@
                     <h1>{{page_title}}</h1>
                 </center>
                 <br><br>
+
                 <form action="" method="POST">
                     {% csrf_token %}
-                    {{form}}
+                    <table>
+                        <tr>
+                            <td>
+                                {{form.name}}
+                            </td>
+                            <td>
+                                {{form.age}}
+                            </td>
+                        </tr>
+                    </table>
+
+                    {% for field in form %}
+                        <div class="field">
+                            <div>{{field.label_tag}}</div>
+                            <div>{{field}}</div>
+                            {% if field.errors %}
+                                {% for error in field.errors %}
+                                    <div class="alert">{{error}}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    {% endfor %}
                     <br>
                     <input type="submit" value="Send">
                 </form>
-                <form action="" method="POST">
+                <!-- <form action="" method="POST">
                     {% csrf_token %}
                     {{reg_form.as_p}}
                     <br>
                     <input type="submit" value="Send">
-                </form>
+                </form> -->
             </div>
         </section>
     </main>
