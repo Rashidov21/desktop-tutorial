@@ -1,4 +1,4 @@
-// Array - RAM malumotlarni yonma yon kataklarda saqlash
+// Array - RAM'da malumotlarni yonma yon kataklarda saqlash
 
 // Data Types - String, Number, null, undefined, Boolean
 // Data Structure - Array , Object 
@@ -23,8 +23,12 @@
 
 // let arr = [true, 1, "number",null, [1,2,3], undefined]
 
-// for(let i =0; i< arr.length; i++){
-//     console.log(arr[i])
+// for(let i = 0; i< arr.length; i++){
+//     console.log(arr[i]) // element
+// }
+
+// for(let item of arr){
+//     console.log(item) // element
 // }
 
 // let arr = [1,2,3,4,5]
