@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <ul>
+                    {% for club in clubs %}
+                        <li style="display: inline-block; margin:0 20px;">
+                            
+                            <a href="{% url 'players:club_player_list' club.name %}">
+                                <img width="30" src="{{club.logo.url}}" alt="">
+                                {{club.name}}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="container">
+                <ol>
+                    {% for player in object_list %}
+                        <li><h4>{{player.name}} {{player.surname}}: {{player.club}}</h4></li>
+                    {% endfor %}
+                </ol>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
