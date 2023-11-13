@@ -59,3 +59,9 @@ gap.forEach((value,index,arr) =>{
 // task 1 
 // Math random orqali  0 dan 100 gacha bolgan tasodify sonlardan iborat 20 ta elementlik massiv tuzing
 // forEach orqali masivdagi barcha sonlarni 2 ga bo'lib natijani ekranga chiqaring
+
+
+
+
+
+
