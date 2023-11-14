@@ -7,6 +7,11 @@
 </head>
 <body>
     <main>
+        <center>
+            {% for obj in filtered_objects %}
+            <h4>{{obj.name}} {{obj.surname}}</h4>
+            {% endfor %}
+        </center>
         <section>
             <div class="container">
                 <form action="">
@@ -38,7 +43,12 @@
             <div class="container">
                 <ol>
                     {% for player in object_list %}
-                        <li><h4>{{player.name}} {{player.surname}}: {{player.club}}</h4></li>
+                        <li>
+                            <h3>{{player.name}} {{player.surname}}</h3>
+                            <h4>{{player.club}}</h4>
+                            <h4>{{player.birthday}}</h4>
+                            <h4>{{player.get_player_current_age}}</h4>
+                        </li>
                     {% endfor %}
                 </ol>
             </div>

@@ -1,3 +1,4 @@
+from datetime import datetime
 from django.db import models
 from django_countries.fields import CountryField
 
@@ -32,6 +33,11 @@ class Player(models.Model):
     position = models.CharField(max_length=50, choices=POSITIONS)
     height = models.PositiveSmallIntegerField(default=0)
     weight = models.PositiveSmallIntegerField(default=0)
+    
+    
+    def get_player_current_age(self):
+        return datetime.now().year - self.birthday.year
+    
     
     def __str__(self):
         return str(self.name + " " + self.surname)

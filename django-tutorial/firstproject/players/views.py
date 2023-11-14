@@ -17,6 +17,34 @@ class PLayerListView(ListView):
         context = super().get_context_data(**kwargs)
         context["clubs"] = Club.objects.all()
         context["form"] = CountryForm()
+        context["filtered_objects"] = Player.objects.filter(age__gte=25,height__gte=180,weight__lte=80)
+
+
+        # CREATE 
+        # Club.objects.create(name="Rubin",country="Russia",head_coach="Magomed Ismailov", logo="")
+        
+        # READ
+        # print(Club.objects.get(name="Navbahor")) # get - olish , faqat 1 ta obyekt olinadi
+        # print(Club.objects.get(name="Navbahor"))
+        # print(Club.objects.get_or_create()) # get_or_create - olish va agar mavjud bolmasa yozish 
+        # print(Club.objects.all()) # jadvaldagi barcha obyektlarni olish
+        # print(Club.objects.filter(country="uz")) # saralash
+        # print(Club.objects.exclude(country="uz")) # korsatilganlaridan tashqari boshqalarini olish
+        # print(type(Club.objects.in_bulk()))
+        
+        # UPDATE 
+        # nfc = Club.objects.get(name="Navbahor")
+        # nfc.name = "Navbahor FC"
+        # nfc.save()
+        
+        # Club.objects.filter(name="Navbahor").update(name='Navbahor Football Club')
+        # update_or_create()
+        
+        # DELETE 
+        # nfc = Club.objects.get(name="Navbahor")
+        # nfc.delete() 
+        
+        
         return context
     
     
