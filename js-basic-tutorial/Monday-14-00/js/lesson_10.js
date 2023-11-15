@@ -37,31 +37,75 @@
 // console.log(a.concat(b)); //[ 1, 2, 3, 4, 5, 6 ]
 
 
-let arr = [1,2,3,4,5]
-arr.forEach(item =>{
-    console.log(`${item} , ${item * 2}`)
-    // console.log(item + 1)
-})
-function checkString(word){
-    if(word.includes('on')){
-        console.log("OK");
-    }
-}
-let gap = ["Pyhton","Java", "C","Ruby on rails",""]
-gap.forEach(item => checkString(item))
+// let arr = [1,2,3,4,5]
+// arr.forEach(item =>{
+//     console.log(`${item} , ${item * 2}`)
+//     // console.log(item + 1)
+// })
+// function checkString(word){
+//     if(word.includes('on')){
+//         console.log("OK");
+//     }
+// }
+// let gap = ["Pyhton","Java", "C","Ruby on rails",""]
+// gap.forEach(item => checkString(item))
 
-gap.forEach((value,index,arr) =>{
-    console.log(value)
-    console.log(index)
-    console.log(arr)
-    arr.forEach()
-})
+// gap.forEach((value,index,arr) =>{
+//     console.log(value)
+//     console.log(index)
+//     console.log(arr)
+//     arr.forEach()
+// })
+
+
 // task 1 
 // Math random orqali  0 dan 100 gacha bolgan tasodify sonlardan iborat 20 ta elementlik massiv tuzing
 // forEach orqali masivdagi barcha sonlarni 2 ga bo'lib natijani ekranga chiqaring
 
 
+// task 2 
+// user ismini kiritganda ismida necha marta a harfi ishtirok etganini topuvcho dastur tizing
 
+// let count = 0;
+// let name = "Abdullajon"
+// for(let i = 0; i < name.lentgh;i++){
+//     if(name[i].toLowerCase() == "a"){
+//         count++
+//     }
+// }
+// console.log(count) // 2
 
+// task 3
+// n soni berilgan (30 > n > 0) 0 dan n gacha bo'lgan sonlarni orasida probellar bilan chiqaring
+// agar son toq bo'lsa bitta probel bilan uni keyingi son orasini belgilaysiz agar juft bo'lsa 2 ta probel bilan. misol : 1 2  3 4  5
 
+// let n = 13;
+// let result = "";
+// if(30 > n > 0){
+//     for(let i = 0; i < n;i++){
+//         if(i % 2 == 0){
+//             result = result + `${i}  `
+//         }else{
+//             result = result + `${i} `
+            
+//         }
+//     }
+// }
+// console.log(result)
 
+// task 1 
+// foydalanuvchi kiritgan 2 ta son orasida tasodifiy 5 ta sonlardan iborat string hosil qiling
+let a = 2;
+let b = 53;
+let arr = [];
+let numberString = '';
+for(a; a<b;a++){
+    arr.push(a)
+}
+for(let i = 0; i < 5; i++){
+    let randomIndex = Math.round(Math.random() * arr.length);
+    let num = arr[randomIndex]
+    numberString = numberString + num
+}
+
+console.log(numberString) //
