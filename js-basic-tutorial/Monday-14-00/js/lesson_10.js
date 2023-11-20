@@ -95,17 +95,73 @@
 
 // task 1 
 // foydalanuvchi kiritgan 2 ta son orasida tasodifiy 5 ta sonlardan iborat string hosil qiling
-let a = 2;
-let b = 53;
-let arr = [];
-let numberString = '';
-for(a; a<b;a++){
-    arr.push(a)
-}
-for(let i = 0; i < 5; i++){
-    let randomIndex = Math.round(Math.random() * arr.length);
-    let num = arr[randomIndex]
-    numberString = numberString + num
-}
+// let a = 2;
+// let b = 53;
+// let arr = [];
+// let numberString = '';
+// for(a; a<b;a++){
+//     arr.push(a)
+// }
+// for(let i = 0; i < 5; i++){
+//     let randomIndex = Math.round(Math.random() * arr.length);
+//     let num = arr[randomIndex]
+//     numberString = numberString + num
+// }
 
-console.log(numberString) //
+// console.log(numberString) //
+
+// let arr = ['a','b','c','d','e']
+
+// console.log(arr.indexOf("c")) // 2
+
+// console.log(arr.indexOf("e")) // 4 
+// console.log(arr.lastIndexOf("d")) // 3
+
+
+// console.log(arr.indexOf("j")) // -1
+// console.log(arr.includes("k")) // false
+// find - berilgan shart bo'yicha massiv elementlarini topadi
+// let arr = ['a','b','c','d','e']
+// arr.find((item,index,array)=>{
+//     // console.log(item,index,array)
+//     if(item == 'a'){
+//         console.log("Find!")
+//     }
+// })
+// let texts = ["Salom","Hello","Welcome"]
+// texts.find(item => {
+//     if(item.length > 5){
+//         console.log("YES!")
+//     }
+// })
+// // filter - berilgan funksiyadagi shart boyicha massiv elementlarini filterlaydi
+// let res = texts.filter(item =>{
+//     if(item.length < 6){
+//         return item
+//     }
+// })
+// console.log(res) // [ 'Salom', 'Hello' ]
+
+// let lengths = ["Бильбо", "Гэндальф", "Назгул"].map(item => item.length);
+// console.log(lengths); // 6,8,6
+
+// let nums = [1,2,3,4,5]
+// console.log(nums.map(item => item ** 2)) //[ 1, 4, 9, 16, 25 ]
+// let a = [5,1,6,7,9,3,2]
+// a.sort()
+// console.log(a) // [ 1, 2, 3, 5,6, 7, 9]
+// task 1 
+// let a = [5,1,6,7,9,3,2] 
+// ushbu massivdagi sonlarni o'sib borish tartibida saralang , .sort() metodini ishlatmang
+
+// let nums = [1,2,3,4,5]
+// nums.reverse()
+// console.log(nums) // [ 5, 4, 3, 2, 1 ]
+
+// let text = "assalomu alaykum qale ishlar"
+// console.log(text.split(" ")) 
+// // korsatilgan belgi boyicha string ni massiv qiladi - [ 'assalomu', 'alaykum', 'qale', 'ishlar' ]
+
+// console.log(nums.join()) // 5,4,3,2,1 - string
+// console.log(nums.join("-")) // 5-4-3-2-1 - string
+// console.log(nums.join("")) // 54321 - string
