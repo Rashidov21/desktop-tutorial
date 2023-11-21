@@ -1,0 +1,64 @@
+{% extends "../base.html" %}
+{% load static %}
+{% block content %}
+<main>
+    <div class="container">
+        <div class="container py-5">        
+          
+            <!-- First Row [Prosucts]-->
+            <div class="card py-2 my-2">
+                <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+            </div>
+          
+            <div class="row pb-5 mb-4">
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card rounded shadow-sm border-0">
+                  <div class="card-body p-4">
+                    <img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h5><a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="small text-muted font-italic">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    
+                    </p>
+                    <div class="d-flex justify-content-between">
+                        <ul class="list-inline small">
+                          <li class="list-inline-item m-0"><i class="fa fa-star text-warning"></i></li>
+                          <li class="list-inline-item m-0"><i class="fa fa-star text-warning"></i></li>
+                          <li class="list-inline-item m-0"><i class="fa fa-star text-warning"></i></li>
+                          <li class="list-inline-item m-0"><i class="fa fa-star text-warning"></i></li>
+                          <li class="list-inline-item m-0"><i class="fa fa-star-o text-warning"></i></li>
+                        </ul>
+                        <div>
+                            <a href="#">
+                                <i class="fa fa-user text-success"></i>
+                                John Doe
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+            
+          
+      
+          </div>
+          
+    </div>
+</main>
+{% endblock content %}
