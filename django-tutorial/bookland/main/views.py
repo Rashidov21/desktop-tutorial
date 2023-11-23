@@ -11,16 +11,18 @@ from .models import Author,Book,Genre,Language
 class BookListView(ListView):
     model = Book
     
-
+def init_session_like_list(request):
+    request.session.modified = True
+    try:
+        return request.session["liked_books"]
+    except:
+        request.session["liked_books"] = []
+    return request.session["liked_books"]
+    
+    
 
 def set_reaction(request,book_id,action):
-    request.session.modified = True
-    # request.session["liked_books"] = []
-    try:
-        like_list = request.session["liked_books"]
-    except:
-        like_list = request.session["liked_books"] = []
-    print(like_list)
+    like_list = init_session_like_list(request)
     if book_id in like_list:
         messages.add_message(request,messages.INFO,"Siz bu kitobga reaksiya bildirgansiz.")
     else:
