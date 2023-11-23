@@ -58,7 +58,13 @@ class Book(models.Model):
     like = models.PositiveSmallIntegerField(default=0)
     dislike = models.PositiveSmallIntegerField(default=0)
     
+    
     def __str__(self):
         return self.title
+    
+    def get_rating(self):
+        return  range(round((self.like / (self.dislike+self.like)) * 100) // 10)
+
+                
     
     

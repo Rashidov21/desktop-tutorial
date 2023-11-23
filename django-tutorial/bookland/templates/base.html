@@ -9,6 +9,16 @@
 
   </head>
   <body>
+    <div class="container">
+        {% if messages %}
+            {% for message in messages %}
+            <div {% if message.tags %} class="alert alert-{{ message.tags }} my-4"{% endif %}>
+              <a href="#" class="float-end fs-4 text-decoration-none" onclick="this.parentElement.style.display = 'none'">X</a>
+              {{ message }}
+            </div>
+            {% endfor %}
+        {% endif %}
+    </div>
     {% block content %}
     {% endblock content %}
 
