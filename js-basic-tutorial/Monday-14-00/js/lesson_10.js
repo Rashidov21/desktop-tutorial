@@ -93,8 +93,7 @@
 // }
 // console.log(result)
 
-// task 1 
-// foydalanuvchi kiritgan 2 ta son orasida tasodifiy 5 ta sonlardan iborat string hosil qiling
+ 
 // let a = 2;
 // let b = 53;
 // let arr = [];
