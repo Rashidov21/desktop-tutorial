@@ -94,10 +94,10 @@
 // console.log(result)
 
  
-// let a = 2;
-// let b = 53;
-// let arr = [];
-// let numberString = '';
+let a = 2;
+let b = 53;
+let arr = [];
+let numberString = '';
 // for(a; a<b;a++){
 //     arr.push(a)
 // }
