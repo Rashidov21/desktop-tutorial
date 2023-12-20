@@ -6,16 +6,16 @@
 // let obj = new Object();
 // let obj = {}
 
-let obj = {
-    // obyekt sifatlari 
-    name:"John",
-    surname:"Doe",
-    age:23,
-    // obyekt methodlari
-    talk:function(){
-        console.log("Hello !", "My name is", this.name + ' ' + this.surname)
-    }
-}
+// let obj = {
+//     // obyekt sifatlari 
+//     name:"John",
+//     surname:"Doe",
+//     age:23,
+//     // obyekt methodlari
+//     talk:function(){
+//         console.log("Hello !", "My name is", this.name + ' ' + this.surname)
+//     }
+// }
 // console.log(obj.name); //John
 // console.log(obj["surname"]); // Doe
 // console.log(obj.age); // 23
