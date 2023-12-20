@@ -23,19 +23,19 @@
 // console.log(obj.date); // undefined
 
 // ochirish
-delete obj.age
-console.log(obj.age); //undefined
-// yozish
-obj["date"] = "23-10-2005"
-console.log(obj.date); //23-10-2005
+// delete obj.age
+// console.log(obj.age); //undefined
+// // yozish
+// obj["date"] = "23-10-2005"
+// console.log(obj.date); //23-10-2005
 
-// takrorlanish 
-console.log("name" in obj) // true
-console.log("price" in obj) // false
+// // takrorlanish 
+// console.log("name" in obj) // true
+// console.log("price" in obj) // false
 
-for(let key in obj){
-    console.log(obj[key])
-}
+// for(let key in obj){
+//     console.log(obj[key])
+// }
 
 // murakkab malumot tuzilmasi 
 let arrObj = [
