@@ -40,7 +40,7 @@ class MyWishListView(TemplateView):
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        wishlist = self.request.session['liked_products']
+        wishlist = check_wish_list(self.request)
         objs = []
         for i in wishlist:
             p = Device.objects.get(id=i)

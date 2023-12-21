@@ -14,7 +14,7 @@
             {% for object in object_list %}
             <div class="first-headp">                     
                 <img src="images/Vector (1).png" alt="" class="like-img">
-                <img src="images/Image (1).png" alt="" class="main-img">
+                <img src="{{object.images.all.0.image.url}}" alt="" class="main-img">
                 <div class="words">
                 <span class="main-name">{{object.name}}</span><span class="price">2927 ₸</span><br><br>
                 </div>
