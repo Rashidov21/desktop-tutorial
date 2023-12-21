@@ -8,7 +8,7 @@
   <div class="row items">
     {% for movie in object_list %}
     <div class="col-xs-2 item">
-      <a href="{% url 'movies:detail' movie.slug %}">
+      <a href="#">
         <img
           src="{{movie.poster.url}}"
           class="img-responsive"
@@ -21,7 +21,7 @@
       </a>
 
       <a
-        href="{% url 'movies:add_favorite' request.user.id movie.id %}"
+        href="#"
         class="favorite"
         title="Добавить в избранное"
       ></a>
@@ -29,7 +29,7 @@
       <div class="info">
         <div class="title">
           <a
-            href="{% url 'movies:detail' movie.slug %}"
+            href="#"
             class="link"
             alt="{{movie.title}}"
             title="{{movie.title}}"
@@ -73,7 +73,7 @@
           <div class="col-sm-7">
             <div id="modal_login_content" style="display: none">
               <div class="alert alert-danger" style="display: none"></div>
-              <form action="{% url 'movies:login' %}" method="post">
+              <form action="#" method="post">
                 {% csrf_token %}
                 <div class="form-group">
                   <input type="email" name="username" class="form-control" placeholder="Email">
@@ -88,7 +88,7 @@
 
 
               <div style="margin-top: 30px">
-                <p><a href="{% url 'movies:password_reset' %}" >Забыли пароль?</a></p>
+                <p><a href="#" >Забыли пароль?</a></p>
                 <p>
                   <a href="registration.html" class="register"
                     >Зарегистрироваться</a
@@ -110,7 +110,7 @@
             <div id="modal_register_content" style="display: none">
               <div class="alert alert-success" style="display: none"></div>
               <div class="alert alert-danger" style="display: none"></div>
-              <form action="{% url 'movies:register' %}" method="post">
+              <form action="#" method="post">
                 {% csrf_token %}
                 <div class="form-group">
                   <input type="email" name="email" class="form-control" placeholder="Username">

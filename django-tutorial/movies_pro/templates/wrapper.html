@@ -51,7 +51,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 {% for category in categories %}
-                <li><a href="{% url 'movies:category_list' category.slug %}">{{category.name}}</a></li>
+                <li><a href="#">{{category.name}}</a></li>
                 {% endfor %}
             </ul>
 
@@ -78,9 +78,9 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="top_profile_menu">
-                        <li><a href="{% url 'movies:profile' request.user.username %}">Профиль</a></li>
-                        <li><a href="{% url 'movies:favorites' request.user.id %}">Избранное</a></li>
-                        <li><a href="{% url 'movies:history' %}">История</a></li>
+                        <li><a href="#">Профиль</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">История</a></li>
                         <li><a href="/logout" class="logout">Выйти</a></li>
                     </ul>
                 </li>
