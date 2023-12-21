@@ -1,0 +1,148 @@
+{% load static %}
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from kinobase.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2023 03:46:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1024">
+<meta name="application-name" content="Кинобейс">
+<meta name="theme-color" content="#4067b7">
+<meta name="msapplication-navbutton-color" content="#4067b7">
+{% block title %}
+
+{% endblock title %}
+<meta name="keywords" content="Кинобейс, kinobase, смотреть фильмы онлайн, фильмы онлайн в хорошем качестве, кино смотреть онлайн, смотреть сериалы онлайн, сериалы онлайн в хорошем качестве, смотреть фильмы бесплатно, онлайн-кинотеатр">
+<meta name="description" content="Смотрите бесплатно на сайте кинобейс - фильмы, сериалы и телепередачи в хорошем качестве">
+<link rel="dns-prefetch" href="https://st.kinobase.org/">
+<link rel="icon" href="{% static 'images/logo2.png' %}" type="image/png">
+<link rel="icon" href="{% static 'images/logo2.png' %}" type="image/x-icon">
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/kinobase.css' %}" type="text/css">
+</head>
+<body>
+
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/master.js' %}"></script>
+
+
+
+
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-fixed-top .navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img src="{% static 'images/logo2.png' %}" width="15">
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                {% for category in categories %}
+                <li><a href="{% url 'movies:category_list' category.slug %}">{{category.name}}</a></li>
+                {% endfor %}
+            </ul>
+
+            <div class="navbar-left">
+                <form action="https://kinobase.org/search" method="get" class="navbar-form" id="autocomplete_search_form">
+                    <div class="form-group">
+                        <input type="text" name="query" class="form-control" id="autocomplete_search" placeholder="Поиск" autocomplete="off">
+                        <button type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </form>
+            </div>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                {% if request.user.is_authenticated %}
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle top-avatar" id="top_profile_menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="
+                        {% if request.user.profile.image %} 
+                        {{request.user.profile.image.url}} 
+                        {% else %} 
+                        {% static 'images/user.png' %}
+                        {% endif %}" width="32"> 
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="top_profile_menu">
+                        <li><a href="{% url 'movies:profile' request.user.username %}">Профиль</a></li>
+                        <li><a href="{% url 'movies:favorites' request.user.id %}">Избранное</a></li>
+                        <li><a href="{% url 'movies:history' %}">История</a></li>
+                        <li><a href="/logout" class="logout">Выйти</a></li>
+                    </ul>
+                </li>
+                {% else %}
+                <li><a href="/login">Вход</a></li>
+                <li><a href="/register">Регистрация</a></li>
+                {% endif %}
+            </ul>
+
+        </div>
+        <style>
+            .notification{
+                padding: 10px 15px;
+                background-color: #473232a9;
+                color: white;
+                position: absolute; 
+                display: block; 
+                z-index: 9999;
+                top: 60px;
+                right: 5%;
+            }
+            .notification span{
+                background-color: #2b0f0fa9;
+                padding: 5px;
+                cursor: pointer;
+                margin-left: 10px;
+            }
+        </style>
+        {% if messages %}
+            {% for message in messages %}
+                <div class="notification">
+                    {{ message }}
+                    <span onclick="this.parentElement.style.display = 'none'">&times;</span>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
+{% block content %}
+
+{% endblock content %}
+
+<script type="text/javascript">
+
+
+    $(document).ready(function(){
+        var email = ('support' + '@' + 'kinobase.org');
+        $('.footer a.mail').attr("href", "mailto:"+email).text(email);
+        $('.messages').show()
+    });
+    </script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2616485-15"></script>
+    <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-2616485-15');
+    </script>
+    
+    </body>
+    
+    <!-- Mirrored from kinobase.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2023 03:47:03 GMT -->
+    </html>

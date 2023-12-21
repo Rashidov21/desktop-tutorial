@@ -1,0 +1,154 @@
+{% extends "wrapper.html" %} {% load static %} {% block content %}
+{% block title %}
+<title>Кинобейс - clone</title>
+{% endblock title %}
+<div id="main" class="container">
+  <a href="filmsa692.html?sort=viewed_week" class="h3">Популярные фильмы</a>
+
+  <div class="row items">
+    {% for movie in object_list %}
+    <div class="col-xs-2 item">
+      <a href="{% url 'movies:detail' movie.slug %}">
+        <img
+          src="{{movie.poster.url}}"
+          class="img-responsive"
+          loading="lazy"
+          alt="Пила 10 (2023)"
+          title="Пила 10 (2023)"
+          width="242"
+          height="358"
+        />
+      </a>
+
+      <a
+        href="{% url 'movies:add_favorite' request.user.id movie.id %}"
+        class="favorite"
+        title="Добавить в избранное"
+      ></a>
+
+      <div class="info">
+        <div class="title">
+          <a
+            href="{% url 'movies:detail' movie.slug %}"
+            class="link"
+            alt="{{movie.title}}"
+            title="{{movie.title}}"
+            >{{movie.title}}</a
+          >
+        </div>
+        <div class="desc">{{movie.year}}, {{movie.quality}}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <a href="films.html" class="h3">Новые фильмы</a>
+
+  <div class="footer">
+    <p>
+      По всем вопросам пишите на электронную почту <a href="#" class="mail"></a>
+    </p>
+  </div>
+</div>
+
+<div
+  class="modal"
+  id="account_modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="true"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span
+          ><span class="sr-only">Закрыть</span>
+        </button>
+        <h4 class="modal-title">Вход</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-7">
+            <div id="modal_login_content" style="display: none">
+              <div class="alert alert-danger" style="display: none"></div>
+              <form action="{% url 'movies:login' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                  <input type="email" name="username" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-default">Войти</button>
+                </div>
+              </form>
+
+
+              <div style="margin-top: 30px">
+                <p><a href="{% url 'movies:password_reset' %}" >Забыли пароль?</a></p>
+                <p>
+                  <a href="registration.html" class="register"
+                    >Зарегистрироваться</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div id="modal_recover_content" style="display: none">
+              <div class="alert alert-success" style="display: none"></div>
+              <div class="alert alert-danger" style="display: none"></div>
+
+
+              <div style="margin-top: 30px">
+                <p><a href="login.html" class="login">Войти</a></p>
+              </div>
+            </div>
+
+            <div id="modal_register_content" style="display: none">
+              <div class="alert alert-success" style="display: none"></div>
+              <div class="alert alert-danger" style="display: none"></div>
+              <form action="{% url 'movies:register' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" placeholder="Username">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="password1" class="form-control" placeholder="Password ">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="password2" class="form-control" placeholder="Retype password">
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-default">Войти</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="registration-social-login">
+              <a
+                class="btn-own btn-vk"
+                href="javascript:void(0);"
+                onclick="ulogin.vkontakte('ulogin.html');"
+                ><span class="icon-vkontakte"></span> Войти через Вконтакте</a
+              >
+              <a
+                class="btn-own btn-ok"
+                href="javascript:void(0);"
+                onclick="ulogin.odnoklassniki('ulogin.html');"
+                ><span class="icon-odnoklassniki"></span> Войти через
+                Одноклассники</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
