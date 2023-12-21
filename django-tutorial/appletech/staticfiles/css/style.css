@@ -1,0 +1,315 @@
+*{
+    background-color: #EAEAEA;
+    margin: 0 auto;
+}
+.navbar {
+    max-width: 1135px;
+    padding: 0px 15px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.logo h3 {
+    color: #101010;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.choice-phone-model span {
+    color: #101010;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.navbar-icons {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width:600px) {
+ .navbar-icons {
+    display: none;
+ }   
+ .nav-item {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0px;
+}
+}
+.container .bg-card{    
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    margin: 85px 165px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    border: 1px solid #101010;
+    border-radius: 30px;
+    align-items: center;
+    justify-items: center;
+}
+
+.container .bg-card span {
+    width: calc(100% / 4 );
+    background-color: #101010;
+    color: white;
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 600;
+    justify-content: center;
+    word-wrap: break-word;
+}
+
+.image img {
+    background-color: #101010;
+    align-content: center;
+    max-width: 300px;
+}
+.container .covers{
+    margin: 85px 165px;
+}
+ .container .covers .cover span {
+    color: #838383;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word;
+ }
+ .container .covers .content .first {
+    
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    height: 407px;
+    width: calc(100% / 3 - 57px);
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+ }
+ .container .covers .content .first img{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+ }
+ .container .covers .content .first span{
+    width: 200px;
+    border-radius: 40px;
+    background-color: white;
+    color: #1C1C27;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+.container .covers .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .headphone{
+    margin: 85px 165px;
+}
+ .container .headphone .cover span {
+    color: #838383;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word;
+ }
+ .container  .hp-content{
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+ .container  .hp-content .first-hp {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    margin-top: 20px;
+    margin-right: 10px;
+    height: 407px;
+    width: calc(100% / 3 - 57px);
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+ }
+ .container  .hp-content .first-hp .main-img{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .container .hp-content .first-hp .like-img{
+    margin: 20px;
+    background-color: white;
+
+ }
+ .container  .hp-content .first-hp .main-name{
+    background-color: white;
+    color: #1C1C27;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word;
+    border-radius: 100%;
+ }
+ .container .hp-content .first-hp .words{
+    padding-right: 20px;
+    padding-top: 50px;
+    display: flex;
+    justify-items: center;
+    background-color: white;
+ }
+ .container  .hp-content .first-hp .price{
+    display: flex;
+    justify-items: center;
+    background-color: white;
+    border-radius: 100%;
+    color: #FFA542;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word;
+ }
+ 
+ .footer {
+
+    max-width: 1110px;
+    padding: 29px;
+    margin: 0 auto;
+    margin-top: 90px;
+    border-radius: 30px 30px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-link {
+    background-color: white;
+    color: #000;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-terms-title {
+    margin-bottom: 40px;
+}
+
+.footer-terms-title h3 {
+    background-color: white;
+    color: #000;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-terms-main {
+    display: flex;
+    gap: 10px;
+}
+.footer-terms-main a {
+    color: #101010;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-terms-main a:nth-child(3) {
+    color: #FFA542;
+
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.container .wireless-hp .cover span {
+    color: #838383;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word;
+ }
+ .container .wireless-hp{
+    margin: 85px 165px;
+}
+.container .wireless-hp .hp-content-wr {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .wireless-hp .hp-content-wr .first-hp-wr {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    margin-top: 20px;
+    margin-right: 10px;
+    height: 407px;
+    width: calc(100% / 3 - 57px);
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.container .wireless-hp .hp-content-wr .first-hp-wr .like-img{
+    margin: 20px;
+    background-color: white;
+}
+.container .wireless-hp .hp-content-wr .first-hp-wr .main-img{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .wireless-hp .hp-content-wr .first-hp-wr .words {
+    padding-right: 20px;
+    padding-top: 50px;
+    display: flex;
+    justify-items: center;
+    background-color: white;
+}
+.container .wireless-hp .hp-content-wr .first-hp-wr .main-name {
+    background-color: white;
+    color: #1C1C27;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word;
+    border-radius: 100%;
+}
+
+.container .wireless-hp .hp-content-wr .first-hp-wr .price {
+    display: flex;
+    justify-items: center;
+    background-color: white;
+    border-radius: 100%;
+    color: #FFA542;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word;
+}

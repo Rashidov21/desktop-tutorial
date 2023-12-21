@@ -1,0 +1,146 @@
+*{
+    background-color: #EAEAEA;
+    margin: 0 auto;
+}
+.container {
+    margin-left: 165px;
+}
+.container .saved {
+    margin-top: 89px;
+    margin-bottom: 21px;
+}
+.container .saved h2 {
+    color: #1C1C27;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+.container .saved-hp .cover {
+
+    color: #838383;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.container .saved-hp .headphone {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .saved-hp .headphone .first-headp {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    margin-top: 20px;
+    margin-right: 40px;
+    height: 407px;
+    width: calc(100% / 3 - 100px);
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.container .saved-hp .headphone .first-headp .like-img{
+    margin: 20px;
+    background-color: white;
+}
+.container .saved-hp .headphone .first-headp .main-img{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container  .saved-hp .headphone .first-headp .words {
+    padding-right: 20px;
+    padding-top: 50px;
+    display: flex;
+    justify-items: center;
+    background-color: white;
+}
+.container .saved-hp .headphone .first-headp .main-name {
+    background-color: white;
+    color: #1C1C27;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word;
+    border-radius: 100%;
+}
+
+.container  .saved-hp .headphone .first-headp .price {
+    display: flex;
+    justify-items: center;
+    background-color: white;
+    border-radius: 100%;
+    color: #FFA542;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+/* .container .wireless-hp {
+    margin-left: 165px;
+} */
+.container .wireless-hp .cover {
+    margin-top: 20px;
+    color: #838383;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.container .wireless-hp .wr-headphone {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .wireless-hp .wr-headphone .first-headp {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    margin-top: 20px;
+    margin-right: 40px;
+    height: 407px;
+    width: calc(100% / 3 - 100px);
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-bottom: 65px;
+}
+.container .wireless-hp .wr-headphone .first-headp .like-img{
+    margin: 20px;
+    background-color: white;
+}
+.container .wireless-hp .wr-headphone .first-headp .main-img{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .wireless-hp .wr-headphone .first-headp .words {
+    padding-right: 20px;
+    padding-top: 50px;
+    display: flex;
+    justify-items: center;
+    background-color: white;
+}
+.container .wireless-hp .wr-headphone .first-headp .main-name {
+    background-color: white;
+    color: #1C1C27;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word;
+    border-radius: 100%;
+}
+
+.container .wireless-hp .wr-headphone .first-headp .price {
+    display: flex;
+    justify-items: center;
+    background-color: white;
+    border-radius: 100%;
+    color: #FFA542;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 600;
+    word-wrap: break-word;
+}

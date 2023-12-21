@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+    <div class="container">
+        <!-- Background card -->
+        <div class="bg-card">
+            <div><span>{{banner.title}}</span></div>
+            <div class="image">
+                <img src="{{banner.image.url}}" width="300" alt="{{banner.title}}">
+            </div>
+        </div>
+        <!-- end of the background card -->
+  
+        <!-- headphones -->
+        <div class="headphone">
+            <div class="cover">
+                <span>Products</span><br><br>
+            </div>
+            <div class="hp-content">
+                {% for object in object_list %}
+                <div class="first-hp">
+                    
+                    <a href="{% url 'main:addtowishlist' object.id %}">
+                        <img src="{% static 'images/Vector (1).png' %}" alt="" class="like-img">
+                    </a>
+                    <img src="{{object.images.all.0.image.url}}" alt="" class="main-img" width="100%">
+                    <div class="words">
+                    <span class="main-name">Apple BYZ S852I</span>
+                    <span class="price">$<strike>{{object.price}}</strike> </span>
+                    <span class="price">${{object.get_discount_price}}</span>
+                    <br><br>
+                    </div>
+                </div>
+                {% endfor %}
+                <br><br>
+
+            </div>
+        </div>
+       
+    </div>
+    {% endblock content %}

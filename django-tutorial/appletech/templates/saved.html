@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/content.css' %}">
+<div class="container">
+    <div class="saved">
+        <h2>Избранное</h2>
+    </div>
+    <div class="saved-hp">
+        <div class="cover">
+            <span>Наушники</span>
+        </div>
+        <div class="headphone">
+            {% for object in object_list %}
+            <div class="first-headp">                     
+                <img src="images/Vector (1).png" alt="" class="like-img">
+                <img src="images/Image (1).png" alt="" class="main-img">
+                <div class="words">
+                <span class="main-name">{{object.name}}</span><span class="price">2927 ₸</span><br><br>
+                </div>
+                <div class="remove_from_favorites_icon">
+                    <a href="#">
+                        <i class="fa-solid fa-trash"></i>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+{% endblock content %}
