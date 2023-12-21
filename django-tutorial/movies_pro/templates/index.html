@@ -1,4 +1,4 @@
-{% extends "wrapper.html" %} {% load static %} {% block content %}
+{% extends "wrapper.html" %} {% load static %} {% block content %} 
 {% block title %}
 <title>Кинобейс - clone</title>
 {% endblock title %}
@@ -13,28 +13,19 @@
           src="{{movie.poster.url}}"
           class="img-responsive"
           loading="lazy"
-          alt="Пила 10 (2023)"
-          title="Пила 10 (2023)"
+          alt="{{movie.title}}"
+          title="{{movie.title}}"
           width="242"
           height="358"
         />
       </a>
 
-      <a
-        href="#"
-        class="favorite"
-        title="Добавить в избранное"
-      ></a>
+      <a href="#" class="favorite" title="Добавить в избранное"></a>
 
       <div class="info">
         <div class="title">
-          <a
-            href="#"
-            class="link"
-            alt="{{movie.title}}"
-            title="{{movie.title}}"
-            >{{movie.title}}</a
-          >
+          <a href="#" class="link" alt="{{movie.title}}" 
+            title="{{movie.title}}">{{movie.title}}</a>
         </div>
         <div class="desc">{{movie.year}}, {{movie.quality}}</div>
       </div>
@@ -76,19 +67,28 @@
               <form action="#" method="post">
                 {% csrf_token %}
                 <div class="form-group">
-                  <input type="email" name="username" class="form-control" placeholder="Email">
+                  <input
+                    type="email"
+                    name="username"
+                    class="form-control"
+                    placeholder="Email"
+                  />
                 </div>
                 <div class="form-group">
-                  <input type="password" name="password" class="form-control" placeholder="Password">
+                  <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    placeholder="Password"
+                  />
                 </div>
                 <div class="form-group">
                   <button type="submit" class="btn btn-default">Войти</button>
                 </div>
               </form>
 
-
               <div style="margin-top: 30px">
-                <p><a href="#" >Забыли пароль?</a></p>
+                <p><a href="#">Забыли пароль?</a></p>
                 <p>
                   <a href="registration.html" class="register"
                     >Зарегистрироваться</a
@@ -101,7 +101,6 @@
               <div class="alert alert-success" style="display: none"></div>
               <div class="alert alert-danger" style="display: none"></div>
 
-
               <div style="margin-top: 30px">
                 <p><a href="login.html" class="login">Войти</a></p>
               </div>
@@ -113,19 +112,33 @@
               <form action="#" method="post">
                 {% csrf_token %}
                 <div class="form-group">
-                  <input type="email" name="email" class="form-control" placeholder="Username">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Username"
+                  />
                 </div>
                 <div class="form-group">
-                  <input type="password" name="password1" class="form-control" placeholder="Password ">
+                  <input
+                    type="password"
+                    name="password1"
+                    class="form-control"
+                    placeholder="Password "
+                  />
                 </div>
                 <div class="form-group">
-                  <input type="password" name="password2" class="form-control" placeholder="Retype password">
+                  <input
+                    type="password"
+                    name="password2"
+                    class="form-control"
+                    placeholder="Retype password"
+                  />
                 </div>
                 <div class="form-group">
                   <button type="submit" class="btn btn-default">Войти</button>
                 </div>
               </form>
-
             </div>
           </div>
 
