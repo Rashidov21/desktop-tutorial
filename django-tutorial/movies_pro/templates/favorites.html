@@ -1,14 +1,10 @@
-{% extends "wrapper.html" %} {% load static %} {% block content %}
-{% block title %}
+{% extends "wrapper.html" %} {% load static %} {% block content %} {% block
+title %}
 <title>Кинобейс - Избранное</title>
 {% endblock title %}
 <div id="main" class="container">
   <a href="#" class="h3">
-    {% if page_title %}
-    {{page_title}}
-    {% else %}
-    Избранное
-    {% endif %}
+    {% if page_title %} {{page_title}} {% else %} Избранное {% endif %}
   </a>
 
   <div class="row items">
@@ -48,8 +44,6 @@
     {% endfor %}
   </div>
 
-
-
   <div class="footer">
     <p>
       По всем вопросам пишите на электронную почту <a href="#" class="mail"></a>
@@ -82,19 +76,30 @@
               <form action="{% url 'movies:login' %}" method="post">
                 {% csrf_token %}
                 <div class="form-group">
-                  <input type="email" name="username" class="form-control" placeholder="Email">
+                  <input
+                    type="email"
+                    name="username"
+                    class="form-control"
+                    placeholder="Email"
+                  />
                 </div>
                 <div class="form-group">
-                  <input type="password" name="password" class="form-control" placeholder="Password">
+                  <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    placeholder="Password"
+                  />
                 </div>
                 <div class="form-group">
                   <button type="submit" class="btn btn-default">Войти</button>
                 </div>
               </form>
 
-
               <div style="margin-top: 30px">
-                <p><a href="{% url 'movies:password_reset' %}" >Забыли пароль?</a></p>
+                <p>
+                  <a href="{% url 'movies:password_reset' %}">Забыли пароль?</a>
+                </p>
                 <p>
                   <a href="registration.html" class="register"
                     >Зарегистрироваться</a
@@ -107,7 +112,6 @@
               <div class="alert alert-success" style="display: none"></div>
               <div class="alert alert-danger" style="display: none"></div>
 
-
               <div style="margin-top: 30px">
                 <p><a href="login.html" class="login">Войти</a></p>
               </div>
@@ -119,19 +123,33 @@
               <form action="{% url 'movies:register' %}" method="post">
                 {% csrf_token %}
                 <div class="form-group">
-                  <input type="email" name="email" class="form-control" placeholder="Username">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Username"
+                  />
                 </div>
                 <div class="form-group">
-                  <input type="password" name="password1" class="form-control" placeholder="Password ">
+                  <input
+                    type="password"
+                    name="password1"
+                    class="form-control"
+                    placeholder="Password "
+                  />
                 </div>
                 <div class="form-group">
-                  <input type="password" name="password2" class="form-control" placeholder="Retype password">
+                  <input
+                    type="password"
+                    name="password2"
+                    class="form-control"
+                    placeholder="Retype password"
+                  />
                 </div>
                 <div class="form-group">
                   <button type="submit" class="btn btn-default">Войти</button>
                 </div>
               </form>
-
             </div>
           </div>
 
