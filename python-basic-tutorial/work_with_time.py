@@ -77,18 +77,18 @@ locale.setlocale(locale.LC_ALL, "UZ_uz")
 # c = calendar.LocaleTextCalendar(0, "UZ_uz")
 # print(c.formatyear(2022))
 
-# html_calendar = calendar.LocaleHTMLCalendar(0, "UZ_uz")
 # # print(html_calendar.formatyear(2022))
-
-# with open("calendar.html", "a", encoding="utf-8") as file:
-#     html = f"""
-#         <html>
-#             <head>
-#                 <title>Calendar 2022</title>
-#             </head>
-#             <body>
-#                 {str(html_calendar.formatyear(2022))}
-#             </body>
-#         </html>
-#     """
-#     file.write(html)
+import calendar
+html_calendar = calendar.LocaleHTMLCalendar(0, "UZ_uz")
+with open("calendar.html", "a", encoding="utf-8") as file:
+    html = f"""
+        <html>
+            <head>
+                <title>Calendar 2022</title>
+            </head>
+            <body>
+                {str(html_calendar.formatyear(2022))}
+            </body>
+        </html>
+    """
+    file.write(html)

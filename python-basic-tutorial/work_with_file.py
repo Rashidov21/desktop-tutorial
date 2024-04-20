@@ -25,4 +25,4 @@
 #     print(line)
 
 for line in range(6):
-    f.write(f"{line}\n")
+    f.write(f"{line}\n") # type: ignore
