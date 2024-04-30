@@ -8,7 +8,7 @@ btn = InlineKeyboardButton('Kuldirish ', callback_data='laugh')
 laugh_btn = InlineKeyboardMarkup().add(btn)
 
 
-bot = Bot(token='6145009119:AAGL-qbjqqLuEJZ17oDbLrUG79w89rBWBfY')
+bot = Bot(token='')
 dp = Dispatcher(bot)
 
 
@@ -32,6 +32,7 @@ async def laugh_send(callback_query: types.CallbackQuery):
 
 @dp.message_handler()
 async def echo(message: types.Message):
+
     await message.answer(message.text)
 
 # def send_contact_from_list(url,contact_list):
